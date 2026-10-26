@@ -1,6 +1,6 @@
 # Design: Gesellenprüfungs-Trainer Kfz (Teil 2, Pkw) als wiederverwendbare Lern-Trainer-Vorlage
 
-Stand: 26.10.2026 · Status: zur Freigabe
+Stand: 26.10.2026 · Status: freigegeben, ergänzt am 26.10. um das echte Aufgabenformat (Abschnitt 15, ebenfalls freigegeben)
 Recherche: [docs/recherche/2026-10-26-gp2-winter-2026-27.md](../../recherche/2026-10-26-gp2-winter-2026-27.md)
 Vorbild: Telekom Test-Trainer (`Desktop\Telekom\webapp`, Repo `Leszco063/test-trainer`)
 
@@ -174,6 +174,18 @@ Mix pro Bereich: ca. 70 % `mc`, 15 % `offen`, 10 % `reihenfolge`, 5 % `zahl` (da
 ## 13. Vorlage nutzen (für später)
 
 Neuer Trainer = Repo per „Use this template“ anlegen, `inhalt/` leeren, `trainer.js` und `fragen/*.py` neu schreiben, `python tools/export.py`. Ein Skill `/neuer-trainer` kann das später automatisieren. Er ist nicht Teil dieses Projekts.
+
+## 15. Änderung nach Auswertung einer echten Schulprüfung (26.10., freigegeben)
+
+Der User hat eine alte Prüfung (Diagnosetechnik Diesel CR, VW Passat 2.0 TDI) fotografiert, die Auswertung steht lokal in `material/notizen/pruefungsformat-alte-pruefung.md`. Ein Block besteht aus **einem Kundenauftrag mit ca. 21 aufeinander aufbauenden Aufgaben**, jede Aufgabe hat **eigene Punkte (2–10, zusammen ca. 100)**, und nur etwa **15 % sind Multiple Choice**. **Diese Regeln ersetzen die betroffenen Stellen in Abschnitt 5–9:**
+
+1. **Punkte pro Aufgabe:** neues optionales Feld `pkt` (1–10). Fehlt es, gilt der Standard pro Typ aus `trainer.js`: `mc` 2, `zahl` 3, `reihenfolge` 4, `offen` 4, `zuordnung` 4.
+2. **Neuer Fragetyp `zuordnung`** (Begriffe zu Bildnummern, Bauteil → Aufgabe, Nieder-/Hochdruck einteilen). Felder: `paare` = Liste `[links, rechts]` (2–12 Paare), optional `ablenker` = zusätzliche falsche Antworten. Bedienung: zu jedem linken Eintrag eine Auswahlliste mit allen rechten Werten (gemischt, Duplikate einmal). Bewertung: Anteil richtig zugeordneter Einträge. Sind mehrere linke Einträge demselben rechten Wert zugeordnet (z. B. „Niederdruck“), ist das erlaubt.
+3. **Aufgabensätze:** `SITUATIONEN` werden zu Aufgabensätzen: `{id: {"titel", "text", "cat"}}`. Fragen mit `situation` bekommen zusätzlich `nr` (Reihenfolge im Satz, 1, 2, 3 …). Die Simulation nimmt für einen Block **bevorzugt einen ganzen Aufgabensatz** des Bereichs (den, der am längsten nicht dran war) und spielt ihn in `nr`-Reihenfolge. Gibt es keinen, wird wie bisher gemischt.
+4. **Mischung ohne Aufgabensatz** (`blockMix`): 4 `mc`, 2 `zahl`, 1 `reihenfolge`, 9 `offen`, 5 `zuordnung` (= 21 Aufgaben).
+5. **Typ-Mix der Fragenbank** pro Bereich ungefähr: 15 % `mc`, 45 % `offen` (auch „Tabelle ergänzen“), 25 % `zuordnung`, 10 % `zahl`, 5 % `reihenfolge`.
+6. **Inhalt Phase 1:** pro Prüfungsblock **1 Aufgabensatz (15–21 Aufgaben)** + ca. 25 Einzelfragen; Phase 2: zweiter Aufgabensatz pro Block. Einheiten wie im Original mischen (z. B. Raildruck in MPa und bar).
+7. In der Simulation wird pro Block „erreicht / max“ in Punkten angezeigt, die Note kommt aus den Prozent.
 
 ## 14. Nicht Teil dieses Specs
 
