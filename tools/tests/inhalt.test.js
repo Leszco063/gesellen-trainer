@@ -7,11 +7,11 @@ import { typVon } from "../../kern/typen/index.js";
 // Mindestumfang je Bereich – jeder Inhalts-Task trägt hier seinen Bereich ein
 const MINDEST = {
   Grundlagen: { fragen: 5, saetze: 0, karten: 2 },
-  Diesel: { fragen: 0, saetze: 0, karten: 5 },
-  Bremse: { fragen: 0, saetze: 0, karten: 4 },
-  Klima: { fragen: 0, saetze: 0, karten: 4 },
-  Airbag: { fragen: 0, saetze: 0, karten: 4 },
-  WiSo: { fragen: 0, saetze: 0, karten: 4 },
+  Diesel: { fragen: 40, saetze: 1, karten: 5 },
+  Bremse: { fragen: 40, saetze: 1, karten: 4 },
+  Klima: { fragen: 40, saetze: 1, karten: 4 },
+  Airbag: { fragen: 40, saetze: 1, karten: 4 },
+  WiSo: { fragen: 40, saetze: 1, karten: 4 },
 };
 
 export default async function () {
