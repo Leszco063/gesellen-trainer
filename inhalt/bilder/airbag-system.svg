@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" font-family="Arial, sans-serif">
+  <!-- Selbst gezeichnet: Rückhaltesystem in der Draufsicht (schematisch), Fahrtrichtung nach rechts, Linkslenker.
+       1 Airbag-Steuergerät, 2 Upfront-Sensoren, 3 Seitenaufprallsensoren, 4 Fahrerairbag,
+       5 Wickelfeder, 6 Beifahrerairbag, 7 Gurtstraffer, 8 Airbag-Kontrollleuchte -->
+  <rect x="0" y="0" width="640" height="400" fill="#ffffff"/>
+
+  <!-- Fahrtrichtung -->
+  <text x="16" y="31" font-size="14" fill="#1a1a1a">Fahrtrichtung</text>
+  <line x1="118" y1="26" x2="172" y2="26" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="172,21 182,26 172,31" fill="#1a1a1a"/>
+
+  <!-- Karosserie, Scheiben -->
+  <rect x="40" y="60" width="530" height="280" rx="70" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 480 78 Q 502 200 480 322" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 95 85 Q 78 200 95 315" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Instrumententafel mit Kombiinstrument und Beifahrerairbag -->
+  <rect x="448" y="78" width="26" height="244" fill="#eeeeee" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="452" y="104" width="18" height="36" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="461" cy="122" r="6" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="456.8" y1="117.8" x2="465.2" y2="126.2" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="465.2" y1="117.8" x2="456.8" y2="126.2" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="452" y="245" width="18" height="50" fill="#ffffff" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="4 3"/>
+  <polyline points="455,252 467,258 455,264 467,270 455,276 467,282 455,288" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- Sitze -->
+  <rect x="110" y="90" width="80" height="220" rx="10" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="110" y="90" width="18" height="220" rx="6" fill="#f2f2f2" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="290" y="88" width="80" height="70" rx="8" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="290" y="88" width="18" height="70" rx="6" fill="#f2f2f2" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="290" y="242" width="80" height="70" rx="8" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="290" y="242" width="18" height="70" rx="6" fill="#f2f2f2" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Mitteltunnel mit Steuergerät -->
+  <rect x="260" y="186" width="180" height="28" rx="4" fill="#f2f2f2" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="318" y="190" width="40" height="20" fill="#bdbdbd" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Lenkrad mit Fahrerairbag, Wickelfeder -->
+  <circle cx="405" cy="123" r="27" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="378" y1="123" x2="394" y2="123" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="416" y1="123" x2="432" y2="123" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="394" y="112" width="22" height="22" rx="4" fill="#d9d9d9" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="434" y="113" width="12" height="20" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <polyline points="436,117 444,120 436,123 444,126 436,129" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- Upfront-Sensoren -->
+  <rect x="540" y="92" width="14" height="14" fill="#bdbdbd" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="540" y="294" width="14" height="14" fill="#bdbdbd" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Seitenaufprallsensoren in den Türen -->
+  <rect x="350" y="62" width="14" height="10" fill="#bdbdbd" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="350" y="328" width="14" height="10" fill="#bdbdbd" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Gurtstraffer an der B-Säule mit Gurtband -->
+  <rect x="270" y="64" width="12" height="16" fill="#bdbdbd" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="270" y="320" width="12" height="16" fill="#bdbdbd" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="282" y1="74" x2="340" y2="156" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="6 3"/>
+  <line x1="282" y1="326" x2="340" y2="244" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="6 3"/>
+
+  <!-- Hinweislinien -->
+  <g stroke="#1a1a1a" stroke-width="1.5">
+    <line x1="243" y1="200" x2="318" y2="200"/>
+    <line x1="601" y1="196" x2="554" y2="101"/>
+    <line x1="601" y1="204" x2="554" y2="301"/>
+    <line x1="345" y1="41" x2="357" y2="62"/>
+    <line x1="345" y1="361" x2="357" y2="338"/>
+    <line x1="398" y1="41" x2="402" y2="112"/>
+    <line x1="440" y1="41" x2="440" y2="113"/>
+    <line x1="461" y1="361" x2="461" y2="295"/>
+    <line x1="275" y1="41" x2="276" y2="64"/>
+    <line x1="275" y1="361" x2="276" y2="336"/>
+    <line x1="495" y1="40" x2="466" y2="111"/>
+  </g>
+
+  <!-- Nummern -->
+  <g font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    <circle cx="232" cy="200" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="232" y="205">1</text>
+    <circle cx="612" cy="200" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="612" y="205">2</text>
+    <circle cx="345" cy="30" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="345" y="35">3</text>
+    <circle cx="345" cy="372" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="345" y="377">3</text>
+    <circle cx="398" cy="30" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="398" y="35">4</text>
+    <circle cx="440" cy="30" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="440" y="35">5</text>
+    <circle cx="461" cy="372" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="461" y="377">6</text>
+    <circle cx="275" cy="30" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="275" y="35">7</text>
+    <circle cx="275" cy="372" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="275" y="377">7</text>
+    <circle cx="500" cy="30" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="500" y="35">8</text>
+  </g>
+
+  <text x="16" y="390" font-size="14" fill="#1a1a1a">Draufsicht Innenraum (schematisch)</text>
+</svg>
