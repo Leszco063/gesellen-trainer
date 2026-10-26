@@ -3,6 +3,7 @@ import { TRAINER } from "../inhalt/trainer.js";
 import { go } from "./ui.js";
 import "./start.js";
 import "./uebung.js";
+import "./pruefung.js";
 import "./lernen.js";
 import "./meldungen.js";
 import "./statistik.js";

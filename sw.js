@@ -27,6 +27,8 @@ const FILES = [
   "kern/lernen.js",
   "kern/main.js",
   "kern/meldungen.js",
+  "kern/pruefung-aufbau.js",
+  "kern/pruefung.js",
   "kern/speicher.js",
   "kern/start.js",
   "kern/statistik.js",
