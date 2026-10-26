@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif" font-size="14">
+  <title>Kennlinie Raildrucksensor: Signalspannung über Raildruck</title>
+  <rect x="0" y="0" width="640" height="400" fill="#ffffff"/>
+
+  <!-- Raster: x alle 20 MPa (26 px), y alle 0,5 V (30 px) -->
+  <g stroke="#b8b8b8" stroke-width="1">
+    <path d="M106 50 V350 M132 50 V350 M158 50 V350 M184 50 V350 M210 50 V350 M236 50 V350 M262 50 V350 M288 50 V350 M314 50 V350 M340 50 V350 M366 50 V350 M392 50 V350 M418 50 V350 M444 50 V350 M470 50 V350 M496 50 V350 M522 50 V350 M548 50 V350 M574 50 V350 M600 50 V350"/>
+    <path d="M80 320 H600 M80 290 H600 M80 260 H600 M80 230 H600 M80 200 H600 M80 170 H600 M80 140 H600 M80 110 H600 M80 80 H600 M80 50 H600"/>
+  </g>
+  <g stroke="#7a7a7a" stroke-width="1">
+    <path d="M132 50 V350 M184 50 V350 M236 50 V350 M288 50 V350 M340 50 V350 M392 50 V350 M444 50 V350 M496 50 V350 M548 50 V350 M600 50 V350"/>
+    <path d="M80 290 H600 M80 230 H600 M80 170 H600 M80 110 H600 M80 50 H600"/>
+  </g>
+
+  <!-- Achsen -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <path d="M80 350 H612"/>
+    <path d="M80 350 V38"/>
+  </g>
+  <path d="M612 345 L622 350 L612 355 Z" fill="#1a1a1a"/>
+  <path d="M75 38 L80 28 L85 38 Z" fill="#1a1a1a"/>
+
+  <!-- Kennlinie: (0 MPa; 0,5 V) bis (200 MPa; 4,5 V) -->
+  <line x1="80" y1="320" x2="600" y2="80" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- x-Beschriftung -->
+  <g fill="#1a1a1a" text-anchor="middle">
+    <text x="80" y="368">0</text>
+    <text x="132" y="368">20</text>
+    <text x="184" y="368">40</text>
+    <text x="236" y="368">60</text>
+    <text x="288" y="368">80</text>
+    <text x="340" y="368">100</text>
+    <text x="392" y="368">120</text>
+    <text x="444" y="368">140</text>
+    <text x="496" y="368">160</text>
+    <text x="548" y="368">180</text>
+    <text x="600" y="368">200</text>
+    <text x="340" y="392">Raildruck p in MPa</text>
+  </g>
+
+  <!-- y-Beschriftung -->
+  <g fill="#1a1a1a" text-anchor="end">
+    <text x="72" y="355">0</text>
+    <text x="72" y="325">0,5</text>
+    <text x="72" y="295">1,0</text>
+    <text x="72" y="265">1,5</text>
+    <text x="72" y="235">2,0</text>
+    <text x="72" y="205">2,5</text>
+    <text x="72" y="175">3,0</text>
+    <text x="72" y="145">3,5</text>
+    <text x="72" y="115">4,0</text>
+    <text x="72" y="85">4,5</text>
+    <text x="72" y="55">5,0</text>
+  </g>
+  <text x="22" y="200" fill="#1a1a1a" text-anchor="middle" transform="rotate(-90 22 200)">Signalspannung U in V</text>
+</svg>
