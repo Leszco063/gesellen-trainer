@@ -2819,6 +2819,269 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
+  "id": "88a185f97ce2",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "zahl",
+  "pkt": 2,
+  "q": "Ein Magnetventil nimmt bei 14 V einen Strom von 1,5 A auf. Wie groß ist seine Leistung?",
+  "loesung": 21,
+  "einheit": "W",
+  "explain": "P = U × I = 14 V × 1,5 A = 21 W.",
+  "src": "FW"
+ },
+ {
+  "id": "1a866d89fb57",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zahl",
+  "pkt": 3,
+  "q": "Zwei Glühkerzen mit je 0,8 Ω sind parallel geschaltet. Wie groß ist der Ersatzwiderstand?",
+  "loesung": 0.4,
+  "einheit": "Ω",
+  "explain": "Zwei gleiche Widerstände parallel: R = R1 ÷ 2 = 0,8 Ω ÷ 2 = 0,4 Ω (allgemein R = R1 × R2 ÷ (R1 + R2)).",
+  "src": "FW"
+ },
+ {
+  "id": "fe7f8b6e32a4",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "q": "Ordnen Sie den Klemmenbezeichnungen ihre Bedeutung zu.",
+  "paare": [
+   [
+    "Klemme 30",
+    "Dauerplus von der Batterie"
+   ],
+   [
+    "Klemme 15",
+    "Plus bei eingeschalteter Zündung"
+   ],
+   [
+    "Klemme 31",
+    "Masse"
+   ],
+   [
+    "Klemme 50",
+    "Ansteuerung Starter"
+   ],
+   [
+    "Klemme 87",
+    "Ausgang des Relais-Arbeitskontakts"
+   ]
+  ],
+  "ablenker": [
+   "Blinker links"
+  ],
+  "explain": "30 = immer Plus, 15 = geschaltetes Zündungsplus, 31 = Masse, 50 = Starteransteuerung, 87 = Relaisausgang. 85/86 sind die Anschlüsse der Relaisspule.",
+  "src": "FW (Klemmenbezeichnungen DIN 72552, mit Tabellenbuch abgleichen)",
+  "tb": true
+ },
+ {
+  "id": "19b190f3c367",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Ein Relais für den Kühlerlüfter steht im Verdacht. Bringen Sie die Prüfschritte in eine sinnvolle Reihenfolge.",
+  "schritte": [
+   "Relais nach Schaltplan identifizieren (Anschlüsse 30, 85, 86, 87)",
+   "Relais ausbauen und Spulenwiderstand zwischen 85 und 86 messen",
+   "Spule mit Bordspannung ansteuern und Schaltgeräusch prüfen",
+   "Durchgang des Arbeitskontakts 30–87 im angesteuerten Zustand messen",
+   "Ergebnis mit dem Sollwert vergleichen und dokumentieren"
+  ],
+  "explain": "Erst die Spule (Steuerstromkreis), dann der Kontakt (Arbeitsstromkreis). Ein Relais, das klickt, kann trotzdem einen verbrannten Kontakt haben.",
+  "src": "FW"
+ },
+ {
+  "id": "f44d94574ef8",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Wie verhält sich der Widerstand eines NTC-Temperaturfühlers, wenn die Temperatur steigt?",
+  "opts": [
+   "Er sinkt",
+   "Er steigt",
+   "Er bleibt gleich",
+   "Er springt auf unendlich"
+  ],
+  "correct": 0,
+  "explain": "NTC = negativer Temperaturkoeffizient: warm → kleiner Widerstand. Beim PTC ist es umgekehrt.",
+  "src": "FW"
+ },
+ {
+  "id": "730763a73e84",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "offen",
+  "pkt": 3,
+  "q": "Sie vermuten einen Masseschluss mit erhöhtem Übergangswiderstand an einem Sensor. Beschreiben Sie, wie Sie die Masseleitung unter Last prüfen.",
+  "punkte": [
+   "Spannungsfall messen: Voltmeter zwischen Masse-Pin am Bauteil und Batterie-Minus bzw. Fahrzeugmasse",
+   "Messung bei eingeschaltetem Stromkreis (unter Last), nicht im Leerlauf",
+   "Messwert mit dem Sollwert vergleichen – bei Sensoren nur wenige Zehntel Volt oder weniger erlaubt"
+  ],
+  "explain": "Eine Durchgangsprüfung ohne Last zeigt Korrosion oft nicht. Der Spannungsfall unter Last verrät den Übergangswiderstand.",
+  "src": "FW"
+ },
+ {
+  "id": "a282700db72b",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "offen",
+  "pkt": 3,
+  "q": "Nennen Sie drei Wege, eine Sicherung zu prüfen.",
+  "punkte": [
+   "Sichtprüfung des Schmelzleiters",
+   "Durchgang/Widerstand bei ausgebauter Sicherung messen",
+   "Spannung an beiden Prüfkontakten der eingebauten Sicherung gegen Masse messen"
+  ],
+  "explain": "Eine durchgebrannte Sicherung ist ein Symptom: Vor dem Tausch die Ursache (Kurzschluss, defekter Verbraucher) suchen.",
+  "src": "FW"
+ },
+ {
+  "id": "3bad30b33445",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zahl",
+  "pkt": 3,
+  "q": "Ein Ventil wird mit einem PWM-Signal angesteuert: 3 ms eingeschaltet, Periodendauer 8 ms. Wie groß ist das Tastverhältnis?",
+  "loesung": 37.5,
+  "einheit": "%",
+  "explain": "Tastverhältnis = Einschaltzeit ÷ Periodendauer × 100 % = 3 ms ÷ 8 ms × 100 % = 37,5 %.",
+  "src": "FW"
+ },
+ {
+  "id": "3df1269d83a2",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 3,
+  "q": "Ordnen Sie die Einstellungen am Oszilloskop ihrer Wirkung zu.",
+  "paare": [
+   [
+    "V/DIV",
+    "Spannung pro Kästchen (senkrecht)"
+   ],
+   [
+    "ms/DIV",
+    "Zeit pro Kästchen (waagerecht)"
+   ],
+   [
+    "Trigger",
+    "Startpunkt für ein stehendes Bild"
+   ]
+  ],
+  "ablenker": [
+   "Strom pro Kästchen"
+  ],
+  "explain": "Mit V/DIV und ms/DIV skaliert man das Bild, der Trigger sorgt dafür, dass sich ein periodisches Signal nicht über den Bildschirm „verschiebt“.",
+  "src": "FW"
+ },
+ {
+  "id": "8d3b87c32208",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie den Drehzahlgebern ihre Eigenschaften zu.",
+  "paare": [
+   [
+    "Induktivgeber",
+    "Sinusförmiges Signal, Amplitude steigt mit der Drehzahl"
+   ],
+   [
+    "Hallgeber",
+    "Rechtecksignal, braucht Spannungsversorgung"
+   ],
+   [
+    "Aktiver Raddrehzahlsensor",
+    "Erkennt auch sehr langsame Drehung und Stillstand"
+   ],
+   [
+    "Passiver Raddrehzahlsensor",
+    "Erzeugt seine Spannung selbst durch Induktion"
+   ]
+  ],
+  "explain": "Passive (induktive) Geber brauchen keine Versorgung, liefern bei Stillstand aber kein Signal. Aktive Geber (Hall/MR) sind versorgt und liefern ein Rechteck.",
+  "src": "FW"
+ },
+ {
+  "id": "3bd07e3588b4",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "offen",
+  "pkt": 4,
+  "q": "Erklären Sie den Unterschied zwischen Messwertblock (Istwerte) und Stellglieddiagnose am Diagnosetester.",
+  "punkte": [
+   "Messwertblock zeigt, was das Steuergerät von Sensoren empfängt bzw. berechnet (Istwerte)",
+   "Stellglieddiagnose: Tester steuert einen Aktor gezielt an",
+   "Bei der Stellglieddiagnose prüft man hören/fühlen/messen, ob der Aktor reagiert",
+   "Beides ersetzt keine Messung an Leitung und Bauteil, grenzt aber den Fehler ein"
+  ],
+  "explain": "Beispiel: Raildruck Soll/Ist im Messwertblock vergleichen, dann die Zumesseinheit per Stellglieddiagnose ansteuern.",
+  "src": "FW"
+ },
+ {
+  "id": "01809ce0994f",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zahl",
+  "pkt": 3,
+  "q": "Am CAN-Bus messen Sie bei abgeklemmter Batterie den Widerstand zwischen CAN-High und CAN-Low. Beide Abschlusswiderstände haben je 120 Ω. Welchen Wert erwarten Sie?",
+  "loesung": 60,
+  "einheit": "Ω",
+  "explain": "Die zwei Abschlusswiderstände liegen parallel: 120 Ω × 120 Ω ÷ 240 Ω = 60 Ω. Misst man ca. 120 Ω, fehlt einer (Unterbrechung).",
+  "src": "FW"
+ },
+ {
+  "id": "ee9de32671fe",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "offen",
+  "pkt": 3,
+  "q": "Warum sind die beiden Leitungen eines CAN-Busses miteinander verdrillt und warum überträgt man das Signal auf zwei Leitungen?",
+  "punkte": [
+   "Störungen wirken auf beide Leitungen gleich",
+   "Ausgewertet wird die Spannungsdifferenz zwischen CAN-High und CAN-Low",
+   "Dadurch heben sich eingekoppelte Störungen auf – sichere Übertragung"
+  ],
+  "explain": "Differenzielle Übertragung: CAN-High steigt, CAN-Low fällt. Eine Störung verschiebt beide gleich und ändert die Differenz kaum.",
+  "src": "FW"
+ },
+ {
+  "id": "ccd00b6d5386",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Am CAN-Bus messen Sie zwischen CAN-High und CAN-Low ca. 120 Ω statt 60 Ω. Was ist die wahrscheinlichste Ursache?",
+  "opts": [
+   "Ein Abschlusswiderstand bzw. dessen Leitung ist unterbrochen",
+   "Kurzschluss zwischen CAN-High und CAN-Low",
+   "Die Batterie ist zu schwach",
+   "Alles in Ordnung"
+  ],
+  "correct": 0,
+  "explain": "Mit nur einem Abschlusswiderstand misst man dessen 120 Ω. Ein Kurzschluss zwischen den Leitungen ergäbe nahezu 0 Ω.",
+  "src": "FW"
+ },
+ {
+  "id": "ff6d34aba09b",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "zahl",
+  "pkt": 2,
+  "q": "Ein Bremsdruck von 120 bar entspricht wie viel MPa?",
+  "loesung": 12,
+  "einheit": "MPa",
+  "explain": "10 bar = 1 MPa → 120 bar ÷ 10 = 12 MPa.",
+  "src": "FW"
+ },
+ {
   "id": "276b64e5fa90",
   "cat": "Klima",
   "level": 1,
