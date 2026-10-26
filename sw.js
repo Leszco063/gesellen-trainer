@@ -15,6 +15,12 @@ const FILES = [
   "inhalt/trainer.js",
   "kern/bewertung.js",
   "kern/config.js",
+  "kern/typen/index.js",
+  "kern/typen/mc.js",
+  "kern/typen/offen.js",
+  "kern/typen/reihenfolge.js",
+  "kern/typen/zahl.js",
+  "kern/typen/zuordnung.js",
   "kern/ui.js",
   "kern/util.js",
 ];
