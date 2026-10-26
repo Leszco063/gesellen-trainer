@@ -13,6 +13,7 @@ const FILES = [
   "css/app.css",
   "inhalt/fragen.js",
   "inhalt/trainer.js",
+  "kern/bewertung.js",
   "kern/config.js",
   "kern/ui.js",
   "kern/util.js",
