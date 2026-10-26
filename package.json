@@ -1,0 +1,9 @@
+{
+  "name": "gesellen-trainer",
+  "private": true,
+  "type": "module",
+  "description": "Lern-Trainer für die Gesellenprüfung Teil 2 Kfz-Mechatroniker",
+  "scripts": {
+    "test": "node tools/tests.js"
+  }
+}
