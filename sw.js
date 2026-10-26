@@ -11,6 +11,7 @@ const FILES = [
   "icon-192.png",
   "icon-512.png",
   "css/app.css",
+  "inhalt/fragen.js",
   "inhalt/trainer.js",
   "kern/config.js",
   "kern/ui.js",
