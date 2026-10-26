@@ -1,0 +1,28 @@
+# Automatische Prüfung bei jedem Upload. Ergebnis: Reiter "Actions" – grüner Haken = alles in Ordnung.
+name: Prüfen
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code holen
+        uses: actions/checkout@v4
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Prüfregeln für die Fragenbank testen
+        run: python tools/test_export.py
+      - name: Fragenbank prüfen (gültig und inhalt/fragen.js aktuell)
+        run: python tools/export.py --check
+      - name: Kern, Generatoren, Inhalt und Offline-Liste testen
+        run: node tools/tests.js
