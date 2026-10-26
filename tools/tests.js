@@ -4,7 +4,7 @@
 
 import { anzahlFehler } from "./tests/hilfe.js";
 
-const DATEIEN = ["offline", "util", "bewertung", "typen", "speicher", "generatoren", "karten", "pruefung-aufbau"];
+const DATEIEN = ["offline", "util", "bewertung", "typen", "speicher", "generatoren", "karten", "pruefung-aufbau", "inhalt"];
 
 for (const name of DATEIEN) {
   const mod = await import(`./tests/${name}.test.js`);
