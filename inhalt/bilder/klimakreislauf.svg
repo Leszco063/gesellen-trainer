@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <title>Schema des Kältekreislaufs einer Pkw-Klimaanlage (Nummern 1 bis 8)</title>
+  <rect x="0" y="0" width="640" height="400" fill="#ffffff"/>
+
+  <g fill="none" stroke="#1a1a1a" stroke-width="2">
+    <!-- Hochdruckseite (durchgezogen) -->
+    <path d="M150 266 V130"/>
+    <path d="M235 85 H338"/>
+    <path d="M372 85 H520 V160"/>
+    <!-- Niederdruckseite (gestrichelt) -->
+    <path d="M520 200 V255" stroke-dasharray="8 5"/>
+    <path d="M440 300 H184" stroke-dasharray="8 5"/>
+
+    <!-- 1 Verdichter mit Regelventil -->
+    <circle cx="150" cy="300" r="34" fill="#ffffff"/>
+    <polyline points="120.6,317 150,266 179.4,317"/>
+    <path d="M106 300 H116"/>
+    <rect x="80" y="288" width="26" height="24" fill="#ffffff"/>
+    <path d="M80 312 L106 288"/>
+    <path d="M80 296 H66 M80 304 H66" stroke-width="1.5"/>
+
+    <!-- 2 Kondensator mit Lüfter -->
+    <rect x="75" y="40" width="160" height="90" fill="#ffffff"/>
+    <path d="M90 55 H220 V70 H90 V85 H220 V100 H90 V115 H220" stroke-width="1.5"/>
+    <circle cx="42" cy="85" r="22" fill="#ffffff"/>
+    <ellipse cx="42" cy="74" rx="5" ry="10" stroke-width="1.5"/>
+    <ellipse cx="42" cy="96" rx="5" ry="10" stroke-width="1.5"/>
+    <ellipse cx="31" cy="85" rx="10" ry="5" stroke-width="1.5"/>
+    <ellipse cx="53" cy="85" rx="10" ry="5" stroke-width="1.5"/>
+
+    <!-- 3 Trockner/Sammler -->
+    <rect x="338" y="48" width="34" height="74" rx="8" fill="#ffffff"/>
+    <path d="M344 70 H366 M344 100 H366" stroke-width="1.5"/>
+
+    <!-- 6 Druck-/Temperatursensor Hochdruck -->
+    <path d="M420 85 V68"/>
+    <rect x="402" y="44" width="36" height="24" fill="#ffffff"/>
+
+    <!-- 7 Service-Anschluss Hochdruck -->
+    <path d="M470 85 V66"/>
+    <rect x="462" y="56" width="16" height="10" fill="#ffffff"/>
+
+    <!-- 4 Expansionsventil -->
+    <polygon points="506,160 534,160 520,180" fill="#ffffff"/>
+    <polygon points="506,200 534,200 520,180" fill="#ffffff"/>
+    <path d="M500 202 L538 162" stroke-width="1.5"/>
+
+    <!-- 5 Verdampfer mit Gebläse -->
+    <rect x="440" y="255" width="140" height="70" fill="#ffffff"/>
+    <path d="M455 268 H565 V282 H455 V296 H565 V310 H455" stroke-width="1.5"/>
+    <circle cx="510" cy="365" r="18" fill="#ffffff"/>
+    <ellipse cx="510" cy="356" rx="4" ry="8" stroke-width="1.5"/>
+    <ellipse cx="510" cy="374" rx="4" ry="8" stroke-width="1.5"/>
+    <ellipse cx="501" cy="365" rx="8" ry="4" stroke-width="1.5"/>
+    <ellipse cx="519" cy="365" rx="8" ry="4" stroke-width="1.5"/>
+    <path d="M510 345 V330" stroke-width="1.5"/>
+
+    <!-- 8 Service-Anschluss Niederdruck -->
+    <path d="M300 300 V281"/>
+    <rect x="292" y="271" width="16" height="10" fill="#ffffff"/>
+
+    <!-- Legende -->
+    <path d="M240 352 H290"/>
+    <path d="M240 380 H290" stroke-dasharray="8 5"/>
+  </g>
+
+  <!-- Pfeile Flussrichtung -->
+  <g fill="#1a1a1a">
+    <polygon points="150,192 143,206 157,206"/>
+    <polygon points="298,85 284,78 284,92"/>
+    <polygon points="520,133 513,119 527,119"/>
+    <polygon points="520,236 513,222 527,222"/>
+    <polygon points="382,300 396,293 396,307"/>
+    <polygon points="227,300 241,293 241,307"/>
+    <polygon points="538,162 528,166 534,172"/>
+    <polygon points="510,328 505,337 515,337"/>
+  </g>
+
+  <g fill="#1a1a1a" font-size="14">
+    <text x="420" y="61" text-anchor="middle">p/T</text>
+    <text x="300" y="357">Hochdruckseite</text>
+    <text x="300" y="385">Niederdruckseite</text>
+  </g>
+
+  <!-- Nummern -->
+  <g font-size="14" font-weight="bold" text-anchor="middle">
+    <g fill="#ffffff" stroke="#1a1a1a" stroke-width="2">
+      <circle cx="150" cy="360" r="11"/>
+      <circle cx="155" cy="24" r="11"/>
+      <circle cx="355" cy="30" r="11"/>
+      <circle cx="555" cy="180" r="11"/>
+      <circle cx="605" cy="290" r="11"/>
+      <circle cx="420" cy="28" r="11"/>
+      <circle cx="498" cy="52" r="11"/>
+      <circle cx="328" cy="266" r="11"/>
+    </g>
+    <g fill="#1a1a1a">
+      <text x="150" y="365">1</text>
+      <text x="155" y="29">2</text>
+      <text x="355" y="35">3</text>
+      <text x="555" y="185">4</text>
+      <text x="605" y="295">5</text>
+      <text x="420" y="33">6</text>
+      <text x="498" y="57">7</text>
+      <text x="328" y="271">8</text>
+    </g>
+  </g>
+</svg>
