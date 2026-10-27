@@ -113,7 +113,7 @@ QUESTIONS = [
      "explain": "Größte ÷ kleinste Menge = 41 ml ÷ 11 ml ≈ 3,73.",
      "src": "TB 277"},
     {"cat": "Diesel", "level": 2, "typ": "mc", "pkt": 2, "situation": "cr-octavia", "nr": 14,
-     "q": "Die größte Rücklaufmenge darf höchstens das Dreifache der kleinsten betragen. Wie beurteilen Sie die Messung aus der vorigen Aufgabe?",
+     "q": "Rücklaufmengenmessung: Zyl. 1 11 ml, Zyl. 2 13 ml, Zyl. 3 41 ml, Zyl. 4 12 ml. Die größte Rücklaufmenge darf höchstens das Dreifache der kleinsten betragen. Wie beurteilen Sie die Messung?",
      "opts": ["Grenze 3 × 11 ml = 33 ml wird von Zyl. 3 überschritten → Injektor Zyl. 3 ist innen undicht und wird ersetzt",
               "Alle Injektoren sind in Ordnung, weil keiner mehr als 50 ml zurückgibt",
               "Der Injektor von Zyl. 1 wird ersetzt, weil er am wenigsten zurückgibt",

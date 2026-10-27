@@ -2025,14 +2025,14 @@ export const QUESTIONS = [
   "src": "TB 277"
  },
  {
-  "id": "a6693dd03208",
+  "id": "ebc5c1b58ff1",
   "cat": "Diesel",
   "level": 2,
   "typ": "mc",
   "pkt": 2,
   "situation": "cr-octavia",
   "nr": 14,
-  "q": "Die größte Rücklaufmenge darf höchstens das Dreifache der kleinsten betragen. Wie beurteilen Sie die Messung aus der vorigen Aufgabe?",
+  "q": "Rücklaufmengenmessung: Zyl. 1 11 ml, Zyl. 2 13 ml, Zyl. 3 41 ml, Zyl. 4 12 ml. Die größte Rücklaufmenge darf höchstens das Dreifache der kleinsten betragen. Wie beurteilen Sie die Messung?",
   "opts": [
    "Grenze 3 × 11 ml = 33 ml wird von Zyl. 3 überschritten → Injektor Zyl. 3 ist innen undicht und wird ersetzt",
    "Alle Injektoren sind in Ordnung, weil keiner mehr als 50 ml zurückgibt",
@@ -2913,12 +2913,12 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "730763a73e84",
+  "id": "50aadbade053",
   "cat": "Grundlagen",
   "level": 2,
   "typ": "offen",
   "pkt": 3,
-  "q": "Sie vermuten einen Masseschluss mit erhöhtem Übergangswiderstand an einem Sensor. Beschreiben Sie, wie Sie die Masseleitung unter Last prüfen.",
+  "q": "Sie vermuten eine schlechte (hochohmige) Masseverbindung an einem Sensor. Beschreiben Sie, wie Sie die Masseleitung unter Last prüfen.",
   "punkte": [
    "Spannungsfall messen: Voltmeter zwischen Masse-Pin am Bauteil und Batterie-Minus bzw. Fahrzeugmasse",
    "Messung bei eingeschaltetem Stromkreis (unter Last), nicht im Leerlauf",
@@ -2982,31 +2982,26 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "8d3b87c32208",
+  "id": "3e19d44c1af0",
   "cat": "Grundlagen",
   "level": 2,
   "typ": "zuordnung",
-  "pkt": 4,
-  "q": "Ordnen Sie den Drehzahlgebern ihre Eigenschaften zu.",
+  "pkt": 2,
+  "q": "Ordnen Sie den beiden Messprinzipien von Drehzahlgebern ihre Eigenschaft zu.",
   "paare": [
    [
-    "Induktivgeber",
-    "Sinusförmiges Signal, Amplitude steigt mit der Drehzahl"
+    "Induktivgeber (passiv)",
+    "Erzeugt selbst eine Wechselspannung, deren Amplitude mit der Drehzahl steigt – bei Stillstand kein Signal"
    ],
    [
-    "Hallgeber",
-    "Rechtecksignal, braucht Spannungsversorgung"
-   ],
-   [
-    "Aktiver Raddrehzahlsensor",
-    "Erkennt auch sehr langsame Drehung und Stillstand"
-   ],
-   [
-    "Passiver Raddrehzahlsensor",
-    "Erzeugt seine Spannung selbst durch Induktion"
+    "Hallgeber (aktiv)",
+    "Braucht eine Versorgungsspannung und liefert ein Rechtecksignal – auch bei sehr langsamer Drehung"
    ]
   ],
-  "explain": "Passive (induktive) Geber brauchen keine Versorgung, liefern bei Stillstand aber kein Signal. Aktive Geber (Hall/MR) sind versorgt und liefern ein Rechteck.",
+  "ablenker": [
+   "Ändert seinen Widerstand mit der Temperatur"
+  ],
+  "explain": "Passive Raddrehzahlsensoren arbeiten nach dem Induktionsprinzip, aktive nach dem Hall- bzw. magnetoresistiven Prinzip. Deshalb erkennt nur der aktive Sensor sehr kleine Geschwindigkeiten zuverlässig.",
   "src": "FW"
  },
  {
