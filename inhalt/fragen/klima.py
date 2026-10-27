@@ -42,32 +42,39 @@ QUESTIONS = [
                 "Expansionsventil fällt der Druck, ein Teil verdampft schon – in den Verdampfer strömt ein Gemisch aus "
                 "Flüssigkeit und Dampf.",
      "src": "FW"},
-    {"cat": "Klima", "level": 1, "typ": "offen", "pkt": 3, "situation": "klima-bmw", "nr": 3,
-     "q": "Das Fahrzeug ist mit R1234yf befüllt. Nennen Sie drei Eigenschaften bzw. Besonderheiten dieses Kältemittels.",
-     "punkte": ["Geringes Treibhauspotenzial (GWP unter 150)",
-                "Schwer entflammbar (Sicherheitsklasse A2L)",
-                "Darf nicht mit R134a gemischt werden – eigene Serviceanschlüsse und eigenes Servicegerät"],
-     "explain": "R1234yf ersetzt in Neufahrzeugen R134a, weil es das Klima viel weniger belastet. Dafür ist es schwach "
+    {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 3, "situation": "klima-bmw", "nr": 3,
+     "q": "Das Fahrzeug ist mit R1234yf befüllt. Welche Antwort nennt drei zutreffende Eigenschaften bzw. Besonderheiten dieses Kältemittels?",
+     "opts": ["Geringes Treibhauspotenzial (GWP unter 150); nicht brennbar (Sicherheitsklasse A1); eigene Serviceanschlüsse und eigenes Servicegerät",
+              "Geringes Treibhauspotenzial (GWP unter 150); schwer entflammbar (Sicherheitsklasse A2L); darf mit R134a gemischt werden, gleiche Serviceanschlüsse",
+              "Geringes Treibhauspotenzial (GWP unter 150); schwer entflammbar (Sicherheitsklasse A2L); nicht mit R134a mischen, eigene Serviceanschlüsse und eigenes Servicegerät",
+              "Hohes Treibhauspotenzial, deshalb in Neufahrzeugen verboten; schwer entflammbar (Sicherheitsklasse A2L); eigene Serviceanschlüsse und eigenes Servicegerät"],
+     "correct": 2,
+     "explain": "Merkmale von R1234yf: GWP unter 150, Sicherheitsklasse A2L (schwer entflammbar), nicht mit R134a mischen – "
+                "eigene Serviceanschlüsse und eigenes Servicegerät. R1234yf ersetzt in Neufahrzeugen R134a, weil es das Klima viel weniger belastet. Dafür ist es schwach "
                 "brennbar. Der Kreislauf ist gleich aufgebaut, Anschlüsse und Geräte sind aber verschieden, damit nichts "
                 "verwechselt wird.",
      "src": "Recherche 3.3/3.6, FW"},
-    {"cat": "Klima", "level": 1, "typ": "offen", "pkt": 3, "situation": "klima-bmw", "nr": 4,
-     "q": "Bevor Sie den Kältekreis öffnen: Nennen Sie drei Voraussetzungen, damit Sie an dieser Anlage arbeiten dürfen.",
-     "punkte": ["Sachkundenachweis (Bescheinigung) für Arbeiten an Kälteanlagen in Fahrzeugen",
-                "Zugelassenes Klimaservicegerät für R1234yf",
-                "Gut belüfteter Arbeitsplatz, nicht über einer Arbeitsgrube"],
+    {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 3, "situation": "klima-bmw", "nr": 4,
+     "q": "Bevor Sie den Kältekreis öffnen: Welche Antwort nennt drei Voraussetzungen, damit Sie an dieser Anlage arbeiten dürfen?",
+     "opts": ["Kein eigener Sachkundenachweis nötig, wenn ein Kollege mit Nachweis im Betrieb ist; zugelassenes Klimaservicegerät für R1234yf; gut belüfteter Arbeitsplatz",
+              "Sachkundenachweis für Arbeiten an Fahrzeug-Klimaanlagen; zugelassenes Klimaservicegerät für R1234yf; gut belüfteter Arbeitsplatz, nicht über einer Arbeitsgrube",
+              "Sachkundenachweis für Arbeiten an Fahrzeug-Klimaanlagen; vorhandenes R134a-Servicegerät genügt; gut belüfteter Arbeitsplatz, nicht über einer Arbeitsgrube",
+              "Sachkundenachweis für Arbeiten an Fahrzeug-Klimaanlagen; zugelassenes Klimaservicegerät für R1234yf; geschlossener Raum ohne Lüftung, damit nichts entweicht"],
+     "correct": 1,
      "explain": "Wer Kältemittel absaugt oder einfüllt, braucht eine Sachkundebescheinigung. Für R1234yf ist ein eigenes "
                 "Servicegerät vorgeschrieben. Weil das Kältemittel schwerer als Luft ist, sammelt es sich in Gruben.",
      "src": "Recherche 3.3/3.6, FW"},
-    {"cat": "Klima", "level": 2, "typ": "offen", "pkt": 4, "situation": "klima-bmw", "nr": 5,
-     "q": "Nennen Sie vier Vorprüfungen, die Sie ohne Klimaservicegerät durchführen können.",
-     "punkte": ["Sichtprüfung auf Undichtheit (Ölspuren, Beschädigungen z. B. am Kondensator)",
-                "Prüfen, ob der Verdichter arbeitet bzw. angesteuert wird (Messwerte Regelventil im Tester)",
-                "Prüfen, ob Kondensatorlüfter und Innenraumgebläse laufen",
-                "Innenraumfilter und Kondenswasserablauf prüfen",
-                "Ausströmtemperatur an der Mitteldüse mit Thermometer messen",
-                "Fehlerspeicher von Klima- und Motorsteuergerät auslesen"],
-     "explain": "Viele Fehler findet man schon ohne Manometer: Ölspuren zeigen Lecks (das Kältemittel trägt Öl mit), "
+    {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 4, "situation": "klima-bmw", "nr": 5,
+     "q": "Welche Antwort nennt vier Vorprüfungen, die Sie ohne Klimaservicegerät durchführen können?",
+     "opts": ["Sichtprüfung auf Ölspuren und Beschädigungen; Fehlerspeicher auslesen; Kondensatorlüfter und Gebläse prüfen; Hoch- und Niederdruck messen",
+              "Sichtprüfung auf Ölspuren und Beschädigungen; Innenraumfilter und Kondenswasserablauf prüfen; Kältemittel absaugen und wiegen; Ausströmtemperatur messen",
+              "Vakuum-Haltetest durchführen; Fehlerspeicher auslesen; Kondensatorlüfter und Gebläse prüfen; Innenraumfilter und Kondenswasserablauf prüfen",
+              "Sichtprüfung auf Ölspuren und Beschädigungen; Verdichteransteuerung im Tester prüfen; Kondensatorlüfter und Gebläse prüfen; Ausströmtemperatur messen"],
+     "correct": 3,
+     "explain": "Ohne Servicegerät möglich: Sichtprüfung auf Undichtheit (Ölspuren, Beschädigungen z. B. am Kondensator), "
+                "Verdichteransteuerung (Messwerte Regelventil im Tester), Kondensatorlüfter und Innenraumgebläse, Innenraumfilter "
+                "und Kondenswasserablauf, Ausströmtemperatur an der Mitteldüse, Fehlerspeicher von Klima- und Motorsteuergerät. "
+                "Drücke messen, Kältemittel absaugen und wiegen sowie der Vakuumtest gehen nur mit dem Servicegerät. Viele Fehler findet man schon ohne Manometer: Ölspuren zeigen Lecks (das Kältemittel trägt Öl mit), "
                 "ein ausgefallener Lüfter oder ein zugesetzter Filter mindern die Kühlleistung.",
      "src": "FW"},
     {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 2, "situation": "klima-bmw", "nr": 6,
@@ -77,13 +84,15 @@ QUESTIONS = [
                 "die Prüftabelle des Herstellers). Unter 0 °C darf es nicht gehen, sonst vereist der Verdampfer. 18 °C sind "
                 "hier also deutlich zu warm.",
      "src": "FW"},
-    {"cat": "Klima", "level": 3, "typ": "offen", "pkt": 4, "situation": "klima-bmw", "nr": 7,
-     "q": "Am Servicegerät lesen Sie bei laufendem Motor ab: Niederdruck und Hochdruck liegen beide deutlich unter den Sollwerten aus dem Tabellenbuch. Beurteilen Sie das Messergebnis und begründen Sie Ihre Aussage.",
-     "punkte": ["Beide Drücke zu niedrig deutet auf Unterfüllung (zu wenig Kältemittel im Kreislauf)",
-                "Der Verdampfer wird nicht ausreichend mit Kältemittel versorgt → geringe Kühlleistung",
-                "Kältemittel verbraucht sich nicht – es muss ein Leck geben",
-                "Nächster Schritt: Leck suchen, nicht einfach nachfüllen"],
-     "explain": "Fehlt Kältemittel, kann der Verdichter auf der Hochdruckseite keinen normalen Druck aufbauen, und auch der "
+    {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 4, "situation": "klima-bmw", "nr": 7,
+     "q": "Am Servicegerät lesen Sie bei laufendem Motor ab: Niederdruck und Hochdruck liegen beide deutlich unter den Sollwerten aus dem Tabellenbuch. Wie ist das Messergebnis zu beurteilen?",
+     "opts": ["Überfüllung: zu viel Kältemittel im Kreislauf; überschüssiges Kältemittel absaugen und nach Gewicht neu befüllen",
+              "Kondensator verschmutzt oder Lüfter ausgefallen; Kondensator reinigen und Lüfteransteuerung prüfen",
+              "Unterfüllung: der Verdampfer wird nicht ausreichend versorgt; Kältemittel verbraucht sich nicht, also Leck suchen statt nachfüllen",
+              "Unterfüllung durch normalen Kältemittelverbrauch; die fehlende Menge nachfüllen, eine Lecksuche ist nicht nötig"],
+     "correct": 2,
+     "explain": "Beide Drücke zu niedrig deuten auf Unterfüllung: Der Verdampfer wird nicht ausreichend mit Kältemittel versorgt "
+                "→ geringe Kühlleistung. Nächster Schritt: Leck suchen, nicht einfach nachfüllen. Fehlt Kältemittel, kann der Verdichter auf der Hochdruckseite keinen normalen Druck aufbauen, und auch der "
                 "Saugdruck sinkt. Da der Kreislauf geschlossen ist, bedeutet Kältemittelverlust immer eine Undichtheit.",
      "src": "FW"},
     {"cat": "Klima", "level": 3, "typ": "zuordnung", "pkt": 4, "situation": "klima-bmw", "nr": 8,
@@ -97,12 +106,15 @@ QUESTIONS = [
                 "kaum Kältemittel durch, saugt der Verdichter die Niederdruckseite leer. Bei Überfüllung steigen beide Drücke. "
                 "(Der Ablenker „ND hoch, HD niedrig“ passt eher zu einem Verdichter, der nicht fördert.)",
      "src": "FW"},
-    {"cat": "Klima", "level": 1, "typ": "offen", "pkt": 3, "situation": "klima-bmw", "nr": 9,
-     "q": "Nennen Sie drei Verfahren, mit denen Sie das Leck suchen können.",
-     "punkte": ["UV-Kontrastmittel im Öl und UV-Lampe (mit Brille)",
-                "Elektronischer Lecksucher (spricht auf Kältemittel in der Luft an)",
-                "Formiergas (Stickstoff-Wasserstoff-Gemisch) einfüllen und mit Wasserstoff-Lecksucher prüfen"],
-     "explain": "Hier zeigt die UV-Lampe Kontrastmittel am Kondensator hinter einem Steinschlag. Formiergas eignet sich, "
+    {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 3, "situation": "klima-bmw", "nr": 9,
+     "q": "Welche Antwort nennt drei Verfahren, mit denen Sie das Leck suchen können?",
+     "opts": ["UV-Kontrastmittel und UV-Lampe; elektronischer Lecksucher; Vakuum-Haltetest zur Ortung der Leckstelle",
+              "UV-Kontrastmittel und UV-Lampe; elektronischer Lecksucher; Formiergas mit Wasserstoff-Lecksucher",
+              "UV-Kontrastmittel und UV-Lampe; elektronischer Lecksucher; Formiergas einfüllen und mit der UV-Lampe suchen",
+              "Elektronischer Lecksucher; Formiergas mit Wasserstoff-Lecksucher; Ausströmtemperatur an der Mitteldüse messen"],
+     "correct": 1,
+     "explain": "Verfahren: UV-Kontrastmittel im Öl und UV-Lampe (mit Brille), elektronischer Lecksucher (spricht auf Kältemittel "
+                "in der Luft an), Formiergas (Stickstoff-Wasserstoff-Gemisch) mit Wasserstoff-Lecksucher. Hier zeigt die UV-Lampe Kontrastmittel am Kondensator hinter einem Steinschlag. Formiergas eignet sich, "
                 "wenn kein Kältemittel mehr im Kreislauf ist. Ein Vakuumtest zeigt nur, dass es undicht ist, nicht wo.",
      "src": "Recherche 3.3, FW"},
     {"cat": "Klima", "level": 2, "typ": "reihenfolge", "pkt": 6, "situation": "klima-bmw", "nr": 10,
@@ -127,12 +139,16 @@ QUESTIONS = [
      "explain": "Im Vakuum siedet Wasser schon bei Raumtemperatur und wird abgesaugt. Luft würde den Hochdruck erhöhen. "
                 "Hält das Vakuum, ist die Anlage dicht.",
      "src": "Recherche 3.3, FW"},
-    {"cat": "Klima", "level": 3, "typ": "offen", "pkt": 3, "situation": "klima-bmw", "nr": 12,
-     "q": "Begründen Sie, warum der Trockner erneuert werden muss, wenn der Kreislauf geöffnet wurde.",
-     "punkte": ["Das Trockenmittel hat Feuchtigkeit aus der Luft aufgenommen und ist gesättigt",
-                "Feuchtigkeit bildet mit Kältemittel und Öl Säure → Korrosion im Kreislauf",
-                "Freies Wasser kann am Expansionsventil gefrieren und den Durchfluss sperren"],
-     "explain": "Der Trockner kann nur eine begrenzte Menge Wasser binden. Ist der Kreislauf offen, ist er schnell voll. "
+    {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 3, "situation": "klima-bmw", "nr": 12,
+     "q": "Warum muss der Trockner erneuert werden, wenn der Kreislauf geöffnet wurde? Welche Begründung ist richtig?",
+     "opts": ["Der Trockner speichert das Kältemittelöl; nach dem Öffnen ist er leergelaufen und muss mit frischem Öl getauscht werden",
+              "Das Filtersieb ist durch Abrieb verstopft; die Feuchtigkeit aus der Luft spielt für den Trockner keine Rolle",
+              "Beim Evakuieren wird das Trockenmittel durch den Unterdruck zerstört, deshalb ist der Trockner ein Einwegteil",
+              "Das Trockenmittel hat Feuchtigkeit aus der Luft aufgenommen und ist gesättigt; Wasser bildet Säure und kann am Expansionsventil gefrieren"],
+     "correct": 3,
+     "explain": "Das Trockenmittel ist nach dem Öffnen mit Feuchtigkeit gesättigt. Feuchtigkeit bildet mit Kältemittel und Öl "
+                "Säure → Korrosion im Kreislauf; freies Wasser kann am Expansionsventil gefrieren und den Durchfluss sperren. "
+                "Der Trockner kann nur eine begrenzte Menge Wasser binden. Ist der Kreislauf offen, ist er schnell voll. "
                 "Ein neuer Trockner schützt Verdichter und Expansionsventil.",
      "src": "FW"},
     {"cat": "Klima", "level": 2, "typ": "zuordnung", "pkt": 4, "situation": "klima-bmw", "nr": 13,
@@ -146,58 +162,72 @@ QUESTIONS = [
                 "darf nicht in R1234yf-Anlagen. POE ist nicht leitend und deshalb für elektrische Verdichter da. "
                 "Grundsätzlich: Typ, Viskosität und Menge nach Hersteller, Öle nicht mischen.",
      "src": "TB Betriebsstoffe (Kompressoröle)"},
-    {"cat": "Klima", "level": 3, "typ": "offen", "pkt": 3, "situation": "klima-bmw", "nr": 14,
-     "q": "Ein Kollege will das übrige Öl später in einem Hybridfahrzeug mit elektrischem Verdichter verwenden. Erklären Sie, warum dort POE-Öl vorgeschrieben ist.",
-     "punkte": ["Im elektrischen Verdichter wird der Hochvolt-Elektromotor von Kältemittel und Öl umströmt",
-                "POE-Öl ist nicht elektrisch leitend und hält die Isolation des HV-Motors aufrecht",
-                "Falsches (leitendes) Öl verschlechtert den Isolationswiderstand → HV-Fehler bzw. Gefahr"],
-     "explain": "POE ist außerdem wasserabweisend und darf nicht mit anderen Ölen gemischt werden. Schon Reste von PAG im "
+    {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 3, "situation": "klima-bmw", "nr": 14,
+     "q": "Ein Kollege will das übrige Öl später in einem Hybridfahrzeug mit elektrischem Verdichter verwenden. Warum ist dort POE-Öl vorgeschrieben?",
+     "opts": ["Der HV-Elektromotor im Verdichter wird von Kältemittel und Öl umströmt; POE ist nicht leitend und erhält den Isolationswiderstand",
+              "POE ist besonders hygroskopisch und bindet dadurch die Feuchtigkeit im Kreislauf besser als PAG-Öl",
+              "POE schmiert die hohen Drehzahlen des Elektroverdichters besser; die elektrischen Eigenschaften spielen keine Rolle",
+              "POE ist elektrisch leitend und leitet Fehlerströme des HV-Motors sicher zur Fahrzeugmasse ab"],
+     "correct": 0,
+     "explain": "Im elektrischen Verdichter wird der Hochvolt-Elektromotor von Kältemittel und Öl umströmt. POE-Öl ist nicht "
+                "elektrisch leitend und hält die Isolation aufrecht; leitendes Öl verschlechtert den Isolationswiderstand → "
+                "HV-Fehler bzw. Gefahr. POE ist außerdem wasserabweisend und darf nicht mit anderen Ölen gemischt werden. Schon Reste von PAG im "
                 "Servicegerät können bei E-Verdichtern schaden – das Gerät muss dafür geeignet sein.",
      "src": "TB Betriebsstoffe (Kompressoröle), FW"},
-    {"cat": "Klima", "level": 2, "typ": "zahl", "pkt": 2, "situation": "klima-bmw", "nr": 15,
+    {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 2, "situation": "klima-bmw", "nr": 15,
      "q": "Laut Typschild beträgt die Füllmenge 590 g R1234yf. Das Servicegerät hat 340 g abgesaugt. Wie viel Prozent der Füllmenge haben gefehlt?",
-     "loesung": 42.4, "einheit": "%",
+     "opts": ["57,6 %", "42,4 %", "73,5 %", "4,2 %"], "correct": 1,
      "explain": "Fehlmenge = 590 g − 340 g = 250 g. Anteil = 250 g ÷ 590 g × 100 % ≈ 42,4 %.",
      "src": "FW"},
-    {"cat": "Klima", "level": 2, "typ": "offen", "pkt": 3, "situation": "klima-bmw", "nr": 16,
-     "q": "Der Kunde klagt auch über muffigen Geruch. Nennen Sie die Ursache und zwei Maßnahmen zur Abhilfe.",
-     "punkte": ["Ursache: Bakterien und Pilze am feuchten Verdampfer",
-                "Verdampfer reinigen bzw. desinfizieren",
-                "Innenraumfilter erneuern und Kondenswasserablauf auf Durchgang prüfen"],
-     "explain": "Am Verdampfer schlägt sich Feuchtigkeit nieder – im Dunkeln wachsen dort Keime. Ein verstopfter Ablauf "
+    {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 3, "situation": "klima-bmw", "nr": 16,
+     "q": "Der Kunde klagt auch über muffigen Geruch. Welche Antwort nennt die Ursache und zwei geeignete Maßnahmen zur Abhilfe?",
+     "opts": ["Ursache: Kältemittel tritt am Verdampfer aus; Kältemittel absaugen und neu befüllen, Innenraumfilter erneuern",
+              "Ursache: verbranntes Kältemittelöl im Verdichter; Kältemittelöl wechseln und den Verdichter spülen",
+              "Ursache: Bakterien und Pilze am feuchten Verdampfer; Verdampfer reinigen bzw. desinfizieren, Innenraumfilter erneuern und Ablauf prüfen",
+              "Ursache: Bakterien und Pilze am feuchten Verdampfer; Kondenswasserablauf verschließen und Duftstoff in die Düsen sprühen"],
+     "correct": 2,
+     "explain": "Ursache sind Bakterien und Pilze am feuchten Verdampfer. Abhilfe: Verdampfer reinigen bzw. desinfizieren, "
+                "Innenraumfilter erneuern und Kondenswasserablauf auf Durchgang prüfen. Am Verdampfer schlägt sich Feuchtigkeit nieder – im Dunkeln wachsen dort Keime. Ein verstopfter Ablauf "
                 "lässt Wasser im Gehäuse stehen. Tipp für den Kunden: vor dem Abstellen kurz ohne Klima weiterlüften.",
      "src": "Recherche 3.3, FW"},
-    {"cat": "Klima", "level": 1, "typ": "offen", "pkt": 4, "situation": "klima-bmw", "nr": 17,
-     "q": "Nennen Sie vier Sicherheitsregeln beim Arbeiten am Kältekreis.",
-     "punkte": ["Schutzbrille tragen (flüssiges Kältemittel verletzt die Augen)",
-                "Schutzhandschuhe tragen – austretendes Kältemittel verdampft und verursacht Erfrierungen",
-                "Nicht in der Arbeitsgrube arbeiten – Kältemittel ist schwerer als Luft und verdrängt den Sauerstoff",
-                "Keine offene Flamme, nicht rauchen (R1234yf brennbar, giftige Zersetzungsprodukte)",
-                "Arbeitsplatz gut belüften"],
-     "explain": "Beim Verdampfen entzieht das Kältemittel der Umgebung sehr viel Wärme – auf der Haut gibt es Erfrierungen. "
+    {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 4, "situation": "klima-bmw", "nr": 17,
+     "q": "Welche Antwort nennt vier richtige Sicherheitsregeln beim Arbeiten am Kältekreis?",
+     "opts": ["Schutzbrille tragen; Schutzhandschuhe gegen Erfrierungen tragen; nicht in der Arbeitsgrube arbeiten; keine offene Flamme, nicht rauchen",
+              "Schutzbrille tragen; Schutzhandschuhe tragen; in der Arbeitsgrube arbeiten, weil Kältemittel nach oben steigt; keine offene Flamme",
+              "Schutzbrille tragen; nicht in der Arbeitsgrube arbeiten; keine offene Flamme; Restkältemittel vor dem Öffnen in die Hallenluft ablassen",
+              "Schutzbrille tragen; Schutzhandschuhe tragen; nicht in der Arbeitsgrube arbeiten; Tore schließen, damit kein Kältemittel ins Freie gelangt"],
+     "correct": 0,
+     "explain": "Regeln: Schutzbrille (flüssiges Kältemittel verletzt die Augen), Schutzhandschuhe (Erfrierungen), nicht in "
+                "der Arbeitsgrube arbeiten (Kältemittel schwerer als Luft, verdrängt den Sauerstoff), keine offene Flamme und "
+                "nicht rauchen (R1234yf brennbar, giftige Zersetzungsprodukte), Arbeitsplatz gut belüften. Beim Verdampfen entzieht das Kältemittel der Umgebung sehr viel Wärme – auf der Haut gibt es Erfrierungen. "
                 "In der Grube kann man ersticken, ohne es zu merken.",
      "src": "Recherche 3.3, FW"},
-    {"cat": "Klima", "level": 2, "typ": "offen", "pkt": 4, "situation": "klima-bmw", "nr": 18,
-     "q": "Nennen Sie vier Abschlussarbeiten, bevor Sie das Fahrzeug an den Kunden übergeben.",
-     "punkte": ["Dichtheit der neuen Verbindungen prüfen (z. B. elektronischer Lecksucher)",
-                "Leistungstest: Ausströmtemperatur und Drücke kontrollieren",
-                "Fehlerspeicher auslesen und löschen",
-                "Kältemittelart und Füllmenge dokumentieren (abgesaugt / eingefüllt)",
-                "Serviceaufkleber bzw. Hinweis im Motorraum aktualisieren"],
-     "explain": "Die Dokumentation von Kältemittel und Menge ist vorgeschrieben. Der Leistungstest beweist, dass die "
+    {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 4, "situation": "klima-bmw", "nr": 18,
+     "q": "Welche Antwort nennt vier richtige Abschlussarbeiten, bevor Sie das Fahrzeug an den Kunden übergeben?",
+     "opts": ["Dichtheit der neuen Verbindungen prüfen; Leistungstest; Fehlerspeicher löschen; als Reserve 10 % mehr Kältemittel als laut Typschild einfüllen",
+              "Dichtheit der neuen Verbindungen prüfen; Fehlerspeicher löschen; Füllmenge dokumentieren; Leistungstest entfällt, da nach Gewicht befüllt wurde",
+              "Leistungstest; Fehlerspeicher auslesen und löschen; Füllmenge dokumentieren; zur Dichtheitsprüfung etwas Kältemittel an den Verbindungen ablassen",
+              "Dichtheit der neuen Verbindungen prüfen; Leistungstest (Ausströmtemperatur, Drücke); Fehlerspeicher auslesen und löschen; Kältemittelart und Füllmenge dokumentieren"],
+     "correct": 3,
+     "explain": "Abschlussarbeiten: Dichtheit der neuen Verbindungen prüfen (z. B. elektronischer Lecksucher), Leistungstest "
+                "(Ausströmtemperatur und Drücke), Fehlerspeicher auslesen und löschen, Kältemittelart und Füllmenge "
+                "dokumentieren (abgesaugt / eingefüllt), Serviceaufkleber bzw. Hinweis im Motorraum aktualisieren. Die Dokumentation von Kältemittel und Menge ist vorgeschrieben. Der Leistungstest beweist, dass die "
                 "Beanstandung „bläst lauwarm“ behoben ist.",
      "src": "Recherche 3.3, FW"},
 
     # ------------------------------------------------------------------
     # Einzelfragen (ohne Situation)
     # ------------------------------------------------------------------
-    {"cat": "Klima", "level": 2, "typ": "offen", "pkt": 3,
-     "q": "Ein Kunde bittet Sie, die Klimaanlage vor der Reparatur einfach „abzulassen“. Erklären Sie, wie Sie stattdessen vorgehen müssen.",
-     "punkte": ["Kältemittel darf nicht in die Atmosphäre abgelassen werden (verboten)",
-                "Kältemittel mit dem Servicegerät absaugen und recyceln bzw. als Abfall entsorgen",
-                "Art und Menge des Kältemittels dokumentieren",
-                "Arbeiten nur durch Personen mit Sachkundenachweis"],
-     "explain": "Fluorierte Kältemittel schädigen das Klima. Deshalb gilt ein Ablassverbot, und jede Menge, die ab- oder "
+    {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Ein Kunde bittet Sie, die Klimaanlage vor der Reparatur einfach „abzulassen“. Wie müssen Sie stattdessen vorgehen?",
+     "opts": ["Ablassen ist bei R1234yf erlaubt, weil das Treibhauspotenzial gering ist; nur Art und Menge des Kältemittels dokumentieren",
+              "Nicht ablassen (verboten); mit dem Servicegerät absaugen und recyceln bzw. entsorgen; Art und Menge dokumentieren; nur mit Sachkundenachweis",
+              "Kältemittel im Freien langsam über den Niederdruckanschluss ablassen; Art und Menge dokumentieren; nur mit Sachkundenachweis",
+              "Mit dem Servicegerät absaugen und danach über die Hallenabsaugung ins Freie leiten; Art und Menge dokumentieren"],
+     "correct": 1,
+     "explain": "Kältemittel darf nicht in die Atmosphäre abgelassen werden. Es wird mit dem Servicegerät abgesaugt und recycelt "
+                "bzw. als Abfall entsorgt, Art und Menge werden dokumentiert, und arbeiten dürfen nur Personen mit "
+                "Sachkundenachweis. Fluorierte Kältemittel schädigen das Klima. Deshalb gilt ein Ablassverbot, und jede Menge, die ab- oder "
                 "eingefüllt wird, wird aufgeschrieben.",
      "src": "Recherche 3.3, FW"},
     {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 2,
@@ -229,30 +259,42 @@ QUESTIONS = [
                 "Verdichter nur Dampf. Der Sammler (Trockner) einer Anlage mit Expansionsventil sitzt dagegen auf der "
                 "Hochdruckseite.",
      "src": "Recherche 3.3, FW"},
-    {"cat": "Klima", "level": 3, "typ": "offen", "pkt": 4,
-     "q": "Beschreiben Sie, wie ein extern geregelter Verdichter seine Förderleistung anpasst.",
-     "punkte": ["Die Fördermenge wird über den Hub (Schrägstellung der Taumelscheibe) verändert",
-                "Ein Regelventil am Verdichter verstellt den Hub",
-                "Das Steuergerät steuert das Regelventil mit einem PWM-Signal an",
-                "Die Leistung passt sich stufenlos dem Kältebedarf an; oft ohne Magnetkupplung, bei „Klima aus“ minimaler Hub"],
-     "explain": "Statt ständig ein- und auszuschalten wie bei einer Magnetkupplung, läuft der Verdichter mit und fördert nur so "
+    {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Wie passt ein extern geregelter Verdichter seine Förderleistung an? Welche Beschreibung ist richtig?",
+     "opts": ["Eine Magnetkupplung schaltet den Verdichter je nach Kältebedarf ein und aus; der Hub der Kolben bleibt dabei immer gleich",
+              "Ein Regelventil verstellt den Hub; es wird rein mechanisch vom Saugdruck gesteuert, ohne Signal vom Steuergerät",
+              "Ein Regelventil verstellt den Hub (Schrägstellung der Taumelscheibe); das Steuergerät steuert es per PWM an; die Leistung passt sich stufenlos an",
+              "Das Steuergerät verändert die Drehzahl des Verdichters über eine verstellbare Riemenscheibe; der Hub bleibt gleich"],
+     "correct": 2,
+     "explain": "Die Fördermenge wird über den Hub (Schrägstellung der Taumelscheibe) verändert. Ein Regelventil am Verdichter "
+                "verstellt den Hub, das Steuergerät steuert es mit einem PWM-Signal an. Die Leistung passt sich stufenlos dem "
+                "Kältebedarf an; oft ohne Magnetkupplung, bei „Klima aus“ minimaler Hub. (Rein vom Saugdruck geregelt = intern "
+                "geregelter Verdichter.) Statt ständig ein- und auszuschalten wie bei einer Magnetkupplung, läuft der Verdichter mit und fördert nur so "
                 "viel wie nötig. Das ist leiser, gleichmäßiger und spart Kraftstoff.",
      "src": "FW"},
-    {"cat": "Klima", "level": 2, "typ": "offen", "pkt": 3,
-     "q": "Erklären Sie, wie die Motorsteuerung auf den Betrieb der Klimaanlage reagiert.",
-     "punkte": ["Das Klimasteuergerät meldet die Verdichterlast (z. B. über CAN) an das Motorsteuergerät",
-                "Im Leerlauf erhöht das Motorsteuergerät vorsorglich das Drehmoment bzw. die Leerlaufdrehzahl, damit der Motor nicht abstirbt",
-                "Bei Volllast/Beschleunigen oder zu hoher Kühlmitteltemperatur wird der Verdichter abgeregelt oder abgeschaltet"],
-     "explain": "Der Verdichter braucht spürbar Motorleistung. Deshalb tauschen Klima- und Motorsteuergerät Informationen aus "
+    {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Wie reagiert die Motorsteuerung auf den Betrieb der Klimaanlage? Welche Beschreibung ist richtig?",
+     "opts": ["Verdichterlast wird (z. B. über CAN) gemeldet; im Leerlauf wird Drehmoment bzw. Leerlaufdrehzahl angehoben; bei Volllast oder zu heißem Motor wird der Verdichter abgeregelt",
+              "Verdichterlast wird (z. B. über CAN) gemeldet; im Leerlauf wird die Drehzahl abgesenkt, um Kraftstoff zu sparen; bei Volllast läuft der Verdichter mit voller Leistung",
+              "Das Motorsteuergerät erhält keine Information; der Leerlaufregler reagiert erst, wenn die Drehzahl gefallen ist; bei Volllast bleibt der Verdichter unverändert",
+              "Verdichterlast wird (z. B. über CAN) gemeldet; im Leerlauf wird das Drehmoment angehoben; bei zu hoher Kühlmitteltemperatur fördert der Verdichter mehr, um mitzukühlen"],
+     "correct": 0,
+     "explain": "Das Klimasteuergerät meldet die Verdichterlast (z. B. über CAN) an das Motorsteuergerät. Im Leerlauf erhöht das "
+                "Motorsteuergerät vorsorglich Drehmoment bzw. Leerlaufdrehzahl, damit der Motor nicht abstirbt. Bei Volllast/"
+                "Beschleunigen oder zu hoher Kühlmitteltemperatur wird der Verdichter abgeregelt oder abgeschaltet. Der Verdichter braucht spürbar Motorleistung. Deshalb tauschen Klima- und Motorsteuergerät Informationen aus "
                 "und stimmen Last und Kühlbedarf ab.",
      "src": "Recherche 3.3, FW"},
-    {"cat": "Klima", "level": 3, "typ": "offen", "pkt": 4,
-     "q": "Der Druck-/Temperatursensor auf der Hochdruckseite ist ausgefallen. Beschreiben Sie die Aufgabe des Sensors, die Folgen des Ausfalls und wie Sie ihn prüfen.",
-     "punkte": ["Aufgabe: Hochdruck überwachen – Schutz vor zu hohem und zu niedrigem Druck",
-                "Das Signal wird zur Steuerung von Verdichter und Kondensatorlüfter genutzt",
-                "Bei Ausfall schaltet das Steuergerät den Verdichter ab bzw. regelt ihn herunter → keine Kühlung, Fehlerspeichereintrag",
-                "Prüfen: Fehlerspeicher und Messwert mit Manometeranzeige vergleichen, Versorgung, Signal und Masse nach Schaltplan messen"],
-     "explain": "Ohne gültiges Drucksignal kann das Steuergerät nicht erkennen, ob der Druck gefährlich hoch ist – es schützt "
+    {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Der Druck-/Temperatursensor auf der Hochdruckseite ist ausgefallen. Welche Antwort beschreibt Aufgabe, Folgen des Ausfalls und Prüfung richtig?",
+     "opts": ["Misst die Ausströmtemperatur an der Mitteldüse; bei Ausfall läuft der Verdichter mit voller Leistung weiter; prüfen: Sensor ausbauen und durchblasen",
+              "Überwacht den Hochdruck; bei Ausfall läuft der Verdichter ungeregelt mit voller Leistung weiter; prüfen: Messwert mit Manometer vergleichen, Versorgung, Signal und Masse messen",
+              "Überwacht nur die Füllmenge beim Befüllen; bei Ausfall Verdichter ab, Fehlerspeichereintrag; prüfen: Messwert mit Manometer vergleichen, Versorgung, Signal und Masse messen",
+              "Überwacht den Hochdruck und steuert Verdichter und Lüfter mit; bei Ausfall Verdichter ab bzw. heruntergeregelt, Fehlerspeichereintrag; prüfen: Messwert mit Manometer vergleichen, Versorgung, Signal und Masse messen"],
+     "correct": 3,
+     "explain": "Aufgabe: Hochdruck überwachen (Schutz vor zu hohem und zu niedrigem Druck); das Signal steuert Verdichter und "
+                "Kondensatorlüfter. Bei Ausfall schaltet das Steuergerät den Verdichter ab bzw. regelt ihn herunter → keine "
+                "Kühlung, Fehlerspeichereintrag. Prüfen: Fehlerspeicher, Messwert mit Manometeranzeige vergleichen, Versorgung, "
+                "Signal und Masse nach Schaltplan messen. Ohne gültiges Drucksignal kann das Steuergerät nicht erkennen, ob der Druck gefährlich hoch ist – es schützt "
                 "die Anlage, indem es den Verdichter stilllegt.",
      "src": "Recherche 3.3, FW"},
     {"cat": "Klima", "level": 3, "typ": "zuordnung", "pkt": 4,
@@ -264,9 +306,9 @@ QUESTIONS = [
      "explain": "Überhitzung sorgt dafür, dass nur Dampf zum Verdichter kommt; Unterkühlung sorgt dafür, dass am "
                 "Expansionsventil nur Flüssigkeit ankommt. Die Druck-Temperatur-Zuordnung steht im Tabellenbuch.",
      "src": "FW"},
-    {"cat": "Klima", "level": 1, "typ": "zahl", "pkt": 2,
+    {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 2,
      "q": "Das Hochdruckmanometer zeigt einen Überdruck von 14 bar. Der Luftdruck beträgt 1 bar. Wie groß ist der Absolutdruck?",
-     "loesung": 15, "einheit": "bar",
+     "opts": ["13 bar", "14 bar", "1,5 bar", "15 bar"], "correct": 3,
      "explain": "Manometer zeigen den Überdruck gegenüber der Umgebung. Absolutdruck = Überdruck + Luftdruck = 14 bar + 1 bar = 15 bar.",
      "src": "FW"},
     {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 2,
@@ -305,37 +347,52 @@ QUESTIONS = [
      "explain": "Der Kreislauf ist bei beiden Kältemitteln gleich aufgebaut. Die verschiedenen Anschlüsse verhindern, dass "
                 "falsches Kältemittel eingefüllt wird.",
      "src": "Recherche 3.6"},
-    {"cat": "Klima", "level": 1, "typ": "offen", "pkt": 3,
-     "q": "Nennen Sie die Aufgabe des Innenraumfilters und zwei Folgen, wenn er zugesetzt ist.",
-     "punkte": ["Filtert Staub und Pollen aus der Frischluft (mit Aktivkohle auch Gerüche und Schadgase)",
-                "Weniger Luftdurchsatz → geringere Kühl- und Heizleistung",
-                "Scheiben beschlagen leichter, muffiger Geruch möglich"],
-     "explain": "Der Filter wird nach Wartungsplan gewechselt. Auf die Einbaurichtung achten (Pfeil zur Luftrichtung).",
+    {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 3,
+     "q": "Welche Antwort nennt die Aufgabe des Innenraumfilters und zwei Folgen, wenn er zugesetzt ist?",
+     "opts": ["Bindet Feuchtigkeit im Kältemittel; zugesetzt: Säurebildung im Kreislauf und Vereisung am Expansionsventil",
+              "Filtert Staub und Pollen aus der Frischluft; zugesetzt: weniger Luftdurchsatz mit geringerer Kühl- und Heizleistung, Scheiben beschlagen leichter",
+              "Filtert Staub und Pollen aus der Frischluft; zugesetzt: der Hochdruck steigt stark an und der Kondensatorlüfter fällt aus",
+              "Filtert die Ansaugluft des Motors; zugesetzt: Leistungsverlust des Motors und erhöhter Kraftstoffverbrauch"],
+     "correct": 1,
+     "explain": "Der Innenraumfilter filtert Staub und Pollen aus der Frischluft (mit Aktivkohle auch Gerüche und Schadgase). "
+                "Ist er zugesetzt, sinkt der Luftdurchsatz → geringere Kühl- und Heizleistung; Scheiben beschlagen leichter, "
+                "muffiger Geruch ist möglich. Der Filter wird nach Wartungsplan gewechselt. Auf die Einbaurichtung achten (Pfeil zur Luftrichtung).",
      "src": "FW"},
-    {"cat": "Klima", "level": 3, "typ": "offen", "pkt": 4,
-     "q": "Beschreiben Sie Besonderheiten eines elektrischen Klimakompressors in Hybrid- und Elektrofahrzeugen.",
-     "punkte": ["Wird von einem Elektromotor aus dem Hochvoltnetz angetrieben, unabhängig vom Verbrennungsmotor",
-                "Ermöglicht Standklimatisierung und Kühlung der HV-Batterie",
-                "Arbeiten nur mit HV-Qualifikation, System vorher spannungsfrei schalten",
-                "Nur nicht leitendes POE-Öl verwenden, Servicegerät muss für E-Verdichter geeignet sein"],
-     "explain": "Der Elektromotor sitzt im Kältemittelstrom. Leitendes Öl würde die Isolation verschlechtern – deshalb POE "
+    {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Welche Beschreibung der Besonderheiten eines elektrischen Klimakompressors in Hybrid- und Elektrofahrzeugen ist richtig?",
+     "opts": ["Antrieb über Riemen und Magnetkupplung vom Verbrennungsmotor; keine Standklimatisierung möglich; Klimasachkunde genügt; PAG-Öl wie beim Riemenverdichter",
+              "Antrieb aus dem HV-Netz; Standklimatisierung und Kühlung der HV-Batterie möglich; HV-Qualifikation, spannungsfrei schalten; PAG-Öl YF verwenden",
+              "Antrieb aus dem HV-Netz, unabhängig vom Verbrenner; Standklimatisierung und Kühlung der HV-Batterie möglich; HV-Qualifikation, spannungsfrei schalten; nur POE-Öl",
+              "Antrieb aus dem HV-Netz; Standklimatisierung und Kühlung der HV-Batterie möglich; Arbeiten unter Spannung erlaubt, da der Kreislauf getrennt ist; nur POE-Öl"],
+     "correct": 2,
+     "explain": "Der elektrische Kompressor wird von einem Elektromotor aus dem Hochvoltnetz angetrieben, unabhängig vom "
+                "Verbrennungsmotor – das ermöglicht Standklimatisierung und Kühlung der HV-Batterie. Arbeiten nur mit "
+                "HV-Qualifikation, System vorher spannungsfrei schalten. Nur nicht leitendes POE-Öl verwenden, das Servicegerät "
+                "muss für E-Verdichter geeignet sein. Der Elektromotor sitzt im Kältemittelstrom. Leitendes Öl würde die Isolation verschlechtern – deshalb POE "
                 "und keine PAG-Reste.",
      "src": "Recherche 3.3, TB Betriebsstoffe, FW"},
-    {"cat": "Klima", "level": 2, "typ": "offen", "pkt": 3,
-     "q": "Erklären Sie, wie der Kondensatorlüfter angesteuert wird und was bei einem Ausfall passiert.",
-     "punkte": ["Das Steuergerät steuert den Lüfter abhängig vom Hochdruck (Drucksensor) und der Kühlmitteltemperatur an",
-                "Die Drehzahl wird meist stufenlos (PWM, Lüftersteuergerät) angepasst",
-                "Bei Ausfall steigt der Hochdruck stark, vor allem im Stand → schlechte Kühlung, Verdichter wird abgeschaltet"],
-     "explain": "Im Stand fehlt der Fahrtwind, dann muss der Lüfter die Wärme am Kondensator abführen. Fällt er aus, schützt "
+    {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Wie wird der Kondensatorlüfter angesteuert und was passiert bei einem Ausfall? Welche Beschreibung ist richtig?",
+     "opts": ["Abhängig von Hochdruck (Drucksensor) und Kühlmitteltemperatur, meist stufenlos per PWM; bei Ausfall steigt der Hochdruck stark, vor allem im Stand, der Verdichter wird abgeschaltet",
+              "Nur abhängig von der Fahrgeschwindigkeit, ohne Drucksignal; bei Ausfall sinkt der Hochdruck, und die Kühlleistung wird sogar besser",
+              "Abhängig von Hochdruck und Kühlmitteltemperatur per PWM; bei Ausfall fällt die Kühlung vor allem bei schneller Autobahnfahrt aus, im Stand ist sie unverändert",
+              "Abhängig vom Niederdruck am Verdampfer; bei Ausfall sinkt der Niederdruck stark und der Verdampfer vereist"],
+     "correct": 0,
+     "explain": "Das Steuergerät steuert den Lüfter abhängig vom Hochdruck (Drucksensor) und der Kühlmitteltemperatur an, meist "
+                "stufenlos (PWM, Lüftersteuergerät). Bei Ausfall steigt der Hochdruck stark, vor allem im Stand → schlechte "
+                "Kühlung, der Verdichter wird abgeschaltet. Im Stand fehlt der Fahrtwind, dann muss der Lüfter die Wärme am Kondensator abführen. Fällt er aus, schützt "
                 "das Steuergerät die Anlage vor Überdruck.",
      "src": "Recherche 3.3, FW"},
-    {"cat": "Klima", "level": 3, "typ": "offen", "pkt": 4,
-     "q": "Nach längerer Fahrt lässt die Kühlleistung nach und aus den Düsen kommt kaum noch Luft. Nach einer Pause geht es wieder. Beurteilen Sie das Fehlerbild und nennen Sie mögliche Ursachen.",
-     "punkte": ["Der Verdampfer vereist: Kondenswasser gefriert an den Lamellen, Luft kommt nicht mehr durch",
-                "Ursache: Verdampfertemperatursensor bzw. Regelung defekt, Verdichter regelt nicht ab",
-                "Ursache: zu wenig Luftdurchsatz (Innenraumfilter zugesetzt, Gebläse schwach)",
-                "Ursache: Feuchtigkeit im Kreislauf vereist am Expansionsventil"],
-     "explain": "Die Anlage soll den Verdampfer knapp über 0 °C halten. Taut das Eis in der Pause, funktioniert alles wieder – "
+    {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Nach längerer Fahrt lässt die Kühlleistung nach und aus den Düsen kommt kaum noch Luft. Nach einer Pause geht es wieder. Wie ist das Fehlerbild zu beurteilen und welche Ursachen kommen in Frage?",
+     "opts": ["Hochdruckabschaltung durch Überhitzung des Kondensators; Ursachen: Kondensatorlüfter defekt, Kondensator verschmutzt",
+              "Unterfüllung durch ein Leck; Ursachen: undichter Kondensator nach Steinschlag, poröse Kältemittelschläuche",
+              "Verdampfer vereist; Ursachen: Überfüllung, zu großer Luftdurchsatz durch neuen Innenraumfilter, Verdichter regelt zu stark ab",
+              "Verdampfer vereist; Ursachen: Verdampfertemperatursensor bzw. Regelung defekt, zu wenig Luftdurchsatz, Feuchtigkeit im Kreislauf"],
+     "correct": 3,
+     "explain": "Der Verdampfer vereist: Kondenswasser gefriert an den Lamellen, Luft kommt nicht mehr durch. Ursachen: "
+                "Verdampfertemperatursensor bzw. Regelung defekt (Verdichter regelt nicht ab), zu wenig Luftdurchsatz "
+                "(Innenraumfilter zugesetzt, Gebläse schwach), Feuchtigkeit im Kreislauf vereist am Expansionsventil. Die Anlage soll den Verdampfer knapp über 0 °C halten. Taut das Eis in der Pause, funktioniert alles wieder – "
                 "ein typisches Zeichen für Vereisung.",
      "src": "Recherche 3.3, FW"},
     {"cat": "Klima", "level": 2, "typ": "reihenfolge", "pkt": 4,
@@ -360,14 +417,14 @@ QUESTIONS = [
      "explain": "Wärme wird im Verdampfer aus dem Innenraum aufgenommen und im Kondensator nach außen abgegeben. Der "
                 "Verdichter ist die Pumpe, das Expansionsventil die Trennstelle zwischen Hoch- und Niederdruck.",
      "src": "Recherche 3.3, FW"},
-    {"cat": "Klima", "level": 2, "typ": "zahl", "pkt": 2, "tb": True,
+    {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 2, "tb": True,
      "q": "Ein Kältemittelöl trägt die Bezeichnung „PAG-Öl ISO 46“. Welche kinematische Viskosität in mm²/s bei 40 °C hat es?",
-     "loesung": 46, "einheit": "mm²/s",
+     "opts": ["4,6 mm²/s", "460 mm²/s", "46 mm²/s", "0,46 mm²/s"], "correct": 2,
      "explain": "Die ISO-Viskositätsklasse gibt die kinematische Viskosität bei 40 °C an: ISO 46 = 46 mm²/s.",
      "src": "TB Betriebsstoffe (Kompressoröle)"},
-    {"cat": "Klima", "level": 3, "typ": "zahl", "pkt": 3,
+    {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 3,
      "q": "Beim Evakuieren zeigt das Servicegerät einen Überdruck von −0,95 bar an (Luftdruck 1,0 bar). Wie groß ist der Absolutdruck im Kreislauf in mbar?",
-     "loesung": 50, "einheit": "mbar",
+     "opts": ["50 mbar", "950 mbar", "1.950 mbar", "5 mbar"], "correct": 0,
      "explain": "Absolutdruck = Luftdruck + Überdruck = 1,0 bar + (−0,95 bar) = 0,05 bar. 1 bar = 1000 mbar → 0,05 bar = 50 mbar.",
      "src": "FW"},
     {"cat": "Klima", "level": 2, "typ": "zuordnung", "pkt": 4,
@@ -380,20 +437,28 @@ QUESTIONS = [
                 "eingesetzt. R1234yf hat ein sehr geringes Treibhauspotenzial, ist dafür schwach brennbar. PAG ohne YF "
                 "nur bei R134a.",
      "src": "Recherche 3.3/3.6, TB Betriebsstoffe, FW"},
-    {"cat": "Klima", "level": 1, "typ": "offen", "pkt": 3,
-     "q": "PAG-Öl ist stark hygroskopisch. Erklären Sie den Begriff und nennen Sie zwei Regeln für den Umgang mit dem Öl.",
-     "punkte": ["Hygroskopisch: nimmt Feuchtigkeit aus der Umgebungsluft auf",
-                "Gebinde nach der Entnahme sofort wieder verschließen",
-                "Nur Öl nach Herstellervorgabe (Typ, Viskosität, Menge) verwenden, nicht mit anderen Ölen mischen"],
-     "explain": "Feuchtes Öl bringt Wasser in den Kreislauf – mit den Folgen Säurebildung und Vereisung. Geschlossene Gebinde "
+    {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 3,
+     "q": "PAG-Öl ist stark hygroskopisch. Welche Antwort erklärt den Begriff richtig und nennt zwei richtige Regeln für den Umgang mit dem Öl?",
+     "opts": ["Weist Feuchtigkeit ab; Gebinde kann offen stehen bleiben; Öle verschiedener Hersteller und Typen dürfen gemischt werden",
+              "Nimmt Feuchtigkeit aus der Umgebungsluft auf; Gebinde sofort wieder verschließen; nur Öl nach Herstellervorgabe, nicht mit anderen Ölen mischen",
+              "Nimmt Feuchtigkeit aus der Umgebungsluft auf; Öl vor dem Einfüllen offen stehen lassen, damit es entgast; nur Öl nach Herstellervorgabe",
+              "Löst sich vollständig im Kältemittel; Gebinde sofort wieder verschließen; bei Bedarf PAO-Öl nachfüllen, wenn PAG vorgeschrieben ist"],
+     "correct": 1,
+     "explain": "Hygroskopisch heißt: nimmt Feuchtigkeit aus der Umgebungsluft auf. Deshalb Gebinde nach der Entnahme sofort "
+                "wieder verschließen und nur Öl nach Herstellervorgabe (Typ, Viskosität, Menge) verwenden, nicht mit anderen "
+                "Ölen mischen. Feuchtes Öl bringt Wasser in den Kreislauf – mit den Folgen Säurebildung und Vereisung. Geschlossene Gebinde "
                 "sind begrenzt lagerfähig.",
      "src": "TB Betriebsstoffe (Kompressoröle), FK Werkstatthinweise"},
-    {"cat": "Klima", "level": 2, "typ": "offen", "pkt": 3,
-     "q": "Begründen Sie, warum eine Klimaanlage nach Gewicht und nicht nach Druckanzeige befüllt wird.",
-     "punkte": ["Die Füllmenge ist vom Hersteller in Gramm vorgegeben (Typschild im Motorraum)",
-                "Der Druck hängt stark von der Temperatur ab und sagt wenig über die Menge aus",
-                "Unter- oder Überfüllung mindert die Kühlleistung bzw. kann Verdichter und Anlage schädigen"],
-     "explain": "Das Servicegerät wiegt das Kältemittel beim Befüllen ab. Druckwerte dienen nur zur Diagnose bei laufender "
+    {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Warum wird eine Klimaanlage nach Gewicht und nicht nach Druckanzeige befüllt? Welche Begründung ist richtig?",
+     "opts": ["Die Manometer des Servicegeräts sind nur für R134a geeicht; bei R1234yf ist eine Druckmessung nicht zulässig",
+              "Die Füllmenge ist in Gramm vorgegeben; der Druck steigt genau proportional zur Füllmenge und dient nur zur Kontrolle; leichte Überfüllung verbessert die Kühlung",
+              "Die Füllmenge ist in Gramm vorgegeben (Typschild); der Druck hängt stark von der Temperatur ab; Unter- oder Überfüllung mindert die Kühlleistung oder schädigt die Anlage",
+              "Die Füllmenge ist in Gramm vorgegeben; nach Gewicht geht das Befüllen schneller; die genaue Menge spielt für die Kühlleistung kaum eine Rolle"],
+     "correct": 2,
+     "explain": "Die Füllmenge ist vom Hersteller in Gramm vorgegeben (Typschild im Motorraum). Der Druck hängt stark von der "
+                "Temperatur ab und sagt wenig über die Menge aus. Unter- oder Überfüllung mindert die Kühlleistung bzw. kann "
+                "Verdichter und Anlage schädigen. Das Servicegerät wiegt das Kältemittel beim Befüllen ab. Druckwerte dienen nur zur Diagnose bei laufender "
                 "Anlage.",
      "src": "Recherche 3.3, FW"},
     {"cat": "Klima", "level": 2, "typ": "zuordnung", "pkt": 4,

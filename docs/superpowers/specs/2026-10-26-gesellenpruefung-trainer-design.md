@@ -187,6 +187,14 @@ Der User hat eine alte Prüfung (Diagnosetechnik Diesel CR, VW Passat 2.0 TDI) f
 6. **Inhalt Phase 1:** pro Prüfungsblock **1 Aufgabensatz (15–21 Aufgaben)** + ca. 25 Einzelfragen; Phase 2: zweiter Aufgabensatz pro Block. Einheiten wie im Original mischen (z. B. Raildruck in MPa und bar).
 7. In der Simulation wird pro Block „erreicht / max“ in Punkten angezeigt, die Note kommt aus den Prozent.
 
+## 16. Änderung 27.10.: nur noch Antippen (freigegeben)
+
+Der User möchte in der App **nichts mehr eintippen**. Deshalb gilt ab jetzt (ersetzt die Typ-Regeln aus 15.2, 15.4, 15.5):
+- In diesem Trainer sind nur `mc`, `zuordnung` und `reihenfolge` erlaubt (`TRAINER.erlaubteTypen`, ein Test prüft das). Alle bisherigen `offen`- und `zahl`-Aufgaben wurden zu `mc` umgebaut (Regeln: `docs/mc-umbau-regeln.md`). Die Typen `offen` und `zahl` bleiben im Kern für andere Trainer.
+- Rechen-Generatoren liefern Multiple Choice mit 4 Antworten; die falschen Antworten sind Ergebnisse typischer Rechenfehler.
+- Gemischter Simulationsblock: 15 `mc`, 5 `zuordnung`, 1 `reihenfolge`. Die Selbstbewertung entfällt mangels offener Aufgaben.
+- Freunde des Users nutzen dieselbe Seite; jeder hat seinen eigenen Fortschritt auf dem eigenen Gerät (keine gemeinsame Rangliste).
+
 ## 14. Nicht Teil dieses Specs
 
 Praxis-Module (eigener Spec im Dezember), KI-Bewertung offener Antworten, Login/Server, Migration des Telekom-Trainers auf den neuen Kern.

@@ -32,13 +32,17 @@ QUESTIONS = [
                 "die Seitenaufprallsensoren in Tür bzw. B-Säule – dort kommt der Aufprall zuerst an. Die Wickelfeder liegt "
                 "direkt hinter dem Lenkrad und verbindet den Fahrerairbag elektrisch mit dem Bordnetz.",
      "src": "FW, Format Prüfung Schule"},
-    {"cat": "Airbag", "level": 1, "typ": "offen", "pkt": 3, "situation": _SATZ, "nr": 2,
-     "q": "Beschreiben Sie, wie sich die Airbag-Kontrollleuchte bei einem fehlerfreien System nach dem Einschalten der Zündung "
-          "verhält, und was Dauerleuchten bedeutet.",
-     "punkte": ["Leuchte geht beim Einschalten an (Selbsttest des Systems, Lampentest)",
-                "Sie erlischt nach wenigen Sekunden, wenn kein Fehler erkannt wurde",
-                "Dauerleuchten (oder Blinken) heißt: Fehler erkannt, Schutzwirkung eingeschränkt, Teile ggf. abgeschaltet"],
-     "explain": "Beim Einschalten prüft das Steuergerät Zündkreise, Sensoren und Energiereserve. Bleibt die Leuchte an, "
+    {"cat": "Airbag", "level": 1, "typ": "mc", "pkt": 3, "situation": _SATZ, "nr": 2,
+     "q": "Wie verhält sich die Airbag-Kontrollleuchte bei einem fehlerfreien System nach dem Einschalten der Zündung, "
+          "und was bedeutet Dauerleuchten?",
+     "opts": ["Sie bleibt beim Einschalten dunkel; Dauerleuchten heißt: Beifahrerairbag ist abgeschaltet, sonst alles in Ordnung",
+              "Sie leuchtet beim Einschalten kurz auf (Selbsttest) und erlischt nach wenigen Sekunden; Dauerleuchten heißt: Fehler erkannt, Schutz eingeschränkt",
+              "Sie leuchtet während der ganzen Fahrt als Betriebsanzeige; Erlöschen heißt: Fehler erkannt, Schutz eingeschränkt",
+              "Sie leuchtet kurz auf und erlischt; Dauerleuchten heißt: Wartungsintervall der Airbags fällig, Schutz bleibt voll erhalten"],
+     "correct": 1,
+     "explain": "Die Leuchte geht beim Einschalten an (Selbsttest, Lampentest) und erlischt nach wenigen Sekunden, wenn kein "
+                "Fehler erkannt wurde. Dauerleuchten (oder Blinken) heißt: Fehler erkannt, Teile ggf. abgeschaltet. "
+                "Beim Einschalten prüft das Steuergerät Zündkreise, Sensoren und Energiereserve. Bleibt die Leuchte an, "
                 "ist ein Fehler gespeichert – das Fahrzeug ist nicht mehr voll geschützt und muss diagnostiziert werden.",
      "src": "Netz: Recherche 3.6 (kfz-tech.de), FW"},
     {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 2, "situation": _SATZ, "nr": 3,
@@ -65,12 +69,16 @@ QUESTIONS = [
                 "nach Fahrzeug sehr verschieden – sie steht im Reparaturleitfaden. Die elektrostatische Entladung schützt "
                 "die Zündpille vor einem Funken über den Körper.",
      "src": "Netz: Recherche 3.4/3.6, FW"},
-    {"cat": "Airbag", "level": 2, "typ": "offen", "pkt": 3, "situation": _SATZ, "nr": 5,
-     "q": "Begründen Sie, warum Sie nach dem Abklemmen der Batterie nicht sofort am Airbag-System arbeiten dürfen.",
-     "punkte": ["Das Steuergerät besitzt eine Energiereserve (Kondensator)",
-                "Diese kann die Zündpille auch ohne Batterie noch bestromen – der Airbag könnte auslösen",
-                "Erst nach der vom Hersteller angegebenen Wartezeit ist die Reserve entladen"],
-     "explain": "Die Energiereserve ist gewollt: Reißt bei einem Unfall die Batterieleitung ab, kann das Steuergerät trotzdem "
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 3, "situation": _SATZ, "nr": 5,
+     "q": "Warum dürfen Sie nach dem Abklemmen der Batterie nicht sofort am Airbag-System arbeiten?",
+     "opts": ["Die Zündpille ist durch den Prüfstrom des Steuergeräts noch heiß; erst nach dem Abkühlen kann sie nicht mehr zünden",
+              "Das Steuergerät speichert noch die Crashdaten dauerhaft ab; vorher gehen sie beim Arbeiten verloren",
+              "Die Energiereserve (Kondensator) im Steuergerät kann die Zündpille noch bestromen; erst nach der Wartezeit nach Herstellerangabe ist sie entladen",
+              "Der Fehlerspeicher löscht sich erst nach einer Wartezeit; sonst wird beim Wiederanklemmen ein Fehler eingetragen"],
+     "correct": 2,
+     "explain": "Das Steuergerät besitzt eine Energiereserve (Kondensator), die die Zündpille auch ohne Batterie noch "
+                "bestromen kann – der Airbag könnte auslösen. Erst nach der vom Hersteller angegebenen Wartezeit ist sie "
+                "entladen. Die Energiereserve ist gewollt: Reißt bei einem Unfall die Batterieleitung ab, kann das Steuergerät trotzdem "
                 "noch zünden. Bei Arbeiten in der Werkstatt ist genau das die Gefahr.",
      "src": "Netz: Recherche 3.6 (kfz-tech.de)"},
     {"cat": "Airbag", "level": 1, "typ": "mc", "pkt": 2, "situation": _SATZ, "nr": 6,
@@ -84,37 +92,56 @@ QUESTIONS = [
                 "auslösen. Den Zündkreiswiderstand liest man deshalb über den Tester aus oder misst mit Prüfadapter "
                 "bzw. Ersatzwiderstand.",
      "src": "Netz: Recherche 3.4 (kfz-tech.de)"},
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 4, "situation": _SATZ, "nr": 7,
-     "q": "Nennen Sie vier Schritte bzw. Hilfsmittel, mit denen Sie den Zündkreis des Seitenairbags fachgerecht prüfen.",
-     "punkte": ["Fehlerspeicher und Messwerte (Zündkreiswiderstand) mit dem Diagnosetester auslesen",
-                "Prüfadapter bzw. Ersatzwiderstand anstelle der Airbag-Einheit anschließen",
-                "Steckverbindung unter dem Sitz prüfen: eingerastet, Kontakte, Korrosion, Kurzschlussbrücke",
-                "Leitung nach Herstellervorgabe (Airbag-Einheit und Steuergerät abgesteckt) auf Durchgang und Kurzschluss prüfen"],
-     "explain": "Mit dem Ersatzwiderstand lässt sich eingrenzen: Verschwindet der Fehler, liegt er an der Airbag-Einheit "
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 4, "situation": _SATZ, "nr": 7,
+     "q": "Welche Antwort nennt vier fachgerechte Schritte bzw. Hilfsmittel, um den Zündkreis des Seitenairbags zu prüfen?",
+     "opts": ["Messwerte mit dem Diagnosetester auslesen; Widerstand der Zündpille direkt mit dem Multimeter messen; "
+              "Stecker unter dem Sitz prüfen; Leitung bei abgesteckten Bauteilen auf Durchgang prüfen",
+              "Messwerte mit dem Diagnosetester auslesen; Prüfadapter bzw. Ersatzwiderstand anschließen; "
+              "Stecker unter dem Sitz prüfen; Zündkreis bei eingesteckter Airbag-Einheit mit der Prüflampe prüfen",
+              "Fehlerspeicher löschen und abwarten, ob der Fehler wiederkommt; Prüfadapter anschließen; "
+              "Stecker unter dem Sitz prüfen; Leitung bei angeschlossener Airbag-Einheit auf Durchgang messen",
+              "Messwerte mit dem Diagnosetester auslesen; Prüfadapter bzw. Ersatzwiderstand anschließen; "
+              "Stecker unter dem Sitz prüfen; Leitung bei abgesteckter Airbag-Einheit und Steuergerät auf Durchgang und Kurzschluss prüfen"],
+     "correct": 3,
+     "explain": "Fehlerspeicher und Zündkreiswiderstand liest man mit dem Diagnosetester aus. Am Stecker unter dem Sitz "
+                "prüft man Verrastung, Kontakte, Korrosion und Kurzschlussbrücke. Mit dem Ersatzwiderstand lässt sich eingrenzen: Verschwindet der Fehler, liegt er an der Airbag-Einheit "
                 "oder ihrem Stecker, bleibt er, an Leitung oder Steuergerät. Leitungen nur prüfen, wenn keine Zündpille "
                 "angeschlossen ist.",
      "src": "Netz: Recherche 3.4, FW"},
-    {"cat": "Airbag", "level": 2, "typ": "zahl", "pkt": 3, "situation": _SATZ, "nr": 8,
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 3, "situation": _SATZ, "nr": 8,
      "q": "Statt der Airbag-Einheit schließen Sie einen Ersatzwiderstand von 2,2 Ω an. Die zwei Steckverbindungen haben je "
-          "0,1 Ω Übergangswiderstand, die Leitung hat insgesamt 0,3 Ω. Berechnen Sie den Gesamtwiderstand des Zündkreises.",
-     "loesung": 2.7, "einheit": "Ω",
+          "0,1 Ω Übergangswiderstand, die Leitung hat insgesamt 0,3 Ω. Wie groß ist der Gesamtwiderstand des Zündkreises?",
+     "opts": ["2,6 Ω", "0,04 Ω", "2,7 Ω", "2,5 Ω"],
+     "correct": 2,
      "explain": "Alle Widerstände liegen in Reihe: R = 2,2 Ω + 2 × 0,1 Ω + 0,3 Ω = 2,7 Ω. Ein lockerer Stecker erhöht den "
                 "Übergangswiderstand – deshalb meldet das Steuergerät dann „Widerstand zu hoch“.",
      "src": "FW"},
-    {"cat": "Airbag", "level": 2, "typ": "offen", "pkt": 3, "situation": _SATZ, "nr": 9,
-     "q": "Im Stecker der Airbag-Einheit sitzt eine Kurzschlussbrücke. Beschreiben Sie ihre Aufgabe.",
-     "punkte": ["Beim Abziehen des Steckers verbindet eine Federbrücke die beiden Anschlüsse der Zündpille",
-                "Die Zündpille ist damit kurzgeschlossen",
-                "Fremdspannung oder statische Aufladung kann keinen Zündstrom durch die Zündpille treiben – keine ungewollte Auslösung"],
-     "explain": "Sobald der Stecker wieder richtig eingerastet ist, drückt er die Brücke auf. Rastet er nicht ein, kann die "
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 3, "situation": _SATZ, "nr": 9,
+     "q": "Im Stecker der Airbag-Einheit sitzt eine Kurzschlussbrücke. Welche Beschreibung ihrer Aufgabe ist richtig?",
+     "opts": ["Sie schließt im eingesteckten Zustand die Zündpille kurz, damit der Prüfstrom des Steuergeräts nicht durch sie fließt",
+              "Beim Abziehen des Steckers verbindet eine Federbrücke die beiden Anschlüsse der Zündpille; Fremdspannung kann keinen Zündstrom treiben",
+              "Beim Abziehen des Steckers legt sie die Zündkreisleitung an Masse, damit das Steuergerät den offenen Stecker erkennt",
+              "Sie überbrückt bei einem Unfall einen beschädigten Stecker, damit der Airbag trotzdem zünden kann"],
+     "correct": 1,
+     "explain": "Beim Abziehen des Steckers schließt eine Federbrücke die beiden Anschlüsse der Zündpille kurz. Fremdspannung "
+                "oder statische Aufladung kann dann keinen Zündstrom durch die Zündpille treiben – keine ungewollte Auslösung. "
+                "Sobald der Stecker wieder richtig eingerastet ist, drückt er die Brücke auf. Rastet er nicht ein, kann die "
                 "Brücke teilweise anliegen oder der Kontakt wackeln – ein Grund für unplausible Zündkreiswerte.",
      "src": "Netz: Recherche 3.6, FW"},
-    {"cat": "Airbag", "level": 2, "typ": "offen", "pkt": 3, "situation": _SATZ, "nr": 10,
-     "q": "Begründen Sie, warum die Steckverbindung unter dem Sitz eine typische Fehlerquelle ist – besonders nach einem Sitzausbau.",
-     "punkte": ["Stecker wird beim Ausbau getrennt und beim Einbau nicht richtig eingerastet bzw. verriegelt",
-                "Die Leitung wird bei jeder Sitzverstellung bewegt (Zug, Knicken, Scheuern)",
-                "Feuchtigkeit und Schmutz am Fahrzeugboden (z. B. nach Teppichreinigung) führen zu Korrosion an den Kontakten"],
-     "explain": "Im vorliegenden Fall ist der Stecker nach dem Sitzeinbau nicht eingerastet: Der Übergangswiderstand ist "
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 3, "situation": _SATZ, "nr": 10,
+     "q": "Warum ist die Steckverbindung unter dem Sitz eine typische Fehlerquelle – besonders nach einem Sitzausbau?",
+     "opts": ["Stecker wird beim Einbau oft nicht richtig verriegelt; Leitung wird bei jeder Sitzverstellung bewegt; "
+              "beim Sitzausbau verliert das Steuergerät seine Codierung",
+              "Der Zündkreis bekommt seine Masse über die Sitzschienen, die beim Ausbau verschmutzen; Leitung wird bei jeder "
+              "Sitzverstellung bewegt; Feuchtigkeit führt zu Korrosion",
+              "Stecker wird beim Einbau oft nicht richtig verriegelt; die Zündpille altert durch jedes Abstecken; "
+              "Feuchtigkeit führt zu Korrosion an den Kontakten",
+              "Stecker wird beim Einbau oft nicht richtig verriegelt; Leitung wird bei jeder Sitzverstellung bewegt; "
+              "Feuchtigkeit und Schmutz am Boden führen zu Korrosion"],
+     "correct": 3,
+     "explain": "Der Stecker wird beim Ausbau getrennt und beim Einbau oft nicht richtig eingerastet. Die Leitung wird bei "
+                "jeder Sitzverstellung bewegt (Zug, Knicken, Scheuern), und Feuchtigkeit und Schmutz am Fahrzeugboden "
+                "(z. B. nach Teppichreinigung) lassen die Kontakte korrodieren. Im vorliegenden Fall ist der Stecker nach dem Sitzeinbau nicht eingerastet: Der Übergangswiderstand ist "
                 "zu hoch, das Steuergerät erkennt das beim Selbsttest und schaltet die Kontrollleuchte ein.",
      "src": "FW"},
     {"cat": "Airbag", "level": 2, "typ": "zuordnung", "pkt": 5, "situation": _SATZ, "nr": 11,
@@ -139,30 +166,53 @@ QUESTIONS = [
                 "(Upfront- oder Seitensensor). Erst wenn beide einen Aufprall bestätigen, wird gezündet – so führt ein "
                 "einzelner defekter Sensor oder ein Schlag gegen das Steuergerät nicht zur Auslösung.",
      "src": "Netz: Recherche 3.6"},
-    {"cat": "Airbag", "level": 2, "typ": "offen", "pkt": 4, "situation": _SATZ, "nr": 13,
-     "q": "Falls die Airbag-Einheit ausgebaut werden muss: Nennen Sie vier Regeln für Ablage, Transport und Lagerung.",
-     "punkte": ["Mit der Polsterseite nach oben ablegen, beim Tragen das Polster vom Körper weg halten",
-                "Nicht an der Leitung oder am Stecker tragen",
-                "Keine Wärme über ca. 100 °C, kein offenes Feuer, keine Fette oder Reinigungsmittel",
-                "Gesichert in einem abschließbaren Raum bzw. Behälter lagern (Mengengrenzen nach Lagerrichtlinie LR 240)"],
-     "explain": "Liegt das Polster unten und die Einheit löst aus, wird sie wie ein Geschoss hochgeschleudert. Mit dem Polster "
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 4, "situation": _SATZ, "nr": 13,
+     "q": "Falls die Airbag-Einheit ausgebaut werden muss: Welche Antwort nennt vier richtige Regeln für Ablage, Transport und Lagerung?",
+     "opts": ["Mit der Polsterseite nach unten ablegen; nicht an Leitung oder Stecker tragen; keine Wärme über ca. 100 °C, "
+              "keine Fette; gesichert in abschließbarem Raum bzw. Behälter lagern",
+              "Mit der Polsterseite nach oben ablegen; nicht an Leitung oder Stecker tragen; keine Wärme über ca. 100 °C, "
+              "keine Fette; offen im Teilelager bei den übrigen Ersatzteilen lagern",
+              "Mit der Polsterseite nach oben ablegen, Polster beim Tragen vom Körper weg; nicht an Leitung oder Stecker tragen; "
+              "keine Wärme über ca. 100 °C, keine Fette; gesichert in abschließbarem Raum bzw. Behälter lagern",
+              "Mit der Polsterseite nach oben ablegen, Polster beim Tragen zum Körper hin; nicht an Leitung oder Stecker tragen; "
+              "keine Wärme über ca. 100 °C, keine Fette; gesichert in abschließbarem Raum bzw. Behälter lagern"],
+     "correct": 2,
+     "explain": "Regeln: Polsterseite nach oben ablegen und das Polster beim Tragen vom Körper weg halten; nicht an Leitung "
+                "oder Stecker tragen; keine Wärme über ca. 100 °C, kein offenes Feuer, keine Fette oder Reinigungsmittel; "
+                "gesichert in einem abschließbaren Raum bzw. Behälter lagern (Mengengrenzen nach Lagerrichtlinie LR 240). "
+                "Liegt das Polster unten und die Einheit löst aus, wird sie wie ein Geschoss hochgeschleudert. Mit dem Polster "
                 "nach oben entfaltet sich der Sack frei nach oben. Für den Transport möglichst die Originalverpackung nutzen.",
      "src": "Netz: Recherche 3.4/3.6 (kfz-tech.de, TÜV SÜD)"},
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 3, "situation": _SATZ, "nr": 14,
-     "q": "Nennen Sie die rechtlichen Voraussetzungen, damit Ihr Betrieb Airbag- und Gurtstraffereinheiten aus- und einbauen darf.",
-     "punkte": ["Airbag- und Gurtstraffereinheiten sind pyrotechnische Gegenstände der Kategorie P1 (Sprengstoffrecht)",
-                "Ein- und Ausbau nur mit entsprechender Fachkunde bzw. Schulung (eingeschränkte Fachkunde)",
-                "Die Tätigkeit muss vor Aufnahme bei der zuständigen Behörde angezeigt werden"],
-     "explain": "Dazu kommen die Regeln zur Lagerung (LR 240) und zur Entsorgung. Wer ohne Schulung an Airbags arbeitet, "
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 3, "situation": _SATZ, "nr": 14,
+     "q": "Welche Antwort nennt die rechtlichen Voraussetzungen, damit Ihr Betrieb Airbag- und Gurtstraffereinheiten aus- und einbauen darf?",
+     "opts": ["Pyrotechnische Gegenstände der Kategorie P1 (Sprengstoffrecht); Ein- und Ausbau darf jede Fachkraft ohne "
+              "zusätzliche Schulung; Tätigkeit vorher bei der zuständigen Behörde anzeigen",
+              "Pyrotechnische Gegenstände der Kategorie P1 (Sprengstoffrecht); Ein- und Ausbau nur mit Fachkunde bzw. Schulung; "
+              "Tätigkeit vor Aufnahme bei der zuständigen Behörde anzeigen",
+              "Feuerwerkskörper der Kategorie F2 (Sprengstoffrecht); Ein- und Ausbau nur mit Fachkunde bzw. Schulung; "
+              "Tätigkeit vor Aufnahme bei der zuständigen Behörde anzeigen",
+              "Pyrotechnische Gegenstände der Kategorie P1 (Sprengstoffrecht); Ein- und Ausbau nur mit Fachkunde bzw. Schulung; "
+              "keine Anzeige nötig, nur jährliche Meldung der verbauten Stückzahl"],
+     "correct": 1,
+     "explain": "Airbag- und Gurtstraffereinheiten sind pyrotechnische Gegenstände der Kategorie P1. Ein- und Ausbau nur mit "
+                "entsprechender (eingeschränkter) Fachkunde bzw. Schulung, und die Tätigkeit muss vor Aufnahme bei der "
+                "zuständigen Behörde angezeigt werden. Dazu kommen die Regeln zur Lagerung (LR 240) und zur Entsorgung. Wer ohne Schulung an Airbags arbeitet, "
                 "gefährdet sich und andere und handelt gegen das Sprengstoffrecht.",
      "src": "Netz: Recherche 3.4 (TÜV SÜD, Behördenportale, autoservicepraxis)"},
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 3, "situation": _SATZ, "nr": 15,
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 3, "situation": _SATZ, "nr": 15,
      "q": "Der Kunde fragt nebenbei, was bei seinem Zweitwagen nach einem Unfall mit ausgelösten Frontairbags zu ersetzen ist. "
-          "Nennen Sie drei Punkte.",
-     "punkte": ["Alle ausgelösten Airbag-Einheiten und Gurtstraffer ersetzen",
-                "Airbag-Steuergerät nach Herstellerangabe ersetzen (Crashdaten gespeichert)",
-                "Betroffene Sensoren, Wickelfeder, Gurte und Halterungen nach Herstellervorgabe prüfen bzw. ersetzen"],
-     "explain": "Ausgelöste pyrotechnische Teile sind verbraucht. Das Steuergerät hat den Crash gespeichert und ist nach "
+          "Welche Antwort ist richtig?",
+     "opts": ["Luftsäcke neu falten und Gasgeneratoren nachfüllen lassen; Steuergerät nach Herstellerangabe ersetzen; "
+              "Sensoren, Wickelfeder und Gurte prüfen",
+              "Ausgelöste Airbag-Einheiten ersetzen, Gurtstraffer weiterverwenden; Steuergerät nach Herstellerangabe ersetzen; "
+              "Sensoren, Wickelfeder und Gurte prüfen",
+              "Ausgelöste Airbag-Einheiten und Gurtstraffer ersetzen; Steuergerät nach Herstellerangabe ersetzen; "
+              "Batterie ersetzen, weil der Zündstrom sie tiefentladen hat",
+              "Ausgelöste Airbag-Einheiten und Gurtstraffer ersetzen; Steuergerät nach Herstellerangabe ersetzen; "
+              "Sensoren, Wickelfeder, Gurte und Halterungen prüfen bzw. ersetzen"],
+     "correct": 3,
+     "explain": "Alle ausgelösten Airbag-Einheiten und Gurtstraffer werden ersetzt; betroffene Sensoren, Wickelfeder, Gurte "
+                "und Halterungen nach Herstellervorgabe prüfen bzw. ersetzen. Ausgelöste pyrotechnische Teile sind verbraucht. Das Steuergerät hat den Crash gespeichert und ist nach "
                 "Herstellervorgabe zu tauschen; danach wird das neue Gerät codiert.",
      "src": "Netz: Recherche 3.6, FW"},
     {"cat": "Airbag", "level": 1, "typ": "mc", "pkt": 2, "situation": _SATZ, "nr": 16,
@@ -175,13 +225,19 @@ QUESTIONS = [
      "explain": "Eine nicht ausgelöste Einheit enthält noch die Treibladung und bleibt ein pyrotechnischer Gegenstand. "
                 "Vor der Verschrottung eines Fahrzeugs werden die Einheiten fachgerecht ausgelöst.",
      "src": "Netz: Recherche 3.4/3.6"},
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 4, "situation": _SATZ, "nr": 17,
-     "q": "Sie haben den Stecker unter dem Sitz als Fehlerursache gefunden. Nennen Sie vier Abschlussarbeiten.",
-     "punkte": ["Steckverbindung einrasten und verriegeln, Leitung zugfrei und scheuerfrei verlegen",
-                "Batterie nach Herstellervorgabe anklemmen – dabei hält sich niemand im Fahrzeug auf",
-                "Fehlerspeicher auslesen und löschen",
-                "Kontrollleuchte (Selbsttest, geht aus) und Zündkreis-Messwerte im Tester kontrollieren"],
-     "explain": "Erst wenn die Leuchte nach dem Selbsttest erlischt und kein Fehler mehr gespeichert ist, ist das System "
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 4, "situation": _SATZ, "nr": 17,
+     "q": "Sie haben den Stecker unter dem Sitz als Fehlerursache gefunden. Welche Antwort nennt vier richtige Abschlussarbeiten?",
+     "opts": ["Stecker einrasten und verriegeln, Leitung zug- und scheuerfrei verlegen; Batterie anklemmen und dabei vom "
+              "Fahrersitz aus die Kontrollleuchte beobachten; Fehlerspeicher auslesen und löschen; Messwerte kontrollieren",
+              "Stecker einrasten und verriegeln, Leitung zug- und scheuerfrei verlegen; Batterie nach Herstellervorgabe anklemmen; "
+              "Fehlerspeicher auslesen und löschen; Zündkreiswiderstand am Stecker mit dem Multimeter nachmessen",
+              "Stecker einrasten und verriegeln, Leitung zug- und scheuerfrei verlegen; Batterie nach Herstellervorgabe anklemmen, "
+              "niemand im Fahrzeug; Fehlerspeicher auslesen und löschen; Kontrollleuchte und Messwerte kontrollieren",
+              "Stecker einrasten und verriegeln, Leitung zug- und scheuerfrei verlegen; Steuergerät neu codieren, weil der "
+              "Sitzausbau die Codierung löscht; Fehlerspeicher auslesen und löschen; Kontrollleuchte kontrollieren"],
+     "correct": 2,
+     "explain": "Beim Anklemmen der Batterie hält sich niemand im Fahrzeug auf. Danach Fehlerspeicher auslesen und löschen, "
+                "Kontrollleuchte (Selbsttest, geht aus) und Zündkreis-Messwerte im Tester kontrollieren. Erst wenn die Leuchte nach dem Selbsttest erlischt und kein Fehler mehr gespeichert ist, ist das System "
                 "wieder voll einsatzbereit. Die Arbeit wird im Auftrag dokumentiert.",
      "src": "FW"},
     {"cat": "Airbag", "level": 3, "typ": "zuordnung", "pkt": 4, "situation": _SATZ, "nr": 18,
@@ -196,14 +252,21 @@ QUESTIONS = [
      "src": "Netz: Recherche 3.6 (Aufblasen ca. 30–50 ms), FW (Richtwerte)"},
 
     # ---------------------------------------------------------------- Einzelfragen
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 4,
-     "q": "Beschreiben Sie den Aufbau eines pyrotechnischen Gasgenerators und den Unterschied zwischen einstufiger und "
-          "zweistufiger Ausführung.",
-     "punkte": ["Gehäuse mit Zündpille, Treibladung (fester Treibstoff) und Filter bzw. Kühlsieb",
-                "Die bestromte Zündpille zündet die Treibladung, das entstehende Gas strömt in den Luftsack",
-                "Einstufig: eine Treibladung, immer gleiche Aufblaswirkung",
-                "Zweistufig: zwei getrennt zündbare Ladungen – je nach Unfallschwere und Gurtstatus zündet nur Stufe 1 oder beide zeitversetzt"],
-     "explain": "Mit zwei Stufen kann das Steuergerät den Airbag weicher oder härter füllen. Auch eine nicht gezündete "
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Welche Beschreibung von Aufbau und einstufiger bzw. zweistufiger Ausführung eines pyrotechnischen Gasgenerators ist richtig?",
+     "opts": ["Gehäuse mit Zündpille, Treibladung und Filter; Zündpille zündet die Treibladung, das Gas strömt in den Luftsack; "
+              "einstufig: eine Ladung; zweistufig: zwei Ladungen, die immer gleichzeitig zünden, damit der Airbag schneller voll ist",
+              "Gehäuse mit Zündpille, Treibladung und Filter; Zündpille zündet die Treibladung, das Gas strömt in den Luftsack; "
+              "einstufig: eine Ladung; zweistufig: zwei getrennt zündbare Ladungen, je nach Unfallschwere nur Stufe 1 oder beide zeitversetzt",
+              "Gehäuse mit Druckluftflasche und Magnetventil; das Steuergerät öffnet das Ventil, die Luft strömt in den Luftsack; "
+              "einstufig: ein Ventil; zweistufig: zwei Ventile, je nach Unfallschwere eines oder beide",
+              "Gehäuse mit Zündpille, Treibladung und Filter; Zündpille zündet die Treibladung, das Gas strömt in den Luftsack; "
+              "einstufig: eine Ladung; zweistufig: die zweite Ladung füllt den Airbag nach dem Entleeren für einen Folgeaufprall neu"],
+     "correct": 1,
+     "explain": "Aufbau: Gehäuse mit Zündpille, Treibladung (fester Treibstoff) und Filter bzw. Kühlsieb. Die bestromte Zündpille "
+                "zündet die Treibladung, das Gas strömt in den Luftsack. Einstufig: eine Treibladung, immer gleiche Aufblaswirkung. "
+                "Zweistufig: zwei getrennt zündbare Ladungen – je nach Unfallschwere und Gurtstatus zündet nur Stufe 1 oder "
+                "beide zeitversetzt. Mit zwei Stufen kann das Steuergerät den Airbag weicher oder härter füllen. Auch eine nicht gezündete "
                 "zweite Stufe ist nach einem Unfall noch scharf – Einheit trotzdem als pyrotechnischen Gegenstand behandeln.",
      "src": "FW"},
     {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 2,
@@ -226,29 +289,55 @@ QUESTIONS = [
      "explain": "Der reversible Straffer arbeitet vorbeugend schon vor einem möglichen Aufprall. Der pyrotechnische Straffer "
                 "zündet erst beim Crash und ist danach verbraucht.",
      "src": "Netz: Recherche 3.4, FW"},
-    {"cat": "Airbag", "level": 2, "typ": "offen", "pkt": 3,
-     "q": "Nennen Sie die Aufgabe der Sitzbelegungserkennung am Beifahrersitz und zwei Auswirkungen auf das Rückhaltesystem.",
-     "punkte": ["Erkennt, ob der Sitz belegt ist (z. B. über eine Sensormatte im Sitzpolster)",
-                "Bei unbelegtem Sitz werden Beifahrerairbag bzw. Gurtstraffer bei einem Unfall nicht unnötig ausgelöst",
-                "Bei belegtem Sitz ohne angelegten Gurt wird die Gurtwarnung ausgegeben"],
-     "explain": "Unnötige Auslösungen verursachen hohe Reparaturkosten. Nach Arbeiten am Sitz muss die Sensormatte richtig "
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Welche Antwort beschreibt die Aufgabe der Sitzbelegungserkennung am Beifahrersitz und zwei Auswirkungen auf das "
+          "Rückhaltesystem richtig?",
+     "opts": ["Erkennt über eine Sensormatte, ob der Sitz belegt ist; bei unbelegtem Sitz löst bei einem Unfall kein Airbag "
+              "im ganzen Fahrzeug aus; bei belegtem Sitz ohne Gurt kommt die Gurtwarnung",
+              "Erkennt über eine Sensormatte, ob der Sitz belegt ist; bei unbelegtem Sitz wird der Beifahrerairbag mit "
+              "beiden Stufen gezündet; bei belegtem Sitz ohne Gurt kommt die Gurtwarnung",
+              "Erkennt über eine Sensormatte, ob der Sitz belegt ist; bei unbelegtem Sitz lösen Beifahrerairbag bzw. "
+              "Gurtstraffer nicht unnötig aus; bei belegtem Sitz ohne Gurt wird der Beifahrerairbag abgeschaltet",
+              "Erkennt über eine Sensormatte, ob der Sitz belegt ist; bei unbelegtem Sitz lösen Beifahrerairbag bzw. "
+              "Gurtstraffer nicht unnötig aus; bei belegtem Sitz ohne Gurt kommt die Gurtwarnung"],
+     "correct": 3,
+     "explain": "Die Sitzbelegungserkennung (z. B. Sensormatte im Sitzpolster) erkennt, ob der Sitz belegt ist. Bei unbelegtem "
+                "Sitz werden Beifahrerairbag bzw. Gurtstraffer nicht unnötig ausgelöst, bei belegtem Sitz ohne Gurt kommt "
+                "die Gurtwarnung. Unnötige Auslösungen verursachen hohe Reparaturkosten. Nach Arbeiten am Sitz muss die Sensormatte richtig "
                 "angeschlossen sein, sonst erscheint ein Fehler.",
      "src": "FW"},
-    {"cat": "Airbag", "level": 1, "typ": "offen", "pkt": 3,
+    {"cat": "Airbag", "level": 1, "typ": "mc", "pkt": 3,
      "q": "Eine Kundin möchte eine rückwärtsgerichtete Babyschale auf dem Beifahrersitz befestigen. Was müssen Sie ihr erklären?",
-     "punkte": ["Der Beifahrerairbag muss abgeschaltet sein (Schlüsselschalter bzw. Menü nach Herstellerangabe)",
-                "Grund: Der sich entfaltende Airbag trifft die Babyschale mit großer Wucht – schwere Verletzungsgefahr",
-                "Anzeige „Beifahrerairbag aus“ kontrollieren und nach dem Entfernen der Babyschale wieder einschalten"],
-     "explain": "Die Babyschale sitzt sehr nah an der Instrumententafel. Wird der Airbag danach nicht wieder eingeschaltet, "
+     "opts": ["Beifahrerairbag eingeschaltet lassen, weil er die Babyschale zusätzlich abpolstert; den Sitz ganz nach "
+              "hinten schieben genügt",
+              "Beifahrerairbag abschalten, weil der sich entfaltende Airbag die Babyschale mit großer Wucht trifft; danach "
+              "kann er dauerhaft aus bleiben, Erwachsene schützt der Gurt",
+              "Beifahrerairbag nach Herstellerangabe abschalten, weil er die Babyschale mit großer Wucht trifft; Anzeige "
+              "„Beifahrerairbag aus“ kontrollieren und danach wieder einschalten",
+              "Beifahrerairbag abschalten, das geht nur in der Werkstatt durch Abziehen des Airbag-Steckers; danach "
+              "wieder anstecken lassen"],
+     "correct": 2,
+     "explain": "Der Beifahrerairbag muss abgeschaltet sein (Schlüsselschalter bzw. Menü nach Herstellerangabe), weil der "
+                "sich entfaltende Airbag die Babyschale mit großer Wucht trifft. Anzeige „Beifahrerairbag aus“ kontrollieren "
+                "und nach dem Entfernen der Babyschale wieder einschalten. Die Babyschale sitzt sehr nah an der Instrumententafel. Wird der Airbag danach nicht wieder eingeschaltet, "
                 "fehlt einem erwachsenen Beifahrer der Schutz.",
      "src": "Netz: Recherche 3.4, FW"},
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 3,
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 3,
      "q": "Beim Einbau einer neuen Wickelfeder müssen die Räder geradeaus stehen und die Wickelfeder in Mittelstellung sein. "
-          "Begründen Sie das und nennen Sie die Folge eines Fehlers.",
-     "punkte": ["Die Wickelfeder ist ein aufgewickeltes Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen",
-                "Nur aus der Mittelstellung reicht die Länge für vollen Lenkeinschlag nach links und rechts",
-                "Bei falschem Einbau reißt das Band beim Lenken – Zündkreis Fahrerairbag unterbrochen, Hupe und Lenkradtasten ohne Funktion"],
-     "explain": "Neue Wickelfedern sind meist mit einer Transportsicherung in Mittelstellung fixiert. Die Sicherung erst nach "
+          "Welche Begründung und welche Folge eines Fehlers sind richtig?",
+     "opts": ["Die Wickelfeder ist die Rückstellfeder des Lenkrads; nur aus der Mittelstellung läuft das Lenkrad nach "
+              "Kurven zurück; bei Fehler zieht das Fahrzeug einseitig",
+              "Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen; nur aus der Mittelstellung reicht es "
+              "für vollen Lenkeinschlag; bei Fehler reißt das Band – Fahrerairbag, Hupe und Lenkradtasten ohne Funktion",
+              "Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen; nur aus der Mittelstellung reicht es "
+              "für vollen Lenkeinschlag; bei Fehler löst der Fahrerairbag beim Lenken aus",
+              "Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen; nur aus der Mittelstellung reicht es "
+              "für vollen Lenkeinschlag; bei Fehler blockiert das Lenkschloss und der Motor startet nicht"],
+     "correct": 1,
+     "explain": "Die Wickelfeder ist ein aufgewickeltes Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen. "
+                "Nur aus der Mittelstellung reicht die Länge für vollen Lenkeinschlag nach links und rechts. Bei falschem "
+                "Einbau reißt das Band beim Lenken – Zündkreis Fahrerairbag unterbrochen, Hupe und Lenkradtasten ohne "
+                "Funktion. Neue Wickelfedern sind meist mit einer Transportsicherung in Mittelstellung fixiert. Die Sicherung erst nach "
                 "dem Einbau entfernen und die Wickelfeder bei abgenommenem Lenkrad nicht verdrehen.",
      "src": "FW"},
     {"cat": "Airbag", "level": 1, "typ": "zuordnung", "pkt": 4,
@@ -259,13 +348,22 @@ QUESTIONS = [
      "explain": "Das Crashsignal hilft Rettern (Türen offen, Notruf), warnt den Verkehr und senkt die Brandgefahr, "
                 "weil kein Kraftstoff mehr gefördert wird.",
      "src": "Netz: Recherche 3.4"},
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 3,
-     "q": "Manche Fahrzeuge haben am Batterie-Pluskabel einen pyrotechnischen Batterietrennschalter. Beschreiben Sie Aufgabe "
-          "und Folgen der Auslösung.",
-     "punkte": ["Trennt bei einem schweren Unfall die Hauptleitung von der Batterie zu Starter und Generator",
-                "Verhindert Kurzschluss und Brand durch eine beschädigte, nicht abgesicherte Plusleitung",
-                "Nach der Auslösung muss das Bauteil ersetzt werden; wichtige Verbraucher (z. B. Warnblinker) bleiben meist versorgt"],
-     "explain": "Besonders wichtig, wenn die Batterie im Heck sitzt und die Plusleitung durch das ganze Fahrzeug läuft. "
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 3,
+     "q": "Manche Fahrzeuge haben am Batterie-Pluskabel einen pyrotechnischen Batterietrennschalter. Welche Beschreibung "
+          "von Aufgabe und Folgen der Auslösung ist richtig?",
+     "opts": ["Trennt bei einem schweren Unfall die Hauptleitung zu Starter und Generator; verhindert Kurzschluss und Brand; "
+              "danach über einen Reset-Knopf wieder einschalten und weiterverwenden",
+              "Trennt bei jedem Abstellen des Motors die Batterie vom Bordnetz; verhindert eine Tiefentladung; "
+              "wird beim nächsten Start automatisch wieder geschlossen",
+              "Trennt bei einem Unfall die Leitung zum Airbag-Steuergerät, damit keine weiteren Airbags auslösen; "
+              "danach muss das Bauteil ersetzt werden",
+              "Trennt bei einem schweren Unfall die Hauptleitung zu Starter und Generator; verhindert Kurzschluss und Brand; "
+              "danach ersetzen, wichtige Verbraucher bleiben meist versorgt"],
+     "correct": 3,
+     "explain": "Der Trennschalter trennt bei einem schweren Unfall die Hauptleitung von der Batterie zu Starter und Generator "
+                "und verhindert so Kurzschluss und Brand durch eine beschädigte, nicht abgesicherte Plusleitung. Nach der "
+                "Auslösung muss er ersetzt werden; wichtige Verbraucher (z. B. Warnblinker) bleiben meist versorgt. "
+                "Besonders wichtig, wenn die Batterie im Heck sitzt und die Plusleitung durch das ganze Fahrzeug läuft. "
                 "Der Trennschalter ist ebenfalls ein pyrotechnisches Bauteil.",
      "src": "FW"},
     {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 2,
@@ -278,14 +376,21 @@ QUESTIONS = [
      "explain": "Sensoren im Stoßfänger erkennen den Fußgängeraufprall, Aktuatoren (oft pyrotechnisch) heben die Haube an. "
                 "Der Kopf des Fußgängers trifft dann auf eine nachgiebige Fläche.",
      "src": "Netz: Recherche 3.4, FW"},
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 4,
-     "q": "Beschreiben Sie, wie Upfront-Sensoren und Seitenaufprallsensoren einen Aufprall erfassen und wie das Steuergerät "
-          "die Signale nutzt.",
-     "punkte": ["Upfront-Sensoren vorn im Fahrzeug messen die Verzögerung mit einem Beschleunigungssensor und melden einen Frontaufprall sehr früh",
-                "Seitenaufprallsensoren in B-Säule bzw. Schweller messen die Querbeschleunigung",
-                "Drucksensoren in der Tür erfassen den schnellen Druckanstieg, wenn die Tür eingedrückt wird",
-                "Das Steuergerät vergleicht die Signale mit seinem eigenen Beschleunigungssensor (Plausibilität), bevor es auslöst"],
-     "explain": "Beim Seitenaufprall ist die Knautschzone sehr kurz – deshalb sitzen die Sensoren direkt in der Seite, "
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Wie erfassen Upfront-Sensoren und Seitenaufprallsensoren einen Aufprall, und wie nutzt das Steuergerät die Signale?",
+     "opts": ["Upfront-Sensoren messen vorn die Verzögerung; Seitensensoren in B-Säule bzw. Schweller die Querbeschleunigung, "
+              "Drucksensoren in der Tür den Druckanstieg; das Steuergerät prüft die Signale mit seinem eigenen Sensor auf Plausibilität",
+              "Upfront-Sensoren messen vorn die Verzögerung; Seitensensoren in B-Säule bzw. Schweller die Querbeschleunigung, "
+              "Drucksensoren in der Tür den Druckanstieg; das Steuergerät löst aus, sobald ein einzelner Sensor anspricht",
+              "Upfront-Sensoren messen per Radar den Abstand zum Hindernis; Seitensensoren in B-Säule bzw. Schweller die "
+              "Querbeschleunigung; das Steuergerät prüft die Signale mit seinem eigenen Sensor auf Plausibilität",
+              "Upfront-Sensoren messen vorn die Verzögerung; Seitensensoren messen die Längsverzögerung, Drucksensoren den "
+              "Gasdruck im Seitenairbag; das Steuergerät prüft die Signale mit seinem eigenen Sensor auf Plausibilität"],
+     "correct": 0,
+     "explain": "Upfront-Sensoren vorn messen die Verzögerung mit einem Beschleunigungssensor und melden einen Frontaufprall "
+                "sehr früh. Seitenaufprallsensoren in B-Säule bzw. Schweller messen die Querbeschleunigung, Drucksensoren in "
+                "der Tür den schnellen Druckanstieg, wenn die Tür eingedrückt wird. Das Steuergerät vergleicht die Signale "
+                "mit seinem eigenen Beschleunigungssensor (Plausibilität), bevor es auslöst. Beim Seitenaufprall ist die Knautschzone sehr kurz – deshalb sitzen die Sensoren direkt in der Seite, "
                 "damit das Steuergerät schnell genug entscheiden kann.",
      "src": "Netz: Recherche 3.4, FW"},
     {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 2,
@@ -308,17 +413,19 @@ QUESTIONS = [
      "explain": "Die Geradeausstellung und die Markierung sorgen dafür, dass Lenkrad und Wickelfeder später wieder in "
                 "Mittelstellung sitzen. Die Lenkradschraube nach Herstellerangabe ersetzen und mit Drehmoment anziehen.",
      "src": "FW"},
-    {"cat": "Airbag", "level": 2, "typ": "zahl", "pkt": 3,
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 3,
      "q": "In einer Übungsschaltung im Labor werden zwei Widerstände mit 3,3 Ω und 6,8 Ω parallel geschaltet. "
-          "Berechnen Sie den Gesamtwiderstand.",
-     "loesung": 2.22, "einheit": "Ω",
+          "Wie groß ist der Gesamtwiderstand?",
+     "opts": ["10,1 Ω", "0,45 Ω", "22,44 Ω", "2,22 Ω"],
+     "correct": 3,
      "explain": "Parallelschaltung: R = (R1 × R2) ÷ (R1 + R2) = (3,3 Ω × 6,8 Ω) ÷ 10,1 Ω ≈ 2,22 Ω. Der Gesamtwiderstand "
                 "ist immer kleiner als der kleinste Einzelwiderstand.",
      "src": "FW"},
-    {"cat": "Airbag", "level": 1, "typ": "zahl", "pkt": 2,
-     "q": "Berechnen Sie den Strom, der durch eine Zündpille mit 2 Ω fließen würde, wenn versehentlich die Bordnetzspannung "
-          "von 12 V anliegt.",
-     "loesung": 6, "einheit": "A",
+    {"cat": "Airbag", "level": 1, "typ": "mc", "pkt": 2,
+     "q": "Wie groß ist der Strom, der durch eine Zündpille mit 2 Ω fließen würde, wenn versehentlich die Bordnetzspannung "
+          "von 12 V anliegt?",
+     "opts": ["24 A", "0,17 A", "6 A", "0,6 A"],
+     "correct": 2,
      "explain": "I = U ÷ R = 12 V ÷ 2 Ω = 6 A. Zum Zünden reicht schon ein deutlich kleinerer Strom. Deshalb darf an einer "
                 "Zündpille nie eine Spannung oder ein Messgerät angelegt werden – auch der Prüfstrom eines Multimeters ist gefährlich.",
      "src": "FW"},
@@ -339,21 +446,38 @@ QUESTIONS = [
      "explain": "Die Wartezeit hängt vom System ab und ist je nach Fahrzeug sehr unterschiedlich. Sie steht im "
                 "Reparaturleitfaden des Herstellers. Grund ist die Energiereserve im Steuergerät.",
      "src": "Netz: Recherche 3.6 (Wartezeit nur nach Herstellerangabe)"},
-    {"cat": "Airbag", "level": 2, "typ": "offen", "pkt": 3,
-     "q": "Sie prüfen im Innenraum bei eingeschalteter Zündung, die Airbag-Anlage ist also aktiv. Nennen Sie drei Verhaltensregeln.",
-     "punkte": ["Nicht im Entfaltungsbereich der Airbags aufhalten (nicht vor Lenkrad oder Instrumententafel beugen)",
-                "Keine Werkzeuge oder Gegenstände auf oder vor Airbag-Abdeckungen legen",
-                "Keine Spannung und kein Messgerät an Airbag-Stecker oder Zündkreis anlegen – nur mit Tester prüfen"],
-     "explain": "Löst ein Airbag ungewollt aus, ist der Bereich direkt vor der Abdeckung am gefährlichsten. "
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Sie prüfen im Innenraum bei eingeschalteter Zündung, die Airbag-Anlage ist also aktiv. Welche Antwort nennt drei "
+          "richtige Verhaltensregeln?",
+     "opts": ["Nicht im Entfaltungsbereich aufhalten; keine Werkzeuge auf oder vor Airbag-Abdeckungen legen; "
+              "keine Spannung und kein Messgerät an Airbag-Stecker oder Zündkreis – nur mit Tester prüfen",
+              "Nicht im Entfaltungsbereich aufhalten; Werkzeuge auf der Airbag-Abdeckung ablegen, dort verrutschen sie nicht; "
+              "keine Spannung und kein Messgerät an Airbag-Stecker oder Zündkreis – nur mit Tester prüfen",
+              "Nicht im Entfaltungsbereich aufhalten; keine Werkzeuge auf oder vor Airbag-Abdeckungen legen; "
+              "Zündkreis zur Kontrolle kurz mit der Prüflampe auf Spannung prüfen",
+              "Direkt vor dem Lenkrad arbeiten, um die Kontrollleuchte im Blick zu haben; keine Werkzeuge auf oder vor "
+              "Airbag-Abdeckungen legen; nur mit Tester prüfen"],
+     "correct": 0,
+     "explain": "Nicht im Entfaltungsbereich der Airbags aufhalten (nicht vor Lenkrad oder Instrumententafel beugen), keine "
+                "Gegenstände auf oder vor Airbag-Abdeckungen legen und keine Spannung oder Messgeräte an den Zündkreis "
+                "anlegen. Löst ein Airbag ungewollt aus, ist der Bereich direkt vor der Abdeckung am gefährlichsten. "
                 "Gegenstände würden dabei weggeschleudert.",
      "src": "FW"},
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 3,
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 3,
      "q": "Ein Kunde fragt, ob die Airbags in seinem 15 Jahre alten Fahrzeug wegen des Alters getauscht werden müssen. "
           "Wie gehen Sie vor?",
-     "punkte": ["Herstellerangaben bzw. Serviceplan auf ein Tausch- oder Prüfintervall prüfen",
-                "Ältere Systeme hatten teils feste Tauschintervalle, neuere gelten meist über die Lebensdauer als wartungsfrei",
-                "Funktion über Selbsttest der Kontrollleuchte und Fehlerspeicher prüfen, offene Rückrufe des Herstellers abfragen"],
-     "explain": "Eine pauschale Altersgrenze gibt es nicht – maßgeblich ist der Hersteller. Rückrufaktionen wegen "
+     "opts": ["Airbags nach der gesetzlichen Altersgrenze von 10 Jahren grundsätzlich tauschen; Fehlerspeicher auslesen; "
+              "Rückrufe nicht nötig, da sie verjährt sind",
+              "Herstellerangaben bzw. Serviceplan auf ein Tausch- oder Prüfintervall prüfen; Selbsttest der Kontrollleuchte "
+              "und Fehlerspeicher prüfen; offene Rückrufe des Herstellers abfragen",
+              "Zündkreise mit dem Multimeter auf Zündfähigkeit messen; Selbsttest der Kontrollleuchte prüfen; "
+              "bei ausreichendem Widerstand ist kein Tausch nötig",
+              "Kein Handlungsbedarf, solange die Kontrollleuchte aus ist; Rückrufe betreffen nur Fahrzeuge in der "
+              "Herstellergarantie"],
+     "correct": 1,
+     "explain": "Herstellerangaben bzw. Serviceplan auf ein Tausch- oder Prüfintervall prüfen: Ältere Systeme hatten teils "
+                "feste Tauschintervalle, neuere gelten meist über die Lebensdauer als wartungsfrei. Funktion über Selbsttest "
+                "und Fehlerspeicher prüfen, offene Rückrufe abfragen. Eine pauschale Altersgrenze gibt es nicht – maßgeblich ist der Hersteller. Rückrufaktionen wegen "
                 "fehlerhafter Gasgeneratoren hat es schon gegeben, deshalb die Fahrgestellnummer prüfen.",
      "src": "FW"},
     {"cat": "Airbag", "level": 1, "typ": "zuordnung", "pkt": 5,
@@ -378,21 +502,36 @@ QUESTIONS = [
      "explain": "Wo ein Airbag sitzt, ist auf der Abdeckung meist mit „AIRBAG“ gekennzeichnet. Bei Arbeiten an Sitzen, "
                 "Türverkleidungen oder Dachhimmel immer an die Airbags in diesen Bauteilen denken.",
      "src": "FW"},
-    {"cat": "Airbag", "level": 2, "typ": "offen", "pkt": 3,
-     "q": "Beschreiben Sie Aufgabe und Wirkungsweise des Gurtkraftbegrenzers.",
-     "punkte": ["Begrenzt die Kraft, die der Gurt beim Aufprall auf den Brustkorb ausübt (z. B. gegen Rippenbrüche)",
-                "Ab einer bestimmten Gurtkraft gibt er kontrolliert Gurtband frei (z. B. Torsionsstab im Gurtaufroller)",
-                "Wirkt mit dem Airbag zusammen: Der Insasse taucht kontrolliert in den Airbag ein"],
-     "explain": "Ohne Kraftbegrenzer würde der gestraffte Gurt den Oberkörper sehr hart abfangen. Zusammen mit dem Airbag "
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Welche Beschreibung von Aufgabe und Wirkungsweise des Gurtkraftbegrenzers ist richtig?",
+     "opts": ["Zieht beim Aufprall das lose Gurtband straff; arbeitet mit einer Treibladung im Gurtschloss; "
+              "muss nach der Auslösung ersetzt werden",
+              "Begrenzt die Gurtkraft auf den Brustkorb; blockiert dazu das Gurtband vollständig, sobald eine bestimmte "
+              "Kraft erreicht ist; der Insasse wird starr gehalten",
+              "Begrenzt die Geschwindigkeit, mit der der Gurt beim Anlegen ausgezogen wird; arbeitet mit einer "
+              "Fliehkraftsperre; verhindert ein Einklemmen des Gurts",
+              "Begrenzt die Gurtkraft auf den Brustkorb; gibt ab einer bestimmten Kraft kontrolliert Gurtband frei "
+              "(z. B. Torsionsstab); der Insasse taucht kontrolliert in den Airbag ein"],
+     "correct": 3,
+     "explain": "Der Gurtkraftbegrenzer begrenzt die Kraft auf den Brustkorb (z. B. gegen Rippenbrüche). Ab einer bestimmten "
+                "Gurtkraft gibt er kontrolliert Gurtband frei (z. B. Torsionsstab im Gurtaufroller), sodass der Insasse "
+                "kontrolliert in den Airbag eintaucht. Ohne Kraftbegrenzer würde der gestraffte Gurt den Oberkörper sehr hart abfangen. Zusammen mit dem Airbag "
                 "wird die Verzögerung auf einen längeren Weg verteilt.",
      "src": "FW"},
-    {"cat": "Airbag", "level": 2, "typ": "offen", "pkt": 4,
-     "q": "Nennen Sie vier Dinge, die Sie bei Arbeiten in der Nähe ein- oder ausgebauter Airbag-Einheiten vermeiden müssen.",
-     "punkte": ["Wärme über ca. 100 °C, offene Flamme und Schweißen in der Nähe (Herstellervorgaben beachten)",
-                "Fette, Reinigungs- oder Lösungsmittel auf der Airbag-Abdeckung",
-                "Schläge und Stöße – heruntergefallene Einheiten nicht mehr einbauen",
-                "Prüfspannung oder Messgerät direkt an die Zündpille anlegen"],
-     "explain": "Wärme kann die Treibladung zünden, Lösungsmittel greifen Abdeckung und Sollbruchstelle an, und ein Sturz "
+    {"cat": "Airbag", "level": 2, "typ": "mc", "pkt": 4,
+     "q": "Welche Antwort nennt vier Dinge, die Sie bei Arbeiten in der Nähe ein- oder ausgebauter Airbag-Einheiten vermeiden müssen?",
+     "opts": ["Wärme über ca. 100 °C, Flamme und Schweißen; Fette oder Lösungsmittel auf der Abdeckung; Schläge und Stöße; "
+              "Ablegen der Einheit mit der Polsterseite nach oben",
+              "Wärme über ca. 100 °C, Flamme und Schweißen; Fette oder Lösungsmittel auf der Abdeckung; Schläge und Stöße; "
+              "elektrostatisches Entladen am Fahrzeug vor dem Abstecken",
+              "Wärme über ca. 100 °C, Flamme und Schweißen; Fette oder Lösungsmittel auf der Abdeckung; Schläge und Stöße; "
+              "Prüfspannung oder Messgerät direkt an der Zündpille",
+              "Wärme über ca. 100 °C, Flamme und Schweißen; Fette oder Lösungsmittel auf der Abdeckung; Schläge und Stöße; "
+              "Auslesen der Zündkreis-Messwerte mit dem Diagnosetester"],
+     "correct": 2,
+     "explain": "Zu vermeiden: Wärme über ca. 100 °C, offene Flamme und Schweißen in der Nähe (Herstellervorgaben beachten); "
+                "Fette, Reinigungs- oder Lösungsmittel auf der Abdeckung; Schläge und Stöße – heruntergefallene Einheiten "
+                "nicht mehr einbauen; Prüfspannung oder Messgerät an der Zündpille. Wärme kann die Treibladung zünden, Lösungsmittel greifen Abdeckung und Sollbruchstelle an, und ein Sturz "
                 "kann den Gasgenerator innen beschädigen.",
      "src": "Netz: Recherche 3.4, FW"},
     {"cat": "Airbag", "level": 3, "typ": "zuordnung", "pkt": 4,
@@ -435,13 +574,22 @@ QUESTIONS = [
      "explain": "Über die Wickelfeder laufen Fahrerairbag, Hupe und Lenkradtasten. Fallen alle zugleich aus, ist meist das "
                 "Flachbandkabel gerissen – oft, weil das Lenkrad bei abgenommener Wickelfeder verdreht wurde.",
      "src": "Netz: Recherche 3.4, FW"},
-    {"cat": "Airbag", "level": 3, "typ": "offen", "pkt": 3,
+    {"cat": "Airbag", "level": 3, "typ": "mc", "pkt": 3,
      "q": "Bei einer Inspektion fällt Ihnen auf, dass die Airbag-Kontrollleuchte beim Einschalten der Zündung gar nicht "
-          "aufleuchtet. Beurteilen Sie den Befund und nennen Sie das weitere Vorgehen.",
-     "punkte": ["Befund ist ein Fehler: Der Selbsttest wird nicht angezeigt, ein Systemfehler würde dem Fahrer nicht gemeldet",
-                "Mögliche Ursachen: Leuchte bzw. Anzeige im Kombiinstrument, Datenbus/Ansteuerung, Steuergerät ohne Versorgung oder manipuliert",
-                "Fehlerspeicher von Airbag-Steuergerät und Kombiinstrument auslesen und den Kunden über den Sicherheitsmangel informieren"],
-     "explain": "Die Kontrollleuchte ist Teil der Sicherheitsfunktion. Leuchtet sie nie, kann der Fahrer einen Ausfall des "
+          "aufleuchtet. Wie ist der Befund zu beurteilen, und wie gehen Sie weiter vor?",
+     "opts": ["In Ordnung: Ein fehlerfreies System zeigt keinen Selbsttest an; die Leuchte geht nur bei einem Fehler an; "
+              "kein weiteres Vorgehen nötig",
+              "Fehler: Der Selbsttest wird nicht angezeigt, ein Systemfehler würde nicht gemeldet; Fehlerspeicher von "
+              "Airbag-Steuergerät und Kombiinstrument auslesen; Kunden über den Sicherheitsmangel informieren",
+              "In Ordnung, wenn der Beifahrerairbag abgeschaltet ist; nur die Anzeige „Beifahrerairbag aus“ kontrollieren; "
+              "Kunden nicht weiter informieren",
+              "Fehler, aber ohne Einfluss auf die Sicherheit; die Airbags funktionieren trotzdem; Leuchte bei der "
+              "nächsten Inspektion tauschen"],
+     "correct": 1,
+     "explain": "Der Befund ist ein Fehler: Der Selbsttest wird nicht angezeigt, ein Systemfehler würde dem Fahrer nicht "
+                "gemeldet. Mögliche Ursachen sind Leuchte bzw. Anzeige im Kombiinstrument, Datenbus/Ansteuerung oder ein "
+                "Steuergerät ohne Versorgung oder manipuliert. Fehlerspeicher von Airbag-Steuergerät und Kombiinstrument "
+                "auslesen und den Kunden informieren. Die Kontrollleuchte ist Teil der Sicherheitsfunktion. Leuchtet sie nie, kann der Fahrer einen Ausfall des "
                 "Airbag-Systems nicht erkennen – das ist auch bei der Hauptuntersuchung ein Mangel.",
      "src": "FW"},
 ]

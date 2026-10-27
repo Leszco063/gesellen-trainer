@@ -11,6 +11,8 @@ export const TRAINER = {
   ],
   bereiche: ["Diesel", "Bremse", "Klima", "Airbag", "WiSo", "Grundlagen"],
   hinweis: "Erlaubt: Kfz-Tabellenbuch ohne eigene Einträge.",
+  // Nur Aufgaben zum Antippen – der User möchte nichts eintippen (offen/zahl gibt es im Kern trotzdem)
+  erlaubteTypen: ["mc", "zuordnung", "reihenfolge"],
   // 100-Punkte-Schlüssel im Handwerk: [ab Prozent, Text, Note]
   notenschluessel: [
     [92, "sehr gut", 1], [81, "gut", 2], [67, "befriedigend", 3],
@@ -22,7 +24,7 @@ export const TRAINER = {
     name: "Prüfungstag 27.11. (komplett)",
     levelMix: [0.25, 0.45, 0.30],
     // Mischung, wenn es für einen Block keinen Aufgabensatz gibt (21 Aufgaben wie in der Schulprüfung)
-    blockMix: { mc: 4, zahl: 2, reihenfolge: 1, offen: 9, zuordnung: 5 },
+    blockMix: { mc: 15, reihenfolge: 1, zuordnung: 5 },
     faecher: { diag: "Diagnosetechnik", ih: "Kfz- und Instandhaltungstechnik", wiso: "Wirtschafts- und Sozialkunde" },
     bestehen: { mindestAusreichend: 2, grenzeAusreichend: 50, grenzeUngenuegend: 30 },
     ablauf: [

@@ -18,6 +18,7 @@ export default async function () {
   for (const q of QUESTIONS) {
     if (!TRAINER.bereiche.includes(q.cat)) fail(`Frage ${q.id}: Bereich ${q.cat} fehlt in TRAINER.bereiche`);
     try { typVon(q); } catch (e) { fail(`Frage ${q.id}: ${e.message}`); }
+    if (TRAINER.erlaubteTypen && !TRAINER.erlaubteTypen.includes(q.typ || "mc")) fail(`Frage ${q.id} (${q.cat}): Typ ${q.typ} ist in diesem Trainer nicht erlaubt`);
   }
   for (const cat of TRAINER.bereiche) {
     if (QUESTIONS.some(q => q.cat === cat) && !cardForQuestion({ cat, q: "", explain: "" })) fail(`Kein Spickzettel für Bereich ${cat}`);
@@ -30,8 +31,6 @@ export default async function () {
     ok(Object.values(SITUATIONEN).filter(s => s.cat === cat).length >= m.saetze, `${cat}: weniger als ${m.saetze} Aufgabensätze`);
     ok(CARDS.filter(c => c.cat === cat).length >= m.karten, `${cat}: weniger als ${m.karten} Spickzettel`);
     if (m.fragen >= 30) {
-      ok(anzahl("mc") <= qs.length * 0.3, `${cat}: zu viel Multiple Choice (${anzahl("mc")} von ${qs.length})`);
-      ok(anzahl("offen") >= qs.length * 0.3, `${cat}: zu wenig offene Aufgaben (${anzahl("offen")})`);
       ok(anzahl("zuordnung") >= qs.length * 0.15, `${cat}: zu wenig Zuordnungen (${anzahl("zuordnung")})`);
       ok(anzahl("reihenfolge") >= 1, `${cat}: keine Reihenfolge-Aufgabe`);
     }

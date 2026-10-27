@@ -18,7 +18,7 @@ const viele = (cat, typ, n) => Array.from({ length: n }, () => f(cat, typ));
 export default async function () {
   eq([zufallsLevel([0.25, 0.45, 0.3], 0.1), zufallsLevel([0.25, 0.45, 0.3], 0.5), zufallsLevel([0.25, 0.45, 0.3], 0.9)], [1, 2, 3], "zufallsLevel");
 
-  const mix = TRAINER.pruefung.blockMix;
+  const mix = { mc: 4, zahl: 2, reihenfolge: 1, offen: 9, zuordnung: 5 }; // fester Test-Mix, unabhängig vom Trainer
   const pool = [...viele("Diesel", "mc", 10), ...viele("Diesel", "offen", 12), ...viele("Diesel", "zuordnung", 6), ...viele("Diesel", "reihenfolge", 2)];
   const gen = { has: c => c === "Diesel", generate: (cat, level) => ({ ...f(cat, "zahl"), level, gen: true }) };
   const block = { cats: ["Diesel"] };

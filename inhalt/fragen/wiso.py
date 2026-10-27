@@ -23,13 +23,16 @@ QUESTIONS = [
     # Aufgabensatz „Start als Geselle“ (20 Aufgaben, 67 Punkte)
     # ------------------------------------------------------------------
     # 1 Tarifautonomie
-    {"cat": "WiSo", "situation": S, "nr": 1, "level": 1, "typ": "offen", "pkt": 3,
-     "q": "Ihr Lohn als Geselle richtet sich nach dem Tarifvertrag. Erklären Sie den Begriff Tarifautonomie.",
-     "punkte": ["Grundlage ist die Koalitionsfreiheit nach Art. 9 Abs. 3 Grundgesetz",
-                "Gewerkschaften und Arbeitgeberverbände handeln Löhne und Arbeitsbedingungen selbstständig aus",
-                "Der Staat mischt sich in die Verhandlungen nicht ein (er setzt nur Mindeststandards per Gesetz, z. B. Mindestlohn)"],
-     "explain": "Tarifautonomie heißt: Die Tarifpartner regeln Lohn, Arbeitszeit und Urlaub eigenverantwortlich. "
-                "Der Staat gibt nur den gesetzlichen Rahmen vor (z. B. Arbeitszeitgesetz, Bundesurlaubsgesetz, Mindestlohngesetz).",
+    {"cat": "WiSo", "situation": S, "nr": 1, "level": 1, "typ": "mc", "pkt": 3,
+     "q": "Ihr Lohn als Geselle richtet sich nach dem Tarifvertrag. Welche Erklärung des Begriffs Tarifautonomie ist richtig?",
+     "opts": ["Der Staat legt Löhne und Arbeitsbedingungen per Gesetz fest; Gewerkschaften und Arbeitgeberverbände werden dazu nur angehört",
+              "Betriebsrat und Arbeitgeber handeln die Löhne im einzelnen Betrieb selbstständig aus; Grundlage ist das Betriebsverfassungsgesetz",
+              "Gewerkschaften und Arbeitgeberverbände handeln Löhne und Arbeitsbedingungen selbstständig aus; Grundlage ist Art. 9 Abs. 3 GG; der Staat mischt sich nicht ein",
+              "Gewerkschaften und Arbeitgeberverbände verhandeln die Löhne; der Abschluss gilt aber erst, wenn das Arbeitsministerium ihn genehmigt"],
+     "correct": 2,
+     "explain": "Tarifautonomie heißt: Die Tarifpartner regeln Lohn, Arbeitszeit und Urlaub eigenverantwortlich. Grundlage ist die "
+                "Koalitionsfreiheit nach Art. 9 Abs. 3 Grundgesetz; in die Verhandlungen mischt sich der Staat nicht ein. "
+                "Er gibt nur den gesetzlichen Rahmen vor (z. B. Arbeitszeitgesetz, Bundesurlaubsgesetz, Mindestlohngesetz).",
      "src": "FW"},
     # 2 Tarifpartner
     {"cat": "WiSo", "situation": S, "nr": 2, "level": 2, "typ": "zuordnung", "pkt": 4,
@@ -81,10 +84,11 @@ QUESTIONS = [
                 "Warnstreiks sind erst nach Ende der Laufzeit erlaubt.",
      "src": "FW"},
     # 6 Tariferhöhung 2026
-    {"cat": "WiSo", "situation": S, "nr": 6, "level": 1, "typ": "zahl", "pkt": 3,
+    {"cat": "WiSo", "situation": S, "nr": 6, "level": 1, "typ": "mc", "pkt": 3,
      "q": "Im Juli 2026 verdienen Sie 3.000 € brutto im Monat. Nach dem Tarifabschluss 2025 im bayerischen Kfz-Handwerk "
-          "steigen die Entgelte ab August 2026 um 3,3 %. Berechnen Sie Ihren neuen Monatslohn.",
-     "loesung": 3099, "einheit": "€", "toleranz": 0.003,
+          "steigen die Entgelte ab August 2026 um 3,3 %. Wie hoch ist Ihr neuer Monatslohn?",
+     "opts": ["3.009,90 €", "3.099,00 €", "3.168,00 €", "2.901,00 €"],
+     "correct": 1,
      "explain": "Erhöhung: 3.000 € × 3,3 % = 99 € → neuer Lohn 3.000 € + 99 € = 3.099 €. "
                 "(Abschluss 2025: +2,3 % ab Juli 2025, +3,3 % ab August 2026, Laufzeit bis Ende Mai 2027.)",
      "src": "Netz: IG Metall Bayern, Tarifnachrichten Kfz 06/2025"},
@@ -110,29 +114,38 @@ QUESTIONS = [
                 "Deshalb zahlt er den Beitrag allein, abhängig von Lohnsumme und Gefahrklasse.",
      "src": "FW"},
     # 9 RV-Beitrag 2026
-    {"cat": "WiSo", "situation": S, "nr": 9, "level": 2, "typ": "zahl", "pkt": 3,
+    {"cat": "WiSo", "situation": S, "nr": 9, "level": 2, "typ": "mc", "pkt": 3,
      "q": "Mit einer Zulage verdienen Sie 3.100 € brutto im Monat. Der Beitragssatz zur Rentenversicherung beträgt 2026 18,6 %. "
-          "Berechnen Sie Ihren Arbeitnehmeranteil.",
-     "loesung": 288.30, "einheit": "€", "toleranz": 0.005,
+          "Wie hoch ist Ihr Arbeitnehmeranteil?",
+     "opts": ["576,60 €", "28,83 €", "2.811,70 €", "288,30 €"],
+     "correct": 3,
      "explain": "Arbeitnehmer und Arbeitgeber zahlen je die Hälfte: 18,6 % ÷ 2 = 9,3 %. 3.100 € × 9,3 % = 288,30 €.",
      "src": "Netz: lohn-info.de / krankenkassen.de, Rechengrößen 2026"},
     # 10 Generationenvertrag
-    {"cat": "WiSo", "situation": S, "nr": 10, "level": 3, "typ": "offen", "pkt": 4,
-     "q": "Ihr Rentenbeitrag wird nicht für Sie angespart. Erklären Sie das Umlageverfahren (Generationenvertrag) und "
-          "das Problem, das der demografische Wandel dafür bringt.",
-     "punkte": ["Die Beiträge der heutigen Beschäftigten bezahlen direkt die Renten der heutigen Rentner",
-                "Die jetzigen Beitragszahler erwerben dafür einen Anspruch, den später die nächste Generation finanziert",
-                "Demografischer Wandel: weniger Geburten und höhere Lebenserwartung, die Babyboomer gehen in Rente",
-                "Folge: weniger Beitragszahler pro Rentner → steigende Beiträge, sinkendes Rentenniveau oder höhere Steuerzuschüsse"],
-     "explain": "Beim Umlageverfahren gibt es keinen Kapitalstock. Wie gut es funktioniert, hängt am Verhältnis von Beitragszahlern zu Rentnern.",
+    {"cat": "WiSo", "situation": S, "nr": 10, "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Ihr Rentenbeitrag wird nicht für Sie angespart. Welche Aussage beschreibt das Umlageverfahren (Generationenvertrag) und "
+          "das Problem durch den demografischen Wandel richtig?",
+     "opts": ["Ihre Beiträge werden auf einem persönlichen Konto angelegt und verzinst; weil weniger Kinder geboren werden, sinken die Zinsen und damit die Rente",
+              "Die heutigen Beiträge zahlen direkt die heutigen Renten, Ihre Rente zahlt später die nächste Generation; durch weniger Geburten und längeres Leben kommen immer weniger Beitragszahler auf einen Rentner",
+              "Die heutigen Renten werden vollständig aus Steuern bezahlt; durch den demografischen Wandel muss deshalb vor allem die Mehrwertsteuer steigen",
+              "Die heutigen Beiträge zahlen direkt die heutigen Renten; weil die geburtenstarken Jahrgänge jetzt erst ins Berufsleben starten, kommen künftig mehr Beitragszahler auf einen Rentner"],
+     "correct": 1,
+     "explain": "Beim Umlageverfahren gibt es keinen Kapitalstock: Die Beiträge der heutigen Beschäftigten bezahlen direkt die heutigen Renten, "
+                "dafür erwerben die Beitragszahler einen Anspruch, den später die nächste Generation finanziert. Demografischer Wandel: "
+                "weniger Geburten, höhere Lebenserwartung, die Babyboomer gehen in Rente. Folge: weniger Beitragszahler pro Rentner → "
+                "steigende Beiträge, sinkendes Rentenniveau oder höhere Steuerzuschüsse.",
      "src": "FW"},
     # 11 Drei-Säulen-Modell
-    {"cat": "WiSo", "situation": S, "nr": 11, "level": 1, "typ": "offen", "pkt": 3,
-     "q": "Nennen Sie die drei Säulen der Altersvorsorge mit je einem Beispiel.",
-     "punkte": ["Gesetzliche Rentenversicherung (Pflichtbeitrag vom Lohn)",
-                "Betriebliche Altersvorsorge (z. B. Entgeltumwandlung über den Arbeitgeber)",
-                "Private Vorsorge (z. B. private Rentenversicherung, Riester-Vertrag, Sparplan)"],
-     "explain": "Die gesetzliche Rente allein sichert den Lebensstandard meist nicht. Betriebliche und private Vorsorge "
+    {"cat": "WiSo", "situation": S, "nr": 11, "level": 1, "typ": "mc", "pkt": 3,
+     "q": "Welche Antwort nennt die drei Säulen der Altersvorsorge mit je einem passenden Beispiel?",
+     "opts": ["Gesetzliche Rentenversicherung (Pflichtbeitrag vom Lohn); gesetzliche Pflegeversicherung (Pflegegeld); private Vorsorge (Riester-Vertrag, Sparplan)",
+              "Gesetzliche Unfallversicherung (Verletztenrente); betriebliche Altersvorsorge (Entgeltumwandlung); private Vorsorge (Riester-Vertrag, Sparplan)",
+              "Gesetzliche Rentenversicherung (Pflichtbeitrag vom Lohn); betriebliche Altersvorsorge (Entgeltumwandlung); private Vorsorge (Riester-Vertrag, Sparplan)",
+              "Gesetzliche Rentenversicherung (Pflichtbeitrag vom Lohn); betriebliche Altersvorsorge (Entgeltumwandlung); Grundsicherung im Alter (Sozialamt)"],
+     "correct": 2,
+     "explain": "Die drei Säulen: gesetzliche Rentenversicherung, betriebliche Altersvorsorge (z. B. Entgeltumwandlung über den Arbeitgeber) "
+                "und private Vorsorge (z. B. private Rentenversicherung, Riester-Vertrag, Sparplan). Die Grundsicherung im Alter ist keine "
+                "Vorsorge, sondern Fürsorge aus Steuern. Die gesetzliche Rente allein sichert den Lebensstandard meist nicht. Betriebliche und private Vorsorge "
                 "werden vom Staat teils gefördert (Zulagen, Steuer- und Beitragsvorteile).",
      "src": "FW"},
     # 12 Rentenpaket 2025
@@ -158,12 +171,16 @@ QUESTIONS = [
      "explain": "Die fünf Wahlgrundsätze stehen für den Bundestag in Art. 38 GG und gelten über Art. 28 GG auch für Gemeinde- und Kreiswahlen.",
      "src": "FW"},
     # 14 Kumulieren und Panaschieren
-    {"cat": "WiSo", "situation": S, "nr": 14, "level": 2, "typ": "offen", "pkt": 3,
-     "q": "Bei der Wahl des Stadtrats in Bayern durften Sie kumulieren und panaschieren. Erklären Sie beide Begriffe.",
-     "punkte": ["Kumulieren: einem Bewerber mehrere Stimmen geben, in Bayern höchstens 3",
-                "Panaschieren: die Stimmen auf Bewerber verschiedener Listen (Parteien/Wählergruppen) verteilen",
-                "Man hat so viele Stimmen, wie Gemeinde- bzw. Stadtratsmitglieder zu wählen sind – mehr darf man nicht vergeben"],
-     "explain": "Kumulieren = „häufeln“, Panaschieren = „mischen“. Zusätzlich gibt es das Listenkreuz: Dann bekommt jeder Bewerber "
+    {"cat": "WiSo", "situation": S, "nr": 14, "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Bei der Wahl des Stadtrats in Bayern durften Sie kumulieren und panaschieren. Welche Erklärung beider Begriffe ist richtig?",
+     "opts": ["Kumulieren: Stimmen auf Bewerber verschiedener Listen verteilen; Panaschieren: einem Bewerber bis zu 3 Stimmen geben; insgesamt so viele Stimmen, wie Sitze zu vergeben sind",
+              "Kumulieren: einem Bewerber bis zu 5 Stimmen geben; Panaschieren: Stimmen auf Bewerber verschiedener Listen verteilen; insgesamt so viele Stimmen, wie Sitze zu vergeben sind",
+              "Kumulieren: einem Bewerber bis zu 3 Stimmen geben; Panaschieren: Stimmen auf Bewerber verschiedener Listen verteilen; insgesamt genau 3 Stimmen, egal wie viele Sitze zu vergeben sind",
+              "Kumulieren: einem Bewerber bis zu 3 Stimmen geben; Panaschieren: Stimmen auf Bewerber verschiedener Listen verteilen; insgesamt so viele Stimmen, wie Sitze zu vergeben sind"],
+     "correct": 3,
+     "explain": "Kumulieren = „häufeln“: einem Bewerber mehrere Stimmen geben, in Bayern höchstens 3. Panaschieren = „mischen“: Stimmen auf "
+                "Bewerber verschiedener Listen (Parteien/Wählergruppen) verteilen. Man hat so viele Stimmen, wie Gemeinde- bzw. "
+                "Stadtratsmitglieder zu wählen sind. Zusätzlich gibt es das Listenkreuz: Dann bekommt jeder Bewerber "
                 "der Liste der Reihe nach eine Stimme. Wer zu viele Stimmen vergibt, macht den Stimmzettel ungültig bzw. teilweise ungültig.",
      "src": "Netz: Gemeinde-Infoblätter Kommunalwahl Bayern 2026"},
     # 15 Amtszeit und Wahlalter
@@ -200,20 +217,29 @@ QUESTIONS = [
      "explain": "Die Konjunktur schwankt wellenförmig um den langfristigen Wachstumstrend. Ein Zyklus hat vier Phasen.",
      "src": "FW"},
     # 18 Magisches Viereck
-    {"cat": "WiSo", "situation": S, "nr": 18, "level": 1, "typ": "offen", "pkt": 4,
-     "q": "Nennen Sie die vier Ziele des magischen Vierecks nach dem Stabilitäts- und Wachstumsgesetz von 1967.",
-     "punkte": ["Stabilität des Preisniveaus", "Hoher Beschäftigungsstand",
-                "Außenwirtschaftliches Gleichgewicht", "Stetiges und angemessenes Wirtschaftswachstum"],
-     "explain": "„Magisch“, weil sich nie alle vier Ziele gleichzeitig voll erreichen lassen. Erweitert zum magischen Sechseck/Vieleck um "
+    {"cat": "WiSo", "situation": S, "nr": 18, "level": 1, "typ": "mc", "pkt": 4,
+     "q": "Welche Antwort nennt die vier Ziele des magischen Vierecks nach dem Stabilitäts- und Wachstumsgesetz von 1967?",
+     "opts": ["Stabilität des Preisniveaus; hoher Beschäftigungsstand; außenwirtschaftliches Gleichgewicht; stetiges und angemessenes Wirtschaftswachstum",
+              "Stabilität des Preisniveaus; hoher Beschäftigungsstand; ausgeglichener Staatshaushalt; stetiges und angemessenes Wirtschaftswachstum",
+              "Stabilität des Preisniveaus; hoher Beschäftigungsstand; möglichst hoher Exportüberschuss; stetiges und angemessenes Wirtschaftswachstum",
+              "Stabilität des Preisniveaus; hoher Beschäftigungsstand; außenwirtschaftliches Gleichgewicht; Schutz der Umwelt"],
+     "correct": 0,
+     "explain": "Die vier Ziele nach StabG 1967: Stabilität des Preisniveaus, hoher Beschäftigungsstand, außenwirtschaftliches "
+                "Gleichgewicht (kein dauerhaft hoher Export- oder Importüberschuss), stetiges und angemessenes Wirtschaftswachstum. "
+                "„Magisch“, weil sich nie alle vier Ziele gleichzeitig voll erreichen lassen. Erweitert zum magischen Sechseck/Vieleck um "
                 "Umweltschutz und gerechte Einkommens- und Vermögensverteilung.",
      "src": "FW"},
     # 19 Zielkonflikt
-    {"cat": "WiSo", "situation": S, "nr": 19, "level": 3, "typ": "offen", "pkt": 3,
-     "q": "Erklären Sie an einem Beispiel einen Zielkonflikt zwischen zwei Zielen des magischen Vierecks.",
-     "punkte": ["Beispiel: Wirtschaftswachstum/hoher Beschäftigungsstand gegen Preisniveaustabilität",
-                "Hohe Nachfrage und volle Auslastung führen zu steigenden Preisen und Löhnen (Inflation)",
-                "Maßnahmen gegen Inflation (z. B. höhere Zinsen) bremsen Investitionen, Wachstum und Beschäftigung"],
-     "explain": "Ein Zielkonflikt liegt vor, wenn die Förderung eines Ziels ein anderes verschlechtert. Weiteres Beispiel: Wachstum gegen Umweltschutz.",
+    {"cat": "WiSo", "situation": S, "nr": 19, "level": 3, "typ": "mc", "pkt": 3,
+     "q": "Welches Beispiel beschreibt einen Zielkonflikt zwischen zwei Zielen des magischen Vierecks richtig?",
+     "opts": ["Mehr Beschäftigung bringt mehr Einkommen und Konsum, dadurch wächst die Wirtschaft stärker; beide Ziele fördern sich gegenseitig",
+              "Höhere Leitzinsen senken die Inflation und kurbeln zugleich Investitionen und Beschäftigung an; so werden beide Ziele gleichzeitig erreicht",
+              "Hohe Nachfrage und volle Auslastung sichern Wachstum und Beschäftigung, lassen aber Preise und Löhne steigen; höhere Zinsen gegen die Inflation bremsen dann Wachstum und Beschäftigung",
+              "Sinkende Arbeitslosigkeit drückt die Löhne und damit die Preise; so sorgt ein hoher Beschäftigungsstand automatisch für stabile Preise"],
+     "correct": 2,
+     "explain": "Beispiel: Wirtschaftswachstum/hoher Beschäftigungsstand gegen Preisniveaustabilität. Hohe Nachfrage und volle Auslastung "
+                "führen zu steigenden Preisen und Löhnen (Inflation); Maßnahmen dagegen (z. B. höhere Zinsen) bremsen Investitionen, "
+                "Wachstum und Beschäftigung. Fördern sich zwei Ziele gegenseitig, spricht man von Zielharmonie. Ein Zielkonflikt liegt vor, wenn die Förderung eines Ziels ein anderes verschlechtert. Weiteres Beispiel: Wachstum gegen Umweltschutz.",
      "src": "FW"},
     # 20 Antizyklische Fiskalpolitik
     {"cat": "WiSo", "situation": S, "nr": 20, "level": 2, "typ": "mc", "pkt": 2,
@@ -250,19 +276,27 @@ QUESTIONS = [
      "explain": "Die Allgemeinverbindlicherklärung spricht das Arbeitsministerium auf Antrag der Tarifpartner aus, wenn sie im "
                 "öffentlichen Interesse liegt (§ 5 TVG). Damit sind auch nicht tarifgebundene Betriebe erfasst.",
      "src": "FW"},
-    {"cat": "WiSo", "level": 3, "typ": "offen", "pkt": 3,
-     "q": "Nennen Sie drei Möglichkeiten, wie ein Tarifvertrag für Ihr Arbeitsverhältnis verbindlich werden kann.",
-     "punkte": ["Beiderseitige Tarifbindung: Sie sind Gewerkschaftsmitglied und Ihr Betrieb ist Mitglied im Arbeitgeberverband",
-                "Der Tarifvertrag wurde für allgemeinverbindlich erklärt",
-                "Ihr Arbeitsvertrag verweist auf den Tarifvertrag (Bezugnahmeklausel)"],
-     "explain": "Nach § 3 TVG sind die Mitglieder der Tarifparteien tarifgebunden. Tarifgebundene Betriebe wenden den Tarif in der Praxis "
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 3,
+     "q": "Welche Antwort nennt drei Möglichkeiten, wie ein Tarifvertrag für Ihr Arbeitsverhältnis verbindlich werden kann?",
+     "opts": ["Beiderseitige Tarifbindung (Gewerkschaft und Arbeitgeberverband); Allgemeinverbindlicherklärung; Eintragung des Betriebs in die Handwerksrolle",
+              "Beiderseitige Tarifbindung (Gewerkschaft und Arbeitgeberverband); Allgemeinverbindlicherklärung; Verweis im Arbeitsvertrag (Bezugnahmeklausel)",
+              "Gewerkschaftsmitgliedschaft des Arbeitnehmers, auch wenn der Betrieb nicht im Arbeitgeberverband ist; Allgemeinverbindlicherklärung; Verweis im Arbeitsvertrag",
+              "Beiderseitige Tarifbindung (Gewerkschaft und Arbeitgeberverband); Beschluss der Betriebsversammlung; Verweis im Arbeitsvertrag (Bezugnahmeklausel)"],
+     "correct": 1,
+     "explain": "Drei Wege: beiderseitige Tarifbindung (Sie sind Gewerkschaftsmitglied und Ihr Betrieb ist Mitglied im Arbeitgeberverband), "
+                "Allgemeinverbindlicherklärung oder ein Verweis im Arbeitsvertrag (Bezugnahmeklausel). Nach § 3 TVG sind die Mitglieder der Tarifparteien tarifgebunden. Tarifgebundene Betriebe wenden den Tarif in der Praxis "
                 "meist über den Arbeitsvertrag auch für Nicht-Gewerkschaftsmitglieder an.",
      "src": "FW"},
-    {"cat": "WiSo", "level": 2, "typ": "offen", "pkt": 2,
-     "q": "Unterscheiden Sie Flächentarifvertrag und Haustarifvertrag.",
-     "punkte": ["Flächentarif: zwischen Gewerkschaft und Arbeitgeberverband, gilt für eine Branche in einer Region (z. B. Kfz-Handwerk Bayern)",
-                "Haustarif (Firmentarif): zwischen Gewerkschaft und einem einzelnen Unternehmen"],
-     "explain": "Kleine und mittlere Kfz-Betriebe sind meist über ihren Verband an den Flächentarif gebunden. Große Konzerne haben teils eigene Haustarife.",
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
+     "q": "Wie unterscheiden sich Flächentarifvertrag und Haustarifvertrag?",
+     "opts": ["Flächentarif: zwischen Gewerkschaft und einem einzelnen Unternehmen; Haustarif: zwischen Gewerkschaft und Arbeitgeberverband für eine Branche in einer Region",
+              "Flächentarif: zwischen Gewerkschaft und Arbeitgeberverband für eine Branche in einer Region; Haustarif: zwischen Betriebsrat und Arbeitgeber eines Unternehmens",
+              "Flächentarif: zwischen Gewerkschaft und Staat, gilt bundesweit für alle Branchen; Haustarif: zwischen Gewerkschaft und einem einzelnen Unternehmen",
+              "Flächentarif: zwischen Gewerkschaft und Arbeitgeberverband für eine Branche in einer Region; Haustarif: zwischen Gewerkschaft und einem einzelnen Unternehmen"],
+     "correct": 3,
+     "explain": "Flächentarif: zwischen Gewerkschaft und Arbeitgeberverband, gilt für eine Branche in einer Region (z. B. Kfz-Handwerk Bayern). "
+                "Haustarif (Firmentarif): zwischen Gewerkschaft und einem einzelnen Unternehmen. Betriebsrat und Arbeitgeber schließen keine "
+                "Tarifverträge, sondern Betriebsvereinbarungen. Kleine und mittlere Kfz-Betriebe sind meist über ihren Verband an den Flächentarif gebunden. Große Konzerne haben teils eigene Haustarife.",
      "src": "FW"},
     {"cat": "WiSo", "level": 2, "typ": "zuordnung", "pkt": 5,
      "q": "Ordnen Sie den Begriffen aus dem Arbeitskampf die richtige Beschreibung zu.",
@@ -291,11 +325,12 @@ QUESTIONS = [
      "explain": "Werte 2026: RV 18,6 %, KV 14,6 % + Zusatzbeitrag der Kasse (Durchschnitt 2,9 %), PV 3,6 % (kinderlos ab 23 Jahren "
                 "+0,6 % für den Arbeitnehmer), AV 2,6 %. Bis auf den PV-Zuschlag und die UV tragen AN und AG je die Hälfte.",
      "src": "Netz: lohn-info.de / krankenkassen.de, Rechengrößen 2026"},
-    {"cat": "WiSo", "level": 3, "typ": "zahl", "pkt": 4,
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 4,
      "q": "Sie sind 25 Jahre alt, kinderlos und verdienen 2026 3.100 € brutto. Beitragssätze 2026: RV 18,6 %, KV 14,6 % plus 2,9 % "
-          "Zusatzbeitrag Ihrer Kasse, PV 3,6 % plus 0,6 % Kinderlosenzuschlag, AV 2,6 %. Berechnen Sie Ihren gesamten "
-          "Arbeitnehmeranteil zur Sozialversicherung.",
-     "loesung": 674.25, "einheit": "€", "toleranz": 0.003,
+          "Zusatzbeitrag Ihrer Kasse, PV 3,6 % plus 0,6 % Kinderlosenzuschlag, AV 2,6 %. Wie hoch ist Ihr gesamter "
+          "Arbeitnehmeranteil zur Sozialversicherung?",
+     "opts": ["655,65 €", "629,30 €", "674,25 €", "1.329,90 €"],
+     "correct": 2,
      "explain": "AN-Anteile: RV 9,3 % + KV (14,6 % + 2,9 %) ÷ 2 = 8,75 % + PV 1,8 % + 0,6 % = 2,4 % + AV 1,3 % = 21,75 %. "
                 "3.100 € × 21,75 % = 674,25 € (RV 288,30 € + KV 271,25 € + PV 74,40 € + AV 40,30 €).",
      "src": "Netz: lohn-info.de / krankenkassen.de, Rechengrößen 2026"},
@@ -319,11 +354,12 @@ QUESTIONS = [
      "explain": "Der Grundbeitrag 3,6 % wird geteilt (je 1,8 %). Kinderlose ab 23 zahlen 0,6 % zusätzlich allein → 2,4 % Arbeitnehmeranteil. "
                 "Eltern mit mehreren Kindern unter 25 zahlen weniger.",
      "src": "Netz: lohn-info.de, Sozialversicherungsbeiträge 2026"},
-    {"cat": "WiSo", "level": 1, "typ": "zahl", "pkt": 2,
+    {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 2,
      "q": "Bis zu welchem Monatsverdienst ist im Jahr 2026 ein Minijob möglich?",
-     "loesung": 603, "einheit": "€", "toleranz": 0.002,
+     "opts": ["603 €", "556 €", "538 €", "450 €"],
+     "correct": 0,
      "explain": "Die Minijob-Grenze ist an den Mindestlohn gekoppelt (10 Stunden pro Woche zum Mindestlohn). Mit dem Mindestlohn 2026 "
-                "von 13,90 € ergibt das 603 € im Monat.",
+                "von 13,90 € ergibt das 603 € im Monat (13,90 € × 130 ÷ 3, aufgerundet). Frühere Grenzen: 2025 556 €, 2024 538 €, bis 09/2022 450 €.",
      "src": "Netz: lohn-info.de / krankenkassen.de, Rechengrößen 2026"},
     {"cat": "WiSo", "level": 3, "typ": "zuordnung", "pkt": 5,
      "q": "Ordnen Sie den Grundprinzipien der sozialen Sicherung die richtige Beschreibung zu.",
@@ -344,9 +380,10 @@ QUESTIONS = [
      "explain": "Aktivrente (Stand 2026): Steuerfreibetrag von bis zu 2.000 € monatlich für Arbeitslohn nach Erreichen der Regelaltersgrenze. "
                 "Nicht für Minijobs, Selbstständige oder Frührentner vor der Regelaltersgrenze.",
      "src": "Netz: Bundesregierung / test.de, Aktivrente 2026"},
-    {"cat": "WiSo", "level": 1, "typ": "zahl", "pkt": 2,
+    {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 2,
      "q": "Mit welchem Alter erreichen Sie (Geburtsjahrgang 2006) nach heutigem Recht (Stand 2026) die Regelaltersgrenze der Rentenversicherung?",
-     "loesung": 67, "einheit": "Jahre", "toleranz": 0.01,
+     "opts": ["65 Jahre", "67 Jahre", "63 Jahre", "68 Jahre"],
+     "correct": 1,
      "explain": "Die Regelaltersgrenze wurde schrittweise angehoben und liegt für alle ab Jahrgang 1964 bei 67 Jahren.",
      "src": "FW"},
     {"cat": "WiSo", "level": 2, "typ": "zuordnung", "pkt": 4,
@@ -359,35 +396,44 @@ QUESTIONS = [
      "explain": "Volle Erwerbsminderung: weniger als 3 Stunden Arbeit täglich möglich. Bei einem Freizeitunfall ist nicht die "
                 "Berufsgenossenschaft, sondern die Renten- bzw. Krankenversicherung zuständig. Grundsatz: Reha vor Rente.",
      "src": "FW"},
-    {"cat": "WiSo", "level": 2, "typ": "offen", "pkt": 4,
-     "q": "Sie stürzen auf dem direkten Weg zur Werkstatt mit dem Fahrrad und brechen sich das Handgelenk. Welche Versicherung ist "
-          "zuständig und welche Leistungen erbringt sie?",
-     "punkte": ["Gesetzliche Unfallversicherung (Berufsgenossenschaft), weil es ein Wegeunfall ist",
-                "Heilbehandlung (Behandlung beim Durchgangsarzt, Klinik, Medikamente)",
-                "Verletztengeld nach Ende der Lohnfortzahlung",
-                "Rehabilitation, Umschulung und bei bleibenden Schäden Verletztenrente"],
-     "explain": "Versichert sind Arbeitsunfälle, Wegeunfälle (direkter Weg) und Berufskrankheiten. Den Unfall muss der Betrieb der BG melden. "
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 4,
+     "q": "Sie stürzen auf dem direkten Weg zur Werkstatt mit dem Fahrrad und brechen sich das Handgelenk. Welche Antwort nennt die "
+          "zuständige Versicherung und ihre Leistungen richtig?",
+     "opts": ["Gesetzliche Krankenversicherung, weil der Unfall nicht im Betrieb passiert ist; Behandlung beim Hausarzt; Krankengeld nach der Lohnfortzahlung; Reha über die Rentenversicherung",
+              "Gesetzliche Unfallversicherung (Berufsgenossenschaft), weil es ein Wegeunfall ist; Heilbehandlung beim Durchgangsarzt; Arbeitslosengeld nach der Lohnfortzahlung; Reha und ggf. Verletztenrente",
+              "Gesetzliche Rentenversicherung, weil Ihre Erwerbsfähigkeit gefährdet ist; Heilbehandlung beim Hausarzt; Übergangsgeld ab dem ersten Tag; bei bleibenden Schäden Erwerbsminderungsrente",
+              "Gesetzliche Unfallversicherung (Berufsgenossenschaft), weil es ein Wegeunfall ist; Heilbehandlung beim Durchgangsarzt; Verletztengeld nach der Lohnfortzahlung; Reha und ggf. Verletztenrente"],
+     "correct": 3,
+     "explain": "Zuständig ist die gesetzliche Unfallversicherung (Berufsgenossenschaft), weil es ein Wegeunfall ist. Leistungen: "
+                "Heilbehandlung (Durchgangsarzt, Klinik, Medikamente), Verletztengeld nach Ende der Lohnfortzahlung, Rehabilitation und "
+                "Umschulung, bei bleibenden Schäden Verletztenrente. Versichert sind Arbeitsunfälle, Wegeunfälle (direkter Weg) und Berufskrankheiten. Den Unfall muss der Betrieb der BG melden. "
                 "Weitere Aufgabe der BG: Prävention durch Unfallverhütungsvorschriften.",
      "src": "FW"},
-    {"cat": "WiSo", "level": 2, "typ": "offen", "pkt": 3,
-     "q": "Nennen Sie drei Leistungen der Arbeitslosenversicherung.",
-     "punkte": ["Arbeitslosengeld (60 % bzw. mit Kind 67 % des pauschalierten Nettoentgelts)",
-                "Arbeitsvermittlung und Berufsberatung",
-                "Förderung von Weiterbildung und Umschulung",
-                "Kurzarbeitergeld bei vorübergehendem Arbeitsausfall"],
-     "explain": "Träger ist die Bundesagentur für Arbeit mit den Agenturen für Arbeit vor Ort. Auch Insolvenzgeld gehört zu den Leistungen.",
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Welche Antwort nennt drei Leistungen der Arbeitslosenversicherung?",
+     "opts": ["Arbeitslosengeld; Kurzarbeitergeld bei vorübergehendem Arbeitsausfall; Förderung von Weiterbildung und Umschulung",
+              "Arbeitslosengeld; Kurzarbeitergeld bei vorübergehendem Arbeitsausfall; Krankengeld bei längerer Krankheit",
+              "Arbeitsvermittlung und Berufsberatung; Sozialhilfe für dauerhaft Erwerbsunfähige; Förderung von Weiterbildung und Umschulung",
+              "Arbeitsvermittlung und Berufsberatung; Kurzarbeitergeld bei vorübergehendem Arbeitsausfall; Erwerbsminderungsrente"],
+     "correct": 0,
+     "explain": "Leistungen: Arbeitslosengeld (60 % bzw. mit Kind 67 % des pauschalierten Nettoentgelts), Arbeitsvermittlung und "
+                "Berufsberatung, Förderung von Weiterbildung und Umschulung, Kurzarbeitergeld. Krankengeld zahlt die Krankenkasse, "
+                "Erwerbsminderungsrente die Rentenversicherung, Sozialhilfe das Sozialamt. Träger ist die Bundesagentur für Arbeit mit den Agenturen für Arbeit vor Ort. Auch Insolvenzgeld gehört zu den Leistungen.",
      "src": "FW"},
 
     # ------------------------------------------------------------------
     # Einzelfragen – Wahlen
     # ------------------------------------------------------------------
-    {"cat": "WiSo", "level": 3, "typ": "offen", "pkt": 4,
-     "q": "Beschreiben Sie das Wahlsystem der Bundestagswahl seit der Wahlrechtsreform 2023 (erstmals angewendet am 23.02.2025).",
-     "punkte": ["Mit der Erststimme wählt man einen Wahlkreisbewerber",
-                "Die Zweitstimme für eine Landesliste entscheidet über die Sitzverteilung der Parteien",
-                "Der Bundestag hat fest 630 Sitze, Überhang- und Ausgleichsmandate gibt es nicht mehr",
-                "Zweitstimmendeckung: Ein Wahlkreissieger zieht nur ein, wenn seine Partei genug Zweitstimmen-Sitze hat"],
-     "explain": "Gewinnt eine Partei mehr Wahlkreise, als ihr Sitze nach Zweitstimmen zustehen, gehen die Wahlkreissieger mit den "
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Welche Beschreibung des Wahlsystems der Bundestagswahl seit der Wahlrechtsreform 2023 (erstmals angewendet am 23.02.2025) ist richtig?",
+     "opts": ["Erststimme für einen Wahlkreisbewerber; Zweitstimme entscheidet über die Sitzverteilung; mindestens 598 Sitze, Überhangmandate werden ausgeglichen; jeder Wahlkreissieger zieht ein",
+              "Erststimme entscheidet über die Sitzverteilung; Zweitstimme für einen Wahlkreisbewerber; fest 630 Sitze ohne Überhang- und Ausgleichsmandate; Wahlkreissieger nur mit Zweitstimmendeckung",
+              "Erststimme für einen Wahlkreisbewerber; Zweitstimme entscheidet über die Sitzverteilung; fest 630 Sitze ohne Überhang- und Ausgleichsmandate; Wahlkreissieger nur mit Zweitstimmendeckung",
+              "Erststimme für einen Wahlkreisbewerber; Zweitstimme entscheidet über die Sitzverteilung; fest 630 Sitze ohne Überhang- und Ausgleichsmandate; jeder Wahlkreissieger zieht sicher ein"],
+     "correct": 2,
+     "explain": "Mit der Erststimme wählt man einen Wahlkreisbewerber, die Zweitstimme für eine Landesliste entscheidet über die Sitzverteilung "
+                "der Parteien. Der Bundestag hat fest 630 Sitze, Überhang- und Ausgleichsmandate gibt es nicht mehr (früher: mindestens 598 Sitze "
+                "plus Überhang- und Ausgleichsmandate). Zweitstimmendeckung: Gewinnt eine Partei mehr Wahlkreise, als ihr Sitze nach Zweitstimmen zustehen, gehen die Wahlkreissieger mit den "
                 "schwächsten Ergebnissen leer aus.",
      "src": "Netz: Bundestag, Urteil BVerfG 30.07.2024 zur Wahlrechtsreform 2023"},
     {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 2,
@@ -400,14 +446,17 @@ QUESTIONS = [
      "explain": "Das Bundesverfassungsgericht hat am 30.07.2024 den geplanten Wegfall der Grundmandatsklausel für verfassungswidrig erklärt. "
                 "Bis zu einer Neuregelung gilt: Mit mindestens 3 Direktmandaten zählt die Partei trotz weniger als 5 % bei der Sitzverteilung mit.",
      "src": "Netz: Bundestag, Urteil BVerfG 30.07.2024"},
-    {"cat": "WiSo", "level": 2, "typ": "offen", "pkt": 4,
-     "q": "Erklären Sie die 5-%-Sperrklausel bei der Bundestagswahl: Was besagt sie, welchen Zweck und welchen Nachteil hat sie, "
-          "und gilt sie auch bei der Kommunalwahl in Bayern?",
-     "punkte": ["Nur Parteien mit mindestens 5 % der Zweitstimmen erhalten Sitze (Ausnahme Grundmandatsklausel)",
-                "Zweck: Zersplitterung des Parlaments verhindern, stabile Mehrheiten und Regierungen ermöglichen",
-                "Nachteil: Stimmen für kleine Parteien wirken sich nicht aus, die Wahlgleichheit wird eingeschränkt",
-                "Bei der Kommunalwahl in Bayern gibt es keine Sperrklausel"],
-     "explain": "Die Sperrklausel ist eine Lehre aus der Weimarer Republik. Für den Bayerischen Landtag gilt ebenfalls eine 5-%-Hürde, "
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 4,
+     "q": "Welche Aussage zur 5-%-Sperrklausel bei der Bundestagswahl ist richtig – zu Inhalt, Zweck, Nachteil und Geltung "
+          "bei der Kommunalwahl in Bayern?",
+     "opts": ["Sitze nur ab 5 % der Zweitstimmen (Ausnahme Grundmandatsklausel); Zweck: Zersplitterung verhindern; Nachteil: Stimmen für kleine Parteien wirken nicht; gilt auch bei der Kommunalwahl in Bayern",
+              "Sitze nur ab 5 % der Zweitstimmen (Ausnahme Grundmandatsklausel); Zweck: Zersplitterung verhindern; Nachteil: Stimmen für kleine Parteien wirken nicht; gilt nicht bei der Kommunalwahl in Bayern",
+              "Sitze nur ab 5 % der Zweitstimmen (Ausnahme Grundmandatsklausel); Zweck: kleinen Parteien den Einzug erleichtern; Nachteil: das Parlament zersplittert; gilt nicht bei der Kommunalwahl in Bayern",
+              "Sitze nur ab 5 % der Wahlberechtigten, Ausnahmen gibt es keine; Zweck: Zersplitterung verhindern; Nachteil: Stimmen für kleine Parteien wirken nicht; gilt nicht bei der Kommunalwahl in Bayern"],
+     "correct": 1,
+     "explain": "Nur Parteien mit mindestens 5 % der Zweitstimmen erhalten Sitze (Ausnahme Grundmandatsklausel). Zweck: Zersplitterung des "
+                "Parlaments verhindern, stabile Mehrheiten und Regierungen ermöglichen. Nachteil: Stimmen für kleine Parteien wirken sich "
+                "nicht aus, die Wahlgleichheit wird eingeschränkt. Bei der Kommunalwahl in Bayern gibt es keine Sperrklausel. Die Sperrklausel ist eine Lehre aus der Weimarer Republik. Für den Bayerischen Landtag gilt ebenfalls eine 5-%-Hürde, "
                 "für Gemeinderäte und Kreistage in Bayern nicht.",
      "src": "FW"},
     {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
@@ -420,34 +469,47 @@ QUESTIONS = [
      "explain": "Gewählt ist, wer mehr als die Hälfte der gültigen Stimmen erhält. Sonst folgt eine Stichwahl der beiden Bewerber mit den "
                 "meisten Stimmen – 2026 am 22.03., also zwei Wochen nach der Hauptwahl.",
      "src": "Netz: Gemeinde-Infoblätter Kommunalwahl Bayern 2026"},
-    {"cat": "WiSo", "level": 2, "typ": "zahl", "pkt": 3,
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 3,
      "q": "Bei der Kommunalwahl in Ihrer Gemeinde sind 20 Gemeinderatsmitglieder zu wählen. Sie möchten kumulieren. Wie vielen "
           "Bewerbern können Sie höchstens die volle Stimmenzahl von je 3 Stimmen geben?",
-     "loesung": 6, "einheit": "Bewerber", "toleranz": 0.01,
+     "opts": ["6 Bewerbern", "7 Bewerbern", "18 Bewerbern", "20 Bewerbern"],
+     "correct": 0,
      "explain": "Sie haben 20 Stimmen (= Zahl der Sitze). Pro Bewerber höchstens 3: 20 ÷ 3 = 6 Rest 2 → 6 Bewerber mit je 3 Stimmen "
                 "(18 Stimmen), die übrigen 2 Stimmen können Sie anderen Bewerbern geben.",
      "src": "FW"},
-    {"cat": "WiSo", "level": 1, "typ": "offen", "pkt": 4,
-     "q": "Sie wohnen in einer kreisangehörigen Gemeinde im Landkreis Bayreuth. Nennen Sie, wen bzw. was Sie bei der bayerischen "
-          "Kommunalwahl 2026 in der Regel gewählt haben.",
-     "punkte": ["Den Gemeinderat", "Den Ersten Bürgermeister", "Den Kreistag", "Den Landrat"],
-     "explain": "In einer kreisfreien Stadt wie der Stadt Bayreuth wählt man dagegen nur den Stadtrat und den Oberbürgermeister. "
+    {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 4,
+     "q": "Sie wohnen in einer kreisangehörigen Gemeinde im Landkreis Bayreuth. Wen bzw. was haben Sie bei der bayerischen "
+          "Kommunalwahl 2026 in der Regel gewählt?",
+     "opts": ["Den Stadtrat und den Oberbürgermeister",
+              "Den Gemeinderat, den Ersten Bürgermeister, den Bezirkstag und den Landtag",
+              "Den Gemeinderat, den Ersten Bürgermeister, den Kreistag und den Regierungspräsidenten",
+              "Den Gemeinderat, den Ersten Bürgermeister, den Kreistag und den Landrat"],
+     "correct": 3,
+     "explain": "In einer kreisangehörigen Gemeinde wählt man Gemeinderat, Ersten Bürgermeister, Kreistag und Landrat. Bezirkstag und "
+                "Landtag werden gemeinsam zu einem anderen Termin gewählt, der Regierungspräsident wird ernannt. In einer kreisfreien Stadt wie der Stadt Bayreuth wählt man dagegen nur den Stadtrat und den Oberbürgermeister. "
                 "„In der Regel“, weil Bürgermeister nach einer vorzeitigen Neuwahl teils zu anderen Terminen gewählt werden.",
      "src": "FW"},
-    {"cat": "WiSo", "level": 2, "typ": "offen", "pkt": 4,
-     "q": "Nennen Sie die Voraussetzungen, um bei der Kommunalwahl in Bayern 2026 wählen zu dürfen.",
-     "punkte": ["Am Wahltag mindestens 18 Jahre alt",
-                "Deutsche Staatsangehörigkeit oder Staatsangehörigkeit eines anderen EU-Staats",
-                "Seit mindestens zwei Monaten Wohnsitz bzw. Lebensmittelpunkt im Wahlkreis (Gemeinde bzw. Landkreis)",
-                "Nicht vom Wahlrecht ausgeschlossen"],
-     "explain": "EU-Bürger dürfen bei Kommunalwahlen mitwählen, bei Bundestags- und Landtagswahlen nicht. Wer im Wählerverzeichnis "
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 4,
+     "q": "Welche Antwort nennt die Voraussetzungen, um bei der Kommunalwahl in Bayern 2026 wählen zu dürfen?",
+     "opts": ["Mindestens 16 Jahre; deutsche oder andere EU-Staatsangehörigkeit; seit mindestens zwei Monaten Wohnsitz im Wahlkreis; nicht vom Wahlrecht ausgeschlossen",
+              "Mindestens 18 Jahre; ausschließlich deutsche Staatsangehörigkeit; seit mindestens zwei Monaten Wohnsitz im Wahlkreis; nicht vom Wahlrecht ausgeschlossen",
+              "Mindestens 18 Jahre; deutsche oder andere EU-Staatsangehörigkeit; seit mindestens zwei Monaten Wohnsitz im Wahlkreis; nicht vom Wahlrecht ausgeschlossen",
+              "Mindestens 18 Jahre; deutsche oder andere EU-Staatsangehörigkeit; seit mindestens zwei Jahren Wohnsitz im Wahlkreis; nicht vom Wahlrecht ausgeschlossen"],
+     "correct": 2,
+     "explain": "Voraussetzungen: am Wahltag mindestens 18 Jahre alt, deutsche Staatsangehörigkeit oder die eines anderen EU-Staats, seit "
+                "mindestens zwei Monaten Wohnsitz bzw. Lebensmittelpunkt im Wahlkreis (Gemeinde bzw. Landkreis), nicht vom Wahlrecht "
+                "ausgeschlossen. EU-Bürger dürfen bei Kommunalwahlen mitwählen, bei Bundestags- und Landtagswahlen nicht. Wer im Wählerverzeichnis "
                 "steht, bekommt eine Wahlbenachrichtigung und kann auch Briefwahl beantragen.",
      "src": "Netz: Gemeinde-Infoblätter / Europäisches Parlament München, Kommunalwahl 2026"},
-    {"cat": "WiSo", "level": 3, "typ": "offen", "pkt": 2,
-     "q": "Der Freistaat Bayern überträgt den Gemeinden eine neue Aufgabe. Erklären Sie, was das Konnexitätsprinzip dabei verlangt.",
-     "punkte": ["Wer eine Aufgabe überträgt, muss auch für die Finanzierung sorgen („Wer bestellt, bezahlt“)",
-                "Der Freistaat muss die Mehrkosten der Gemeinden ausgleichen (Bayerische Verfassung, Art. 83 Abs. 3)"],
-     "explain": "Das Konnexitätsprinzip schützt die kommunale Selbstverwaltung davor, dass ihr der Staat Aufgaben ohne Geld aufbürdet.",
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 2,
+     "q": "Der Freistaat Bayern überträgt den Gemeinden eine neue Aufgabe. Was verlangt das Konnexitätsprinzip dabei?",
+     "opts": ["Die Gemeinden müssen die Aufgabe aus ihren eigenen Steuereinnahmen bezahlen, weil sie zur Selbstverwaltung gehört",
+              "Der Freistaat muss für die Finanzierung sorgen und den Gemeinden die Mehrkosten ausgleichen („Wer bestellt, bezahlt“)",
+              "Der Freistaat darf die Aufgabe erst übertragen, wenn die Bürger der Gemeinde in einem Bürgerentscheid zugestimmt haben",
+              "Die Gemeinden müssen die Aufgabe übernehmen, dürfen dafür aber eine eigene Sondersteuer bei ihren Bürgern erheben"],
+     "correct": 1,
+     "explain": "Konnexität: Wer eine Aufgabe überträgt, muss auch für die Finanzierung sorgen („Wer bestellt, bezahlt“). Der Freistaat muss "
+                "die Mehrkosten der Gemeinden ausgleichen (Bayerische Verfassung, Art. 83 Abs. 3). Das Konnexitätsprinzip schützt die kommunale Selbstverwaltung davor, dass ihr der Staat Aufgaben ohne Geld aufbürdet.",
      "src": "FW"},
     {"cat": "WiSo", "level": 2, "typ": "zuordnung", "pkt": 5,
      "q": "Ordnen Sie den Funktionen von Wahlen die passende Beschreibung zu.",
@@ -462,21 +524,29 @@ QUESTIONS = [
     # ------------------------------------------------------------------
     # Einzelfragen – Konjunktur und Wirtschaftspolitik
     # ------------------------------------------------------------------
-    {"cat": "WiSo", "level": 1, "typ": "offen", "pkt": 3,
-     "q": "Erklären Sie den Begriff Bruttoinlandsprodukt (BIP) und den Unterschied zwischen nominalem und realem BIP.",
-     "punkte": ["Wert aller Waren und Dienstleistungen (Endprodukte), die in einem Jahr im Inland hergestellt werden",
-                "Nominales BIP: gerechnet mit den aktuellen Preisen des Jahres",
-                "Reales BIP: preisbereinigt, zeigt das tatsächliche Wachstum ohne Inflation"],
-     "explain": "Steigt das nominale BIP um 3 % bei 2 % Inflation, ist die Wirtschaft real nur um etwa 1 % gewachsen.",
+    {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 3,
+     "q": "Welche Erklärung des Bruttoinlandsprodukts (BIP) und des Unterschieds zwischen nominalem und realem BIP ist richtig?",
+     "opts": ["Wert aller in einem Jahr im Inland hergestellten Waren und Dienstleistungen (Endprodukte); nominal: zu aktuellen Preisen; real: preisbereinigt, ohne Inflation",
+              "Wert aller in einem Jahr im Inland hergestellten Waren und Dienstleistungen (Endprodukte); nominal: preisbereinigt, ohne Inflation; real: zu aktuellen Preisen",
+              "Wert aller in einem Jahr von Deutschen weltweit hergestellten Waren und Dienstleistungen; nominal: zu aktuellen Preisen; real: preisbereinigt, ohne Inflation",
+              "Summe aller Umsätze der Unternehmen im Inland in einem Jahr, einschließlich Vorleistungen; nominal: zu aktuellen Preisen; real: preisbereinigt, ohne Inflation"],
+     "correct": 0,
+     "explain": "BIP: Wert aller Waren und Dienstleistungen (Endprodukte), die in einem Jahr im Inland hergestellt werden – Vorleistungen "
+                "werden nicht doppelt gezählt. Nominales BIP: mit den aktuellen Preisen des Jahres. Reales BIP: preisbereinigt, zeigt das "
+                "tatsächliche Wachstum ohne Inflation. Steigt das nominale BIP um 3 % bei 2 % Inflation, ist die Wirtschaft real nur um etwa 1 % gewachsen.",
      "src": "FW"},
-    {"cat": "WiSo", "level": 3, "typ": "offen", "pkt": 4,
-     "q": "Ein Auffahrunfall mit anschließender Reparatur in Ihrer Werkstatt erhöht das BIP. Erläutern Sie, warum das BIP als Maß "
-          "für Wohlstand kritisiert wird, und nennen Sie eine alternative Messgröße.",
-     "punkte": ["Reparaturen von Schäden (Unfälle, Umweltschäden) erhöhen das BIP, obwohl kein Wohlstand entsteht",
-                "Unbezahlte Arbeit (Hausarbeit, Pflege in der Familie, Ehrenamt) wird nicht erfasst",
-                "Die Verteilung von Einkommen und Vermögen ist nicht erkennbar",
-                "Alternative: z. B. Human Development Index (HDI), Nationaler Wohlfahrtsindex oder OECD Better Life Index"],
-     "explain": "Das BIP misst nur Marktleistungen. Alternative Messgrößen beziehen z. B. Bildung, Gesundheit, Lebenserwartung oder Umwelt mit ein.",
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Ein Auffahrunfall mit anschließender Reparatur in Ihrer Werkstatt erhöht das BIP. Welche Antwort nennt richtige Kritikpunkte "
+          "am BIP als Maß für Wohlstand und eine passende alternative Messgröße?",
+     "opts": ["Reparaturen von Schäden erhöhen das BIP ohne Wohlstandsgewinn; unbezahlte Arbeit wird nicht erfasst; die Verteilung ist nicht erkennbar; Alternative: Verbraucherpreisindex",
+              "Reparaturen von Schäden erhöhen das BIP ohne Wohlstandsgewinn; Hausarbeit und Ehrenamt werden doppelt gezählt; die Verteilung ist nicht erkennbar; Alternative: Human Development Index",
+              "Reparaturen von Schäden werden aus dem BIP herausgerechnet; unbezahlte Arbeit wird nicht erfasst; die Verteilung ist nicht erkennbar; Alternative: Human Development Index",
+              "Reparaturen von Schäden erhöhen das BIP ohne Wohlstandsgewinn; unbezahlte Arbeit wird nicht erfasst; die Verteilung ist nicht erkennbar; Alternative: Human Development Index"],
+     "correct": 3,
+     "explain": "Kritik: Reparaturen von Schäden (Unfälle, Umweltschäden) erhöhen das BIP, obwohl kein Wohlstand entsteht. Unbezahlte Arbeit "
+                "(Hausarbeit, Pflege in der Familie, Ehrenamt) wird nicht erfasst. Die Verteilung von Einkommen und Vermögen ist nicht "
+                "erkennbar. Alternativen: z. B. Human Development Index (HDI), Nationaler Wohlfahrtsindex oder OECD Better Life Index. "
+                "Der Verbraucherpreisindex misst dagegen nur die Inflation. Das BIP misst nur Marktleistungen. Alternative Messgrößen beziehen z. B. Bildung, Gesundheit, Lebenserwartung oder Umwelt mit ein.",
      "src": "FW (Lehrplan Politik und Gesellschaft 12.1.8)"},
     {"cat": "WiSo", "level": 2, "typ": "zuordnung", "pkt": 4,
      "q": "Ordnen Sie die Konjunkturindikatoren der richtigen Art zu.",
@@ -539,18 +609,21 @@ QUESTIONS = [
      "explain": "Die vier klassischen Ziele stehen im Stabilitäts- und Wachstumsgesetz von 1967. Umweltschutz und gerechte Verteilung "
                 "kamen später als Erweiterung zum Vieleck dazu.",
      "src": "FW"},
-    {"cat": "WiSo", "level": 1, "typ": "offen", "pkt": 3,
-     "q": "Nennen Sie drei Auswirkungen einer Rezession auf ein Autohaus mit Werkstatt.",
-     "punkte": ["Weniger Neu- und Gebrauchtwagenverkäufe",
-                "Kunden schieben Wartung und Reparaturen auf, die Werkstatt hat weniger Aufträge",
-                "Kurzarbeit, weniger Neueinstellungen oder Ausbildungsplätze",
-                "Stärkerer Preisdruck, mehr Rabatte"],
-     "explain": "Autos sind langlebige Gebrauchsgüter: Ihr Kauf wird in unsicheren Zeiten zuerst verschoben. Deshalb reagiert der Kfz-Handel stark auf die Konjunktur.",
+    {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 3,
+     "q": "Welche Antwort nennt drei typische Auswirkungen einer Rezession auf ein Autohaus mit Werkstatt?",
+     "opts": ["Weniger Neu- und Gebrauchtwagenverkäufe; Kunden schieben Wartung und Reparaturen auf; die Preise steigen und Rabatte fallen weg",
+              "Mehr Neuwagenverkäufe, weil Kunden in der Krise in Sachwerte investieren; Kunden schieben Wartung auf; Kurzarbeit",
+              "Weniger Neu- und Gebrauchtwagenverkäufe; Kunden schieben Wartung und Reparaturen auf; Kurzarbeit und weniger Neueinstellungen",
+              "Weniger Neu- und Gebrauchtwagenverkäufe; Kunden schieben Wartung und Reparaturen auf; mehr Neueinstellungen und Überstunden"],
+     "correct": 2,
+     "explain": "Typische Folgen: weniger Neu- und Gebrauchtwagenverkäufe; Kunden schieben Wartung und Reparaturen auf, die Werkstatt hat "
+                "weniger Aufträge; Kurzarbeit, weniger Neueinstellungen oder Ausbildungsplätze; stärkerer Preisdruck, mehr Rabatte. Autos sind langlebige Gebrauchsgüter: Ihr Kauf wird in unsicheren Zeiten zuerst verschoben. Deshalb reagiert der Kfz-Handel stark auf die Konjunktur.",
      "src": "FW"},
-    {"cat": "WiSo", "level": 3, "typ": "zahl", "pkt": 3,
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 3,
      "q": "Ihr Lohn steigt im August 2026 um 3,3 %. Die Inflationsrate beträgt im gleichen Zeitraum angenommen 2,0 %. Um wie viel "
           "Prozent steigt Ihr Reallohn ungefähr?",
-     "loesung": 1.3, "einheit": "%", "toleranz": 0.1,
+     "opts": ["5,3 %", "1,3 %", "1,65 %", "−1,3 %"],
+     "correct": 1,
      "explain": "Näherung: Reallohnveränderung ≈ Nominallohnveränderung − Inflationsrate = 3,3 % − 2,0 % = 1,3 %. "
                 "Genau: 1,033 ÷ 1,020 − 1 ≈ 1,27 %.",
      "src": "FW"},
