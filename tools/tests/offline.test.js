@@ -21,5 +21,9 @@ export default async function () {
   for (const m of sw.matchAll(/"((?:kern|inhalt|css)\/[^"]+)"/g)) {
     if (!existsSync(join(ROOT, m[1]))) fail(`sw.js: Eintrag ohne Datei: ${m[1]}`);
   }
+  // Andere Trainer auf derselben Domain (z. B. Telekom-Trainer) haben eigene Caches – die dürfen nicht gelöscht werden
+  const cacheName = (sw.match(/const CACHE = "([^"]+)"/) || [])[1] || "";
+  const prefix = cacheName.replace(/v\d+$/, "");
+  if (!prefix || !sw.includes(`k.startsWith("${prefix}")`)) fail(`sw.js: beim Aufräumen nur Caches mit Präfix "${prefix}" löschen`);
   console.log(`✓ Service Worker: ${files.length} Dateien geprüft`);
 }

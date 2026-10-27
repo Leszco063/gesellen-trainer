@@ -2,6 +2,7 @@
 // Strategie "Netzwerk zuerst": Online gibt es immer die neueste Version (z. B. neue Fragen),
 // offline wird die zuletzt geladene Version aus dem Zwischenspeicher genommen.
 // Neue Dateien in kern/, inhalt/ oder css/ hier eintragen – der Test "offline" meldet vergessene Dateien.
+// Nur eigene Caches (Präfix gp2kfz-) aufräumen – andere Trainer auf derselben Domain haben ihre eigenen.
 const CACHE = "gp2kfz-v1";
 const FILES = [
   "./",
@@ -56,7 +57,7 @@ self.addEventListener("install", event => {
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
+      .then(keys => Promise.all(keys.filter(k => k.startsWith("gp2kfz-") && k !== CACHE).map(k => caches.delete(k))))
       .then(() => self.clients.claim())
   );
 });
