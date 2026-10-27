@@ -1,7 +1,7 @@
 // WiSo: Arbeitnehmeranteile der Sozialversicherung aus dem Bruttolohn (Beitragssätze 2026).
 // Quelle: Rechercheakte Abschnitt 3.5 – zum Jahreswechsel prüfen!
 import { randInt, fmt, euro } from "../../kern/util.js";
-import { zahlFrage, runde } from "./gemeinsam.js";
+import { rechenFrage, runde } from "./gemeinsam.js";
 
 export const SV_2026 = { rv: 18.6, av: 2.6, kv: 14.6, kvZusatz: 2.9, pv: 3.6, pvKinderlos: 0.6 };
 const AN = { rv: SV_2026.rv / 2, av: SV_2026.av / 2, kv: (SV_2026.kv + SV_2026.kvZusatz) / 2, pv: SV_2026.pv / 2 };
@@ -26,7 +26,8 @@ export function sozialabgaben(cat, level) {
     weg = `RV 9,3 % + AV 1,3 % + KV 8,75 % + PV ${fmt(pv)} %${azubi ? "" : " (inkl. 0,6 % Kinderlosenzuschlag ab 23)"} = ${fmt(satz)} %`;
   }
   const betrag = runde((brutto * satz) / 100);
-  return zahlFrage(cat, level,
+  return rechenFrage(cat, level,
     `${wer} verdient ${euro(brutto)} brutto im Monat. Berechnen Sie ${was} (Beitragssätze 2026).`,
-    betrag, "€", `${weg} → ${euro(brutto)} × ${fmt(satz)} % = ${euro(betrag)}`, { art: "sv", brutto, satz }, 0.002);
+    betrag, "€", `${weg} → ${euro(brutto)} × ${fmt(satz)} % = ${euro(betrag)}`, { art: "sv", brutto, satz },
+    [(brutto * satz * 2) / 100, (brutto * satz) / 1000, (brutto * satz) / 200], { format: euro });
 }

@@ -1,6 +1,7 @@
 import { fail, ok } from "./hilfe.js";
 import { TRAINER } from "../../inhalt/trainer.js";
 import { GENERATORS, hasGenerator, generate } from "../../inhalt/gen/index.js";
+import { parseZahl } from "../../kern/typen/zahl.js";
 
 // Jede Aufgabe unabhängig nachrechnen
 const NACHRECHNEN = {
@@ -25,16 +26,21 @@ export default async function () {
       for (let i = 0; i < 500; i++) {
         const q = generate(cat, level);
         const wo = `${cat} L${level}`;
-        ok(q.gen === true && q.cat === cat && q.level === level && q.typ === "zahl", `${wo}: Grundfelder`);
+        ok(q.gen === true && q.cat === cat && q.level === level && (q.typ || "mc") === "mc", `${wo}: Grundfelder (Multiple Choice)`);
         ok(typeof q.q === "string" && q.q.length > 20 && typeof q.explain === "string" && q.explain.length > 5, `${wo}: Text fehlt`);
-        ok(Number.isFinite(q.loesung) && typeof q.einheit === "string", `${wo}: Lösung/Einheit`);
+        ok(Array.isArray(q.opts) && q.opts.length === 4 && new Set(q.opts).size === 4, `${wo}: 4 verschiedene Antworten ${JSON.stringify(q.opts)}`);
+        ok(Number.isInteger(q.correct) && q.correct >= 0 && q.correct < 4, `${wo}: correct ungültig`);
         ok(!/NaN|undefined|Infinity|\[object /.test(JSON.stringify(q)), `${wo}: kaputter Wert ${q.q}`);
         ok(!ids.has(q.id), `${wo}: ID doppelt ${q.id}`);
         ids.add(q.id);
         const f = NACHRECHNEN[q.daten && q.daten.art];
         if (!f) { fail(`${wo}: unbekannte art ${q.daten && q.daten.art}`); continue; }
         const soll = f(q.daten);
-        if (Math.abs(soll - q.loesung) > Math.abs(soll) * (q.toleranz / 2) + 0.01) fail(`${wo}: Lösung ${q.loesung} ≠ ${soll} (${q.q})`);
+        const werte = q.opts.map(parseZahl);
+        ok(werte.every(w => !Number.isNaN(w)), `${wo}: Antwort nicht lesbar ${JSON.stringify(q.opts)}`);
+        if (Math.abs(soll - werte[q.correct]) > Math.abs(soll) * 0.01 + 0.01) fail(`${wo}: richtige Antwort ${q.opts[q.correct]} ≠ ${soll} (${q.q})`);
+        const zuNah = werte.filter((w, k) => k !== q.correct && Math.abs(w - soll) <= Math.abs(soll) * 0.01 + 0.01);
+        ok(!zuNah.length, `${wo}: Ablenker zu nah an der Lösung ${JSON.stringify(q.opts)}`);
         n += 1;
       }
     }
