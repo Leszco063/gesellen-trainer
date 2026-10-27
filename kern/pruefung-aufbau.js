@@ -6,13 +6,18 @@ export function zufallsLevel(mix, r = Math.random()) {
   return r < mix[0] ? 1 : r < mix[0] + mix[1] ? 2 : 3;
 }
 
-// Aufgabensatz des Bereichs, der am längsten nicht dran war (nie gespielte zuerst)
+// Aufgabensatz des Bereichs, der am längsten nicht dran war (nie gespielte zuerst).
+// Sind alle Sätze schon gespielt, wechseln Satz und gemischter Block (null) ab – zuletzt["mix:<blockId>"]
+// merkt sich den letzten gemischten Block. So kommen auch die Einzelfragen in die Simulation.
 export function waehleSatz(block, situationen, pool, zuletzt = {}) {
   const kandidaten = Object.entries(situationen)
     .filter(([id, s]) => block.cats.includes(s.cat) && pool.some(q => q.situation === id))
     .map(([id]) => id)
     .sort((a, b) => (zuletzt[a] || "").localeCompare(zuletzt[b] || ""));
-  return kandidaten[0] || null;
+  const satz = kandidaten[0];
+  if (!satz) return null;
+  if (!zuletzt[satz]) return satz;
+  return (zuletzt[`mix:${block.id}`] || "") < zuletzt[satz] ? null : satz;
 }
 
 // Gemischter Block nach blockMix; gen = { has(cat), generate(cat, level) } liefert fehlende Rechenaufgaben

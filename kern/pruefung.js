@@ -208,7 +208,7 @@ function auswerten() {
     });
     erreicht = Math.round(erreicht * 10) / 10;
     const p = prozent(erreicht, max);
-    return { name: s.name, kurz: s.kurz, fach: s.fach, satz: s.satz, erreicht, max, prozent: p, note: note(p, TRAINER.notenschluessel).note, anteile };
+    return { id: s.id, name: s.name, kurz: s.kurz, fach: s.fach, satz: s.satz, erreicht, max, prozent: p, note: note(p, TRAINER.notenschluessel).note, anteile };
   });
   const faecher = fachErgebnisse(bloecke, PLAN.faecher, TRAINER.notenschluessel);
   const erreicht = bloecke.reduce((x, b) => x + b.erreicht, 0);
@@ -233,7 +233,7 @@ function showErgebnis() {
       bloecke: R.bloecke.map(({ anteile, ...rest }) => rest),
       faecher: R.faecher,
     });
-    R.bloecke.forEach(b => { if (b.satz) data.saetze[b.satz] = datum; });
+    R.bloecke.forEach(b => { data.saetze[b.satz || `mix:${b.id}`] = datum; });
     saveProgress(data);
     loeschen();
   }

@@ -37,8 +37,11 @@ export default async function () {
   const satzA = [3, 1, 2].map(n => f("Diesel", "offen", { situation: "alt", nr: n }));
   const satzN = [1, 2].map(n => f("Diesel", "mc", { situation: "neu", nr: n }));
   const poolMitSatz = [...pool, ...satzA, ...satzN];
-  eq(waehleSatz(block, situationen, poolMitSatz, { alt: "2026-10-01 10:00", neu: "2026-10-20 10:00" }), "alt", "ältester Satz zuerst");
-  eq(waehleSatz(block, situationen, poolMitSatz, { alt: "2026-10-01 10:00" }), "neu", "nie gespielter Satz zuerst");
+  const b1 = { id: "diag1", cats: ["Diesel"] };
+  eq(waehleSatz(b1, situationen, poolMitSatz, { alt: "2026-10-01 10:00", neu: "2026-10-20 10:00", "mix:diag1": "2026-10-25 10:00" }), "alt", "ältester Satz, wenn der Mix zuletzt dran war");
+  eq(waehleSatz(b1, situationen, poolMitSatz, { alt: "2026-10-01 10:00" }), "neu", "nie gespielter Satz zuerst");
+  eq(waehleSatz(b1, situationen, poolMitSatz, { alt: "2026-10-01 10:00", neu: "2026-10-20 10:00" }), null, "alle Sätze gespielt, Mix noch nie → gemischter Block");
+  eq(waehleSatz(b1, situationen, poolMitSatz, { alt: "2026-10-21 10:00", neu: "2026-10-20 10:00", "mix:diag1": "2026-10-10 10:00" }), null, "Mix älter als jeder Satz → gemischter Block");
   eq(waehleSatz({ cats: ["Bremse"] }, situationen, poolMitSatz, {}), null, "kein Satz im Bereich");
 
   const plan = TRAINER.pruefung;
