@@ -3,12 +3,17 @@ import { esc, fmt } from "../util.js";
 
 export const STANDARD_TOLERANZ = 0.02;
 
-// "12,5" / "12.5" / " 1.234,5 bar" → Zahl; nicht lesbar → NaN
+// "12,5" / "12.5" / "3.099" (Tausenderpunkt) / " 1.234,5 bar" → Zahl; nicht lesbar → NaN
 export function parseZahl(text) {
-  let s = String(text ?? "").replace(/\s+/g, "").replace(/[^\d,.-]/g, "");
-  if (!/\d/.test(s)) return NaN;
-  if (s.includes(",")) s = s.replace(/\./g, "").replace(",", ".");
-  else if ((s.match(/\./g) || []).length > 1) s = s.replace(/\./g, "");
+  let s = String(text ?? "").replace(/−/g, "-").replace(/\s+/g, "");
+  s = s.replace(/[^\d.,]+$/, ""); // angehängte Einheit weglassen
+  if (!/^-?\d[\d.,]*$/.test(s)) return NaN;
+  if (s.includes(",")) {
+    if (!/^-?(\d{1,3}(\.\d{3})+|\d+),\d+$/.test(s)) return NaN;
+    s = s.replace(/\./g, "").replace(",", ".");
+  } else if (/^-?[1-9]\d{0,2}(\.\d{3})+$/.test(s)) {
+    s = s.replace(/\./g, ""); // deutsche Tausenderpunkte: 3.099 = 3099
+  }
   const n = Number(s);
   return Number.isFinite(n) ? n : NaN;
 }
@@ -31,7 +36,7 @@ export function render(q, root, ctx) {
       <input type="text" inputmode="decimal" autocomplete="off" id="zahlIn" value="${esc(ctx.eingabe || "")}" placeholder="Ergebnis">
       <span class="einheit">${esc(q.einheit || "")}</span>
     </div>
-    <p class="small muted">Komma oder Punkt als Dezimalzeichen · Toleranz ±${fmt((q.toleranz ?? STANDARD_TOLERANZ) * 100, 1)} %</p>
+    <p class="small muted">Dezimalzeichen: Komma (z. B. 2,5) · Tausenderpunkt erlaubt (3.099) · Toleranz ±${fmt((q.toleranz ?? STANDARD_TOLERANZ) * 100, 1)} %</p>
     ${ctx.modus === "uebung" ? `<button class="btn secondary" id="zahlOk">Prüfen</button>` : ""}`;
   const input = root.querySelector("#zahlIn");
   input.addEventListener("input", () => { if (ctx.onEingabe) ctx.onEingabe(input.value); });

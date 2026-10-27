@@ -25,6 +25,10 @@ export default async function () {
   // zahl
   for (const [t, n] of [["12,5", 12.5], ["12.5", 12.5], [" 1.234,5 bar", 1234.5], ["1.234.567", 1234567], ["-3", -3], ["0,25", 0.25]]) eq(parseZahl(t), n, `parseZahl("${t}")`);
   for (const t of ["", "abc", null, undefined, "1,2,3", ","]) ok(Number.isNaN(parseZahl(t)), `parseZahl(${JSON.stringify(t)}) ist NaN`);
+  // Deutsche Tausenderpunkte, Unicode-Minus, Unsinn
+  for (const [t, n] of [["3.099", 3099], ["15.354", 15354], ["1.300", 1300], ["288,30 €", 288.3], ["−3", -3], ["0.125", 0.125], ["1.5", 1.5], ["3.099,50", 3099.5]]) eq(parseZahl(t), n, `parseZahl("${t}")`);
+  for (const t of ["1e3", "2x3", "12-3", "1,2.3"]) ok(Number.isNaN(parseZahl(t)), `parseZahl(${JSON.stringify(t)}) ist NaN`);
+  eq(TYPEN.zahl.bewerte({ typ: "zahl", loesung: 3099, einheit: "€" }, "3.099"), 1, "3.099 € als Tausenderpunkt richtig");
   eq([TYPEN.zahl.bewerte(zahl, "2,5"), TYPEN.zahl.bewerte(zahl, "2,54"), TYPEN.zahl.bewerte(zahl, "2,6"), TYPEN.zahl.bewerte(zahl, "")], [1, 1, 0, 0], "zahl mit 2 % Toleranz");
   eq(TYPEN.zahl.bewerte({ ...zahl, loesung: 0 }, "0,01"), 1, "zahl bei Lösung 0");
   eq(TYPEN.zahl.loesungText(zahl), "2,5 V", "zahl Lösungstext");
