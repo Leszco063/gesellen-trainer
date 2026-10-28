@@ -42,7 +42,23 @@ export const CARDS = [
     id: "formeln", cat: "Grundlagen", title: "Formelsammlung",
     keys: ["Formel", "berechnen", "Wie groß", "Ersatzwiderstand", "Frequenz", "Leistung", "Spannungsfall", "Bitrate"],
     html: `
-      <p class="small">Schreibweise wie im Tabellenbuch: · = mal, / = geteilt. In der Prüfung darfst du die Formeln im Tabellenbuch nachschlagen. Werte immer mit Einheit einsetzen.</p>
+      <p class="small">Schreibweise wie im Tabellenbuch: · = mal, / = geteilt. In der Prüfung darfst du die Formeln im Tabellenbuch nachschlagen. Werte immer mit Einheit einsetzen – vorher passend umrechnen.</p>
+      <h4>Umrechnungen</h4>
+      <table class="ktable">
+        <tr><td>Druck</td><td>1 bar = 10 N/cm² = 0,1 N/mm² = 100 kPa = 1000 mbar<br>1 MPa = 10 bar = 1 N/mm²</td></tr>
+        <tr><td>Geschwindigkeit</td><td>km/h → m/s: / 3,6 &nbsp; m/s → km/h: · 3,6</td></tr>
+        <tr><td>Drehzahl</td><td>1/min → 1/s: / 60 &nbsp; 1/s → 1/min: · 60</td></tr>
+        <tr><td>Zeit</td><td>1 h = 60 min = 3600 s<br>1 s = 1000 ms; 1 ms = 0,001 s; 1 µs = 0,000 001 s</td></tr>
+        <tr><td>Frequenz</td><td>1 kHz = 1000 Hz; 1 Hz = 1/s</td></tr>
+        <tr><td>Länge</td><td>1 m = 10 dm = 100 cm = 1000 mm</td></tr>
+        <tr><td>Fläche</td><td>1 cm² = 100 mm²; 1 m² = 10 000 cm²</td></tr>
+        <tr><td>Volumen</td><td>1 l = 1 dm³ = 1000 cm³ = 1000 ml; 1 cm³ = 1 ml</td></tr>
+        <tr><td>Kraft, Masse</td><td>1 kN = 1000 N; Gewichtskraft F<sub>G</sub> = m · g (g = 9,81 m/s²)</td></tr>
+        <tr><td>Leistung</td><td>1 kW = 1000 W; 1 PS ≈ 0,735 kW (1 kW ≈ 1,36 PS)</td></tr>
+        <tr><td>Temperatur</td><td>T in K = t in °C + 273; Temperaturdifferenz: 1 K = 1 °C</td></tr>
+        <tr><td>Vorsätze</td><td>M = 10⁶ (Mega), k = 10³ (Kilo), m = 10⁻³ (Milli), µ = 10⁻⁶ (Mikro)<br>z. B. 1 kΩ = 1000 Ω; 1 mA = 0,001 A</td></tr>
+        <tr><td>Prozent</td><td>1 % = 1 / 100 = 0,01; 3,3 % → Faktor 1,033</td></tr>
+      </table>
       <h4>Elektrik</h4>
       <table class="ktable">
         <tr><td>Ohmsches Gesetz</td><td>U = R · I &nbsp; I = U / R &nbsp; R = U / I</td></tr>
