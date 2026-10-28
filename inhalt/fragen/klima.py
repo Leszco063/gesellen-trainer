@@ -74,7 +74,7 @@ QUESTIONS = [
      "src": "Recherche 3.3/3.6, FW"},
     {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 4, "situation": "klima-bmw", "nr": 5,
      "q": "Welche Antwort nennt vier Vorprüfungen, die Sie ohne Klimaservicegerät durchführen können?",
-     "opts": ["Sichtprüfung auf Ölspuren und Beschädigungen; Fehlerspeicher auslesen; Kondensatorlüfter und Gebläse prüfen; Hoch- und Niederdruck messen",
+     "opts": ["Sichtprüfung auf Ölspuren und Beschädigungen; Fehlerspeicher auslesen; Kondensatorlüfter und Gebläse prüfen; Vakuum-Haltetest durchführen",
               "Sichtprüfung auf Ölspuren und Beschädigungen; Innenraumfilter und Kondenswasserablauf prüfen; Kältemittel absaugen und wiegen; Ausströmtemperatur messen",
               "Vakuum-Haltetest durchführen; Fehlerspeicher auslesen; Kondensatorlüfter und Gebläse prüfen; Innenraumfilter und Kondenswasserablauf prüfen",
               "Sichtprüfung auf Ölspuren und Beschädigungen; Verdichteransteuerung im Tester prüfen; Kondensatorlüfter und Gebläse prüfen; Ausströmtemperatur messen"],
@@ -82,7 +82,7 @@ QUESTIONS = [
      "explain": "Ohne Servicegerät möglich: Sichtprüfung auf Undichtheit (Ölspuren, Beschädigungen z. B. am Kondensator), "
                 "Verdichteransteuerung (Messwerte Regelventil im Tester), Kondensatorlüfter und Innenraumgebläse, Innenraumfilter "
                 "und Kondenswasserablauf, Ausströmtemperatur an der Mitteldüse, Fehlerspeicher von Klima- und Motorsteuergerät. "
-                "Drücke messen, Kältemittel absaugen und wiegen sowie der Vakuumtest gehen nur mit dem Servicegerät. Viele Fehler findet man schon ohne Manometer: Ölspuren zeigen Lecks (das Kältemittel trägt Öl mit), "
+                "Kältemittel absaugen und wiegen sowie der Vakuumtest gehen nur mit dem Servicegerät. Viele Fehler findet man schon ohne Manometer: Ölspuren zeigen Lecks (das Kältemittel trägt Öl mit), "
                 "ein ausgefallener Lüfter oder ein zugesetzter Filter mindern die Kühlleistung.",
      "src": "FW"},
     {"cat": "Klima", "level": 2, "typ": "mc", "pkt": 2, "situation": "klima-bmw", "nr": 6,
@@ -326,7 +326,8 @@ QUESTIONS = [
      "correct": 1,
      "explain": "Steigung = 30 bar ÷ (4,5 V − 0,5 V) = 7,5 bar/V. Druck = (1,2 V − 0,5 V) × 7,5 bar/V = 5,25 bar. Das passt zum "
                 "Ruhedruck am Manometer (ca. 5 bar) – der Sensor misst richtig. Typischer Fehler: den Nullpunkt 0,5 V nicht "
-                "abziehen (ergibt 9,0 bar) oder durch 4,5 V statt durch 4 V teilen (ergibt 8,0 bar).",
+                "abziehen (1,2 V × 7,5 bar/V = 9,0 bar) oder zusätzlich die Steigung mit 30 bar ÷ 4,5 V statt ÷ 4 V "
+                "bilden (1,2 V × 6,67 bar/V = 8,0 bar).",
      "src": "FW"},
     {"cat": "Klima", "level": 2, "typ": "zuordnung", "pkt": 4, "situation": "klima-skoda", "nr": 10,
      "bild": "klima-schaltplan.svg",

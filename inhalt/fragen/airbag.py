@@ -77,8 +77,7 @@ QUESTIONS = [
      "schritte": ["Zündung ausschalten und Schlüssel aus dem Fahrzeug bzw. aus der Funkreichweite bringen",
                   "Batterie-Minuspol abklemmen und gegen Wiederanklemmen sichern",
                   "Wartezeit nach Herstellerangabe abwarten",
-                  "Sich elektrostatisch entladen (z. B. Fahrzeugmasse berühren)",
-                  "Steckverbindung des Airbag-Bauteils trennen",
+                  "Sich elektrostatisch entladen (z. B. Fahrzeugmasse berühren) und die Steckverbindung des Airbag-Bauteils trennen",
                   "Ausgebaute Airbag-Einheit mit der Polsterseite nach oben ablegen"],
      "explain": "Erst stromlos machen, dann warten, bis die Energiereserve im Steuergerät entladen ist. Die Wartezeit ist je "
                 "nach Fahrzeug sehr verschieden – sie steht im Reparaturleitfaden. Die elektrostatische Entladung schützt "
@@ -420,8 +419,7 @@ QUESTIONS = [
      "src": "Netz: Recherche 3.4"},
     {"cat": "Airbag", "level": 2, "typ": "reihenfolge", "pkt": 4,
      "q": "Für den Tausch der Wickelfeder muss das Lenkrad ab. Bringen Sie die Arbeitsschritte in die richtige Reihenfolge.",
-     "schritte": ["Räder in Geradeausstellung bringen",
-                  "Zündung aus, Batterie abklemmen, Wartezeit nach Herstellerangabe abwarten",
+     "schritte": ["Räder in Geradeausstellung bringen, danach Zündung aus, Batterie abklemmen und die Wartezeit nach Herstellerangabe abwarten",
                   "Fahrerairbag ausbauen, Stecker trennen und mit der Polsterseite nach oben ablegen",
                   "Stellung des Lenkrads zur Lenksäule markieren",
                   "Lenkradschraube lösen und Lenkrad abnehmen"],

@@ -548,7 +548,7 @@ QUESTIONS = [
               "Plus über F5 (Klemme 30); Masse über Pin 10, über den auch die Förderpumpe M1 läuft",
               "Plus über F5 (Klemme 30); das Steuergerät A2 schaltet über Pin 12 die Masse getaktet (PWM)"],
      "correct": 3,
-     "explain": "Y5 hängt mit Pin 1 an der Leitung hinter F5 (Klemme 30). Die andere Seite führt zu Pin 12 von A2: Das Steuergerät schaltet masseseitig und taktet (PWM), so bestimmt es Öffnungsdauer und Dosiermenge. F4/K2 versorgen nur die Heizungen R1 und R2, Pin 10 die Pumpe M1.",
+     "explain": "Y5 hängt mit seinem oberen Anschluss an der Leitung hinter F5 (Klemme 30). Die andere Seite führt zu Pin 12 von A2: Das Steuergerät schaltet masseseitig und taktet (PWM), so bestimmt es Öffnungsdauer und Dosiermenge. F4/K2 versorgen nur die Heizungen R1 und R2, Pin 10 die Pumpe M1.",
      "src": "Eigener Schaltplan"},
     {"cat": "Diesel", "level": 3, "typ": "mc", "pkt": 6, "situation": "scr-peugeot", "nr": 10, "bild": "diesel-scr-schaltplan.svg",
      "q": "Messwerte am Dosierventil Y5: Plus-Pin gegen Masse 12,4 V (Zündung ein); Wicklung 13 Ω (Soll laut WI 12–15 Ω, Stecker ab); Oszilloskop an Messpunkt A bei Dosierung: Rechteck 0 V / 12,4 V. Wie ist das Ergebnis zu beurteilen?",

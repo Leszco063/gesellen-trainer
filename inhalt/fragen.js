@@ -90,7 +90,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "02ca9497a1b1",
+  "id": "2fe39173717d",
   "cat": "Airbag",
   "level": 2,
   "typ": "reihenfolge",
@@ -102,8 +102,7 @@ export const QUESTIONS = [
    "Zündung ausschalten und Schlüssel aus dem Fahrzeug bzw. aus der Funkreichweite bringen",
    "Batterie-Minuspol abklemmen und gegen Wiederanklemmen sichern",
    "Wartezeit nach Herstellerangabe abwarten",
-   "Sich elektrostatisch entladen (z. B. Fahrzeugmasse berühren)",
-   "Steckverbindung des Airbag-Bauteils trennen",
+   "Sich elektrostatisch entladen (z. B. Fahrzeugmasse berühren) und die Steckverbindung des Airbag-Bauteils trennen",
    "Ausgebaute Airbag-Einheit mit der Polsterseite nach oben ablegen"
   ],
   "explain": "Erst stromlos machen, dann warten, bis die Energiereserve im Steuergerät entladen ist. Die Wartezeit ist je nach Fahrzeug sehr verschieden – sie steht im Reparaturleitfaden. Die elektrostatische Entladung schützt die Zündpille vor einem Funken über den Körper.",
@@ -621,15 +620,14 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.4"
  },
  {
-  "id": "8fd0a570baed",
+  "id": "2a54abbce03f",
   "cat": "Airbag",
   "level": 2,
   "typ": "reihenfolge",
   "pkt": 4,
   "q": "Für den Tausch der Wickelfeder muss das Lenkrad ab. Bringen Sie die Arbeitsschritte in die richtige Reihenfolge.",
   "schritte": [
-   "Räder in Geradeausstellung bringen",
-   "Zündung aus, Batterie abklemmen, Wartezeit nach Herstellerangabe abwarten",
+   "Räder in Geradeausstellung bringen, danach Zündung aus, Batterie abklemmen und die Wartezeit nach Herstellerangabe abwarten",
    "Fahrerairbag ausbauen, Stecker trennen und mit der Polsterseite nach oben ablegen",
    "Stellung des Lenkrads zur Lenksäule markieren",
    "Lenkradschraube lösen und Lenkrad abnehmen"
@@ -2034,7 +2032,7 @@ export const QUESTIONS = [
   "src": "Netz: kfz-dietrich.com (Recherche 3.6)"
  },
  {
-  "id": "283fc1d81db5",
+  "id": "d8021867f1a2",
   "cat": "Bremse",
   "level": 2,
   "typ": "reihenfolge",
@@ -2044,8 +2042,7 @@ export const QUESTIONS = [
   "q": "Bringen Sie die Arbeitsschritte für den Bremsbelagwechsel hinten am Fahrzeug mit EPB in die richtige Reihenfolge.",
   "schritte": [
    "Tester anschließen, Fehlerspeicher auslesen und Servicemodus der EPB aktivieren",
-   "Fahrzeug anheben und Hinterrad abbauen",
-   "Bremssattel lösen und sicher ablegen (nicht am Bremsschlauch hängen lassen)",
+   "Fahrzeug anheben, Hinterrad abbauen, Bremssattel lösen und sicher ablegen (nicht am Bremsschlauch hängen lassen)",
    "Bremsscheibe prüfen, Beläge erneuern, Anlageflächen und Führungen reinigen",
    "Bremssattel montieren und Schrauben mit vorgeschriebenem Drehmoment anziehen",
    "Servicemodus beenden und Grundeinstellung der EPB durchführen",
@@ -2593,7 +2590,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "7b40f18b5252",
+  "id": "1065cdf75dcc",
   "cat": "Bremse",
   "level": 3,
   "typ": "mc",
@@ -2603,7 +2600,7 @@ export const QUESTIONS = [
   "bild": "bremse-oszi-raddrehzahl.svg",
   "q": "Messung 2 zeigt den Sensor vorn rechts unter gleichen Bedingungen. Wie beurteilen Sie das Signal?",
   "opts": [
-   "Der Strom fällt in der Lücke auf 0 mA; die Leitung ist dort kurz unterbrochen, deshalb ist der Kabelbaum zwischen X1 und Steuergerät ist zu ersetzen",
+   "Der Strom fällt in der Lücke auf 0 mA; die Leitung ist dort kurz unterbrochen, deshalb ist der Kabelbaum zwischen X1 und Steuergerät zu ersetzen",
    "Pegel und Frequenz stimmen, in der Lücke bleibt der Strom bei 7 mA; Sensor ist versorgt, Leitung ganz – der Magnetring hat eine schadhafte Stelle",
    "Die Frequenz ist doppelt so hoch wie bei Messung 1; der Sensor ist für das falsche Rad bestellt und muss getauscht werden",
    "Der obere Pegel ist zu niedrig; die Versorgung bricht ein, Ursache ist eine schwache Batterie oder eine korrodierte Sicherung F3"
@@ -2665,7 +2662,7 @@ export const QUESTIONS = [
   "src": "FW, BGB Werkvertrag"
  },
  {
-  "id": "d02637d74e6f",
+  "id": "4adf84e76823",
   "cat": "Bremse",
   "level": 2,
   "typ": "reihenfolge",
@@ -2674,7 +2671,7 @@ export const QUESTIONS = [
   "nr": 15,
   "q": "Die andere Werkstatt übernimmt die Kosten, Sie sollen reparieren. Bringen Sie die Arbeitsschritte zum Ersetzen des Radlagers mit Magnetring vorn rechts in die richtige Reihenfolge.",
   "schritte": [
-   "Fahrzeug anheben, Rad abbauen und Raddrehzahlsensor ausbauen",
+   "Fahrzeug anheben und Vorderrad abbauen",
    "Raddrehzahlsensor ausbauen, Bremssattel abbauen und aufhängen, Bremsscheibe abnehmen",
    "Radnabe und altes Radlager nach Herstellervorgabe auspressen",
    "Neues Lager über den Außenring einpressen, Magnetring zur Sensorseite",
@@ -2719,7 +2716,7 @@ export const QUESTIONS = [
    "Als gefährlicher Mangel – das Fahrzeug wird sofort stillgelegt und muss abgeschleppt werden"
   ],
   "correct": 1,
-  "explain": "Eine Kontrollleuchte, die eine Störung eines Bremsregelsystems anzeigt, gilt bei der HU als erheblicher Mangel. Das Fahrzeug bekommt keine Plakette, bis der Fehler behoben und nachgeprüft ist. „Verkehrsunsicher“ wäre es erst bei Mängeln, die eine unmittelbare Gefahr darstellen, z. B. Ausfall der Grundbremse.",
+  "explain": "Eine Kontrollleuchte, die eine Störung eines Bremsregelsystems anzeigt, gilt bei der HU als erheblicher Mangel. Das Fahrzeug bekommt keine Plakette, bis der Fehler behoben und nachgeprüft ist. Ein gefährlicher Mangel oder „verkehrsunsicher“ liegt erst vor, wenn eine unmittelbare Gefahr besteht, z. B. bei Ausfall der Grundbremse.",
   "src": "Netz: kfz-dietrich.com, HU-Richtlinie (Recherche ausbau-bremse)"
  },
  {
@@ -3050,17 +3047,16 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "63dc73b32210",
+  "id": "dc7dbbb6396b",
   "cat": "Bremse",
   "level": 2,
   "typ": "reihenfolge",
   "pkt": 4,
   "q": "Bringen Sie die Schritte für den Bremsflüssigkeitswechsel mit Befüll- und Entlüftungsgerät in die richtige Reihenfolge.",
   "schritte": [
-   "Fahrzeug anheben, Entlüfterventile zugänglich machen",
    "Alte Flüssigkeit im Ausgleichsbehälter absaugen und neue Bremsflüssigkeit nach Herstellerspezifikation einfüllen",
    "Entlüftungsgerät anschließen und mit vorgeschriebenem Druck einschalten",
-   "Entlüfterventile in der Reihenfolge laut Hersteller öffnen, bis klare, blasenfreie Flüssigkeit kommt, dann schließen",
+   "Fahrzeug anheben, Entlüfterventile in der Reihenfolge laut Hersteller öffnen, bis klare, blasenfreie Flüssigkeit kommt, dann schließen",
    "Gerät abbauen und Flüssigkeitsstand auf MAX einstellen",
    "Druckpunkt am Pedal und Dichtheit prüfen, Wechselaufkleber anbringen, Bremsprobe"
   ],
@@ -5294,7 +5290,7 @@ export const QUESTIONS = [
    "Plus über F5 (Klemme 30); das Steuergerät A2 schaltet über Pin 12 die Masse getaktet (PWM)"
   ],
   "correct": 3,
-  "explain": "Y5 hängt mit Pin 1 an der Leitung hinter F5 (Klemme 30). Die andere Seite führt zu Pin 12 von A2: Das Steuergerät schaltet masseseitig und taktet (PWM), so bestimmt es Öffnungsdauer und Dosiermenge. F4/K2 versorgen nur die Heizungen R1 und R2, Pin 10 die Pumpe M1.",
+  "explain": "Y5 hängt mit seinem oberen Anschluss an der Leitung hinter F5 (Klemme 30). Die andere Seite führt zu Pin 12 von A2: Das Steuergerät schaltet masseseitig und taktet (PWM), so bestimmt es Öffnungsdauer und Dosiermenge. F4/K2 versorgen nur die Heizungen R1 und R2, Pin 10 die Pumpe M1.",
   "src": "Eigener Schaltplan"
  },
  {
@@ -6268,7 +6264,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "422f214e851d",
+  "id": "c2724fa0fafa",
   "cat": "Grundlagen",
   "level": 2,
   "typ": "reihenfolge",
@@ -6277,11 +6273,10 @@ export const QUESTIONS = [
   "schritte": [
    "Zündung ausschalten",
    "Steckverbindung am Bauteil abziehen",
-   "Messgerät auf Ohm stellen und Messleitungen kurzschließen (Nullabgleich)",
-   "An den Bauteilpins messen",
+   "Messgerät auf Ohm stellen, Nullabgleich (Messleitungen kurzschließen) und an den Bauteilpins messen",
    "Messwert mit dem Sollwert vergleichen und dokumentieren"
   ],
-  "explain": "Widerstände nur stromlos messen – sonst ist der Messwert falsch und das Messgerät kann Schaden nehmen.",
+  "explain": "Widerstände nur stromlos messen – sonst ist der Messwert falsch und das Messgerät kann Schaden nehmen. Erst Zündung aus, dann Stecker ab: Wer bei eingeschalteter Zündung absteckt, erzeugt unnötige Fehlereinträge im Steuergerät.",
   "src": "FW"
  },
  {
@@ -6355,7 +6350,7 @@ export const QUESTIONS = [
   "tb": true
  },
  {
-  "id": "19b190f3c367",
+  "id": "7be8b33006d5",
   "cat": "Grundlagen",
   "level": 2,
   "typ": "reihenfolge",
@@ -6364,11 +6359,10 @@ export const QUESTIONS = [
   "schritte": [
    "Relais nach Schaltplan identifizieren (Anschlüsse 30, 85, 86, 87)",
    "Relais ausbauen und Spulenwiderstand zwischen 85 und 86 messen",
-   "Spule mit Bordspannung ansteuern und Schaltgeräusch prüfen",
-   "Durchgang des Arbeitskontakts 30–87 im angesteuerten Zustand messen",
+   "Spule mit Bordspannung ansteuern und dabei den Durchgang des Arbeitskontakts 30–87 messen",
    "Ergebnis mit dem Sollwert vergleichen und dokumentieren"
   ],
-  "explain": "Erst die Spule (Steuerstromkreis), dann der Kontakt (Arbeitsstromkreis). Ein Relais, das klickt, kann trotzdem einen verbrannten Kontakt haben.",
+  "explain": "Erst die Spule stromlos messen (Steuerstromkreis): Eine kurzgeschlossene Spule würde beim Ansteuern einen zu hohen Strom ziehen. Dann im angesteuerten Zustand den Kontakt prüfen (Arbeitsstromkreis). Ein Relais, das klickt, kann trotzdem einen verbrannten Kontakt haben.",
   "src": "FW"
  },
  {
@@ -7160,7 +7154,7 @@ export const QUESTIONS = [
   "src": "Netz: mvwautotechniek.nl, kfz-dietrich.com"
  },
  {
-  "id": "92fa3a222e55",
+  "id": "4c6b65c0648d",
   "cat": "Grundlagen",
   "level": 2,
   "typ": "reihenfolge",
@@ -7168,8 +7162,7 @@ export const QUESTIONS = [
   "q": "Bringen Sie die Schritte einer Spannungsfallmessung auf der Masseseite eines Verbrauchers in die richtige Reihenfolge.",
   "schritte": [
    "Im Schaltplan den Masseweg des Verbrauchers bis zum Massepunkt verfolgen",
-   "Verbraucher einschalten, damit der Stromkreis unter Last steht",
-   "Voltmeter zwischen Masseanschluss des Verbrauchers und Batterie-Minus anschließen",
+   "Voltmeter zwischen Masseanschluss des Verbrauchers und Batterie-Minus anschließen, Verbraucher einschalten (Stromkreis unter Last)",
    "Spannungsfall ablesen und mit dem Sollwert vergleichen",
    "Bei zu hohem Wert abschnittsweise messen, um die Übergangsstelle einzugrenzen"
   ],
@@ -7384,7 +7377,7 @@ export const QUESTIONS = [
   "src": "Recherche 3.3/3.6, FW"
  },
  {
-  "id": "98c1b0864902",
+  "id": "212c2244e9c8",
   "cat": "Klima",
   "level": 2,
   "typ": "mc",
@@ -7393,13 +7386,13 @@ export const QUESTIONS = [
   "nr": 5,
   "q": "Welche Antwort nennt vier Vorprüfungen, die Sie ohne Klimaservicegerät durchführen können?",
   "opts": [
-   "Sichtprüfung auf Ölspuren und Beschädigungen; Fehlerspeicher auslesen; Kondensatorlüfter und Gebläse prüfen; Hoch- und Niederdruck messen",
+   "Sichtprüfung auf Ölspuren und Beschädigungen; Fehlerspeicher auslesen; Kondensatorlüfter und Gebläse prüfen; Vakuum-Haltetest durchführen",
    "Sichtprüfung auf Ölspuren und Beschädigungen; Innenraumfilter und Kondenswasserablauf prüfen; Kältemittel absaugen und wiegen; Ausströmtemperatur messen",
    "Vakuum-Haltetest durchführen; Fehlerspeicher auslesen; Kondensatorlüfter und Gebläse prüfen; Innenraumfilter und Kondenswasserablauf prüfen",
    "Sichtprüfung auf Ölspuren und Beschädigungen; Verdichteransteuerung im Tester prüfen; Kondensatorlüfter und Gebläse prüfen; Ausströmtemperatur messen"
   ],
   "correct": 3,
-  "explain": "Ohne Servicegerät möglich: Sichtprüfung auf Undichtheit (Ölspuren, Beschädigungen z. B. am Kondensator), Verdichteransteuerung (Messwerte Regelventil im Tester), Kondensatorlüfter und Innenraumgebläse, Innenraumfilter und Kondenswasserablauf, Ausströmtemperatur an der Mitteldüse, Fehlerspeicher von Klima- und Motorsteuergerät. Drücke messen, Kältemittel absaugen und wiegen sowie der Vakuumtest gehen nur mit dem Servicegerät. Viele Fehler findet man schon ohne Manometer: Ölspuren zeigen Lecks (das Kältemittel trägt Öl mit), ein ausgefallener Lüfter oder ein zugesetzter Filter mindern die Kühlleistung.",
+  "explain": "Ohne Servicegerät möglich: Sichtprüfung auf Undichtheit (Ölspuren, Beschädigungen z. B. am Kondensator), Verdichteransteuerung (Messwerte Regelventil im Tester), Kondensatorlüfter und Innenraumgebläse, Innenraumfilter und Kondenswasserablauf, Ausströmtemperatur an der Mitteldüse, Fehlerspeicher von Klima- und Motorsteuergerät. Kältemittel absaugen und wiegen sowie der Vakuumtest gehen nur mit dem Servicegerät. Viele Fehler findet man schon ohne Manometer: Ölspuren zeigen Lecks (das Kältemittel trägt Öl mit), ein ausgefallener Lüfter oder ein zugesetzter Filter mindern die Kühlleistung.",
   "src": "FW"
  },
  {
@@ -7873,7 +7866,7 @@ export const QUESTIONS = [
    "0,53 bar"
   ],
   "correct": 1,
-  "explain": "Steigung = 30 bar ÷ (4,5 V − 0,5 V) = 7,5 bar/V. Druck = (1,2 V − 0,5 V) × 7,5 bar/V = 5,25 bar. Das passt zum Ruhedruck am Manometer (ca. 5 bar) – der Sensor misst richtig. Typischer Fehler: den Nullpunkt 0,5 V nicht abziehen (ergibt 9,0 bar) oder durch 4,5 V statt durch 4 V teilen (ergibt 8,0 bar).",
+  "explain": "Steigung = 30 bar ÷ (4,5 V − 0,5 V) = 7,5 bar/V. Druck = (1,2 V − 0,5 V) × 7,5 bar/V = 5,25 bar. Das passt zum Ruhedruck am Manometer (ca. 5 bar) – der Sensor misst richtig. Typischer Fehler: den Nullpunkt 0,5 V nicht abziehen (1,2 V × 7,5 bar/V = 9,0 bar) oder zusätzlich die Steigung mit 30 bar ÷ 4,5 V statt ÷ 4 V bilden (1,2 V × 6,67 bar/V = 8,0 bar).",
   "src": "FW"
  },
  {
