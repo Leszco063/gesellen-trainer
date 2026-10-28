@@ -38,6 +38,40 @@ export const CARDS = [
         <li>Ohmsches Gesetz: U = R × I, Leistung P = U × I.</li>
       </ul>`,
   },
+  {
+    id: "schaltplan", cat: "Grundlagen", title: "Schaltpläne lesen",
+    keys: ["Schaltplan", "Stromlaufplan", "Klemme", "Relais", "Sicherung", "Pin", "Strompfad", "Spannungsfall"],
+    html: `
+      <h4>Klemmen (DIN 72552)</h4>
+      <table class="ktable">
+        <tr><td>30</td><td>Dauerplus von der Batterie</td></tr>
+        <tr><td>15</td><td>Plus nur bei eingeschalteter Zündung</td></tr>
+        <tr><td>31</td><td>Masse</td></tr>
+        <tr><td>50</td><td>Starter</td></tr>
+        <tr><td>85 / 86</td><td>Relaisspule (Steuerstromkreis)</td></tr>
+        <tr><td>30 / 87 / 87a</td><td>Relaiskontakt: Eingang / Schließer / Öffner (Laststromkreis)</td></tr>
+      </table>
+      <h4>Kennbuchstaben der Bauteile</h4>
+      <table class="ktable">
+        <tr><td>A</td><td>Steuergerät</td></tr>
+        <tr><td>B</td><td>Sensor</td></tr>
+        <tr><td>F</td><td>Sicherung</td></tr>
+        <tr><td>K</td><td>Relais</td></tr>
+        <tr><td>M</td><td>Motor</td></tr>
+        <tr><td>S</td><td>Schalter</td></tr>
+        <tr><td>Y</td><td>Ventil / Aktor</td></tr>
+        <tr><td>H</td><td>Leuchte</td></tr>
+        <tr><td>X</td><td>Steckverbindung</td></tr>
+      </table>
+      <h4>So gehst du vor</h4>
+      <ul>
+        <li>Strompfad von Plus (30/15) über Sicherung, Schalter/Relais und Verbraucher bis Masse (31) verfolgen.</li>
+        <li>Erst prüfen, ob Versorgung und Masse am Bauteil ankommen, dann das Signal.</li>
+        <li>Spannungsfall unter Last messen: Voltmeter parallel zur Leitung bzw. zum Kontakt. Fast 0 V ist gut, hohe Werte bedeuten einen Übergangswiderstand.</li>
+        <li>Volle Bordspannung über einem offenen Schalter oder einer Unterbrechung heißt: Hier ist der Kreis offen.</li>
+        <li>Pinnummern stehen am Steuergeräte-Rahmen. Steckerbelegung und Leitungsfarben stehen im Plan, nicht raten.</li>
+      </ul>`,
+  },
 
   // ============================ DIESEL ============================
   {

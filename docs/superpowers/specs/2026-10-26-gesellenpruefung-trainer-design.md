@@ -195,6 +195,15 @@ Der User möchte in der App **nichts mehr eintippen**. Deshalb gilt ab jetzt (er
 - Gemischter Simulationsblock: 15 `mc`, 5 `zuordnung`, 1 `reihenfolge`. Die Selbstbewertung entfällt mangels offener Aufgaben.
 - Freunde des Users nutzen dieselbe Seite; jeder hat seinen eigenen Fortschritt auf dem eigenen Gerät (keine gemeinsame Rangliste).
 
+## 17. Ausbau 28.10.: über 500 Fragen und eigene Schaltpläne (freigegeben)
+
+- Fragenbank von 256 auf über 500 Fragen. Untergrenzen: Diesel/Bremse 95, Klima/Airbag 88, WiSo 90, Grundlagen 45. Jeder Prüfungsblock bekommt einen zweiten Kundenauftrag (Aufgabensatz). Die Simulation wechselt automatisch zwischen beiden Sätzen und dem gemischten Block.
+- Eigene SVG-Schaltpläne, Oszillogramme und Diagramme (etwa 15), selbst gezeichnet mit genormten Schaltzeichen, Klemmen und Pinnummern. Jedes Bild gehört zu mindestens 3 Fragen (Pin/Sicherung, Messpunkt, Messwert, Fehlerort, Signal auswerten). Regeln: `docs/ausbau-500-regeln.md`.
+- Der Export prüft, ob jedes Bild ein gültiges SVG mit `viewBox` ist. Ein Test prüft, dass jede Bilddatei auch benutzt wird.
+- Antippen vergrößert ein Bild bildschirmfüllend (scrollbar), nochmal Antippen schließt es.
+- Längen-Test: Je Bereich ist die richtige mc-Antwort höchstens in 35 % der Fragen die eindeutig längste und höchstens in 35 % die eindeutig kürzeste. Bestehende Fragen wurden dafür angepasst; ihre ID und damit ihr Lernstand beginnt neu.
+- Neuer Spickzettel „Schaltpläne lesen“ (Klemmen, Kennbuchstaben, Vorgehen). Prüfwerkzeug für einzelne Dateien: `py tools/pruefe_datei.py <datei> --laenge`.
+
 ## 14. Nicht Teil dieses Specs
 
 Praxis-Module (eigener Spec im Dezember), KI-Bewertung offener Antworten, Login/Server, Migration des Telekom-Trainers auf den neuen Kern.

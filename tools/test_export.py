@@ -87,9 +87,19 @@ class ExportTest(unittest.TestCase):
 
     def test_bild(self):
         with tempfile.TemporaryDirectory() as d:
-            open(os.path.join(d, "da.svg"), "w").close()
+            with open(os.path.join(d, "da.svg"), "w", encoding="utf-8") as f:
+                f.write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400"><title>T</title></svg>')
             self.assertEqual(self.fehler([frage(bild="da.svg")], bilder_dir=d), [])
             self.assertTrue(any("Bild" in e for e in self.fehler([frage(bild="fehlt.svg")], bilder_dir=d)))
+
+    def test_bild_kaputt(self):
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, "kaputt.svg"), "w", encoding="utf-8") as f:
+                f.write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400"><g></svg>')
+            with open(os.path.join(d, "ohne.svg"), "w", encoding="utf-8") as f:
+                f.write('<svg xmlns="http://www.w3.org/2000/svg" width="640"><title>T</title></svg>')
+            self.assertTrue(any("kaputt.svg" in e for e in self.fehler([frage(bild="kaputt.svg")], bilder_dir=d)))
+            self.assertTrue(any("viewBox" in e for e in self.fehler([frage(bild="ohne.svg")], bilder_dir=d)))
 
     def test_doppelte_frage(self):
         self.assertTrue(any("Doppelte" in e for e in self.fehler([frage(), frage()])))

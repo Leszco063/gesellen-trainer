@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 470" font-family="Arial, sans-serif" font-size="15">
+  <title>Stromlaufplan (aufgelöst): Kühlerlüfter M1 über Relais K1 mit Sicherungen F1/F2, Schalter S1, Stecker X1 und Messpunkten A bis F</title>
+  <rect x="0" y="0" width="640" height="470" fill="#ffffff"/>
+
+  <!-- Plusleitung Klemme 30 oben, Masse Klemme 31 unten -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="60" y1="60" x2="600" y2="60"/>
+    <line x1="60" y1="420" x2="600" y2="420"/>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="20" y="65">30</text>
+    <text x="20" y="425">31</text>
+    <text x="70" y="45">Batterie +</text>
+  </g>
+  <!-- Masse-Symbol rechts -->
+  <g stroke="#1a1a1a" stroke-width="2">
+    <line x1="600" y1="420" x2="600" y2="438"/>
+    <line x1="586" y1="438" x2="614" y2="438"/>
+    <line x1="591" y1="445" x2="609" y2="445"/>
+    <line x1="596" y1="452" x2="604" y2="452"/>
+  </g>
+  <g fill="#1a1a1a">
+    <circle cx="150" cy="60" r="4"/>
+    <circle cx="420" cy="60" r="4"/>
+    <circle cx="150" cy="420" r="4"/>
+    <circle cx="420" cy="420" r="4"/>
+  </g>
+
+  <!-- ===== Strompfad 1: Steuerstromkreis ===== -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="150" y1="60" x2="150" y2="85"/>
+    <rect x="140" y="85" width="20" height="40" fill="#ffffff"/>
+    <line x1="150" y1="85" x2="150" y2="125"/>
+    <line x1="150" y1="125" x2="150" y2="145"/>
+    <!-- Schalter S1 (offen) -->
+    <line x1="140" y1="145" x2="150" y2="145"/>
+    <line x1="150" y1="185" x2="168" y2="149"/>
+    <line x1="150" y1="185" x2="150" y2="200"/>
+    <!-- Relaisspule K1 -->
+    <rect x="132" y="200" width="36" height="50" fill="#ffffff"/>
+    <line x1="150" y1="250" x2="150" y2="420"/>
+  </g>
+  <circle cx="150" cy="185" r="3" fill="#1a1a1a"/>
+  <g fill="#1a1a1a">
+    <text x="168" y="111">F1 5 A</text>
+    <text x="176" y="172">S1</text>
+    <text x="126" y="232" text-anchor="end">K1</text>
+    <text x="156" y="196" font-size="15">86</text>
+    <text x="156" y="268" font-size="15">85</text>
+    <text x="158" y="345">0,5 br</text>
+  </g>
+
+  <!-- Wirkverbindung Spule → Kontakt (gestrichelt) -->
+  <line x1="168" y1="225" x2="426" y2="225" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ===== Strompfad 2: Laststromkreis ===== -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="420" y1="60" x2="420" y2="85"/>
+    <rect x="410" y="85" width="20" height="40" fill="#ffffff"/>
+    <line x1="420" y1="85" x2="420" y2="125"/>
+    <line x1="420" y1="125" x2="420" y2="195"/>
+    <!-- Arbeitskontakt 30/87 (Schließer, offen) -->
+    <line x1="410" y1="195" x2="420" y2="195"/>
+    <line x1="420" y1="245" x2="440" y2="199"/>
+    <line x1="420" y1="245" x2="420" y2="282"/>
+    <!-- Stecker X1 -->
+    <rect x="408" y="282" width="24" height="16" fill="#ffffff"/>
+    <line x1="420" y1="298" x2="420" y2="323"/>
+    <!-- Motor M1 -->
+    <circle cx="420" cy="345" r="22" fill="#ffffff"/>
+    <line x1="420" y1="367" x2="420" y2="420"/>
+  </g>
+  <circle cx="420" cy="245" r="3" fill="#1a1a1a"/>
+  <g fill="#1a1a1a">
+    <text x="420" y="351" text-anchor="middle" font-weight="bold">M</text>
+    <text x="440" y="111">F2 20 A</text>
+    <text x="446" y="225">K1</text>
+    <text x="400" y="190" text-anchor="end">30</text>
+    <text x="400" y="262" text-anchor="end">87</text>
+    <text x="440" y="296">X1/2</text>
+    <text x="450" y="342">M1</text>
+    <text x="450" y="361">Lüfter</text>
+    <text x="428" y="276">2,5 rt/ws</text>
+    <text x="428" y="402">2,5 br</text>
+  </g>
+
+  <!-- Strompfad-Nummern -->
+  <g fill="#1a1a1a" text-anchor="middle">
+    <text x="150" y="462">1</text>
+    <text x="420" y="462">2</text>
+  </g>
+
+  <!-- Messpunkte A–F -->
+  <g fill="#c0392b">
+    <circle cx="420" cy="155" r="4"/>
+    <circle cx="420" cy="262" r="4"/>
+    <circle cx="420" cy="312" r="4"/>
+    <circle cx="420" cy="385" r="4"/>
+    <circle cx="150" cy="193" r="4"/>
+    <circle cx="150" cy="290" r="4"/>
+  </g>
+  <g stroke="#c0392b" stroke-width="1.5">
+    <line x1="420" y1="155" x2="378" y2="155"/>
+    <line x1="420" y1="262" x2="352" y2="290"/>
+    <line x1="420" y1="312" x2="378" y2="318"/>
+    <line x1="420" y1="385" x2="378" y2="385"/>
+    <line x1="150" y1="193" x2="108" y2="193"/>
+    <line x1="150" y1="290" x2="108" y2="290"/>
+  </g>
+  <g fill="#ffffff" stroke="#c0392b" stroke-width="2">
+    <circle cx="367" cy="155" r="12"/>
+    <circle cx="341" cy="290" r="12"/>
+    <circle cx="367" cy="320" r="12"/>
+    <circle cx="367" cy="385" r="12"/>
+    <circle cx="97" cy="193" r="12"/>
+    <circle cx="97" cy="290" r="12"/>
+  </g>
+  <g fill="#c0392b" font-weight="bold" text-anchor="middle">
+    <text x="367" y="160">A</text>
+    <text x="341" y="295">B</text>
+    <text x="367" y="325">C</text>
+    <text x="367" y="390">D</text>
+    <text x="97" y="198">E</text>
+    <text x="97" y="295">F</text>
+  </g>
+</svg>

@@ -2,7 +2,7 @@
 WiSo (Wirtschafts- und Sozialkunde): Tarifvertrag, Sozialversicherungen (u. a. Rente),
 Wahlen (u. a. Kommunalwahl Bayern), Konjunktur und Wirtschaftspolitik.
 Format siehe docs/superpowers/specs (Abschnitt 5 und 15). Faktenbasis:
-docs/recherche/2026-10-26-gp2-winter-2026-27.md (Abschnitt 2, 3.5, 3.6).
+docs/recherche/2026-10-26-gp2-winter-2026-27.md (Abschnitt 2, 3.5, 3.6) und docs/recherche/ausbau-wiso.md.
 Aktuelle Zahlen stehen immer mit Jahr im Fragetext – sie veralten. Nach Änderungen:  python tools/export.py
 """
 
@@ -14,9 +14,21 @@ SITUATIONEN = {
                 "Im März 2026 waren Kommunalwahlen in Bayern.",
         "cat": "WiSo",
     },
+    "wiso-betrieb": {
+        "titel": "Situation: Betriebsversammlung im Autohaus",
+        "text": "Sie arbeiten als Kfz-Mechatroniker in einem Autohaus mit Werkstatt in Kulmbach (60 Beschäftigte, "
+                "tarifgebunden). Im Frühjahr 2026 wurde der Betriebsrat neu gewählt. Auf der Betriebsversammlung im "
+                "Oktober 2026 berichtet die Geschäftsführung: Der Neuwagenverkauf ist schwach, die Werkstatt ist gut "
+                "ausgelastet, Energie und Kraftstoff sind deutlich teurer geworden.\n"
+                "In der Pause diskutieren die Kollegen über Inflation, die nächste Landtagswahl und ein Volksbegehren.",
+        "cat": "WiSo",
+    },
 }
 
 S = "wiso-geselle"
+B = "wiso-betrieb"
+KONJ = "wiso-konjunkturzyklus.svg"
+LOHN = "wiso-lohnabrechnung.svg"
 
 QUESTIONS = [
     # ------------------------------------------------------------------
@@ -28,7 +40,7 @@ QUESTIONS = [
      "opts": ["Der Staat legt Löhne und Arbeitsbedingungen per Gesetz fest; Gewerkschaften und Arbeitgeberverbände werden dazu nur angehört",
               "Betriebsrat und Arbeitgeber handeln die Löhne im einzelnen Betrieb selbstständig aus; Grundlage ist das Betriebsverfassungsgesetz",
               "Gewerkschaften und Arbeitgeberverbände handeln Löhne und Arbeitsbedingungen selbstständig aus; Grundlage ist Art. 9 Abs. 3 GG; der Staat mischt sich nicht ein",
-              "Gewerkschaften und Arbeitgeberverbände verhandeln die Löhne; der Abschluss gilt aber erst, wenn das Arbeitsministerium ihn genehmigt"],
+              "Gewerkschaften und Arbeitgeberverbände verhandeln die Löhne selbstständig; der Abschluss gilt aber erst, wenn das Bundesarbeitsministerium ihn genehmigt hat"],
      "correct": 2,
      "explain": "Tarifautonomie heißt: Die Tarifpartner regeln Lohn, Arbeitszeit und Urlaub eigenverantwortlich. Grundlage ist die "
                 "Koalitionsfreiheit nach Art. 9 Abs. 3 Grundgesetz; in die Verhandlungen mischt sich der Staat nicht ein. "
@@ -76,9 +88,9 @@ QUESTIONS = [
     {"cat": "WiSo", "situation": S, "nr": 5, "level": 1, "typ": "mc", "pkt": 2,
      "q": "Was bedeutet die Friedenspflicht während der Laufzeit eines Tarifvertrags?",
      "opts": ["Zu Themen, die im Tarifvertrag geregelt sind, darf nicht gestreikt oder ausgesperrt werden",
-              "Der Betriebsrat darf keine Betriebsversammlung einberufen",
-              "Arbeitnehmer dürfen während der Laufzeit nicht kündigen",
-              "Die Gewerkschaft darf erst nach einer Schlichtung verhandeln"],
+              "Der Betriebsrat darf während der Laufzeit keine Betriebsversammlung einberufen",
+              "Arbeitnehmer dürfen ihr Arbeitsverhältnis während der Laufzeit nicht kündigen",
+              "Die Gewerkschaft darf erst nach einer gescheiterten Schlichtung wieder verhandeln, auch zu neuen Themen"],
      "correct": 0,
      "explain": "Die Friedenspflicht schützt den Abschluss: Solange er gilt, sind Arbeitskämpfe über die geregelten Inhalte unzulässig. "
                 "Warnstreiks sind erst nach Ende der Laufzeit erlaubt.",
@@ -233,7 +245,7 @@ QUESTIONS = [
     {"cat": "WiSo", "situation": S, "nr": 19, "level": 3, "typ": "mc", "pkt": 3,
      "q": "Welches Beispiel beschreibt einen Zielkonflikt zwischen zwei Zielen des magischen Vierecks richtig?",
      "opts": ["Mehr Beschäftigung bringt mehr Einkommen und Konsum, dadurch wächst die Wirtschaft stärker; beide Ziele fördern sich gegenseitig",
-              "Höhere Leitzinsen senken die Inflation und kurbeln zugleich Investitionen und Beschäftigung an; so werden beide Ziele gleichzeitig erreicht",
+              "Höhere Leitzinsen senken die Inflation und kurbeln zugleich Investitionen und Beschäftigung an, weil Sparen attraktiver wird; so werden beide Ziele gleichzeitig erreicht",
               "Hohe Nachfrage und volle Auslastung sichern Wachstum und Beschäftigung, lassen aber Preise und Löhne steigen; höhere Zinsen gegen die Inflation bremsen dann Wachstum und Beschäftigung",
               "Sinkende Arbeitslosigkeit drückt die Löhne und damit die Preise; so sorgt ein hoher Beschäftigungsstand automatisch für stabile Preise"],
      "correct": 2,
@@ -245,9 +257,9 @@ QUESTIONS = [
     {"cat": "WiSo", "situation": S, "nr": 20, "level": 2, "typ": "mc", "pkt": 2,
      "q": "Wie verhält sich der Staat in einer Rezession nach der antizyklischen (nachfrageorientierten) Fiskalpolitik?",
      "opts": ["Er erhöht seine Ausgaben und senkt Steuern, notfalls mit neuen Schulden",
-              "Er kürzt seine Ausgaben und erhöht die Steuern",
-              "Er senkt den Leitzins",
-              "Er hält sich vollständig aus der Wirtschaft heraus"],
+              "Er kürzt seine Ausgaben und erhöht die Steuern, damit der Haushalt ausgeglichen bleibt",
+              "Er senkt den Leitzins, damit Kredite für Betriebe und Verbraucher billiger werden",
+              "Er hält sich ganz heraus, weil sich der Markt von selbst wieder erholt"],
      "correct": 0,
      "explain": "Antizyklisch = gegen den Konjunkturverlauf: In der Krise die fehlende Nachfrage ersetzen (Deficit Spending), im Boom "
                 "Ausgaben kürzen und Rücklagen bilden. Den Leitzins bestimmt nicht der Staat, sondern die unabhängige EZB.",
@@ -259,9 +271,9 @@ QUESTIONS = [
     {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
      "q": "Angenommen, der Manteltarifvertrag sieht 30 Urlaubstage vor, in Ihrem Arbeitsvertrag stehen 32. Was gilt?",
      "opts": ["32 Tage, weil vom Tarifvertrag zugunsten des Arbeitnehmers abgewichen werden darf",
-              "30 Tage, weil der Tarifvertrag immer Vorrang hat",
-              "24 Tage, weil das Bundesurlaubsgesetz gilt",
-              "31 Tage als Mittelwert beider Regelungen"],
+              "30 Tage, weil der Tarifvertrag immer Vorrang vor dem einzelnen Arbeitsvertrag hat",
+              "24 Tage, weil das Bundesurlaubsgesetz als höheres Recht den Tarifvertrag verdrängt",
+              "31 Tage, weil bei widersprüchlichen Regelungen der Mittelwert beider Verträge gilt"],
      "correct": 0,
      "explain": "Günstigkeitsprinzip (§ 4 Abs. 3 Tarifvertragsgesetz): Der Tarifvertrag ist ein Mindeststandard. Schlechter als der Tarif "
                 "darf der Arbeitsvertrag nicht sein, besser schon.",
@@ -269,9 +281,9 @@ QUESTIONS = [
     {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 2,
      "q": "Was bedeutet es, wenn ein Tarifvertrag für allgemeinverbindlich erklärt wird?",
      "opts": ["Er gilt für alle Arbeitgeber und Arbeitnehmer der Branche im Geltungsbereich, auch ohne Verbandsmitgliedschaft",
-              "Er gilt nur für Gewerkschaftsmitglieder",
-              "Er kann während der Laufzeit nicht mehr gekündigt werden",
-              "Er gilt automatisch für alle Branchen in Deutschland"],
+              "Er gilt dann nur noch für Gewerkschaftsmitglieder, weil nur sie ihn über ihre Beiträge mitfinanzieren",
+              "Er kann während der Laufzeit von keiner Seite mehr gekündigt oder geändert werden, auch nicht in gegenseitigem Einvernehmen",
+              "Er gilt automatisch für alle Branchen in Deutschland, also z. B. auch für Bäckereien und Banken"],
      "correct": 0,
      "explain": "Die Allgemeinverbindlicherklärung spricht das Arbeitsministerium auf Antrag der Tarifpartner aus, wenn sie im "
                 "öffentlichen Interesse liegt (§ 5 TVG). Damit sind auch nicht tarifgebundene Betriebe erfasst.",
@@ -347,9 +359,9 @@ QUESTIONS = [
     {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 2,
      "q": "Wer trägt 2026 den Kinderlosenzuschlag von 0,6 % in der Pflegeversicherung?",
      "opts": ["Der kinderlose Arbeitnehmer ab 23 Jahren allein",
-              "Arbeitnehmer und Arbeitgeber je zur Hälfte",
-              "Der Arbeitgeber allein",
-              "Die Pflegekasse aus Steuermitteln"],
+              "Arbeitnehmer und Arbeitgeber je zur Hälfte, also je 0,3 %",
+              "Der Arbeitgeber allein, zusätzlich zu seinem Anteil",
+              "Die Pflegekasse aus Steuermitteln des Bundes"],
      "correct": 0,
      "explain": "Der Grundbeitrag 3,6 % wird geteilt (je 1,8 %). Kinderlose ab 23 zahlen 0,6 % zusätzlich allein → 2,4 % Arbeitnehmeranteil. "
                 "Eltern mit mehreren Kindern unter 25 zahlen weniger.",
@@ -373,9 +385,9 @@ QUESTIONS = [
     {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
      "q": "Seit 01.01.2026 gibt es die sogenannte Aktivrente. Was regelt sie?",
      "opts": ["Wer nach Erreichen der Regelaltersgrenze sozialversicherungspflichtig weiterarbeitet, kann bis zu 2.000 € im Monat steuerfrei verdienen",
-              "Jeder kann ab 63 Jahren ohne Abschläge in Rente gehen",
-              "Der Staat zahlt jedem Kind monatlich in ein Vorsorgedepot ein",
-              "Rentner müssen bis 70 Jahre mindestens in Teilzeit arbeiten"],
+              "Jeder kann ab 63 Jahren ohne Abschläge in Rente gehen, wenn er mindestens 35 Beitragsjahre hat",
+              "Wer nach Erreichen der Regelaltersgrenze weiterarbeitet, bekommt zusätzlich zum Lohn automatisch 2.000 € Rente im Monat ausbezahlt",
+              "Rentner müssen bis zum 70. Lebensjahr mindestens in Teilzeit weiterarbeiten, sonst wird die Rente gekürzt"],
      "correct": 0,
      "explain": "Aktivrente (Stand 2026): Steuerfreibetrag von bis zu 2.000 € monatlich für Arbeitslohn nach Erreichen der Regelaltersgrenze. "
                 "Nicht für Minijobs, Selbstständige oder Frührentner vor der Regelaltersgrenze.",
@@ -439,9 +451,9 @@ QUESTIONS = [
     {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 2,
      "q": "Eine Partei erhält bei der Bundestagswahl 4,2 % der Zweitstimmen und gewinnt 3 Wahlkreise direkt. Was gilt nach dem Stand 2026?",
      "opts": ["Sie zieht entsprechend ihrem Zweitstimmenanteil in den Bundestag ein (Grundmandatsklausel)",
-              "Sie bekommt keinen einzigen Sitz, weil sie unter 5 % liegt",
-              "Nur die drei Wahlkreissieger ziehen ein",
-              "Sie bekommt automatisch 5 % der Sitze"],
+              "Sie bekommt keinen einzigen Sitz, weil sie unter der 5-%-Hürde liegt und es keine Ausnahmen mehr gibt",
+              "Nur die drei Wahlkreissieger ziehen ein, weitere Sitze bekommt die Partei nicht",
+              "Sie bekommt automatisch 5 % der Sitze, weil sie die Hürde über Direktmandate erreicht"],
      "correct": 0,
      "explain": "Das Bundesverfassungsgericht hat am 30.07.2024 den geplanten Wegfall der Grundmandatsklausel für verfassungswidrig erklärt. "
                 "Bis zu einer Neuregelung gilt: Mit mindestens 3 Direktmandaten zählt die Partei trotz weniger als 5 % bei der Sitzverteilung mit.",
@@ -462,9 +474,9 @@ QUESTIONS = [
     {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
      "q": "Bei der Bürgermeisterwahl am 08.03.2026 erhält Bewerberin A 44 %, Bewerber B 38 % und Bewerber C 18 % der gültigen Stimmen. Wie geht es weiter?",
      "opts": ["Zwei Wochen später findet eine Stichwahl zwischen A und B statt",
-              "A ist gewählt, weil sie die meisten Stimmen hat",
-              "Die Wahl wird mit allen drei Bewerbern wiederholt",
-              "Der Gemeinderat wählt den Bürgermeister aus A und B"],
+              "A ist gewählt, weil bei der Bürgermeisterwahl die einfache Mehrheit reicht",
+              "Die Wahl wird nach vier Wochen mit allen drei Bewerbern wiederholt",
+              "Der neue Gemeinderat wählt den Bürgermeister aus A und B"],
      "correct": 0,
      "explain": "Gewählt ist, wer mehr als die Hälfte der gültigen Stimmen erhält. Sonst folgt eine Stichwahl der beiden Bewerber mit den "
                 "meisten Stimmen – 2026 am 22.03., also zwei Wochen nach der Hauptwahl.",
@@ -562,8 +574,8 @@ QUESTIONS = [
     {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
      "q": "Wie hat sich das reale Bruttoinlandsprodukt in Deutschland im Jahr 2025 entwickelt (Destatis, Januar 2026)?",
      "opts": ["Es ist um 0,2 % gewachsen, nach zwei Jahren mit Rückgang",
-              "Es ist um 2,0 % geschrumpft",
-              "Es ist um 3,5 % gewachsen",
+              "Es ist um 2,0 % geschrumpft, vor allem wegen der schwachen Industrie",
+              "Es ist um 3,5 % gewachsen, so stark wie seit 2010 nicht mehr",
               "Es ist das dritte Jahr in Folge geschrumpft"],
      "correct": 0,
      "explain": "Nach Rückgängen 2023 und 2024 wuchs das reale BIP 2025 laut erster Schätzung des Statistischen Bundesamts leicht um 0,2 %. "
@@ -572,8 +584,8 @@ QUESTIONS = [
     {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 2,
      "q": "Welches Ziel verfolgt die Europäische Zentralbank (EZB) mit ihrer Geldpolitik (Stand 2026)?",
      "opts": ["Eine Inflationsrate von mittelfristig 2 % im Euroraum",
-              "Eine Arbeitslosenquote von 0 %",
-              "Eine Inflationsrate von genau 0 %",
+              "Eine Arbeitslosenquote von unter 3 % im Euroraum",
+              "Eine Inflationsrate von genau 0 %, also völlig stabile Preise",
               "Ein jährliches Wirtschaftswachstum von 5 %"],
      "correct": 0,
      "explain": "Vorrangiges Ziel der EZB ist die Preisniveaustabilität. Sie strebt eine Inflationsrate von 2 % auf mittlere Sicht an. "
@@ -627,4 +639,513 @@ QUESTIONS = [
      "explain": "Näherung: Reallohnveränderung ≈ Nominallohnveränderung − Inflationsrate = 3,3 % − 2,0 % = 1,3 %. "
                 "Genau: 1,033 ÷ 1,020 − 1 ≈ 1,27 %.",
      "src": "FW"},
+
+    # ------------------------------------------------------------------
+    # Aufgabensatz „Betriebsversammlung im Autohaus“ (18 Aufgaben, 62 Punkte)
+    # Schwerpunkt Wahl (Betrieb, Land, Gemeinde) und Konjunktur
+    # ------------------------------------------------------------------
+    # 1 Betriebsratswahl
+    {"cat": "WiSo", "situation": B, "nr": 1, "level": 1, "typ": "mc", "pkt": 3,
+     "q": "Im Frühjahr 2026 wurde in Ihrem Autohaus der Betriebsrat gewählt. In welchem Rhythmus und Zeitraum finden die "
+          "regelmäßigen Betriebsratswahlen statt?",
+     "opts": ["Alle 2 Jahre in der Zeit vom 1. Oktober bis 30. November, zuletzt im Herbst 2026",
+              "Alle 5 Jahre gemeinsam mit der Landtagswahl, zuletzt im Herbst 2023",
+              "Alle 4 Jahre in der Zeit vom 1. März bis 31. Mai, zuletzt im Frühjahr 2026",
+              "Alle 6 Jahre gemeinsam mit der Kommunalwahl, zuletzt im März 2026"],
+     "correct": 2,
+     "explain": "Nach § 13 Betriebsverfassungsgesetz (BetrVG) finden die regelmäßigen Betriebsratswahlen alle vier Jahre zwischen "
+                "1. März und 31. Mai statt (2022, 2026, nächste 2030); die Amtszeit beträgt vier Jahre. Alle zwei Jahre im Herbst "
+                "wird die Jugend- und Auszubildendenvertretung gewählt. Mit Landtags- oder Kommunalwahlen haben Betriebsratswahlen nichts zu tun.",
+     "src": "FW (BetrVG §§ 13, 21)"},
+    # 2 Wahlrecht Betriebsrat
+    {"cat": "WiSo", "situation": B, "nr": 2, "level": 2, "typ": "mc", "pkt": 4,
+     "q": "Wer durfte im Autohaus den Betriebsrat wählen, und wer konnte selbst in den Betriebsrat gewählt werden?",
+     "opts": ["Wählen: alle Arbeitnehmer ab 18 Jahren; gewählt werden: alle Arbeitnehmer ab 18 Jahren, die Mitglied einer Gewerkschaft sind",
+              "Wählen: alle Arbeitnehmer ab 16 Jahren, auch Azubis; gewählt werden: Wahlberechtigte ab 18, die mindestens 6 Monate im Betrieb sind",
+              "Wählen: alle Arbeitnehmer ab 16 Jahren, auch Azubis; gewählt werden: alle Wahlberechtigten ab 16 Jahren ohne Wartezeit",
+              "Wählen: nur Gesellen und Angestellte, keine Auszubildenden; gewählt werden: Wahlberechtigte ab 18, die mindestens 6 Monate im Betrieb sind"],
+     "correct": 1,
+     "explain": "Wahlberechtigt sind alle Arbeitnehmer ab 16 Jahren, auch Auszubildende (§ 7 BetrVG, seit 2021). Wählbar sind "
+                "Wahlberechtigte ab 18 Jahren, die dem Betrieb seit mindestens sechs Monaten angehören (§ 8). Eine Gewerkschafts"
+                "mitgliedschaft ist nicht nötig. Einen Betriebsrat gibt es ab 5 ständigen Arbeitnehmern; bei 51–100 Wahlberechtigten "
+                "hat er 5 Mitglieder.",
+     "src": "FW (BetrVG §§ 1, 7, 8, 9)"},
+    # 3 Wer regelt was
+    {"cat": "WiSo", "situation": B, "nr": 3, "level": 2, "typ": "zuordnung", "pkt": 4,
+     "q": "Auf der Betriebsversammlung geht es um verschiedene Regelungen. Ordnen Sie zu, wo sie üblicherweise festgelegt sind.",
+     "paare": [["Höhe der Stundenlöhne in den tarifgebundenen Kfz-Betrieben Bayerns", "Tarifvertrag (Gewerkschaft und Arbeitgeberverband)"],
+               ["Beginn und Ende der täglichen Arbeitszeit und Pausen im Autohaus", "Betriebsvereinbarung (Betriebsrat und Arbeitgeber)"],
+               ["Ihre persönliche Zulage über Tarif und Ihr Firmenwagen", "Arbeitsvertrag (Sie und der Arbeitgeber)"],
+               ["Mindesturlaub von 24 Werktagen pro Jahr", "Gesetz (Bundesurlaubsgesetz)"]],
+     "ablenker": ["Satzung der Handwerkskammer"],
+     "explain": "Löhne vereinbaren die Tarifpartner. Der Betriebsrat darf Löhne, die üblicherweise im Tarif geregelt sind, nicht per "
+                "Betriebsvereinbarung festlegen (Tarifvorbehalt, § 77 Abs. 3 BetrVG) – außer der Tarifvertrag erlaubt es mit einer "
+                "Öffnungsklausel. Bei der Lage der Arbeitszeit hat der Betriebsrat dagegen ein Mitbestimmungsrecht (§ 87 BetrVG). "
+                "Das Bundesurlaubsgesetz garantiert 24 Werktage (Mo–Sa), also 20 Arbeitstage bei der 5-Tage-Woche.",
+     "src": "FW (BetrVG §§ 77, 87; BUrlG)"},
+    # 4 JAV
+    {"cat": "WiSo", "situation": B, "nr": 4, "level": 1, "typ": "mc", "pkt": 2,
+     "q": "Im Herbst 2026 wird im Autohaus auch die Jugend- und Auszubildendenvertretung (JAV) gewählt. Wer darf sie wählen?",
+     "opts": ["Nur Auszubildende, die bereits volljährig sind, weil Minderjährige nicht wählen dürfen",
+              "Alle Arbeitnehmer unter 18 Jahren und alle Auszubildenden unter 25 Jahren im Betrieb",
+              "Alle Beschäftigten des Betriebs, weil die JAV ein Ausschuss des Betriebsrats ist",
+              "Nur Mitglieder der Gewerkschaftsjugend, weil die IG Metall die JAV-Mitglieder stellt"],
+     "correct": 1,
+     "explain": "Wahlberechtigt sind alle Arbeitnehmer unter 18 Jahren und alle Auszubildenden unter 25 Jahren (§§ 60, 61 BetrVG). "
+                "Die JAV wird für zwei Jahre gewählt, regelmäßig vom 1. Oktober bis 30. November (2024, 2026). Sie ist kein Teil des "
+                "Betriebsrats, arbeitet aber eng mit ihm zusammen und setzt sich z. B. für die Qualität der Ausbildung ein.",
+     "src": "FW (BetrVG §§ 60–64)"},
+    # 5 Konjunkturphasen im Bild
+    {"cat": "WiSo", "situation": B, "nr": 5, "level": 1, "typ": "zuordnung", "pkt": 4, "bild": KONJ,
+     "q": "Die Geschäftsführung zeigt ein Schaubild zum Konjunkturverlauf. Ordnen Sie den Nummern ① bis ④ die Konjunkturphase zu.",
+     "paare": [["Phase ①", "Aufschwung (Expansion)"],
+               ["Phase ②", "Hochkonjunktur (Boom)"],
+               ["Phase ③", "Abschwung (Rezession)"],
+               ["Phase ④", "Tiefstand (Depression)"]],
+     "ablenker": ["Stagnation am Trend"],
+     "explain": "Nach dem unteren Wendepunkt A steigt die Wirtschaftsleistung wieder (Aufschwung ①). Um den oberen Wendepunkt B liegt "
+                "die Hochkonjunktur ②, danach sinkt die Leistung (Abschwung ③) bis zum Tiefstand ④. Die gestrichelte Linie ist der "
+                "langfristige Wachstumstrend, um den die tatsächliche Entwicklung schwankt.",
+     "src": "Eigenes Diagramm"},
+    # 6 Lage aus Indikatoren bestimmen
+    {"cat": "WiSo", "situation": B, "nr": 6, "level": 3, "typ": "mc", "pkt": 4, "bild": KONJ,
+     "q": "Der Verkaufsleiter berichtet: „Die Auftragseingänge für Neuwagen gehen seit Monaten zurück, die Hersteller produzieren "
+          "aber noch auf hohem Niveau, und Kurzarbeit gibt es bisher nicht.“ Wo im Schaubild befindet sich die Wirtschaft am ehesten?",
+     "opts": ["Kurz nach Punkt A am Beginn von Phase ①: Die Aufträge fallen, weil die Kunden auf noch niedrigere Preise warten",
+              "Mitten in Phase ④: Sinkende Aufträge zeigen, dass der Tiefstand erreicht ist und die Kurzarbeit gerade endet",
+              "Genau bei Punkt A: Sinkende Aufträge bei noch hoher Produktion sind das Kennzeichen des unteren Wendepunkts",
+              "Kurz nach Punkt B am Beginn von Phase ③: Der Frühindikator fällt schon, Präsenz- und Spätindikatoren noch nicht"],
+     "correct": 3,
+     "explain": "Auftragseingänge sind ein Frühindikator, die Produktion ist ein Präsenzindikator, Arbeitsmarkt und Kurzarbeit sind "
+                "Spätindikatoren. Wenn nur der Frühindikator nachgibt, ist der obere Wendepunkt B gerade überschritten – der Abschwung ③ "
+                "beginnt. Am Punkt A wären Produktion und Beschäftigung niedrig, nicht hoch.",
+     "src": "Eigenes Diagramm / FW"},
+    # 7 Werkstatt trotz Flaute ausgelastet
+    {"cat": "WiSo", "situation": B, "nr": 7, "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Obwohl der Neuwagenverkauf schwach ist, ist die Werkstatt gut ausgelastet. Welche Erklärung ist am wahrscheinlichsten?",
+     "opts": ["Kunden verschieben den Neukauf und lassen stattdessen ihr älteres Auto warten und reparieren",
+              "Im Abschwung steigen die Werkstattpreise stark, deshalb erledigen Kunden Reparaturen vor der nächsten Erhöhung",
+              "Weil weniger Neuwagen verkauft werden, schreibt der Staat seit 2026 häufigere Hauptuntersuchungen vor",
+              "Neuwagen haben im Abschwung mehr Mängel, weil die Hersteller sparen, und kommen deshalb öfter in die Werkstatt"],
+     "correct": 0,
+     "explain": "Autos sind langlebige Gebrauchsgüter: Ihren Kauf kann man verschieben, wenn die Zukunft unsicher ist. Die Kunden fahren "
+                "ihr Auto länger, der Fahrzeugbestand wird älter, und Wartung und Verschleißreparaturen nehmen zu. Deshalb ist das "
+                "Werkstattgeschäft weniger konjunkturabhängig als der Verkauf und stabilisiert das Autohaus im Abschwung.",
+     "src": "FW"},
+    # 8 Art der Inflation 2026
+    {"cat": "WiSo", "situation": B, "nr": 8, "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Laut Statistischem Bundesamt lag die Inflationsrate im September 2026 bei 3,3 %, vor allem weil Energie und Kraftstoffe "
+          "deutlich teurer wurden. Um welche Art von Inflation handelt es sich in erster Linie?",
+     "opts": ["Nachfrageinflation: Die Verbraucher kaufen so viel, dass die Betriebe mit der Produktion nicht nachkommen und die Preise erhöhen",
+              "Kosteninflation: Teurere Energie verteuert Produktion und Transport, die Betriebe geben die Kosten über die Preise weiter",
+              "Importierte Deflation: Billige Waren aus dem Ausland drücken das Preisniveau, deshalb steigt die Inflationsrate",
+              "Geldmengeninflation: Der Staat lässt mehr Bargeld drucken, um die gestiegenen Energiepreise selbst zu bezahlen"],
+     "correct": 1,
+     "explain": "Im September 2026 waren Energieprodukte 14,9 % und Kraftstoffe 37,1 % teurer als ein Jahr zuvor, die Kerninflation "
+                "(ohne Energie und Nahrungsmittel) lag nur bei 2,4 %. Das spricht für eine Kosteninflation (Angebotsschock): Höhere "
+                "Kosten werden über die Preise weitergegeben. Bei einer Nachfrageinflation würden die Preise auf breiter Front wegen zu "
+                "hoher Nachfrage steigen. Geld „druckt“ nicht der Staat – über die Geldpolitik entscheidet die EZB.",
+     "src": "Netz: Destatis, Pressemitteilung 364/2026 (13.10.2026)"},
+    # 9 Reallohn
+    {"cat": "WiSo", "situation": B, "nr": 9, "level": 3, "typ": "mc", "pkt": 3,
+     "q": "Ihr Tariflohn liegt seit August 2026 um 3,3 % höher als ein Jahr zuvor. Die Inflationsrate betrug im September 2026 "
+          "ebenfalls 3,3 % (gegenüber dem Vorjahresmonat). Wie hat sich Ihr Reallohn im Vergleich zum Vorjahr ungefähr entwickelt?",
+     "opts": ["Er ist um etwa 6,6 % gestiegen, weil Lohnerhöhung und Inflationsrate zusammengezählt werden",
+              "Er ist etwa gleich geblieben: Die Lohnerhöhung gleicht den Preisanstieg aus, die Kaufkraft steigt nicht",
+              "Er ist um etwa 3,3 % gesunken, weil die Inflation die Lohnerhöhung und zusätzlich einen Teil des Lohns auffrisst",
+              "Er ist um 3,3 % gestiegen, weil der Reallohn nur vom Tarifvertrag abhängt und nicht von den Preisen"],
+     "correct": 1,
+     "explain": "Reallohnveränderung ≈ Nominallohnveränderung − Inflationsrate = 3,3 % − 3,3 % ≈ 0 %. Sie bekommen zwar mehr Euro, "
+                "können sich davon aber nicht mehr kaufen als ein Jahr zuvor. Der Reallohn misst die Kaufkraft des Lohns.",
+     "src": "FW / Netz: Destatis PM 364/2026, IG Metall Kfz-Tarif 2025"},
+    # 10 Leitzinserhöhung
+    {"cat": "WiSo", "situation": B, "nr": 10, "level": 2, "typ": "mc", "pkt": 4,
+     "q": "Wegen der steigenden Inflation wird über die Europäische Zentralbank (EZB) diskutiert. Wie wirkt eine Leitzinserhöhung "
+          "typischerweise auf das Autohaus?",
+     "opts": ["Autokredite werden billiger, weil die Banken mehr Geld von der EZB bekommen; der Neuwagenverkauf zieht deshalb sofort deutlich an",
+              "Die EZB legt mit dem Leitzins direkt die Listenpreise für Neuwagen fest; das Autohaus muss seine Preise deshalb senken",
+              "Autokredite und Leasing werden teurer, weniger Kunden finanzieren einen Kauf; die Nachfrage sinkt, der Preisanstieg wird gebremst",
+              "Die Leitzinserhöhung senkt sofort die Kraftstoffpreise, weil die EZB die Energiepreise für den ganzen Euroraum festlegt"],
+     "correct": 2,
+     "explain": "Steigt der Leitzins, leihen sich die Banken teurer Geld bei der Zentralbank und verlangen höhere Kreditzinsen. Kredit"
+                "finanzierte Käufe und Investitionen gehen zurück, die Nachfrage sinkt, der Preisauftrieb lässt nach. Nachteil "
+                "(Zielkonflikt): Das bremst auch Wachstum und Beschäftigung – der Autohandel spürt das stark. Weltmarktpreise für "
+                "Energie legt die EZB nicht fest; gegen eine Kosteninflation wirkt Zinspolitik deshalb nur langsam.",
+     "src": "FW"},
+    # 11 Kurzarbeit
+    {"cat": "WiSo", "situation": B, "nr": 11, "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Die Geschäftsführung erwägt Kurzarbeit im Verkauf, falls der Absatz weiter einbricht. Welche Aussage zum Kurzarbeitergeld ist richtig?",
+     "opts": ["Die Krankenkasse zahlt den vollen Bruttolohn für die ausgefallenen Stunden, damit kein Beschäftigter Einbußen hat",
+              "Der Arbeitgeber zahlt den ausgefallenen Lohn allein weiter und bekommt ihn später vom Finanzamt als Steuergutschrift vollständig erstattet",
+              "Die Beschäftigten werden vorübergehend entlassen und bekommen Arbeitslosengeld, bis die Aufträge wieder steigen",
+              "Die Agentur für Arbeit ersetzt einen Teil des ausgefallenen Nettolohns (60 %, mit Kind 67 %); die Arbeitsplätze bleiben erhalten"],
+     "correct": 3,
+     "explain": "Kurzarbeitergeld ist eine Leistung der Arbeitslosenversicherung (Bundesagentur für Arbeit) bei vorübergehendem, "
+                "erheblichem Arbeitsausfall: 60 % bzw. mit Kind 67 % der Nettoentgeltdifferenz. Ziel ist, Fachkräfte zu halten "
+                "statt zu entlassen. Der Arbeitgeber zeigt die Kurzarbeit bei der Agentur für Arbeit an; gibt es einen Betriebsrat, "
+                "muss er zustimmen (Mitbestimmung nach § 87 BetrVG).",
+     "src": "FW"},
+    # 12 Kaufprämie
+    {"cat": "WiSo", "situation": B, "nr": 12, "level": 3, "typ": "mc", "pkt": 3,
+     "q": "Ein Kollege fordert, der Staat solle wie 2009 eine Prämie für den Kauf von Neuwagen zahlen. Welche Einordnung ist richtig?",
+     "opts": ["Angebotsorientierte Politik: Die Prämie senkt die Produktionskosten der Hersteller; Nachteil: Die Tariflöhne der Branche sinken",
+              "Nachfrageorientierte, antizyklische Politik: Sie belebt die Nachfrage; Nachteile: Mitnahme- und Vorzieheffekte, Kosten für den Staat",
+              "Geldpolitik der EZB: Die Prämie erhöht die Geldmenge im Euroraum; Nachteil: Sie gilt nur für Fahrzeuge aus dem Euroraum",
+              "Prozyklische Politik: Die Prämie verstärkt den Abschwung bewusst, damit schwache Betriebe schneller und endgültig vom Markt verschwinden"],
+     "correct": 1,
+     "explain": "Die Umweltprämie („Abwrackprämie“) 2009 war ein staatlicher Nachfrageimpuls in der Rezession (Keynes, antizyklisch). "
+                "Mitnahmeeffekt: Kunden, die ohnehin gekauft hätten, kassieren die Prämie. Vorzieheffekt: Käufe werden nur vorgezogen und "
+                "fehlen danach. Bezahlt wird sie aus Steuern oder neuen Schulden.",
+     "src": "FW"},
+    # 13 Landtagswahlrecht Bayern
+    {"cat": "WiSo", "situation": B, "nr": 13, "level": 2, "typ": "mc", "pkt": 4,
+     "q": "In der Pause geht es um die nächste Landtagswahl in Bayern (regulär 2028). Welche Aussage zum bayerischen Landtagswahlrecht ist richtig?",
+     "opts": ["Wie bei der Bundestagswahl entscheidet allein die Zweitstimme über die Sitzverteilung; die Erststimme wählt nur den Abgeordneten im eigenen Stimmkreis",
+              "Erst- und Zweitstimme werden zu Gesamtstimmen addiert, die über die Sitzverteilung entscheiden; mit der Zweitstimme wählt man eine Person der Liste",
+              "Es gibt nur eine Stimme für eine Partei; die Abgeordneten bestimmt danach der Landtagspräsident aus den Parteilisten",
+              "Erst- und Zweitstimme werden zu Gesamtstimmen addiert; eine Sperrklausel gibt es aber wie bei der Kommunalwahl in Bayern nicht, jede Stimme zählt"],
+     "correct": 1,
+     "explain": "Mit der Erststimme wählt man einen Bewerber im Stimmkreis (91 Stimmkreise), mit der Zweitstimme einen Bewerber auf der "
+                "Liste des Wahlkreises (7 Wahlkreise = Regierungsbezirke) – so kann man die Reihenfolge der Liste verändern. Beide Stimmen "
+                "zählen zusammen als Gesamtstimmen für die Sitzverteilung. Es gilt eine 5-%-Hürde auf die Gesamtstimmen. Wahlperiode: 5 Jahre.",
+     "src": "Netz: bpb, Fakten zur Landtagswahl in Bayern 2023"},
+    # 14 203 Abgeordnete
+    {"cat": "WiSo", "situation": B, "nr": 14, "level": 3, "typ": "mc", "pkt": 2,
+     "q": "Laut Bayerischer Verfassung hat der Landtag 180 Abgeordnete. Nach der Wahl 2023 sind es aber 203. Woran liegt das?",
+     "opts": ["Die 23 zusätzlichen Sitze gehen an Vertreter der sieben Bezirkstage, die automatisch auch Mitglied im Landtag sind",
+              "Im bayerischen Landtagswahlrecht gibt es – anders als im Bund – weiterhin Überhang- und Ausgleichsmandate",
+              "Seit der Wahlrechtsreform 2023 hat der Landtag wie der Bundestag eine feste, größere Sitzzahl",
+              "Parteien unter 5 % erhalten in Bayern zusätzliche Sitze, damit auch kleine Parteien vertreten sind"],
+     "correct": 1,
+     "explain": "Gewinnt eine Partei mehr Stimmkreise direkt, als ihr nach Gesamtstimmen Sitze zustehen, behält sie diese Überhangmandate; "
+                "die anderen Parteien erhalten dafür Ausgleichsmandate. 2023 ergab das 203 statt 180 Abgeordnete. Im Bundestag gibt es "
+                "seit der Reform 2023 keine Überhang- und Ausgleichsmandate mehr (fest 630 Sitze).",
+     "src": "Netz: Bayerischer Landtag, Volkshandbuch 19. Wahlperiode"},
+    # 15 Volksgesetzgebung Bayern
+    {"cat": "WiSo", "situation": B, "nr": 15, "level": 2, "typ": "reihenfolge", "pkt": 4,
+     "q": "Kollegen wollen ein Volksbegehren in Bayern unterstützen. Bringen Sie die Stufen der Volksgesetzgebung in die richtige Reihenfolge.",
+     "schritte": ["Antrag auf Zulassung mit mindestens 25.000 Unterschriften von Stimmberechtigten",
+                  "Prüfung und Zulassung durch das Innenministerium (im Streitfall entscheidet der Verfassungsgerichtshof)",
+                  "Volksbegehren: Mindestens 10 % der Stimmberechtigten tragen sich innerhalb von 14 Tagen im Rathaus ein",
+                  "Der Landtag berät den Gesetzentwurf und kann ihn annehmen oder einen eigenen Entwurf dagegenstellen",
+                  "Volksentscheid: Alle Stimmberechtigten stimmen ab, wenn der Landtag den Entwurf nicht unverändert annimmt"],
+     "explain": "Die Bayerische Verfassung (Art. 74) erlaubt Gesetzgebung durch das Volk. Nach dem erfolgreichen Volksbegehren muss sich "
+                "der Landtag mit dem Entwurf befassen. Lehnt er ihn ab, entscheiden die Bürger im Volksentscheid. In der Gemeinde "
+                "heißt das Gegenstück Bürgerbegehren und Bürgerentscheid.",
+     "src": "Netz: Bayerische Verfassung Art. 74 / Landeswahlgesetz"},
+    # 16 Bürgerentscheid
+    {"cat": "WiSo", "situation": B, "nr": 16, "level": 2, "typ": "mc", "pkt": 3,
+     "q": "In Ihrer Stadt soll über eine Umgehungsstraße am Gewerbegebiet entschieden werden. Bürger sammeln Unterschriften für "
+          "einen Bürgerentscheid. Welche Aussage ist richtig?",
+     "opts": ["Das Bürgerbegehren beantragt die Abstimmung; beim Bürgerentscheid stimmen die Bürger ab, das Ergebnis wirkt wie ein Stadtratsbeschluss",
+              "Beim Bürgerentscheid stimmen die Bürger ab; das Ergebnis ist aber nur eine unverbindliche Empfehlung, die der Stadtrat jederzeit übergehen kann",
+              "Das Bürgerbegehren muss zuerst vom Bayerischen Landtag genehmigt werden; danach stimmen alle Bürger Bayerns darüber ab",
+              "Beim Bürgerentscheid stimmt nur der Stadtrat ab; die Bürger dürfen vorher in einer Bürgerversammlung ihre Meinung sagen"],
+     "correct": 0,
+     "explain": "Bayerische Gemeindeordnung (Art. 18a): Mit dem Bürgerbegehren (Unterschriften) beantragen Bürger einen Bürgerentscheid. "
+                "Beim Bürgerentscheid entscheidet die Mehrheit, wenn sie einen Mindestanteil der Stimmberechtigten erreicht (abhängig "
+                "von der Gemeindegröße). Das Ergebnis hat die Wirkung eines Gemeinderatsbeschlusses und kann ein Jahr lang nur durch "
+                "einen neuen Bürgerentscheid geändert werden.",
+     "src": "FW (Gemeindeordnung Bayern Art. 18a)"},
+    # 17 Wahlen vergleichen
+    {"cat": "WiSo", "situation": B, "nr": 17, "level": 2, "typ": "zuordnung", "pkt": 5,
+     "q": "Ordnen Sie die Merkmale der passenden Wahl zu (Stand 2026).",
+     "paare": [["Man darf einem Bewerber bis zu 3 Stimmen geben", "Kommunalwahl in Bayern"],
+               ["Erst- und Zweitstimme zählen zusammen für die Sitzverteilung", "Landtagswahl in Bayern"],
+               ["Fest 630 Sitze, keine Überhang- und Ausgleichsmandate", "Bundestagswahl"],
+               ["Amtszeit 6 Jahre, keine Sperrklausel", "Kommunalwahl in Bayern"],
+               ["Wahlperiode 5 Jahre, 5-%-Hürde auf die Gesamtstimmen", "Landtagswahl in Bayern"]],
+     "ablenker": ["Europawahl"],
+     "explain": "Kommunalwahl Bayern: Kumulieren (bis 3 Stimmen) und Panaschieren, 6 Jahre, keine Sperrklausel, auch EU-Bürger wählen mit. "
+                "Landtagswahl Bayern: Gesamtstimmen aus Erst- und Zweitstimme, 5-%-Hürde, 5 Jahre. Bundestagswahl: nur die Zweitstimme "
+                "verteilt die Sitze, fest 630 Sitze seit der Reform 2023, Wahlperiode 4 Jahre.",
+     "src": "FW / Netz: bpb, Bundestag"},
+    # 18 Gewerbesteuer
+    {"cat": "WiSo", "situation": B, "nr": 18, "level": 3, "typ": "mc", "pkt": 4,
+     "q": "Im Abschwung klagen viele Gemeinden über Löcher im Haushalt. Welche Steuer ist für Gemeinden die wichtigste eigene "
+          "Einnahme und schwankt stark mit der Konjunktur?",
+     "opts": ["Die Grundsteuer, weil sie bei jedem Abschwung neu auf die Hausbesitzer umgelegt wird",
+              "Die Kfz-Steuer, weil sie an die Zahl der in der Stadt verkauften Neuwagen gekoppelt ist",
+              "Die Gewerbesteuer, weil sie vom Ertrag der Betriebe in der Gemeinde abhängt",
+              "Die Umsatzsteuer, weil die Gemeinde ihren Satz selbst festlegt und sie vollständig behält"],
+     "correct": 2,
+     "explain": "Die Gewerbesteuer hängt vom Gewerbeertrag der Betriebe ab; den Hebesatz legt die Gemeinde selbst fest. Im Abschwung "
+                "sinken die Gewinne und damit die Einnahmen stark. Die Grundsteuer ist dagegen stabil, die Kfz-Steuer steht dem Bund zu, "
+                "von der Umsatzsteuer bekommen die Gemeinden nur einen kleinen Anteil zu einem bundesweit festen Satz. Folge: Gemeinden "
+                "sparen im Abschwung oft bei freiwilligen Aufgaben – das wirkt prozyklisch.",
+     "src": "FW"},
+
+    # ------------------------------------------------------------------
+    # Weitere Einzelfragen – Tarifvertrag (Ausbau 10/2026)
+    # ------------------------------------------------------------------
+    {"cat": "WiSo", "level": 1, "typ": "zuordnung", "pkt": 4,
+     "q": "Ordnen Sie den Funktionen des Tarifvertrags die passende Beschreibung zu.",
+     "paare": [["Schutzfunktion", "Der einzelne Arbeitnehmer wird vor einseitig diktierten, schlechten Arbeitsbedingungen geschützt"],
+               ["Ordnungsfunktion", "Einheitliche Regeln für viele Betriebe erleichtern Kalkulation und Verwaltung"],
+               ["Friedensfunktion", "Während der Laufzeit sind Streiks und Aussperrungen über geregelte Inhalte ausgeschlossen"],
+               ["Verteilungsfunktion", "Die Beschäftigten werden am wirtschaftlichen Erfolg und am Produktivitätsfortschritt beteiligt"]],
+     "ablenker": ["Der Staat legt über den Tarifvertrag die Steuersätze fest"],
+     "explain": "Allein wäre der einzelne Arbeitnehmer dem Arbeitgeber meist unterlegen – der Tarifvertrag schützt ihn. Für die Betriebe "
+                "schafft er gleiche Wettbewerbsbedingungen und Planungssicherheit, für beide Seiten Ruhe während der Laufzeit. "
+                "Über Lohnerhöhungen werden die Beschäftigten am Erfolg beteiligt.",
+     "src": "FW"},
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 2,
+     "q": "Ein Manteltarifvertrag ist abgelaufen, ein neuer ist noch nicht abgeschlossen. Was gilt bis dahin für die bestehenden Arbeitsverhältnisse?",
+     "opts": ["Es gilt nur noch das Gesetz, also z. B. 24 Werktage Urlaub, bis ein neuer Tarifvertrag in Kraft tritt",
+              "Die bisherigen Regelungen gelten weiter (Nachwirkung), bis sie durch eine neue Abmachung ersetzt werden",
+              "Der Arbeitgeber darf die Arbeitsbedingungen bis zum neuen Abschluss einseitig per Aushang festlegen",
+              "Alle Arbeitsverhältnisse ruhen ohne Lohn, bis sich die Tarifpartner auf einen neuen Vertrag geeinigt haben"],
+     "correct": 1,
+     "explain": "Nach § 4 Abs. 5 Tarifvertragsgesetz wirken die Regelungen eines abgelaufenen Tarifvertrags nach, bis sie durch eine andere "
+                "Abmachung (neuer Tarifvertrag, Betriebsvereinbarung oder Arbeitsvertrag) ersetzt werden. Es entsteht also keine Lücke. "
+                "Die Friedenspflicht endet aber mit dem Ablauf.",
+     "src": "FW (TVG § 4 Abs. 5)"},
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
+     "q": "Der Entgelttarifvertrag im bayerischen Kfz-Handwerk läuft laut Abschluss 2025 bis Ende Mai 2027. Was ändert sich danach?",
+     "opts": ["Die Löhne fallen automatisch auf den gesetzlichen Mindestlohn zurück, bis ein neuer Vertrag gilt",
+              "Der Vertrag verlängert sich automatisch um zwei Jahre, neue Verhandlungen sind erst 2029 möglich",
+              "Die Handwerkskammer legt die Löhne fest, bis sich die Tarifpartner wieder geeinigt haben",
+              "Die Friedenspflicht für die Entgelte endet; die IG Metall darf dann zu Warnstreiks aufrufen, um Druck zu machen"],
+     "correct": 3,
+     "explain": "Mit dem Ende der Laufzeit endet die Friedenspflicht – Warnstreiks während der neuen Verhandlungen sind dann zulässig. "
+                "Die bisherigen Entgelte gelten weiter (Nachwirkung), sie fallen nicht auf den Mindestlohn zurück. Die Handwerkskammer "
+                "verhandelt keine Löhne.",
+     "src": "Netz: IG Metall / DGB-Tarifmeldung Kfz-Handwerk 2025"},
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 3,
+     "q": "Eine Auszubildende im bayerischen Kfz-Handwerk bekam vor Juli 2025 eine Ausbildungsvergütung von 1.000 € (Beispielwert). "
+          "Laut Tarifabschluss 2025 stieg sie ab Juli 2025 um 80 € und ab August 2026 um weitere 3,3 %. Wie hoch ist sie ab August 2026?",
+     "opts": ["1.113,00 €", "1.115,64 €", "1.033,00 €", "1.080,00 €"],
+     "correct": 1,
+     "explain": "Stufe 1: 1.000 € + 80 € = 1.080 €. Stufe 2: 1.080 € × 1,033 = 1.115,64 €. Wer zuerst 3,3 % auf 1.000 € rechnet und dann "
+                "80 € addiert, kommt auf 1.113 € – die Prozentstufe gilt aber für den bereits erhöhten Betrag.",
+     "src": "Netz: IG Metall / DGB-Tarifmeldung Kfz-Handwerk 2025"},
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
+     "q": "Der gesetzliche Mindestlohn beträgt 2026 13,90 € pro Stunde und steigt zum 01.01.2027 auf 14,60 €. Wie kommt seine Höhe zustande?",
+     "opts": ["Die Mindestlohnkommission (Arbeitgeber- und Gewerkschaftsseite) schlägt sie vor, die Bundesregierung setzt sie per Verordnung fest",
+              "Die IG Metall legt sie in ihrem Tarifvertrag fest, danach gilt sie automatisch für alle Branchen in Deutschland",
+              "Der Bundestag beschließt jedes Jahr ein neues Mindestlohngesetz mit dem Betrag, den die Bundesagentur für Arbeit vorschlägt",
+              "Jedes Bundesland legt einen eigenen Mindestlohn fest; Bayern orientiert sich dabei am Tariflohn im Handwerk"],
+     "correct": 0,
+     "explain": "Nach dem Mindestlohngesetz beschließt die Mindestlohnkommission (stimmberechtigt: Vertreter der Arbeitgeber und der "
+                "Gewerkschaften, dazu beratende Wissenschaftler) die Anpassung, die Bundesregierung macht sie per Rechtsverordnung "
+                "verbindlich. Der Mindestlohn ist eine Untergrenze; Tariflöhne liegen meist darüber. Mit ihm steigt auch die Minijob-Grenze.",
+     "src": "Netz: Mindestlohnkommission, Beschluss 06/2025"},
+    {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 2,
+     "q": "Ein Arbeitgeber sagt im Vorstellungsgespräch, er stelle nur Bewerber ein, die nicht in einer Gewerkschaft sind. Wie ist das zu beurteilen?",
+     "opts": ["Zulässig: In Handwerksbetrieben mit weniger als 100 Beschäftigten gilt die Koalitionsfreiheit nicht",
+              "Zulässig: Der Arbeitgeber darf sich seine Mitarbeiter frei aussuchen, auch nach der Gewerkschaftszugehörigkeit",
+              "Unzulässig: Art. 9 Abs. 3 GG schützt das Recht, einer Gewerkschaft beizutreten; Abreden dagegen sind nichtig",
+              "Unzulässig nur dann, wenn der Betrieb Mitglied im Arbeitgeberverband ist; sonst ist es ausdrücklich erlaubt"],
+     "correct": 2,
+     "explain": "Art. 9 Abs. 3 Grundgesetz: Abreden, die die Koalitionsfreiheit einschränken oder behindern, sind nichtig, darauf "
+                "gerichtete Maßnahmen rechtswidrig – das gilt ausdrücklich auch zwischen Arbeitgeber und Arbeitnehmer. Umgekehrt darf "
+                "auch niemand zum Beitritt gezwungen werden (negative Koalitionsfreiheit).",
+     "src": "FW (GG Art. 9 Abs. 3)"},
+    {"cat": "WiSo", "level": 2, "typ": "reihenfolge", "pkt": 4,
+     "q": "Bringen Sie die Rechtsgrundlagen eines Arbeitsverhältnisses in die richtige Rangfolge – von der höchsten zur niedrigsten.",
+     "schritte": ["Grundgesetz (z. B. Koalitionsfreiheit)",
+                  "Gesetze (z. B. Bundesurlaubsgesetz, Arbeitszeitgesetz)",
+                  "Tarifvertrag",
+                  "Betriebsvereinbarung",
+                  "Arbeitsvertrag"],
+     "explain": "Eine niedrigere Stufe darf die höhere nicht zum Nachteil des Arbeitnehmers unterschreiten. Abweichungen zugunsten des "
+                "Arbeitnehmers sind erlaubt (Günstigkeitsprinzip). Die Betriebsvereinbarung steht unter dem Tarifvertrag (Tarifvorbehalt).",
+     "src": "FW"},
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 2,
+     "q": "Ein Tarifvertrag enthält eine Öffnungsklausel. Was bedeutet das?",
+     "opts": ["Der Tarifvertrag kann jederzeit von jeder Seite ohne Frist gekündigt werden, wenn sich die Wirtschaftslage ändert",
+              "Der Tarifvertrag gilt auch für Betriebe anderer Branchen, die ihm freiwillig beitreten möchten",
+              "Gewerkschaftsmitglieder dürfen auch während der Laufzeit streiken, wenn ihr Betrieb besonders hohe Gewinne macht",
+              "Betriebe dürfen in den genannten Fällen per Betriebsvereinbarung vom Tarif abweichen, z. B. um Arbeitsplätze zu sichern"],
+     "correct": 3,
+     "explain": "§ 4 Abs. 3 TVG erlaubt Abweichungen vom Tarif nur, wenn der Tarifvertrag sie gestattet (Öffnungsklausel) oder wenn sie "
+                "für den Arbeitnehmer günstiger sind. Öffnungsklauseln erlauben z. B. in einer Krise, eine Tariferhöhung zu verschieben "
+                "oder die Arbeitszeit befristet zu senken. Die Friedenspflicht bleibt davon unberührt.",
+     "src": "FW (TVG § 4 Abs. 3)"},
+
+    # ------------------------------------------------------------------
+    # Weitere Einzelfragen – Sozialversicherung und Rente (Ausbau 10/2026)
+    # ------------------------------------------------------------------
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 3, "bild": LOHN,
+     "q": "Die Abbildung zeigt eine vereinfachte Entgeltabrechnung für Oktober 2026. Wie hoch ist der Auszahlungsbetrag in Zeile H?",
+     "opts": ["2.504,00 €", "2.832,80 €", "2.136,80 €", "2.156,00 €"],
+     "correct": 2,
+     "explain": "Steuern: B + C = 340,00 € + 27,20 € = 367,20 €. Sozialversicherung (Arbeitnehmeranteil): D + E + F + G = 297,60 € + 280,00 € "
+                "+ 76,80 € + 41,60 € = 696,00 € (21,75 % von 3.200 €). Abzüge gesamt 1.063,20 € → Netto 3.200 € − 1.063,20 € = 2.136,80 €. "
+                "2.504 € bzw. 2.832,80 € entstehen, wenn man die Steuern bzw. die Sozialversicherung vergisst.",
+     "src": "Eigenes Diagramm (Beitragssätze 2026)"},
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 3, "bild": LOHN,
+     "q": "Wie viel zahlt der Arbeitgeber zur Abrechnung in der Abbildung zusätzlich zum Bruttoentgelt als Arbeitgeberanteil für die "
+          "Zweige in den Zeilen D bis G?",
+     "opts": ["696,00 €", "1.372,80 €", "1.063,20 €", "676,80 €"],
+     "correct": 3,
+     "explain": "Renten-, Kranken- (einschließlich Zusatzbeitrag), Pflege- und Arbeitslosenversicherung werden je zur Hälfte getragen – "
+                "aber den Kinderlosenzuschlag von 0,6 % (19,20 €) zahlt der Arbeitnehmer allein. Arbeitgeberanteil: 297,60 € + 280,00 € "
+                "+ 57,60 € + 41,60 € = 676,80 €. Steuern zahlt der Arbeitgeber nicht, er führt sie nur ab. Dazu kommen für ihn noch "
+                "die Unfallversicherung (Berufsgenossenschaft) und Umlagen.",
+     "src": "Eigenes Diagramm (Beitragssätze 2026)"},
+    {"cat": "WiSo", "level": 2, "typ": "zuordnung", "pkt": 4, "bild": LOHN,
+     "q": "Ordnen Sie den Zeilen der Entgeltabrechnung in der Abbildung zu, wem das Geld letztlich zusteht.",
+     "paare": [["Zeile B (Lohnsteuer)", "Bund, Ländern und Gemeinden – eingezogen über das Finanzamt"],
+               ["Zeile C (Kirchensteuer)", "Der Religionsgemeinschaft – eingezogen über das Finanzamt"],
+               ["Zeile D (Rentenversicherung)", "Deutsche Rentenversicherung"],
+               ["Zeile G (Arbeitslosenversicherung)", "Bundesagentur für Arbeit"]],
+     "ablenker": ["Berufsgenossenschaft", "Handwerkskammer"],
+     "explain": "Lohn- und Kirchensteuer führt der Arbeitgeber an das Finanzamt ab. Die Sozialversicherungsbeiträge D bis G zahlt er als "
+                "Gesamtsozialversicherungsbeitrag an die Krankenkasse des Arbeitnehmers (Einzugsstelle), die sie an Rentenversicherung, "
+                "Bundesagentur und Pflegekasse weiterleitet. Die Berufsgenossenschaft bekommt nur den Unfallversicherungsbeitrag, den "
+                "der Arbeitgeber allein zahlt – er taucht in der Abrechnung des Arbeitnehmers nicht auf.",
+     "src": "Eigenes Diagramm / FW"},
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2, "bild": LOHN,
+     "q": "Der Arbeitnehmer aus der Abbildung bekommt ein Kind. Welcher Sozialversicherungsbeitrag ändert sich dadurch, und wie?",
+     "opts": ["Zeile F sinkt auf 67,20 €, weil nur der Arbeitgeberanteil am Zuschlag wegfällt",
+              "Zeile F sinkt auf 57,60 €, weil der Kinderlosenzuschlag von 0,6 % wegfällt",
+              "Zeile E sinkt auf 233,60 €, weil Eltern keinen Zusatzbeitrag zur Krankenkasse zahlen",
+              "Zeile D sinkt auf 281,60 €, weil Eltern einen geringeren Rentenbeitrag zahlen"],
+     "correct": 1,
+     "explain": "Der Zuschlag von 0,6 % in der Pflegeversicherung gilt nur für Kinderlose ab 23 Jahren und wird vom Arbeitnehmer allein "
+                "getragen. Mit Kind zahlt er nur noch 1,8 %: 3.200 € × 1,8 % = 57,60 €. Ab dem zweiten Kind unter 25 sinkt der Beitrag "
+                "weiter. Renten- und Krankenversicherungsbeiträge hängen nicht von Kindern ab.",
+     "src": "Eigenes Diagramm (Beitragssätze 2026)"},
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 3,
+     "q": "Sie sind wegen eines Bandscheibenvorfalls (kein Arbeitsunfall, keine Berufskrankheit) zehn Wochen arbeitsunfähig. Wer zahlt was?",
+     "opts": ["Der Arbeitgeber zahlt 6 Wochen den vollen Lohn, danach zahlt die Krankenkasse Krankengeld (70 % vom Brutto, höchstens 90 % vom Netto)",
+              "Die Krankenkasse zahlt vom ersten Tag an Krankengeld in Höhe von 70 % des Bruttolohns, der Arbeitgeber zahlt gar nichts",
+              "Der Arbeitgeber zahlt 6 Wochen den vollen Lohn, danach zahlt die Berufsgenossenschaft Verletztengeld bis zur Genesung",
+              "Der Arbeitgeber zahlt alle 10 Wochen den vollen Lohn weiter, weil die Erkrankung durch die Arbeit in der Werkstatt entstanden sein könnte"],
+     "correct": 0,
+     "explain": "Entgeltfortzahlungsgesetz: Der Arbeitgeber zahlt bei Krankheit bis zu 6 Wochen den vollen Lohn. Danach zahlt die "
+                "Krankenkasse Krankengeld: 70 % des Bruttoentgelts, höchstens 90 % des Nettoentgelts, für dieselbe Krankheit bis zu "
+                "78 Wochen innerhalb von 3 Jahren. Verletztengeld der Berufsgenossenschaft gibt es nur nach Arbeitsunfall oder Berufskrankheit.",
+     "src": "FW (EFZG § 3, SGB V §§ 47, 48)"},
+    {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 2,
+     "q": "Zum 01.07.2026 stiegen die gesetzlichen Renten um 4,24 %. Ihr Großvater bekam vorher 1.250 € Rente (brutto). Wie hoch ist sie danach?",
+     "opts": ["1.255,30 €", "1.292,40 €", "1.303,00 €", "1.197,00 €"],
+     "correct": 2,
+     "explain": "1.250 € × 4,24 % = 53 € → 1.250 € + 53 € = 1.303 €. Die Rentenanpassung folgt der Lohnentwicklung; die Haltelinie "
+                "sorgt dafür, dass das Rentenniveau bis 2031 nicht unter 48 % sinkt. Der aktuelle Rentenwert stieg "
+                "dabei von 40,79 € auf 42,52 € je Entgeltpunkt.",
+     "src": "Netz: Deutsche Rentenversicherung, Rentenanpassung 2026"},
+    {"cat": "WiSo", "level": 2, "typ": "zuordnung", "pkt": 4,
+     "q": "Neben der Sozialversicherung gibt es private Versicherungen (Individualversicherungen). Ordnen Sie dem Schaden die "
+          "Versicherung zu, die ihn übernimmt.",
+     "paare": [["Sie beschädigen mit Ihrem Auto beim Ausparken ein fremdes Fahrzeug", "Kfz-Haftpflichtversicherung (Pflichtversicherung)"],
+               ["Sie stoßen in der Wohnung eines Freundes versehentlich dessen Fernseher um", "Private Haftpflichtversicherung"],
+               ["Sie können wegen eines Rückenleidens dauerhaft nicht mehr als Mechatroniker arbeiten", "Berufsunfähigkeitsversicherung"],
+               ["In Ihre Wohnung wird eingebrochen und Ihr Laptop gestohlen", "Hausratversicherung"]],
+     "ablenker": ["Gesetzliche Unfallversicherung", "Teilkaskoversicherung"],
+     "explain": "Individualversicherungen sind freiwillig – außer der Kfz-Haftpflicht, die für jedes zugelassene Fahrzeug Pflicht ist. "
+                "Der Beitrag richtet sich nach dem Risiko, nicht nach dem Einkommen. Die gesetzliche Unfallversicherung zahlt nur bei "
+                "Arbeits- und Wegeunfällen; die Teilkasko ersetzt Schäden am eigenen Auto (z. B. Diebstahl des Fahrzeugs).",
+     "src": "FW (Lehrplan Politik und Gesellschaft 10.3.2)"},
+
+    # ------------------------------------------------------------------
+    # Weitere Einzelfragen – Wahlen und Staat (Ausbau 10/2026)
+    # ------------------------------------------------------------------
+    {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 2,
+     "q": "Wie kommt die Bundeskanzlerin bzw. der Bundeskanzler ins Amt?",
+     "opts": ["Das Volk wählt sie bzw. ihn bei der Bundestagswahl direkt mit einer eigenen dritten Stimme",
+              "Der Bundespräsident ernennt die Vorsitzende bzw. den Vorsitzenden der stärksten Partei ohne Wahl",
+              "Der Bundestag wählt sie bzw. ihn auf Vorschlag des Bundespräsidenten mit der Mehrheit seiner Mitglieder",
+              "Die Bundesversammlung wählt sie bzw. ihn gemeinsam mit dem Bundespräsidenten für 5 Jahre"],
+     "correct": 2,
+     "explain": "Art. 63 GG: Der Bundestag wählt den Kanzler ohne Aussprache auf Vorschlag des Bundespräsidenten; nötig ist die "
+                "Mehrheit der Mitglieder (Kanzlermehrheit). Die Bürger bestimmen den Kanzler also nur indirekt über die Bundestagswahl. "
+                "Die Bundesversammlung wählt nur den Bundespräsidenten.",
+     "src": "FW (GG Art. 63)"},
+    {"cat": "WiSo", "level": 2, "typ": "zuordnung", "pkt": 5,
+     "q": "Ordnen Sie zu, wer das jeweilige Amt wählt.",
+     "paare": [["Bundespräsident", "Bundesversammlung"],
+               ["Bundeskanzler", "Bundestag"],
+               ["Bayerischer Ministerpräsident", "Bayerischer Landtag"],
+               ["Erster Bürgermeister einer Gemeinde", "Die wahlberechtigten Bürger der Gemeinde direkt"],
+               ["Landrat", "Die wahlberechtigten Bürger des Landkreises direkt"]],
+     "ablenker": ["Bundesrat"],
+     "explain": "Auf Bundes- und Landesebene werden Regierungschefs vom Parlament gewählt (parlamentarisches Regierungssystem). In Bayern "
+                "werden Bürgermeister und Landräte dagegen direkt von den Bürgern gewählt, für 6 Jahre. Die Bundesversammlung besteht aus "
+                "den Bundestagsabgeordneten und ebenso vielen Vertretern der Länder.",
+     "src": "FW"},
+    {"cat": "WiSo", "level": 1, "typ": "reihenfolge", "pkt": 4,
+     "q": "Sie sind am Wahltag auf Montage und wählen per Brief. Bringen Sie die Schritte der Briefwahl in die richtige Reihenfolge.",
+     "schritte": ["Wahlbenachrichtigung erhalten: Sie stehen im Wählerverzeichnis",
+                  "Wahlschein mit Briefwahlunterlagen bei der Gemeinde beantragen",
+                  "Unterlagen (Wahlschein, Stimmzettel, Umschläge) per Post oder im Rathaus erhalten",
+                  "Stimmzettel allein ausfüllen, in den Stimmzettelumschlag stecken und die Versicherung an Eides statt unterschreiben",
+                  "Wahlbrief so rechtzeitig abschicken, dass er spätestens am Wahltag um 18 Uhr bei der angegebenen Stelle ist",
+                  "Am Wahltag prüft der Briefwahlvorstand die Wahlbriefe und zählt die Stimmen aus"],
+     "explain": "Die Briefwahl muss beantragt werden, ein Grund ist nicht nötig. Mit der Versicherung an Eides statt auf dem Wahlschein "
+                "bestätigen Sie, dass Sie den Stimmzettel persönlich (geheim) ausgefüllt haben. Kommt der Wahlbrief nach 18 Uhr an, "
+                "zählt die Stimme nicht.",
+     "src": "FW"},
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 3,
+     "q": "Bei der Gemeinderatswahl in Bayern sind 20 Sitze zu vergeben, jede Liste hat 20 Bewerber. Sie kreuzen Liste A an und geben "
+          "zusätzlich zwei Bewerbern der Liste B je 3 Stimmen. Was geschieht mit Ihren übrigen Stimmen?",
+     "opts": ["Der Stimmzettel ist ungültig, weil man ein Listenkreuz nicht mit Einzelstimmen kombinieren darf",
+              "Die übrigen 14 Stimmen verfallen, weil das Listenkreuz neben Einzelstimmen nicht mehr zählt",
+              "Die übrigen 14 Stimmen erhalten die Bewerber der Liste A der Reihe nach von oben, je eine Stimme",
+              "Alle 20 Stimmen gehen an Liste A, die Einzelstimmen für Liste B werden nicht gewertet"],
+     "correct": 2,
+     "explain": "Listenkreuz und Einzelstimmen dürfen kombiniert werden. Die Einzelstimmen (2 × 3 = 6) zählen zuerst; die restlichen "
+                "20 − 6 = 14 Stimmen gehen an die Bewerber der angekreuzten Liste A in der Reihenfolge des Stimmzettels, je eine Stimme. "
+                "Ungültig wird der Stimmzettel z. B., wenn man mehr Stimmen vergibt, als Sitze zu vergeben sind.",
+     "src": "Netz: Gemeinde-Infoblätter Kommunalwahl Bayern 2026"},
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
+     "q": "Welche Aufgaben hat der Erste Bürgermeister in einer bayerischen Gemeinde?",
+     "opts": ["Er beschließt allein den Haushalt und die Bebauungspläne der Gemeinde, der Gemeinderat darf dazu nur beraten",
+              "Er leitet die Sitzungen des Gemeinderats, vollzieht dessen Beschlüsse und vertritt die Gemeinde nach außen",
+              "Er wird vom Landrat ernannt und überwacht als Beamter des Freistaats die Arbeit des Gemeinderats",
+              "Er ist nur Ehrenvorsitzender ohne Stimmrecht und darf an den Sitzungen des Gemeinderats nur zuhören"],
+     "correct": 1,
+     "explain": "Nach der Bayerischen Gemeindeordnung sind Gemeinderat und Erster Bürgermeister die Hauptorgane. Der Gemeinderat beschließt "
+                "(z. B. Haushalt, Bebauungspläne). Der direkt gewählte Bürgermeister leitet die Sitzungen mit eigenem Stimmrecht, führt "
+                "die Beschlüsse aus, erledigt die laufenden Geschäfte, leitet die Verwaltung und vertritt die Gemeinde nach außen.",
+     "src": "FW (Gemeindeordnung Bayern)"},
+    {"cat": "WiSo", "level": 3, "typ": "mc", "pkt": 2,
+     "q": "Welche Aussage beschreibt das Subsidiaritätsprinzip im Staatsaufbau (Gemeinde – Land – Bund – EU) richtig?",
+     "opts": ["Aufgaben soll möglichst der Bund erledigen, weil einheitliche Regeln für alle Bürger gerechter sind als örtliche Lösungen",
+              "Wer einer Gemeinde eine Aufgabe überträgt, muss ihr auch das nötige Geld dafür zur Verfügung stellen",
+              "Gemeinden dürfen nur Aufgaben übernehmen, die ihnen der Freistaat vorher ausdrücklich per Gesetz zugewiesen hat",
+              "Aufgaben soll möglichst die kleinste, bürgernahe Ebene erledigen; die höhere Ebene hilft erst, wenn die untere überfordert ist"],
+     "correct": 3,
+     "explain": "Subsidiarität heißt: Was die kleinere Einheit (Familie, Gemeinde, Land) selbst leisten kann, soll sie selbst regeln; "
+                "die größere Einheit greift nur unterstützend ein. Das stärkt die kommunale Selbstverwaltung. „Wer bestellt, bezahlt“ "
+                "ist dagegen das Konnexitätsprinzip.",
+     "src": "FW (Lehrplan Politik und Gesellschaft 11.2.1)"},
+
+    # ------------------------------------------------------------------
+    # Weitere Einzelfragen – Konjunktur (Ausbau 10/2026)
+    # ------------------------------------------------------------------
+    {"cat": "WiSo", "level": 1, "typ": "mc", "pkt": 2, "bild": KONJ,
+     "q": "Was zeigen in der Abbildung die gestrichelte Linie und die Punkte A und B?",
+     "opts": ["Gestrichelt: Inflationsrate; A: Beginn der Hochkonjunktur; B: Beginn des Aufschwungs",
+              "Gestrichelt: Arbeitslosenquote; A: oberer Wendepunkt; B: unterer Wendepunkt",
+              "Gestrichelt: langfristiger Wachstumstrend; A: oberer Wendepunkt; B: unterer Wendepunkt",
+              "Gestrichelt: langfristiger Wachstumstrend; A: unterer Wendepunkt; B: oberer Wendepunkt"],
+     "correct": 3,
+     "explain": "Die Trendlinie zeigt das durchschnittliche, langfristige Wachstum. Die tatsächliche Entwicklung schwankt darum. "
+                "A ist der Tiefpunkt (unterer Wendepunkt), ab dem es wieder aufwärts geht; B ist der Höhepunkt (oberer Wendepunkt), "
+                "ab dem der Abschwung beginnt.",
+     "src": "Eigenes Diagramm"},
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
+     "q": "Wie ermittelt das Statistische Bundesamt die Inflationsrate?",
+     "opts": ["Es vergleicht die Preise eines festen Warenkorbs typischer Waren und Dienstleistungen mit dem Vorjahreszeitraum",
+              "Es teilt die umlaufende Bargeldmenge durch die Zahl der Einwohner und vergleicht das Ergebnis mit dem Vorjahr",
+              "Es erfasst nur die Preise für Kraftstoff, Strom und Heizöl, weil diese für alle Haushalte am wichtigsten sind",
+              "Es übernimmt den Leitzins der EZB, weil die Inflationsrate per Definition immer genau dem Leitzins entspricht"],
+     "correct": 0,
+     "explain": "Grundlage ist der Verbraucherpreisindex (VPI): Mehrere hundert Waren und Dienstleistungen werden nach ihrem Anteil an den "
+                "Ausgaben der Haushalte gewichtet (Wägungsschema). Die Inflationsrate ist die Veränderung des VPI gegenüber dem "
+                "Vorjahresmonat bzw. Vorjahr. Die „gefühlte“ Inflation kann abweichen – Pendler spüren z. B. Kraftstoffpreise stärker.",
+     "src": "FW / Netz: Destatis"},
+    {"cat": "WiSo", "level": 2, "typ": "mc", "pkt": 2,
+     "q": "Die Bundesregierung hat im Oktober 2026 ihre Herbstprojektion vorgelegt. Welche Erwartung für das reale BIP 2026 nennt sie?",
+     "opts": ["Einen Rückgang um etwa 1,3 %, das dritte Minusjahr in Folge",
+              "Ein Wachstum von etwa 1,3 %, nach nur 0,2 % im Jahr 2025",
+              "Ein Wachstum von etwa 4 %, so stark wie seit 1990 nicht mehr",
+              "Eine Stagnation bei 0,0 %, weil die Inflation alles aufzehrt"],
+     "correct": 1,
+     "explain": "Laut Herbstprojektion vom 08.10.2026 soll das reale BIP 2026 um etwa 1,3 % wachsen – deutlich mehr als im Frühjahr "
+                "erwartet und nach +0,2 % im Jahr 2025. Eine Projektion ist eine Prognose, kein endgültiges Ergebnis; die Ist-Zahl für "
+                "2026 veröffentlicht das Statistische Bundesamt im Januar 2027.",
+     "src": "Netz: Bundesregierung, Herbstprojektion 2026 (08.10.2026)"},
 ]

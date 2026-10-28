@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" font-family="Arial, sans-serif" font-size="15">
+  <title>Schaltplan-Auszug Klimaanlage: Steuergerät A1 mit Pins, Sensoren B1 und B2, Regelventil Y1, Lüftersteuergerät A2 mit Lüfter M1, Sicherungen F1 bis F3, Klemmen 30, 15, 31 (Beispiel)</title>
+  <rect x="0" y="0" width="640" height="480" fill="#ffffff"/>
+
+  <!-- Klemmen-Schienen -->
+  <g fill="none" stroke="#1a1a1a" stroke-width="2">
+    <path d="M230 30 H600"/>
+    <path d="M230 62 H490"/>
+    <path d="M215 440 H620"/>
+    <!-- Masse-Symbol -->
+    <path d="M620 440 V452 M606 452 H634 M611 458 H629 M616 464 H624"/>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="222" y="35" text-anchor="end">30</text>
+    <text x="222" y="67" text-anchor="end">15</text>
+    <text x="207" y="445" text-anchor="end">31</text>
+  </g>
+
+  <!-- A1 Steuergerät -->
+  <rect x="20" y="80" width="170" height="340" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#1a1a1a">
+    <text x="30" y="104" font-weight="bold">A1</text>
+    <text x="30" y="130">Kl. 15</text>
+    <text x="30" y="155">5 V</text>
+    <text x="30" y="185">Signal p</text>
+    <text x="30" y="215">Masse</text>
+    <text x="30" y="265">Signal T</text>
+    <text x="30" y="295">Masse</text>
+    <text x="30" y="325">Ventil</text>
+    <text x="30" y="365">Lüfter PWM</text>
+    <text x="30" y="405">Masse</text>
+  </g>
+  <!-- Pinnummern -->
+  <g fill="#1a1a1a" font-weight="bold">
+    <text x="196" y="120">1</text>
+    <text x="196" y="145">3</text>
+    <text x="196" y="175">4</text>
+    <text x="196" y="205">5</text>
+    <text x="196" y="255">7</text>
+    <text x="196" y="285">8</text>
+    <text x="196" y="315">11</text>
+    <text x="196" y="355">13</text>
+    <text x="196" y="395">2</text>
+  </g>
+
+  <g fill="none" stroke="#1a1a1a" stroke-width="2">
+    <!-- Pin 1 über F3 an Klemme 15 -->
+    <path d="M240 62 V72 M240 106 V125 H190"/>
+    <!-- B1 Hochdrucksensor -->
+    <path d="M190 150 H330 M190 180 H330 M190 210 H330"/>
+    <!-- B2 Verdampfertemperatursensor -->
+    <path d="M190 260 H330 M190 290 H330"/>
+    <!-- Y1 Regelventil: Klemme 15 über F2, masseseitig an Pin 11 -->
+    <path d="M470 62 V75 M470 109 V190 M470 240 V320 H190"/>
+    <!-- A2 Lüftersteuergerät: Klemme 30 über F1, Masse, PWM von Pin 13 -->
+    <path d="M530 30 V110 M530 144 V300 M530 390 V440"/>
+    <path d="M190 360 H490"/>
+    <!-- Lüftermotor M1 -->
+    <path d="M575 338 H589 M575 352 H589"/>
+    <!-- Masse A1 -->
+    <path d="M190 400 H215 V440"/>
+  </g>
+
+  <!-- Sicherungen (Rechteck mit Längsstrich) -->
+  <g fill="#ffffff" stroke="#1a1a1a" stroke-width="2">
+    <rect x="233" y="72" width="14" height="34"/>
+    <rect x="463" y="75" width="14" height="34"/>
+    <rect x="523" y="110" width="14" height="34"/>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="2">
+    <path d="M240 72 V106 M470 75 V109 M530 110 V144"/>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="254" y="95">F3 5 A</text>
+    <text x="456" y="97" text-anchor="end">F2 10 A</text>
+    <text x="544" y="132">F1 40 A</text>
+  </g>
+
+  <!-- Verbindungspunkte -->
+  <g fill="#1a1a1a">
+    <circle cx="240" cy="62" r="4"/>
+    <circle cx="470" cy="62" r="4"/>
+    <circle cx="530" cy="30" r="4"/>
+    <circle cx="530" cy="440" r="4"/>
+    <circle cx="215" cy="440" r="4"/>
+  </g>
+
+  <!-- B1 Sensor (Druck) -->
+  <rect x="330" y="135" width="60" height="90" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#1a1a1a">
+    <text x="336" y="155">1</text>
+    <text x="336" y="185">2</text>
+    <text x="336" y="215">3</text>
+    <text x="368" y="187" font-size="20" font-weight="bold">p</text>
+    <text x="330" y="128" font-weight="bold">B1</text>
+  </g>
+
+  <!-- B2 Sensor (Temperatur) -->
+  <rect x="330" y="245" width="60" height="60" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#1a1a1a">
+    <text x="336" y="265">1</text>
+    <text x="336" y="295">2</text>
+    <text x="366" y="283" font-size="20" font-weight="bold">T</text>
+    <text x="398" y="282" font-weight="bold">B2</text>
+  </g>
+
+  <!-- Y1 Regelventil: Spule + Ventilzeichen, gestrichelt verbunden -->
+  <rect x="455" y="190" width="30" height="50" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M455 240 L485 190" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M445 215 H455" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="4 3"/>
+  <g fill="#ffffff" stroke="#1a1a1a" stroke-width="2">
+    <polygon points="415,203 415,227 430,215"/>
+    <polygon points="445,203 445,227 430,215"/>
+  </g>
+  <text x="492" y="222" fill="#1a1a1a" font-weight="bold">Y1</text>
+
+  <!-- A2 Lüftersteuergerät -->
+  <rect x="490" y="300" width="85" height="90" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#1a1a1a">
+    <text x="497" y="320" font-weight="bold">A2</text>
+    <text x="537" y="320">30</text>
+    <text x="496" y="365">PWM</text>
+    <text x="537" y="384">31</text>
+  </g>
+
+  <!-- M1 Lüftermotor -->
+  <circle cx="607" cy="345" r="20" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#1a1a1a" text-anchor="middle">
+    <text x="607" y="351" font-weight="bold">M</text>
+    <text x="607" y="316" font-weight="bold">M1</text>
+  </g>
+</svg>

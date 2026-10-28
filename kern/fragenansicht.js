@@ -14,7 +14,7 @@ export function frageHtml(q, { kompakteSituation = false } = {}) {
     ${q.situation ? situationHtml(q.situation, kompakteSituation) : ""}
     ${q.tb ? `<p class="tb-hint">📘 Tabellenbuch erlaubt</p>` : ""}
     <p class="qtext">${esc(q.q)}</p>
-    ${q.bild ? `<figure class="bild"><img src="inhalt/bilder/${esc(q.bild)}" alt="Abbildung zur Aufgabe"></figure>` : ""}
+    ${q.bild ? `<figure class="bild" title="Tippen zum Vergrößern"><img src="inhalt/bilder/${esc(q.bild)}" alt="Abbildung zur Aufgabe"><figcaption></figcaption></figure>` : ""}
     ${q.stemHtml ? `<div class="stem">${q.stemHtml}</div>` : ""}
     <div id="antwort"></div>`;
 }

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" font-family="Arial, sans-serif" font-size="15">
+  <title>Ablauf eines Frontaufpralls (qualitativ, ohne Maßstab): Füllung des Airbags und Vorverlagerung des Insassen über der Zeit, Zeitpunkte 1 bis 6</title>
+  <!-- Selbst gezeichnet. Nur Reihenfolge, keine Zahlenwerte (Zeiten je nach Fahrzeug verschieden).
+       1 Aufprallbeginn, Sensoren erfassen die Verzögerung
+       2 Auslöseentscheidung: Gurtstraffer und Airbag Stufe 1 werden gezündet
+       3 bei schwerem Aufprall: Stufe 2 zeitversetzt
+       4 Airbag voll aufgeblasen
+       5 Insasse taucht in den Airbag ein, Gas strömt über Ausströmöffnungen ab
+       6 Airbag weitgehend entleert -->
+  <rect x="0" y="0" width="640" height="440" fill="#ffffff"/>
+
+  <!-- Zeitpunkte -->
+  <g stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="75" y1="62" x2="75" y2="330"/>
+    <line x1="165" y1="62" x2="165" y2="330"/>
+    <line x1="220" y1="62" x2="220" y2="330"/>
+    <line x1="300" y1="62" x2="300" y2="330"/>
+    <line x1="400" y1="62" x2="400" y2="330"/>
+    <line x1="560" y1="62" x2="560" y2="330"/>
+  </g>
+
+  <!-- Achsen -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <path d="M60 330 H615"/>
+    <path d="M60 330 V70"/>
+  </g>
+  <polygon points="615,325 627,330 615,335" fill="#1a1a1a"/>
+  <polygon points="55,72 60,60 65,72" fill="#1a1a1a"/>
+
+  <!-- Kurven -->
+  <path d="M60 328 H165 C200 328 245 115 300 110 L370 110 C430 112 490 280 610 300" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M60 328 C120 327 170 322 220 318 C300 305 350 230 400 165 C440 125 520 118 610 116" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-dasharray="10 6"/>
+
+  <!-- Beschriftung -->
+  <text x="340" y="356" text-anchor="middle" fill="#1a1a1a">Zeit nach Aufprallbeginn (ohne Maßstab) →</text>
+  <line x1="70" y1="388" x2="115" y2="388" stroke="#1a1a1a" stroke-width="3"/>
+  <text x="125" y="393" fill="#1a1a1a">Füllung des Airbags</text>
+  <line x1="70" y1="416" x2="115" y2="416" stroke="#1a1a1a" stroke-width="3" stroke-dasharray="10 6"/>
+  <text x="125" y="421" fill="#1a1a1a">Vorverlagerung des Insassen nach vorn</text>
+
+  <!-- Nummern -->
+  <g font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    <circle cx="75" cy="48" r="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="75" y="53">1</text>
+    <circle cx="165" cy="48" r="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="165" y="53">2</text>
+    <circle cx="220" cy="48" r="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="220" y="53">3</text>
+    <circle cx="300" cy="48" r="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="300" y="53">4</text>
+    <circle cx="400" cy="48" r="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="400" y="53">5</text>
+    <circle cx="560" cy="48" r="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="560" y="53">6</text>
+  </g>
+</svg>

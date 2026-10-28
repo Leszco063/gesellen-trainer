@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" font-family="Arial, sans-serif" font-size="15">
+  <title>Oszillogramm: PWM-Ansteuerung des Verdichter-Regelventils Y1, gemessen an A1 Pin 11 gegen Masse, 1 Kästchen = 2 V / 0,5 ms (Beispiel)</title>
+  <rect x="0" y="0" width="640" height="440" fill="#ffffff"/>
+
+  <text x="320" y="30" text-anchor="middle" fill="#1a1a1a" font-weight="bold">Messung an A1 Pin 11 gegen Masse (Motor läuft, Klima ein)</text>
+
+  <!-- Raster 10 x 9 Kästchen (54 x 36 px) -->
+  <g stroke="#b0b0b0" stroke-width="1">
+    <path d="M114 50 V374 M168 50 V374 M222 50 V374 M276 50 V374 M330 50 V374 M384 50 V374 M438 50 V374 M492 50 V374 M546 50 V374"/>
+    <path d="M60 86 H600 M60 122 H600 M60 158 H600 M60 194 H600 M60 230 H600 M60 266 H600 M60 302 H600"/>
+  </g>
+  <rect x="60" y="50" width="540" height="324" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Null-Linie -->
+  <path d="M60 338 H600" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="52" y="343" text-anchor="end" fill="#1a1a1a" font-weight="bold">0 V</text>
+  <polygon points="60,338 50,331 50,345" fill="#1a1a1a"/>
+
+  <!-- Signal -->
+  <path d="M60 86 H168 V336 H330 V86 H438 V336 H600" fill="none" stroke="#c0392b" stroke-width="3"/>
+
+  <!-- Abschnitte 1 und 2 -->
+  <g font-weight="bold" text-anchor="middle">
+    <circle cx="114" cy="68" r="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="114" y="73" fill="#1a1a1a">1</text>
+    <circle cx="249" cy="312" r="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="249" y="317" fill="#1a1a1a">2</text>
+  </g>
+
+  <!-- Achsen und Maßstab -->
+  <g fill="#1a1a1a">
+    <text x="30" y="62">U</text>
+    <text x="606" y="392">t</text>
+    <text x="60" y="400">1 Kästchen = 2 V / 0,5 ms</text>
+    <text x="60" y="425">Ansteuerung Y1 masseseitig durch A1 (Plus über F2 von Klemme 15)</text>
+  </g>
+</svg>

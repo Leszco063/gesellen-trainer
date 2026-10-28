@@ -17,6 +17,7 @@ import importlib.util
 import json
 import os
 import sys
+import xml.etree.ElementTree as ET
 
 TOOLS_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(TOOLS_DIR)
@@ -100,12 +101,26 @@ def _pruefe_typ(q, typ, where, errors):
             errors.append(f"{where}: ablenker muss eine Liste von Texten sein")
 
 
+def _pruefe_svg(pfad, name):
+    """Kaputte SVGs zeigt der Browser gar nicht an – darum schon beim Export prüfen."""
+    if not name.endswith(".svg"):
+        return []
+    try:
+        wurzel = ET.parse(pfad).getroot()
+    except ET.ParseError as e:
+        return [f"Bild '{name}' ist kein gültiges SVG: {e}"]
+    if not wurzel.get("viewBox"):
+        return [f"Bild '{name}' braucht ein viewBox-Attribut (sonst skaliert es auf dem Handy nicht)"]
+    return []
+
+
 def validate(questions, situationen, bilder_dir=BILDER_DIR):
     errors = []
     for sid, s in situationen.items():
         if not isinstance(s, dict) or not all(_text(s.get(k)) for k in ("titel", "text", "cat")):
             errors.append(f"Situation '{sid}': braucht titel, text und cat")
     nummern = collections.defaultdict(list)
+    svg_geprueft = set()
     for i, q in enumerate(questions):
         where = f"Frage {i + 1} ({q.get('cat', '?')}: {str(q.get('q', ''))[:50]})"
         for key in ("cat", "q", "explain", "src"):
@@ -120,8 +135,13 @@ def validate(questions, situationen, bilder_dir=BILDER_DIR):
             errors.append(f"{where}: unbekannter typ '{typ}'")
         else:
             _pruefe_typ(q, typ, where, errors)
-        if "bild" in q and not os.path.isfile(os.path.join(bilder_dir, str(q["bild"]))):
-            errors.append(f"{where}: Bild '{q['bild']}' fehlt in inhalt/bilder/")
+        if "bild" in q:
+            pfad = os.path.join(bilder_dir, str(q["bild"]))
+            if not os.path.isfile(pfad):
+                errors.append(f"{where}: Bild '{q['bild']}' fehlt in inhalt/bilder/")
+            elif q["bild"] not in svg_geprueft:
+                svg_geprueft.add(q["bild"])
+                errors += _pruefe_svg(pfad, str(q["bild"]))
         if "situation" in q:
             s = situationen.get(q["situation"])
             if s is None:

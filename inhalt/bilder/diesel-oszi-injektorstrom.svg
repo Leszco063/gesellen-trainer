@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif" font-size="15">
+  <title>Oszillogramm: Stromverlauf eines Magnetventil-Injektors mit Anzugs- und Haltephase, Raster 5 A und 0,1 ms je Kästchen, Abschnitte 1 bis 3</title>
+  <rect x="0" y="0" width="640" height="400" fill="#ffffff"/>
+  <text x="320" y="28" text-anchor="middle" fill="#1a1a1a" font-weight="bold">Injektorstrom Zyl. 1 (Stromzange), Leerlauf</text>
+
+  <!-- Raster: 1 Kästchen = 5 A (40 px) / 0,1 ms (52 px) -->
+  <g stroke="#b8b8b8" stroke-width="1" fill="none">
+    <path d="M132 90 V330 M184 90 V330 M236 90 V330 M288 90 V330 M340 90 V330 M392 90 V330 M444 90 V330 M496 90 V330 M548 90 V330 M600 90 V330"/>
+    <path d="M80 290 H600 M80 250 H600 M80 210 H600 M80 170 H600 M80 130 H600 M80 90 H600"/>
+  </g>
+
+  <!-- Achsen, Null-Linie -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <path d="M80 330 H612"/>
+    <path d="M80 330 V78"/>
+  </g>
+  <path d="M612 325 L622 330 L612 335 Z" fill="#1a1a1a"/>
+  <path d="M75 78 L80 68 L85 78 Z" fill="#1a1a1a"/>
+  <text x="90" y="74" fill="#1a1a1a">I in A</text>
+  <text x="626" y="372" text-anchor="end" fill="#1a1a1a">t in ms</text>
+
+  <!-- Beschriftung -->
+  <g fill="#1a1a1a" text-anchor="middle">
+    <text x="80" y="350">0</text>
+    <text x="132" y="350">0,1</text>
+    <text x="184" y="350">0,2</text>
+    <text x="236" y="350">0,3</text>
+    <text x="288" y="350">0,4</text>
+    <text x="340" y="350">0,5</text>
+    <text x="392" y="350">0,6</text>
+    <text x="444" y="350">0,7</text>
+    <text x="496" y="350">0,8</text>
+    <text x="548" y="350">0,9</text>
+    <text x="600" y="350">1,0</text>
+  </g>
+  <g fill="#1a1a1a" text-anchor="end">
+    <text x="72" y="335">0</text>
+    <text x="72" y="295">5</text>
+    <text x="72" y="255">10</text>
+    <text x="72" y="215">15</text>
+    <text x="72" y="175">20</text>
+    <text x="72" y="135">25</text>
+    <text x="72" y="95">30</text>
+  </g>
+
+  <!-- Stromverlauf -->
+  <path d="M80 330 H132 C 142 262, 160 190, 176 170 H184 L196 250 L204 210 L212 250 L220 210 L228 250 L236 210 L244 250 L252 210 L260 250 L268 210 L276 250 L284 210 L292 250 L300 210 L308 250 L316 210 L324 250 L332 210 L340 250 L348 210 L356 250 L364 210 L372 250 L380 210 L388 250 L396 210 L404 250 L412 210 L420 250 L428 210 L436 250 L444 210 L452 330 H600" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Abschnitte -->
+  <g fill="#ffffff" stroke="#1a1a1a" stroke-width="2">
+    <circle cx="210" cy="140" r="12"/>
+    <circle cx="320" cy="180" r="12"/>
+    <circle cx="478" cy="280" r="12"/>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="1.5">
+    <path d="M200 148 L184 166 M320 192 V206 M466 284 L450 300"/>
+  </g>
+  <g fill="#1a1a1a" font-weight="bold" text-anchor="middle">
+    <text x="210" y="145">1</text>
+    <text x="320" y="185">2</text>
+    <text x="478" y="285">3</text>
+  </g>
+
+  <text x="320" y="392" text-anchor="middle" fill="#1a1a1a">1 Kästchen = 5 A / 0,1 ms · Null-Linie = 0 A</text>
+</svg>

@@ -3,7 +3,7 @@
 // offline wird die zuletzt geladene Version aus dem Zwischenspeicher genommen.
 // Neue Dateien in kern/, inhalt/ oder css/ hier eintragen – der Test "offline" meldet vergessene Dateien.
 // Nur eigene Caches (Präfix gp2kfz-) aufräumen – andere Trainer auf derselben Domain haben ihre eigenen.
-const CACHE = "gp2kfz-v1";
+const CACHE = "gp2kfz-v2";
 const FILES = [
   "./",
   "index.html",
@@ -12,11 +12,31 @@ const FILES = [
   "icon-192.png",
   "icon-512.png",
   "css/app.css",
+  "inhalt/bilder/airbag-crashablauf.svg",
+  "inhalt/bilder/airbag-stecker-kurzschlussbruecke.svg",
   "inhalt/bilder/airbag-system.svg",
+  "inhalt/bilder/airbag-zuendkreise-schaltplan.svg",
+  "inhalt/bilder/bremse-epb-schaltplan.svg",
+  "inhalt/bilder/bremse-esp-hydraulik.svg",
+  "inhalt/bilder/bremse-esp-sensoren.svg",
+  "inhalt/bilder/bremse-oszi-raddrehzahl.svg",
   "inhalt/bilder/cr-anlage.svg",
+  "inhalt/bilder/diesel-motorsteuerung-schaltplan.svg",
+  "inhalt/bilder/diesel-oszi-injektorstrom.svg",
+  "inhalt/bilder/diesel-scr-anlage.svg",
+  "inhalt/bilder/diesel-scr-schaltplan.svg",
   "inhalt/bilder/esp-system.svg",
+  "inhalt/bilder/grundlagen-can-bus.svg",
+  "inhalt/bilder/grundlagen-oszi-pwm.svg",
+  "inhalt/bilder/grundlagen-relais-schaltplan.svg",
+  "inhalt/bilder/grundlagen-sensor-schaltung.svg",
+  "inhalt/bilder/klima-messpunkte.svg",
+  "inhalt/bilder/klima-oszi-regelventil.svg",
+  "inhalt/bilder/klima-schaltplan.svg",
   "inhalt/bilder/klimakreislauf.svg",
   "inhalt/bilder/raildruck-kennlinie.svg",
+  "inhalt/bilder/wiso-konjunkturzyklus.svg",
+  "inhalt/bilder/wiso-lohnabrechnung.svg",
   "inhalt/fragen.js",
   "inhalt/gen/elektrik.js",
   "inhalt/gen/gemeinsam.js",

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" font-family="Arial, sans-serif" font-size="15">
+  <title>Oszillogramm: masseseitig angesteuertes Magnetventil Y1 (PWM), Steuerleitung gegen Masse, 1 Kästchen = 5 V / 1 ms</title>
+  <rect x="0" y="0" width="640" height="440" fill="#ffffff"/>
+
+  <text x="20" y="24" fill="#1a1a1a">Messung: Steuerleitung Y1 (Steuergerät schaltet nach Masse) gegen Masse</text>
+  <text x="20" y="46" fill="#1a1a1a">1 Kästchen = 5 V (senkrecht) / 1 ms (waagerecht)</text>
+
+  <!-- Raster: x 80..600 (13 × 40 px), y 60..380 (8 × 40 px) -->
+  <g stroke="#c8c8c8" stroke-width="1">
+    <path d="M120 60 V380 M160 60 V380 M200 60 V380 M240 60 V380 M280 60 V380 M320 60 V380 M360 60 V380 M400 60 V380 M440 60 V380 M480 60 V380 M520 60 V380 M560 60 V380 M600 60 V380"/>
+    <path d="M80 60 H600 M80 100 H600 M80 140 H600 M80 180 H600 M80 220 H600 M80 260 H600 M80 300 H600 M80 340 H600"/>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="80" y1="60" x2="80" y2="380"/>
+    <line x1="80" y1="380" x2="610" y2="380"/>
+  </g>
+  <!-- Null-Linie markiert -->
+  <path d="M66 374 L78 380 L66 386 Z" fill="#c0392b"/>
+  <g fill="#1a1a1a" text-anchor="end">
+    <text x="62" y="385">0 V</text>
+    <text x="72" y="305">10</text>
+    <text x="72" y="225">20</text>
+    <text x="72" y="145">30</text>
+    <text x="72" y="65">40</text>
+  </g>
+  <g fill="#1a1a1a" text-anchor="middle">
+    <text x="80" y="402">0</text>
+    <text x="280" y="402">5</text>
+    <text x="480" y="402">10</text>
+    <text x="600" y="402">13</text>
+    <text x="340" y="428">Zeit t in ms</text>
+  </g>
+
+  <!-- Signal: 14 V = y268, ca. 0,5 V = y376, Spitze 35 V = y100 -->
+  <path d="M80 268 H120 V376 H200 V100 L212 268 H320 V376 H400 V100 L412 268 H520 V376 H600" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
+</svg>

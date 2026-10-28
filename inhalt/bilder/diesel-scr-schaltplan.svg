@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" font-family="Arial, sans-serif" font-size="15">
+  <title>Schaltplan-Auszug SCR-System: Sicherungen F4 und F5, Heizrelais K2, Tank- und Leitungsheizung R1 und R2, Drucksensor B3, Dosierventil Y5, Förderpumpe M1, Steuergerät A2, Messpunkte A, B, C</title>
+  <rect x="0" y="0" width="640" height="460" fill="#ffffff"/>
+
+  <!-- Klemme 30 -->
+  <path d="M30 30 H620" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <text x="4" y="35" fill="#1a1a1a">30</text>
+
+  <!-- F4 und Heizrelais K2 (Arbeitsstromkreis) -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <path d="M70 30 V45 M70 75 V100"/>
+    <path d="M70 45 V75"/>
+    <path d="M70 100 L86 127"/>
+    <path d="M70 133 V160"/>
+    <path d="M40 160 H110 M40 160 V180 M110 160 V180"/>
+    <path d="M40 230 V250 M110 230 V250"/>
+    <path d="M28 250 H52 M33 257 H47 M38 264 H42"/>
+    <path d="M98 250 H122 M103 257 H117 M108 264 H112"/>
+    <path d="M82 114 H140" stroke-dasharray="4 3"/>
+  </g>
+  <rect x="63" y="45" width="14" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M70 45 V75" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#ffffff" stroke="#1a1a1a" stroke-width="2">
+    <rect x="32" y="180" width="16" height="50"/>
+    <rect x="102" y="180" width="16" height="50"/>
+  </g>
+  <g fill="#1a1a1a">
+    <circle cx="70" cy="30" r="3.5"/>
+    <circle cx="70" cy="160" r="3.5"/>
+    <text x="82" y="66">F4</text>
+    <text x="76" y="96">30</text>
+    <text x="76" y="152">87</text>
+    <text x="4" y="211">R1</text>
+    <text x="124" y="226">R2</text>
+  </g>
+
+  <!-- Steuerstromkreis K2 -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <path d="M160 88 V100"/>
+    <path d="M160 130 V300"/>
+  </g>
+  <rect x="140" y="100" width="40" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M140 130 L180 100" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#1a1a1a">
+    <text x="186" y="124">K2</text>
+    <text x="124" y="97">86</text>
+    <text x="164" y="150">85</text>
+  </g>
+
+  <!-- F5 und Versorgung -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <path d="M250 30 V45 M250 75 V88"/>
+    <path d="M160 88 H560 V300"/>
+  </g>
+  <rect x="243" y="45" width="14" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M250 45 V75" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#1a1a1a">
+    <circle cx="250" cy="30" r="3.5"/>
+    <circle cx="250" cy="88" r="3.5"/>
+    <circle cx="400" cy="88" r="3.5"/>
+    <text x="262" y="66">F5</text>
+  </g>
+
+  <!-- B3 Drucksensor (Förderdruck), 3-polig -->
+  <rect x="220" y="168" width="120" height="58" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="280" y="191" text-anchor="middle" fill="#1a1a1a">B3 Druck</text>
+  <g fill="#1a1a1a" text-anchor="middle">
+    <text x="252" y="220">1</text>
+    <text x="292" y="220">2</text>
+    <text x="332" y="220">3</text>
+  </g>
+  <path d="M240 226 V300 M280 226 V300 M320 226 V300" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+
+  <!-- Y5 Dosierventil -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <path d="M400 88 V150 M400 190 V300"/>
+  </g>
+  <rect x="386" y="150" width="28" height="40" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M386 190 L414 150" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="420" y="175" fill="#1a1a1a">Y5</text>
+
+  <!-- A2 Steuergerät SCR -->
+  <rect x="30" y="300" width="580" height="60" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="290" y="348" text-anchor="middle" fill="#1a1a1a" font-weight="bold">A2 Steuergerät SCR</text>
+  <g fill="#1a1a1a" text-anchor="middle">
+    <text x="160" y="320">7</text>
+    <text x="240" y="320">20</text>
+    <text x="280" y="320">21</text>
+    <text x="320" y="320">22</text>
+    <text x="400" y="320">12</text>
+    <text x="560" y="320">1</text>
+    <text x="490" y="353">10</text>
+    <text x="580" y="353">2</text>
+  </g>
+
+  <!-- M1 Förderpumpe -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <path d="M490 360 V382 M490 418 V430"/>
+    <path d="M478 430 H502 M483 437 H497 M488 444 H492"/>
+    <path d="M580 360 V430"/>
+    <path d="M568 430 H592 M573 437 H587 M578 444 H582"/>
+  </g>
+  <circle cx="490" cy="400" r="18" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="490" y="405" text-anchor="middle" fill="#1a1a1a">M</text>
+  <text x="514" y="405" fill="#1a1a1a">M1</text>
+  <text x="598" y="425" fill="#1a1a1a">31</text>
+
+  <!-- Legende -->
+  <g fill="#1a1a1a">
+    <text x="20" y="392">F4 20 A · F5 10 A · K2 Heizrelais</text>
+    <text x="20" y="414">R1 Tankheizung · R2 Leitungsheizung · B3 Drucksensor</text>
+    <text x="20" y="436">Y5 Dosierventil · M1 Förderpumpe</text>
+  </g>
+
+  <!-- Messpunkte A, B, C -->
+  <g fill="#c0392b">
+    <circle cx="400" cy="250" r="3.5"/>
+    <circle cx="110" cy="170" r="3.5"/>
+    <circle cx="490" cy="372" r="3.5"/>
+  </g>
+  <g stroke="#c0392b" stroke-width="1.5">
+    <path d="M403 250 H413 M113 170 H123 M487 372 H477"/>
+  </g>
+  <g stroke="#c0392b" stroke-width="2" fill="#ffffff">
+    <circle cx="424" cy="250" r="11"/>
+    <circle cx="134" cy="170" r="11"/>
+    <circle cx="466" cy="372" r="11"/>
+  </g>
+  <g fill="#c0392b" font-weight="bold" text-anchor="middle">
+    <text x="424" y="255">A</text>
+    <text x="134" y="175">B</text>
+    <text x="466" y="377">C</text>
+  </g>
+</svg>

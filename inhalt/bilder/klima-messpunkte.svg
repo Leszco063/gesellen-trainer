@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" font-family="Arial, sans-serif" font-size="15">
+  <title>Kältekreis mit Serviceanschlüssen HD und ND und Temperatur-Messpunkten A bis F</title>
+  <rect x="0" y="0" width="640" height="440" fill="#ffffff"/>
+
+  <g fill="none" stroke="#1a1a1a" stroke-width="2">
+    <!-- Hochdruckseite (durchgezogen) -->
+    <path d="M130 286 V140"/>
+    <path d="M230 100 H330"/>
+    <path d="M364 100 H520 V170"/>
+    <!-- Niederdruckseite (gestrichelt) -->
+    <path d="M520 210 V260" stroke-dasharray="8 5"/>
+    <path d="M440 320 H164" stroke-dasharray="8 5"/>
+
+    <!-- Verdichter -->
+    <circle cx="130" cy="320" r="34" fill="#ffffff"/>
+    <polyline points="104,338 130,292 156,338"/>
+
+    <!-- Kondensator -->
+    <rect x="60" y="60" width="170" height="80" fill="#ffffff"/>
+    <path d="M75 75 H215 V90 H75 V105 H215 V120 H75" stroke-width="1.5"/>
+
+    <!-- Trockner -->
+    <rect x="330" y="62" width="34" height="76" rx="8" fill="#ffffff"/>
+    <path d="M336 84 H358 M336 116 H358" stroke-width="1.5"/>
+
+    <!-- Serviceanschluss HD -->
+    <path d="M410 100 V80"/>
+    <rect x="402" y="70" width="16" height="10" fill="#ffffff"/>
+
+    <!-- Expansionsventil -->
+    <polygon points="506,170 534,170 520,190" fill="#ffffff"/>
+    <polygon points="506,210 534,210 520,190" fill="#ffffff"/>
+
+    <!-- Verdampfer -->
+    <rect x="440" y="260" width="160" height="70" fill="#ffffff"/>
+    <path d="M455 273 H585 V287 H455 V301 H585 V315 H455" stroke-width="1.5"/>
+
+    <!-- Serviceanschluss ND -->
+    <path d="M300 320 V300"/>
+    <rect x="292" y="290" width="16" height="10" fill="#ffffff"/>
+
+    <!-- Luft zum Innenraum -->
+    <path d="M560 332 V372" stroke-width="2"/>
+
+    <!-- Legende -->
+    <path d="M30 404 H80"/>
+    <path d="M30 428 H80" stroke-dasharray="8 5"/>
+  </g>
+
+  <!-- Flussrichtung -->
+  <g fill="#1a1a1a">
+    <polygon points="130,252 123,266 137,266"/>
+    <polygon points="318,100 304,93 304,107"/>
+    <polygon points="520,148 513,134 527,134"/>
+    <polygon points="520,258 513,244 527,244"/>
+    <polygon points="232,320 246,313 246,327"/>
+    <polygon points="560,384 553,370 567,370"/>
+  </g>
+
+  <!-- Beschriftung -->
+  <g fill="#1a1a1a">
+    <text x="145" y="50" text-anchor="middle">Kondensator</text>
+    <text x="347" y="52" text-anchor="middle">Trockner</text>
+    <text x="410" y="62" text-anchor="middle" font-weight="bold">HD</text>
+    <text x="300" y="282" text-anchor="middle" font-weight="bold">ND</text>
+    <text x="498" y="186" text-anchor="end">Expansions-</text>
+    <text x="498" y="204" text-anchor="end">ventil</text>
+    <text x="500" y="352" text-anchor="middle">Verdampfer</text>
+    <text x="130" y="378" text-anchor="middle">Verdichter</text>
+    <text x="545" y="410" text-anchor="end">Ausströmer</text>
+    <text x="90" y="409">Hochdruckseite</text>
+    <text x="90" y="433">Niederdruckseite</text>
+  </g>
+
+  <!-- Messpunkte A bis F -->
+  <g fill="#c0392b">
+    <circle cx="130" cy="215" r="4"/>
+    <circle cx="280" cy="100" r="4"/>
+    <circle cx="470" cy="100" r="4"/>
+    <circle cx="520" cy="224" r="4"/>
+    <circle cx="410" cy="320" r="4"/>
+  </g>
+  <g stroke="#c0392b" stroke-width="2">
+    <path d="M108 215 H126 M280 86 V96 M470 86 V96 M534 224 H516 M410 324 V338"/>
+  </g>
+  <g fill="#ffffff" stroke="#c0392b" stroke-width="2">
+    <circle cx="96" cy="215" r="12"/>
+    <circle cx="280" cy="74" r="12"/>
+    <circle cx="470" cy="74" r="12"/>
+    <circle cx="546" cy="224" r="12"/>
+    <circle cx="410" cy="350" r="12"/>
+    <circle cx="580" cy="404" r="12"/>
+  </g>
+  <g fill="#c0392b" font-weight="bold" text-anchor="middle">
+    <text x="96" y="220">A</text>
+    <text x="280" y="79">B</text>
+    <text x="470" y="79">C</text>
+    <text x="546" y="229">D</text>
+    <text x="410" y="355">E</text>
+    <text x="580" y="409">F</text>
+  </g>
+</svg>

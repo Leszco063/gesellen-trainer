@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" font-family="Arial, sans-serif" font-size="15">
+  <title>ESP-Steuergerät A2 mit vier aktiven Raddrehzahlsensoren B1 bis B4, Steckverbindung X1, Sicherungen F1 bis F3 und Messpunkten A und B</title>
+  <rect x="0" y="0" width="640" height="480" fill="#ffffff"/>
+
+  <!-- Klemmen -->
+  <g fill="#1a1a1a" font-weight="bold">
+    <text x="10" y="50">30</text>
+    <text x="10" y="80">15</text>
+    <text x="10" y="440">31</text>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="40" y1="45" x2="620" y2="45"/>
+    <line x1="40" y1="75" x2="280" y2="75"/>
+    <line x1="40" y1="435" x2="620" y2="435"/>
+    <line x1="260" y1="75" x2="260" y2="145"/>
+    <line x1="320" y1="45" x2="320" y2="145"/>
+    <line x1="380" y1="45" x2="380" y2="145"/>
+    <line x1="260" y1="385" x2="260" y2="435"/>
+    <line x1="350" y1="385" x2="350" y2="405"/>
+    <line x1="380" y1="385" x2="380" y2="405"/>
+    <!-- Sensorleitungen links -->
+    <line x1="86" y1="185" x2="220" y2="185"/>
+    <line x1="86" y1="215" x2="220" y2="215"/>
+    <line x1="86" y1="305" x2="220" y2="305"/>
+    <line x1="86" y1="335" x2="220" y2="335"/>
+    <!-- Sensorleitungen rechts -->
+    <line x1="420" y1="185" x2="554" y2="185"/>
+    <line x1="420" y1="215" x2="554" y2="215"/>
+    <line x1="420" y1="305" x2="554" y2="305"/>
+    <line x1="420" y1="335" x2="554" y2="335"/>
+  </g>
+  <g fill="#1a1a1a">
+    <circle cx="260" cy="75" r="4"/>
+    <circle cx="320" cy="45" r="4"/>
+    <circle cx="380" cy="45" r="4"/>
+    <circle cx="260" cy="435" r="4"/>
+  </g>
+
+  <!-- Sicherungen -->
+  <g fill="#ffffff" stroke="#1a1a1a" stroke-width="2">
+    <rect x="253" y="90" width="14" height="30"/>
+    <rect x="313" y="90" width="14" height="30"/>
+    <rect x="373" y="90" width="14" height="30"/>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="2">
+    <line x1="260" y1="90" x2="260" y2="120"/>
+    <line x1="320" y1="90" x2="320" y2="120"/>
+    <line x1="380" y1="90" x2="380" y2="120"/>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="272" y="103">F3</text><text x="272" y="120">5 A</text>
+    <text x="332" y="103">F1</text><text x="332" y="120">40 A</text>
+    <text x="392" y="103">F2</text><text x="392" y="120">25 A</text>
+    <text x="430" y="103">F1: Pumpenmotor</text>
+    <text x="430" y="122">F2: Magnetventile</text>
+  </g>
+
+  <!-- Steuergerät A2 -->
+  <rect x="220" y="145" width="200" height="240" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#1a1a1a">
+    <text x="260" y="163" text-anchor="middle">3</text>
+    <text x="320" y="163" text-anchor="middle">1</text>
+    <text x="380" y="163" text-anchor="middle">2</text>
+    <text x="228" y="190">11</text>
+    <text x="228" y="220">12</text>
+    <text x="228" y="310">15</text>
+    <text x="228" y="340">16</text>
+    <text x="412" y="190" text-anchor="end">13</text>
+    <text x="412" y="220" text-anchor="end">14</text>
+    <text x="412" y="310" text-anchor="end">17</text>
+    <text x="412" y="340" text-anchor="end">18</text>
+    <text x="260" y="378" text-anchor="middle">4</text>
+    <text x="350" y="378" text-anchor="middle">5</text>
+    <text x="380" y="378" text-anchor="middle">6</text>
+    <text x="320" y="250" text-anchor="middle" font-weight="bold">A2</text>
+    <text x="320" y="270" text-anchor="middle">ESP-Steuergerät</text>
+    <text x="320" y="290" text-anchor="middle">mit Hydroaggregat</text>
+    <text x="365" y="421" text-anchor="middle">CAN zum Kombiinstrument</text>
+  </g>
+
+  <!-- Sensoren (Rechteck mit Kennbuchstabe n) -->
+  <g fill="#ffffff" stroke="#1a1a1a" stroke-width="2">
+    <rect x="40" y="177" width="46" height="46"/>
+    <rect x="40" y="297" width="46" height="46"/>
+    <rect x="554" y="177" width="46" height="46"/>
+    <rect x="554" y="297" width="46" height="46"/>
+  </g>
+  <g fill="#1a1a1a" text-anchor="middle">
+    <text x="63" y="206" font-size="17" font-style="italic">n</text>
+    <text x="63" y="326" font-size="17" font-style="italic">n</text>
+    <text x="577" y="206" font-size="17" font-style="italic">n</text>
+    <text x="577" y="326" font-size="17" font-style="italic">n</text>
+    <text x="63" y="168">B1 vorn links</text>
+    <text x="63" y="364">B3 hinten links</text>
+    <text x="577" y="168">B2 vorn rechts</text>
+  </g>
+  <text x="630" y="364" text-anchor="end" fill="#1a1a1a">B4 hinten rechts</text>
+
+  <!-- Steckverbindung X1 am Sensor vorn rechts -->
+  <rect x="482" y="172" width="16" height="56" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="490" y="166" text-anchor="middle" fill="#1a1a1a">X1</text>
+
+  <!-- Messpunkte A und B (Kabelbaumseite von X1) -->
+  <g fill="#ffffff" stroke="#c0392b" stroke-width="2">
+    <circle cx="452" cy="185" r="10"/>
+    <circle cx="452" cy="215" r="10"/>
+  </g>
+  <g fill="#c0392b" font-weight="bold" text-anchor="middle">
+    <text x="452" y="190">A</text>
+    <text x="452" y="220">B</text>
+  </g>
+
+  <g fill="#1a1a1a">
+    <text x="20" y="459">Je Sensor: obere Leitung = Versorgung, untere Leitung = Signal</text>
+    <text x="20" y="476">Pins und Sicherungen: Beispielwerte</text>
+  </g>
+</svg>

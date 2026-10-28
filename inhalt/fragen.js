@@ -52,7 +52,7 @@ export const QUESTIONS = [
   "src": "FW, Format Prüfung Schule"
  },
  {
-  "id": "14f94347fbd4",
+  "id": "edbd146d8d58",
   "cat": "Airbag",
   "level": 1,
   "typ": "mc",
@@ -64,14 +64,14 @@ export const QUESTIONS = [
    "Sie bleibt beim Einschalten dunkel; Dauerleuchten heißt: Beifahrerairbag ist abgeschaltet, sonst alles in Ordnung",
    "Sie leuchtet beim Einschalten kurz auf (Selbsttest) und erlischt nach wenigen Sekunden; Dauerleuchten heißt: Fehler erkannt, Schutz eingeschränkt",
    "Sie leuchtet während der ganzen Fahrt als Betriebsanzeige; Erlöschen heißt: Fehler erkannt, Schutz eingeschränkt",
-   "Sie leuchtet kurz auf und erlischt; Dauerleuchten heißt: Wartungsintervall der Airbags fällig, Schutz bleibt voll erhalten"
+   "Sie leuchtet beim Einschalten kurz auf und erlischt; Dauerleuchten heißt: Wartungsintervall der Airbags fällig, Schutz bleibt bis dahin voll erhalten"
   ],
   "correct": 1,
   "explain": "Die Leuchte geht beim Einschalten an (Selbsttest, Lampentest) und erlischt nach wenigen Sekunden, wenn kein Fehler erkannt wurde. Dauerleuchten (oder Blinken) heißt: Fehler erkannt, Teile ggf. abgeschaltet. Beim Einschalten prüft das Steuergerät Zündkreise, Sensoren und Energiereserve. Bleibt die Leuchte an, ist ein Fehler gespeichert – das Fahrzeug ist nicht mehr voll geschützt und muss diagnostiziert werden.",
   "src": "Netz: Recherche 3.6 (kfz-tech.de), FW"
  },
  {
-  "id": "4f5f65b9685d",
+  "id": "117c8f3b7ea2",
   "cat": "Airbag",
   "level": 2,
   "typ": "mc",
@@ -82,7 +82,7 @@ export const QUESTIONS = [
   "opts": [
    "Im Zündkreis liegt eine Unterbrechung oder ein erhöhter Übergangswiderstand vor",
    "Der Seitenairbag hat ausgelöst und muss ersetzt werden",
-   "Zwischen den beiden Zündkreisleitungen besteht ein Kurzschluss",
+   "Zwischen den beiden Zündkreisleitungen besteht ein Kurzschluss, z. B. durch eine eingeklemmte Leitung",
    "Die Bordnetzspannung ist zu hoch"
   ],
   "correct": 0,
@@ -110,7 +110,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.4/3.6, FW"
  },
  {
-  "id": "79f440813117",
+  "id": "3993913c0d6f",
   "cat": "Airbag",
   "level": 2,
   "typ": "mc",
@@ -119,7 +119,7 @@ export const QUESTIONS = [
   "nr": 5,
   "q": "Warum dürfen Sie nach dem Abklemmen der Batterie nicht sofort am Airbag-System arbeiten?",
   "opts": [
-   "Die Zündpille ist durch den Prüfstrom des Steuergeräts noch heiß; erst nach dem Abkühlen kann sie nicht mehr zünden",
+   "Die Zündpille ist durch den Prüfstrom des Steuergeräts noch heiß; erst nach dem Abkühlen auf Raumtemperatur kann sie beim Abstecken nicht mehr zünden",
    "Das Steuergerät speichert noch die Crashdaten dauerhaft ab; vorher gehen sie beim Arbeiten verloren",
    "Die Energiereserve (Kondensator) im Steuergerät kann die Zündpille noch bestromen; erst nach der Wartezeit nach Herstellerangabe ist sie entladen",
    "Der Fehlerspeicher löscht sich erst nach einer Wartezeit; sonst wird beim Wiederanklemmen ein Fehler eingetragen"
@@ -129,7 +129,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.6 (kfz-tech.de)"
  },
  {
-  "id": "d82a2d06a0ae",
+  "id": "363ad96a0788",
   "cat": "Airbag",
   "level": 1,
   "typ": "mc",
@@ -140,7 +140,7 @@ export const QUESTIONS = [
   "opts": [
    "Den Widerstand der Zündpille direkt mit dem Multimeter messen",
    "Den Fehlerspeicher mit dem Diagnosetester auslesen",
-   "Die Steckverbindung auf Korrosion und Verrastung sichtprüfen",
+   "Die Steckverbindung auf Korrosion und richtige Verrastung sichtprüfen",
    "Die Zündkreis-Messwerte im Diagnosetester ablesen"
   ],
   "correct": 0,
@@ -148,7 +148,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.4 (kfz-tech.de)"
  },
  {
-  "id": "078b2d0a677e",
+  "id": "0c4293e0dcd5",
   "cat": "Airbag",
   "level": 3,
   "typ": "mc",
@@ -158,7 +158,7 @@ export const QUESTIONS = [
   "q": "Welche Antwort nennt vier fachgerechte Schritte bzw. Hilfsmittel, um den Zündkreis des Seitenairbags zu prüfen?",
   "opts": [
    "Messwerte mit dem Diagnosetester auslesen; Widerstand der Zündpille direkt mit dem Multimeter messen; Stecker unter dem Sitz prüfen; Leitung bei abgesteckten Bauteilen auf Durchgang prüfen",
-   "Messwerte mit dem Diagnosetester auslesen; Prüfadapter bzw. Ersatzwiderstand anschließen; Stecker unter dem Sitz prüfen; Zündkreis bei eingesteckter Airbag-Einheit mit der Prüflampe prüfen",
+   "Messwerte mit dem Diagnosetester auslesen; Prüfadapter bzw. Ersatzwiderstand anschließen; Stecker unter dem Sitz prüfen; Zündkreis bei eingesteckter Airbag-Einheit kurz mit der Prüflampe auf Durchgang und Spannung prüfen",
    "Fehlerspeicher löschen und abwarten, ob der Fehler wiederkommt; Prüfadapter anschließen; Stecker unter dem Sitz prüfen; Leitung bei angeschlossener Airbag-Einheit auf Durchgang messen",
    "Messwerte mit dem Diagnosetester auslesen; Prüfadapter bzw. Ersatzwiderstand anschließen; Stecker unter dem Sitz prüfen; Leitung bei abgesteckter Airbag-Einheit und Steuergerät auf Durchgang und Kurzschluss prüfen"
   ],
@@ -186,7 +186,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "84b6eada458d",
+  "id": "f92d1724328f",
   "cat": "Airbag",
   "level": 2,
   "typ": "mc",
@@ -197,7 +197,7 @@ export const QUESTIONS = [
   "opts": [
    "Sie schließt im eingesteckten Zustand die Zündpille kurz, damit der Prüfstrom des Steuergeräts nicht durch sie fließt",
    "Beim Abziehen des Steckers verbindet eine Federbrücke die beiden Anschlüsse der Zündpille; Fremdspannung kann keinen Zündstrom treiben",
-   "Beim Abziehen des Steckers legt sie die Zündkreisleitung an Masse, damit das Steuergerät den offenen Stecker erkennt",
+   "Beim Abziehen des Steckers legt sie die Zündkreisleitung an Masse, damit das Steuergerät den offenen Stecker sofort erkennt und die Kontrollleuchte einschaltet",
    "Sie überbrückt bei einem Unfall einen beschädigten Stecker, damit der Airbag trotzdem zünden kann"
   ],
   "correct": 1,
@@ -261,7 +261,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.4, FW"
  },
  {
-  "id": "2ac39972e75b",
+  "id": "2e969bf5769a",
   "cat": "Airbag",
   "level": 2,
   "typ": "mc",
@@ -271,7 +271,7 @@ export const QUESTIONS = [
   "q": "Unter welcher Bedingung löst das Airbag-Steuergerät einen Airbag aus?",
   "opts": [
    "Wenn mindestens zwei Sensorsignale den Aufprall übereinstimmend (plausibel) melden",
-   "Sobald ein einzelner Sensor eine Verzögerung meldet",
+   "Sobald ein beliebiger einzelner Sensor eine Verzögerung über der Auslöseschwelle meldet",
    "Bei jeder Vollbremsung mit ABS-Eingriff",
    "Wenn die Airbag-Kontrollleuchte leuchtet"
   ],
@@ -318,7 +318,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.4 (TÜV SÜD, Behördenportale, autoservicepraxis)"
  },
  {
-  "id": "db022e85a65a",
+  "id": "225201e46bed",
   "cat": "Airbag",
   "level": 3,
   "typ": "mc",
@@ -329,7 +329,7 @@ export const QUESTIONS = [
   "opts": [
    "Luftsäcke neu falten und Gasgeneratoren nachfüllen lassen; Steuergerät nach Herstellerangabe ersetzen; Sensoren, Wickelfeder und Gurte prüfen",
    "Ausgelöste Airbag-Einheiten ersetzen, Gurtstraffer weiterverwenden; Steuergerät nach Herstellerangabe ersetzen; Sensoren, Wickelfeder und Gurte prüfen",
-   "Ausgelöste Airbag-Einheiten und Gurtstraffer ersetzen; Steuergerät nach Herstellerangabe ersetzen; Batterie ersetzen, weil der Zündstrom sie tiefentladen hat",
+   "Ausgelöste Airbag-Einheiten und Gurtstraffer ersetzen; Steuergerät nach Herstellerangabe ersetzen; Batterie ersetzen, weil der hohe Zündstrom sie beim Crash tiefentladen hat",
    "Ausgelöste Airbag-Einheiten und Gurtstraffer ersetzen; Steuergerät nach Herstellerangabe ersetzen; Sensoren, Wickelfeder, Gurte und Halterungen prüfen bzw. ersetzen"
   ],
   "correct": 3,
@@ -337,7 +337,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.6, FW"
  },
  {
-  "id": "17bb910c3c8f",
+  "id": "6a56db3f86a9",
   "cat": "Airbag",
   "level": 1,
   "typ": "mc",
@@ -348,7 +348,7 @@ export const QUESTIONS = [
   "opts": [
    "Nicht über den Hausmüll – Rückgabe über den Hersteller/Entsorger bzw. fachgerecht auslösen lassen",
    "Im Restmüll, wenn der Stecker abgezogen ist",
-   "Im Altmetall-Container der Werkstatt",
+   "Im Altmetall-Container der Werkstatt, weil Gehäuse und Gasgenerator größtenteils aus Metall bestehen",
    "In Wasser einweichen und danach in den Hausmüll"
   ],
   "correct": 0,
@@ -356,7 +356,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.4/3.6"
  },
  {
-  "id": "2461991073a6",
+  "id": "0c1119069847",
   "cat": "Airbag",
   "level": 3,
   "typ": "mc",
@@ -368,7 +368,7 @@ export const QUESTIONS = [
    "Stecker einrasten und verriegeln, Leitung zug- und scheuerfrei verlegen; Batterie anklemmen und dabei vom Fahrersitz aus die Kontrollleuchte beobachten; Fehlerspeicher auslesen und löschen; Messwerte kontrollieren",
    "Stecker einrasten und verriegeln, Leitung zug- und scheuerfrei verlegen; Batterie nach Herstellervorgabe anklemmen; Fehlerspeicher auslesen und löschen; Zündkreiswiderstand am Stecker mit dem Multimeter nachmessen",
    "Stecker einrasten und verriegeln, Leitung zug- und scheuerfrei verlegen; Batterie nach Herstellervorgabe anklemmen, niemand im Fahrzeug; Fehlerspeicher auslesen und löschen; Kontrollleuchte und Messwerte kontrollieren",
-   "Stecker einrasten und verriegeln, Leitung zug- und scheuerfrei verlegen; Steuergerät neu codieren, weil der Sitzausbau die Codierung löscht; Fehlerspeicher auslesen und löschen; Kontrollleuchte kontrollieren"
+   "Stecker einrasten und verriegeln, Leitung zug- und scheuerfrei verlegen; Steuergerät neu codieren, weil der Sitzausbau die gespeicherte Codierung löscht; Fehlerspeicher auslesen und löschen; Kontrollleuchte kontrollieren"
   ],
   "correct": 2,
   "explain": "Beim Anklemmen der Batterie hält sich niemand im Fahrzeug auf. Danach Fehlerspeicher auslesen und löschen, Kontrollleuchte (Selbsttest, geht aus) und Zündkreis-Messwerte im Tester kontrollieren. Erst wenn die Leuchte nach dem Selbsttest erlischt und kein Fehler mehr gespeichert ist, ist das System wieder voll einsatzbereit. Die Arbeit wird im Auftrag dokumentiert.",
@@ -405,14 +405,14 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.6 (Aufblasen ca. 30–50 ms), FW (Richtwerte)"
  },
  {
-  "id": "675681471ab6",
+  "id": "472310f28163",
   "cat": "Airbag",
   "level": 3,
   "typ": "mc",
   "pkt": 4,
   "q": "Welche Beschreibung von Aufbau und einstufiger bzw. zweistufiger Ausführung eines pyrotechnischen Gasgenerators ist richtig?",
   "opts": [
-   "Gehäuse mit Zündpille, Treibladung und Filter; Zündpille zündet die Treibladung, das Gas strömt in den Luftsack; einstufig: eine Ladung; zweistufig: zwei Ladungen, die immer gleichzeitig zünden, damit der Airbag schneller voll ist",
+   "Gehäuse mit Zündpille, Treibladung und Filter; Zündpille zündet die Treibladung, das Gas strömt in den Luftsack; einstufig: eine Ladung; zweistufig: zwei Ladungen, die immer gleichzeitig zünden, damit der Airbag bei jedem Unfall schneller voll ist",
    "Gehäuse mit Zündpille, Treibladung und Filter; Zündpille zündet die Treibladung, das Gas strömt in den Luftsack; einstufig: eine Ladung; zweistufig: zwei getrennt zündbare Ladungen, je nach Unfallschwere nur Stufe 1 oder beide zeitversetzt",
    "Gehäuse mit Druckluftflasche und Magnetventil; das Steuergerät öffnet das Ventil, die Luft strömt in den Luftsack; einstufig: ein Ventil; zweistufig: zwei Ventile, je nach Unfallschwere eines oder beide",
    "Gehäuse mit Zündpille, Treibladung und Filter; Zündpille zündet die Treibladung, das Gas strömt in den Luftsack; einstufig: eine Ladung; zweistufig: die zweite Ladung füllt den Airbag nach dem Entleeren für einen Folgeaufprall neu"
@@ -422,7 +422,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "168fc60f96ad",
+  "id": "e9e30586f47b",
   "cat": "Airbag",
   "level": 2,
   "typ": "mc",
@@ -430,7 +430,7 @@ export const QUESTIONS = [
   "q": "Was kennzeichnet einen Hybrid-Gasgenerator?",
   "opts": [
    "Ein unter hohem Druck gespeichertes Gas wird durch eine pyrotechnische Ladung freigegeben und erwärmt",
-   "Das Gas wird ausschließlich von einer elektrischen Pumpe erzeugt",
+   "Das Gas wird ausschließlich von einer elektrischen Pumpe erzeugt, die von der Energiereserve gespeist wird",
    "Er nutzt Druckluft aus dem Bremssystem",
    "Er kann nach der Auslösung wieder befüllt werden"
   ],
@@ -488,7 +488,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "60d4f5070792",
+  "id": "b804fa96f062",
   "cat": "Airbag",
   "level": 1,
   "typ": "mc",
@@ -496,7 +496,7 @@ export const QUESTIONS = [
   "q": "Eine Kundin möchte eine rückwärtsgerichtete Babyschale auf dem Beifahrersitz befestigen. Was müssen Sie ihr erklären?",
   "opts": [
    "Beifahrerairbag eingeschaltet lassen, weil er die Babyschale zusätzlich abpolstert; den Sitz ganz nach hinten schieben genügt",
-   "Beifahrerairbag abschalten, weil der sich entfaltende Airbag die Babyschale mit großer Wucht trifft; danach kann er dauerhaft aus bleiben, Erwachsene schützt der Gurt",
+   "Beifahrerairbag abschalten, weil der sich entfaltende Airbag die Babyschale mit großer Wucht trifft; danach kann er dauerhaft aus bleiben, Erwachsene schützt dann der Gurt allein ausreichend",
    "Beifahrerairbag nach Herstellerangabe abschalten, weil er die Babyschale mit großer Wucht trifft; Anzeige „Beifahrerairbag aus“ kontrollieren und danach wieder einschalten",
    "Beifahrerairbag abschalten, das geht nur in der Werkstatt durch Abziehen des Airbag-Steckers; danach wieder anstecken lassen"
   ],
@@ -505,7 +505,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.4, FW"
  },
  {
-  "id": "858c5aad72b6",
+  "id": "a01a92610bf2",
   "cat": "Airbag",
   "level": 3,
   "typ": "mc",
@@ -515,7 +515,7 @@ export const QUESTIONS = [
    "Die Wickelfeder ist die Rückstellfeder des Lenkrads; nur aus der Mittelstellung läuft das Lenkrad nach Kurven zurück; bei Fehler zieht das Fahrzeug einseitig",
    "Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen; nur aus der Mittelstellung reicht es für vollen Lenkeinschlag; bei Fehler reißt das Band – Fahrerairbag, Hupe und Lenkradtasten ohne Funktion",
    "Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen; nur aus der Mittelstellung reicht es für vollen Lenkeinschlag; bei Fehler löst der Fahrerairbag beim Lenken aus",
-   "Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen; nur aus der Mittelstellung reicht es für vollen Lenkeinschlag; bei Fehler blockiert das Lenkschloss und der Motor startet nicht"
+   "Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen; nur aus der Mittelstellung reicht es für vollen Lenkeinschlag; bei Fehler blockiert das elektrische Lenkschloss und der Motor startet nicht mehr"
   ],
   "correct": 1,
   "explain": "Die Wickelfeder ist ein aufgewickeltes Flachbandkabel mit begrenzter Zahl an Umdrehungen in beide Richtungen. Nur aus der Mittelstellung reicht die Länge für vollen Lenkeinschlag nach links und rechts. Bei falschem Einbau reißt das Band beim Lenken – Zündkreis Fahrerairbag unterbrochen, Hupe und Lenkradtasten ohne Funktion. Neue Wickelfedern sind meist mit einer Transportsicherung in Mittelstellung fixiert. Die Sicherung erst nach dem Einbau entfernen und die Wickelfeder bei abgenommenem Lenkrad nicht verdrehen.",
@@ -570,7 +570,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "69709d80d794",
+  "id": "e4e9fb734826",
   "cat": "Airbag",
   "level": 2,
   "typ": "mc",
@@ -580,14 +580,14 @@ export const QUESTIONS = [
    "Sie hebt sich bei einem erkannten Fußgängeraufprall hinten an, damit mehr Abstand zu harten Motorteilen entsteht",
    "Sie öffnet sich bei Überhitzung des Motors",
    "Sie senkt den Luftwiderstand bei hoher Geschwindigkeit",
-   "Sie verriegelt sich beim Unfall, damit keine Teile herausfliegen"
+   "Sie verriegelt sich bei einem Frontaufprall zusätzlich, damit keine Motorteile in den Innenraum oder auf die Straße fliegen"
   ],
   "correct": 0,
   "explain": "Sensoren im Stoßfänger erkennen den Fußgängeraufprall, Aktuatoren (oft pyrotechnisch) heben die Haube an. Der Kopf des Fußgängers trifft dann auf eine nachgiebige Fläche.",
   "src": "Netz: Recherche 3.4, FW"
  },
  {
-  "id": "a8d073da4a6b",
+  "id": "efe430d213cf",
   "cat": "Airbag",
   "level": 3,
   "typ": "mc",
@@ -595,7 +595,7 @@ export const QUESTIONS = [
   "q": "Wie erfassen Upfront-Sensoren und Seitenaufprallsensoren einen Aufprall, und wie nutzt das Steuergerät die Signale?",
   "opts": [
    "Upfront-Sensoren messen vorn die Verzögerung; Seitensensoren in B-Säule bzw. Schweller die Querbeschleunigung, Drucksensoren in der Tür den Druckanstieg; das Steuergerät prüft die Signale mit seinem eigenen Sensor auf Plausibilität",
-   "Upfront-Sensoren messen vorn die Verzögerung; Seitensensoren in B-Säule bzw. Schweller die Querbeschleunigung, Drucksensoren in der Tür den Druckanstieg; das Steuergerät löst aus, sobald ein einzelner Sensor anspricht",
+   "Upfront-Sensoren messen vorn die Verzögerung; Seitensensoren in B-Säule bzw. Schweller die Querbeschleunigung, Drucksensoren in der Tür den Druckanstieg; das Steuergerät löst aus, sobald ein einzelner dieser Sensoren anspricht, um Zeit zu sparen",
    "Upfront-Sensoren messen per Radar den Abstand zum Hindernis; Seitensensoren in B-Säule bzw. Schweller die Querbeschleunigung; das Steuergerät prüft die Signale mit seinem eigenen Sensor auf Plausibilität",
    "Upfront-Sensoren messen vorn die Verzögerung; Seitensensoren messen die Längsverzögerung, Drucksensoren den Gasdruck im Seitenairbag; das Steuergerät prüft die Signale mit seinem eigenen Sensor auf Plausibilität"
   ],
@@ -604,7 +604,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.4, FW"
  },
  {
-  "id": "b5b7e5e3bc6a",
+  "id": "64c778dbec76",
   "cat": "Airbag",
   "level": 2,
   "typ": "mc",
@@ -613,7 +613,7 @@ export const QUESTIONS = [
   "opts": [
    "Es mit dem Diagnosetester auf die Fahrzeugausstattung codieren bzw. anlernen",
    "Nichts – es erkennt alle Airbags selbst",
-   "Die Batterie 24 Stunden abgeklemmt lassen",
+   "Die Batterie 24 Stunden abgeklemmt lassen, damit es sich selbst auf die Ausstattung einstellt",
    "Jeden Zündkreis mit dem Multimeter anlernen"
   ],
   "correct": 0,
@@ -655,7 +655,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "bdda7a3e88ce",
+  "id": "a37358d9f2e3",
   "cat": "Airbag",
   "level": 1,
   "typ": "mc",
@@ -664,7 +664,7 @@ export const QUESTIONS = [
   "opts": [
    "24 A",
    "0,17 A",
-   "6 A",
+   "6,0 A",
    "0,6 A"
   ],
   "correct": 2,
@@ -723,14 +723,14 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "c1f4fa07cbe8",
+  "id": "f2daf705b7fa",
   "cat": "Airbag",
   "level": 3,
   "typ": "mc",
   "pkt": 3,
   "q": "Ein Kunde fragt, ob die Airbags in seinem 15 Jahre alten Fahrzeug wegen des Alters getauscht werden müssen. Wie gehen Sie vor?",
   "opts": [
-   "Airbags nach der gesetzlichen Altersgrenze von 10 Jahren grundsätzlich tauschen; Fehlerspeicher auslesen; Rückrufe nicht nötig, da sie verjährt sind",
+   "Airbags nach der gesetzlichen Altersgrenze von 10 Jahren grundsätzlich tauschen; Fehlerspeicher auslesen; Rückrufe nicht abfragen, da sie nach so langer Zeit ohnehin verjährt sind",
    "Herstellerangaben bzw. Serviceplan auf ein Tausch- oder Prüfintervall prüfen; Selbsttest der Kontrollleuchte und Fehlerspeicher prüfen; offene Rückrufe des Herstellers abfragen",
    "Zündkreise mit dem Multimeter auf Zündfähigkeit messen; Selbsttest der Kontrollleuchte prüfen; bei ausreichendem Widerstand ist kein Tausch nötig",
    "Kein Handlungsbedarf, solange die Kontrollleuchte aus ist; Rückrufe betreffen nur Fahrzeuge in der Herstellergarantie"
@@ -810,7 +810,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "4eeb861b7701",
+  "id": "847d75d018cf",
   "cat": "Airbag",
   "level": 2,
   "typ": "mc",
@@ -818,7 +818,7 @@ export const QUESTIONS = [
   "q": "Welche Beschreibung von Aufgabe und Wirkungsweise des Gurtkraftbegrenzers ist richtig?",
   "opts": [
    "Zieht beim Aufprall das lose Gurtband straff; arbeitet mit einer Treibladung im Gurtschloss; muss nach der Auslösung ersetzt werden",
-   "Begrenzt die Gurtkraft auf den Brustkorb; blockiert dazu das Gurtband vollständig, sobald eine bestimmte Kraft erreicht ist; der Insasse wird starr gehalten",
+   "Begrenzt die Gurtkraft auf den Brustkorb; blockiert dazu das Gurtband vollständig, sobald eine bestimmte Kraft erreicht ist; der Insasse wird starr im Sitz gehalten und berührt den Airbag nicht",
    "Begrenzt die Geschwindigkeit, mit der der Gurt beim Anlegen ausgezogen wird; arbeitet mit einer Fliehkraftsperre; verhindert ein Einklemmen des Gurts",
    "Begrenzt die Gurtkraft auf den Brustkorb; gibt ab einer bestimmten Kraft kontrolliert Gurtband frei (z. B. Torsionsstab); der Insasse taucht kontrolliert in den Airbag ein"
   ],
@@ -893,7 +893,7 @@ export const QUESTIONS = [
   "src": "Netz: Recherche 3.6, FW"
  },
  {
-  "id": "7470a0527568",
+  "id": "853b8b94f8e5",
   "cat": "Airbag",
   "level": 1,
   "typ": "mc",
@@ -903,14 +903,14 @@ export const QUESTIONS = [
    "Normal – die Verzögerung lag unter der Auslöseschwelle, der Gurt reicht als Schutz",
    "Fehler – Airbags müssen bei jedem Aufprall auslösen",
    "Fehler – die Airbags sind sicher dauerhaft abgeschaltet",
-   "Normal – Airbags lösen nur bei einem Seitenaufprall aus"
+   "Normal – Airbags lösen nur bei einem Seitenaufprall oder Überschlag aus, nie bei Frontaufprall"
   ],
   "correct": 0,
   "explain": "Frontairbags lösen erst bei einem deutlichen Aufprall aus (Richtwert: ab etwa 30 km/h, je nach Fahrzeug und Hindernis). Bei leichten Remplern würde der Airbag mehr schaden als nützen.",
   "src": "Netz: Recherche 3.6 (kfz-tech.de)"
  },
  {
-  "id": "6d18d02aca06",
+  "id": "e14741d5b73b",
   "cat": "Airbag",
   "level": 2,
   "typ": "mc",
@@ -920,28 +920,1033 @@ export const QUESTIONS = [
    "Wickelfeder (Kontakteinheit)",
    "Upfront-Sensor",
    "Gurtstraffer",
-   "Seitenaufprallsensor"
+   "Seitenaufprallsensor Fahrertür"
   ],
   "correct": 0,
   "explain": "Über die Wickelfeder laufen Fahrerairbag, Hupe und Lenkradtasten. Fallen alle zugleich aus, ist meist das Flachbandkabel gerissen – oft, weil das Lenkrad bei abgenommener Wickelfeder verdreht wurde.",
   "src": "Netz: Recherche 3.4, FW"
  },
  {
-  "id": "0fac7fe433ff",
+  "id": "1b5b5a88baf9",
   "cat": "Airbag",
   "level": 3,
   "typ": "mc",
   "pkt": 3,
   "q": "Bei einer Inspektion fällt Ihnen auf, dass die Airbag-Kontrollleuchte beim Einschalten der Zündung gar nicht aufleuchtet. Wie ist der Befund zu beurteilen, und wie gehen Sie weiter vor?",
   "opts": [
-   "In Ordnung: Ein fehlerfreies System zeigt keinen Selbsttest an; die Leuchte geht nur bei einem Fehler an; kein weiteres Vorgehen nötig",
-   "Fehler: Der Selbsttest wird nicht angezeigt, ein Systemfehler würde nicht gemeldet; Fehlerspeicher von Airbag-Steuergerät und Kombiinstrument auslesen; Kunden über den Sicherheitsmangel informieren",
+   "In Ordnung: Ein fehlerfreies System zeigt keinen Selbsttest an; die Leuchte geht nur bei einem Fehler an; kein weiteres Vorgehen nötig, Kunden nur auf die nächste Inspektion hinweisen",
+   "Fehler: Ohne Selbsttest würde auch ein Systemfehler nicht gemeldet; Fehlerspeicher von Airbag-Steuergerät und Kombiinstrument auslesen; Kunden informieren",
    "In Ordnung, wenn der Beifahrerairbag abgeschaltet ist; nur die Anzeige „Beifahrerairbag aus“ kontrollieren; Kunden nicht weiter informieren",
    "Fehler, aber ohne Einfluss auf die Sicherheit; die Airbags funktionieren trotzdem; Leuchte bei der nächsten Inspektion tauschen"
   ],
   "correct": 1,
   "explain": "Der Befund ist ein Fehler: Der Selbsttest wird nicht angezeigt, ein Systemfehler würde dem Fahrer nicht gemeldet. Mögliche Ursachen sind Leuchte bzw. Anzeige im Kombiinstrument, Datenbus/Ansteuerung oder ein Steuergerät ohne Versorgung oder manipuliert. Fehlerspeicher von Airbag-Steuergerät und Kombiinstrument auslesen und den Kunden informieren. Die Kontrollleuchte ist Teil der Sicherheitsfunktion. Leuchtet sie nie, kann der Fahrer einen Ausfall des Airbag-Systems nicht erkennen – das ist auch bei der Hauptuntersuchung ein Mangel.",
   "src": "FW"
+ },
+ {
+  "id": "3327f2c4a073",
+  "cat": "Airbag",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "airbag-wickelfeder",
+  "nr": 1,
+  "q": "Lesen Sie den Auftrag. Warum spricht das gleichzeitige Auftreten aller drei Beanstandungen für eine gemeinsame Fehlerstelle?",
+  "opts": [
+   "Fahrerairbag, Hupe und Lenkradtasten sind alle über das drehbare Lenkrad und damit über die Wickelfeder angeschlossen",
+   "Fahrerairbag, Hupe und Lenkradtasten werden alle vom Airbag-Steuergerät versorgt und bei einem Fehler gemeinsam abgeschaltet",
+   "Das neue Lenkrad ist noch nicht codiert; eine fehlende Codierung meldet das Steuergerät als „Widerstand zu hoch“",
+   "Hupe und Lenkradtasten fallen absichtlich aus, damit der Fahrer den Airbag-Fehler bemerkt und die Werkstatt aufsucht"
+  ],
+  "correct": 0,
+  "explain": "Alle drei Funktionen müssen vom feststehenden Kabelbaum in das drehbare Lenkrad. Diese Verbindung stellt die Wickelfeder (Flachbandkabel) her. Fallen alle drei nach Arbeiten am Lenkrad gleichzeitig aus, ist sie die wahrscheinlichste gemeinsame Ursache. Das Airbag-Steuergerät schaltet Hupe und Tasten nicht ab, und eine fehlende Codierung wird nicht als Zündkreiswiderstand gemeldet.",
+  "src": "FW"
+ },
+ {
+  "id": "036fed5fa809",
+  "cat": "Airbag",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 6,
+  "situation": "airbag-wickelfeder",
+  "nr": 2,
+  "bild": "airbag-zuendkreise-schaltplan.svg",
+  "q": "Verschaffen Sie sich einen Überblick über den Schaltplan-Auszug. Ordnen Sie den Nummern im Bild die Bauteile zu.",
+  "paare": [
+   [
+    "①",
+    "Wickelfeder (Kontakteinheit)"
+   ],
+   [
+    "②",
+    "Steckverbindung unter dem Sitz"
+   ],
+   [
+    "③",
+    "Sicherung des Steuergeräts"
+   ],
+   [
+    "④",
+    "Airbag-Kontrollleuchte"
+   ],
+   [
+    "⑤",
+    "Upfront-Sensor"
+   ],
+   [
+    "⑥",
+    "Seitenaufprallsensor"
+   ]
+  ],
+  "ablenker": [
+   "Hupenrelais",
+   "Energiereserve (Kondensator)"
+  ],
+  "explain": "Die Wickelfeder ① liegt zwischen den Trennstellen A und B im Zündkreis des Fahrerairbags. Die Steckverbindung ② wird beim Sitzausbau getrennt. Die Sicherung ③ (F12) schützt die Versorgung über Klemme 15, die Kontrollleuchte ④ (H1) schaltet das Steuergerät über Pin 13. Die Satelliten ⑤ (vorn) und ⑥ (Tür) melden die Verzögerung.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "1447a88f7cbd",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "airbag-wickelfeder",
+  "nr": 3,
+  "bild": "airbag-zuendkreise-schaltplan.svg",
+  "q": "An welchen Pins des Airbag-Steuergeräts A1 liegen laut Schaltplan die beiden Zündkreise, die im Fehlerspeicher stehen?",
+  "opts": [
+   "Pin 1/2 (Stufe 1) und Pin 5/6 (Stufe 2)",
+   "Pin 3/4 (Stufe 1) und Pin 9/10 (Stufe 2)",
+   "Pin 1/2 (Stufe 1) und Pin 3/4 (Stufe 2)",
+   "Pin 11/12 (Stufe 1) und Pin 13/14 (Stufe 2)"
+  ],
+  "correct": 2,
+  "explain": "Beide Stufen des Fahrerairbags laufen über die Wickelfeder ①: Stufe 1 an Pin 1 und 2, Stufe 2 an Pin 3 und 4. Pin 5/6 ist der Beifahrerairbag, Pin 9/10 der Seitenairbag, Pin 11/12 die Versorgung (Klemme 15 und Masse).",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "baa2796614a8",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "airbag-wickelfeder",
+  "nr": 4,
+  "q": "Warum hat der Fahrerairbag dieses Fahrzeugs zwei getrennte Zündkreise?",
+  "opts": [
+   "Ein Zündkreis zündet den Airbag, der zweite dient als Reserve, falls die erste Zündpille beim Unfall versagt",
+   "Ein Zündkreis gehört zum Fahrerairbag, der zweite zum Knieairbag unter der Lenksäulenverkleidung",
+   "Ein Zündkreis zündet den Airbag, über den zweiten misst das Steuergerät den Gasdruck im Luftsack",
+   "Der Gasgenerator hat zwei Ladungen; je nach Unfallschwere zündet nur Stufe 1 oder zeitversetzt auch Stufe 2"
+  ],
+  "correct": 3,
+  "explain": "Der zweistufige Gasgenerator hat zwei getrennt zündbare Treibladungen mit je einer Zündpille. Bei leichterem Aufprall zündet nur Stufe 1 (weichere Füllung), bei schwerem zusätzlich zeitversetzt Stufe 2. Eine Reserve-Zündpille gibt es nicht, und ein Knieairbag wäre ein eigenes Bauteil mit eigenem Zündkreis.",
+  "src": "Netz: Patent US 6199903, FW"
+ },
+ {
+  "id": "9a8235955ef6",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 5,
+  "situation": "airbag-wickelfeder",
+  "nr": 5,
+  "q": "Sie wollen den Fehler mit einem Prüfadapter (Ersatzwiderstand) eingrenzen. Bringen Sie die Arbeitsschritte in die richtige Reihenfolge.",
+  "schritte": [
+   "Fehlerspeicher auslesen und Messwerte der Zündkreise notieren",
+   "Zündung aus, Batterie abklemmen, Wartezeit nach Herstellerangabe abwarten",
+   "Fahrerairbag ausbauen, Stecker an Trennstelle A trennen, Airbag mit der Polsterseite nach oben ablegen",
+   "Prüfadapter an Trennstelle A anstelle des Fahrerairbags anschließen",
+   "Batterie anklemmen (niemand im Fahrzeug), Zündung einschalten",
+   "Fehlerspeicher löschen, erneut auslesen und das Ergebnis bewerten"
+  ],
+  "explain": "Erst den Ist-Zustand sichern, dann das System stromlos machen und die Energiereserve entladen lassen. Der Prüfadapter ersetzt die Zündpille, so kann gefahrlos weiter geprüft werden. Erst wenn er angeschlossen ist, kommt wieder Spannung aufs System; das erneute Auslesen zeigt, ob der Fehler bleibt.",
+  "src": "Netz: Recherche ausbau-airbag, FW"
+ },
+ {
+  "id": "db66ed225796",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "airbag-wickelfeder",
+  "nr": 6,
+  "q": "Messwertblock im Diagnosetester: Fahrer Stufe 1 über 10 Ω (Messbereich überschritten), Fahrer Stufe 2 über 10 Ω, Beifahrer 2,3 Ω, Gurtstraffer Fahrer 2,1 Ω, Seitenairbag Fahrer 2,4 Ω – die letzten drei liegen im Sollbereich laut Herstellerangabe. Wie beurteilen Sie die Werte?",
+  "opts": [
+   "Beide Fahrer-Zündkreise haben einen Kurzschluss; die übrigen sind in Ordnung – der Fehler liegt im gemeinsamen Weg zum Fahrerairbag",
+   "Beide Fahrer-Zündkreise sind unterbrochen; die übrigen sind in Ordnung – der Fehler liegt im gemeinsamen Weg zum Fahrerairbag",
+   "Beide Fahrer-Zündkreise sind unterbrochen; weil auch die anderen Werte leicht schwanken, ist das Steuergerät defekt",
+   "Die Fahrer-Zündkreise sind in Ordnung, weil das Steuergerät bei zweistufigen Airbags immer so hohe Werte anzeigt"
+  ],
+  "correct": 1,
+  "explain": "Ein Widerstand über dem Messbereich bedeutet Unterbrechung oder sehr hohen Übergangswiderstand. Da beide Stufen gleichzeitig betroffen sind und die übrigen Zündkreise stimmen, liegt der Fehler auf der Strecke, die beide gemeinsam haben: Stecker, Wickelfeder, Leitung oder Airbag-Einheit. Ein Kurzschluss würde einen zu niedrigen Widerstand ergeben.",
+  "src": "FW (Messwerte als Beispiel)"
+ },
+ {
+  "id": "231c85183783",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "airbag-wickelfeder",
+  "nr": 7,
+  "bild": "airbag-zuendkreise-schaltplan.svg",
+  "q": "Mit dem Prüfadapter an Trennstelle A (anstelle des Fahrerairbags) meldet der Tester für beide Stufen weiterhin „Widerstand zu hoch“. Welche Schlussfolgerung ist richtig?",
+  "opts": [
+   "Der Fahrerairbag ist defekt, weil der Fehler mit dem Prüfadapter unverändert bleibt; er muss ersetzt werden",
+   "Der Prüfadapter ist sicher falsch angeschlossen, weil ein Ersatzwiderstand jeden Zündkreisfehler verschwinden lässt",
+   "Nicht der Fahrerairbag; der Fehler liegt zwischen A und Steuergerät (Wickelfeder, Stecker B, Leitung, Steuergerät)",
+   "Der Fehler liegt im Seitenairbag-Zündkreis, weil das Steuergerät die Fehler der Zündkreise vertauscht anzeigt"
+  ],
+  "correct": 2,
+  "explain": "Der Prüfadapter ersetzt die Zündpille durch einen passenden Widerstand. Bleibt der Fehler, ist der Airbag selbst nicht schuld – die Unterbrechung liegt davor, also zwischen Trennstelle A und Steuergerät. Wäre der Fehler mit Adapter verschwunden, läge er in der Airbag-Einheit oder ihrem Stecker.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "3d85aea6babb",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "airbag-wickelfeder",
+  "nr": 8,
+  "bild": "airbag-zuendkreise-schaltplan.svg",
+  "q": "Nun schließen Sie den Prüfadapter an Trennstelle B an (unterhalb der Wickelfeder, Lenksäulenseite). Der Tester zeigt für beide Stufen 2,3 Ω im Sollbereich. Wo liegt der Fehler?",
+  "opts": [
+   "Im Steuergerät A1, denn mit dem Adapter an B misst es nur noch seinen eigenen internen Prüfwiderstand",
+   "In der Leitung von B zum Steuergerät, denn auf diesem Abschnitt laufen beide Stufen gemeinsam",
+   "In der Airbag-Einheit, denn der Fehler verschwindet erst, wenn der Adapter weiter unten an B steckt",
+   "In der Wickelfeder ① samt ihren Anschlüssen, denn ab Trennstelle B zum Steuergerät ist alles in Ordnung"
+  ],
+  "correct": 3,
+  "explain": "Adapter an A: Fehler bleibt → Fehler zwischen A und Steuergerät. Adapter an B: Werte in Ordnung → Leitung B–Steuergerät und Steuergerät sind in Ordnung. Übrig bleibt der Abschnitt zwischen B und A, also die Wickelfeder. Dieses schrittweise Eingrenzen mit dem Ersatzwiderstand ersetzt das verbotene Messen an der Zündpille.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "9e0bf9853d96",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "situation": "airbag-wickelfeder",
+  "nr": 9,
+  "q": "Die ausgebaute Wickelfeder soll zusätzlich mit dem Ohmmeter auf Durchgang geprüft werden. Wann ist das zulässig?",
+  "opts": [
+   "Nur bei eingestecktem Fahrerairbag, weil sonst die offene Kurzschlussbrücke jede Messung verfälscht",
+   "Ausgebaut und ohne angeschlossenen Airbag bzw. Steuergerät – sie enthält selbst keine Pyrotechnik",
+   "Nie, weil die Wickelfeder selbst eine kleine Treibladung enthält und beim Messen auslösen kann",
+   "Nur bei eingeschalteter Zündung, damit das Steuergerät den Prüfstrom des Ohmmeters überwacht"
+  ],
+  "correct": 1,
+  "explain": "Die Wickelfeder ist ein aufgewickeltes Flachbandkabel ohne Treibladung. Ausgebaut und ohne angeschlossene Zündpille dürfen die einzelnen Bahnen nach Herstellerangabe auf Durchgang geprüft werden. Gefährlich wäre die Messung nur, wenn der Prüfstrom durch eine angeschlossene Zündpille fließen könnte.",
+  "src": "FW"
+ },
+ {
+  "id": "e62af851b52d",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "airbag-wickelfeder",
+  "nr": 10,
+  "q": "Bei der Sichtprüfung ist das Flachbandkabel in der Wickelfeder abgerissen. Was ist die wahrscheinlichste Ursache?",
+  "opts": [
+   "Der Prüfstrom beim Selbsttest hat das Flachbandkabel überlastet, weil das neue Lenkrad mehr Strom zieht",
+   "Die Wickelfeder wurde beim Tausch nicht in Mittelstellung eingebaut oder bei abgenommenem Lenkrad verdreht",
+   "Das neue Lenkrad ist schwerer; das Flachbandkabel reißt durch die höhere Fliehkraft beim schnellen Lenken",
+   "Die Batterie wurde beim Lenkradtausch nicht abgeklemmt, dadurch ist das Flachbandkabel durchgebrannt"
+  ],
+  "correct": 1,
+  "explain": "Das Flachbandkabel reicht nur für eine bestimmte Zahl Lenkradumdrehungen nach links und rechts. Wird die Wickelfeder außermittig eingebaut oder bei abgenommenem Lenkrad verdreht, reicht die Länge zu einer Seite nicht, und das Band reißt beim vollen Lenkeinschlag. Der Prüfstrom des Steuergeräts ist viel zu klein, um das Kabel zu beschädigen.",
+  "src": "Netz: kfz-dietrich (Wickelfeder nach Lenkradausbau), FW"
+ },
+ {
+  "id": "7e9177548ecc",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "situation": "airbag-wickelfeder",
+  "nr": 11,
+  "q": "Ordnen Sie zu, über welchen Weg die Bauteile mit dem Kabelbaum des Fahrzeugs verbunden sind.",
+  "paare": [
+   [
+    "Zündkreis Fahrerairbag Stufe 1",
+    "über die Wickelfeder"
+   ],
+   [
+    "Hupentaster im Lenkrad",
+    "über die Wickelfeder"
+   ],
+   [
+    "Multifunktionstasten im Lenkrad",
+    "über die Wickelfeder"
+   ],
+   [
+    "Zündkreis Seitenairbag in der Sitzlehne",
+    "über die Steckverbindung unter dem Sitz"
+   ],
+   [
+    "Zündkreis Beifahrerairbag",
+    "fest über den Kabelbaum der Instrumententafel"
+   ]
+  ],
+  "ablenker": [
+   "über die Kurzschlussbrücke"
+  ],
+  "explain": "Alles, was im drehbaren Lenkrad sitzt, braucht die Wickelfeder als Verbindung – deshalb fallen bei einem Riss Airbag, Hupe und Tasten gemeinsam aus. Der Seitenairbag im Sitz hat eine Trennstelle unter dem Sitz, der Beifahrerairbag sitzt fest in der Instrumententafel.",
+  "src": "FW"
+ },
+ {
+  "id": "6a30eeed8e52",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 5,
+  "situation": "airbag-wickelfeder",
+  "nr": 12,
+  "q": "Bringen Sie die Schritte für den Einbau der neuen Wickelfeder in die richtige Reihenfolge (das System ist stromlos, die Wartezeit ist abgelaufen).",
+  "schritte": [
+   "Prüfen, ob die Räder in Geradeausstellung stehen",
+   "Neue Wickelfeder mit Transportsicherung (Mittelstellung) aufsetzen und befestigen",
+   "Transportsicherung entfernen",
+   "Lenkrad nach Markierung aufsetzen, neue Lenkradschraube mit Drehmoment nach Herstellerangabe anziehen",
+   "Stecker des Fahrerairbags hörbar einrasten lassen und Airbag einbauen",
+   "Batterie anklemmen, dabei hält sich niemand im Fahrzeug auf"
+  ],
+  "explain": "Die Transportsicherung hält die neue Wickelfeder in Mittelstellung und kommt erst ab, wenn sie befestigt ist. Das Lenkrad nach Markierung aufsetzen, damit es bei Geradeausfahrt gerade steht. Der Airbag wird als Letztes eingesteckt, erst danach kommt die Batterie wieder dran.",
+  "src": "FW"
+ },
+ {
+  "id": "886f2d567e55",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "airbag-wickelfeder",
+  "nr": 13,
+  "q": "In diesem Fahrzeug ist der Lenkwinkelsensor mit der Wickelfeder zu einer Baueinheit zusammengefasst. Was ist nach dem Tausch zusätzlich nötig?",
+  "opts": [
+   "Nichts – der Lenkwinkelsensor liefert nur dem Radio ein Signal und braucht keinen Abgleich",
+   "Achsvermessung mit Einstellung der Spur, weil sich durch den Tausch die Spurstangen verstellt haben",
+   "Neucodierung des Airbag-Steuergeräts, weil der Lenkwinkelsensor die Airbags im Lenkrad auslöst",
+   "Grundeinstellung (Nullabgleich) des Lenkwinkelsensors mit dem Diagnosetester nach Herstellerangabe"
+  ],
+  "correct": 3,
+  "explain": "Der Lenkwinkelsensor meldet dem ESP den Lenkwinkel. Nach dem Tausch kennt er die Geradeausstellung nicht; ohne Grundeinstellung mit dem Tester leuchtet die ESP-Leuchte, oder das ESP greift falsch ein. Die Spur ändert sich durch den Tausch der Wickelfeder nicht.",
+  "src": "Netz: Recherche 3.6 (Lenkwinkelsensor anlernen), FW"
+ },
+ {
+  "id": "b2e51265748e",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "airbag-wickelfeder",
+  "nr": 14,
+  "q": "Welche Antwort nennt vier passende Abschlussprüfungen nach dem Tausch der Wickelfeder?",
+  "opts": [
+   "Fehlerspeicher auslesen und löschen; Selbsttest der Kontrollleuchte; Zündkreis Fahrerairbag am Stecker mit dem Multimeter nachmessen; Probefahrt",
+   "Fehlerspeicher auslesen und löschen; Hupe und Lenkradtasten prüfen; Airbag-Kontrollleuchte mit dem Tester dauerhaft ausschalten; Probefahrt",
+   "Fehlerspeicher auslesen, aber nicht löschen, damit der Kunde den Fehler sieht; Hupe und Lenkradtasten prüfen; Selbsttest der Kontrollleuchte; Probefahrt",
+   "Fehlerspeicher auslesen und löschen; Selbsttest der Kontrollleuchte; Hupe und Lenkradtasten prüfen; Probefahrt – Lenkrad steht bei Geradeausfahrt gerade"
+  ],
+  "correct": 3,
+  "explain": "Erst wenn der Fehlerspeicher leer bleibt und die Kontrollleuchte nach dem Selbsttest erlischt, ist der Airbag wieder einsatzbereit. Hupe und Tasten zeigen, dass alle Bahnen der Wickelfeder leiten. Bei der Probefahrt muss das Lenkrad gerade stehen, sonst stimmt die Mittelstellung nicht. Mit dem Multimeter wird am Zündkreis nie gemessen.",
+  "src": "FW"
+ },
+ {
+  "id": "015c3e575287",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "airbag-wickelfeder",
+  "nr": 15,
+  "q": "Der Kunde fragt, ob die andere Werkstatt den Fahrerairbag überhaupt ausbauen durfte. Welche Voraussetzung gilt nach Sprengstoffrecht?",
+  "opts": [
+   "Mitarbeiter mit Lehrgang zur eingeschränkten Fachkunde; der Betrieb zeigt die Tätigkeit mindestens zwei Wochen vorher bei der Behörde an",
+   "Mitarbeiter mit Lehrgang zur eingeschränkten Fachkunde; der Betrieb meldet jeden einzelnen Airbag-Ausbau spätestens am Folgetag der Behörde",
+   "Keine besondere Voraussetzung, weil P1-Gegenstände frei verkäuflich sind und jeder sie ein- und ausbauen darf",
+   "Eine Sprengberechtigung wie für Steinbrüche und eine jährliche Prüfung der Werkstatt durch den TÜV"
+  ],
+  "correct": 0,
+  "explain": "Für den Umgang mit Airbag- und Gurtstraffereinheiten der Kategorie P1 genügt eine eingeschränkte Fachkunde (Lehrgang von etwa sechs Stunden). Der Arbeitgeber muss die Tätigkeit nach § 14 Sprengstoffgesetz schriftlich anzeigen – mindestens zwei Wochen bevor die Arbeiten beginnen. Eine Meldung jedes einzelnen Ausbaus ist nicht vorgesehen.",
+  "src": "Netz: service.bremen.de (Anzeige § 14 SprengG)"
+ },
+ {
+  "id": "397292c4b189",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "situation": "airbag-wickelfeder",
+  "nr": 16,
+  "q": "Wie wird die alte, defekte Wickelfeder entsorgt?",
+  "opts": [
+   "Wie eine Airbag-Einheit als pyrotechnischer Gegenstand, weil sie zum Airbag-System gehört",
+   "Über den Hausmüll des Kunden, weil Kleinteile unter einem Kilogramm nicht getrennt entsorgt werden",
+   "Über den Elektronikschrott der Werkstatt, denn sie enthält keine Treibladung",
+   "Sie muss vor der Entsorgung mit dem Diagnosetester ausgelöst werden, damit sie ungefährlich ist"
+  ],
+  "correct": 2,
+  "explain": "Die Wickelfeder ist ein Leitungsbauteil ohne Pyrotechnik. Sie wird wie andere elektrische Altteile über den Elektronikschrott bzw. das Altteile-Recycling der Werkstatt entsorgt. Nur Airbag- und Gurtstraffereinheiten und andere pyrotechnische Teile fallen unter das Sprengstoffrecht.",
+  "src": "FW"
+ },
+ {
+  "id": "38c13c094cbc",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "airbag-wickelfeder",
+  "nr": 17,
+  "q": "Bei der Übergabe erklären Sie dem Kunden das Ergebnis. Welche Erklärung ist fachlich richtig und kundengerecht?",
+  "opts": [
+   "Ihr Fahrerairbag war defekt und wurde ersetzt; dass Hupe und Tasten jetzt gehen, ist ein Zufall, der mit dem Airbag nichts zu tun hat",
+   "Beim Lenkradtausch ist die Wickelfeder, die Kabelverbindung ins Lenkrad, gerissen; sie ist ersetzt, Airbag, Hupe und Tasten gehen wieder",
+   "Das Airbag-Steuergerät hatte nach dem Lenkradtausch die Codierung verloren; es wurde neu codiert, eine Reparatur war nicht nötig",
+   "Die Wickelfeder ist gerissen und wurde ersetzt; der Airbag ist jetzt aber für 24 Stunden gesperrt und darf erst morgen benutzt werden"
+  ],
+  "correct": 1,
+  "explain": "Die Erklärung nennt Ursache (Wickelfeder beim Lenkradtausch gerissen), Maßnahme (ersetzt) und Ergebnis (alles funktioniert wieder) in einfachen Worten. Falsche Angaben wie eine Sperrzeit oder ein angeblicher Codierfehler verunsichern den Kunden. Über die andere Werkstatt äußert man sich sachlich und ohne Schuldzuweisung.",
+  "src": "FW"
+ },
+ {
+  "id": "32f745993740",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "airbag-zuendkreise-schaltplan.svg",
+  "q": "Für den Zündkreis an Pin 5 und 6 meldet das Steuergerät „Widerstand zu niedrig“. Welches Bauteil ist laut Schaltplan betroffen, und welche Fehlerart liegt vor?",
+  "opts": [
+   "Beifahrerairbag; eine Zündkreisleitung ist unterbrochen oder der Stecker hat Übergangswiderstand",
+   "Beifahrerairbag; die beiden Zündkreisleitungen sind miteinander verbunden (Kurzschluss untereinander)",
+   "Gurtstraffer Fahrer; die beiden Zündkreisleitungen sind miteinander verbunden (Kurzschluss untereinander)",
+   "Seitenairbag; eine der Leitungen hat Verbindung zur Fahrzeugmasse, z. B. durch eine Scheuerstelle"
+  ],
+  "correct": 1,
+  "explain": "Laut Plan gehören Pin 5 und 6 zum Beifahrerairbag. „Zu niedrig“ heißt: Der Prüfstrom findet einen Weg an der Zündpille vorbei, z. B. über gequetschte Leitungen oder eine Kurzschlussbrücke, die bei gestecktem Stecker nicht abhebt. Eine Unterbrechung würde als „zu hoch“, eine Verbindung zur Karosserie als „Kurzschluss nach Masse“ gemeldet.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "0b64693bbbea",
+  "cat": "Airbag",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "airbag-zuendkreise-schaltplan.svg",
+  "q": "Nach dem Ausbau des Fahrersitzes meldet das Steuergerät einen Fehler im Zündkreis an Pin 9 und 10. Wo prüfen Sie laut Schaltplan zuerst?",
+  "opts": [
+   "An der Sicherung ③, weil sie den Seitenairbag-Zündkreis direkt mit Spannung versorgt",
+   "An der Wickelfeder ①, weil alle Zündkreise des Fahrers über sie laufen",
+   "An der Steckverbindung ② unter dem Sitz, die beim Sitzausbau getrennt wurde",
+   "Am Seitenaufprallsensor ⑥, weil er im selben Zündkreis wie der Seitenairbag liegt"
+  ],
+  "correct": 2,
+  "explain": "Pin 9/10 ist der Zündkreis des Seitenairbags, der über die Steckverbindung ② unter dem Sitz läuft. Sie wird beim Sitzausbau getrennt und danach oft nicht richtig verriegelt. Über die Wickelfeder laufen nur die Bauteile im Lenkrad, und der Sensor ⑥ hat eigene Pins (16/17).",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "5f88c87a1fb1",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "airbag-zuendkreise-schaltplan.svg",
+  "q": "Für den Zündkreis an Pin 7 und 8 meldet das Steuergerät „Kurzschluss nach Plus“. Was bedeutet das, und wie gehen Sie vor?",
+  "opts": [
+   "Die Zündpille des Gurtstraffers hat gezündet; den Gurtstraffer ohne weitere Prüfung ersetzen",
+   "Eine Leitung des Gurtstraffer-Zündkreises hat Verbindung zur Karosserie; alle Masseverbindungen der B-Säule reinigen und nachziehen",
+   "Eine Gurtstraffer-Leitung hat Verbindung zu einer Plus führenden Leitung; Leitungen bei abgesteckten Bauteilen prüfen",
+   "Die Sicherung ③ liefert zu viel Spannung; die Sicherung gegen eine mit höherer Stromstärke tauschen"
+  ],
+  "correct": 2,
+  "explain": "Pin 7/8 ist der Gurtstraffer. „Kurzschluss nach Plus“ heißt: An einer Zündkreisleitung liegt Fremdspannung, z. B. weil sie an einer Plusleitung durchgescheuert ist – gefährlich, weil so Strom durch die Zündpille fließen könnte. Gesucht wird nach Herstellerangabe bei abgesteckter Gurtstraffer-Einheit und abgestecktem Steuergerät. Eine Verbindung zur Karosserie würde als „Kurzschluss nach Masse“ gemeldet.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "f888a0309062",
+  "cat": "Airbag",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "bild": "airbag-zuendkreise-schaltplan.svg",
+  "q": "Ordnen Sie den Pins des Steuergeräts A1 im Schaltplan ihre Funktion zu.",
+  "paare": [
+   [
+    "Pin 11",
+    "Versorgung Klemme 15 über Sicherung F12"
+   ],
+   [
+    "Pin 12",
+    "Masse (Klemme 31)"
+   ],
+   [
+    "Pin 13",
+    "Ansteuerung der Kontrollleuchte H1"
+   ],
+   [
+    "Pin 14/15",
+    "Upfront-Sensor"
+   ],
+   [
+    "Pin 18/19",
+    "CAN-Bus (Datenleitung)"
+   ]
+  ],
+  "ablenker": [
+   "Zündkreis Fahrerairbag Stufe 2"
+  ],
+  "explain": "Pin 11 bekommt Klemme 15 (Zündung ein) über die Sicherung F12, Pin 12 liegt an Masse 31. Die Kontrollleuchte H1 hängt an Klemme 15 und wird vom Steuergerät über Pin 13 nach Masse geschaltet. Über CAN-H/CAN-L (Pin 18/19) tauscht das Steuergerät Daten aus, z. B. das Crashsignal und den Fehlerspeicher für den Tester.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "eb30814707f2",
+  "cat": "Airbag",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "bild": "airbag-stecker-kurzschlussbruecke.svg",
+  "q": "Ordnen Sie den Nummern im Bild der Airbag-Steckverbindung die Bauteile zu.",
+  "paare": [
+   [
+    "①",
+    "Zündpille im Gasgenerator"
+   ],
+   [
+    "②",
+    "Kontaktstift"
+   ],
+   [
+    "③",
+    "Kurzschlussbrücke"
+   ],
+   [
+    "④",
+    "Stecker der Leitungsseite mit Steg"
+   ],
+   [
+    "⑤",
+    "Verriegelung (Rastnase)"
+   ],
+   [
+    "⑥",
+    "Leitung zum Airbag-Steuergerät"
+   ]
+  ],
+  "ablenker": [
+   "Prüfadapter (Ersatzwiderstand)"
+  ],
+  "explain": "In Bild B liegt die Kurzschlussbrücke ③ an beiden Kontaktstiften ② an und schließt die Zündpille ① kurz. In Bild A drückt der Steg am Stecker ④ die Brücke weg, die Verriegelung ⑤ hält den Stecker fest, und über die Leitung ⑥ kann das Steuergerät die Zündpille prüfen und im Ernstfall bestromen.",
+  "src": "Eigene Zeichnung"
+ },
+ {
+  "id": "3e9092991fa4",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "airbag-stecker-kurzschlussbruecke.svg",
+  "q": "In welchem Zustand im Bild ist die Zündpille kurzgeschlossen, und welchen Zweck hat das?",
+  "opts": [
+   "In A; so fließt der Prüfstrom des Steuergeräts an der Zündpille vorbei und kann sie nicht erwärmen",
+   "In B; Fremdspannung oder statische Aufladung an den offenen Kontakten kann keinen Zündstrom erzeugen",
+   "In B; das Steuergerät erkennt über die Brücke sofort, dass der Stecker abgezogen wurde",
+   "In A und B; die Brücke liegt immer an und wird erst beim Auslösen durch den steigenden Gasdruck geöffnet"
+  ],
+  "correct": 1,
+  "explain": "Bei abgezogenem Stecker (B) verbindet die Federbrücke ③ beide Kontaktstifte. Beide Anschlüsse der Zündpille liegen dann auf gleichem Potenzial – Fremdspannung oder ein Funke an den Kontakten treibt keinen Strom durch die Zündpille. Im gesteckten Zustand (A) hebt der Steg die Brücke ab, sonst könnte das Steuergerät weder prüfen noch zünden. Einen abgezogenen Stecker erkennt das Steuergerät an der Unterbrechung, nicht über die Brücke.",
+  "src": "Eigene Zeichnung, Netz: Recherche 3.6"
+ },
+ {
+  "id": "d3ec8016084b",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "airbag-stecker-kurzschlussbruecke.svg",
+  "q": "Der Stecker ist eingesteckt, aber der Steg am Stecker ④ ist abgebrochen, sodass die Kurzschlussbrücke ③ an den Kontaktstiften anliegen bleibt. Was meldet das Steuergerät?",
+  "opts": [
+   "„Widerstand zu hoch“, weil die Brücke den Stromweg zur Zündpille unterbricht",
+   "„Kurzschluss nach Masse“, weil die Brücke den Zündkreis mit dem Gasgenerator-Gehäuse verbindet",
+   "Keinen Fehler, weil die Zündpille trotz anliegender Brücke im Sollbereich gemessen wird",
+   "„Widerstand zu niedrig“, weil es nur noch die Brücke statt der Zündpille misst"
+  ],
+  "correct": 3,
+  "explain": "Die Brücke liegt parallel zur Zündpille und hat fast keinen Widerstand. Der Prüfstrom fließt über die Brücke, das Steuergerät misst deutlich weniger als den Sollwert und meldet „zu niedrig“. Im Ernstfall würde auch der Zündstrom über die Brücke fließen – der Airbag würde nicht auslösen. Der Stecker ist nach Herstellerangabe instand zu setzen bzw. zu ersetzen.",
+  "src": "Eigene Zeichnung, FW"
+ },
+ {
+  "id": "9a95bc54e898",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "airbag-stecker-kurzschlussbruecke.svg",
+  "q": "Warum muss die Verriegelung ⑤ nach dem Einstecken hörbar einrasten?",
+  "opts": [
+   "Damit die Kurzschlussbrücke dauerhaft an den Kontaktstiften anliegt",
+   "Damit sich der Stecker durch Vibration oder Zug an der Leitung nicht löst",
+   "Damit das Steuergerät nach dem Einrasten den Fehlerspeicher selbst löscht",
+   "Damit die Zündpille über die Rastnase zusätzlich mit Masse verbunden ist"
+  ],
+  "correct": 1,
+  "explain": "Nur ein verriegelter Stecker sitzt sicher. Löst er sich teilweise, steigt der Übergangswiderstand (Fehler „zu hoch“), oder die Brücke legt sich wieder an (Fehler „zu niedrig“). Beides schaltet die Kontrollleuchte ein und kann im Ernstfall die Auslösung verhindern. Viele Stecker haben zusätzlich eine zweite Sicherung (Sekundärverriegelung).",
+  "src": "Eigene Zeichnung, FW"
+ },
+ {
+  "id": "da184add4bfe",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 6,
+  "bild": "airbag-crashablauf.svg",
+  "q": "Das Diagramm zeigt den Ablauf eines Frontaufpralls ohne Zeitmaßstab. Ordnen Sie den Zeitpunkten ① bis ⑥ das Ereignis zu.",
+  "paare": [
+   [
+    "①",
+    "Aufprall beginnt, die Sensoren erfassen die Verzögerung"
+   ],
+   [
+    "②",
+    "Steuergerät entscheidet; Gurtstraffer und Airbag Stufe 1 werden gezündet"
+   ],
+   [
+    "③",
+    "Bei schwerem Aufprall zündet zeitversetzt Stufe 2"
+   ],
+   [
+    "④",
+    "Airbag ist voll aufgeblasen"
+   ],
+   [
+    "⑤",
+    "Insasse taucht ein, Gas strömt über Ausströmöffnungen ab"
+   ],
+   [
+    "⑥",
+    "Airbag ist weitgehend entleert"
+   ]
+  ],
+  "ablenker": [
+   "Kontrollleuchte führt den Selbsttest durch"
+  ],
+  "explain": "Bis ② steigt die Füllkurve nicht: Erst nach der Plausibilitätsprüfung wird gezündet. Der Airbag muss voll sein (④), bevor die Vorverlagerung des Insassen ihn erreicht (⑤). Danach fällt die Füllung, weil Gas abströmt – der Insasse wird weich abgefangen, und die Sicht wird wieder frei (⑥). Genaue Zeiten hängen vom Fahrzeug ab.",
+  "src": "Eigenes Diagramm, Netz: Recherche ausbau-airbag (nur Reihenfolge)"
+ },
+ {
+  "id": "fd610d268458",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "airbag-crashablauf.svg",
+  "q": "Warum muss im Diagramm Zeitpunkt ④ vor Zeitpunkt ⑤ liegen?",
+  "opts": [
+   "Der Airbag muss voll sein, bevor der Insasse ankommt; sonst trifft ihn der noch aufgehende Airbag mit Wucht",
+   "Der Insasse muss den Airbag erst berühren, damit der Gasgenerator über den Druck den zweiten Zündkreis freigibt",
+   "Das Steuergerät braucht die Zeit zwischen ④ und ⑤, um die Crashdaten im Fehlerspeicher abzulegen",
+   "Der Gurtstraffer darf erst zünden, wenn der Airbag voll ist, sonst reißt das Gurtband am Airbag ein"
+  ],
+  "correct": 0,
+  "explain": "Ein Airbag, der sich noch entfaltet, wenn der Insasse ihn erreicht, schlägt mit hoher Geschwindigkeit gegen Kopf und Brust. Deshalb muss die Füllkurve ihr Maximum erreichen, bevor die Vorverlagerung des Insassen ihn trifft. Auch darum ist der richtige Sitzabstand zum Lenkrad wichtig.",
+  "src": "Eigenes Diagramm, FW"
+ },
+ {
+  "id": "12a83bd08861",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "airbag-crashablauf.svg",
+  "q": "Zeitpunkt ③ tritt nicht bei jedem Aufprall auf. Wovon hängt es ab, ob dort etwas gezündet wird?",
+  "opts": [
+   "Von der Außentemperatur, weil der Gasgenerator bei Kälte grundsätzlich beide Stufen gleichzeitig braucht",
+   "Von der Unfallschwere und – je nach System – vom Gurtstatus bzw. der Sitzposition; dann zündet Stufe 2",
+   "Davon, ob die Kontrollleuchte beim letzten Selbsttest geleuchtet hat und ein Fehler gespeichert ist",
+   "Davon, ob der Beifahrersitz belegt ist; ohne Beifahrer zündet beim Fahrerairbag immer nur Stufe 2"
+  ],
+  "correct": 1,
+  "explain": "③ ist die zeitversetzte Zündung der zweiten Stufe eines zweistufigen Gasgenerators. Das Steuergerät entscheidet anhand der Unfallschwere und – je nach System – weiterer Informationen wie Gurtschloss-Status oder Sitzposition. Bei leichterem Aufprall bleibt Stufe 2 ungezündet; sie ist danach noch scharf und bei der Entsorgung zu beachten.",
+  "src": "Eigenes Diagramm, Netz: Patent US 6199903"
+ },
+ {
+  "id": "f19b8cbc7a73",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "airbag-crashablauf.svg",
+  "q": "Nach Zeitpunkt ⑤ fällt die Füllkurve deutlich ab. Was ist der Grund?",
+  "opts": [
+   "Der Luftsack ist beim Eintauchen des Insassen geplatzt, weil der Gasdruck im Sack zu hoch war",
+   "Das Steuergerät saugt das Gas über die Zündkreisleitungen zurück in den Gasgenerator",
+   "Das Gas kühlt in kurzer Zeit ab und wird dabei flüssig, deshalb sinkt das Volumen",
+   "Das Gas strömt gezielt über Ausströmöffnungen ab, damit der Insasse weich abgefangen wird"
+  ],
+  "correct": 3,
+  "explain": "Der Airbag ist kein Luftkissen, das den Insassen zurückfedert, sondern ein Dämpfer: Über Ausströmöffnungen (teils auch durch das Gewebe) entweicht das Gas, während der Insasse eintaucht. So wird die Bewegungsenergie gleichmäßig abgebaut. Ein geplatzter Sack würde den Insassen nicht mehr abfangen.",
+  "src": "Eigenes Diagramm, FW"
+ },
+ {
+  "id": "084407e5e8be",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Welche Aussage zur eingeschränkten Fachkunde für Airbag- und Gurtstraffereinheiten (Kategorie P1) ist richtig?",
+  "opts": [
+   "Sie berechtigt dazu, ausgebaute Einheiten in der Werkstatt zu zerlegen und die Treibladung getrennt zu entsorgen",
+   "Ein Lehrgang von einigen Stunden berechtigt zum Ein- und Ausbau und zum Auslösen im eingebauten Zustand",
+   "Sie gilt nur für Gurtstraffer; für Airbags ist zusätzlich eine Erlaubnis als Sprengmeister nötig",
+   "Sie wird automatisch mit dem Gesellenbrief erworben und braucht deshalb keinen eigenen Nachweis"
+  ],
+  "correct": 1,
+  "explain": "Die eingeschränkte Fachkunde erwirbt man in einem Lehrgang (rund sechs Stunden) mit Recht, Aufbau, Gefahren, Lagerung, Transport, Entsorgung und Praxisteil. Sie berechtigt zum Ein- und Ausbau von P1-Einheiten und zu ihrer Entsorgung durch Auslösen im eingebauten Zustand. Zerlegen ist verboten, und der Nachweis wird eigens geführt.",
+  "src": "Netz: service.bremen.de (eingeschränkte Fachkunde)"
+ },
+ {
+  "id": "5cda3d019eb9",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Wonach richtet sich, wie viele Airbag- und Gurtstraffereinheiten eine Werkstatt im Arbeitsraum bzw. im Lagerraum ohne Lagergenehmigung aufbewahren darf?",
+  "opts": [
+   "Nach der Stückzahl: höchstens ein Airbag je Mitarbeiter mit eingeschränkter Fachkunde im Betrieb",
+   "Nach der Netto-Explosivstoffmasse (NEM) der Einheiten laut Sprengstofflager-Richtlinie",
+   "Nach dem Gesamtgewicht der Einheiten einschließlich Verpackung und Lenkrad",
+   "Nach der Zahl der Fahrzeuge, die gerade in der Werkstatt stehen"
+  ],
+  "correct": 1,
+  "explain": "Maßgeblich ist die Netto-Explosivstoffmasse, also die Masse der Treibladungen – nicht Stückzahl oder Gesamtgewicht. Behörden nennen ohne Lagergenehmigung bis 10 kg NEM im Arbeitsraum (in einem geeigneten Schrank) und bis 100 kg NEM in einem Lagerraum. Einzelheiten regeln die Sprengstofflager-Richtlinie (LR 240) und die zuständige Behörde.",
+  "src": "Netz: service.bremen.de, KomNet NRW"
+ },
+ {
+  "id": "780878b053ba",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Eine nicht ausgelöste Airbag-Einheit soll als Gewährleistungsteil an den Hersteller zurückgehen. Wie wird sie versandt?",
+  "opts": [
+   "Lose im Karton mit anderen Altteilen, weil eine nicht ausgelöste Einheit ungefährlich ist",
+   "In der Verpackung des Neuteils bzw. zugelassener Verpackung, gekennzeichnet als Gefahrgut",
+   "Erst nach dem Auslösen in der Werkstatt, weil scharfe Einheiten nicht versandt werden dürfen",
+   "Nur mit eingestecktem Prüfadapter, damit die Zündpille unterwegs kurzgeschlossen ist"
+  ],
+  "correct": 1,
+  "explain": "Nicht ausgelöste Einheiten sind Gefahrgut. Man nutzt die Verpackung des Neuteils bzw. eine zugelassene Verpackung und sichert und kennzeichnet sie nach Gefahrgutrecht und Herstellervorgabe. Für die Gewährleistung muss das Teil unausgelöst und unbeschädigt ankommen; ein Prüfadapter gehört nicht an die Einheit.",
+  "src": "Netz: Recherche 3.4, FW"
+ },
+ {
+  "id": "3f40e6b9d878",
+  "cat": "Airbag",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Was macht das eCall-System nach einem schweren Unfall?",
+  "opts": [
+   "Es sperrt den Motorstart, bis die Werkstatt den Crash-Eintrag im Airbag-Steuergerät gelöscht hat",
+   "Es setzt automatisch einen Notruf an die 112 ab und übermittelt dabei unter anderem den Standort",
+   "Es meldet den Unfall automatisch an die Versicherung und den Fahrzeughersteller, nicht an Retter",
+   "Es löst die Airbags aus, wenn das Airbag-Steuergerät beim Aufprall keinen Strom mehr hat"
+  ],
+  "correct": 1,
+  "explain": "eCall wählt bei einem schweren Unfall (erkannt z. B. über die Airbag-Auslösung) automatisch die 112, sendet einen Datensatz mit Standort, Fahrtrichtung und Zeitpunkt und baut eine Sprechverbindung auf. Man kann den Notruf auch per Taste auslösen. Mit dem Zünden der Airbags hat eCall nichts zu tun.",
+  "src": "Netz: VO (EU) 2015/758, ptolemus"
+ },
+ {
+  "id": "280c7381176a",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Für welche Fahrzeuge ist eCall in der EU vorgeschrieben?",
+  "opts": [
+   "Für alle zugelassenen Pkw; ältere Fahrzeuge mussten bis 2020 nachgerüstet werden",
+   "Nur für Fahrzeuge mit mehr als sechs Airbags, unabhängig vom Baujahr",
+   "Nur für Elektro- und Hybridfahrzeuge wegen der Hochvolt-Gefahr für Retter",
+   "Für Pkw und leichte Nutzfahrzeuge mit neuer Typgenehmigung ab dem 31.03.2018"
+  ],
+  "correct": 3,
+  "explain": "Seit dem 31. März 2018 brauchen neu typgenehmigte Pkw (M1) und leichte Nutzfahrzeuge (N1) eCall (Verordnung (EU) 2015/758). Fahrzeugtypen, die vorher genehmigt wurden, müssen nicht nachgerüstet werden.",
+  "src": "Netz: VO (EU) 2015/758, eurotransport"
+ },
+ {
+  "id": "80cfaec869f3",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Nach einer Notbremsung ohne Unfall berichtet ein Kunde, der Gurt habe sich kurz stark gestrafft und danach wieder gelockert. Was ist zu tun?",
+  "opts": [
+   "Gurtstraffer ersetzen, weil sich die Treibladung bei der Notbremsung verbraucht hat",
+   "Airbag-Steuergerät ersetzen, weil es einen Crash gespeichert hat und gesperrt ist",
+   "Nichts, sofern kein Fehler gespeichert ist – ein reversibler Gurtstraffer hat gewirkt",
+   "Gurt und Gurtschloss ersetzen, weil der Gurtkraftbegrenzer das Gurtband gedehnt hat"
+  ],
+  "correct": 2,
+  "explain": "Reversible Gurtstraffer ziehen den Gurt mit einem Elektromotor straff, wenn das System eine kritische Fahrsituation erkennt (Notbremsung, Schleudern). Kommt es nicht zum Unfall, geben sie das Gurtband wieder frei und sind sofort wieder einsatzbereit. Der pyrotechnische Straffer hat nicht gezündet.",
+  "src": "Netz: Euro NCAP PRE-SAFE, Polestar-Handbuch"
+ },
+ {
+  "id": "48ae3a17ebe0",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Nach dem Wechsel des Beifahrersitzbezugs leuchtet die Anzeige „Beifahrerairbag aus“, obwohl ein Erwachsener auf dem Sitz sitzt. Wie gehen Sie vor?",
+  "opts": [
+   "Fehlerspeicher auslesen; Sensormatte und Stecker der Sitzbelegungserkennung prüfen; ggf. nach Herstellerangabe abgleichen",
+   "Beifahrerairbag-Stecker bei eingeschalteter Zündung abziehen und wieder aufstecken, damit das Steuergerät ihn neu erkennt",
+   "Nichts tun, die Anzeige zeigt nur, dass der Beifahrerairbag funktionsbereit ist; Kunden darüber informieren",
+   "Fehlerspeicher auslesen; Beifahrerairbag ersetzen, weil er beim Bezugwechsel einen Schlag abbekommen hat"
+  ],
+  "correct": 0,
+  "explain": "Die Sitzbelegungserkennung (meist eine Sensormatte unter dem Bezug) meldet, ob und wie der Sitz belegt ist. Wurde sie beim Bezugwechsel geknickt, verschoben oder nicht angesteckt, erkennt das System keinen Erwachsenen und schaltet den Beifahrerairbag ab. Manche Systeme müssen nach Arbeiten am Sitz mit dem Tester abgeglichen werden. Airbag-Stecker nie bei eingeschalteter Zündung trennen.",
+  "src": "Netz: kfz-dietrich (Sitzbelegungsmatte), FW"
+ },
+ {
+  "id": "125f810b1bf2",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Nach einem Unfall mit ausgelösten Airbags meldet das Steuergerät einen gespeicherten Crash. Wie ist damit umzugehen?",
+  "opts": [
+   "Den Eintrag einfach mit dem Diagnosetester löschen, danach ist das Steuergerät wieder voll einsatzbereit",
+   "Die Batterie für mindestens eine Stunde abklemmen, dann löscht sich der Crash-Eintrag selbst",
+   "Crashdaten sind dauerhaft gespeichert; das Steuergerät nach Herstellerangabe ersetzen und codieren",
+   "Das Steuergerät weiterverwenden und nur die Kontrollleuchte im Kombiinstrument abklemmen"
+  ],
+  "correct": 2,
+  "explain": "Nach einer Auslösung speichert das Steuergerät die Crashdaten so, dass sie sich mit dem Tester nicht löschen lassen. Es ist nach Herstellerangabe zu ersetzen und das neue Gerät zu codieren. Eine abgeklemmte Kontrollleuchte wäre eine gefährliche Manipulation und ein Mangel bei der Hauptuntersuchung.",
+  "src": "Netz: kfz-dietrich (Crashdaten), FW"
+ },
+ {
+  "id": "818ffe91da5e",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Nach einem leichten Parkrempler vorn ohne Auslösung leuchtet die Airbag-Leuchte. Fehlerspeicher: „Upfront-Sensor links – Signal unplausibel“. Was ist zu tun?",
+  "opts": [
+   "Fehler löschen; ein Satellitensensor kann nur durch Feuchtigkeit ausfallen, nie durch einen Aufprall",
+   "Alle Frontairbags vorsorglich ersetzen, weil ein Teil der Treibladung gezündet haben kann",
+   "Sensor, Halter und Leitung vorn prüfen; beschädigte Teile ersetzen, ggf. anlernen, Fehler löschen",
+   "Airbag-Steuergerät ersetzen, weil der Upfront-Sensor im Steuergerät eingebaut ist"
+  ],
+  "correct": 2,
+  "explain": "Upfront-Sensoren sitzen ganz vorn im Knautschbereich und können schon bei leichten Remplern verschoben oder beschädigt werden; ein verbogener Halter verfälscht das Signal. Sensor, Halter und Leitung prüfen, Defektes ersetzen, nach Herstellerangabe anlernen und den Fehlerspeicher kontrollieren. Die Airbags haben nicht gezündet.",
+  "src": "Netz: kfz-dietrich (Crashsensor nach Rempler), FW"
+ },
+ {
+  "id": "22ad510eba6c",
+  "cat": "Airbag",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Die Airbag-Kontrollleuchte eines Kundenfahrzeugs leuchtet dauernd. Was bedeutet das für die Hauptuntersuchung?",
+  "opts": [
+   "Nichts, die HU prüft nur Bremsen, Licht, Lenkung, Fahrwerk und Abgase, nicht die Airbags",
+   "Es ist nur ein Hinweis, weil die Airbags trotz Fehler sicher auslösen",
+   "Es ist ein Mangel, weil die Funktion des Rückhaltesystems nicht sichergestellt ist",
+   "Es ist erst ein Mangel, wenn zusätzlich auch die Gurtwarnung im Kombiinstrument ausgefallen ist"
+  ],
+  "correct": 2,
+  "explain": "Eine dauernd leuchtende Airbag-Leuchte zeigt einen erkannten Fehler – Teile des Rückhaltesystems können ausfallen. Bei der HU wird die Kontrollleuchte geprüft; leuchtet sie dauernd oder beim Selbsttest gar nicht, ist das ein Mangel.",
+  "src": "Netz: kfz-dietrich (HU-Mangel)"
+ },
+ {
+  "id": "ff20fc086a4e",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "q": "Ordnen Sie den Sensoren und Schaltern des Rückhaltesystems ihre Messgröße bzw. Aufgabe zu.",
+  "paare": [
+   [
+    "Beschleunigungssensor im Steuergerät",
+    "Eigene Verzögerungsmessung zur Plausibilitätsprüfung"
+   ],
+   [
+    "Upfront-Sensor",
+    "Frühe Erkennung eines Frontaufpralls im Knautschbereich"
+   ],
+   [
+    "Drucksensor in der Tür",
+    "Schneller Druckanstieg im Türhohlraum beim Seitenaufprall"
+   ],
+   [
+    "Sitzbelegungsmatte",
+    "Belegung des Beifahrersitzes"
+   ],
+   [
+    "Gurtschlossschalter",
+    "Gurt angelegt oder nicht"
+   ]
+  ],
+  "ablenker": [
+   "Abstand zum vorausfahrenden Fahrzeug"
+  ],
+  "explain": "Das Steuergerät löst nur aus, wenn sein eigener Sensor die Meldung eines Satelliten bestätigt. Upfront- und Türdrucksensoren melden den Aufprall früh vom Ort des Geschehens. Sitzbelegung und Gurtstatus beeinflussen, ob und mit welcher Stufe gezündet wird. Den Abstand misst das Radar der Fahrerassistenz, nicht das Airbag-System.",
+  "src": "Netz: Recherche 3.4, FW"
+ },
+ {
+  "id": "9cbd711e3ae1",
+  "cat": "Airbag",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Im Schaltplan stehen Kennbuchstaben vor den Bauteilnummern (z. B. A1, F12, H1). Ordnen Sie die Kennbuchstaben zu.",
+  "paare": [
+   [
+    "A",
+    "Steuergerät"
+   ],
+   [
+    "B",
+    "Sensor"
+   ],
+   [
+    "F",
+    "Sicherung"
+   ],
+   [
+    "H",
+    "Leuchte"
+   ],
+   [
+    "X",
+    "Steckverbindung"
+   ]
+  ],
+  "ablenker": [
+   "Motor"
+  ],
+  "explain": "Kennbuchstaben nach Norm: A Baugruppe bzw. Steuergerät, B Sensor (Messwandler), F Schutzeinrichtung bzw. Sicherung, H Meldeeinrichtung bzw. Leuchte, X Steckverbindung oder Klemme. M steht für Motor. Im Airbag-Schaltplan sind das z. B. A1 (Steuergerät), F12 (Sicherung) und H1 (Kontrollleuchte).",
+  "src": "FW (Bauteilkennzeichnung)"
+ },
+ {
+  "id": "447aead4f602",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Sie grenzen einen Zündkreisfehler mit dem Prüfadapter (Ersatzwiderstand) am Bauteilstecker ein. Ordnen Sie dem Befund die richtige Schlussfolgerung zu.",
+  "paare": [
+   [
+    "Fehler verschwindet mit Prüfadapter",
+    "Ursache in der Airbag-Einheit bzw. ihrem Stecker"
+   ],
+   [
+    "Fehler bleibt mit Prüfadapter",
+    "Ursache in Leitung, Zwischenstecker oder Steuergerät"
+   ],
+   [
+    "Fehler tritt nur beim Lenken auf",
+    "Wickelfeder prüfen"
+   ],
+   [
+    "Fehler tritt nur beim Verstellen des Sitzes auf",
+    "Leitung und Stecker unter dem Sitz prüfen"
+   ]
+  ],
+  "ablenker": [
+   "Batterie laden und Fehler ignorieren"
+  ],
+  "explain": "Der Prüfadapter ersetzt die Zündpille durch einen passenden Widerstand. Ändert sich das Ergebnis, lag es am ersetzten Teil; bleibt es, liegt der Fehler davor. Fehler, die nur bei Bewegung auftreten, deuten auf bewegte Leitungen hin – im Lenkrad die Wickelfeder, am Sitz die Leitung zum Sitzstecker.",
+  "src": "FW"
+ },
+ {
+  "id": "a1e6844e3244",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 5,
+  "q": "Nach einem Frontaufprall mit ausgelösten Frontairbags und Gurtstraffern soll das Rückhaltesystem instand gesetzt werden. Bringen Sie die Arbeitsschritte in die richtige Reihenfolge.",
+  "schritte": [
+   "Zündung aus, Batterie abklemmen, Wartezeit nach Herstellerangabe abwarten",
+   "Ausgelöste Airbag-Einheiten, Gurtstraffer und Steuergerät nach Herstellerangabe ausbauen",
+   "Neue Teile einbauen, alle Stecker einrasten und verriegeln",
+   "Batterie anklemmen, dabei hält sich niemand im Fahrzeug auf",
+   "Neues Steuergerät mit dem Diagnosetester codieren",
+   "Fehlerspeicher auslesen und löschen, Selbsttest der Kontrollleuchte prüfen"
+  ],
+  "explain": "Auch beim Ausbau ausgelöster Teile wird erst stromlos gemacht und gewartet – nicht gezündete Stufen oder andere Einheiten können noch scharf sein. Codieren geht nur mit Spannung, also nach dem Anklemmen. Zum Schluss zeigen Fehlerspeicher und Selbsttest, dass das System alle Teile erkennt.",
+  "src": "Netz: Recherche 3.6, FW"
+ },
+ {
+  "id": "721103f9b1c9",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Eine Kurzschlussbrücke mit 0,05 Ω liegt fälschlich parallel zu einer Zündpille mit 2,0 Ω. Welchen Gesamtwiderstand misst das Steuergerät?",
+  "opts": [
+   "2,050 Ω",
+   "1,025 Ω",
+   "0,049 Ω",
+   "0,100 Ω"
+  ],
+  "correct": 2,
+  "explain": "Parallelschaltung: R = (R1 × R2) ÷ (R1 + R2) = (2,0 Ω × 0,05 Ω) ÷ 2,05 Ω ≈ 0,049 Ω. Der Gesamtwiderstand ist kleiner als der kleinste Einzelwiderstand – das Steuergerät meldet „Widerstand zu niedrig“. 2,050 Ω wäre die Reihenschaltung, 1,025 Ω der Mittelwert und 0,100 Ω nur das Produkt ohne Division.",
+  "src": "FW"
+ },
+ {
+  "id": "928af021aa15",
+  "cat": "Airbag",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Manche Fahrzeuge haben einen Center-Airbag zwischen den Vordersitzen. Wovor schützt er?",
+  "opts": [
+   "Dass die Knie beim Frontaufprall gegen die Mittelkonsole und den Wählhebel schlagen",
+   "Dass Gegenstände aus der Mittelkonsole bei einem Frontaufprall nach vorn fliegen",
+   "Dass die Fondpassagiere beim Frontaufprall gegen die Vordersitzlehnen prallen",
+   "Dass Fahrer und Beifahrer beim Seitenaufprall seitlich gegeneinander prallen"
+  ],
+  "correct": 3,
+  "explain": "Der Center-Airbag entfaltet sich zwischen den Vordersitzen. Er hält bei einem Seitenaufprall – besonders von der anderen Fahrzeugseite – den Insassen auf seinem Platz und verhindert, dass Fahrer und Beifahrer zusammenstoßen. Wie alle Airbags ist er ein pyrotechnischer Gegenstand der Kategorie P1.",
+  "src": "FW"
+ },
+ {
+  "id": "0755ceed3575",
+  "cat": "Airbag",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Warum werden Airbags auch als „Zusatz-Rückhaltesystem“ (SRS) bezeichnet?",
+  "opts": [
+   "Weil sie den Sicherheitsgurt ersetzen, wenn der Insasse nicht angeschnallt ist",
+   "Weil sie nur zusammen mit dem angelegten Gurt richtig schützen und ihn ergänzen",
+   "Weil sie zusätzlich zur Knautschzone eingebaut werden müssen, wenn diese zu kurz ist",
+   "Weil sie nach einem Unfall zusätzlich die Türen entriegeln und den Notruf absetzen"
+  ],
+  "correct": 1,
+  "explain": "Der Gurt hält den Insassen in Position, der Airbag fängt Kopf und Oberkörper zusätzlich ab. Ohne Gurt fliegt der Insasse zu früh und zu schnell in den sich noch entfaltenden Airbag – das kann schwere Verletzungen verursachen. Deshalb heißt er Zusatz-Rückhaltesystem.",
+  "src": "FW"
+ },
+ {
+  "id": "ab6c7e879a19",
+  "cat": "Airbag",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "q": "Bei einer Unfallinstandsetzung soll an der B-Säule geschweißt werden. Welche Antwort nennt richtige Schutzmaßnahmen für das Airbag-System?",
+  "opts": [
+   "Batterie angeklemmt lassen, damit das Steuergerät den Zündkreis überwacht; Masseklemme nah an der Schweißstelle; Airbag-Einheiten mit nassem Tuch abdecken",
+   "Batterie abklemmen; Masseklemme am Airbag-Steuergerät anbringen, weil es gut geerdet ist; Airbag- und Gurtstraffereinheiten in der Nähe ausbauen",
+   "Batterie abklemmen; Steuergeräte nach Herstellerangabe abstecken; Masseklemme nah an der Schweißstelle; Airbag- und Gurtstraffereinheiten in der Nähe ausbauen",
+   "Batterie abklemmen; Steuergeräte nach Herstellerangabe abstecken; Masseklemme nah an der Schweißstelle; Gurtstraffer in der B-Säule mit Fett gegen Funken schützen"
+  ],
+  "correct": 2,
+  "explain": "Schweißströme und Hitze können Zündpillen auslösen und Steuergeräte zerstören. Deshalb Batterie ab, Steuergeräte nach Herstellerangabe trennen, die Masseklemme nah an der Schweißstelle setzen (kurzer Stromweg) und pyrotechnische Teile in der Nähe – hier Gurtstraffer, Seiten- und Kopfairbag – vorher ausbauen. Fett und nasse Tücher schützen nicht; eine Masseklemme am Steuergerät würde den Schweißstrom gerade durch die Elektronik leiten.",
+  "src": "Netz: Recherche 3.4 (Hitze, Schweißen), FW"
  },
  {
   "id": "6d988432edd5",
@@ -1010,7 +2015,7 @@ export const QUESTIONS = [
   "src": "Netz: kfz-dietrich.com, web.de (Recherche 3.6)"
  },
  {
-  "id": "4a8ea725f94c",
+  "id": "bf030fdc6363",
   "cat": "Bremse",
   "level": 2,
   "typ": "mc",
@@ -1020,9 +2025,9 @@ export const QUESTIONS = [
   "q": "Warum muss vor dem Wechsel der hinteren Bremsbeläge der Servicemodus der EPB mit dem Tester aktiviert werden?",
   "opts": [
    "Der Kolben wird über Getriebe und Spindel gehalten – nur der Stellmotor kann ihn zurückfahren, Gewalt würde Spindel oder Getriebe beschädigen",
-   "Im Servicemodus wird die Bremsflüssigkeit aus dem Sattel abgepumpt, damit beim Zurückdrücken nichts überläuft",
-   "Der Servicemodus schaltet nur die Kontrollleuchte ab, technisch ist er nicht nötig",
-   "Ohne Servicemodus lassen sich die Raddrehzahlsensoren nicht ausbauen"
+   "Im Servicemodus pumpt das ESP die Bremsflüssigkeit aus dem Sattel ab, damit beim Zurückdrücken des Kolbens nichts aus dem Ausgleichsbehälter überläuft",
+   "Der Servicemodus schaltet nur die EPB-Kontrollleuchte und den Fehlereintrag ab, technisch wäre er für den Belagwechsel nicht nötig",
+   "Ohne Servicemodus lassen sich Raddrehzahlsensor und Verschleißanzeige nicht abstecken, weil das Steuergerät sie unter Spannung hält"
   ],
   "correct": 0,
   "explain": "Beim Motor-on-Caliper-Sattel drückt eine Spindel auf den Kolben. Der Servicemodus dreht die Spindel ganz zurück. Erst dann lässt sich der Kolben für die dickeren neuen Beläge zurückdrücken.",
@@ -1069,7 +2074,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "1097733c08d1",
+  "id": "978ea4ddfe0b",
   "cat": "Bremse",
   "level": 1,
   "typ": "mc",
@@ -1080,8 +2085,8 @@ export const QUESTIONS = [
   "opts": [
    "Sie nimmt Wasser aus der Luft auf; dadurch steigt der Siedepunkt; die Flüssigkeit wird zäh und das Pedal geht schwer",
    "Sie nimmt Wasser aus der Luft auf; dadurch sinkt der Siedepunkt; bei starker Erwärmung bilden sich Dampfblasen, das Pedal fällt durch",
-   "Sie nimmt Luft aus der Umgebung auf; dadurch schäumt sie; bei Erwärmung steigt der Bremsdruck unkontrolliert an",
-   "Sie gibt Wasser an die Umgebung ab; dadurch dickt sie ein; Dichtungen quellen und die Bremskolben klemmen"
+   "Sie nimmt Luft aus der Umgebung auf; dadurch schäumt sie im Behälter; bei starker Erwärmung steigt der Bremsdruck dann unkontrolliert an",
+   "Sie gibt Wasser an die Umgebung ab; dadurch dickt sie mit der Zeit ein; die Dichtungen quellen auf und die Kolben klemmen im Sattel"
   ],
   "correct": 1,
   "explain": "Hygroskopisch heißt: Die Flüssigkeit nimmt Wasser (Luftfeuchtigkeit) auf. Mit steigendem Wassergehalt sinkt der Siedepunkt. Bei starker Erwärmung bilden sich Dampfblasen – das Pedal fällt durch, die Bremswirkung kann ausfallen. Dampf lässt sich – anders als Flüssigkeit – zusammendrücken. Deshalb geht bei Dampfblasen der Pedalweg ins Leere. Darum wird die Flüssigkeit nach Herstellervorgabe regelmäßig gewechselt.",
@@ -1108,7 +2113,7 @@ export const QUESTIONS = [
   "src": "TB Bremsflüssigkeit"
  },
  {
-  "id": "401315cd5f20",
+  "id": "4e08ca922e4a",
   "cat": "Bremse",
   "level": 2,
   "typ": "mc",
@@ -1118,16 +2123,16 @@ export const QUESTIONS = [
   "q": "Das Prüfgerät zeigt bei der Bremsflüssigkeit 3,8 % Wasser an. Wie beurteilen Sie das Messergebnis?",
   "opts": [
    "Bremsflüssigkeit wechseln – der Wassergehalt liegt über ca. 3,5 %, der Siedepunkt ist unter den Nass-Siedepunkt gefallen",
-   "In Ordnung – Bremsflüssigkeit ist erst ab ca. 10 % Wasser zu wechseln",
-   "Es genügt, Bremsflüssigkeit bis zur MAX-Marke nachzufüllen",
-   "Nur den Ausgleichsbehälter absaugen und neu füllen, die Leitungen bleiben unverändert"
+   "In Ordnung – Bremsflüssigkeit muss erst ab ca. 10 % Wasser gewechselt werden, bis dahin bleibt der Siedepunkt hoch genug",
+   "Es genügt, frische Flüssigkeit bis zur MAX-Marke nachzufüllen – dadurch sinkt der Wasseranteil wieder unter die Grenze",
+   "Nur den Ausgleichsbehälter absaugen und neu füllen, die Flüssigkeit in Leitungen und Sätteln bleibt unverändert"
   ],
   "correct": 0,
   "explain": "Der Nass-Siedepunkt ist der Siedepunkt bei ca. 3,5 % Wasser. Mit 3,8 % liegt die Flüssigkeit darüber, die Siedetemperatur ist also schon unter diese Grenze gefallen → kompletter Wechsel.",
   "src": "TB Bremsflüssigkeit"
  },
  {
-  "id": "da25aaaed0dd",
+  "id": "67b00e56a615",
   "cat": "Bremse",
   "level": 3,
   "typ": "mc",
@@ -1137,9 +2142,9 @@ export const QUESTIONS = [
   "q": "Beim Wechsel der Bremsflüssigkeit müssen Sie die Bremsanlage entlüften. Welche Antwort beschreibt die Besonderheiten bei einem Fahrzeug mit ESP richtig?",
   "opts": [
    "Mit Befüll- und Entlüftungsgerät unter vorgeschriebenem Druck arbeiten; Ventile in Herstellerreihenfolge öffnen; ist Luft im Hydroaggregat, Ventile und Rückförderpumpe mit dem Tester ansteuern",
-   "Mit Befüll- und Entlüftungsgerät unter möglichst hohem Druck arbeiten; alle Entlüfterventile gleichzeitig öffnen; das Hydroaggregat muss dabei nicht beachtet werden",
+   "Mit Befüll- und Entlüftungsgerät unter möglichst hohem Druck arbeiten, damit es schneller geht; alle Entlüfterventile gleichzeitig ganz öffnen; das Hydroaggregat muss dabei nicht beachtet werden",
    "Ausgleichsbehälter vorher ganz leer saugen; Ventile in Herstellerreihenfolge öffnen; Luft im Hydroaggregat entweicht bei der nächsten Fahrt von selbst",
-   "Bremsleitungen am Hydroaggregat abschrauben und es separat ausblasen; Ventile in Herstellerreihenfolge öffnen; Ausgleichsbehälter dabei leer laufen lassen"
+   "Bremsleitungen am Hydroaggregat abschrauben und es separat mit Druckluft ausblasen; Ventile in Herstellerreihenfolge öffnen; Ausgleichsbehälter dabei ganz leer laufen lassen"
   ],
   "correct": 0,
   "explain": "Mit dem Befüll- und Entlüftungsgerät unter dem vorgeschriebenen Druck arbeiten und die Entlüfterventile in der Reihenfolge laut Hersteller öffnen. Ist Luft ins Hydroaggregat gelangt, Ventile und Rückförderpumpe mit dem Tester ansteuern (Entlüftungsroutine). Den Ausgleichsbehälter nie leer laufen lassen, damit keine Luft ins Hydroaggregat kommt. Im Hydroaggregat gibt es Kammern, die beim normalen Entlüften nicht durchströmt werden. Luft dort lässt sich nur mit der Tester-Routine herausspülen.",
@@ -1184,7 +2189,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "7b273231b5ef",
+  "id": "58c61c97230d",
   "cat": "Bremse",
   "level": 3,
   "typ": "mc",
@@ -1195,15 +2200,15 @@ export const QUESTIONS = [
   "opts": [
    "Aktiv: induktiv, ohne Versorgung, sinusförmige Wechselspannung; passiv: Hall-Prinzip, mit Versorgungsspannung, Rechtecksignal bis fast zum Stillstand",
    "Aktiv: Hall-Prinzip, mit Versorgungsspannung, Rechtecksignal mit drehzahlabhängiger Amplitude; passiv: induktiv, ohne Versorgung, Sinus mit gleichbleibender Frequenz",
-   "Aktiv: Hall-Prinzip, mit Versorgungsspannung, Rechtecksignal erst ab ca. 20 km/h; passiv: induktiv, mit Versorgungsspannung, Sinussignal bis zum Stillstand",
-   "Aktiv: Hall- oder magnetoresistiv, mit Versorgungsspannung, Rechtecksignal bis fast zum Stillstand; passiv: induktiv, ohne Versorgung, Sinus, Amplitude und Frequenz steigen mit der Drehzahl"
+   "Aktiv: Hall-Prinzip, mit Versorgungsspannung, Rechtecksignal erst ab ca. 20 km/h auswertbar; passiv: induktiv, mit Versorgung vom Steuergerät, Sinussignal bis zum Stillstand",
+   "Aktiv: Hall- oder MR-Prinzip, mit Versorgungsspannung, Rechtecksignal bis fast zum Stillstand; passiv: induktiv, ohne Versorgung, Sinus, Amplitude und Frequenz steigen"
   ],
   "correct": 3,
   "explain": "Aktiver Sensor: Hall- oder magnetoresistives Prinzip, braucht eine Versorgungsspannung vom Steuergerät, liefert ein Rechtecksignal und erkennt auch sehr kleine Drehzahlen bis fast zum Stillstand. Passiver Sensor: induktiv, braucht keine Versorgung, erzeugt eine sinusförmige Wechselspannung; Amplitude und Frequenz steigen mit der Drehzahl, bei sehr kleiner Drehzahl gibt es kein auswertbares Signal. Aktive Sensoren tasten meist einen Magnetring (Multipolring) im Radlager ab, passive ein Zahnrad aus Stahl.",
   "src": "FW"
  },
  {
-  "id": "0cda86f6ee45",
+  "id": "0b266a6d9967",
   "cat": "Bremse",
   "level": 2,
   "typ": "mc",
@@ -1215,7 +2220,7 @@ export const QUESTIONS = [
    "Rechtecksignal mit gleichbleibenden Pegeln, die Frequenz steigt",
    "Sinussignal, Amplitude und Frequenz steigen",
    "Gleichspannung, die mit der Geschwindigkeit ansteigt",
-   "Rechtecksignal mit steigender Amplitude bei gleicher Frequenz"
+   "Rechtecksignal, dessen Amplitude steigt, während die Frequenz gleich bleibt"
   ],
   "correct": 0,
   "explain": "Beim aktiven Sensor wechselt das Signal zwischen zwei festen Pegeln. Die Geschwindigkeit steckt nur in der Frequenz. Ein Sinus mit wachsender Amplitude ist typisch für den passiven, induktiven Sensor.",
@@ -1270,7 +2275,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "d278f6bf33fd",
+  "id": "b7c8e0e6979f",
   "cat": "Bremse",
   "level": 3,
   "typ": "mc",
@@ -1282,14 +2287,14 @@ export const QUESTIONS = [
    "6.196 N",
    "15.354 N",
    "407 N",
-   "1.009 N"
+   "153.540 N"
   ],
   "correct": 1,
-  "explain": "Der Druck ist überall gleich, die Kräfte verhalten sich wie die Flächen: F₂ = F₁ × (d₂ ÷ d₁)² = 2500 N × (57 ÷ 23)² = 2500 N × 6,14 ≈ 15 354 N. Typischer Fehler: nur mit dem Durchmesserverhältnis statt mit dem Quadrat rechnen (2500 N × 2,48 ≈ 6196 N).",
+  "explain": "Der Druck ist überall gleich, die Kräfte verhalten sich wie die Flächen: F₂ = F₁ × (d₂ ÷ d₁)² = 2500 N × (57 ÷ 23)² = 2500 N × 6,14 ≈ 15 354 N. Typische Fehler: nur mit dem Durchmesserverhältnis statt mit dem Quadrat rechnen (2500 N × 2,48 ≈ 6196 N), das Verhältnis umdrehen (≈ 407 N) oder das Komma verrutschen lassen.",
   "src": "FW"
  },
  {
-  "id": "46e02401155e",
+  "id": "88fad280d942",
   "cat": "Bremse",
   "level": 2,
   "typ": "mc",
@@ -1299,16 +2304,16 @@ export const QUESTIONS = [
   "q": "Der Kunde erwähnt, dass im Frühjahr eine Achsvermessung gemacht wurde. Welche Antwort nennt drei Anlässe, nach denen der Lenkwinkelsensor neu kalibriert werden muss?",
   "opts": [
    "Nach einer Spur- bzw. Achseinstellung; nach Arbeiten an der Lenkung (z. B. Spurstange); je nach Hersteller nach Abklemmen der Batterie oder Tausch des Sensors",
-   "Nach einer Spur- bzw. Achseinstellung; nach dem Wechsel der Bremsscheiben; nach dem Tausch eines Raddrehzahlsensors",
+   "Nach einer Spur- bzw. Achseinstellung; nach dem Wechsel von Bremsscheiben und Belägen an der Vorderachse; nach dem Tausch eines Raddrehzahlsensors oder Radlagers vorn",
    "Nach einem Reifenwechsel auf gleiche Größe; nach einem Bremsflüssigkeitswechsel; nach Arbeiten an der Lenkung (z. B. Spurstange)",
-   "Nach einem Motorölwechsel; nach dem Tausch der Bremsbeläge; je nach Hersteller nach Abklemmen der Batterie"
+   "Nach einem Motorölwechsel mit Rücksetzen der Serviceanzeige; nach dem Tausch der Bremsbeläge; je nach Hersteller nach Abklemmen der Batterie"
   ],
   "correct": 0,
   "explain": "Neu kalibrieren nach einer Spur- bzw. Achseinstellung, nach Arbeiten an der Lenkung (z. B. Tausch von Lenkgetriebe oder Spurstange) und je nach Hersteller nach dem Abklemmen der Batterie bzw. Tausch des Sensors oder Steuergeräts. Steht die Nulllage des Sensors nicht auf Geradeausfahrt, rechnet das ESP mit einem falschen Fahrerwunsch und kann falsch eingreifen.",
   "src": "Netz: kfz-dietrich.com (Recherche 3.6)"
  },
  {
-  "id": "ed194f5240fc",
+  "id": "f8bf0a08ae42",
   "cat": "Bremse",
   "level": 2,
   "typ": "mc",
@@ -1321,14 +2326,14 @@ export const QUESTIONS = [
    "Bremskraft an jedem Rad; Ungleichmäßigkeit links/rechts je Achse; Bremsweg aus 100 km/h; Wirkung der Feststellbremse",
    "Bremskraft an jedem Rad; Belagdicke der Radbremsen; Abbremsung aus Bremskraftsumme und Masse; Wirkung der Feststellbremse",
    "Bremskraft an jedem Rad; Ungleichmäßigkeit links/rechts je Achse; Abbremsung aus Bremskraftsumme und Masse; Wirkung der Feststellbremse",
-   "Bremskraft an jedem Rad; Ungleichmäßigkeit links/rechts je Achse; Siedepunkt der Bremsflüssigkeit; Wirkung der Feststellbremse"
+   "Bremskraft an jedem Rad; Ungleichmäßigkeit links/rechts je Achse; Siedepunkt der Bremsflüssigkeit über den Prüfstandsrechner; Wirkung der Feststellbremse"
   ],
   "correct": 2,
   "explain": "Gemessen bzw. bewertet werden die Bremskraft an jedem Rad, die Ungleichmäßigkeit der Bremskräfte links/rechts je Achse, die Abbremsung des Fahrzeugs aus der Summe der Bremskräfte und der Masse, die Wirkung der Feststellbremse (EPB) und die Bremskraftschwankung (Unrundheit) einer Radbremse. Bremsweg, Belagdicke oder Siedepunkt misst der Rollenprüfstand nicht. Die Grenzwerte für Mindestabbremsung, Ungleichmäßigkeit und Feststellbremse stehen im Tabellenbuch – dort nachschlagen, nicht aus dem Kopf.",
   "src": "FW, TB (Grenzwerte)"
  },
  {
-  "id": "2a7bbdbb4ab9",
+  "id": "37421867fe52",
   "cat": "Bremse",
   "level": 1,
   "typ": "mc",
@@ -1338,12 +2343,402 @@ export const QUESTIONS = [
   "q": "Welche Antwort nennt vier richtige Abschlussarbeiten, bevor Sie den Golf an den Kunden übergeben?",
   "opts": [
    "EPB mehrmals schließen und lösen; Fehlerspeicher auslesen und löschen; Bremsflüssigkeit als Reserve über MAX auffüllen; Probefahrt mit Bremsprobe",
-   "Servicemodus der EPB aktiv lassen, damit sich die Beläge setzen; Fehlerspeicher auslesen und löschen; Wechselaufkleber anbringen; Probefahrt mit Bremsprobe",
+   "Servicemodus der EPB für die ersten Kilometer aktiv lassen, damit sich die Beläge setzen; Fehlerspeicher auslesen und löschen; Wechselaufkleber anbringen; Probefahrt mit Bremsprobe",
    "EPB mehrmals schließen und lösen; Batterie kurz abklemmen, damit die EPB ihre Werte neu lernt; Wechselaufkleber anbringen; Probefahrt mit Bremsprobe",
-   "EPB-Grundeinstellung kontrollieren, mehrmals schließen und lösen; Fehlerspeicher auslesen und löschen; Flüssigkeitsstand prüfen, Wechselaufkleber anbringen; Probefahrt, Beläge einbremsen"
+   "EPB-Grundeinstellung prüfen, mehrmals schließen und lösen; Fehlerspeicher auslesen und löschen; Füllstand prüfen, Wechselaufkleber; Probefahrt, Beläge einbremsen"
   ],
   "correct": 3,
   "explain": "Abschlussarbeiten: Grundeinstellung der EPB kontrollieren und die EPB mehrmals schließen und lösen, Fehlerspeicher auslesen und löschen, Bremsflüssigkeitsstand prüfen und Wechselaufkleber anbringen, Probefahrt mit Bremsprobe und neue Beläge nach Herstellervorgabe einbremsen, Arbeiten und Messwerte im Auftrag dokumentieren. Neue Beläge erreichen ihre volle Wirkung erst nach dem Einbremsen. Darauf sollte auch der Kunde hingewiesen werden.",
+  "src": "FW"
+ },
+ {
+  "id": "e08f3ad431aa",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "esp-focus",
+  "nr": 1,
+  "q": "Der Kunde fragt, was die beiden dauerhaft leuchtenden Kontrollleuchten für ihn bedeuten. Welche Auskunft ist richtig?",
+  "opts": [
+   "Die ganze Bremsanlage ist ausgefallen; das Fahrzeug darf nur noch abgeschleppt werden, weil kein Bremsdruck mehr entsteht und das Pedal durchfällt",
+   "ABS, ASR und ESP sind abgeschaltet; die normale Bremse wirkt weiter, aber die Räder können blockieren – vorsichtig fahren, bald reparieren",
+   "Nur die Anzeige ist gestört; ABS und ESP regeln weiter wie gewohnt, die Leuchten gehen nach dem nächsten Motorstart wieder aus",
+   "Nur das ABS ist abgeschaltet, das ESP regelt weiter; die normale Bremse wirkt weiter, man kann ohne jede Einschränkung fahren"
+  ],
+  "correct": 1,
+  "explain": "Erkennt das Steuergerät einen Sensorfehler, schaltet es ABS, ASR und ESP ab und meldet das über die Leuchten. Die Grundbremse (Hauptbremszylinder, Leitungen, Radbremsen) arbeitet weiter, nur ohne Blockierschutz und Stabilitätsregelung. Das ESP braucht die Raddrehzahlen ebenfalls, deshalb fällt es mit aus. Leuchtet zusätzlich die rote Bremswarnleuchte, ist auch die Bremskraftverteilung gestört – dann nicht weiterfahren.",
+  "src": "FW"
+ },
+ {
+  "id": "b610d2f3c487",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 7,
+  "situation": "esp-focus",
+  "nr": 2,
+  "bild": "bremse-esp-hydraulik.svg",
+  "q": "Sie verschaffen sich einen Überblick über die ESP-Hydraulik eines Bremskreises. Ordnen Sie den Nummern im Bild die Bauteile zu.",
+  "paare": [
+   [
+    "①",
+    "Hauptbremszylinder mit Behälter"
+   ],
+   [
+    "②",
+    "Umschaltventil (Trennventil)"
+   ],
+   [
+    "③",
+    "Ansaugventil (Hochdruckventil)"
+   ],
+   [
+    "④",
+    "Rückförderpumpe"
+   ],
+   [
+    "⑤",
+    "Niederdruckspeicher"
+   ],
+   [
+    "⑥",
+    "Einlassventil vorn links"
+   ],
+   [
+    "⑦",
+    "Auslassventil vorn links"
+   ]
+  ],
+  "ablenker": [
+   "Bremskraftverstärker",
+   "Einlassventil hinten rechts"
+  ],
+  "explain": "Jedes Rad hat ein Einlass- und ein Auslassventil (⑥/⑦ vorn links, ⑧/⑨ hinten rechts). Umschaltventil ② und Ansaugventil ③ gibt es einmal je Bremskreis – sie braucht das Aggregat, um ohne Pedal Druck aufzubauen (ESP, ASR). Die Pumpe ④ wird vom Motor M angetrieben, der Speicher ⑤ nimmt beim Druckabbau kurz Flüssigkeit auf. ⑫ ist der Drucksensor für den Fahrervordruck.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "82872215beaa",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "esp-focus",
+  "nr": 3,
+  "q": "Im Fehlerspeicher steht: „Raddrehzahlsensor vorn rechts – Signal unplausibel, sporadisch“. Wie erkennt das Steuergerät einen solchen Fehler?",
+  "opts": [
+   "Es misst bei jedem Motorstart den Widerstand der Sensorspule und vergleicht ihn mit einem festen Sollwert im Speicher",
+   "Es vergleicht die Raddrehzahl vorn rechts mit dem Lenkwinkel und meldet einen Fehler, sobald stärker gelenkt wird",
+   "Es vergleicht die Drehzahlen aller vier Räder und prüft das Signal auf Sprünge und Aussetzer, die physikalisch nicht möglich sind",
+   "Es erkennt ihn nur, wenn bei einer Vollbremsung ein Rad blockiert und der Bremsdruck an diesem Rad nicht mehr abgebaut werden kann"
+  ],
+  "correct": 2,
+  "explain": "Das Steuergerät überwacht die Sensoren ständig: Ein Rad kann nicht schlagartig von 50 auf 0 km/h fallen, während die anderen drei gleich schnell bleiben. Solche Sprünge oder Aussetzer gelten als unplausibel. „Sporadisch“ heißt: Der Fehler ist im Moment nicht vorhanden, trat aber auf. Einen Spulenwiderstand gibt es beim aktiven Sensor nicht.",
+  "src": "FW"
+ },
+ {
+  "id": "7a494cc3f529",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "esp-focus",
+  "nr": 4,
+  "q": "Wie gehen Sie nach dem Auslesen des Fehlerspeichers sinnvoll weiter vor?",
+  "opts": [
+   "Den Sensor vorn rechts sofort ersetzen, weil der Fehlerspeicher ihn nennt; danach Fehlerspeicher löschen und übergeben",
+   "Raddrehzahlen im Messwertblock bei einer Probefahrt beobachten; Sensor, Leitung, Stecker und Radlagerbereich sichtprüfen; dann gezielt messen",
+   "Fehlerspeicher löschen und den Kunden wiederkommen lassen, wenn die Leuchte erneut angeht – sporadische Fehler kann man in der Werkstatt nicht prüfen",
+   "Zuerst den Lenkwinkelsensor grundeinstellen, weil nach Arbeiten an der Vorderachse immer die Kalibrierung fehlt; dann löschen"
+  ],
+  "correct": 1,
+  "explain": "Der Fehlerspeicher nennt den Stromkreis, nicht das defekte Teil. Deshalb zuerst den Fehler nachvollziehen (Messwertblock bei Probefahrt), dann Sichtprüfung (Leitung scheuert, Stecker korrodiert, Späne am Sensor) und erst danach messen. Blind getauschte Sensoren lösen das Problem oft nicht – der Fehler kann auch am Magnetring oder an der Leitung liegen.",
+  "src": "FW"
+ },
+ {
+  "id": "a1edc1028450",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "esp-focus",
+  "nr": 5,
+  "q": "Bei der Probefahrt mit etwa 50 km/h zeigt der Messwertblock: VL 50 km/h, VR springt mehrmals kurz auf 0 km/h und zurück auf 50 km/h, HL 50 km/h, HR 49 km/h. Wie beurteilen Sie das?",
+  "opts": [
+   "HR ist mit 49 km/h defekt, weil alle vier Räder exakt gleich schnell drehen müssen; die Sprünge vorn rechts sind nur ein Anzeigefehler",
+   "Alle Werte sind in Ordnung, weil der Mittelwert der vier Räder ungefähr der gefahrenen Geschwindigkeit entspricht",
+   "Das Signal vorn rechts setzt kurz aus; Sensor, Leitung, Stecker und Magnetring vorn rechts prüfen; die übrigen Räder sind in Ordnung",
+   "Das Signal vorn rechts setzt aus; Ursache ist sicher das ESP-Steuergerät, das ersetzt und neu codiert werden muss"
+  ],
+  "correct": 2,
+  "explain": "Kleine Unterschiede (49 statt 50 km/h) sind normal, z. B. durch Kurvenfahrt oder Reifenabnutzung. Ein Rad, das kurz auf 0 km/h fällt, ist dagegen unmöglich – das Signal setzt aus. Ursache kann der Sensor, die Leitung bzw. der Stecker oder der Magnetring sein. Das Steuergerät ist selten defekt und wird erst nach allen anderen Prüfungen verdächtigt.",
+  "src": "FW"
+ },
+ {
+  "id": "a49e6e1b7de5",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "esp-focus",
+  "nr": 6,
+  "bild": "bremse-esp-sensoren.svg",
+  "q": "Welche Pins am Steuergerät A2 gehören laut Schaltplan zum Raddrehzahlsensor vorn rechts?",
+  "opts": [
+   "Pin 11 (Versorgung) und Pin 12 (Signal)",
+   "Pin 13 (Versorgung) und Pin 14 (Signal)",
+   "Pin 17 (Versorgung) und Pin 18 (Signal)",
+   "Pin 14 (Versorgung) und Pin 13 (Signal)"
+  ],
+  "correct": 1,
+  "explain": "B2 ist der Sensor vorn rechts. Seine Leitungen gehen über die Steckverbindung X1 zu Pin 13 (obere Leitung, Versorgung) und Pin 14 (untere Leitung, Signal). Pin 11/12 gehören zu B1 vorn links, Pin 17/18 zu B4 hinten rechts.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "bb69edecabdd",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "esp-focus",
+  "nr": 7,
+  "bild": "bremse-esp-sensoren.svg",
+  "q": "Sie wollen die Versorgungsspannung des Sensors vorn rechts prüfen. Wie messen Sie richtig?",
+  "opts": [
+   "X1 trennen, Zündung ein, Spannungsmesser zwischen Messpunkt A und Fahrzeugmasse",
+   "X1 gesteckt lassen, Zündung aus, Ohmmeter zwischen Messpunkt A und Messpunkt B",
+   "X1 trennen, Zündung ein, Spannungsmesser zwischen Messpunkt B und Fahrzeugmasse",
+   "X1 trennen, Zündung aus, Spannungsmesser zwischen Messpunkt A und Pin 4 von A2"
+  ],
+  "correct": 0,
+  "explain": "Die Versorgung kommt vom Steuergerät über Pin 13 und liegt an Messpunkt A (Kabelbaumseite von X1). Sie ist nur bei eingeschalteter Zündung vorhanden, deshalb Zündung ein und gegen Masse messen. B ist die Signalleitung, dort liegt keine Versorgung an. Mit dem Ohmmeter am gesteckten Sensor misst man Unsinn und kann die Sensorelektronik gefährden.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "af2bacd33ac5",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 5,
+  "situation": "esp-focus",
+  "nr": 8,
+  "bild": "bremse-esp-sensoren.svg",
+  "q": "Ihre Messungen (X1 getrennt): A gegen Masse bei Zündung ein 11,9 V (Batterie 12,3 V, Sollwert laut Werkstattinformation: annähernd Batteriespannung). Steuergerätestecker abgezogen: Leitung A → Pin 13 = 0,3 Ω, Leitung B → Pin 14 = 0,4 Ω, B gegen Masse = kein Durchgang. Wie beurteilen Sie die Messwerte?",
+  "opts": [
+   "Leitung B ist mit 0,4 Ω unterbrochen, weil eine intakte Leitung genau 0 Ω haben muss; den Kabelbaum vorn rechts komplett erneuern",
+   "Die Versorgung ist mit 11,9 V zu niedrig, weil sie genau der Batteriespannung entsprechen muss; Sicherung F3 ersetzen",
+   "Kein Durchgang zwischen B und Masse zeigt eine Unterbrechung der Signalleitung; Leitung zwischen X1 und A2 erneuern",
+   "Versorgung und beide Leitungen sind in Ordnung, ein Masseschluss liegt nicht vor; Fehler liegt am Sensor oder am Magnetring"
+  ],
+  "correct": 3,
+  "explain": "Wenige Zehntel Ohm sind für eine Leitung normal, eine Unterbrechung zeigt „kein Durchgang“ bzw. sehr hohen Widerstand. 11,9 V bei 12,3 V Batteriespannung ist ein kleiner, zulässiger Spannungsfall. „Kein Durchgang“ zwischen Signalleitung und Masse ist richtig – es gibt keinen Masseschluss. Damit bleiben Sensor oder Magnetring als Fehlerort.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "fb9ec25e9045",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "situation": "esp-focus",
+  "nr": 9,
+  "q": "Ein Kollege will den aktiven Sensor ausbauen und mit dem Ohmmeter oder einer Prüflampe prüfen. Warum ist das nicht sinnvoll?",
+  "opts": [
+   "Ein aktiver Sensor hat keinen Innenwiderstand; das Ohmmeter zeigt deshalb immer 0 Ω und man erkennt keinen Fehler",
+   "Der Messstrom des Ohmmeters magnetisiert den Magnetring im Radlager um, sodass danach auch beim Drehen des Rades überhaupt kein Signal mehr kommt",
+   "Ein aktiver Sensor enthält Elektronik; Prüflampe oder Messstrom können sie schädigen, ein Widerstandswert sagt nichts über die Funktion",
+   "Das ist sinnvoll: Liegt der Widerstand bei ca. 1 kΩ, ist der aktive Sensor in Ordnung, sonst ist er defekt"
+  ],
+  "correct": 2,
+  "explain": "Im aktiven Sensor sitzt ein Hall- oder MR-Element mit Auswerteschaltung. Die verträgt nur kleine Ströme – eine Glühlampen-Prüflampe kann sie zerstören. Einen „Sollwiderstand“ wie bei der Spule des passiven Sensors gibt es nicht. Geprüft wird über Versorgung, Leitungen und das Signal mit dem Oszilloskop bzw. im Messwertblock.",
+  "src": "Netz: VEMO Tech-Info, autoservicepraxis.de"
+ },
+ {
+  "id": "f71d6a6ee6fb",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "esp-focus",
+  "nr": 10,
+  "bild": "bremse-oszi-raddrehzahl.svg",
+  "q": "Zum Vergleich messen Sie bei der Probefahrt mit Messadapter zuerst den Sensor vorn links (Messung 1). Wie groß ist die Signalfrequenz?",
+  "opts": [
+   "250 Hz",
+   "500 Hz",
+   "1.000 Hz",
+   "0,5 Hz"
+  ],
+  "correct": 1,
+  "explain": "Eine Periode (einmal 14 mA und einmal 7 mA) ist 2 Kästchen lang, also T = 2 ms. f = 1 ÷ T = 1 ÷ 0,002 s = 500 Hz. Typische Fehler: nur die halbe Periode ablesen (1 ms → 1.000 Hz) oder Millisekunden nicht umrechnen (1 ÷ 2 = 0,5).",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "b8ece341037f",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 5,
+  "situation": "esp-focus",
+  "nr": 11,
+  "q": "Der Magnetring hat laut Werkstattinformation 48 Polpaare (48 Signalperioden je Radumdrehung). Wie groß ist die Raddrehzahl bei Messung 1 (f = 500 Hz)?",
+  "opts": [
+   "10,4 1/min",
+   "400 1/min",
+   "625 1/min",
+   "1.250 1/min"
+  ],
+  "correct": 2,
+  "explain": "f = z × n ÷ 60 → n = f × 60 ÷ z = 500 1/s × 60 s/min ÷ 48 = 625 1/min. Typische Fehler: den Faktor 60 vergessen (≈ 10,4), z und 60 vertauschen (500 × 48 ÷ 60 = 400) oder mit 24 statt 48 rechnen (1.250).",
+  "src": "FW"
+ },
+ {
+  "id": "7b40f18b5252",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 6,
+  "situation": "esp-focus",
+  "nr": 12,
+  "bild": "bremse-oszi-raddrehzahl.svg",
+  "q": "Messung 2 zeigt den Sensor vorn rechts unter gleichen Bedingungen. Wie beurteilen Sie das Signal?",
+  "opts": [
+   "Der Strom fällt in der Lücke auf 0 mA; die Leitung ist dort kurz unterbrochen, deshalb ist der Kabelbaum zwischen X1 und Steuergerät ist zu ersetzen",
+   "Pegel und Frequenz stimmen, in der Lücke bleibt der Strom bei 7 mA; Sensor ist versorgt, Leitung ganz – der Magnetring hat eine schadhafte Stelle",
+   "Die Frequenz ist doppelt so hoch wie bei Messung 1; der Sensor ist für das falsche Rad bestellt und muss getauscht werden",
+   "Der obere Pegel ist zu niedrig; die Versorgung bricht ein, Ursache ist eine schwache Batterie oder eine korrodierte Sicherung F3"
+  ],
+  "correct": 1,
+  "explain": "Außerhalb der Lücke sieht Messung 2 aus wie Messung 1 (7/14 mA, 2 ms Periode). In der Lücke wechselt der Strom nicht, bleibt aber auf dem unteren Pegel – der Sensor ist also versorgt und die Leitung nicht unterbrochen (dann wären es 0 mA). Ihm fehlen dort die Polwechsel: Der Magnetring ist an dieser Stelle beschädigt, verschmutzt oder entmagnetisiert.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "bea02d723fbf",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "situation": "esp-focus",
+  "nr": 13,
+  "q": "Ordnen Sie den Signalbildern eines aktiven Raddrehzahlsensors (Rad dreht) die wahrscheinliche Ursache zu.",
+  "paare": [
+   [
+    "Strom wechselt gleichmäßig zwischen 7 und 14 mA",
+    "Sensor und Magnetring in Ordnung"
+   ],
+   [
+    "Strom bleibt dauernd auf 7 mA, kein Wechsel",
+    "Kein Magnetfeld am Sensor, z. B. Lager seitenverkehrt eingebaut"
+   ],
+   [
+    "Strom ist dauernd 0 mA",
+    "Versorgung fehlt oder Leitung unterbrochen"
+   ],
+   [
+    "Gleichmäßige Wechsel mit einer Lücke je Radumdrehung",
+    "Magnetring stellenweise beschädigt"
+   ]
+  ],
+  "ablenker": [
+   "Lenkwinkelsensor nicht kalibriert"
+  ],
+  "explain": "Der Sensor braucht Strom (sonst 0 mA) und wechselnde Magnetpole (sonst bleibt er auf einem Pegel). Ist das Lager seitenverkehrt eingebaut, zeigt die Stahlseite statt der Magnetspur zum Sensor – das Signal fehlt dauerhaft. Eine beschädigte Stelle am Ring erzeugt eine Lücke, die sich bei jeder Radumdrehung wiederholt.",
+  "src": "FW"
+ },
+ {
+  "id": "d85fdf30bab5",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "esp-focus",
+  "nr": 14,
+  "q": "Der Kunde fragt, ob die andere Werkstatt, die das Lager eingebaut hat, für den Fehler aufkommen muss. Was empfehlen Sie ihm vor der Reparatur?",
+  "opts": [
+   "Sofort hier reparieren und die Rechnung an die andere Werkstatt schicken – sie muss die Kosten in jedem Fall ohne weitere Nachfrage übernehmen",
+   "Nichts unternehmen – nach zwei Wochen ist die Mängelhaftung für Werkstattarbeiten ohnehin schon abgelaufen",
+   "Den Mangel bei der Kfz-Innung melden – die Innung lässt das Fahrzeug dann kostenlos in einer anderen Werkstatt reparieren",
+   "Befund mit Messergebnissen dokumentieren; der anderen Werkstatt zuerst Gelegenheit zur Nachbesserung geben, sonst drohen Ansprüche zu entfallen"
+  ],
+  "correct": 3,
+  "explain": "Bei einem Werkvertrag hat die Werkstatt, die mangelhaft gearbeitet hat, zunächst das Recht auf Nacherfüllung. Lässt der Kunde ohne Fristsetzung woanders reparieren, kann er seinen Anspruch auf Kostenersatz verlieren. Die Mängelhaftung läuft deutlich länger als zwei Wochen. Ein schriftlicher Befund mit Messwerten hilft dem Kunden als Nachweis; bei Streit vermittelt die Schiedsstelle der Innung.",
+  "src": "FW, BGB Werkvertrag"
+ },
+ {
+  "id": "d02637d74e6f",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 6,
+  "situation": "esp-focus",
+  "nr": 15,
+  "q": "Die andere Werkstatt übernimmt die Kosten, Sie sollen reparieren. Bringen Sie die Arbeitsschritte zum Ersetzen des Radlagers mit Magnetring vorn rechts in die richtige Reihenfolge.",
+  "schritte": [
+   "Fahrzeug anheben, Rad abbauen und Raddrehzahlsensor ausbauen",
+   "Raddrehzahlsensor ausbauen, Bremssattel abbauen und aufhängen, Bremsscheibe abnehmen",
+   "Radnabe und altes Radlager nach Herstellervorgabe auspressen",
+   "Neues Lager über den Außenring einpressen, Magnetring zur Sensorseite",
+   "Sensorbohrung reinigen, Sensor einbauen, Bremse und Rad mit Drehmoment montieren",
+   "Fehlerspeicher löschen, Probefahrt mit Messwertblock der Raddrehzahlen"
+  ],
+  "explain": "Der Sensor kommt zuerst heraus, damit er beim Auspressen nicht beschädigt wird. Der Sattel wird nur abgebaut und aufgehängt – die Hydraulik bleibt geschlossen, Entlüften ist nicht nötig. Die Einbaurichtung des Lagers entscheidet, ob der Sensor die Magnetspur „sieht“.",
+  "src": "FW"
+ },
+ {
+  "id": "d67da4fdccc8",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "esp-focus",
+  "nr": 16,
+  "q": "Worauf achten Sie beim Einbau des neuen Radlagers mit integriertem Magnetring besonders?",
+  "opts": [
+   "Magnetring zur Sensorseite einbauen; nicht mit Magneten oder magnetischem Werkzeug in Berührung bringen; Sensorsitz frei von Spänen und Rost",
+   "Einbaurichtung ist egal, der Sensor erkennt beide Seiten; Lager über den Innenring einpressen; Sensorsitz mit Fett füllen",
+   "Magnetring vor dem Einbau mit einem Dauermagneten nachmagnetisieren, damit das Signal stärker wird; Sensor einfetten; Luftspalt mit Beilagscheiben einstellen",
+   "Magnetring zur Sensorseite einbauen; Lager mit dem Hammer über die Dichtscheibe eintreiben; Sensor auf der Magnetablage lagern"
+  ],
+  "correct": 0,
+  "explain": "Die Magnetspur sitzt nur auf einer Seite des Lagers (oft farbig oder dunkel markiert) und muss zum Sensor zeigen. Fremde Magnete können die Spur stellenweise verändern – genau das erzeugt Lücken im Signal. Eingepresst wird nur über den Ring, der im Gehäuse sitzt, nie über Dichtung oder Magnetring. Späne am Sensor verfälschen das Magnetfeld.",
+  "src": "FW, Netz: Hella TI"
+ },
+ {
+  "id": "61bfa6740850",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "esp-focus",
+  "nr": 17,
+  "q": "Der Kunde erwähnt, dass bald die Hauptuntersuchung fällig ist. Wie wird eine dauerhaft leuchtende ABS-/ESP-Kontrollleuchte bei der HU bewertet?",
+  "opts": [
+   "Als geringer Mangel – die Plakette wird zugeteilt, der Mangel muss nur irgendwann behoben werden",
+   "Als erheblicher Mangel – die Plakette gibt es erst nach Behebung und Nachprüfung",
+   "Gar nicht – bei der HU zählt nur die Bremskraft, die der Rollenprüfstand misst",
+   "Als gefährlicher Mangel – das Fahrzeug wird sofort stillgelegt und muss abgeschleppt werden"
+  ],
+  "correct": 1,
+  "explain": "Eine Kontrollleuchte, die eine Störung eines Bremsregelsystems anzeigt, gilt bei der HU als erheblicher Mangel. Das Fahrzeug bekommt keine Plakette, bis der Fehler behoben und nachgeprüft ist. „Verkehrsunsicher“ wäre es erst bei Mängeln, die eine unmittelbare Gefahr darstellen, z. B. Ausfall der Grundbremse.",
+  "src": "Netz: kfz-dietrich.com, HU-Richtlinie (Recherche ausbau-bremse)"
+ },
+ {
+  "id": "a399cc95edb0",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 5,
+  "situation": "esp-focus",
+  "nr": 18,
+  "q": "Welche Antwort nennt vier richtige Abschlussarbeiten bzw. Hinweise, bevor Sie den Focus übergeben?",
+  "opts": [
+   "Fehlerspeicher löschen und erneut auslesen; Bremsflüssigkeit komplett wechseln, weil sie beim Lagertausch Luft gezogen hat; Leuchten aus; Befund dokumentieren",
+   "Fehlerspeicher löschen und erneut auslesen; Probefahrt, alle vier Raddrehzahlen im Messwertblock gleich; Leuchten aus; Befund und Messwerte dokumentieren",
+   "Kontrollleuchten durch Abklemmen der Batterie zurücksetzen; Probefahrt mit Messwertblock; ESP-Steuergerät neu codieren; Befund dokumentieren",
+   "Fehlerspeicher löschen und erneut auslesen; ESP-Steuergerät neu codieren, weil ein Sensor getauscht wurde; Leuchten aus; Befund dokumentieren"
+  ],
+  "correct": 1,
+  "explain": "Nach dem Löschen muss der Fehler bei einer Probefahrt wegbleiben; im Messwertblock müssen alle Räder gleich schnell laufen und die Leuchten aus sein. Befund und Messwerte gehören in die Dokumentation – hier auch als Nachweis für die andere Werkstatt. Die Hydraulik wurde nicht geöffnet, ein Bremsflüssigkeitswechsel ist deshalb nicht nötig, und ein Radlager braucht keine Codierung.",
   "src": "FW"
  },
  {
@@ -1378,34 +2773,34 @@ export const QUESTIONS = [
   "src": "Recherche 3.2, FW"
  },
  {
-  "id": "96905edd5e8e",
+  "id": "29d97bb5c9c2",
   "cat": "Bremse",
   "level": 2,
   "typ": "mc",
   "pkt": 3,
   "q": "Ein Fahrzeug mit EPB soll abgeschleppt werden, die Batterie ist leer und die Parkbremse geschlossen. Wie gehen Sie richtig vor?",
   "opts": [
-   "Fahrzeug mit geschlossener EPB langsam anschleppen – die Bremse löst sich durch die Zugkraft; danach Batterie laden",
+   "Fahrzeug mit geschlossener EPB langsam anschleppen – die Bremse löst sich durch die Zugkraft von selbst; danach die Batterie laden und prüfen",
    "Gegen Wegrollen sichern (Unterlegkeile); Spannung herstellen und EPB mit dem Taster lösen; sonst mechanische Notentriegelung nach Herstellerangabe",
-   "Stecker der Stellmotoren abziehen – ohne Strom öffnet die Parkbremse von selbst; Fahrzeug dann normal abschleppen",
-   "Batterie ab- und wieder anklemmen, dadurch fährt die EPB in die Grundstellung; Fahrzeug ohne weitere Sicherung abschleppen"
+   "Stecker der Stellmotoren abziehen – ohne Strom öffnet die Parkbremse durch Federkraft von selbst; das Fahrzeug dann ganz normal abschleppen",
+   "Batterie ab- und wieder anklemmen, dadurch fährt die EPB von selbst in die offene Grundstellung; das Fahrzeug ohne weitere Sicherung gleich abschleppen"
   ],
   "correct": 1,
   "explain": "Zuerst das Fahrzeug gegen Wegrollen sichern (Unterlegkeile). Dann Spannung herstellen (Starthilfe, Ladegerät) und die EPB normal mit dem Taster lösen. Geht das nicht, die mechanische Notentriegelung nach Herstellerangabe nutzen. Ohne Strom lässt sich die EPB nicht mit dem Taster lösen. Die Notentriegelung ist je nach Hersteller unterschiedlich, deshalb immer die Reparaturanleitung beachten.",
   "src": "Netz: kfz-dietrich.com (Recherche 3.6)"
  },
  {
-  "id": "9dddcb283aef",
+  "id": "1a3295c85a4c",
   "cat": "Bremse",
   "level": 2,
   "typ": "mc",
   "pkt": 2,
   "q": "Ein Kollege möchte den Kolben eines EPB-Sattels (Motor-on-Caliper) ohne Tester mit dem Rücksetzwerkzeug zurückdrehen. Wie beurteilen Sie das?",
   "opts": [
-   "Nicht zulässig – Spindel, Getriebe oder Stellmotor können beschädigt werden",
-   "Zulässig, wenn er dabei das Bremspedal gedrückt hält",
-   "Zulässig, wenn vorher die Zündung eingeschaltet wurde",
-   "Zulässig, die EPB stellt sich bei der nächsten Fahrt von selbst ein"
+   "Nicht zulässig – ohne Servicemodus können Spindel, Getriebe oder Stellmotor Schaden nehmen",
+   "Zulässig, wenn er dabei das Bremspedal gedrückt hält, weil dann die Spindel ganz entlastet ist",
+   "Zulässig, wenn vorher die Zündung eingeschaltet wurde, weil der Stellmotor dann mitdreht",
+   "Zulässig, denn die EPB stellt sich bei der nächsten Fahrt von selbst wieder richtig ein"
   ],
   "correct": 0,
   "explain": "Der Kolben hängt mechanisch an der Spindel des Stellmotors. Ohne Servicemodus arbeitet man gegen die gesperrte Mechanik.",
@@ -1469,7 +2864,7 @@ export const QUESTIONS = [
   "src": "TB Bremsflüssigkeit"
  },
  {
-  "id": "15240111fe6a",
+  "id": "ea0e37336e54",
   "cat": "Bremse",
   "level": 1,
   "typ": "mc",
@@ -1477,16 +2872,16 @@ export const QUESTIONS = [
   "q": "Welche Antwort nennt vier richtige Regeln für den Umgang mit Bremsflüssigkeit in der Werkstatt mit passender Begründung?",
   "opts": [
    "Schutzbrille und Handschuhe – gesundheitsschädlich; Lackspritzer mit Bremsenreiniger abwischen – greift nur Kunststoff an; Gebinde sofort verschließen – hygroskopisch; getrennt als gefährlichen Abfall entsorgen",
-   "Schutzbrille und Handschuhe – gesundheitsschädlich; Lackspritzer sofort mit Wasser abspülen – löst Lack; abgelassene Flüssigkeit filtern und wiederverwenden – altert nicht; getrennt als gefährlichen Abfall entsorgen",
+   "Schutzbrille und Handschuhe – gesundheitsschädlich; Lackspritzer sofort mit Wasser abspülen – löst Lack; abgelassene Flüssigkeit durch ein Sieb filtern und wiederverwenden – altert nicht; getrennt als gefährlichen Abfall entsorgen",
    "Schutzbrille und Handschuhe – gesundheitsschädlich; Lackspritzer sofort mit Wasser abspülen – löst Lack; Gebinde sofort verschließen, Altflüssigkeit nicht wiederverwenden – hygroskopisch; getrennt als gefährlichen Abfall entsorgen",
-   "Schutzbrille und Handschuhe – gesundheitsschädlich; Lackspritzer sofort mit Wasser abspülen – löst Lack; Gebinde sofort verschließen – hygroskopisch; zusammen mit dem Altöl sammeln – gleiche Entsorgung"
+   "Schutzbrille und Handschuhe – gesundheitsschädlich; Lackspritzer sofort mit Wasser abspülen – löst Lack; Gebinde sofort verschließen – hygroskopisch; zusammen mit dem Altöl im selben Behälter sammeln – gleiche Entsorgungsart"
   ],
   "correct": 2,
   "explain": "Haut- und Augenkontakt vermeiden, Schutzbrille und Handschuhe tragen – sie ist gesundheitsschädlich. Spritzer auf dem Lack sofort mit Wasser abspülen – sie löst Lack. Gebinde sofort verschließen, alte oder abgelassene Flüssigkeit nicht wiederverwenden – sie ist hygroskopisch. Getrennt sammeln und als gefährlichen Abfall entsorgen. Gesundheitsschädlich, lacklösend und wasseranziehend – daraus ergeben sich alle Regeln.",
   "src": "TB Bremsflüssigkeit, FW"
  },
  {
-  "id": "76b6829853ae",
+  "id": "29d14e5aa9a3",
   "cat": "Bremse",
   "level": 1,
   "typ": "mc",
@@ -1496,7 +2891,7 @@ export const QUESTIONS = [
    "Verstärkt die Fußkraft; eine Membran trennt zwei Kammern, beim Bremsen wird in beide Kammern Unterdruck gelegt; Unterdruck kommt vom Saugrohr oder einer Vakuumpumpe",
    "Verstärkt die Fußkraft; eine Membran trennt zwei Kammern, beim Bremsen strömt Außenluft in eine Kammer; der nötige Überdruck kommt vom Abgasturbolader",
    "Speichert Bremsdruck für die ABS-Regelung; eine Membran trennt zwei Kammern, beim Bremsen strömt Außenluft in eine Kammer; Unterdruck kommt vom Saugrohr",
-   "Verstärkt die Fußkraft; eine Membran trennt die Unterdruckkammer von einer Kammer, in die beim Bremsen Außenluft strömt; Unterdruck kommt vom Saugrohr oder einer Vakuumpumpe"
+   "Verstärkt die Fußkraft; eine Membran trennt Unterdruck- und Arbeitskammer, in die beim Bremsen Außenluft strömt; Unterdruck vom Saugrohr oder einer Vakuumpumpe"
   ],
   "correct": 3,
   "explain": "Der Bremskraftverstärker verstärkt die Fußkraft des Fahrers, damit weniger Pedalkraft nötig ist. Eine Membran trennt eine Unterdruckkammer von einer Kammer, in die beim Bremsen Außenluft strömt – der Druckunterschied erzeugt die Hilfskraft. Der Unterdruck kommt vom Saugrohr oder von einer Vakuumpumpe (z. B. Diesel). Fällt der Bremskraftverstärker aus, bremst die Anlage weiter, aber der Fahrer muss deutlich stärker treten.",
@@ -1534,17 +2929,17 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "8c302b7f49f2",
+  "id": "f2f001846ffa",
   "cat": "Bremse",
   "level": 2,
   "typ": "mc",
   "pkt": 3,
   "q": "Welche Beschreibung der Funktion des Bremsassistenten ist richtig?",
   "opts": [
-   "Erkennt eine Notbremsung an der sehr schnellen Pedalbetätigung (Bremsdrucksensor); baut dann selbsttätig vollen Bremsdruck bis in die ABS-Regelung auf; Grund: viele Fahrer treten zu zaghaft",
+   "Erkennt eine Notbremsung an der sehr schnellen Pedalbetätigung (Bremsdrucksensor); baut dann selbsttätig vollen Druck bis in die ABS-Regelung auf; Grund: viele treten zu zaghaft",
    "Erkennt eine Notbremsung an der sehr schnellen Pedalbetätigung (Bremsdrucksensor); begrenzt dann den Bremsdruck, damit kein Rad blockiert; Grund: viele Fahrer treten zu stark",
    "Erkennt eine Notbremsung allein am Bremslichtschalter; schaltet dann das ABS ab, um den höchsten Bremsdruck zu erreichen; Grund: ABS verlängert den Bremsweg",
-   "Erkennt eine Notbremsung am Gierratensensor; erhöht dann mechanisch die Pedalübersetzung; Grund: der Bremskraftverstärker reicht bei einer Vollbremsung nicht aus"
+   "Erkennt eine Notbremsung am Gierratensensor; verstellt dann mechanisch die Pedalübersetzung am Bremspedal; Grund: der Bremskraftverstärker reicht bei einer Vollbremsung nicht aus"
   ],
   "correct": 0,
   "explain": "Der Bremsassistent erkennt eine Notbremsung an der sehr schnellen Pedalbetätigung bzw. dem schnellen Druckanstieg (Bremsdrucksensor) und baut dann selbsttätig den vollen Bremsdruck bis in die ABS-Regelung auf. Grund: Viele Fahrer treten in der Notsituation zu zaghaft – so wird der Bremsweg kürzer. Den Druck erzeugt die Rückförderpumpe im ESP-Hydroaggregat, das Signal liefert der Bremsdrucksensor.",
@@ -1638,14 +3033,14 @@ export const QUESTIONS = [
   "src": "FW, TB (Grenzwert)"
  },
  {
-  "id": "a7b71791a2fe",
+  "id": "2f12e4a14e9f",
   "cat": "Bremse",
   "level": 2,
   "typ": "mc",
   "pkt": 4,
   "q": "Die ABS-Kontrollleuchte leuchtet, im Fehlerspeicher steht „Raddrehzahlsensor hinten links – Signal unplausibel“. Welche Antwort nennt vier mögliche Ursachen?",
   "opts": [
-   "Impulsring verschmutzt oder beschädigt; Luftspalt zu groß (z. B. Radlagerspiel); Bremsflüssigkeitsstand zu niedrig; Sensor selbst defekt",
+   "Impulsring verschmutzt oder beschädigt; Luftspalt zu groß (z. B. Radlagerspiel); Bremsflüssigkeitsstand im Ausgleichsbehälter zu niedrig; Sensor selbst defekt",
    "Impulsring verschmutzt oder beschädigt; Luftspalt zu groß (z. B. Radlagerspiel); Leitung oder Stecker beschädigt bzw. korrodiert; Sensor selbst defekt",
    "Impulsring verschmutzt oder beschädigt; Bremsbeläge hinten links verschlissen; Leitung oder Stecker beschädigt bzw. korrodiert; Sensor selbst defekt",
    "Lenkwinkelsensor nicht kalibriert; Luftspalt zu groß (z. B. Radlagerspiel); Leitung oder Stecker beschädigt bzw. korrodiert; Sensor selbst defekt"
@@ -1673,7 +3068,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "3768b76f6499",
+  "id": "e99d2a219914",
   "cat": "Bremse",
   "level": 1,
   "typ": "mc",
@@ -1681,9 +3076,9 @@ export const QUESTIONS = [
   "q": "Wie arbeitet eine elektrische Bremsbelag-Verschleißanzeige meistens?",
   "opts": [
    "Eine Kontaktschleife im Belag wird an der Verschleißgrenze durchgeschliffen, die Unterbrechung lässt die Warnleuchte angehen",
-   "Ein Ultraschallsensor misst ständig die Belagdicke",
-   "Der Raddrehzahlsensor erkennt die Belagdicke am Signal",
-   "Der Bremsdrucksensor meldet den Verschleiß über den sinkenden Druck"
+   "Ein Ultraschallsensor im Bremssattel misst während der Fahrt ständig die Belagdicke und meldet den Wert an das Kombiinstrument",
+   "Der Raddrehzahlsensor erkennt die abnehmende Belagdicke an der Veränderung seines Signals beim Bremsen",
+   "Der Bremsdrucksensor meldet den Verschleiß, weil bei dünnen Belägen für dieselbe Verzögerung mehr Druck nötig ist"
   ],
   "correct": 0,
   "explain": "Die Kontaktschleife ist so tief in den Belag eingesetzt, dass sie erst bei der Verschleißgrenze die Scheibe berührt. Nach dem Auslösen wird sie mit den Belägen erneuert.",
@@ -1759,17 +3154,17 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "6d199668844d",
+  "id": "23b8c85d3011",
   "cat": "Bremse",
   "level": 1,
   "typ": "mc",
   "pkt": 2,
   "q": "Warum ist der Hauptbremszylinder als Tandem-Hauptbremszylinder gebaut?",
   "opts": [
-   "Er versorgt zwei getrennte Bremskreise – fällt einer aus, bremst der andere weiter",
-   "Die zwei Kolben verdoppeln die Bremskraft an jedem Rad",
-   "Ein Kolben ist für die Fußbremse, der andere für die Parkbremse",
-   "Der zweite Kolben dient nur als Reserve beim Entlüften"
+   "Er versorgt zwei getrennte Bremskreise – fällt einer aus, bremst der andere Kreis weiter",
+   "Die zwei Kolben hintereinander verdoppeln den Druck und damit die Bremskraft an jedem Rad",
+   "Ein Kolben arbeitet für die Fußbremse, der andere für die Feststellbremse an der Hinterachse",
+   "Der zweite Kolben dient nur als Reserve beim Entlüften und ist im Fahrbetrieb ohne Funktion"
   ],
   "correct": 0,
   "explain": "Zwei Kolben hintereinander erzeugen den Druck für zwei unabhängige Kreise. Das ist Vorschrift, damit bei einem Leck nicht die ganze Bremse ausfällt.",
@@ -1793,7 +3188,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "d3c3dbb340a1",
+  "id": "41910767a425",
   "cat": "Bremse",
   "level": 3,
   "typ": "mc",
@@ -1802,7 +3197,7 @@ export const QUESTIONS = [
   "opts": [
    "Ist-Gierrate kleiner als Soll-Gierrate aus Lenkwinkel und Geschwindigkeit; kurveninneres Hinterrad wird gebremst; Motormoment wird reduziert",
    "Ist-Gierrate größer als Soll-Gierrate aus Lenkwinkel und Geschwindigkeit; kurvenäußeres Vorderrad wird gebremst; Motormoment wird reduziert",
-   "Ist-Gierrate kleiner als Soll-Gierrate aus Lenkwinkel und Geschwindigkeit; kurvenäußeres Hinterrad wird gebremst; Motormoment wird erhöht",
+   "Ist-Gierrate kleiner als Soll-Gierrate aus Lenkwinkel und Geschwindigkeit; kurvenäußeres Hinterrad wird gebremst; Motormoment wird zur Unterstützung kurz erhöht",
    "Querbeschleunigung größer als berechnet; beide Vorderräder werden gleich stark gebremst; Motormoment wird erhöht"
   ],
   "correct": 0,
@@ -1858,7 +3253,822 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "8b48ec8f795d",
+  "id": "afd128532724",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "bild": "bremse-epb-schaltplan.svg",
+  "q": "Ordnen Sie im EPB-Schaltplan den Pins des Steuergeräts A1 ihre Aufgabe zu.",
+  "paare": [
+   [
+    "Pin 2",
+    "Dauerplus Kl. 30 über F2 für die Endstufe von M2"
+   ],
+   [
+    "Pin 3",
+    "Zündungsplus Kl. 15 über F3"
+   ],
+   [
+    "Pin 4",
+    "Masse Kl. 31"
+   ],
+   [
+    "Pin 7 und 8",
+    "Tasterkontakte „Lösen“"
+   ],
+   [
+    "Pin 14 und 15",
+    "CAN-Verbindung zum ESP-Steuergerät"
+   ]
+  ],
+  "ablenker": [
+   "Dauerplus Kl. 30 über F3",
+   "Signal des Raddrehzahlsensors"
+  ],
+  "explain": "Die Stellmotoren brauchen viel Strom und hängen deshalb über eigene 30-A-Sicherungen an Kl. 30 (F1 für M1, F2 für M2). Über Kl. 15 (F3) erkennt das Steuergerät „Zündung ein“. Pin 9 ist die gemeinsame Leitung des Tasters, Pins 5/6 melden „Schließen“, 7/8 „Lösen“. Die Raddrehzahlen kommen nicht direkt, sondern über CAN vom ESP.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "2c13889605c5",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "bremse-epb-schaltplan.svg",
+  "q": "Die EPB schließt nur noch hinten links, M2 bleibt stumm. Das Steuergerät meldet „Versorgung Endstufe M2 fehlt“. Welche Sicherung prüfen Sie zuerst?",
+  "opts": [
+   "F1 (30 A), weil sie über Pin 1 die Endstufe von M2 versorgt",
+   "F2 (30 A), weil sie über Pin 2 die Endstufe von M2 versorgt",
+   "F3 (5 A), weil ohne Kl. 15 nur der rechte Motor abschaltet",
+   "Keine, weil die Stellmotoren ohne Sicherung an Kl. 30 hängen"
+  ],
+  "correct": 1,
+  "explain": "Laut Plan versorgt F2 über Pin 2 die Endstufe (H-Brücke) von M2. Fehlt F3 (Kl. 15), wacht das ganze Steuergerät nicht auf – dann würden beide Motoren nicht arbeiten. F1 gehört zu M1, der ja noch funktioniert.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "257cdace95a5",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "bremse-epb-schaltplan.svg",
+  "q": "Beim Schließen der EPB misst ein Kollege zwischen Messpunkt A (rote Messspitze) und Messpunkt B (schwarze Messspitze) +12,1 V. Welchen Wert erwarten Sie zwischen A und B beim Lösen?",
+  "opts": [
+   "+12,1 V – die Drehrichtung wird über ein Umschaltgetriebe im Stellmotor gewechselt",
+   "0 V – beim Lösen drückt eine Feder den Kolben zurück, der Motor bleibt stromlos",
+   "−12,1 V – die H-Brücke im Steuergerät polt den Motor um, damit er rückwärts dreht",
+   "+6 V – zum Lösen reicht die halbe Spannung, weil keine Spannkraft gebraucht wird"
+  ],
+  "correct": 2,
+  "explain": "Ein Gleichstrommotor ändert seine Drehrichtung, wenn man die Polarität umkehrt. Das erledigt die H-Brücke (Endstufe) im Steuergerät: Beim Schließen liegt Plus an Pin 10, beim Lösen an Pin 11. Das Messgerät zeigt deshalb beim Lösen ein Minuszeichen. Die Spindel ist selbsthemmend – eine Feder, die den Kolben zurückdrückt, gibt es nicht.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "c060a61bd9c9",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "bremse-epb-schaltplan.svg",
+  "q": "M1 dreht beim Schließen nicht. Die Messpunkte A und B liegen direkt am Stecker von M1; bei gestecktem Motor messen Sie während der Betätigung 12,0 V. Wo liegt der Fehler?",
+  "opts": [
+   "Im Taster S1 – ohne gültiges Tastersignal schaltet das Steuergerät die Spannung nicht durch",
+   "In der Sicherung F1 – sie ist durchgebrannt und liefert deshalb keinen Strom an die Endstufe",
+   "Im Stellmotor M1 selbst (Motor oder Getriebe) – Ansteuerung und Leitungen sind in Ordnung",
+   "In der Masseleitung an Pin 4 – ohne gute Masse bleibt immer nur ein Motor stehen"
+  ],
+  "correct": 2,
+  "explain": "Am Motorstecker liegt unter Last die volle Spannung an – Taster, Sicherung, Steuergerät, Leitungen und Masse funktionieren also. Wenn der Motor trotzdem nicht dreht, ist er selbst (Wicklung, Bürsten) oder sein Getriebe defekt. Wäre F1 durchgebrannt oder fehlte das Tastersignal, läge an A und B keine Spannung an.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "e385bb574923",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "bremse-epb-schaltplan.svg",
+  "q": "Warum hat der Taster S1 für „Schließen“ und für „Lösen“ jeweils zwei Kontakte (Pins 5/6 und 7/8)?",
+  "opts": [
+   "Damit doppelt so viel Strom fließt, wie die beiden Stellmotoren zusammen zum Schließen brauchen",
+   "Das Steuergerät vergleicht beide Signale und schaltet nur, wenn sie zusammenpassen – Fehler werden erkannt",
+   "Ein Kontakt steuert den linken, der andere den rechten Stellmotor direkt und ohne Umweg über das Steuergerät an",
+   "Der zweite Kontakt schaltet nur die Beleuchtung des Tasters bei Nacht ein und wieder aus"
+  ],
+  "correct": 1,
+  "explain": "Die Parkbremse ist sicherheitsrelevant: Ein hängender oder kurzgeschlossener Kontakt darf die Bremse nicht ungewollt lösen oder schließen. Deshalb gibt es je Richtung zwei Kontakte, die das Steuergerät auf Plausibilität prüft. Über den Taster fließt nur ein kleiner Signalstrom – den Motorstrom schaltet die Endstufe im Steuergerät.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "df0d89cdc2a8",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "bremse-epb-schaltplan.svg",
+  "q": "Beim Schließen der EPB messen Sie zwischen Messpunkt D und dem Minuspol der Batterie 1,4 V. Wie beurteilen Sie das?",
+  "opts": [
+   "In Ordnung – an einer Masseleitung darf unter Last bis etwa zur halben Bordnetzspannung abfallen",
+   "Zu hoher Spannungsfall an der Masseverbindung – Massepunkt und Leitung prüfen, reinigen bzw. instand setzen",
+   "Die Batterie ist zu schwach – sie muss ersetzt werden, weil an der Masse 1,4 V Spannung fehlen",
+   "Die Messung ist ungültig – einen Spannungsfall misst man nur bei ausgeschalteter Zündung ohne Strom"
+  ],
+  "correct": 1,
+  "explain": "Eine gute Masseleitung hat fast keinen Widerstand; unter Last dürfen laut Herstellerangabe nur wenige Zehntel Volt abfallen. 1,4 V zeigen einen Übergangswiderstand (Korrosion, lockere Verschraubung). Den Spannungsfall misst man gerade unter Last – ohne Strom fällt an keinem Widerstand Spannung ab.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "570925b21679",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "bremse-epb-schaltplan.svg",
+  "q": "Woher bekommt das EPB-Steuergerät A1 die Fahrgeschwindigkeit, die es z. B. für den Anfahrassistenten und die Notbremsfunktion braucht?",
+  "opts": [
+   "Von eigenen Raddrehzahlsensoren, die in den Stellmotoren M1 und M2 eingebaut sind",
+   "Vom Taster S1, der die Geschwindigkeit aus der Dauer der Betätigung berechnet",
+   "Über Pin 3 (Kl. 15), auf dem eine geschwindigkeitsabhängige Spannung liegt",
+   "Über CAN (Pins 14/15) vom ESP-Steuergerät, das die Raddrehzahlen auswertet"
+  ],
+  "correct": 3,
+  "explain": "Die Raddrehzahlsensoren sind am ESP-Steuergerät angeschlossen. Es berechnet daraus die Geschwindigkeit und schickt sie über den CAN-Bus an andere Steuergeräte, auch an die EPB. Kl. 15 meldet nur „Zündung ein“.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "f215d3cb2ce1",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "bild": "bremse-esp-hydraulik.svg",
+  "q": "Das ESP bremst beim Übersteuern in einer Rechtskurve gezielt das Rad vorn links, ohne dass der Fahrer bremst. Ordnen Sie den Bauteilen ihren Zustand zu.",
+  "paare": [
+   [
+    "② Umschaltventil",
+    "geschlossen (bestromt)"
+   ],
+   [
+    "③ Ansaugventil",
+    "offen (bestromt)"
+   ],
+   [
+    "④ Rückförderpumpe",
+    "läuft und fördert"
+   ],
+   [
+    "⑥ Einlassventil VL",
+    "offen (stromlos)"
+   ],
+   [
+    "⑧ Einlassventil HR",
+    "geschlossen (bestromt)"
+   ]
+  ],
+  "ablenker": [
+   "steht still"
+  ],
+  "explain": "In der Rechtskurve ist vorn links das kurvenäußere Vorderrad. Das Umschaltventil ② trennt den Kreis vom Hauptbremszylinder, damit der Druck nicht zurückfließt. Über das offene Ansaugventil ③ saugt die Pumpe ④ Flüssigkeit aus dem HBZ und drückt sie über das offene Einlassventil ⑥ in die Radbremse. Das Einlassventil ⑧ wird geschlossen, damit hinten rechts nicht mitgebremst wird.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "779980ea2d33",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "bremse-esp-hydraulik.svg",
+  "q": "Bei einer Vollbremsung neigt das Rad vorn links zum Blockieren, das ABS baut dort Druck ab. Welche Bauteile werden dabei angesteuert?",
+  "opts": [
+   "Nur ⑦ wird bestromt (offen), ⑥ bleibt offen; die Pumpe ④ steht still, damit kein Druck entsteht",
+   "⑥ und ⑦ werden bestromt (⑥ zu, ⑦ offen), die Pumpe ④ läuft; ② und ③ bleiben stromlos",
+   "② und ③ werden bestromt, die Pumpe ④ läuft; ⑥ und ⑦ bleiben in ihrer stromlosen Stellung",
+   "⑥ wird bestromt (zu), ⑦ bleibt zu; die Pumpe ④ fördert die Flüssigkeit in den Speicher ⑤"
+  ],
+  "correct": 1,
+  "explain": "Druckabbau: Das Einlassventil ⑥ schließt (kein weiterer Druck vom HBZ), das Auslassventil ⑦ öffnet, Flüssigkeit fließt in den Speicher ⑤. Die Pumpe ④ fördert sie über das offene Umschaltventil ② zurück zum Hauptbremszylinder – das spürt der Fahrer als Pulsieren im Pedal. ② und ③ werden nur für aktiven Druckaufbau (ESP, ASR) angesteuert.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "9b40d22613d2",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "bremse-esp-hydraulik.svg",
+  "q": "Welche Stellung haben die Ventile ⑥ und ⑦ in der ABS-Phase „Druck halten“ am Rad vorn links?",
+  "opts": [
+   "⑥ stromlos und offen, ⑦ stromlos und geschlossen",
+   "⑥ bestromt und geschlossen, ⑦ bestromt und offen",
+   "⑥ bestromt und geschlossen, ⑦ stromlos und geschlossen",
+   "⑥ stromlos und offen, ⑦ bestromt und offen"
+  ],
+  "correct": 2,
+  "explain": "Zum Halten werden beide Wege zugemacht: Das stromlos offene Einlassventil ⑥ muss dafür bestromt werden, das stromlos geschlossene Auslassventil ⑦ bleibt einfach stromlos. Antwort 1 ist die Grundstellung (Druck aufbauen), Antwort 2 der Druckabbau.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "9cce26ffe760",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "bild": "bremse-esp-hydraulik.svg",
+  "q": "Ordnen Sie den Ventilen im Bild ihre Grundstellung ohne Strom zu.",
+  "paare": [
+   [
+    "② Umschaltventil",
+    "stromlos offen"
+   ],
+   [
+    "③ Ansaugventil",
+    "stromlos geschlossen"
+   ],
+   [
+    "⑥ Einlassventil VL",
+    "stromlos offen"
+   ],
+   [
+    "⑦ Auslassventil VL",
+    "stromlos geschlossen"
+   ],
+   [
+    "⑧ Einlassventil HR",
+    "stromlos offen"
+   ],
+   [
+    "⑨ Auslassventil HR",
+    "stromlos geschlossen"
+   ]
+  ],
+  "explain": "Die Grundstellung ist so gewählt, dass die Anlage ohne Strom ganz normal bremst: Vom Hauptbremszylinder führt ein offener Weg über ② und die Einlassventile zu den Radbremsen. Alle Wege, die Druck abbauen (Auslassventile) oder die Pumpe mit dem HBZ verbinden (Ansaugventil), sind stromlos zu. Fällt das Steuergerät aus, bleibt so die Grundbremse erhalten.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "2257d42accd9",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "bremse-esp-hydraulik.svg",
+  "q": "Ein Span hält das Einlassventil ⑥ dauerhaft geschlossen. Wie wirkt sich das beim normalen Bremsen aus?",
+  "opts": [
+   "Das Rad vorn links bremst dauernd mit, weil der Druck dort nicht mehr abgebaut werden kann",
+   "Der ganze Bremskreis fällt aus, auch das Rad hinten rechts bekommt keinen Druck mehr",
+   "Keine Auswirkung, weil der Druck dann über das Auslassventil ⑦ zur Radbremse gelangt",
+   "Das Rad vorn links bremst nicht – das Fahrzeug zieht beim Bremsen nach rechts"
+  ],
+  "correct": 3,
+  "explain": "Über ⑥ kommt der Druck vom Hauptbremszylinder zur Radbremse vorn links. Ist es zu, bleibt diese Radbremse drucklos. Das Rad hinten rechts wird über ⑧ weiter versorgt. Weil vorn rechts (anderer Kreis) normal bremst, zieht das Fahrzeug nach rechts. ⑦ führt nur zum Speicher, nicht vom HBZ zur Radbremse.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "4f043a60aad9",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "bremse-esp-hydraulik.svg",
+  "q": "Wozu dient der Drucksensor ⑫ im Bild?",
+  "opts": [
+   "Er misst den Druck in der Radbremse vorn links, damit das Steuergerät die Belagdicke berechnen kann",
+   "Er misst den Vordruck, den der Fahrer im Hauptbremszylinder erzeugt – also den Bremswunsch",
+   "Er misst den Druck im Niederdruckspeicher und schaltet die Pumpe ab, sobald der Speicher voll ist",
+   "Er misst den Unterdruck im Bremskraftverstärker und warnt bei zu wenig Unterdruck vom Motor"
+  ],
+  "correct": 1,
+  "explain": "Der Drucksensor sitzt am Ausgang des Hauptbremszylinders und zeigt, wie stark der Fahrer bremst. Das ESP braucht diesen Wert, um bei einem Eingriff den Fahrerwunsch zu berücksichtigen, und der Bremsassistent erkennt daran eine Notbremsung (schneller Druckanstieg).",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "eaf1c2ffd0e9",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "bremse-oszi-raddrehzahl.svg",
+  "q": "Messung 3 stammt von einem passiven Sensor. Wie groß sind Scheitelwert (Spitze gegen Null-Linie) und Frequenz?",
+  "opts": [
+   "4 V und 250 Hz",
+   "2 V und 500 Hz",
+   "2 V und 0,25 Hz",
+   "2 V und 250 Hz"
+  ],
+  "correct": 3,
+  "explain": "Die Sinuskurve reicht 2 Kästchen über und unter die Null-Linie: Scheitelwert 2 × 1 V = 2 V (Spitze-Spitze wären 4 V). Eine volle Schwingung dauert 4 Kästchen = 4 ms, also f = 1 ÷ 0,004 s = 250 Hz. Wer nur bis zum nächsten Nulldurchgang zählt, liest die halbe Periode ab und kommt auf 500 Hz.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "fa3ef79491e5",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "bremse-oszi-raddrehzahl.svg",
+  "q": "Wie ändert sich das Signal von Messung 3, wenn sich das Rad doppelt so schnell dreht?",
+  "opts": [
+   "Nur die Frequenz verdoppelt sich, die Amplitude bleibt gleich – genau wie beim aktiven Sensor",
+   "Nur die Amplitude wird doppelt so groß, die Frequenz bleibt gleich, weil die Zähnezahl gleich bleibt",
+   "Die Frequenz verdoppelt sich, und die Amplitude wird größer, weil sich das Magnetfeld schneller ändert",
+   "Beides bleibt gleich, nur die Null-Linie verschiebt sich nach oben, weil die Spule wärmer wird"
+  ],
+  "correct": 2,
+  "explain": "Beim induktiven Sensor hängt die erzeugte Spannung davon ab, wie schnell sich das Magnetfeld in der Spule ändert. Dreht das Zahnrad schneller, kommen die Zähne öfter (höhere Frequenz) und das Feld ändert sich rascher (höhere Spannung). Deshalb liefert ein passiver Sensor bei sehr kleiner Drehzahl kein auswertbares Signal.",
+  "src": "FW"
+ },
+ {
+  "id": "155b7f0c5cec",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "bremse-oszi-raddrehzahl.svg",
+  "q": "Woran erkennen Sie, dass Messung 1 von einem aktiven und Messung 3 von einem passiven Sensor stammt?",
+  "opts": [
+   "Messung 1 hat die höhere Frequenz, weil aktive Sensoren grundsätzlich schneller arbeiten als passive",
+   "Messung 1: Rechteck mit zwei festen Strompegeln; Messung 3: Sinus-Wechselspannung um die Null-Linie",
+   "Messung 1: Sinus mit steigender Amplitude; Messung 3: Rechtecksignal mit zwei festen Pegeln",
+   "Messung 3 hat negative Werte, weil der passive Sensor falsch herum angeschlossen wurde"
+  ],
+  "correct": 1,
+  "explain": "Der aktive Sensor schaltet zwischen zwei festen Pegeln (hier 7 und 14 mA) – das gibt ein Rechteck. Der passive Sensor erzeugt selbst eine Wechselspannung, die abwechselnd positiv und negativ ist. Die Frequenz hängt von Drehzahl und Zähne- bzw. Polzahl ab, nicht von der Sensorart.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "73bbbb0b4ff6",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "bremse-oszi-raddrehzahl.svg",
+  "q": "Wie groß ist bei Messung 1 das Tastverhältnis (Anteil des oberen Pegels an einer Periode)?",
+  "opts": [
+   "25 %",
+   "50 %",
+   "75 %",
+   "100 %"
+  ],
+  "correct": 1,
+  "explain": "Der obere Pegel (14 mA) dauert 1 Kästchen = 1 ms, eine ganze Periode 2 ms. Tastverhältnis = 1 ms ÷ 2 ms × 100 % = 50 %. Beim Raddrehzahlsensor steckt die Information in der Frequenz, das Tastverhältnis ist ungefähr gleich.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "c960e8551e1a",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Wie hält die Funktion Auto-Hold das Fahrzeug nach dem Anhalten, und wann übernimmt die elektrische Parkbremse?",
+  "opts": [
+   "Die EPB-Stellmotoren schließen bei jedem Halt sofort; das ESP greift nur ein, wenn die Batteriespannung sinkt",
+   "Das ESP hält den Druck mit geschlossenen Ventilen; je nach Hersteller übergibt es z. B. bei längerem Halt oder Motor aus an die EPB",
+   "Der Bremskraftverstärker hält das Pedal über eine Klinke mechanisch fest, bis der Fahrer Gas gibt; die EPB übernimmt dabei nie",
+   "Das ESP hält den Druck mit dauernd laufender Pumpe, auch nach dem Abstellen des Motors über viele Stunden"
+  ],
+  "correct": 1,
+  "explain": "Auto-Hold ist eine gemeinsame Funktion von ESP und EPB: Zuerst sperrt das ESP-Hydroaggregat den Druck in den Radbremsen ein (Ventile zu). Weil das nicht beliebig lange geht, übergibt es je nach Hersteller z. B. bei längerem Stillstand, ausgeschaltetem Motor oder geöffneter Fahrertür an die EPB, die mechanisch hält. Beim Gasgeben löst das System selbsttätig.",
+  "src": "Netz: FISITA-Paper, leasingmarkt.de (Recherche ausbau-bremse)"
+ },
+ {
+  "id": "38a7fbba1c13",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Während der Fahrt zieht der Fahrer dauerhaft am EPB-Taster, das ESP ist aber wegen eines Fehlers abgeschaltet. Wie bremst das Fahrzeug bei vielen Systemen?",
+  "opts": [
+   "Die Stellmotoren schließen sofort mit voller Kraft und halten die Hinterräder blockiert, bis das Fahrzeug steht",
+   "Gar nicht – ohne ESP ist die elektrische Parkbremse während der Fahrt völlig ohne Funktion",
+   "Das EPB-Steuergerät bremst über die Vorderräder, indem es den Bremskraftverstärker elektrisch ansteuert",
+   "Die Stellmotoren hinten schließen und lösen im Wechsel, damit die Hinterräder nicht blockieren"
+  ],
+  "correct": 3,
+  "explain": "Normalerweise bremst bei der dynamischen Notbremsung das ESP-Hydroaggregat an allen Rädern. Steht das ESP nicht zur Verfügung, bremsen viele Systeme als Rückfallebene nur mit den Stellmotoren hinten – und zwar in Intervallen, damit die Hinterräder nicht blockieren und das Heck nicht ausbricht. Das genaue Verhalten ist herstellerabhängig.",
+  "src": "Netz: auto-motor-und-sport.de, FISITA-Paper (Recherche ausbau-bremse)"
+ },
+ {
+  "id": "fe1014822fdf",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie den ESP-Sensoren ihren üblichen Einbauort zu.",
+  "paare": [
+   [
+    "Lenkwinkelsensor",
+    "An der Lenksäule unter dem Lenkrad"
+   ],
+   [
+    "Gierraten- und Querbeschleunigungssensor",
+    "Nahe am Schwerpunkt, oft im Steuergerät integriert"
+   ],
+   [
+    "Raddrehzahlsensor",
+    "Am Achsschenkel bzw. Radlager"
+   ],
+   [
+    "Bremsdrucksensor",
+    "Am Hauptbremszylinder oder im Hydroaggregat"
+   ]
+  ],
+  "ablenker": [
+   "Im Ansaugrohr des Motors"
+  ],
+  "explain": "Gierrate und Querbeschleunigung sollen die Bewegung des ganzen Fahrzeugs messen – deshalb möglichst nahe am Schwerpunkt, bei neueren Systemen direkt im ESP-Steuergerät. Der Lenkwinkelsensor erfasst die Drehung der Lenksäule, der Raddrehzahlsensor tastet den Impuls- bzw. Magnetring am Rad ab.",
+  "src": "FW"
+ },
+ {
+  "id": "73f470cca1d2",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Nach dem Tausch des Gierratensensors leuchtet die ESP-Leuchte weiter, im Fehlerspeicher steht „Grundeinstellung fehlt“. Was ist zu tun?",
+  "opts": [
+   "Die Bremsanlage entlüften, weil beim Sensortausch Luft in das Hydroaggregat gelangt ist",
+   "Den Nullabgleich mit dem Tester durchführen, Fahrzeug steht still auf ebener Fläche",
+   "Die Bremsflüssigkeit wechseln, weil der neue Sensor mit der alten Flüssigkeit falsch misst",
+   "Den Luftspalt aller vier Raddrehzahlsensoren messen und mit Beilagscheiben einstellen"
+  ],
+  "correct": 1,
+  "explain": "Ein neuer Gierraten- bzw. Querbeschleunigungssensor muss dem Steuergerät seine Nulllage mitteilen. Dafür startet man mit dem Tester den Nullabgleich – das Fahrzeug muss stillstehen und waagerecht stehen, sonst lernt das System eine Schräglage als „null“. Die Hydraulik wird beim Sensortausch nicht geöffnet.",
+  "src": "FW, Netz: kfz-dietrich.com"
+ },
+ {
+  "id": "09795ad1d44e",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Bei Geradeausfahrt auf ebener Straße steht das Lenkrad gerade, der Messwertblock zeigt aber einen Lenkwinkel von +14°. Was ist zu tun?",
+  "opts": [
+   "Das Lenkrad auf der Lenksäule versetzen, bis der Messwertblock bei Geradeausfahrt 0° zeigt",
+   "Nichts – Abweichungen bis etwa 20° gleicht das ESP-Steuergerät während der Fahrt selbst aus",
+   "Den Gierratensensor ersetzen, weil er den Lenkwinkel falsch an das Steuergerät weitergibt",
+   "Die Grundeinstellung des Lenkwinkelsensors bei geradeaus stehenden Rädern mit dem Tester ausführen"
+  ],
+  "correct": 3,
+  "explain": "Steht das Lenkrad gerade und das Fahrzeug fährt geradeaus, muss der Sensor 0° melden. +14° heißt: Die Nulllage ist falsch, z. B. nach Achsvermessung oder Arbeiten an der Lenkung. Mit dem Tester wird die Nulllage neu gelernt. Das Lenkrad zu versetzen wäre falsch – dann stünde es bei Geradeausfahrt schief.",
+  "src": "Netz: kfz-dietrich.com (Recherche 3.6)"
+ },
+ {
+  "id": "afcca053e3ee",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Die Bremsscheibe vorn links misst an der dünnsten Stelle 20,6 mm, die Mindestdicke laut Hersteller ist 21,0 mm. Was ist zu tun?",
+  "opts": [
+   "Nur die linke Scheibe erneuern, weil die rechte noch über der Mindestdicke liegt",
+   "Die Scheibe abdrehen lassen, damit die Oberfläche wieder plan und sauber ist",
+   "Beide Bremsscheiben und die Beläge der Vorderachse gemeinsam erneuern",
+   "Nichts – die Mindestdicke wird erst bei der nächsten Hauptuntersuchung geprüft"
+  ],
+  "correct": 2,
+  "explain": "Unter der Mindestdicke kann die Scheibe die Wärme nicht mehr sicher aufnehmen und kann reißen. Erneuert wird immer achsweise, damit beide Seiten gleich bremsen; neue Scheiben bekommen neue Beläge. Abdrehen macht die Scheibe noch dünner – hier unzulässig.",
+  "src": "FW"
+ },
+ {
+  "id": "6994437ca7bb",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "An einer neuen, auf dem Fahrzeug montierten Bremsscheibe messen Sie mit der Messuhr einen Seitenschlag über dem Herstellerwert. Was ist die wahrscheinlichste Ursache, und was tun Sie zuerst?",
+  "opts": [
+   "Die neue Scheibe ist sicher fehlerhaft – sofort beim Lieferanten reklamieren, ohne die Nabe anzusehen",
+   "Rost oder Schmutz zwischen Nabe und Scheibe – Anlageflächen reinigen, Scheibe neu montieren, erneut messen",
+   "Der Seitenschlag ist bei neuen Scheiben normal und verschwindet beim Einbremsen nach wenigen Kilometern",
+   "Die Bremsbeläge drücken die Scheibe schief – Beläge ausbauen und den Seitenschlag ohne Sattel messen"
+  ],
+  "correct": 1,
+  "explain": "Schon ein kleiner Rostkrümel auf der Nabe kippt die Scheibe und erzeugt außen einen großen Ausschlag. Deshalb Nabe und Scheibe an der Anlagefläche blank reinigen und neu messen (Scheibe mit Radschrauben bzw. Distanzstücken fixiert). Erst wenn der Wert dann noch zu hoch ist, Nabe bzw. Radlager oder die Scheibe selbst prüfen. Seitenschlag führt später zu Dickenunterschieden und Pedalpulsieren.",
+  "src": "FW"
+ },
+ {
+  "id": "0006cc824c18",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Warum werden Bremsscheiben und Bremsbeläge immer achsweise (links und rechts zusammen) erneuert?",
+  "opts": [
+   "Weil die Hersteller die Teile nur im Doppelpack liefern; technisch wäre ein einzelner Tausch gleichwertig",
+   "Damit beide Seiten gleich stark bremsen und das Fahrzeug beim Bremsen nicht zu einer Seite zieht",
+   "Damit die Raddrehzahlsensoren links und rechts wieder genau das gleiche Signal an das ESP liefern",
+   "Weil sonst die Bremsflüssigkeit auf der Seite mit den alten Teilen schneller altert und Wasser zieht"
+  ],
+  "correct": 1,
+  "explain": "Neue und alte Beläge bzw. Scheiben haben unterschiedliche Reibwerte und Dicken. Ein Tausch nur auf einer Seite führt zu ungleichen Bremskräften – das Fahrzeug zieht schief, bei der HU fällt die Ungleichmäßigkeit auf dem Prüfstand auf.",
+  "src": "FW"
+ },
+ {
+  "id": "f7655df7d6bc",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Welchen Hinweis geben Sie dem Kunden nach dem Einbau neuer Bremsscheiben und -beläge?",
+  "opts": [
+   "Neue Beläge haben sofort die volle Wirkung; Einbremsen ist nur bei Rennfahrzeugen nötig",
+   "Die ersten 100 km möglichst nur mit der Parkbremse verzögern, damit sich die Beläge vorn setzen",
+   "Nach etwa 500 km die Bremsflüssigkeit wechseln lassen, weil sie durch den Abrieb verschmutzt",
+   "Beläge nach Herstellerangabe einbremsen, in den ersten Kilometern vorausschauend bremsen"
+  ],
+  "correct": 3,
+  "explain": "Beläge und Scheiben müssen sich erst aneinander anpassen; bis dahin ist die Bremswirkung geringer. Deshalb nach Herstellerangabe einbremsen und den Kunden darauf hinweisen. Mit der Parkbremse zu verzögern wäre gefährlich und bringt den Vorderradbremsen nichts.",
+  "src": "FW"
+ },
+ {
+  "id": "dbe5cc3847f0",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "reihenfolge",
+  "pkt": 5,
+  "q": "Beim Tausch des Hydroaggregats ist Luft in die Ventile gelangt. Bringen Sie die Schritte zum Entlüften mit Entlüftungsgerät und Tester in die richtige Reihenfolge.",
+  "schritte": [
+   "Befüll- und Entlüftungsgerät anschließen und mit vorgeschriebenem Druck einschalten",
+   "Radbremsen in der Reihenfolge laut Hersteller entlüften (Grundentlüftung)",
+   "Tester anschließen und die Entlüftungsroutine des Hydroaggregats starten",
+   "Während der Routine die vom Tester angezeigten Entlüfterventile öffnen und schließen",
+   "Radbremsen nochmals entlüften, bis die Flüssigkeit blasenfrei austritt",
+   "Gerät abbauen, Füllstand einstellen, Pedal prüfen, Probefahrt mit ABS-Regelung"
+  ],
+  "explain": "Erst wird die Anlage normal gefüllt und entlüftet. Dann steuert der Tester Ventile und Rückförderpumpe an, damit auch die Kammern im Aggregat durchgespült werden, die beim normalen Bremsen keine Flüssigkeit sehen. Danach nochmals an den Rädern entlüften, weil die Routine Luft in die Radkreise schiebt.",
+  "src": "FW"
+ },
+ {
+  "id": "85d567d123b9",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Bei der Sichtprüfung finden Sie an einem Bremsschlauch Risse, und er wölbt sich beim Bremsen auf. Was tun Sie?",
+  "opts": [
+   "Den Schlauch erneuern, danach die Anlage entlüften und die Dichtheit prüfen",
+   "Den Schlauch bis zur nächsten Inspektion lassen, weil das Gewebe innen noch hält",
+   "Den Schlauch mit Silikonspray pflegen, damit der Gummi wieder geschmeidig wird",
+   "Den Schlauch mit Gewebeband umwickeln, damit er sich nicht weiter aufwölben kann"
+  ],
+  "correct": 0,
+  "explain": "Ein Schlauch, der sich aufwölbt, hat eine beschädigte Gewebeeinlage und kann platzen – die Bremse des Kreises fiele aus. Er wird sofort erneuert; weil dabei die Hydraulik geöffnet wird, muss anschließend entlüftet werden.",
+  "src": "FW"
+ },
+ {
+  "id": "f32548d7aa69",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "q": "Ein Pkw fährt 100 km/h. Die Reaktionszeit beträgt 1 s, die mittlere Bremsverzögerung 8 m/s². Wie lang ist der Anhalteweg?",
+  "opts": [
+   "48,2 m",
+   "76,0 m",
+   "124,2 m",
+   "652,8 m"
+  ],
+  "correct": 1,
+  "explain": "v = 100 km/h ÷ 3,6 = 27,8 m/s. Reaktionsweg = v × t = 27,8 m. Bremsweg = v² ÷ (2 × a) = 771,6 ÷ 16 ≈ 48,2 m. Anhalteweg = 27,8 m + 48,2 m = 76,0 m. Typische Fehler: nur den Bremsweg angeben (48,2 m), die 2 im Nenner vergessen (124,2 m) oder km/h nicht umrechnen (652,8 m).",
+  "src": "FW"
+ },
+ {
+  "id": "9267d0293ba8",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Ein Fahrzeug kommt aus 50 km/h auf 12 m Bremsweg zum Stehen. Wie groß war die mittlere Verzögerung?",
+  "opts": [
+   "1,2 m/s²",
+   "16,1 m/s²",
+   "8,0 m/s²",
+   "104,2 m/s²"
+  ],
+  "correct": 2,
+  "explain": "v = 50 km/h ÷ 3,6 = 13,9 m/s. a = v² ÷ (2 × s) = 192,9 ÷ 24 ≈ 8,0 m/s². Typische Fehler: die 2 vergessen (16,1 m/s²), km/h nicht umrechnen (104,2 m/s²) oder v ÷ s rechnen (1,2).",
+  "src": "FW"
+ },
+ {
+  "id": "95fc6bc326b1",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Ein passiver Raddrehzahlsensor tastet ein Zahnrad mit 43 Zähnen ab. Das Rad dreht mit 600 1/min. Welche Frequenz hat das Sensorsignal?",
+  "opts": [
+   "10 Hz",
+   "430 Hz",
+   "25.800 Hz",
+   "14 Hz"
+  ],
+  "correct": 1,
+  "explain": "f = z × n ÷ 60 = 43 × 600 1/min ÷ 60 s/min = 430 Hz. Typische Fehler: Minuten nicht in Sekunden umrechnen (25.800), die Zähnezahl vergessen (10 Hz) oder Drehzahl durch Zähnezahl teilen (≈ 14).",
+  "src": "FW"
+ },
+ {
+  "id": "d04e4c9bebe7",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "q": "Ein Faustsattel drückt die Beläge mit einer Spannkraft von je 8000 N an die Scheibe. Reibwert μ = 0,4, wirksamer Reibradius 120 mm. Wie groß ist das Bremsmoment an der Scheibe?",
+  "opts": [
+   "384 Nm",
+   "1.920 Nm",
+   "768.000 Nm",
+   "768 Nm"
+  ],
+  "correct": 3,
+  "explain": "Beide Beläge reiben: F_R = 2 × μ × F_Sp = 2 × 0,4 × 8000 N = 6400 N. M = F_R × r = 6400 N × 0,12 m = 768 Nm. Typische Fehler: nur einen Belag rechnen (384 Nm), μ vergessen (1.920 Nm) oder mm nicht in m umrechnen (768.000).",
+  "src": "FW"
+ },
+ {
+  "id": "2f439faf73d9",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Wann muss die Bremsflüssigkeit gewechselt werden?",
+  "opts": [
+   "Nie – im geschlossenen System altert sie nicht und nimmt kein Wasser auf",
+   "Nur dann, wenn der Füllstand im Ausgleichsbehälter unter MIN gefallen ist",
+   "Nach Herstellervorschrift, bei vielen Pkw alle zwei Jahre, auch ohne Auffälligkeit",
+   "Bei jedem Motorölwechsel, weil beide Flüssigkeiten gleich schnell altern"
+  ],
+  "correct": 2,
+  "explain": "Bremsflüssigkeit nimmt auch im geschlossenen System über Schläuche und die Belüftung des Behälters Wasser auf; der Siedepunkt sinkt. Deshalb gibt der Hersteller ein Zeitintervall vor, häufig zwei Jahre. Ein niedriger Füllstand deutet auf Belagverschleiß oder ein Leck hin, nicht auf gealterte Flüssigkeit.",
+  "src": "TB Bremsflüssigkeit, FW"
+ },
+ {
+  "id": "8f63dd722a7b",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "tb": true,
+  "q": "Warum wird bei Fahrzeugen mit ABS/ESP oft DOT 5.1 statt DOT 4 empfohlen? Vergleichen Sie die Werte im Tabellenbuch.",
+  "opts": [
+   "DOT 5.1 ist auf Silikonbasis und nimmt deshalb überhaupt kein Wasser aus der Luft auf",
+   "DOT 5.1 hat einen niedrigeren Siedepunkt, damit das ESP den Druck schneller abbauen kann",
+   "DOT 5.1 ist bei Kälte deutlich dünnflüssiger und strömt schneller durch die Ventile",
+   "DOT 5.1 altert nicht und muss deshalb während der Lebensdauer nie gewechselt werden"
+  ],
+  "correct": 2,
+  "explain": "Laut Tabellenbuch hat DOT 5.1 bei −40 °C eine deutlich kleinere Viskosität als DOT 4 und dazu höhere Siedepunkte. Dünnflüssige Bremsflüssigkeit lässt die schnellen Ventil- und Pumpenzyklen im Hydroaggregat auch im Winter zu. DOT 5.1 ist eine Glykolflüssigkeit – Silikon ist DOT 5.",
+  "src": "TB Bremsflüssigkeit"
+ },
+ {
+  "id": "574f0fc9f490",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie den Bauteilen der elektrischen Parkbremse (Motor-on-Caliper) ihre Aufgabe zu.",
+  "paare": [
+   [
+    "EPB-Taster",
+    "Meldet den Fahrerwunsch Schließen oder Lösen"
+   ],
+   [
+    "EPB-Steuergerät",
+    "Wertet Signale aus und steuert die Stellmotoren mit Polwendung an"
+   ],
+   [
+    "Stellmotor",
+    "Erzeugt die Drehbewegung"
+   ],
+   [
+    "Getriebe und Spindel",
+    "Wandeln die Drehung in die Längsbewegung des Kolbens und halten ihn fest"
+   ]
+  ],
+  "ablenker": [
+   "Erzeugt den hydraulischen Druck im Hauptbremszylinder"
+  ],
+  "explain": "Der kleine Elektromotor dreht schnell, das Getriebe untersetzt und die Spindel schiebt den Kolben mit großer Kraft gegen die Beläge. Die Spindel ist selbsthemmend – die Bremse bleibt auch ohne Strom geschlossen. Deshalb braucht man zum Zurückdrehen den Servicemodus.",
+  "src": "FW, Recherche 3.2"
+ },
+ {
+  "id": "595d0b295909",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "q": "Ordnen Sie den Kontrollleuchten ihre Bedeutung zu.",
+  "paare": [
+   [
+    "Gelbe ABS-Leuchte leuchtet dauernd",
+    "ABS abgeschaltet, Grundbremse wirkt weiter"
+   ],
+   [
+    "ESP-Leuchte blinkt kurz während der Fahrt",
+    "ESP bzw. ASR regelt gerade"
+   ],
+   [
+    "ESP-Leuchte leuchtet dauernd",
+    "ESP gestört oder abgeschaltet"
+   ],
+   [
+    "Rote Bremswarnleuchte zusammen mit ABS-Leuchte",
+    "Auch die Bremskraftverteilung ist gestört – nicht weiterfahren"
+   ],
+   [
+    "Rote EPB-Leuchte im Stand",
+    "Parkbremse ist geschlossen"
+   ]
+  ],
+  "ablenker": [
+   "Neue Bremsbeläge wurden eingebaut"
+  ],
+  "explain": "Gelb heißt: Funktion eingeschränkt, vorsichtig weiterfahren und bald in die Werkstatt. Rot heißt: Sicherheit nicht gewährleistet bzw. Hinweis auf einen Zustand. Die rote Bremswarnleuchte allein kann auch einen zu niedrigen Flüssigkeitsstand melden. Blinkt die ESP-Leuchte, arbeitet das System gerade – das ist kein Fehler.",
+  "src": "FW"
+ },
+ {
+  "id": "180b5f4e579c",
+  "cat": "Bremse",
+  "level": 3,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie der Fahrsituation den passenden Eingriff von ABS, ASR bzw. ESP zu.",
+  "paare": [
+   [
+    "Übersteuern in einer Linkskurve",
+    "Rad vorn rechts gezielt bremsen"
+   ],
+   [
+    "Untersteuern in einer Linkskurve",
+    "Rad hinten links gezielt bremsen"
+   ],
+   [
+    "Linkes Antriebsrad dreht beim Anfahren auf Eis durch",
+    "Linkes Antriebsrad bremsen, Motormoment senken"
+   ],
+   [
+    "Ein Vorderrad blockiert bei einer Vollbremsung",
+    "Druck an diesem Rad halten bzw. abbauen"
+   ]
+  ],
+  "ablenker": [
+   "Alle vier Räder gleich stark bremsen"
+  ],
+  "explain": "Übersteuern: kurvenäußeres Vorderrad bremsen (Linkskurve → rechts vorn), das dreht das Fahrzeug zurück. Untersteuern: kurveninneres Hinterrad bremsen (Linkskurve → links hinten), das dreht es in die Kurve. ASR bremst das durchdrehende Rad und nimmt Motormoment weg, ABS regelt den Druck am blockierenden Rad.",
+  "src": "FW"
+ },
+ {
+  "id": "15a708a8870a",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Wie arbeitet die elektronische Bremskraftverteilung (EBV) in einem Fahrzeug mit ABS?",
+  "opts": [
+   "Sie verteilt die Bremskraft über einen mechanischen Druckminderer, der je nach Beladung umschaltet",
+   "Sie vergleicht den Schlupf vorn und hinten und begrenzt über die Einlassventile den Druck hinten",
+   "Sie erhöht beim Bremsen den Druck an den Hinterrädern, damit die Vorderachse entlastet wird",
+   "Sie arbeitet nur bei ESP-Eingriffen und hat beim normalen Bremsen überhaupt keine Aufgabe"
+  ],
+  "correct": 1,
+  "explain": "Beim Bremsen verlagert sich Gewicht nach vorn, die Hinterräder neigen früher zum Blockieren. Die EBV erkennt das an den Raddrehzahlen (Schlupf hinten größer als vorn) und hält den Druck hinten über die Einlassventile, bevor das ABS eingreifen müsste. Sie ersetzt den früheren mechanischen Bremskraftregler.",
+  "src": "FW"
+ },
+ {
+  "id": "b86949d12fd6",
+  "cat": "Bremse",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Wie prüfen Sie in der Werkstatt einfach, ob der Unterdruck-Bremskraftverstärker arbeitet?",
+  "opts": [
+   "Motor laufen lassen und Pedal einmal treten – wird es dabei härter, ist der Verstärker in Ordnung",
+   "Motor aus, Pedal mehrmals treten, Pedal halten und Motor starten – das Pedal gibt dann etwas nach",
+   "Motor aus, Unterdruckschlauch abziehen und darauf hören, ob am Anschluss Luft angesaugt wird",
+   "Bremsflüssigkeit absaugen und prüfen, ob das Pedal danach leichter oder schwerer zu treten ist"
+  ],
+  "correct": 1,
+  "explain": "Durch mehrmaliges Treten bei stehendem Motor wird der Restunterdruck abgebaut, das Pedal wird hart. Startet man nun den Motor, entsteht Unterdruck, der Verstärker hilft mit – das Pedal sinkt spürbar etwas nach. Bleibt es hart, Unterdruckversorgung (Schlauch, Rückschlagventil, Vakuumpumpe) und Verstärker prüfen.",
+  "src": "FW"
+ },
+ {
+  "id": "4b76d1423951",
+  "cat": "Bremse",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Bei stark abgefahrenen Belägen steht der Bremsflüssigkeitsstand kurz über MIN, die Anlage ist dicht. Was tun Sie?",
+  "opts": [
+   "Sofort bis MAX auffüllen, damit beim Belagwechsel genug Reserve im Ausgleichsbehälter ist",
+   "Alle Leitungen erneuern, weil der Stand ohne Leck nie sinkt und die Anlage undicht sein muss",
+   "Den Behälter absaugen, weil ein niedriger Stand immer einen zu hohen Wasseranteil bedeutet",
+   "Nicht auffüllen – beim Zurückdrücken der Kolben für die neuen Beläge steigt der Stand wieder"
+  ],
+  "correct": 3,
+  "explain": "Mit dem Belagverschleiß wandern die Kolben nach außen, in den Sätteln steht mehr Flüssigkeit – der Stand im Behälter sinkt, ohne dass etwas verloren geht. Werden für neue Beläge die Kolben zurückgedrückt, fließt die Flüssigkeit zurück. Wer vorher bis MAX auffüllt, bekommt einen überlaufenden Behälter (Lackschäden).",
+  "src": "FW"
+ },
+ {
+  "id": "59263947509b",
   "cat": "Diesel",
   "level": 1,
   "typ": "mc",
@@ -1867,7 +4077,7 @@ export const QUESTIONS = [
   "nr": 1,
   "q": "Welche Art der Gemischbildung hat dieser Motor und was ist ihr wichtigstes Merkmal?",
   "opts": [
-   "Common-Rail-Direkteinspritzung; der Einspritzdruck wird für jede Einspritzung erst im Injektor durch einen Nocken erzeugt",
+   "Common-Rail-Direkteinspritzung; der Einspritzdruck wird für jede Einspritzung erst im Injektor durch einen eigenen Nocken der Nockenwelle erzeugt (wie bei Pumpe-Düse)",
    "Common-Rail-Direkteinspritzung; Druckerzeugung (Hochdruckpumpe) und Einspritzung (Injektoren) sind getrennt, der Druck steht im Rail ständig bereit",
    "Indirekte Einspritzung in eine Vorkammer; Druckerzeugung und Einspritzung sind getrennt, der Druck steht im Rail ständig bereit",
    "Saugrohreinspritzung mit Hochdruck; die Pumpe fördert nur während der Einspritzung, das Rail verteilt den Kraftstoff drucklos"
@@ -1957,7 +4167,7 @@ export const QUESTIONS = [
   "src": "FK 339, Format Prüfung Schule"
  },
  {
-  "id": "1134bbf33ba6",
+  "id": "e5508958a8b4",
   "cat": "Diesel",
   "level": 1,
   "typ": "mc",
@@ -1967,7 +4177,7 @@ export const QUESTIONS = [
   "q": "Welche Aufgabe hat das Rail?",
   "opts": [
    "Es speichert den Kraftstoff unter Hochdruck und dämpft Druckschwankungen",
-   "Es erzeugt den Hochdruck für die Injektoren",
+   "Es erzeugt den Hochdruck für die Injektoren, indem es den Kraftstoff verdichtet",
    "Es kühlt den zurückfließenden Kraftstoff",
    "Es filtert Wasser aus dem Kraftstoff"
   ],
@@ -2092,7 +4302,7 @@ export const QUESTIONS = [
   "src": "FK 340–342, TB 278–279, Format Prüfung Schule"
  },
  {
-  "id": "456320803c93",
+  "id": "3714af4ca790",
   "cat": "Diesel",
   "level": 2,
   "typ": "mc",
@@ -2102,7 +4312,7 @@ export const QUESTIONS = [
   "q": "Wie reagiert das Motorsteuergerät, wenn das Signal des Raildrucksensors auf 0,1 V fällt?",
   "opts": [
    "Es erkennt einen Sensor- oder Leitungsfehler, speichert ihn und geht in den Notlauf bzw. schaltet den Motor ab",
-   "Es erhöht den Raildruck auf 2500 bar, um den Druckverlust auszugleichen",
+   "Es erhöht den Raildruck kurzzeitig auf 2500 bar, um den vermeintlichen Druckverlust auszugleichen, und regelt dann normal weiter",
    "Es wertet 0,1 V als drucklosen Zustand und regelt normal weiter",
    "Es reagiert nicht, weil 0,1 V noch im gültigen Messbereich liegt"
   ],
@@ -2111,7 +4321,7 @@ export const QUESTIONS = [
   "src": "TB 278–279"
  },
  {
-  "id": "d4959cf9713a",
+  "id": "acaaab9b2834",
   "cat": "Diesel",
   "level": 3,
   "typ": "mc",
@@ -2121,7 +4331,7 @@ export const QUESTIONS = [
   "q": "Der Mengenvergleich im Leerlauf zeigt: Zyl. 1 −1,5 / Zyl. 2 −1,3 / Zyl. 3 +4,4 / Zyl. 4 −1,6 mm³/Hub. Wie ist das Ergebnis zu beurteilen und was ist der nächste Prüfschritt?",
   "opts": [
    "Zyl. 3 bringt zu wenig Drehmoment, das Steuergerät spritzt dort mehr ein; Ursache Injektor Zyl. 3 (z. B. innen undicht) oder zu wenig Kompression; nächster Schritt Rücklaufmengenmessung bzw. Kompressionstest",
-   "Zyl. 3 bringt zu viel Drehmoment, das Steuergerät nimmt dort Menge zurück; Ursache Injektor Zyl. 3 spritzt zu viel ein; nächster Schritt Injektor Zyl. 3 ohne weitere Prüfung ersetzen",
+   "Zyl. 3 bringt zu viel Drehmoment, das Steuergerät nimmt dort Menge zurück; Ursache Injektor Zyl. 3 spritzt zu viel ein (z. B. Düse ausgewaschen); nächster Schritt Injektor Zyl. 3 ohne weitere Prüfung ersetzen",
    "Zyl. 1, 2 und 4 sind zu schwach, weil ihre Werte negativ sind; Ursache verschlissene Injektoren; nächster Schritt die Injektoren von Zyl. 1, 2 und 4 ersetzen",
    "Zyl. 3 fällt auf; Ursache Raildrucksensor liefert für Zyl. 3 einen falschen Wert; nächster Schritt Raildrucksensor ersetzen und Mengenvergleich wiederholen"
   ],
@@ -2149,7 +4359,7 @@ export const QUESTIONS = [
   "src": "TB 277"
  },
  {
-  "id": "ebc5c1b58ff1",
+  "id": "59255f292ec8",
   "cat": "Diesel",
   "level": 2,
   "typ": "mc",
@@ -2159,7 +4369,7 @@ export const QUESTIONS = [
   "q": "Rücklaufmengenmessung: Zyl. 1 11 ml, Zyl. 2 13 ml, Zyl. 3 41 ml, Zyl. 4 12 ml. Die größte Rücklaufmenge darf höchstens das Dreifache der kleinsten betragen. Wie beurteilen Sie die Messung?",
   "opts": [
    "Grenze 3 × 11 ml = 33 ml wird von Zyl. 3 überschritten → Injektor Zyl. 3 ist innen undicht und wird ersetzt",
-   "Alle Injektoren sind in Ordnung, weil keiner mehr als 50 ml zurückgibt",
+   "Alle Injektoren sind in Ordnung, weil keiner mehr als 50 ml zurückgibt und die Summe aller vier unter 100 ml liegt",
    "Der Injektor von Zyl. 1 wird ersetzt, weil er am wenigsten zurückgibt",
    "Alle vier Injektoren werden ersetzt, weil die Werte unterschiedlich sind"
   ],
@@ -2188,7 +4398,7 @@ export const QUESTIONS = [
   "src": "TB 277, FW"
  },
  {
-  "id": "eb112e63c639",
+  "id": "655616b489d0",
   "cat": "Diesel",
   "level": 2,
   "typ": "mc",
@@ -2199,7 +4409,7 @@ export const QUESTIONS = [
   "opts": [
    "Der IMA-Code ist eine Wegfahrsperre; ohne ihn gibt das Steuergerät den neuen Injektor nicht frei; der Motor springt erst nach der Eingabe wieder an",
    "Der IMA-Code enthält die fertigungsbedingten Mengentoleranzen des Injektors; damit berechnet das Steuergerät die Ansteuerdauer genauer; so bekommt jeder Zylinder die gleiche Einspritzmenge",
-   "Der IMA-Code enthält einen eigenen Raildruck-Sollwert für den Injektor; damit stellt das Steuergerät für jeden Zylinder einen anderen Raildruck ein; so wird die Leistung gleich",
+   "Der IMA-Code enthält einen eigenen Raildruck-Sollwert für den Injektor; damit stellt das Steuergerät für jeden Zylinder einen anderen Raildruck ein; so wird die Leistung aller Zylinder gleich groß",
    "Der IMA-Code setzt den Zähler für das Wechselintervall der Injektoren zurück; damit erlischt die Motorkontrollleuchte; ein Abgleich der Einspritzmenge findet nicht statt"
   ],
   "correct": 1,
@@ -2207,7 +4417,7 @@ export const QUESTIONS = [
   "src": "TB 277, FK 339–349"
  },
  {
-  "id": "2380eef0047c",
+  "id": "bd4bf9991387",
   "cat": "Diesel",
   "level": 2,
   "typ": "mc",
@@ -2217,7 +4427,7 @@ export const QUESTIONS = [
   "q": "Wie steuert das Motorsteuergerät einen Magnetventil-Injektor an?",
   "opts": [
    "Mit einer Boosterspannung von ca. 70–100 V und einem Anzugsstrom von ca. 20 A, danach mit einem kleineren Haltestrom von ca. 10–13 A",
-   "Mit Bordnetzspannung und einem gleichbleibenden Strom von ca. 2 A während der ganzen Einspritzung",
+   "Mit Bordnetzspannung und einem gleichbleibenden Strom von ca. 2 A während der ganzen Einspritzung, damit die Spule nicht zu heiß wird",
    "Mit ca. 110–150 V wie ein Kondensator – ist er geladen, fließt kein Strom mehr",
    "Mit einer Referenzspannung von 5 V und einem Signalstrom von wenigen Milliampere"
   ],
@@ -2245,7 +4455,7 @@ export const QUESTIONS = [
   "src": "Format Prüfung Schule, FW"
  },
  {
-  "id": "c28ae6a7d4b2",
+  "id": "e375718daeda",
   "cat": "Diesel",
   "level": 2,
   "typ": "mc",
@@ -2257,7 +4467,7 @@ export const QUESTIONS = [
    "AdBlue gefriert bereits bei ca. −11 °C; gefrierendes AdBlue dehnt sich aus und kann Leitung und Dosierventil beschädigen oder verstopfen; das Fördermodul pumpt die Lösung deshalb in den Tank zurück",
    "AdBlue ist brennbar; das heiße Abgasrohr könnte das im Dosierventil stehende AdBlue nach dem Abstellen entzünden; das Fördermodul pumpt die Lösung deshalb in den Tank zurück",
    "AdBlue gefriert bereits bei ca. −11 °C; gefrierendes AdBlue zieht sich zusammen und saugt Luft in die Leitung; das Fördermodul pumpt die Lösung deshalb in den Tank zurück",
-   "Der NOx-Sensor 1 muss sich beim nächsten Start ohne AdBlue kalibrieren; Reste im Dosierventil würden die Messung verfälschen; das Fördermodul pumpt die Lösung deshalb in den Tank zurück"
+   "Der NOx-Sensor 1 muss sich beim nächsten Start ohne AdBlue kalibrieren; Reste im Dosierventil würden die Messung der Stickoxide verfälschen; das Fördermodul pumpt die Lösung deshalb in den Tank zurück"
   ],
   "correct": 0,
   "explain": "AdBlue gefriert bereits bei ca. −11 °C. Gefrierendes AdBlue dehnt sich aus bzw. kristallisiert und kann Leitung und Dosierventil beschädigen oder verstopfen. Das Fördermodul pumpt die Lösung deshalb über ein Umkehrventil in den Tank zurück (Tank und Modul sind zusätzlich beheizt). AdBlue ist nicht brennbar. Was im Tank einfriert, taut die Heizung nach dem Start wieder auf. In der dünnen Leitung und im Dosierventil darf dagegen nichts stehen bleiben.",
@@ -2352,7 +4562,7 @@ export const QUESTIONS = [
   "src": "FK 340–341"
  },
  {
-  "id": "1bfb3f22e8c8",
+  "id": "f2c2c3c294e8",
   "cat": "Diesel",
   "level": 1,
   "typ": "mc",
@@ -2360,7 +4570,7 @@ export const QUESTIONS = [
   "q": "In welchem Zustand befindet sich die Zumesseinheit, wenn sie nicht angesteuert wird?",
   "opts": [
    "Stromlos offen – die Pumpe bekommt die volle Kraftstoffmenge",
-   "Stromlos geschlossen – die Pumpe bekommt keinen Kraftstoff",
+   "Stromlos geschlossen – die Pumpe bekommt keinen Kraftstoff, der Motor geht aus",
    "Halb offen – das Steuergerät hält sie mechanisch fest",
    "Sie ist ohne Strom gar nicht im Kraftstoffweg"
   ],
@@ -2386,7 +4596,7 @@ export const QUESTIONS = [
   "src": "FK 340–342, TB 278–279"
  },
  {
-  "id": "f0bde3917899",
+  "id": "d7c7be75f8d8",
   "cat": "Diesel",
   "level": 3,
   "typ": "mc",
@@ -2395,7 +4605,7 @@ export const QUESTIONS = [
   "opts": [
    "Druckregelventil: Steuergerät steuert mit festem Ersatzwert weiter → Notlauf; Raildrucksensor: nur ca. 100 bar Federdruck → Motor läuft nicht; in beiden Fällen Fehlerspeichereintrag und Motorkontrollleuchte",
    "Druckregelventil: Raildruck steigt auf ca. 2500 bar, Motor läuft mit voller Leistung weiter; Raildrucksensor: festes Ersatzsignal → Notlauf; in beiden Fällen Fehlerspeichereintrag und Motorkontrollleuchte",
-   "Druckregelventil: nur ca. 100 bar Federdruck → Motor läuft nicht; Raildrucksensor: keine Auswirkung, das Steuergerät berechnet den Druck aus der Drehzahl; nur beim Druckregelventil Motorkontrollleuchte",
+   "Druckregelventil: nur ca. 100 bar Federdruck → Motor läuft nicht; Raildrucksensor: keine Auswirkung, das Steuergerät berechnet den Druck aus Drehzahl und Einspritzmenge; nur beim Druckregelventil Motorkontrollleuchte",
    "Druckregelventil: nur ca. 100 bar Federdruck → Motor läuft nicht; Raildrucksensor: Druckregelventil wird mit festem Ersatzwert angesteuert → Notlauf; in beiden Fällen Fehlerspeichereintrag und Motorkontrollleuchte"
   ],
   "correct": 3,
@@ -2502,7 +4712,7 @@ export const QUESTIONS = [
   "src": "Format Prüfung Schule, TB 278–279, FW"
  },
  {
-  "id": "2f6e8b1e1711",
+  "id": "735eb5c0e960",
   "cat": "Diesel",
   "level": 2,
   "typ": "mc",
@@ -2510,16 +4720,16 @@ export const QUESTIONS = [
   "q": "An der abgezogenen Zumesseinheit messen Sie einen Wicklungswiderstand von 50 Ω. Die Werkstattinformation gibt 2–5 Ω vor. Wie ist das Messergebnis zu beurteilen und welche Folgen hat es?",
   "opts": [
    "Widerstand deutlich zu hoch; der Strom wird dadurch größer, die Spule überhitzt und die ZME bleibt ganz geschlossen; ZME sofort ohne weitere Messung ersetzen",
-   "Widerstand in Ordnung, weil weder Kurzschluss (0 Ω) noch Unterbrechung (unendlich) vorliegt; keine Folgen für die Raildruckregelung; keine weitere Prüfung nötig",
+   "Widerstand in Ordnung, weil weder Kurzschluss (0 Ω) noch Unterbrechung (unendlich) vorliegt; keine Folgen für die Raildruckregelung, das Steuergerät gleicht den Wert aus; keine weitere Prüfung nötig",
    "Widerstand zu niedrig (Windungsschluss); der Strom wird zu groß, die ZME öffnet zu weit → Raildruck zu hoch; Steuergerät ersetzen",
-   "Widerstand deutlich zu hoch (z. B. Teilunterbrechung, Korrosion); der Strom ist zu klein, die ZME lässt sich nicht richtig verstellen → Raildruckregelung gestört; Messung wiederholen, Kontakte prüfen, ggf. ZME ersetzen"
+   "Widerstand deutlich zu hoch (z. B. Teilunterbrechung, Korrosion); Strom zu klein, die ZME lässt sich nicht richtig verstellen → Raildruck gestört; Kontakte prüfen, ggf. ZME ersetzen"
   ],
   "correct": 3,
   "explain": "Der Widerstand ist deutlich zu hoch (Wicklung bzw. Kontakt hochohmig, z. B. Teilunterbrechung oder Korrosion). Folge: Der Strom ist zu klein, die Zumesseinheit lässt sich nicht mehr richtig verstellen → Raildruckregelung gestört. Messung direkt an den Pins wiederholen, Steckkontakte prüfen und bei bestätigtem Wert die Zumesseinheit ersetzen. Nach dem ohmschen Gesetz fließt bei zehnfachem Widerstand nur ein Zehntel des Stroms – die Magnetkraft reicht dann nicht mehr. Den Sollwert immer aus der Werkstattinformation des Fahrzeugs nehmen.",
   "src": "Format Prüfung Schule, FW"
  },
  {
-  "id": "992a78f5042c",
+  "id": "061f2b3984d4",
   "cat": "Diesel",
   "level": 3,
   "typ": "mc",
@@ -2527,7 +4737,7 @@ export const QUESTIONS = [
   "q": "Die Zumesseinheit wird vom Steuergerät masseseitig per PWM angesteuert. Sie messen mit dem Oszilloskop an der Steuerleitung gegen Masse. Welcher Signalabschnitt bedeutet „Ventil bestromt“?",
   "opts": [
    "Der untere Pegel (ca. 0 V), weil das Steuergerät dann nach Masse durchschaltet",
-   "Der obere Pegel (Bordnetzspannung), weil dann Spannung anliegt",
+   "Der obere Pegel (Bordnetzspannung), weil dann Spannung an der Spule anliegt und Strom fließt",
    "Nur die Spannungsspitze beim Abschalten",
    "Beide Pegel gleich, weil die Spule immer bestromt ist"
   ],
@@ -2571,7 +4781,7 @@ export const QUESTIONS = [
   "src": "FK 339–349"
  },
  {
-  "id": "cd0f5346e18c",
+  "id": "4c186737bc9d",
   "cat": "Diesel",
   "level": 2,
   "typ": "mc",
@@ -2579,7 +4789,7 @@ export const QUESTIONS = [
   "q": "Wie verhält sich ein Piezo-Injektor elektrisch bei der Ansteuerung?",
   "opts": [
    "Wie ein Kondensator: Er wird mit ca. 110–150 V geladen, danach fließt kein Strom mehr; zum Schließen wird er entladen",
-   "Wie eine Glühlampe: Solange er offen ist, fließt ein gleichbleibend hoher Strom",
+   "Wie eine Glühlampe: Solange er offen ist, fließt ein gleichbleibend hoher Strom durch den Piezo-Stapel, der ihn offen hält",
    "Wie ein Hallgeber: Er gibt beim Öffnen ein Rechtecksignal an das Steuergerät zurück",
    "Wie ein NTC-Widerstand: Sein Widerstand sinkt mit steigender Temperatur"
   ],
@@ -2605,7 +4815,7 @@ export const QUESTIONS = [
   "src": "FK 339–349, TB 277"
  },
  {
-  "id": "1454a75d3e1c",
+  "id": "1edb3317de80",
   "cat": "Diesel",
   "level": 3,
   "typ": "mc",
@@ -2613,7 +4823,7 @@ export const QUESTIONS = [
   "q": "Beim Mengenvergleich zeigt ein Zylinder eine Korrektur von −2,0 mm³/Hub. Was bedeutet das?",
   "opts": [
    "Der Zylinder liefert mehr Drehmoment als der Durchschnitt, das Steuergerät nimmt dort Einspritzmenge zurück",
-   "Der Zylinder liefert zu wenig Drehmoment, das Steuergerät spritzt dort mehr ein",
+   "Der Zylinder liefert zu wenig Drehmoment, das Steuergerät spritzt dort deshalb 2,0 mm³ je Hub mehr ein als bei den anderen",
    "Der Injektor dieses Zylinders spritzt gar nicht mehr ein",
    "Der Raildruck ist an diesem Zylinder um 2 bar zu niedrig"
   ],
@@ -2785,7 +4995,7 @@ export const QUESTIONS = [
   "src": "FK 357, TB Betriebsstoffe"
  },
  {
-  "id": "afa1e60d97f9",
+  "id": "32305b2c4d34",
   "cat": "Diesel",
   "level": 1,
   "typ": "mc",
@@ -2795,7 +5005,7 @@ export const QUESTIONS = [
    "Ammoniak (NH₃) reagiert mit Stickoxiden (NOx) zu Stickstoff (N₂) und Wasser (H₂O)",
    "Harnstoff verbrennt den Ruß im Partikelfilter zu CO₂",
    "Stickoxide werden mit Sauerstoff zu Ozon umgewandelt",
-   "Ammoniak bindet die Rußpartikel und wird mit ihnen gespeichert"
+   "Ammoniak bindet die Rußpartikel und wird mit ihnen bis zur nächsten DPF-Regeneration gespeichert"
   ],
   "correct": 0,
   "explain": "Aus dem eingespritzten AdBlue entsteht in der Hydrolysestrecke Ammoniak. Dieses wandelt im SCR-Kat die Stickoxide in die harmlosen Stoffe Stickstoff und Wasser um.",
@@ -2888,6 +5098,1092 @@ export const QUESTIONS = [
   ],
   "explain": "Der NOx-Sensor 1 misst vor der Dosierung, damit das Steuergerät die AdBlue-Menge berechnen kann. In der Hydrolysestrecke entsteht aus dem Harnstoff Ammoniak, bevor das Abgas den SCR-Kat erreicht.",
   "src": "FK 357"
+ },
+ {
+  "id": "c15c7d35d63e",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "situation": "scr-peugeot",
+  "nr": 1,
+  "q": "Der Kunde hat AdBlue nachgefüllt, die Meldung „Start in 600 km nicht möglich“ bleibt aber. Was bedeutet das?",
+  "opts": [
+   "Das System hat einen Fehler in der Abgasreinigung erkannt; auch dann zählt die Restreichweite herunter, bei 0 km ist kein Neustart möglich",
+   "Der Tank ist trotz Nachfüllen noch fast leer, weil das Steuergerät den Füllstand nur einmal im Monat neu einliest und bis dahin den alten Wert anzeigt",
+   "Die Meldung ist nur ein Hinweis auf den nächsten Service; der Motor startet auch bei 0 km normal weiter",
+   "Der Motor geht bei 0 km während der Fahrt sofort aus, deshalb muss das Fahrzeug abgeschleppt werden"
+  ],
+  "correct": 0,
+  "explain": "Die Startsperre wird nicht nur bei leerem Tank aktiv, sondern auch, wenn das Steuergerät einen Fehler im SCR-System erkennt (z. B. zu geringe Dosierung oder schlechter Wirkungsgrad). Die Restreichweite zählt dann herunter; bei 0 km ist nach dem Abstellen kein Neustart mehr möglich. Der Motor geht während der Fahrt nicht aus. Bleibt die Meldung trotz vollem Tank, muss das System diagnostiziert werden.",
+  "src": "Netz: kfz-dietrich, Betriebsanleitungen (siehe ausbau-diesel.md), FW"
+ },
+ {
+  "id": "da7fcc62f94a",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 6,
+  "situation": "scr-peugeot",
+  "nr": 2,
+  "bild": "diesel-scr-anlage.svg",
+  "q": "Ordnen Sie den Nummern im Bild der SCR-Anlage die Bauteile zu.",
+  "paare": [
+   [
+    "①",
+    "Oxidationskatalysator"
+   ],
+   [
+    "②",
+    "Dieselpartikelfilter"
+   ],
+   [
+    "③",
+    "Abgastemperatursensor"
+   ],
+   [
+    "④",
+    "NOx-Sensor 1"
+   ],
+   [
+    "⑤",
+    "Dosierventil"
+   ],
+   [
+    "⑥",
+    "SCR-Katalysator"
+   ]
+  ],
+  "ablenker": [
+   "Ladeluftkühler",
+   "Lambdasonde nach Kat"
+  ],
+  "explain": "In Strömungsrichtung: Oxi-Kat (①), Partikelfilter (②), danach Temperatursensor (③) und NOx-Sensor 1 (④) vor der Dosierstelle, Dosierventil (⑤) mit Mischer, SCR-Kat (⑥) und NOx-Sensor 2 (⑦) dahinter. Der NOx-Sensor 1 sitzt vor dem Dosierventil, damit er die Stickoxide aus dem Motor misst.",
+  "src": "FK 357, Eigenes Bild"
+ },
+ {
+  "id": "fe91f543de7e",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 3,
+  "bild": "diesel-scr-anlage.svg",
+  "q": "Welche Aussage zu den Bauteilen ⑧, ⑨ und ⑩ im Bild ist richtig?",
+  "opts": [
+   "⑧ fördert AdBlue unter Druck zum Dosierventil; ⑨ kühlt das AdBlue im Sommer, damit es sich nicht zersetzt; ⑩ ist die Rücklaufleitung",
+   "⑧ fördert AdBlue unter Druck zum Dosierventil; ⑨ und ⑩ verhindern bei Kälte das Einfrieren von Tank und Leitung",
+   "⑧ ist der Füllstandsgeber; ⑨ und ⑩ verdampfen das AdBlue, damit im Abgasrohr schon gasförmiges Ammoniak ankommt",
+   "⑧ saugt AdBlue aus dem Abgasrohr zurück; ⑨ und ⑩ heizen den SCR-Kat schneller auf Betriebstemperatur auf"
+  ],
+  "correct": 1,
+  "explain": "⑧ ist das Fördermodul mit Pumpe: Es baut den Förderdruck auf und fördert AdBlue über die Leitung ⑩ zum Dosierventil. ⑨ (Tankheizung) und der Heizdraht der Leitung ⑩ verhindern bzw. lösen das Einfrieren – AdBlue gefriert bei ca. −11 °C. Ammoniak entsteht erst im heißen Abgas (Hydrolyse), nicht im Tank.",
+  "src": "FK 357, Eigenes Bild"
+ },
+ {
+  "id": "6a01c21b8949",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 4,
+  "bild": "diesel-scr-anlage.svg",
+  "q": "Was geschieht mit dem AdBlue auf dem Weg vom Dosierventil ⑤ zum SCR-Kat ⑥?",
+  "opts": [
+   "Das AdBlue verbrennt im heißen Abgas vollständig zu CO₂ und Wasser, bevor es den Kat erreicht",
+   "Das AdBlue kühlt das Abgas ab, damit der SCR-Kat nicht überhitzt; eine chemische Umwandlung findet erst im Sperrkat statt",
+   "Der Mischer verteilt die Tröpfchen, in der heißen Strecke zerfällt der Harnstoff zu Ammoniak (NH₃) und CO₂",
+   "Das AdBlue bindet die Rußteilchen, die der Partikelfilter durchgelassen hat, und trägt sie aus dem Auspuff"
+  ],
+  "correct": 2,
+  "explain": "Zwischen Dosierventil und SCR-Kat liegen Mischer und Hydrolysestrecke. Der Mischer verteilt das AdBlue fein im Abgas, die Hitze zersetzt den Harnstoff zu Ammoniak und CO₂. Im SCR-Kat reagiert das Ammoniak mit den Stickoxiden zu Stickstoff und Wasser. Ist das Abgas zu kalt, zersetzt sich der Harnstoff nicht vollständig.",
+  "src": "FK 357"
+ },
+ {
+  "id": "874b0c71f552",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 5,
+  "q": "Welche Antwort nennt drei Testerfunktionen, die Ihnen bei dieser Beanstandung weiterhelfen?",
+  "opts": [
+   "Fehlerspeicher aller Steuergeräte mit Umgebungsbedingungen; Istwerte NOx-Sensor 1 und 2 sowie Förderdruck Soll/Ist; Injektoranpassung (IMA-Code) für alle Zylinder",
+   "Fehlerspeicher sofort löschen und Restreichweite zurückstellen; Istwerte NOx-Sensor 1 und 2 sowie Förderdruck Soll/Ist; Stellglieddiagnose Dosiermengentest",
+   "Fehlerspeicher aller Steuergeräte mit Umgebungsbedingungen; dynamischer Kompressionstest aller Zylinder; Stellglieddiagnose Dosiermengentest",
+   "Fehlerspeicher aller Steuergeräte mit Umgebungsbedingungen; Istwerte NOx-Sensor 1 und 2 sowie Förderdruck Soll/Ist; Stellglieddiagnose Dosiermengentest"
+  ],
+  "correct": 3,
+  "explain": "Hilfreich sind der Fehlerspeicher (mit Herstellertester, alle Steuergeräte, mit Umgebungsbedingungen), die Istwerte der NOx-Sensoren und des Förderdrucks sowie die Stellglieddiagnose mit Dosiermengentest. Wer den Fehlerspeicher ungelesen löscht, verliert die Hinweise. IMA-Codierung und Kompressionstest gehören zur Einspritzanlage bzw. Mechanik und helfen bei einer SCR-Störung nicht weiter.",
+  "src": "Netz: kfz-dietrich (AdBlue-Diagnose), FW"
+ },
+ {
+  "id": "d5ea5237a04e",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 6,
+  "q": "Sie prüfen das AdBlue im Tank mit dem Refraktometer und lesen 32,0 % ab. Die Werkstattinformation nennt 31,8–33,2 %. Wie beurteilen Sie das?",
+  "opts": [
+   "In Ordnung, der Wert liegt im Sollbereich; die Qualität des AdBlue ist nicht die Ursache, die Suche geht weiter",
+   "Zu niedrig, weil der Sollwert genau 32,5 % beträgt; das AdBlue ist mit Wasser verdünnt und muss abgesaugt werden",
+   "Zu hoch, weil AdBlue nur ca. 30 % Harnstoff enthalten darf; das AdBlue ist zu konzentriert und kristallisiert deshalb",
+   "Nicht verwertbar, weil ein Refraktometer nur Frostschutz im Kühlmittel messen kann, nicht aber den Harnstoffgehalt"
+  ],
+  "correct": 0,
+  "explain": "AdBlue besteht aus 32,5 % Harnstoff und demineralisiertem Wasser. 32,0 % liegt innerhalb des angegebenen Bereichs (31,8–33,2 %) → Qualität in Ordnung. Mit dem Refraktometer lässt sich der Harnstoffgehalt schnell prüfen (eigene AdBlue-Skala). Falsches oder verdünntes AdBlue wäre eine häufige Ursache für schlechten Wirkungsgrad – hier ist es ausgeschlossen.",
+  "src": "Netz: IKA, kfz-dietrich; FK 357"
+ },
+ {
+  "id": "82bb1be018cf",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "scr-peugeot",
+  "nr": 7,
+  "q": "Bei warmem Motor zeigt der Tester: NOx-Sensor 1 = 400 ppm, NOx-Sensor 2 = 360 ppm. Wie groß ist der Wirkungsgrad der Stickoxid-Minderung?",
+  "opts": [
+   "90 %",
+   "10 %",
+   "11 %",
+   "40 %"
+  ],
+  "correct": 1,
+  "explain": "Wirkungsgrad = (NOx vor Kat − NOx nach Kat) ÷ NOx vor Kat × 100 % = (400 − 360) ppm ÷ 400 ppm × 100 % = 10 %. Typischer Fehler: 360 ÷ 400 = 90 % ist der Anteil, der übrig bleibt, nicht der abgebaute Anteil. 40 ÷ 360 ≈ 11 % bezieht sich auf den falschen Grundwert.",
+  "src": "FW"
+ },
+ {
+  "id": "a1f3d45fd69a",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 8,
+  "q": "Der Wirkungsgrad liegt bei nur ca. 10 %. Welche Schlussfolgerung ist richtig?",
+  "opts": [
+   "Der NOx-Sensor 1 misst zu hoch; er wird ohne weitere Prüfung ersetzt, damit die Werte wieder zusammenpassen",
+   "Der Motor erzeugt zu viele Stickoxide; als Nächstes werden die Injektoren auf Rücklaufmenge geprüft",
+   "Im SCR-Kat kommt kaum Ammoniak an; als Nächstes werden Förderdruck und Dosiermenge geprüft",
+   "Der Wert ist normal, weil ein SCR-Kat immer nur ca. 10 % der Stickoxide umsetzt"
+  ],
+  "correct": 2,
+  "explain": "Ein intakter SCR-Kat mindert die Stickoxide bei Betriebstemperatur sehr stark. Liegt NOx 2 fast so hoch wie NOx 1, fehlt meist das Ammoniak – also wird zu wenig AdBlue dosiert. Deshalb zuerst die Versorgung prüfen: Förderdruck und Dosiermenge. Erst wenn die Dosierung stimmt, kommen Kat oder Sensoren in Frage.",
+  "src": "Netz: kfz-dietrich, IKA; FW"
+ },
+ {
+  "id": "c5d492b25290",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 9,
+  "bild": "diesel-scr-schaltplan.svg",
+  "q": "Wie wird das Dosierventil Y5 laut Schaltplan versorgt und angesteuert?",
+  "opts": [
+   "Plus über F4 und das Heizrelais K2; Masse fest an Klemme 31; das Steuergerät schaltet nur K2",
+   "Plus vom Steuergerät A2 über Pin 12; Masse über Pin 20, gemeinsam mit dem Drucksensor B3",
+   "Plus über F5 (Klemme 30); Masse über Pin 10, über den auch die Förderpumpe M1 läuft",
+   "Plus über F5 (Klemme 30); das Steuergerät A2 schaltet über Pin 12 die Masse getaktet (PWM)"
+  ],
+  "correct": 3,
+  "explain": "Y5 hängt mit Pin 1 an der Leitung hinter F5 (Klemme 30). Die andere Seite führt zu Pin 12 von A2: Das Steuergerät schaltet masseseitig und taktet (PWM), so bestimmt es Öffnungsdauer und Dosiermenge. F4/K2 versorgen nur die Heizungen R1 und R2, Pin 10 die Pumpe M1.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "0b8de9db6c8b",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 6,
+  "situation": "scr-peugeot",
+  "nr": 10,
+  "bild": "diesel-scr-schaltplan.svg",
+  "q": "Messwerte am Dosierventil Y5: Plus-Pin gegen Masse 12,4 V (Zündung ein); Wicklung 13 Ω (Soll laut WI 12–15 Ω, Stecker ab); Oszilloskop an Messpunkt A bei Dosierung: Rechteck 0 V / 12,4 V. Wie ist das Ergebnis zu beurteilen?",
+  "opts": [
+   "Elektrisch in Ordnung: Versorgung, Wicklung und Ansteuerung stimmen; die Ursache liegt hydraulisch, z. B. Ventil verstopft",
+   "Versorgung fehlt, weil am Plus-Pin 14 V anliegen müssten; F5 prüfen und das Dosierventil vorerst nicht ausbauen",
+   "Ansteuerung fehlerhaft, weil ein bestromtes Ventil am Messpunkt A dauerhaft 12,4 V zeigen müsste; Steuergerät A2 ersetzen und neu codieren",
+   "Wicklung defekt, weil ein Magnetventil unter 1 Ω haben muss; das Dosierventil ist elektrisch unterbrochen"
+  ],
+  "correct": 0,
+  "explain": "12,4 V Versorgung bei Zündung ein ist Bordnetzspannung, der Widerstand liegt im Sollbereich und am Messpunkt A erscheint das PWM-Rechteck. Bei masseseitiger Ansteuerung bedeutet der untere Pegel (0 V) „bestromt“. Damit ist der elektrische Teil in Ordnung – wenn trotzdem zu wenig dosiert wird, liegt der Fehler hydraulisch oder mechanisch (Druck, Leitung, verstopftes Ventil).",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "160ccb291eb5",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 5,
+  "situation": "scr-peugeot",
+  "nr": 11,
+  "q": "Dosiermengentest (Ventil ausgebaut, sprüht in Messbecher): Soll laut WI 30 ml ± 10 %, gemessen 6 ml. Der Förderdruck erreicht dabei den Sollwert. Was ist die wahrscheinlichste Ursache?",
+  "opts": [
+   "Fördermodul defekt, weil die Pumpe zu wenig Druck aufbaut; das Fördermodul wird ersetzt",
+   "Dosierventil verstopft, z. B. durch Harnstoffkristalle; der Druck steht an, aber es kommt kaum etwas durch",
+   "NOx-Sensor 2 defekt, weil er dem Steuergerät eine zu kleine Dosiermenge vorgibt; der Sensor wird ersetzt und angelernt",
+   "Tankheizung defekt, weil das AdBlue im Tank gefroren ist; die Heizung R1 wird ersetzt"
+  ],
+  "correct": 1,
+  "explain": "Der Förderdruck stimmt – Pumpe, Tank und Leitung liefern also genug. Trotzdem kommt nur ein Fünftel der Sollmenge aus dem Ventil: Das Dosierventil selbst ist verengt, meist durch Harnstoffkristalle an der Düse. Gefrorenes AdBlue würde schon keinen Druck aufbauen. Die Dosiermenge beim Test gibt das Steuergerät fest vor, nicht der NOx-Sensor.",
+  "src": "Netz: kfz-dietrich (Kristallisation), FW"
+ },
+ {
+  "id": "f95dcad21761",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "situation": "scr-peugeot",
+  "nr": 12,
+  "q": "Ordnen Sie jedem Prüfergebnis die richtige Bewertung zu.",
+  "paare": [
+   [
+    "Refraktometer zeigt 32,0 %",
+    "AdBlue-Qualität in Ordnung"
+   ],
+   [
+    "NOx 2 fast so hoch wie NOx 1",
+    "Wirkungsgrad der SCR-Anlage zu gering"
+   ],
+   [
+    "Förderdruck Ist = Soll",
+    "Fördermodul arbeitet"
+   ],
+   [
+    "Dosiermenge 6 ml statt 30 ml",
+    "Dosierventil lässt zu wenig durch"
+   ]
+  ],
+  "ablenker": [
+   "Tankheizung unterbrochen"
+  ],
+  "explain": "Die Prüfungen grenzen den Fehler Schritt für Schritt ein: Qualität gut, Druck gut, aber Menge zu klein → Fehler am Dosierventil. Der schlechte Wirkungsgrad ist die Folge davon. Zur Heizung gibt es in diesen Messungen keinen Hinweis.",
+  "src": "FW"
+ },
+ {
+  "id": "4a713eeb11ba",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 13,
+  "q": "Das Fahrzeug fährt laut Kunde fast nur Kurzstrecke. Warum begünstigt das Ablagerungen am Dosierventil und im Mischer?",
+  "opts": [
+   "Bei Kurzstrecke wird mehr AdBlue verbraucht, deshalb läuft der Tank leer und das Ventil trocknet aus",
+   "Bei Kurzstrecke ist der Förderdruck höher, deshalb wird das AdBlue zu fein zerstäubt und bildet am kalten Rohr Eis",
+   "Bei Kurzstrecke bleibt das Abgas kalt; der Harnstoff zersetzt sich nicht vollständig und setzt sich als Kristalle ab",
+   "Bei Kurzstrecke wird der Partikelfilter nicht regeneriert, deshalb gelangt Ruß in das AdBlue im Tank"
+  ],
+  "correct": 2,
+  "explain": "Für die Umwandlung braucht der Harnstoff ein heißes Abgas. Bei häufig kaltem Abgas zersetzt er sich nur teilweise; es bilden sich feste Ablagerungen (Kristalle) an Düse, Mischer und Rohr. Sie verengen das Dosierventil und stören die Verteilung. Auch AdBlue-Reste, die nach dem Abstellen eintrocknen, bilden Kristalle.",
+  "src": "Netz: kfz-dietrich, FW"
+ },
+ {
+  "id": "ebe7fb7aa8f1",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 5,
+  "situation": "scr-peugeot",
+  "nr": 14,
+  "q": "Bringen Sie die Arbeitsschritte beim Ersetzen des Dosierventils in die richtige Reihenfolge.",
+  "schritte": [
+   "Abgasanlage abkühlen lassen, Zündung aus",
+   "Stecker abziehen, AdBlue-Leitung lösen und austretendes AdBlue auffangen",
+   "Dosierventil ausbauen, Sitz im Abgasrohr von Kristallen befreien",
+   "Neues Dosierventil mit neuer Dichtung einbauen und mit Drehmoment nach WI anziehen",
+   "Leitung und Stecker anschließen, System mit dem Tester befüllen bzw. entlüften",
+   "Adaption durchführen, Fehlerspeicher löschen und Probefahrt"
+  ],
+  "explain": "Am heißen Abgasrohr besteht Verbrennungsgefahr. Austretendes AdBlue wird aufgefangen, weil es Lack und Metalle angreift. Kristalle im Sitz würden das neue Ventil sofort wieder stören. Erst nach dem Befüllen kann das Steuergerät Druck und Menge wieder richtig regeln und die Adaption abschließen.",
+  "src": "FW, Netz: kfz-dietrich"
+ },
+ {
+  "id": "af927f3776c2",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 15,
+  "q": "Welche Antwort nennt richtige Regeln zu Arbeitsschutz und Umwelt bei dieser Reparatur?",
+  "opts": [
+   "AdBlue auf der Haut mit Wasser abspülen; aufgefangenes AdBlue zurück in den Tank füllen, weil es noch sauber ist; Abgasanlage abkühlen lassen",
+   "AdBlue auf der Haut mit Bremsenreiniger entfernen; aufgefangenes AdBlue fachgerecht entsorgen; Abgasanlage abkühlen lassen",
+   "AdBlue auf der Haut mit Wasser abspülen; aufgefangenes AdBlue in den Abfluss gießen, weil es nur WGK 1 hat; Abgasanlage abkühlen lassen",
+   "AdBlue auf der Haut mit Wasser abspülen; aufgefangenes AdBlue fachgerecht entsorgen; Abgasanlage abkühlen lassen"
+  ],
+  "correct": 3,
+  "explain": "AdBlue mit viel Wasser von Haut und Lack abwaschen. Aufgefangenes AdBlue kann verschmutzt sein und darf nicht zurück in den Tank – schon kleine Verunreinigungen schädigen Dosierventil und Kat. Auch mit WGK 1 ist es wassergefährdend und gehört nicht in den Abfluss. Bremsenreiniger auf der Haut ist schädlich.",
+  "src": "FK 357, FW"
+ },
+ {
+  "id": "30d0282433a4",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 16,
+  "q": "Nach dem Einbau zeigt das Display weiterhin „Start in 590 km nicht möglich“. Was ist zu tun?",
+  "opts": [
+   "Mit dem Tester Fehlerspeicher löschen bzw. Freigabe/Adaption nach WI durchführen und den Wirkungsgrad bei einer Probefahrt bestätigen lassen",
+   "Nichts, die Meldung verschwindet nach weiteren 590 km von selbst, weil der Zähler dann abgelaufen ist",
+   "Die Batterie für eine Stunde abklemmen, damit das Steuergerät alle Zähler auf null setzt und die Startsperre entfällt, so wie nach jedem Batteriewechsel",
+   "Den NOx-Sensor 2 abstecken, damit das Steuergerät den Wirkungsgrad nicht mehr überwachen kann"
+  ],
+  "correct": 0,
+  "explain": "Die Startsperre wird erst zurückgenommen, wenn der Fehler behoben und vom Steuergerät bestätigt ist: Fehlerspeicher löschen bzw. Freigabe oder Adaption mit dem Tester nach Herstellerangabe, danach Probefahrt, bei der das System den Wirkungsgrad wieder als gut erkennt. Ein abgesteckter Sensor oder ein Batterie-Reset beheben nichts und sind bei Abgasbauteilen unzulässig.",
+  "src": "Netz: kfz-dietrich, FW"
+ },
+ {
+  "id": "1771536c3a7b",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "scr-peugeot",
+  "nr": 17,
+  "q": "Bei der Probefahrt zeigt der Tester NOx-Sensor 1 = 380 ppm und NOx-Sensor 2 = 30 ppm. Wie ist das Ergebnis zu beurteilen?",
+  "opts": [
+   "Wirkungsgrad ca. 8 %; die SCR-Anlage arbeitet weiterhin nicht, der Kat muss ersetzt werden",
+   "Wirkungsgrad ca. 92 %; die SCR-Anlage arbeitet wieder, die Reparatur war erfolgreich",
+   "Wirkungsgrad ca. 92 %; zu hoch, es wird zu viel AdBlue dosiert und Ammoniak tritt aus",
+   "Wirkungsgrad nicht bestimmbar, weil beide Sensoren gleichzeitig angezeigt werden müssten"
+  ],
+  "correct": 1,
+  "explain": "(380 − 30) ppm ÷ 380 ppm × 100 % ≈ 92 %. Die Stickoxide werden wieder stark gemindert – die Reparatur hat gewirkt. Ein hoher Wirkungsgrad ist das Ziel; überschüssiges Ammoniak würde zusätzlich der Sperrkat abfangen. 8 % wäre der Rest, nicht die Minderung.",
+  "src": "FW"
+ },
+ {
+  "id": "46f69dec8aa0",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "situation": "scr-peugeot",
+  "nr": 18,
+  "q": "Welchen Hinweis geben Sie dem Kunden bei der Fahrzeugübergabe?",
+  "opts": [
+   "AdBlue bei Bedarf mit etwas Leitungswasser strecken, damit der Tank länger reicht",
+   "Die AdBlue-Warnung künftig ignorieren, weil der Motor auch bei 0 km Restreichweite weiter anspringt",
+   "Ab und zu längere Strecken fahren und nur AdBlue nach ISO 22241 aus sauberen Behältern nachfüllen",
+   "Zur Sicherheit etwas AdBlue in den Dieseltank geben, damit sich keine Kristalle bilden"
+  ],
+  "correct": 2,
+  "explain": "Längere Fahrten bringen die Abgasanlage auf Temperatur, dadurch zersetzt sich der Harnstoff vollständig und Ablagerungen werden seltener. Nur genormtes AdBlue (ISO 22241) verwenden, nie verdünnen, nie in den Kraftstofftank füllen. Bei 0 km Restreichweite ist kein Neustart möglich.",
+  "src": "FW"
+ },
+ {
+  "id": "9a7fa7603fb1",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "scr-peugeot",
+  "nr": 19,
+  "q": "Was ist beim Kostenvoranschlag bzw. Auftrag für diese Reparatur rechtlich wichtig?",
+  "opts": [
+   "Die Reparatur darf ohne Rückfrage ausgeführt werden, weil eine Startsperre droht; der Kunde muss jede Rechnung in voller Höhe bezahlen",
+   "Eine Abschaltung der SCR-Anlage per Software ist erlaubt, wenn der Kunde schriftlich zustimmt und die Kosten trägt",
+   "Der Kostenvoranschlag ist immer kostenlos und verbindlich, auch wenn sich bei der Reparatur weitere Schäden zeigen",
+   "Zusätzliche Arbeiten über den Auftrag hinaus (z. B. Dosierventil ersetzen) vorher mit dem Kunden abstimmen und dokumentieren"
+  ],
+  "correct": 3,
+  "explain": "Arbeiten, die über den erteilten Auftrag hinausgehen, müssen vorher mit dem Kunden abgesprochen werden (Auftragserweiterung) – sonst muss er sie nicht bezahlen. Das Abschalten oder Manipulieren der Abgasreinigung ist verboten, auch mit Zustimmung des Kunden (Betriebserlaubnis erlischt). Ob ein Kostenvoranschlag etwas kostet, muss vorher vereinbart werden.",
+  "src": "FW (Kfz-Reparaturbedingungen)"
+ },
+ {
+  "id": "87d92653cb6f",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "diesel-motorsteuerung-schaltplan.svg",
+  "q": "Über welche Sicherung bekommen Zumesseinheit Y1 und Druckregelventil Y2 laut Schaltplan ihr Plus?",
+  "opts": [
+   "F2, hinter dem Hauptrelais K1 (Klemme 87)",
+   "F1, direkt von Klemme 30, damit sie auch bei abgeschalteter Zündung versorgt sind",
+   "F3, die auch das Motorsteuergerät über Pin 2 versorgt",
+   "Gar keine, weil das Steuergerät beide Ventile über Pin 30 und 31 mit Plus versorgt"
+  ],
+  "correct": 0,
+  "explain": "Von der Leitung 87 hinter K1 führt F2 zu einem Knoten, der Y1 und Y2 mit Plus versorgt. Die Pins 30 und 31 des Steuergeräts liegen auf der anderen Seite der Ventile – dort schaltet A1 die Masse. F1 versorgt Pin 1 (Dauerplus), F3 den Pin 2.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "15b2e0c6a753",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "diesel-motorsteuerung-schaltplan.svg",
+  "q": "Über welchen Pin und auf welche Weise steuert das Motorsteuergerät A1 die Zumesseinheit Y1 an?",
+  "opts": [
+   "Über Pin 31; es legt dort dauerhaft 12 V an, solange der Motor läuft",
+   "Über Pin 30; es schaltet die Masse getaktet (PWM)",
+   "Über Pin 21; es gibt dort eine Spannung von 0,5–4,5 V aus, die der Raildruck-Sollwert ist",
+   "Über Pin 4; es schaltet zuerst das Hauptrelais und damit direkt die Zumesseinheit"
+  ],
+  "correct": 1,
+  "explain": "Y1 bekommt Plus über F2. Die zweite Leitung geht zu Pin 30 von A1. Das Steuergerät schaltet diese Seite nach Masse und taktet dabei (PWM) – das Tastverhältnis bestimmt die Öffnung der ZME. Pin 31 gehört zu Y2, Pin 21 ist das Signal des Raildrucksensors.",
+  "src": "Eigener Schaltplan, FK 340–342"
+ },
+ {
+  "id": "2d11d99dc6a6",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "bild": "diesel-motorsteuerung-schaltplan.svg",
+  "q": "Ordnen Sie den Pins des Motorsteuergeräts A1 ihre Aufgabe laut Schaltplan zu.",
+  "paare": [
+   [
+    "Pin 1",
+    "Dauerplus über F1"
+   ],
+   [
+    "Pin 3",
+    "Masse des Steuergeräts"
+   ],
+   [
+    "Pin 4",
+    "Ansteuerung Hauptrelais K1 (Klemme 85)"
+   ],
+   [
+    "Pin 20",
+    "5-V-Versorgung Raildrucksensor"
+   ],
+   [
+    "Pin 21",
+    "Signal Raildrucksensor"
+   ],
+   [
+    "Pin 22",
+    "Masse Raildrucksensor"
+   ]
+  ],
+  "ablenker": [
+   "Signal Kurbelwellengeber",
+   "Ansteuerung Druckregelventil"
+  ],
+  "explain": "Pin 1 hängt über F1 an Klemme 30, Pin 3 an Masse (31). Pin 4 führt zur Klemme 85 von K1 – das Steuergerät schaltet so die Relaisspule. Die Pins 20, 21 und 22 gehören zum dreipoligen Raildrucksensor B1. Der KW-Geber hängt an Pin 50/51, das Druckregelventil an Pin 31.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "5df5667bb363",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "diesel-motorsteuerung-schaltplan.svg",
+  "q": "Sie messen bei Zündung ein und drucklosem Rail an Messpunkt A gegen Masse. Welcher Wert ist richtig?",
+  "opts": [
+   "ca. 0 V, weil ohne Druck kein Signal entsteht",
+   "ca. 5 V, weil das die Versorgung des Sensors ist",
+   "ca. 0,5 V",
+   "ca. 12 V"
+  ],
+  "correct": 2,
+  "explain": "Messpunkt A liegt auf der Signalleitung (B1 Pin 2 → A1 Pin 21). Bei drucklosem Rail gibt der Sensor ca. 0,5 V aus, mit steigendem Druck bis ca. 4,5 V. 0 V oder 5 V wären Fehlerbilder (Kurzschluss nach Masse bzw. nach Versorgung, Unterbrechung der Masse). Das Steuergerät wertet unter ca. 0,25 V und über ca. 4,75 V als Defekt.",
+  "src": "Eigener Schaltplan, TB 278–279"
+ },
+ {
+  "id": "6b38f5ce4a36",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "bild": "diesel-motorsteuerung-schaltplan.svg",
+  "q": "Der Motor springt nicht an, Fehler „Zumesseinheit und Druckregelventil – Unterbrechung“. Bei Zündung ein messen Sie gegen Masse: Leitung 87 hinter K1 12,5 V, Messpunkt C 0 V. Wo liegt der Fehler?",
+  "opts": [
+   "Das Hauptrelais K1 schaltet nicht, weil an Leitung 87 sonst 0 V anliegen müssten",
+   "Das Steuergerät schaltet an Pin 30 und 31 keine Masse, deshalb fehlt an Messpunkt C die Spannung",
+   "Der Raildrucksensor meldet keinen Druck, deshalb schaltet das Steuergerät die Ventile ab",
+   "Die Sicherung F2 ist durchgebrannt oder ihr Kontakt ist unterbrochen"
+  ],
+  "correct": 3,
+  "explain": "Vor F2 (Leitung 87) liegen 12,5 V an – K1 hat also geschaltet. Hinter F2 an Messpunkt C liegen 0 V: Die Unterbrechung liegt in F2 bzw. ihrem Halter. Die Masseansteuerung über Pin 30/31 beeinflusst die Spannung an C nicht, denn C liegt auf der Plusseite vor den Ventilen.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "eb5e230c51a3",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "bild": "diesel-motorsteuerung-schaltplan.svg",
+  "q": "An Messpunkt A messen Sie bei stehendem und bei laufendem Motor gleichbleibend 4,9 V, an Pin 20 liegen 5,0 V. Wie ist das zu beurteilen?",
+  "opts": [
+   "Fehler: Über ca. 4,75 V erkennt A1 einen Defekt; z. B. Masse B1 (Pin 3 → Pin 22) unterbrochen oder Signal nach 5 V kurzgeschlossen",
+   "Der Raildruck ist sehr hoch, aber in Ordnung; das Signal ändert sich nur bei Volllast, deshalb ist keine weitere Prüfung der Leitungen nötig",
+   "Fehler: Der Sensor bekommt zu wenig Versorgung, weil 5,0 V zu gering sind; der Sensor braucht Bordnetzspannung",
+   "In Ordnung, weil ein Sensorsignal immer knapp unter der Versorgungsspannung liegen muss"
+  ],
+  "correct": 0,
+  "explain": "Ein Signal, das sich mit dem Druck nicht ändert und über ca. 4,75 V liegt, ist unplausibel – das Steuergerät setzt einen Fehler (Notlauf bzw. Abschaltung). Typische Ursachen: unterbrochene Sensormasse (dann zieht das Signal Richtung Versorgung) oder Kurzschluss der Signalleitung zur 5-V-Leitung. Als Nächstes Masseleitung und Signalleitung auf Durchgang und Kurzschluss prüfen. Die 5 V Versorgung sind richtig.",
+  "src": "Eigener Schaltplan, TB 278–279"
+ },
+ {
+  "id": "41cefd2a1b2c",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "diesel-motorsteuerung-schaltplan.svg",
+  "q": "Wie wird der Injektor Y3 laut Schaltplan angeschlossen?",
+  "opts": [
+   "Plus über F2 wie Y1 und Y2, Masse über Pin 40",
+   "Beide Anschlüsse gehen zum Steuergerät (Pin 40 und 41), A1 schaltet Plus- und Masseseite",
+   "Plus über das Hauptrelais K1, Masse fest an Klemme 31",
+   "Über Pin 50 und 51, weil der Injektor wie der KW-Geber ein Signal liefert"
+  ],
+  "correct": 1,
+  "explain": "Injektoren werden vom Steuergerät auf beiden Seiten geschaltet: Die Plusseite bekommt im Anzug die hohe Boosterspannung aus dem Steuergerät, die Masseseite wählt den Zylinder aus. Deshalb führen beide Leitungen von Y3 zu A1 (Pin 40 und 41). Pin 50/51 gehören zum KW-Geber B2.",
+  "src": "Eigener Schaltplan, FK 339–349"
+ },
+ {
+  "id": "a581d8d8fec4",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "diesel-motorsteuerung-schaltplan.svg",
+  "q": "Wie wird das Hauptrelais K1 laut Schaltplan eingeschaltet, und was versorgt es?",
+  "opts": [
+   "Klemme 30 liegt an 86, Klemme 15 an 85; K1 versorgt nur den Pin 1 des Steuergeräts",
+   "Das Steuergerät legt über Pin 4 Plus an 85; der Kontakt 30/87 versorgt die Injektoren Y3 und Y4 direkt mit Bordnetzspannung",
+   "Klemme 15 liegt an 86, A1 schaltet über Pin 4 die Klemme 85 nach Masse; der Kontakt 30/87 versorgt F2 und F3",
+   "Klemme 15 liegt an 86, 85 hängt direkt an Masse; der Kontakt 30/87 versorgt F1 und den Pin 1"
+  ],
+  "correct": 2,
+  "explain": "Die Spule liegt zwischen 86 (Klemme 15) und 85, die zu Pin 4 führt. Schaltet A1 Pin 4 nach Masse, zieht das Relais an und verbindet Klemme 30 mit 87. Von 87 werden über F2 die Ventile Y1/Y2 und über F3 der Pin 2 des Steuergeräts versorgt. F1 und Pin 1 hängen direkt an Klemme 30.",
+  "src": "Eigener Schaltplan, DIN 72552"
+ },
+ {
+  "id": "24d5f7756c7f",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "diesel-motorsteuerung-schaltplan.svg",
+  "q": "Der Kurbelwellengeber B2 ist laut Schaltplan zweipolig (Pin 50/51) angeschlossen. Welche Aussage zu Geberart und Signal ist richtig?",
+  "opts": [
+   "Hallgeber; er braucht eine 5-V-Versorgung und liefert ein Rechtecksignal mit konstanter Höhe",
+   "Induktivgeber; er liefert eine Gleichspannung, die mit der Drehzahl gleichmäßig von 0,5 auf 4,5 V steigt wie beim Raildrucksensor",
+   "Hallgeber; er liefert bei stehendem Motor ein Signal, das die Kolbenstellung als Spannung anzeigt",
+   "Induktivgeber; er erzeugt ohne Versorgung eine Wechselspannung, Höhe und Frequenz steigen mit der Drehzahl"
+  ],
+  "correct": 3,
+  "explain": "Ein Induktivgeber braucht keine Versorgung, deshalb reichen zwei Leitungen. Die vorbeilaufenden Zähne induzieren eine Wechselspannung, deren Höhe und Frequenz mit der Drehzahl steigen; die Zahnlücke dient als Bezugsmarke. Ein Hallgeber hätte drei Anschlüsse (Versorgung, Signal, Masse) und ein Rechtecksignal.",
+  "src": "Eigener Schaltplan, TB 278–279, FW"
+ },
+ {
+  "id": "149f5e749b78",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 3,
+  "bild": "diesel-oszi-injektorstrom.svg",
+  "q": "Ordnen Sie den Abschnitten ①–③ im Oszillogramm den richtigen Vorgang zu.",
+  "paare": [
+   [
+    "①",
+    "Anzugsphase mit hohem Strom aus der Boosterspannung"
+   ],
+   [
+    "②",
+    "Haltephase mit getaktetem, kleinerem Strom"
+   ],
+   [
+    "③",
+    "Abschalten – Strom fällt auf null, die Düsennadel schließt"
+   ]
+  ],
+  "ablenker": [
+   "Laden des Piezo-Stapels wie ein Kondensator"
+  ],
+  "explain": "Zum schnellen Öffnen braucht der Magnet kurz einen hohen Strom (①). Zum Offenhalten genügt ein kleinerer Strom, der getaktet wird (②). Beim Abschalten (③) bricht der Strom zusammen und der Injektor schließt. Ein Piezo-Injektor verhält sich wie ein Kondensator – sein Strombild sieht anders aus.",
+  "src": "Eigenes Oszillogramm, FK 339–349"
+ },
+ {
+  "id": "577ab22a74ed",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "diesel-oszi-injektorstrom.svg",
+  "q": "Lesen Sie aus dem Oszillogramm den Anzugsstrom und den mittleren Haltestrom ab.",
+  "opts": [
+   "ca. 20 A Anzug; ca. 12,5 A Halten",
+   "ca. 25 A Anzug; ca. 12,5 A Halten",
+   "ca. 4 A Anzug; ca. 2,5 A Halten",
+   "ca. 20 A Anzug; ca. 10 A Halten"
+  ],
+  "correct": 0,
+  "explain": "Die Spitze liegt 4 Kästchen über der Null-Linie: 4 × 5 A = 20 A. Der Haltestrom pendelt zwischen 10 A und 15 A (2 bis 3 Kästchen), im Mittel also ca. 12,5 A. Wer nur Kästchen zählt, ohne mit 5 A zu multiplizieren, kommt auf 4 bzw. 2,5. 10 A ist nur der untere Wert der Pendelung.",
+  "src": "Eigenes Oszillogramm, FK 339–349"
+ },
+ {
+  "id": "5e6b10d1cdcb",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "diesel-oszi-injektorstrom.svg",
+  "q": "Wie lange wird der Injektor laut Oszillogramm angesteuert (Strombeginn bis Abschalten)?",
+  "opts": [
+   "0,7 ms",
+   "0,6 ms",
+   "6 ms",
+   "0,45 ms"
+  ],
+  "correct": 1,
+  "explain": "Der Strom beginnt bei 0,1 ms und fällt bei 0,7 ms auf null: 0,7 ms − 0,1 ms = 0,6 ms (6 Kästchen × 0,1 ms). 0,7 ms ist der Endzeitpunkt, nicht die Dauer; 6 ms entsteht, wenn man das Kästchen mit 1 ms statt 0,1 ms rechnet.",
+  "src": "Eigenes Oszillogramm"
+ },
+ {
+  "id": "b0a69c8c90d5",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "diesel-oszi-injektorstrom.svg",
+  "q": "Das Bild zeigt den Injektor von Zyl. 1. Am Injektor von Zyl. 2 bleibt der Strom trotz Ansteuerung dauerhaft bei 0 A. Was ist die wahrscheinlichste Ursache und der nächste Schritt?",
+  "opts": [
+   "Injektor Zyl. 2 ist innen undicht; als Nächstes die Rücklaufmenge messen, weil Lecköl im Magnetventil den Strom verhindert",
+   "Der Raildruck ist zu niedrig; als Nächstes den Raildrucksensor ersetzen, weil ohne Druck kein Strom fließt",
+   "Stromkreis von Injektor Zyl. 2 unterbrochen (Spule, Leitung, Stecker); Widerstand von Spule und Leitungen messen",
+   "Der Injektor arbeitet richtig, weil ein Magnetventil nur beim Abschalten einen Strom zeigt"
+  ],
+  "correct": 2,
+  "explain": "Fließt trotz Ansteuerung gar kein Strom, ist der Stromkreis unterbrochen – in der Spule, in einer der beiden Leitungen zum Steuergerät oder am Stecker. Deshalb stromlos Spulen- und Leitungswiderstand messen. Eine innere Undichtheit verändert die Menge, nicht den elektrischen Strom; der Raildruck hat keinen Einfluss darauf, ob Strom fließt.",
+  "src": "Eigenes Oszillogramm, FW"
+ },
+ {
+  "id": "87be249b4143",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "diesel-oszi-injektorstrom.svg",
+  "q": "Warum fällt der Strom nach Abschnitt ① auf den kleineren Haltestrom ab?",
+  "opts": [
+   "Weil sich die Spule beim Öffnen so stark erwärmt, dass ihr Widerstand verdoppelt",
+   "Weil der Raildruck während der Einspritzung abfällt und der Injektor deshalb weniger Strom aufnimmt als beim Öffnen gegen den vollen Druck",
+   "Weil die Boosterspannung jetzt in die Rücklaufleitung abgeleitet wird",
+   "Weil das Offenhalten weniger Kraft braucht als das Öffnen; der kleinere Strom spart Leistung und schont Spule und Steuergerät"
+  ],
+  "correct": 3,
+  "explain": "Zum Abheben des Ankers braucht der Magnet viel Kraft, danach steht der Anker am Anschlag und der Luftspalt ist klein – ein kleinerer Strom hält ihn. Das senkt Verlustleistung und Erwärmung von Spule und Endstufe und das Ventil schließt nach dem Abschalten schneller.",
+  "src": "FK 339–349, FW"
+ },
+ {
+  "id": "845483df6be1",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "diesel-scr-anlage.svg",
+  "q": "Welche Nummer im Bild ist der Sensor, aus dessen Signal das Steuergerät vor allem die benötigte AdBlue-Menge berechnet?",
+  "opts": [
+   "④",
+   "③, weil die Abgastemperatur allein die Dosiermenge bestimmt",
+   "⑦, weil er hinter dem SCR-Kat die Reststickoxide misst",
+   "⑧"
+  ],
+  "correct": 0,
+  "explain": "Der NOx-Sensor 1 (④) misst die Stickoxide aus dem Motor vor der Dosierstelle – danach richtet sich die Dosiermenge. Der Temperatursensor (③) gibt die Freigabe (Abgas warm genug). Der NOx-Sensor 2 (⑦) überwacht den Wirkungsgrad und korrigiert. ⑧ ist das Fördermodul.",
+  "src": "FK 357, Eigenes Bild"
+ },
+ {
+  "id": "6aac76313ecc",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "diesel-scr-anlage.svg",
+  "q": "Warum braucht das Steuergerät für die AdBlue-Dosierung das Signal des Abgastemperatursensors ③?",
+  "opts": [
+   "Damit es das AdBlue im Tank auf Abgastemperatur vorwärmen kann",
+   "Weil erst ab ausreichender Abgastemperatur (ca. 170 °C) dosiert werden darf; zu kaltes Abgas führt zu Ablagerungen",
+   "Weil der Sensor bei zu heißem Abgas die Startsperre auslöst",
+   "Weil der Sensor den Füllstand im AdBlue-Tank über die Temperatur des Fördermoduls ermittelt und an das Kombiinstrument meldet"
+  ],
+  "correct": 1,
+  "explain": "Die Stickoxid-Minderung im SCR-Kat beginnt erst ab ca. 170 °C, und der Harnstoff zersetzt sich nur im heißen Abgas vollständig. Bei zu kaltem Abgas würde das AdBlue Ablagerungen bilden. Deshalb gibt das Steuergerät die Dosierung erst frei, wenn der Temperatursensor genug Wärme meldet.",
+  "src": "FK 357"
+ },
+ {
+  "id": "e3d203d4e799",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "diesel-scr-schaltplan.svg",
+  "q": "Im Winter meldet das Steuergerät „Leitungsheizung – Unterbrechung“. Bei angesteuertem K2 messen Sie an Messpunkt B 12,4 V gegen Masse, am abgesteckten R2 ∞ Ω. Wo liegt der Fehler?",
+  "opts": [
+   "Sicherung F4 ist durchgebrannt, weil an Messpunkt B sonst 0 V anliegen müssten",
+   "Das Relais K2 schaltet nicht, weil das Steuergerät Pin 7 nicht nach Masse schaltet",
+   "Die Heizung R2 in der Leitung ist unterbrochen",
+   "Die Tankheizung R1 ist kurzgeschlossen und zieht die Spannung von R2 ab"
+  ],
+  "correct": 2,
+  "explain": "12,4 V an Messpunkt B zeigen: F4 ist in Ordnung und K2 hat geschaltet – die Spannung kommt bei R2 an. Der Widerstand ∞ Ω am abgesteckten R2 zeigt eine Unterbrechung des Heizdrahts. Ein Kurzschluss von R1 hätte F4 ausgelöst; dann läge an B keine Spannung an.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "4589d82be20e",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "bild": "diesel-scr-schaltplan.svg",
+  "q": "Ordnen Sie den Anschlüssen des Steuergeräts A2 ihre Aufgabe laut Schaltplan zu.",
+  "paare": [
+   [
+    "Pin 7",
+    "Masse für die Spule des Heizrelais K2"
+   ],
+   [
+    "Pin 10",
+    "Versorgung der Förderpumpe M1"
+   ],
+   [
+    "Pin 12",
+    "Getaktete Masse des Dosierventils Y5"
+   ],
+   [
+    "Pin 21",
+    "Signal des Drucksensors B3"
+   ]
+  ],
+  "ablenker": [
+   "Plus für Tank- und Leitungsheizung"
+  ],
+  "explain": "Pin 7 führt zur Klemme 85 von K2 – A2 schaltet die Spule nach Masse. Pin 10 versorgt M1, Pin 12 schaltet Y5 masseseitig per PWM, Pin 21 ist der mittlere Anschluss des dreipoligen Drucksensors (Signal). Die Heizungen bekommen ihr Plus über F4 und den Kontakt von K2, nicht direkt vom Steuergerät.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "52fcda14b8f6",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "diesel-scr-schaltplan.svg",
+  "q": "Sie wollen prüfen, ob das Steuergerät die Förderpumpe M1 überhaupt ansteuert. Wo und wie messen Sie?",
+  "opts": [
+   "An Messpunkt A mit dem Ohmmeter bei laufendem Motor",
+   "An Messpunkt B gegen Masse mit dem Voltmeter bei Zündung aus",
+   "An F5 mit dem Strommesser im Leitungsweg zum Dosierventil, bei abgestecktem M1 und laufendem Motor",
+   "An Messpunkt C gegen Masse mit Voltmeter bzw. Oszilloskop, während die Pumpe angesteuert wird"
+  ],
+  "correct": 3,
+  "explain": "Messpunkt C liegt auf der Leitung von A2 Pin 10 zur Pumpe M1. Liegt dort bei Ansteuerung Spannung an (oft getaktet, darum ggf. Oszilloskop), arbeitet das Steuergerät; läuft die Pumpe trotzdem nicht, ist M1 oder ihre Masse fehlerhaft. Messpunkt A gehört zum Dosierventil, B zur Leitungsheizung. Widerstände misst man nur stromlos.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "201d3f7b1f50",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie den Begriffen zur Drehzahl- und Positionserfassung die passende Beschreibung zu.",
+  "paare": [
+   [
+    "Induktivgeber",
+    "Wechselspannung, Höhe und Frequenz steigen mit der Drehzahl"
+   ],
+   [
+    "Hallgeber",
+    "Rechtecksignal gleicher Höhe, braucht eine Versorgungsspannung"
+   ],
+   [
+    "Zahnlücke am Geberrad",
+    "Bezugsmarke für die Kurbelwellenstellung"
+   ],
+   [
+    "Nockenwellengeber",
+    "Erkennt, welcher Zylinder im Verdichtungstakt ist"
+   ]
+  ],
+  "ablenker": [
+   "Misst den Kolbenhub in Millimetern"
+  ],
+  "explain": "Der Induktivgeber erzeugt seine Spannung selbst, deshalb hängt sie von der Drehzahl ab. Der Hallgeber braucht Versorgung und liefert ein Rechteck, auch bei sehr niedriger Drehzahl. Aus der Zahnlücke erkennt das Steuergerät die Kurbelwellenstellung, aus dem Nockenwellensignal die Zylinderzuordnung.",
+  "src": "TB 278–279, FW"
+ },
+ {
+  "id": "5bcc473de49d",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 3,
+  "q": "Ordnen Sie den Teileinspritzungen ihre Hauptaufgabe zu.",
+  "paare": [
+   [
+    "Voreinspritzung",
+    "Sanfterer Druckanstieg, leiseres Verbrennungsgeräusch"
+   ],
+   [
+    "Haupteinspritzung",
+    "Erzeugt das Drehmoment des Motors"
+   ],
+   [
+    "Späte Nacheinspritzung",
+    "Erhöht die Abgastemperatur, z. B. für die DPF-Regeneration"
+   ]
+  ],
+  "ablenker": [
+   "Wärmt die Ansaugluft vor dem Start vor"
+  ],
+  "explain": "Eine kleine Voreinspritzung lässt die Verbrennung weicher beginnen – der Motor nagelt weniger. Die Haupteinspritzung liefert die Arbeit. Eine späte Nacheinspritzung verbrennt nicht mehr im Zylinder zu Arbeit, sondern heizt Abgas und Oxi-Kat auf. Kalte Ansaugluft wärmt die Glühanlage, nicht die Einspritzung.",
+  "src": "FK 339–349"
+ },
+ {
+  "id": "8cc7240f1517",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Warum hat ein elektronischer Fahrpedalgeber zwei voneinander unabhängige Geber?",
+  "opts": [
+   "Das Steuergerät vergleicht beide Signale; passen sie nicht zusammen, erkennt es einen Fehler und geht in den Notlauf",
+   "Ein Geber meldet das Gaspedal, der andere das Bremspedal, damit beide Pedale über einen Stecker laufen",
+   "Der zweite Geber verdoppelt das Signal, damit der Motor schneller auf das Gaspedal reagiert und mehr Leistung abgibt",
+   "Der zweite Geber ist nur eine Reserve; er wird erst nach dem Tausch des ersten Gebers mit dem Tester freigeschaltet"
+  ],
+  "correct": 0,
+  "explain": "Das Gaspedal ist sicherheitsrelevant. Deshalb liefern zwei Geber zwei Signale, die das Steuergerät ständig auf Plausibilität vergleicht. Weicht ein Signal ab, speichert es einen Fehler und schaltet in den Notlauf (z. B. erhöhte Leerlaufdrehzahl, eingeschränkte Leistung).",
+  "src": "TB 278–279"
+ },
+ {
+  "id": "3e9937d52bd1",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "q": "Messwertblock bei Volllast: Ladedruck Soll 2,1 bar, Ist 1,5 bar (absolut); Luftmasse deutlich unter Soll. Was ist eine wahrscheinliche Ursache und der nächste Schritt?",
+  "opts": [
+   "Raildrucksensor defekt; den Sensor ersetzen, weil der Ladedruck aus dem Raildruck berechnet wird",
+   "Ladeluftstrecke undicht oder Laderregelung klemmt; Schläuche prüfen, Strecke abdrücken, Stellglied testen",
+   "AdBlue-Tank fast leer; AdBlue nachfüllen, weil das System bei niedrigem Füllstand den Ladedruck stufenweise senkt",
+   "Kraftstofffilter verstopft; Filter ersetzen, weil zu wenig Kraftstoff den Ladedruck direkt verringert"
+  ],
+  "correct": 1,
+  "explain": "Fehlen Ladedruck und Luftmasse gleichzeitig, kommt zu wenig Luft im Motor an: typisch ist ein undichter oder abgerutschter Ladeluftschlauch bzw. ein klemmender Ladedrucksteller. Deshalb Sichtprüfung, Abdrücken der Ladeluftstrecke und Stellglieddiagnose des Laders. Raildruck, AdBlue und Kraftstofffilter bestimmen den Ladedruck nicht.",
+  "src": "FW"
+ },
+ {
+  "id": "ab6459b01c41",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Welche Folge hat ein AGR-Ventil, das im offenen Zustand hängen bleibt?",
+  "opts": [
+   "Mehr Frischluft im Zylinder, deshalb höhere Leistung und deutlich weniger Ruß",
+   "Keine Folge, weil das Steuergerät die Abgasrückführung nur im Leerlauf benutzt und bei Last immer ganz abschaltet",
+   "Weniger Frischluft im Zylinder: Leistungsmangel, Ruß bzw. schwarzer Rauch, Fehler wegen zu geringer Luftmasse",
+   "Der Raildruck steigt auf den Höchstwert, weil das Abgas in die Hochdruckpumpe gedrückt wird"
+  ],
+  "correct": 2,
+  "explain": "Über das offene AGR-Ventil strömt ständig Abgas in den Ansaugtrakt und verdrängt Frischluft. Der Luftmassenmesser misst weniger Luft, die Verbrennung wird luftarm: Leistungsmangel und Rußbildung, das Steuergerät setzt einen Fehler (Luftmasse/AGR-Regelung). Die AGR soll eigentlich nur gezielt die Stickoxide senken.",
+  "src": "FW"
+ },
+ {
+  "id": "fb3b2e165fc2",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 3,
+  "q": "Ordnen Sie den Arten der Partikelfilter-Regeneration die richtige Beschreibung zu.",
+  "paare": [
+   [
+    "Passive Regeneration",
+    "Läuft bei hoher Abgastemperatur von selbst, z. B. auf Autobahnfahrt"
+   ],
+   [
+    "Aktive Regeneration",
+    "Steuergerät erhöht gezielt die Abgastemperatur, z. B. per Nacheinspritzung"
+   ],
+   [
+    "Serviceregeneration",
+    "Wird in der Werkstatt mit dem Tester gestartet und überwacht"
+   ]
+  ],
+  "ablenker": [
+   "Filter wird mit Wasser ausgespült"
+  ],
+  "explain": "Bei hoher Last verbrennt der Ruß im Filter ohne Eingriff (passiv). Reicht das nicht, hebt das Steuergerät die Temperatur gezielt an (aktiv). Ist der Filter zu voll für eine Fahrt-Regeneration, startet die Werkstatt eine Serviceregeneration – wenn die Beladung das noch zulässt.",
+  "src": "Netz: Bosch/kfz-dietrich DPF (siehe ausbau-diesel.md), FW"
+ },
+ {
+  "id": "9d15b6f7e166",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Am Differenzdrucksensor des Partikelfilters ist der Messschlauch vor dem Filter abgerissen. Welche Folge ist zu erwarten?",
+  "opts": [
+   "Der Sensor misst den doppelten Druck, deshalb regeneriert das Steuergerät den Filter ständig, ohne einen Fehler zu speichern",
+   "Keine Folge, weil das Steuergerät die Beladung nur aus der Laufleistung seit der letzten Regeneration berechnet",
+   "Der Filter wird sofort undicht, weil der Abgasdruck jetzt über den Schlauch auf die Filterwand drückt",
+   "Der Sensor misst kaum noch einen Druckunterschied; die Beladung wird falsch berechnet, ein Fehler wird gespeichert"
+  ],
+  "correct": 3,
+  "explain": "Der Sensor vergleicht den Druck vor und nach dem Filter. Liegt die Seite vor dem Filter offen, sieht er dort nur Umgebungsdruck – der Unterschied wird fast null bzw. unplausibel. Das Steuergerät erkennt die Beladung nicht richtig und setzt einen Fehler. Deshalb bei DPF-Fehlern immer zuerst die Schläuche prüfen.",
+  "src": "Netz: Bosch, Delphi (siehe ausbau-diesel.md)"
+ },
+ {
+  "id": "a13ca1c45760",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Warum lässt sich ein Partikelfilter nach sehr hoher Laufleistung trotz erfolgreicher Regeneration nicht mehr ausreichend freibrennen?",
+  "opts": [
+   "Weil sich Asche aus Öl-Additiven einlagert, die nicht verbrennt",
+   "Weil der Ruß mit der Zeit härter wird und nur noch mit AdBlue verbrennt",
+   "Weil der Differenzdrucksensor nach einigen Jahren grundsätzlich ersetzt werden muss",
+   "Weil das Steuergerät die Regeneration nach einer festen Zahl von Zyklen dauerhaft sperrt"
+  ],
+  "correct": 0,
+  "explain": "Ruß verbrennt bei der Regeneration zu CO₂, Asche (aus Additiven von Motoröl und Kraftstoff) aber nicht. Sie bleibt im Filter und verringert nach und nach seine Aufnahmefähigkeit. Dann hilft nur eine Reinigung oder ein Tausch des Filters; danach den Lernwert (Adaption) nach WI zurücksetzen. Aschearmes Öl nach Herstellernorm verlangsamt das.",
+  "src": "Netz: kfz-dietrich DPF (siehe ausbau-diesel.md), FW"
+ },
+ {
+  "id": "7b0a14b971e6",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Was ist zu beachten, bevor Sie eine Leitung des Hochdruckteils öffnen?",
+  "opts": [
+   "Motor im Leerlauf laufen lassen, damit Luft aus dem System gedrückt wird",
+   "Motor abstellen und warten, bis der Raildruck abgebaut ist; Schutzbrille, Umgebung reinigen",
+   "Nur die Batterie abklemmen; der Raildruck bleibt danach ungefährlich im Rail eingeschlossen",
+   "Die Leitung zuerst unter Druck leicht anlösen, damit der Druck langsam entweichen kann"
+  ],
+  "correct": 1,
+  "explain": "Unter Hochdruck austretender Diesel kann Haut durchdringen und Augen verletzen. Deshalb Motor aus, Druckabbau abwarten (Raildruck im Messwertblock bzw. Wartezeit nach WI), Schutzbrille tragen und die Umgebung vor dem Öffnen reinigen, damit kein Schmutz ins System gelangt. Leitungen nie unter Druck lösen.",
+  "src": "FW"
+ },
+ {
+  "id": "3b8e5795f4c3",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Ein Raildruck von 1800 bar wirkt auf eine Fläche von 3 mm² an der Düsennadel. Wie groß ist die Kraft?",
+  "opts": [
+   "5.400 N",
+   "54 N",
+   "540 N",
+   "600 N"
+  ],
+  "correct": 2,
+  "explain": "1800 bar = 180 MPa = 180 N/mm². F = p × A = 180 N/mm² × 3 mm² = 540 N. 5.400 N entsteht, wenn man 1800 bar als 1800 N/mm² rechnet; 600 N ist 1800 ÷ 3 (geteilt statt multipliziert).",
+  "src": "FW"
+ },
+ {
+  "id": "7f0d15196f8b",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "raildruck-kennlinie.svg",
+  "tb": true,
+  "q": "Der Raildrucksensor liefert 3,7 V. Welchen Raildruck lesen Sie aus der Kennlinie ab?",
+  "opts": [
+   "148 MPa",
+   "185 MPa",
+   "1.600 MPa",
+   "160 MPa"
+  ],
+  "correct": 3,
+  "explain": "Die Kennlinie steigt um 4,0 V auf 200 MPa, also 0,02 V je MPa, und beginnt bei 0,5 V. (3,7 V − 0,5 V) ÷ 0,02 V/MPa = 160 MPa (= 1600 bar). 185 MPa entsteht, wenn man den Nullpunkt von 0,5 V vergisst; 1.600 MPa verwechselt MPa und bar.",
+  "src": "FK 340–342"
+ },
+ {
+  "id": "b94c63b17232",
+  "cat": "Diesel",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "cr-anlage.svg",
+  "q": "Welche Nummer im Leitungsplan ist das Bauteil, das hochdruckseitig Kraftstoff aus dem Rail in den Rücklauf absteuert?",
+  "opts": [
+   "⑧",
+   "⑤",
+   "⑦",
+   "⑪"
+  ],
+  "correct": 0,
+  "explain": "⑧ ist das Druckregelventil am Ende des Rails, sein Ausgang führt in den Rücklauf. ⑤ ist die Zumesseinheit (saugseitig an der Pumpe), ⑦ der Raildrucksensor, ⑪ der Kraftstoffkühler im Rücklauf.",
+  "src": "FK 339–342, Eigenes Bild"
+ },
+ {
+  "id": "1658b1072387",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Bringen Sie die Schritte einer Rücklaufmengenmessung an den Injektoren in die richtige Reihenfolge.",
+  "schritte": [
+   "Motorabdeckung abbauen, Bereich der Rücklaufanschlüsse reinigen",
+   "Rücklaufleitungen von den Injektoren abziehen und verschließen",
+   "Messschläuche mit Messgefäßen an die Injektoren anschließen",
+   "Motor starten und die Prüfbedingung laut WI für die vorgegebene Zeit halten",
+   "Motor abstellen, Mengen ablesen und miteinander vergleichen",
+   "Rücklaufleitungen wieder anschließen und auf Dichtheit prüfen"
+  ],
+  "explain": "Erst reinigen, dann öffnen – Schmutz darf nicht in die Injektoren. Alle Injektoren werden unter gleichen Bedingungen gemessen, sonst sind die Mengen nicht vergleichbar. Beurteilung: Die größte Menge darf höchstens das Dreifache der kleinsten betragen.",
+  "src": "TB 277, FW"
+ },
+ {
+  "id": "d6dbee6a29d3",
+  "cat": "Diesel",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "An einer Anlage mit saugender Zahnradpumpe messen Sie zwischen Filter und Pumpe −0,7 bar; laut WI sind bis −0,4 bar zulässig. Der Motor hat bei Kälte Leistungsmangel. Wie beurteilen Sie das?",
+  "opts": [
+   "Unterdruck zu gering; die Zahnradpumpe ist verschlissen und saugt nicht mehr richtig an",
+   "Unterdruck zu hoch: Filter bzw. Zulauf verengt, z. B. Paraffin im Filter bei Kälte; Filter prüfen bzw. ersetzen",
+   "Messwert in Ordnung, weil ein höherer Unterdruck nur zeigt, dass die Pumpe besonders kräftig und gleichmäßig fördert",
+   "Unterdruck zu hoch: Raildrucksensor defekt, weil er den Saugdruck fehlerhaft an das Steuergerät meldet"
+  ],
+  "correct": 1,
+  "explain": "−0,7 bar ist ein stärkerer Unterdruck als erlaubt (−0,4 bar). Die Pumpe muss gegen einen Widerstand saugen: Filter verstopft oder bei Kälte durch Paraffin verlegt, Leitung geknickt. Folge: zu wenig Kraftstoff an der Hochdruckpumpe → Raildruck bricht unter Last ein → Leistungsmangel. Der Raildrucksensor misst nur den Hochdruck.",
+  "src": "FK 339, FW"
+ },
+ {
+  "id": "beebd6a39943",
+  "cat": "Diesel",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Was ist beim Ersetzen eines NOx-Sensors zu beachten?",
+  "opts": [
+   "Den Sensor bei laufendem Motor einschrauben, damit er sich sofort auf Abgastemperatur kalibriert",
+   "Vor und nach Kat können beliebig getauscht werden, weil beide Sensoren baugleich sind und gleich programmiert werden",
+   "Richtigen Sensor für den Einbauort (vor/nach Kat) wählen, Gewinde reinigen, Anpassung mit Tester nach WI",
+   "Das Gewinde mit Dichtmasse abdichten und das Kabel am heißen Abgasrohr festbinden, damit es nicht scheuert"
+  ],
+  "correct": 2,
+  "explain": "Teilenummer und Einbauort (NOx-Sensor 1 oder 2) müssen passen, viele Steuergeräte unterscheiden die Sensoren. Das Gewinde im Rohr reinigen, damit der Sensor dicht sitzt – Undichtheit verfälscht die Messung. Danach nach WI anlernen bzw. Adaptionswerte zurücksetzen. Kabel und Steuerelektronik nicht an heißen Teilen befestigen.",
+  "src": "Netz: IKA (siehe ausbau-diesel.md)"
  },
  {
   "id": "4bccb7e974d0",
@@ -3279,6 +6575,692 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
+  "id": "57c2266edba2",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "bild": "grundlagen-relais-schaltplan.svg",
+  "q": "Ordnen Sie den Kennzeichnungen im Schaltplan das passende Bauteil zu.",
+  "paare": [
+   [
+    "F2",
+    "Sicherung im Laststromkreis"
+   ],
+   [
+    "K1",
+    "Relais (Spule und Arbeitskontakt)"
+   ],
+   [
+    "S1",
+    "Schalter im Steuerstromkreis"
+   ],
+   [
+    "X1",
+    "Steckverbindung"
+   ],
+   [
+    "M1",
+    "Elektromotor des Lüfters"
+   ]
+  ],
+  "ablenker": [
+   "Steuergerät",
+   "Magnetventil"
+  ],
+  "explain": "Kennbuchstaben: F = Sicherung, K = Relais, S = Schalter, X = Stecker, M = Motor. Ein Steuergerät hätte den Buchstaben A, ein Ventil Y. Die Zahl dahinter nummeriert gleiche Bauteile im Plan durch.",
+  "src": "Eigener Schaltplan, Kennbuchstaben nach Tabellenbuch",
+  "tb": true
+ },
+ {
+  "id": "a1f941eb3266",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "bild": "grundlagen-relais-schaltplan.svg",
+  "q": "Ordnen Sie den Anschlüssen des Relais K1 im Schaltplan ihre Aufgabe zu.",
+  "paare": [
+   [
+    "86",
+    "Spulenanschluss, bekommt über S1 Plus"
+   ],
+   [
+    "85",
+    "Spulenanschluss zur Masse"
+   ],
+   [
+    "30",
+    "Kontakteingang, bekommt über F2 Plus"
+   ],
+   [
+    "87",
+    "Kontaktausgang zum Lüfter"
+   ]
+  ],
+  "ablenker": [
+   "Ruhekontakt, bei stromloser Spule geschlossen"
+  ],
+  "explain": "85/86 sind die Spule (Steuerstromkreis), 30/87 der Arbeitskontakt (Laststromkreis). Fließt Strom durch die Spule, verbindet der Kontakt 30 mit 87. Ein Ruhekontakt hieße 87a – den hat dieses Relais nicht.",
+  "src": "Eigener Schaltplan, DIN 72552"
+ },
+ {
+  "id": "2ad36c5b635e",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "grundlagen-relais-schaltplan.svg",
+  "q": "Warum ist das Relais K1 im Schaltplan an zwei Stellen gezeichnet?",
+  "opts": [
+   "Es gibt zwei Relais K1, eines schaltet den Steuerstrom und eines den Laststrom des Lüfters",
+   "Aufgelöster Plan: Spule in Strompfad 1, Kontakt in Strompfad 2, Strichlinie = Wirkverbindung",
+   "Die Strichlinie zeigt eine Steckverbindung zwischen den beiden Relaishälften",
+   "Zusammenhängender Plan: Das Relais ist dort gezeichnet, wo seine Teile im Fahrzeug eingebaut sind"
+  ],
+  "correct": 1,
+  "explain": "Im aufgelösten Stromlaufplan wird jedes Bauteil auf die Strompfade verteilt, in denen es wirkt: die Spule im Steuerstromkreis, der Kontakt im Laststromkreis. Die gestrichelte Linie bedeutet „betätigt mechanisch“, sie ist keine Leitung. In der zusammenhängenden Darstellung wäre das Relais als ein Block gezeichnet.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "f52f3239eeba",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "grundlagen-relais-schaltplan.svg",
+  "q": "Was bedeutet die Leitungsangabe „2,5 rt/ws“ im Strompfad 2?",
+  "opts": [
+   "Querschnitt 2,5 mm², Grundfarbe rot, Kennfarbe (Streifen) weiß",
+   "Länge 2,5 m, Grundfarbe rot, Kennfarbe (Streifen) weiß",
+   "Querschnitt 2,5 mm², Grundfarbe weiß, Kennfarbe (Streifen) rot",
+   "Belastbarkeit 2,5 A, Grundfarbe rot, Kennfarbe (Streifen) weiß"
+  ],
+  "correct": 0,
+  "explain": "Die Zahl vor den Farben ist der Leiterquerschnitt in mm². Die erste Farbe ist die Grundfarbe, die zweite die Kennfarbe (Streifen). Die Belastbarkeit ergibt sich aus Querschnitt und Länge, sie steht nicht an der Leitung.",
+  "src": "Eigener Schaltplan, FW (Leitungsfarben DIN 72551-7)"
+ },
+ {
+  "id": "7cad848c3a27",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-relais-schaltplan.svg",
+  "q": "Welche Spannungsmessung zeigt bei eingeschaltetem, fehlerfreiem Lüfterstromkreis ungefähr 0 V?",
+  "opts": [
+   "Zwischen C und D, also über dem laufenden Lüftermotor",
+   "Zwischen A und B, also über dem geschlossenen Relaiskontakt",
+   "Zwischen A und Masse, also am Ausgang der Sicherung F2 im Laststromkreis",
+   "Zwischen E und F, also über der angesteuerten Relaisspule"
+  ],
+  "correct": 1,
+  "explain": "Über einem geschlossenen, intakten Kontakt fällt fast keine Spannung ab (Spannungsfall nahe 0 V). Die Bordspannung fällt fast vollständig an den Verbrauchern ab – am Motor (C–D) und an der Relaisspule (E–F). A gegen Masse zeigt die volle Bordspannung.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "13be5095543e",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-relais-schaltplan.svg",
+  "q": "S1 ist geschlossen, K1 klickt hörbar, der Lüfter steht. Gegen Masse messen Sie: A = 12,6 V, B = 12,6 V, C = 0 V. Wo liegt der Fehler?",
+  "opts": [
+   "Unterbrechung zwischen B und C, also in der Leitung zum Stecker X1 oder im Stecker",
+   "Arbeitskontakt 30/87 in K1 ist verbrannt und schaltet den Strom nicht zum Motor durch",
+   "Masseverbindung des Motors bei D ist unterbrochen, deshalb fließt kein Strom",
+   "Sicherung F2 ist durchgebrannt, deshalb fehlt die Spannung am Lüftermotor"
+  ],
+  "correct": 0,
+  "explain": "Bis B (Ausgang 87) ist die Spannung da, an C nicht mehr – die Unterbrechung liegt dazwischen (Leitung oder Stecker X1). Ein verbrannter Kontakt ergäbe schon an B 0 V, eine defekte F2 schon an A. Bei unterbrochener Masse läge an C die volle Spannung an.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "6aa66fa7e544",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-relais-schaltplan.svg",
+  "q": "S1 ist geschlossen, aber K1 klickt nicht. Gegen Masse messen Sie: E = 12,5 V und F = 12,5 V. Was ist die Ursache?",
+  "opts": [
+   "Relaisspule K1 ist unterbrochen, weil an E noch Spannung anliegt",
+   "Schalter S1 schaltet nicht durch, deshalb erreicht die Spule keine Spannung",
+   "Masseverbindung der Spule zwischen F und Klemme 31 ist unterbrochen",
+   "Sicherung F1 ist durchgebrannt, weil der Steuerstrom zu hoch war"
+  ],
+  "correct": 2,
+  "explain": "Liegt auf beiden Seiten der Spule dieselbe Spannung gegen Masse, fließt kein Strom – die Verbindung hinter der Spule zur Masse fehlt. Bei unterbrochener Spule wäre F über die Masseleitung auf 0 V gezogen. Ein offener S1 oder eine defekte F1 ergäbe schon an E 0 V.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "cebeb7b37167",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "bild": "grundlagen-relais-schaltplan.svg",
+  "q": "Der Lüfter dreht zu langsam. Bei laufendem Lüfter messen Sie zwischen D und dem Minuspol der Batterie 3,8 V. Wie ist das zu bewerten?",
+  "opts": [
+   "In Ordnung, weil an der Masseseite eines Motors immer einige Volt abfallen",
+   "Windungsschluss im Motor, weil der Spannungsfall den hohen Motorstrom anzeigt",
+   "Übergangswiderstand im Massepfad (Leitung, Massepunkt); Sollwert wenige Zehntel Volt",
+   "Übergangswiderstand im Relaiskontakt, der sich auch auf der Masseseite bemerkbar macht"
+  ],
+  "correct": 2,
+  "explain": "Gemessen wird der Spannungsfall der Masseverbindung unter Last. Eine intakte Leitung mit Massepunkt hat nur wenige Zehntel Volt oder weniger. 3,8 V fehlen dem Motor, deshalb dreht er langsam. Ein schlechter Relaiskontakt zeigt sich zwischen A und B, nicht auf der Masseseite.",
+  "src": "Eigener Schaltplan, FW (Grenzwert laut Herstellerangabe)"
+ },
+ {
+  "id": "9f2c9552793c",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "bild": "grundlagen-relais-schaltplan.svg",
+  "q": "Die Sicherung F2 löst jedes Mal erst aus, wenn S1 geschlossen wird. Der Lüftermotor lässt sich von Hand leicht drehen. Wo liegt der Fehler am wahrscheinlichsten?",
+  "opts": [
+   "Kurzschluss gegen Masse zwischen F2 und Klemme 30 des Relais, z. B. durchgescheuerte Leitung",
+   "Unterbrechung der Spulenmasse zwischen F und Klemme 31, wodurch der Strom zu hoch wird",
+   "Übergangswiderstand am Massepunkt des Motors, der den Strom im Laststromkreis erhöht",
+   "Kurzschluss gegen Masse zwischen Relaisausgang 87 und Motor, z. B. durchgescheuerte Leitung"
+  ],
+  "correct": 3,
+  "explain": "Die Leitung hinter dem Relaiskontakt bekommt erst Spannung, wenn K1 schaltet – ein Masseschluss dort lässt F2 also genau dann auslösen. Ein Masseschluss vor Klemme 30 würde F2 sofort, auch ohne S1, auslösen. Übergangswiderstände und Unterbrechungen verkleinern den Strom, statt ihn zu erhöhen.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "1de6202d25cd",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-oszi-pwm.svg",
+  "q": "Wie groß ist das Tastverhältnis (Anteil der Zeit, in der das Ventil bestromt ist, an der Periodendauer)?",
+  "opts": [
+   "60 %",
+   "40 %",
+   "67 %",
+   "2,5 %"
+  ],
+  "correct": 1,
+  "explain": "Masseseitig angesteuert: Das untere Niveau ist die Einschaltzeit = 2 Kästchen = 2 ms. Periodendauer von fallender zu fallender Flanke = 5 Kästchen = 5 ms. Tastverhältnis = 2 ms ÷ 5 ms × 100 % = 40 %. 60 % wäre der Anteil des oberen Niveaus, 67 % das Verhältnis Ein- zu Auszeit.",
+  "src": "Eigenes Oszillogramm"
+ },
+ {
+  "id": "6014a44b8fa2",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-oszi-pwm.svg",
+  "q": "Mit welcher Frequenz wird das Ventil angesteuert?",
+  "opts": [
+   "500 Hz",
+   "5 Hz",
+   "200 Hz",
+   "333 Hz"
+  ],
+  "correct": 2,
+  "explain": "Periodendauer T = 5 Kästchen × 1 ms = 5 ms = 0,005 s. f = 1 ÷ T = 1 ÷ 0,005 s = 200 Hz. 500 Hz ergibt sich, wenn man nur die Einschaltzeit (2 ms) nimmt, 333 Hz bei der Auszeit (3 ms), 5 Hz bei vergessener Umrechnung ms → s.",
+  "src": "Eigenes Oszillogramm"
+ },
+ {
+  "id": "123f5df1f2e5",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "grundlagen-oszi-pwm.svg",
+  "q": "In welchem Abschnitt des Oszillogramms fließt Strom durch die Ventilspule?",
+  "opts": [
+   "Auf dem oberen Niveau bei etwa 14 V, weil dort die Bordspannung an der Spule anliegt",
+   "Nur während der Spannungsspitze, weil dort die höchste Spannung gemessen wird",
+   "Auf beiden Niveaus gleich viel, weil sich nur die Polung an der Spule ändert",
+   "Auf dem unteren Niveau bei etwa 0 V, weil das Steuergerät dann nach Masse schaltet"
+  ],
+  "correct": 3,
+  "explain": "Gemessen wird die Steuerleitung zwischen Ventil und Steuergerät gegen Masse. Schaltet das Steuergerät nach Masse durch, wird die Leitung auf fast 0 V gezogen und Strom fließt. Sperrt es, liegt über die stromlose Spule die Bordspannung an der Leitung – kein Strom. Typischer Fehler: das obere Niveau für „ein“ halten.",
+  "src": "Eigenes Oszillogramm"
+ },
+ {
+  "id": "59a84ed3dccd",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-oszi-pwm.svg",
+  "q": "Was verursacht die Spannungsspitze von etwa 35 V am Ende jeder Einschaltphase?",
+  "opts": [
+   "Selbstinduktion der Ventilspule, wenn der Strom abgeschaltet wird",
+   "Überspannung des Generators, die der Regler kurz durchlässt",
+   "Kurzschluss der Steuerleitung gegen Plus während der Ansteuerung",
+   "Anschlag des Ventilankers, der eine Spannung in die Leitung drückt"
+  ],
+  "correct": 0,
+  "explain": "Eine Spule will ihren Strom aufrechterhalten. Wird er schlagartig abgeschaltet, entsteht eine Induktionsspannung weit über Bordspannung. Die Spitze ist darum ein Zeichen für eine intakte Wicklung; fehlt sie, kann die Spule unterbrochen sein. Eine Generatorüberspannung käme nicht im Takt der Ansteuerung.",
+  "src": "Eigenes Oszillogramm, FW"
+ },
+ {
+  "id": "8595c7ee0fff",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-oszi-pwm.svg",
+  "q": "Bei gleicher Ansteuerung zeigt das Oszilloskop an derselben Stelle nur noch eine gerade Linie bei 0 V. Was ist die wahrscheinlichste Ursache?",
+  "opts": [
+   "Das Steuergerät schaltet nicht mehr nach Masse durch, die Endstufe sperrt",
+   "Das Steuergerät hat das Tastverhältnis auf 0 % gesenkt",
+   "Die Plusversorgung des Ventils oder seine Spulenwicklung ist unterbrochen",
+   "Die Zeitbasis am Oszilloskop ist viel zu klein eingestellt"
+  ],
+  "correct": 2,
+  "explain": "Die 14 V auf dem oberen Niveau kommen über die Plusversorgung durch die Spule. Fehlt diese Spannung ganz, ist der Weg Plus → Spule unterbrochen. Sperrt die Endstufe dauernd (oder Tastverhältnis 0 %), sieht man eine gerade Linie bei 14 V. Die Zeitbasis ändert nur die Breite, nicht die Höhe des Signals.",
+  "src": "Eigenes Oszillogramm, FW"
+ },
+ {
+  "id": "aff0cb6280e7",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "grundlagen-can-bus.svg",
+  "q": "Wo sitzen laut Bild die beiden Abschlusswiderstände und warum dort?",
+  "opts": [
+   "In A2 und A3 in der Mitte der Leitung, damit sich die Spannung gleichmäßig verteilt",
+   "In der Diagnosebuchse X1, damit man den Bus dort jederzeit durchmessen kann",
+   "In A1 und A4 an den beiden Enden der Leitung, damit keine Signalreflexionen entstehen",
+   "In jedem Steuergerät einer, damit jedes Steuergerät auch allein senden kann"
+  ],
+  "correct": 2,
+  "explain": "Die beiden 120-Ω-Widerstände schließen die Busleitung an ihren Enden ab (hier in A1 und A4). Ohne Abschluss würden die schnellen Signale am Leitungsende zurückgeworfen und die Daten verfälschen. Die übrigen Steuergeräte hängen nur mit kurzen Stichleitungen am Bus.",
+  "src": "Eigener Plan, FW"
+ },
+ {
+  "id": "e7ea69e8add8",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-can-bus.svg",
+  "q": "Steuergerät A4 ist abgesteckt. Bei abgeklemmter Batterie messen Sie an X1 zwischen Pin 6 und Pin 14. Welchen Wert erwarten Sie?",
+  "opts": [
+   "60 Ω",
+   "120 Ω",
+   "240 Ω",
+   "0 Ω"
+  ],
+  "correct": 1,
+  "explain": "Mit A4 fehlt dessen Abschlusswiderstand; gemessen wird nur noch der 120-Ω-Widerstand in A1. Mit beiden Abschlüssen wären es 60 Ω (zwei mal 120 Ω parallel). 240 Ω ergäbe sich nur bei einer Reihenschaltung, 0 Ω bei einem Kurzschluss.",
+  "src": "Eigener Plan, FW"
+ },
+ {
+  "id": "c666394d5bde",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-can-bus.svg",
+  "q": "Alle Steuergeräte sind angesteckt. Bei abgeklemmter Batterie messen Sie an X1 zwischen Pin 6 und Pin 14 etwa 1 Ω. Was ist die Ursache?",
+  "opts": [
+   "CAN-High und CAN-Low haben irgendwo im Netz Kontakt miteinander",
+   "Ein Abschlusswiderstand ist unterbrochen, darum sinkt der Widerstand",
+   "CAN-High hat Masseschluss, darum misst man den Widerstand zur Masse",
+   "Alles in Ordnung, weil stromlose Steuergeräte den Bus überbrücken"
+  ],
+  "correct": 0,
+  "explain": "Fast 0 Ω zwischen den beiden Busleitungen heißt: Sie berühren sich (gequetschte Leitung, Feuchtigkeit im Stecker, defekter Transceiver). Fehlt ein Abschluss, steigt der Wert auf 120 Ω, statt zu sinken. Ein Masseschluss einer Leitung ändert den Widerstand zwischen High und Low nicht. Eingrenzen: Steuergeräte nacheinander abstecken.",
+  "src": "Eigener Plan, FW"
+ },
+ {
+  "id": "f69d850aac76",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "bild": "grundlagen-can-bus.svg",
+  "q": "Ordnen Sie mit Hilfe des Pegelbilds jedem Zustand die Spannung zu.",
+  "paare": [
+   [
+    "CAN-High in Ruhe (rezessiv)",
+    "2,5 V"
+   ],
+   [
+    "CAN-High dominant",
+    "3,5 V"
+   ],
+   [
+    "CAN-Low dominant",
+    "1,5 V"
+   ],
+   [
+    "Differenz High − Low, dominant",
+    "2 V"
+   ],
+   [
+    "Differenz High − Low, rezessiv",
+    "0 V"
+   ]
+  ],
+  "ablenker": [
+   "5 V",
+   "12 V"
+  ],
+  "explain": "In Ruhe liegen beide Leitungen bei 2,5 V, die Differenz ist 0 V. Beim dominanten Bit steigt CAN-High um 1 V auf 3,5 V und CAN-Low fällt um 1 V auf 1,5 V – die Differenz von 2 V wertet der Empfänger aus. Im Bild: 1 Kästchen = 0,5 V.",
+  "src": "Eigenes Pegelbild, Netz: kfz-tech.de CAN-Bus"
+ },
+ {
+  "id": "60984bf2cd99",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-can-bus.svg",
+  "q": "Das kürzeste dominante Stück im Pegelbild ist genau ein Bit lang. Wie groß ist die Übertragungsrate?",
+  "opts": [
+   "250 kbit/s",
+   "2 Mbit/s",
+   "50 kbit/s",
+   "500 kbit/s"
+  ],
+  "correct": 3,
+  "explain": "Ein Bit dauert 1 Kästchen = 2 µs = 0,000002 s. Bitrate = 1 ÷ 0,000002 s = 500.000 bit/s = 500 kbit/s – ein üblicher Wert für den Antriebs-CAN. 250 kbit/s ergibt sich, wenn man zwei Kästchen als ein Bit liest, 2 Mbit/s bei 0,5 µs je Bit.",
+  "src": "Eigenes Pegelbild, FW"
+ },
+ {
+  "id": "70176ad8cfed",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "bild": "grundlagen-sensor-schaltung.svg",
+  "q": "Zündung ein, alle Stecker gesteckt, Anlage fehlerfrei. Ordnen Sie den Messpunkten (gegen Masse) den zu erwartenden Wert zu.",
+  "paare": [
+   [
+    "A (Pin 12)",
+    "etwa 5 V, gleichbleibend"
+   ],
+   [
+    "B (Pin 13)",
+    "ändert sich mit dem Druck (typisch 0,5–4,5 V)"
+   ],
+   [
+    "C (Pin 14)",
+    "nahe 0 V"
+   ],
+   [
+    "D (Pin 20)",
+    "ändert sich mit der Temperatur (zwischen 0 V und 5 V)"
+   ]
+  ],
+  "ablenker": [
+   "etwa 12 V Bordspannung"
+  ],
+  "explain": "A ist die 5-V-Versorgung aus dem Steuergerät, B das Drucksignal, C die Sensormasse (über das Steuergerät, nahe 0 V; ebenso E). An D teilt der NTC mit R1 die 5 V – die Spannung hängt von der Temperatur ab. Bordspannung (12 V) kommt in diesen Sensorkreisen nicht vor.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "85d9e3718c4f",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "grundlagen-sensor-schaltung.svg",
+  "q": "Der Stecker von B2 ist abgezogen, Zündung ein. Welche Spannung messen Sie am Kabelbaum an D (Leitung zu Pin 20) gegen Masse?",
+  "opts": [
+   "etwa 0 V",
+   "etwa 2,5 V",
+   "etwa 5 V",
+   "etwa 12 V"
+  ],
+  "correct": 2,
+  "explain": "Ohne NTC fließt durch R1 kein Strom, also fällt an R1 keine Spannung ab – an Pin 20 und damit an D stehen die vollen 5 V. Das ist ein guter Test: 5 V am offenen Stecker zeigen, dass Leitung, R1 und 5-V-Versorgung in Ordnung sind.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "2facb44714da",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "grundlagen-sensor-schaltung.svg",
+  "q": "Wie ändert sich die Spannung an D, wenn der Motor warm wird?",
+  "opts": [
+   "Sie steigt, weil der NTC-Widerstand sinkt und mehr Strom fließt",
+   "Sie sinkt, weil der NTC-Widerstand sinkt und an ihm weniger abfällt",
+   "Sie bleibt bei 5 V, weil das Steuergerät die Spannung fest regelt",
+   "Sie steigt, weil der NTC-Widerstand bei Wärme größer wird"
+  ],
+  "correct": 1,
+  "explain": "R1 und NTC bilden einen Spannungsteiler. Warm → NTC-Widerstand klein → an ihm fällt nur ein kleiner Teil der 5 V ab, die Spannung an D sinkt. Der Strom steigt zwar, aber der größere Teil der Spannung fällt dann an R1 ab.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "d6f4486d53cd",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-sensor-schaltung.svg",
+  "q": "B2 hat bei warmem Motor 500 Ω. Welche Spannung liegt an D? (Der Eingang U₂ belastet den Teiler nicht.)",
+  "opts": [
+   "2,50 V",
+   "4,17 V",
+   "1,00 V",
+   "0,83 V"
+  ],
+  "correct": 3,
+  "explain": "Spannungsteiler: U_D = 5 V × R_NTC ÷ (R1 + R_NTC) = 5 V × 500 Ω ÷ 3000 Ω ≈ 0,83 V. 4,17 V ist die Spannung an R1. 1,00 V entsteht, wenn man nur durch R1 statt durch die Summe teilt.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "fd7cdc95d87a",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-sensor-schaltung.svg",
+  "q": "Der Messwertblock zeigt bei warmem Motor −40 °C Kühlmitteltemperatur. An D messen Sie 4,9 V. Wo liegt der Fehler?",
+  "opts": [
+   "Kurzschluss der Leitung zu Pin 20 gegen Masse, darum fehlt das Signal",
+   "Unterbrechung im NTC-Kreis: Leitung zu Pin 20/21, Stecker oder B2",
+   "Pull-up-Widerstand R1 ist unterbrochen, darum ist die Spannung hoch",
+   "NTC hat Kurzschluss, darum zeigt das Steuergerät den kältesten Wert"
+  ],
+  "correct": 1,
+  "explain": "Fast 5 V an D bedeuten: Durch R1 fließt (fast) kein Strom – der Kreis über B2 zur Masse ist offen. Das Steuergerät deutet die hohe Spannung als „sehr kalt“. Ein Kurzschluss gegen Masse (Leitung oder NTC) ergäbe nahe 0 V und eine sehr hohe Temperatur, ein offenes R1 ebenfalls nahe 0 V.",
+  "src": "Eigener Schaltplan, Netz: kfz-dietrich.com P0118"
+ },
+ {
+  "id": "4b50ec55aa02",
+  "cat": "Grundlagen",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "grundlagen-sensor-schaltung.svg",
+  "q": "B1 liefert kein Signal. Mit gestecktem Sensor messen Sie an A gegen Masse 0 V, direkt am Steuergerät an Pin 12 aber 5,0 V. Was folgt daraus?",
+  "opts": [
+   "Der 5-V-Regler im Steuergerät ist defekt und muss ersetzt werden",
+   "Die Leitung zwischen Pin 12 und Messpunkt A ist unterbrochen",
+   "Die Masseleitung von B1 zu Pin 14 ist unterbrochen",
+   "Sensor B1 schließt die Versorgung kurz und ist defekt"
+  ],
+  "correct": 1,
+  "explain": "Am Steuergerätepin sind die 5 V da, ein Stück weiter auf derselben Leitung nicht mehr – dazwischen ist die Leitung (oder ein Stecker) unterbrochen. Der Regler arbeitet also. Eine offene Masse an Pin 14 ändert die Spannung an A nicht, ein Kurzschluss im Sensor würde auch Pin 12 herunterziehen.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "db75ac97f79f",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie den Schaltzeichen (nach DIN EN 60617) das Bauteil zu.",
+  "paare": [
+   [
+    "Rechteck mit durchgehendem Längsstrich",
+    "Sicherung"
+   ],
+   [
+    "Kreis mit Kreuz",
+    "Glühlampe"
+   ],
+   [
+    "Kreis mit dem Buchstaben M",
+    "Elektromotor"
+   ],
+   [
+    "Leeres Rechteck mit zwei Anschlüssen",
+    "Widerstand"
+   ],
+   [
+    "Rechteck mit schrägem Strich und „−ϑ“",
+    "NTC-Temperaturfühler"
+   ]
+  ],
+  "ablenker": [
+   "Kondensator",
+   "Diode"
+  ],
+  "explain": "Die Grundzeichen muss man im Schaltplan sofort erkennen: Sicherung = Rechteck mit Längsstrich, Lampe = Kreis mit Kreuz, Motor = Kreis mit M, Widerstand = Rechteck. Der schräge Strich bedeutet „veränderlich“, −ϑ „sinkt bei steigender Temperatur“ (NTC).",
+  "src": "FW (Schaltzeichen mit Tabellenbuch abgleichen)",
+  "tb": true
+ },
+ {
+  "id": "9895ca37bc39",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Am CAN-Bus wird bei abgeklemmter Batterie zwischen CAN-High und CAN-Low gemessen. Ordnen Sie den Messwerten den Befund zu (zwei Abschlüsse zu je 120 Ω).",
+  "paare": [
+   [
+    "ca. 60 Ω",
+    "In Ordnung, beide Abschlüsse wirksam"
+   ],
+   [
+    "ca. 120 Ω",
+    "Ein Abschluss oder seine Leitung fehlt"
+   ],
+   [
+    "ca. 0 Ω",
+    "Kurzschluss zwischen CAN-High und CAN-Low"
+   ],
+   [
+    "unendlich (offen)",
+    "Messstelle ohne Verbindung zu beiden Abschlüssen"
+   ]
+  ],
+  "ablenker": [
+   "Batterie zu schwach"
+  ],
+  "explain": "Zwei 120-Ω-Widerstände parallel ergeben 60 Ω. Fehlt einer, bleibt 120 Ω. Berühren sich die Leitungen, misst man fast 0 Ω. Unendlich heißt: Von der Messstelle aus ist keiner der beiden Abschlüsse erreichbar (z. B. Stichleitung zur Buchse unterbrochen). Die Batterie spielt bei dieser stromlosen Messung keine Rolle.",
+  "src": "Netz: mvwautotechniek.nl, kfz-dietrich.com"
+ },
+ {
+  "id": "92fa3a222e55",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Bringen Sie die Schritte einer Spannungsfallmessung auf der Masseseite eines Verbrauchers in die richtige Reihenfolge.",
+  "schritte": [
+   "Im Schaltplan den Masseweg des Verbrauchers bis zum Massepunkt verfolgen",
+   "Verbraucher einschalten, damit der Stromkreis unter Last steht",
+   "Voltmeter zwischen Masseanschluss des Verbrauchers und Batterie-Minus anschließen",
+   "Spannungsfall ablesen und mit dem Sollwert vergleichen",
+   "Bei zu hohem Wert abschnittsweise messen, um die Übergangsstelle einzugrenzen"
+  ],
+  "explain": "Ein Spannungsfall entsteht nur, wenn Strom fließt – darum unter Last messen. Erst den ganzen Masseweg messen, dann bei zu hohem Wert Stück für Stück (Leitung, Stecker, Massepunkt) eingrenzen. Sollwert laut Herstellerangabe, meist nur wenige Zehntel Volt.",
+  "src": "FW, Netz: kfz-dietrich.com Spannungsabfall"
+ },
+ {
+  "id": "6f9d9d8b2c73",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Eine Batterie wird über Nacht leer. Bringen Sie die Schritte der Ruhestrommessung in die richtige Reihenfolge.",
+  "schritte": [
+   "Zündung aus, Strommesszange nullen und um die Batterie-Minusleitung legen",
+   "Fahrzeug verriegeln und warten, bis alle Steuergeräte eingeschlafen sind",
+   "Ruhestrom ablesen und mit der Herstellerangabe vergleichen",
+   "Bei zu hohem Wert Sicherungen einzeln ziehen und auf den Stromabfall achten"
+  ],
+  "explain": "Direkt nach dem Abschalten arbeiten viele Steuergeräte noch – wer zu früh misst, sieht einen zu hohen Wert. Mit der Zange muss die Leitung nicht getrennt werden (sonst wachen Steuergeräte wieder auf). Fällt beim Ziehen einer Sicherung der Strom deutlich, ist der Stromkreis mit dem Verbraucher gefunden.",
+  "src": "Netz: kfz-dietrich.com Ruhestrom, autoservicepraxis"
+ },
+ {
+  "id": "da5e14f5681d",
+  "cat": "Grundlagen",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Wie wird ein Multimeter für eine Strommessung richtig angeschlossen?",
+  "opts": [
+   "Parallel zum Verbraucher, Messleitung in der A-Buchse",
+   "In Reihe in den Stromkreis, Messleitung in der A-Buchse",
+   "In Reihe in den Stromkreis, Messleitung in der V/Ω-Buchse",
+   "Parallel zur Batterie, um den Gesamtstrom zu messen"
+  ],
+  "correct": 1,
+  "explain": "Der Strom muss durch das Messgerät fließen – also Stromkreis auftrennen und das Gerät in Reihe einfügen, Messleitung in die Strombuchse. Parallel geschaltet ist ein Strommessgerät fast ein Kurzschluss: Die Sicherung im Gerät löst aus oder das Gerät wird zerstört. Ohne Auftrennen geht es nur mit der Strommesszange.",
+  "src": "FW"
+ },
+ {
+  "id": "a7b8778cbf69",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Sie wollen prüfen, ob eine Sensorleitung Masseschluss hat. Welches Vorgehen ist richtig?",
+  "opts": [
+   "Leitung an beiden Enden abstecken, Widerstand Leitung–Fahrzeugmasse messen; Soll: unendlich",
+   "Leitung angesteckt lassen, Zündung ein, Widerstand Leitung–Fahrzeugmasse messen; Soll: unendlich",
+   "Leitung an beiden Enden abstecken, Widerstand von Ende zu Ende messen; Soll: unter 1 Ω",
+   "Leitung an beiden Enden abstecken, Widerstand Leitung–Fahrzeugmasse messen; Soll: unter 1 Ω"
+  ],
+  "correct": 0,
+  "explain": "Für die Isolationsprüfung wird die Leitung beidseitig abgesteckt, sonst misst man über Sensor oder Steuergerät nach Masse. Eine intakte Leitung hat keine Verbindung zur Masse – das Messgerät zeigt „offen“. Die Messung von Ende zu Ende ist die Durchgangsprüfung und findet eine Unterbrechung, keinen Masseschluss.",
+  "src": "FW"
+ },
+ {
+  "id": "1f311518e742",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Welche Aussage zum LIN-Bus ist richtig?",
+  "opts": [
+   "Zweidrahtbus mit zwei 120-Ω-Abschlüssen; Ruhepegel 2,5 V auf beiden Leitungen",
+   "Eindrahtbus, auf dem jedes Steuergerät gleichberechtigt senden darf; Ruhepegel 0 V",
+   "Lichtwellenleiter-Ring für Multimedia; Daten werden als Lichtimpulse übertragen",
+   "Eindrahtbus mit einem Master und mehreren Slaves; Ruhepegel nahe Bordspannung"
+  ],
+  "correct": 3,
+  "explain": "LIN ist ein langsamer, günstiger Eindrahtbus für Komfortfunktionen (z. B. Fensterheber, Regensensor, Klimabedienteil). Der Master fragt die Slaves nacheinander ab. In Ruhe liegt die Leitung nahe Bordspannung, ein dominantes Bit zieht sie nach Masse. Zwei Leitungen mit 120-Ω-Abschlüssen gehören zum CAN.",
+  "src": "Netz: kfz-tech.de LIN-Bus, kvaser.com"
+ },
+ {
+  "id": "40bae58799c4",
+  "cat": "Grundlagen",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Eine Plusleitung hat einen Widerstand von 0,05 Ω und führt 20 A. Wie groß ist der Spannungsfall auf der Leitung?",
+  "opts": [
+   "400 V",
+   "1,0 V",
+   "0,0025 V",
+   "10 V"
+  ],
+  "correct": 1,
+  "explain": "U = R × I = 0,05 Ω × 20 A = 1,0 V. Dieses Volt fehlt dem Verbraucher. 400 V ergibt I ÷ R, 0,0025 V ergibt R ÷ I – beides falsche Umstellungen des ohmschen Gesetzes.",
+  "src": "FW"
+ },
+ {
   "id": "276b64e5fa90",
   "cat": "Klima",
   "level": 1,
@@ -3364,7 +7346,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "bbed380d2f4c",
+  "id": "1a70e481591a",
   "cat": "Klima",
   "level": 1,
   "typ": "mc",
@@ -3374,7 +7356,7 @@ export const QUESTIONS = [
   "q": "Das Fahrzeug ist mit R1234yf befüllt. Welche Antwort nennt drei zutreffende Eigenschaften bzw. Besonderheiten dieses Kältemittels?",
   "opts": [
    "Geringes Treibhauspotenzial (GWP unter 150); nicht brennbar (Sicherheitsklasse A1); eigene Serviceanschlüsse und eigenes Servicegerät",
-   "Geringes Treibhauspotenzial (GWP unter 150); schwer entflammbar (Sicherheitsklasse A2L); darf mit R134a gemischt werden, gleiche Serviceanschlüsse",
+   "Geringes Treibhauspotenzial (GWP unter 150); schwer entflammbar (Sicherheitsklasse A2L); darf mit R134a gemischt werden, weil beide denselben Kreislauf und dieselben Serviceanschlüsse nutzen",
    "Geringes Treibhauspotenzial (GWP unter 150); schwer entflammbar (Sicherheitsklasse A2L); nicht mit R134a mischen, eigene Serviceanschlüsse und eigenes Servicegerät",
    "Hohes Treibhauspotenzial, deshalb in Neufahrzeugen verboten; schwer entflammbar (Sicherheitsklasse A2L); eigene Serviceanschlüsse und eigenes Servicegerät"
   ],
@@ -3383,7 +7365,7 @@ export const QUESTIONS = [
   "src": "Recherche 3.3/3.6, FW"
  },
  {
-  "id": "4011fe33abd3",
+  "id": "24021215caac",
   "cat": "Klima",
   "level": 1,
   "typ": "mc",
@@ -3395,7 +7377,7 @@ export const QUESTIONS = [
    "Kein eigener Sachkundenachweis nötig, wenn ein Kollege mit Nachweis im Betrieb ist; zugelassenes Klimaservicegerät für R1234yf; gut belüfteter Arbeitsplatz",
    "Sachkundenachweis für Arbeiten an Fahrzeug-Klimaanlagen; zugelassenes Klimaservicegerät für R1234yf; gut belüfteter Arbeitsplatz, nicht über einer Arbeitsgrube",
    "Sachkundenachweis für Arbeiten an Fahrzeug-Klimaanlagen; vorhandenes R134a-Servicegerät genügt; gut belüfteter Arbeitsplatz, nicht über einer Arbeitsgrube",
-   "Sachkundenachweis für Arbeiten an Fahrzeug-Klimaanlagen; zugelassenes Klimaservicegerät für R1234yf; geschlossener Raum ohne Lüftung, damit nichts entweicht"
+   "Sachkundenachweis für Arbeiten an Fahrzeug-Klimaanlagen; zugelassenes Klimaservicegerät für R1234yf; geschlossener Raum ohne Lüftung, damit kein Kältemittel entweicht"
   ],
   "correct": 1,
   "explain": "Wer Kältemittel absaugt oder einfüllt, braucht eine Sachkundebescheinigung. Für R1234yf ist ein eigenes Servicegerät vorgeschrieben. Weil das Kältemittel schwerer als Luft ist, sammelt es sich in Gruben.",
@@ -3440,7 +7422,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "0a1a761abffd",
+  "id": "1b9899538f65",
   "cat": "Klima",
   "level": 3,
   "typ": "mc",
@@ -3452,7 +7434,7 @@ export const QUESTIONS = [
    "Überfüllung: zu viel Kältemittel im Kreislauf; überschüssiges Kältemittel absaugen und nach Gewicht neu befüllen",
    "Kondensator verschmutzt oder Lüfter ausgefallen; Kondensator reinigen und Lüfteransteuerung prüfen",
    "Unterfüllung: der Verdampfer wird nicht ausreichend versorgt; Kältemittel verbraucht sich nicht, also Leck suchen statt nachfüllen",
-   "Unterfüllung durch normalen Kältemittelverbrauch; die fehlende Menge nachfüllen, eine Lecksuche ist nicht nötig"
+   "Unterfüllung durch normalen Kältemittelverbrauch über die Jahre; nur die fehlende Menge nachfüllen, eine Lecksuche ist dabei nicht nötig"
   ],
   "correct": 2,
   "explain": "Beide Drücke zu niedrig deuten auf Unterfüllung: Der Verdampfer wird nicht ausreichend mit Kältemittel versorgt → geringe Kühlleistung. Nächster Schritt: Leck suchen, nicht einfach nachfüllen. Fehlt Kältemittel, kann der Verdichter auf der Hochdruckseite keinen normalen Druck aufbauen, und auch der Saugdruck sinkt. Da der Kreislauf geschlossen ist, bedeutet Kältemittelverlust immer eine Undichtheit.",
@@ -3551,7 +7533,7 @@ export const QUESTIONS = [
   "src": "Recherche 3.3, FW"
  },
  {
-  "id": "56609bb730e6",
+  "id": "eb19a3e87a21",
   "cat": "Klima",
   "level": 3,
   "typ": "mc",
@@ -3560,7 +7542,7 @@ export const QUESTIONS = [
   "nr": 12,
   "q": "Warum muss der Trockner erneuert werden, wenn der Kreislauf geöffnet wurde? Welche Begründung ist richtig?",
   "opts": [
-   "Der Trockner speichert das Kältemittelöl; nach dem Öffnen ist er leergelaufen und muss mit frischem Öl getauscht werden",
+   "Der Trockner speichert das Kältemittelöl für den Verdichter; nach dem Öffnen ist er leergelaufen und muss mit frischem Öl getauscht werden",
    "Das Filtersieb ist durch Abrieb verstopft; die Feuchtigkeit aus der Luft spielt für den Trockner keine Rolle",
    "Beim Evakuieren wird das Trockenmittel durch den Unterdruck zerstört, deshalb ist der Trockner ein Einwegteil",
    "Das Trockenmittel hat Feuchtigkeit aus der Luft aufgenommen und ist gesättigt; Wasser bildet Säure und kann am Expansionsventil gefrieren"
@@ -3603,7 +7585,7 @@ export const QUESTIONS = [
   "src": "TB Betriebsstoffe (Kompressoröle)"
  },
  {
-  "id": "4b38c67eea83",
+  "id": "54482f9a2394",
   "cat": "Klima",
   "level": 3,
   "typ": "mc",
@@ -3614,7 +7596,7 @@ export const QUESTIONS = [
   "opts": [
    "Der HV-Elektromotor im Verdichter wird von Kältemittel und Öl umströmt; POE ist nicht leitend und erhält den Isolationswiderstand",
    "POE ist besonders hygroskopisch und bindet dadurch die Feuchtigkeit im Kreislauf besser als PAG-Öl",
-   "POE schmiert die hohen Drehzahlen des Elektroverdichters besser; die elektrischen Eigenschaften spielen keine Rolle",
+   "POE schmiert die hohen Drehzahlen des Elektroverdichters besser als PAG; die elektrischen Eigenschaften des Öls spielen dabei keine Rolle",
    "POE ist elektrisch leitend und leitet Fehlerströme des HV-Motors sicher zur Fahrzeugmasse ab"
   ],
   "correct": 0,
@@ -3641,7 +7623,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "f09c85dbf73e",
+  "id": "eda77fe59da8",
   "cat": "Klima",
   "level": 2,
   "typ": "mc",
@@ -3653,7 +7635,7 @@ export const QUESTIONS = [
    "Ursache: Kältemittel tritt am Verdampfer aus; Kältemittel absaugen und neu befüllen, Innenraumfilter erneuern",
    "Ursache: verbranntes Kältemittelöl im Verdichter; Kältemittelöl wechseln und den Verdichter spülen",
    "Ursache: Bakterien und Pilze am feuchten Verdampfer; Verdampfer reinigen bzw. desinfizieren, Innenraumfilter erneuern und Ablauf prüfen",
-   "Ursache: Bakterien und Pilze am feuchten Verdampfer; Kondenswasserablauf verschließen und Duftstoff in die Düsen sprühen"
+   "Ursache: Bakterien und Pilze am feuchten Verdampfer; Kondenswasserablauf verschließen, damit kein Schmutz eindringt, und Duftstoff in die Düsen sprühen"
   ],
   "correct": 2,
   "explain": "Ursache sind Bakterien und Pilze am feuchten Verdampfer. Abhilfe: Verdampfer reinigen bzw. desinfizieren, Innenraumfilter erneuern und Kondenswasserablauf auf Durchgang prüfen. Am Verdampfer schlägt sich Feuchtigkeit nieder – im Dunkeln wachsen dort Keime. Ein verstopfter Ablauf lässt Wasser im Gehäuse stehen. Tipp für den Kunden: vor dem Abstellen kurz ohne Klima weiterlüften.",
@@ -3679,7 +7661,7 @@ export const QUESTIONS = [
   "src": "Recherche 3.3, FW"
  },
  {
-  "id": "7eb88bdf3c2d",
+  "id": "5a8d4556d2be",
   "cat": "Klima",
   "level": 2,
   "typ": "mc",
@@ -3688,7 +7670,7 @@ export const QUESTIONS = [
   "nr": 18,
   "q": "Welche Antwort nennt vier richtige Abschlussarbeiten, bevor Sie das Fahrzeug an den Kunden übergeben?",
   "opts": [
-   "Dichtheit der neuen Verbindungen prüfen; Leistungstest; Fehlerspeicher löschen; als Reserve 10 % mehr Kältemittel als laut Typschild einfüllen",
+   "Dichtheit der neuen Verbindungen prüfen; Leistungstest; Fehlerspeicher löschen; als Reserve gegen spätere Verluste 10 % mehr Kältemittel als laut Typschild einfüllen",
    "Dichtheit der neuen Verbindungen prüfen; Fehlerspeicher löschen; Füllmenge dokumentieren; Leistungstest entfällt, da nach Gewicht befüllt wurde",
    "Leistungstest; Fehlerspeicher auslesen und löschen; Füllmenge dokumentieren; zur Dichtheitsprüfung etwas Kältemittel an den Verbindungen ablassen",
    "Dichtheit der neuen Verbindungen prüfen; Leistungstest (Ausströmtemperatur, Drücke); Fehlerspeicher auslesen und löschen; Kältemittelart und Füllmenge dokumentieren"
@@ -3698,7 +7680,397 @@ export const QUESTIONS = [
   "src": "Recherche 3.3, FW"
  },
  {
-  "id": "ae56c4070464",
+  "id": "e8fc4df7b2cc",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "klima-skoda",
+  "nr": 1,
+  "q": "Zu Beginn der Fehlersuche: Welche Antwort nennt drei sinnvolle erste Schritte?",
+  "opts": [
+   "Kältemittel absaugen und nach Gewicht neu befüllen; danach Fehlerspeicher löschen und Probefahrt machen, weil meist Kältemittel fehlt",
+   "Beanstandung nachvollziehen (AC ein, Ausströmtemperatur messen); Fehlerspeicher aller Steuergeräte auslesen; Messwerte zu Drucksensor und Regelventil ansehen",
+   "Beanstandung nachvollziehen (AC ein, Ausströmtemperatur messen); Verdichter vorsorglich ersetzen; danach Fehlerspeicher aller Steuergeräte löschen",
+   "Fehlerspeicher löschen und abwarten, ob der Fehler wiederkommt; Innenraumfilter erneuern; Kältemittel mit UV-Kontrastmittel auffüllen, damit nichts fehlt"
+  ],
+  "correct": 1,
+  "explain": "Zuerst wird die Beanstandung nachvollzogen und der Fehlerspeicher aller beteiligten Steuergeräte ausgelesen. Messwertblöcke zeigen, ob Drucksignal und Ansteuerung des Regelventils plausibel sind. Teile tauschen oder Kältemittel wechseln „auf Verdacht“ kostet Geld und findet die Ursache nicht; gelöscht wird erst nach der Reparatur.",
+  "src": "FW, Format Prüfung Schule"
+ },
+ {
+  "id": "16b358b0a60e",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 6,
+  "situation": "klima-skoda",
+  "nr": 2,
+  "bild": "klima-schaltplan.svg",
+  "q": "Im Schaltplan-Auszug sind die Bauteile nur mit Kennzeichen eingetragen. Ordnen Sie den Kennzeichen die Bauteile zu.",
+  "paare": [
+   [
+    "B1",
+    "Hochdrucksensor (Kältemitteldruck)"
+   ],
+   [
+    "B2",
+    "Verdampfertemperatursensor"
+   ],
+   [
+    "Y1",
+    "Regelventil im Verdichter"
+   ],
+   [
+    "A2",
+    "Lüftersteuergerät"
+   ],
+   [
+    "M1",
+    "Motor des Kühlerlüfters"
+   ],
+   [
+    "F1",
+    "Sicherung für den Lüfter (Klemme 30)"
+   ]
+  ],
+  "ablenker": [
+   "Magnetkupplung des Verdichters",
+   "Relais für den Kühlerlüfter"
+  ],
+  "explain": "Kennbuchstaben: A Steuergerät, B Sensor, F Sicherung, M Motor, Y Ventil/Aktor. B1 trägt das Zeichen p (Druck) und hat drei Anschlüsse (5 V, Signal, Masse), B2 das Zeichen T (Temperatur) mit zwei Anschlüssen. Y1 ist eine Spule mit Ventilzeichen. Eine Magnetkupplung hat dieser Verdichter nicht, und der Lüfter hängt an einem Lüftersteuergerät statt an einem Relais.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "71c72745484f",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "klima-skoda",
+  "nr": 3,
+  "q": "Im Fehlerspeicher des Klima-Steuergeräts steht: „Geber für Kältemitteldruck – Signal zu klein (unterer Grenzwert unterschritten)“. Was sagt dieser Eintrag aus?",
+  "opts": [
+   "Der Kältemitteldruck ist sicher zu niedrig; die Anlage hat ein Leck und muss sofort abgesaugt und neu befüllt werden",
+   "Der Sensor meldet einen zu hohen Druck; der Kondensator ist wahrscheinlich verschmutzt oder der Lüfter ausgefallen",
+   "Die Signalspannung am Steuergerät liegt unter dem gültigen Bereich; Ursache kann Leitung, Stecker oder Sensor sein",
+   "Das Regelventil im Verdichter wird zu schwach angesteuert; die Endstufe im Steuergerät ist defekt und muss ersetzt werden"
+  ],
+  "correct": 2,
+  "explain": "„Signal zu klein“ heißt nur: Die Spannung am Signaleingang liegt unter dem Bereich, den ein intakter Sensor liefern kann. Ursache kann eine Unterbrechung, ein Kurzschluss nach Masse, ein Steckerfehler oder der Sensor sein. Ob wirklich Kältemittel fehlt, zeigt erst der Vergleich mit dem Manometer – also nicht gleich am Kältekreis arbeiten.",
+  "src": "Netz: kfz-dietrich (P0532/P0533), FW"
+ },
+ {
+  "id": "984e7eb7d4d7",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "klima-skoda",
+  "nr": 4,
+  "q": "Warum stellt das Steuergerät den Verdichter ab, solange das Drucksignal unplausibel ist? Welche Begründung ist richtig?",
+  "opts": [
+   "Ohne gültigen Druckwert kann es weder Überdruck noch Kältemittelmangel erkennen; es schaltet zum Schutz der Anlage ab",
+   "Der Verdichter braucht das Drucksignal als Spannungsversorgung für das Regelventil; ohne Signal fehlt der Spulenstrom",
+   "Das Steuergerät will Kraftstoff sparen; bei jedem Fehler im Klimasystem werden alle Verbraucher abgeschaltet, auch das Gebläse",
+   "Der Verdichter würde ohne Signal rückwärts laufen; das Abschalten verhindert, dass Öl in den Verdampfer gedrückt wird"
+  ],
+  "correct": 0,
+  "explain": "Das Drucksignal schützt die Anlage: Zu hoher Druck gefährdet Leitungen und Verdichter, zu niedriger Druck (Kältemittelmangel) bedeutet auch zu wenig Öl für den Verdichter. Ist der Wert unplausibel, kann das Steuergerät beides nicht überwachen und schaltet sicherheitshalber ab. Deshalb bläst die Anlage warm, obwohl der Kältekreis in Ordnung sein kann.",
+  "src": "FW"
+ },
+ {
+  "id": "c5eff1b3cee7",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "klima-skoda",
+  "nr": 5,
+  "bild": "klima-schaltplan.svg",
+  "q": "Welche Pins des Steuergeräts A1 gehören laut Schaltplan zum Hochdrucksensor B1, und welche Aufgabe hat jeder?",
+  "opts": [
+   "Pin 1: Versorgung Klemme 15; Pin 4: Signal; Pin 2: Masse des Steuergeräts",
+   "Pin 3: Signal; Pin 4: 5-V-Versorgung; Pin 5: Masse über das Steuergerät",
+   "Pin 7: 5-V-Versorgung; Pin 8: Masse; Pin 11: Signal zum Regelventil",
+   "Pin 3: 5-V-Versorgung; Pin 4: Signal; Pin 5: Masse über das Steuergerät"
+  ],
+  "correct": 3,
+  "explain": "B1 hat drei Anschlüsse: Pin 1 bekommt von A1 Pin 3 die stabilisierte 5-V-Versorgung, Pin 2 liefert das Drucksignal an A1 Pin 4, Pin 3 liegt über A1 Pin 5 an Masse. Pin 1 und 2 von A1 versorgen das Steuergerät selbst, Pin 7/8 gehören zu B2 und Pin 11 zum Regelventil Y1.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "6bf1420afca3",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "klima-skoda",
+  "nr": 6,
+  "q": "Motor aus, das Fahrzeug stand über Nacht bei 20 °C. Am Servicegerät zeigen Hoch- und Niederdruckmanometer beide ca. 5 bar; laut Druck-Temperatur-Tabelle passt das zu 20 °C. Im Messwertblock zeigt der Hochdrucksensor 0,0 bar. Wie beurteilen Sie das?",
+  "opts": [
+   "Die Anlage ist fast leer, weil der Sensor 0,0 bar misst; das Manometer zeigt nur den Druck im Schlauch des Servicegeräts",
+   "Kältemittel ist vorhanden; der Wert im Messwertblock ist unplausibel, der Fehler liegt im elektrischen Sensorkreis",
+   "Beide Werte sind in Ordnung, weil der Sensor bei stehendem Motor grundsätzlich 0,0 bar anzeigt und erst im Betrieb misst",
+   "Die Anlage ist überfüllt, weil beide Manometer den gleichen Druck zeigen; absaugen und nach Gewicht neu befüllen"
+  ],
+  "correct": 1,
+  "explain": "Im Stillstand gleichen sich Hoch- und Niederdruck an. Solange noch flüssiges Kältemittel im Kreislauf ist, hängt dieser Ruhedruck fast nur von der Temperatur ab – er zeigt also, dass Kältemittel da ist (nicht aber, ob die Menge stimmt). Ein Sensorwert von 0,0 bar ist dann unplausibel. Gleiche Drücke im Stillstand sind normal und kein Zeichen für Überfüllung.",
+  "src": "FW, Recherche ausbau-klima"
+ },
+ {
+  "id": "a8c880c94214",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 6,
+  "situation": "klima-skoda",
+  "nr": 7,
+  "bild": "klima-schaltplan.svg",
+  "q": "Zündung ein, alle Stecker gesteckt. Sie messen rückseitig an den Steckern gegen Fahrzeugmasse: B1 Pin 1 = 5,0 V, B1 Pin 2 = 1,2 V, B1 Pin 3 = 0,0 V; A1 Pin 3 = 5,0 V, A1 Pin 4 = 0,0 V, A1 Pin 5 = 0,0 V. Wo liegt der Fehler?",
+  "opts": [
+   "Sensor B1 ist defekt, weil er kein Signal liefert; Sensor ersetzen",
+   "Versorgungsleitung A1 Pin 3 – B1 Pin 1 ist unterbrochen",
+   "Signalleitung B1 Pin 2 – A1 Pin 4 ist unterbrochen oder hochohmig",
+   "Masseleitung B1 Pin 3 – A1 Pin 5 ist unterbrochen"
+  ],
+  "correct": 2,
+  "explain": "Am Sensor kommen 5 V und Masse an, und er liefert 1,2 V – B1 arbeitet also. Am Steuergerät kommen davon 0 V an. Die Spannung geht auf der Signalleitung zwischen B1 Pin 2 und A1 Pin 4 verloren: Unterbrechung oder sehr hoher Übergangswiderstand, z. B. Korrosion im Stecker. Ein neuer Sensor würde nichts ändern.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "4b1d8fac8643",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "klima-skoda",
+  "nr": 8,
+  "q": "Sie wollen die Unterbrechung mit dem Ohmmeter bestätigen. Welche Antwort beschreibt Messbedingung, Messpunkte und das bestätigende Ergebnis richtig?",
+  "opts": [
+   "Zündung ein, Stecker gesteckt lassen; zwischen B1 Pin 2 und A1 Pin 4 messen; ein Wert unter 1 Ω bestätigt die Unterbrechung",
+   "Zündung aus, Stecker an B1 und A1 abziehen; zwischen B1 Pin 2 und Fahrzeugmasse messen; Anzeige „OL“ zeigt die Unterbrechung",
+   "Zündung aus, Stecker abziehen; zwischen B1 Pin 2 und A1 Pin 4 messen; ein Wert unter 1 Ω bestätigt, dass die Leitung unterbrochen ist",
+   "Zündung aus, Stecker an B1 und A1 abziehen; zwischen B1 Pin 2 und A1 Pin 4 messen; Anzeige „OL“ bestätigt die Unterbrechung"
+  ],
+  "correct": 3,
+  "explain": "Widerstand misst man nur stromlos und an abgezogenen Steckern – sonst verfälschen Spannung und Steuergeräte-Eingänge den Wert. Eine intakte Leitung hat nahezu 0 Ω; „OL“ (Überlauf, unendlich) zwischen beiden Leitungsenden bedeutet Unterbrechung. Gegen Masse gemessen prüft man nur auf Masseschluss, nicht auf Durchgang.",
+  "src": "FW"
+ },
+ {
+  "id": "8cf66d19c309",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "klima-skoda",
+  "nr": 9,
+  "q": "Laut Werkstattinformation liefert B1 bei 0 bar 0,5 V und bei 30 bar 4,5 V (Kennlinie linear). Welchem Druck entsprechen die 1,2 V, die Sie direkt an B1 Pin 2 gemessen haben?",
+  "opts": [
+   "9,0 bar",
+   "5,25 bar",
+   "8,0 bar",
+   "0,53 bar"
+  ],
+  "correct": 1,
+  "explain": "Steigung = 30 bar ÷ (4,5 V − 0,5 V) = 7,5 bar/V. Druck = (1,2 V − 0,5 V) × 7,5 bar/V = 5,25 bar. Das passt zum Ruhedruck am Manometer (ca. 5 bar) – der Sensor misst richtig. Typischer Fehler: den Nullpunkt 0,5 V nicht abziehen (ergibt 9,0 bar) oder durch 4,5 V statt durch 4 V teilen (ergibt 8,0 bar).",
+  "src": "FW"
+ },
+ {
+  "id": "844551b942d7",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "situation": "klima-skoda",
+  "nr": 10,
+  "bild": "klima-schaltplan.svg",
+  "q": "Ordnen Sie den Prüfaufgaben im Schaltplan das passende Messgerät mit Messpunkten und Bedingung zu.",
+  "paare": [
+   [
+    "Versorgungsspannung des Sensors B1",
+    "Voltmeter zwischen B1 Pin 1 und B1 Pin 3, Zündung ein"
+   ],
+   [
+    "Durchgang der Signalleitung",
+    "Ohmmeter zwischen B1 Pin 2 und A1 Pin 4, Stecker abgezogen"
+   ],
+   [
+    "Ansteuerung des Regelventils Y1",
+    "Oszilloskop an A1 Pin 11 gegen Masse, Motor läuft"
+   ],
+   [
+    "Übergangswiderstand der Masse von A2",
+    "Voltmeter zwischen A2 Klemme 31 und Batterie-Minus, Lüfter läuft"
+   ]
+  ],
+  "ablenker": [
+   "Amperemeter parallel zu B1 Pin 1 und Pin 3, Zündung ein"
+  ],
+  "explain": "Spannungen misst man im Betrieb parallel zum Messobjekt, Widerstände nur stromlos. Ein PWM-Signal lässt sich nur mit dem Oszilloskop sinnvoll beurteilen, ein Multimeter zeigt höchstens einen Mittelwert. Übergangswiderstände findet man als Spannungsfall unter Last. Ein Amperemeter parallel zu schalten, wäre ein Kurzschluss.",
+  "src": "Eigener Schaltplan, Format Prüfung Schule"
+ },
+ {
+  "id": "b70e25b923fe",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 6,
+  "situation": "klima-skoda",
+  "nr": 11,
+  "q": "Am Stecker von B1 ist der Kontakt der Signalleitung korrodiert, die Leitung dahinter gebrochen. Bringen Sie die Instandsetzung in die richtige Reihenfolge.",
+  "schritte": [
+   "Zündung aus, Fahrzeug gegen Einschalten sichern",
+   "Schadstelle freilegen und Umfang des Schadens feststellen",
+   "Kontakt bzw. Leitungsstück mit zugelassenem Reparatursatz ersetzen (Crimpverbinder mit Schrumpfschlauch)",
+   "Leitung befestigen und gegen Scheuern und Feuchtigkeit schützen",
+   "Durchgang der reparierten Leitung nachmessen",
+   "Fehlerspeicher löschen, Messwertblock prüfen und Funktionsprobe machen"
+  ],
+  "explain": "Gearbeitet wird spannungsfrei. Erst wenn der Schaden ganz freigelegt ist, wählt man den passenden Reparatursatz; nach Herstellervorgabe meist abgedichtete Crimpverbinder statt Verdrillen oder Isolierband. Vor dem Löschen des Fehlerspeichers wird nachgemessen, danach beweist die Funktionsprobe den Erfolg.",
+  "src": "FW"
+ },
+ {
+  "id": "8d112e4c4a2d",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 5,
+  "situation": "klima-skoda",
+  "nr": 12,
+  "bild": "klima-oszi-regelventil.svg",
+  "q": "Nach der Reparatur prüfen Sie die Ansteuerung des Regelventils (Oszillogramm). Welche Frequenz hat das Signal, und wie groß ist der bestromte Anteil (Tastverhältnis)?",
+  "opts": [
+   "400 Hz; 40 % bestromt",
+   "200 Hz; 60 % bestromt",
+   "400 Hz; 60 % bestromt",
+   "2,5 kHz; 60 % bestromt"
+  ],
+  "correct": 2,
+  "explain": "Eine Periode (von einer fallenden bis zur nächsten fallenden Flanke) ist 5 Kästchen × 0,5 ms = 2,5 ms lang → f = 1 ÷ 2,5 ms = 400 Hz. Bestromt ist Y1, wenn A1 nach Masse schaltet, also im unteren Abschnitt: 3 Kästchen = 1,5 ms → 1,5 ms ÷ 2,5 ms = 60 %. Wer den oberen Abschnitt nimmt, kommt fälschlich auf 40 %.",
+  "src": "Eigenes Oszillogramm, FW"
+ },
+ {
+  "id": "13b5d1aa5630",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "klima-skoda",
+  "nr": 13,
+  "bild": "klima-oszi-regelventil.svg",
+  "q": "In welchem Abschnitt des Oszillogramms schaltet A1 die Spule von Y1 ein (bestromt), und warum?",
+  "opts": [
+   "Abschnitt 1, weil dort die hohe Spannung anliegt und die Spule deshalb Strom bekommt",
+   "In beiden Abschnitten gleich, weil eine Spule den Strom auch in der Pause unverändert weiterleitet",
+   "Abschnitt 1, weil A1 die Spule über Pin 11 mit Plus versorgt und Y1 an Masse liegt",
+   "Abschnitt 2, weil A1 dann nach Masse schaltet und Strom von Klemme 15 über F2 und Y1 fließt"
+  ],
+  "correct": 3,
+  "explain": "Y1 liegt über F2 dauernd an Klemme 15; A1 schaltet die Masseseite. Ist der Transistor in A1 leitend, liegt Pin 11 fast auf 0 V, und Strom fließt durch die Spule (Abschnitt 2). Sperrt er, fließt kein Strom, und am Pin misst man über die Spule die volle Bordspannung (Abschnitt 1). Masseseitig angesteuert heißt: unterer Pegel = bestromt.",
+  "src": "Eigenes Oszillogramm, Eigener Schaltplan"
+ },
+ {
+  "id": "c4524be1c0ef",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "klima-skoda",
+  "nr": 14,
+  "bild": "klima-oszi-regelventil.svg",
+  "q": "Laut Werkstattinformation gilt bei diesem Verdichter: größerer bestromter Anteil = größerer Hub. Wie ändert sich das Signal, wenn der Innenraum abgekühlt ist und weniger Kälteleistung gebraucht wird?",
+  "opts": [
+   "Abschnitt 2 wird kürzer, Abschnitt 1 länger; Hub und Fördermenge sinken",
+   "Abschnitt 2 wird länger, Abschnitt 1 kürzer; der Verdichter fördert mehr, um nachzukühlen",
+   "Die Frequenz sinkt auf die Hälfte; das Tastverhältnis bleibt gleich, und der Hub sinkt",
+   "Die Spannung in Abschnitt 1 sinkt auf etwa 6 V; die Fördermenge sinkt auf die Hälfte"
+  ],
+  "correct": 0,
+  "explain": "Die Leistung wird über das Tastverhältnis gestellt, nicht über Frequenz oder Spannungshöhe. Weniger Bedarf → kürzere bestromte Zeit (Abschnitt 2) bei gleicher Periodendauer → kleinerer mittlerer Spulenstrom → kleinerer Hub. Die Spannung in Abschnitt 1 ist einfach die Bordnetzspannung.",
+  "src": "Eigenes Oszillogramm, Netz: Hella Techtips"
+ },
+ {
+  "id": "92d0553aefe3",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "situation": "klima-skoda",
+  "nr": 15,
+  "bild": "klima-schaltplan.svg",
+  "q": "Bei der Funktionsprobe fällt auf, dass der Lüfter M1 nur langsam läuft. Bei laufendem Lüfter messen Sie zwischen A2 Klemme 31 und Batterie-Minus 1,6 V, zwischen F1 (Ausgang) und A2 Klemme 30 nur 0,1 V. Wie beurteilen Sie das?",
+  "opts": [
+   "Plus- und Masseseite sind in Ordnung; der Lüftermotor M1 ist schwergängig und muss ersetzt werden",
+   "Übergangswiderstand in der Plusleitung zwischen F1 und A2; Leitung und Stecker an Klemme 30 instand setzen",
+   "Zu hoher Übergangswiderstand in der Masseleitung von A2; Masseverbindung reinigen bzw. instand setzen",
+   "A1 fordert zu wenig an; das PWM-Signal an Pin 13 muss im Messwertblock einfach erhöht werden"
+  ],
+  "correct": 2,
+  "explain": "Spannungsfall misst man unter Last über einer Leitung bzw. Verbindung. 0,1 V auf der Plusseite sind unauffällig, 1,6 V auf der Masseseite viel zu viel (Grenzwerte laut Hersteller bzw. Tabellenbuch) – dort sitzt ein Übergangswiderstand, z. B. eine korrodierte Masseschraube. Diese Spannung fehlt dem Lüfter, er läuft langsam. Ein neuer Motor würde nichts ändern.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "932d99beac63",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "klima-skoda",
+  "nr": 16,
+  "bild": "klima-messpunkte.svg",
+  "q": "Zur Leistungsprüfung wollen Sie die Überhitzung bestimmen. An welchem Messpunkt messen Sie dazu die Rohrtemperatur?",
+  "opts": [
+   "A – Druckleitung nach dem Verdichter",
+   "C – Flüssigkeitsleitung vor dem Expansionsventil",
+   "E – Saugleitung am Verdampferausgang",
+   "D – Leitung zwischen Expansionsventil und Verdampfer"
+  ],
+  "correct": 2,
+  "explain": "Überhitzung = Temperatur des Dampfes am Verdampferausgang minus Verdampfungstemperatur (aus Niederdruck und Druck-Temperatur-Tabelle). Gemessen wird deshalb an der Saugleitung direkt hinter dem Verdampfer (E). An D ist das Kältemittel noch Nassdampf, an A und C liegt Hochdruck an.",
+  "src": "FW"
+ },
+ {
+  "id": "349de976c4d1",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 5,
+  "situation": "klima-skoda",
+  "nr": 17,
+  "bild": "klima-messpunkte.svg",
+  "q": "Laut Druck-Temperatur-Tabelle entspricht der gemessene Hochdruck einer Kondensationstemperatur von 52 °C. An Messpunkt C messen Sie 45 °C. Wie groß ist die Unterkühlung?",
+  "opts": [
+   "97 K",
+   "−7 K",
+   "7 K",
+   "45 K"
+  ],
+  "correct": 2,
+  "explain": "Unterkühlung = Kondensationstemperatur − gemessene Flüssigkeitstemperatur = 52 °C − 45 °C = 7 K. Temperaturdifferenzen gibt man in Kelvin an. Die Unterkühlung zeigt, dass am Expansionsventil reine Flüssigkeit ankommt; ob der Wert passt, steht in der Herstellerangabe.",
+  "src": "FW"
+ },
+ {
+  "id": "0b3a7a69d8a6",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 3,
+  "situation": "klima-skoda",
+  "nr": 18,
+  "q": "Bei der Fahrzeugübergabe fragt der Kunde, was defekt war. Welche Erklärung ist fachlich richtig und kundengerecht?",
+  "opts": [
+   "Der Kältemitteldruck war zu niedrig; wir haben Kältemittel nachgefüllt, und deshalb misst der Drucksensor jetzt wieder richtig",
+   "Eine Leitung zum Drucksensor war am Stecker korrodiert, deshalb schaltete die Anlage ab; Leitung repariert, Kühlung geprüft",
+   "Der Klimakompressor hat nicht mehr hochgeregelt; wir haben ihn vorsorglich ersetzt und die Anlage neu befüllt",
+   "Es war ein Softwarefehler im Steuergerät; wir haben den Fehlerspeicher gelöscht, damit ist die Sache erledigt"
+  ],
+  "correct": 1,
+  "explain": "Der Kunde soll verstehen, was die Ursache war und was gemacht wurde – verständlich, aber wahr. Der Kältekreis war in Ordnung, repariert wurde nur die Sensorleitung (und die Masse des Lüfters). Aussagen wie „vorsorglich ersetzt“ oder „nur gelöscht“ wären falsch und kosten Vertrauen.",
+  "src": "FW"
+ },
+ {
+  "id": "5eb2c25622bf",
   "cat": "Klima",
   "level": 2,
   "typ": "mc",
@@ -3707,7 +8079,7 @@ export const QUESTIONS = [
   "opts": [
    "Ablassen ist bei R1234yf erlaubt, weil das Treibhauspotenzial gering ist; nur Art und Menge des Kältemittels dokumentieren",
    "Nicht ablassen (verboten); mit dem Servicegerät absaugen und recyceln bzw. entsorgen; Art und Menge dokumentieren; nur mit Sachkundenachweis",
-   "Kältemittel im Freien langsam über den Niederdruckanschluss ablassen; Art und Menge dokumentieren; nur mit Sachkundenachweis",
+   "Kältemittel im Freien langsam über den Niederdruckanschluss ablassen, damit es sich verteilt; Art und Menge dokumentieren; nur mit Sachkundenachweis",
    "Mit dem Servicegerät absaugen und danach über die Hallenabsaugung ins Freie leiten; Art und Menge dokumentieren"
   ],
   "correct": 1,
@@ -3715,7 +8087,7 @@ export const QUESTIONS = [
   "src": "Recherche 3.3, FW"
  },
  {
-  "id": "daccb62a0b06",
+  "id": "b8bc1683ded6",
   "cat": "Klima",
   "level": 3,
   "typ": "mc",
@@ -3723,9 +8095,9 @@ export const QUESTIONS = [
   "q": "Seit dem 17.04.2026 gilt in Deutschland eine neue Chemikalien-Klimaschutzverordnung (ChemKlimaschutzV). Welche Aussage trifft zu?",
   "opts": [
    "Die Sachkundepflicht gilt jetzt auch für alternative Kältemittel wie R1234yf; ältere Bescheinigungen gelten bis 12.03.2029 und müssen danach aufgefrischt werden.",
-   "Für R1234yf ist seit 2026 keine Sachkunde mehr nötig, weil es ein geringes Treibhauspotenzial hat.",
-   "Alle bisherigen Sachkundebescheinigungen sind seit dem 17.04.2026 ungültig.",
-   "Kleinmengen bis 100 g dürfen seit 2026 in die Luft abgelassen werden."
+   "Für R1234yf ist seit 2026 keine Sachkunde mehr nötig, weil es nur ein geringes Treibhauspotenzial hat; die Bescheinigung bleibt nur für R134a-Anlagen Pflicht.",
+   "Alle bisherigen Sachkundebescheinigungen sind seit dem 17.04.2026 ungültig; wer weiter an Klimaanlagen arbeitet, muss sofort neu geprüft werden.",
+   "Kleinmengen bis 100 g dürfen seit 2026 in die Luft abgelassen werden, wenn Art und Menge im Serviceprotokoll stehen."
   ],
   "correct": 0,
   "explain": "Die neue Verordnung setzt die EU-F-Gase-Verordnung 2024/573 um. R1234yf ist ein HFO-Kältemittel und fällt jetzt ausdrücklich unter die Sachkundepflicht. Alte Nachweise bleiben bis 12.03.2029 gültig. Das Ablassverbot gilt weiter.",
@@ -3777,7 +8149,7 @@ export const QUESTIONS = [
   "src": "Recherche 3.3, FW"
  },
  {
-  "id": "61c45209d988",
+  "id": "7abfdf6e2800",
   "cat": "Klima",
   "level": 3,
   "typ": "mc",
@@ -3787,14 +8159,14 @@ export const QUESTIONS = [
    "Eine Magnetkupplung schaltet den Verdichter je nach Kältebedarf ein und aus; der Hub der Kolben bleibt dabei immer gleich",
    "Ein Regelventil verstellt den Hub; es wird rein mechanisch vom Saugdruck gesteuert, ohne Signal vom Steuergerät",
    "Ein Regelventil verstellt den Hub (Schrägstellung der Taumelscheibe); das Steuergerät steuert es per PWM an; die Leistung passt sich stufenlos an",
-   "Das Steuergerät verändert die Drehzahl des Verdichters über eine verstellbare Riemenscheibe; der Hub bleibt gleich"
+   "Das Steuergerät verändert die Drehzahl des Verdichters stufenlos über eine verstellbare Riemenscheibe; der Hub der Kolben bleibt dabei immer gleich"
   ],
   "correct": 2,
   "explain": "Die Fördermenge wird über den Hub (Schrägstellung der Taumelscheibe) verändert. Ein Regelventil am Verdichter verstellt den Hub, das Steuergerät steuert es mit einem PWM-Signal an. Die Leistung passt sich stufenlos dem Kältebedarf an; oft ohne Magnetkupplung, bei „Klima aus“ minimaler Hub. (Rein vom Saugdruck geregelt = intern geregelter Verdichter.) Statt ständig ein- und auszuschalten wie bei einer Magnetkupplung, läuft der Verdichter mit und fördert nur so viel wie nötig. Das ist leiser, gleichmäßiger und spart Kraftstoff.",
   "src": "FW"
  },
  {
-  "id": "efcb11e2c3bb",
+  "id": "0a2913d1a4c2",
   "cat": "Klima",
   "level": 2,
   "typ": "mc",
@@ -3804,14 +8176,14 @@ export const QUESTIONS = [
    "Verdichterlast wird (z. B. über CAN) gemeldet; im Leerlauf wird Drehmoment bzw. Leerlaufdrehzahl angehoben; bei Volllast oder zu heißem Motor wird der Verdichter abgeregelt",
    "Verdichterlast wird (z. B. über CAN) gemeldet; im Leerlauf wird die Drehzahl abgesenkt, um Kraftstoff zu sparen; bei Volllast läuft der Verdichter mit voller Leistung",
    "Das Motorsteuergerät erhält keine Information; der Leerlaufregler reagiert erst, wenn die Drehzahl gefallen ist; bei Volllast bleibt der Verdichter unverändert",
-   "Verdichterlast wird (z. B. über CAN) gemeldet; im Leerlauf wird das Drehmoment angehoben; bei zu hoher Kühlmitteltemperatur fördert der Verdichter mehr, um mitzukühlen"
+   "Verdichterlast wird (z. B. über CAN) gemeldet; im Leerlauf wird das Drehmoment angehoben; bei zu hoher Kühlmitteltemperatur fördert der Verdichter mehr, um den Motor mitzukühlen"
   ],
   "correct": 0,
   "explain": "Das Klimasteuergerät meldet die Verdichterlast (z. B. über CAN) an das Motorsteuergerät. Im Leerlauf erhöht das Motorsteuergerät vorsorglich Drehmoment bzw. Leerlaufdrehzahl, damit der Motor nicht abstirbt. Bei Volllast/Beschleunigen oder zu hoher Kühlmitteltemperatur wird der Verdichter abgeregelt oder abgeschaltet. Der Verdichter braucht spürbar Motorleistung. Deshalb tauschen Klima- und Motorsteuergerät Informationen aus und stimmen Last und Kühlbedarf ab.",
   "src": "Recherche 3.3, FW"
  },
  {
-  "id": "1d6d0c05065a",
+  "id": "723b7b8e8758",
   "cat": "Klima",
   "level": 3,
   "typ": "mc",
@@ -3819,9 +8191,9 @@ export const QUESTIONS = [
   "q": "Der Druck-/Temperatursensor auf der Hochdruckseite ist ausgefallen. Welche Antwort beschreibt Aufgabe, Folgen des Ausfalls und Prüfung richtig?",
   "opts": [
    "Misst die Ausströmtemperatur an der Mitteldüse; bei Ausfall läuft der Verdichter mit voller Leistung weiter; prüfen: Sensor ausbauen und durchblasen",
-   "Überwacht den Hochdruck; bei Ausfall läuft der Verdichter ungeregelt mit voller Leistung weiter; prüfen: Messwert mit Manometer vergleichen, Versorgung, Signal und Masse messen",
-   "Überwacht nur die Füllmenge beim Befüllen; bei Ausfall Verdichter ab, Fehlerspeichereintrag; prüfen: Messwert mit Manometer vergleichen, Versorgung, Signal und Masse messen",
-   "Überwacht den Hochdruck und steuert Verdichter und Lüfter mit; bei Ausfall Verdichter ab bzw. heruntergeregelt, Fehlerspeichereintrag; prüfen: Messwert mit Manometer vergleichen, Versorgung, Signal und Masse messen"
+   "Überwacht den Hochdruck nur zur Anzeige im Kombiinstrument; bei Ausfall läuft der Verdichter ungeregelt mit voller Leistung weiter; prüfen: Messwert mit Manometer vergleichen, Versorgung, Signal und Masse messen",
+   "Überwacht nur die Füllmenge beim Befüllen am Servicegerät; bei Ausfall Verdichter ab, Fehlerspeichereintrag; prüfen: Messwert mit Manometer vergleichen, Versorgung, Signal und Masse messen",
+   "Überwacht den Hochdruck, beeinflusst Verdichter und Lüfter; bei Ausfall Verdichter ab bzw. heruntergeregelt, Fehlereintrag; prüfen: Messwert mit Manometer vergleichen, Versorgung, Signal und Masse messen"
   ],
   "correct": 3,
   "explain": "Aufgabe: Hochdruck überwachen (Schutz vor zu hohem und zu niedrigem Druck); das Signal steuert Verdichter und Kondensatorlüfter. Bei Ausfall schaltet das Steuergerät den Verdichter ab bzw. regelt ihn herunter → keine Kühlung, Fehlerspeichereintrag. Prüfen: Fehlerspeicher, Messwert mit Manometeranzeige vergleichen, Versorgung, Signal und Masse nach Schaltplan messen. Ohne gültiges Drucksignal kann das Steuergerät nicht erkennen, ob der Druck gefährlich hoch ist – es schützt die Anlage, indem es den Verdichter stilllegt.",
@@ -3873,7 +8245,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "8004e7314874",
+  "id": "3b7e6bd41231",
   "cat": "Klima",
   "level": 1,
   "typ": "mc",
@@ -3881,7 +8253,7 @@ export const QUESTIONS = [
   "q": "Warum dürfen Sie beim Umgang mit Kältemittel nicht in einer Arbeitsgrube arbeiten?",
   "opts": [
    "Kältemitteldampf ist schwerer als Luft, sammelt sich am Boden und verdrängt den Sauerstoff",
-   "Kältemitteldampf ist leichter als Luft und steigt zur Grube hinauf",
+   "Kältemitteldampf ist leichter als Luft, steigt aus dem Motorraum auf und sammelt sich unter dem Hallendach",
    "In der Grube ist es zu warm, das Kältemittel explodiert",
    "In der Grube kann das Servicegerät die Füllmenge nicht wiegen"
   ],
@@ -3907,7 +8279,7 @@ export const QUESTIONS = [
   "src": "TB Betriebsstoffe, FK Werkstatthinweise"
  },
  {
-  "id": "7417c366658b",
+  "id": "9ffe7f77be80",
   "cat": "Klima",
   "level": 1,
   "typ": "mc",
@@ -3917,14 +8289,14 @@ export const QUESTIONS = [
    "Das Öl enthält ein UV-Kontrastmittel, mit dem man Lecks unter einer UV-Lampe sieht",
    "Das Öl ist für Fahrzeuge mit UV-Schutzverglasung freigegeben",
    "Das Öl ist nur für R134a zugelassen",
-   "Das Öl muss vor Sonnenlicht geschützt gelagert werden und ist sonst unbrauchbar"
+   "Das Öl muss vor Sonnenlicht geschützt gelagert werden, weil es sich sonst zersetzt und unbrauchbar wird"
   ],
   "correct": 0,
   "explain": "Das Kontrastmittel tritt an Lecks mit dem Öl aus und leuchtet unter UV-Licht. So findet man auch kleine Undichtheiten.",
   "src": "TB Betriebsstoffe, FK Werkstatthinweise"
  },
  {
-  "id": "05bd53e7a314",
+  "id": "ed333cdff8c6",
   "cat": "Klima",
   "level": 2,
   "typ": "mc",
@@ -3932,7 +8304,7 @@ export const QUESTIONS = [
   "q": "Warum haben R134a- und R1234yf-Anlagen unterschiedliche Serviceanschlüsse?",
   "opts": [
    "Damit die Kältemittel nicht verwechselt oder gemischt werden und nur das passende Servicegerät angeschlossen werden kann",
-   "Weil R1234yf mit deutlich höherem Druck arbeitet und dickere Leitungen braucht",
+   "Weil R1234yf mit deutlich höherem Druck arbeitet und deshalb dickere Leitungen und größere Ventile in den Anschlüssen braucht",
    "Damit R1234yf-Anlagen ohne Sachkunde befüllt werden können",
    "Weil bei R1234yf nur der Niederdruckanschluss genutzt wird"
   ],
@@ -3941,7 +8313,7 @@ export const QUESTIONS = [
   "src": "Recherche 3.6"
  },
  {
-  "id": "ea657f32e539",
+  "id": "f7793eb9241e",
   "cat": "Klima",
   "level": 1,
   "typ": "mc",
@@ -3950,7 +8322,7 @@ export const QUESTIONS = [
   "opts": [
    "Bindet Feuchtigkeit im Kältemittel; zugesetzt: Säurebildung im Kreislauf und Vereisung am Expansionsventil",
    "Filtert Staub und Pollen aus der Frischluft; zugesetzt: weniger Luftdurchsatz mit geringerer Kühl- und Heizleistung, Scheiben beschlagen leichter",
-   "Filtert Staub und Pollen aus der Frischluft; zugesetzt: der Hochdruck steigt stark an und der Kondensatorlüfter fällt aus",
+   "Filtert Staub und Pollen aus der Frischluft; zugesetzt: der Hochdruck steigt stark an, weil der Kondensator weniger Luft bekommt, und der Lüfter fällt aus",
    "Filtert die Ansaugluft des Motors; zugesetzt: Leistungsverlust des Motors und erhöhter Kraftstoffverbrauch"
   ],
   "correct": 1,
@@ -3958,7 +8330,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "17bc7b22ff7b",
+  "id": "8fde9de1ded9",
   "cat": "Klima",
   "level": 3,
   "typ": "mc",
@@ -3968,14 +8340,14 @@ export const QUESTIONS = [
    "Antrieb über Riemen und Magnetkupplung vom Verbrennungsmotor; keine Standklimatisierung möglich; Klimasachkunde genügt; PAG-Öl wie beim Riemenverdichter",
    "Antrieb aus dem HV-Netz; Standklimatisierung und Kühlung der HV-Batterie möglich; HV-Qualifikation, spannungsfrei schalten; PAG-Öl YF verwenden",
    "Antrieb aus dem HV-Netz, unabhängig vom Verbrenner; Standklimatisierung und Kühlung der HV-Batterie möglich; HV-Qualifikation, spannungsfrei schalten; nur POE-Öl",
-   "Antrieb aus dem HV-Netz; Standklimatisierung und Kühlung der HV-Batterie möglich; Arbeiten unter Spannung erlaubt, da der Kreislauf getrennt ist; nur POE-Öl"
+   "Antrieb aus dem HV-Netz; Standklimatisierung und Kühlung der HV-Batterie möglich; Arbeiten unter Spannung erlaubt, da der Kältekreis vom HV-Netz getrennt ist; nur POE-Öl"
   ],
   "correct": 2,
   "explain": "Der elektrische Kompressor wird von einem Elektromotor aus dem Hochvoltnetz angetrieben, unabhängig vom Verbrennungsmotor – das ermöglicht Standklimatisierung und Kühlung der HV-Batterie. Arbeiten nur mit HV-Qualifikation, System vorher spannungsfrei schalten. Nur nicht leitendes POE-Öl verwenden, das Servicegerät muss für E-Verdichter geeignet sein. Der Elektromotor sitzt im Kältemittelstrom. Leitendes Öl würde die Isolation verschlechtern – deshalb POE und keine PAG-Reste.",
   "src": "Recherche 3.3, TB Betriebsstoffe, FW"
  },
  {
-  "id": "e59446e10bd6",
+  "id": "8011c59d5065",
   "cat": "Klima",
   "level": 2,
   "typ": "mc",
@@ -3984,7 +8356,7 @@ export const QUESTIONS = [
   "opts": [
    "Abhängig von Hochdruck (Drucksensor) und Kühlmitteltemperatur, meist stufenlos per PWM; bei Ausfall steigt der Hochdruck stark, vor allem im Stand, der Verdichter wird abgeschaltet",
    "Nur abhängig von der Fahrgeschwindigkeit, ohne Drucksignal; bei Ausfall sinkt der Hochdruck, und die Kühlleistung wird sogar besser",
-   "Abhängig von Hochdruck und Kühlmitteltemperatur per PWM; bei Ausfall fällt die Kühlung vor allem bei schneller Autobahnfahrt aus, im Stand ist sie unverändert",
+   "Abhängig von Hochdruck und Kühlmitteltemperatur per PWM; bei Ausfall fällt die Kühlung vor allem bei schneller Autobahnfahrt aus, im Stand und im Stadtverkehr bleibt sie dagegen unverändert",
    "Abhängig vom Niederdruck am Verdampfer; bei Ausfall sinkt der Niederdruck stark und der Verdampfer vereist"
   ],
   "correct": 0,
@@ -3992,7 +8364,7 @@ export const QUESTIONS = [
   "src": "Recherche 3.3, FW"
  },
  {
-  "id": "4ae6d9fdf5dd",
+  "id": "6649627c7865",
   "cat": "Klima",
   "level": 3,
   "typ": "mc",
@@ -4001,7 +8373,7 @@ export const QUESTIONS = [
   "opts": [
    "Hochdruckabschaltung durch Überhitzung des Kondensators; Ursachen: Kondensatorlüfter defekt, Kondensator verschmutzt",
    "Unterfüllung durch ein Leck; Ursachen: undichter Kondensator nach Steinschlag, poröse Kältemittelschläuche",
-   "Verdampfer vereist; Ursachen: Überfüllung, zu großer Luftdurchsatz durch neuen Innenraumfilter, Verdichter regelt zu stark ab",
+   "Verdampfer vereist; Ursachen: Überfüllung, zu großer Luftdurchsatz durch einen neuen Innenraumfilter, Verdichter regelt zu stark ab",
    "Verdampfer vereist; Ursachen: Verdampfertemperatursensor bzw. Regelung defekt, zu wenig Luftdurchsatz, Feuchtigkeit im Kreislauf"
   ],
   "correct": 3,
@@ -4125,7 +8497,7 @@ export const QUESTIONS = [
   "src": "Recherche 3.3/3.6, TB Betriebsstoffe, FW"
  },
  {
-  "id": "7ff7711e0bbd",
+  "id": "9a0759f46bae",
   "cat": "Klima",
   "level": 1,
   "typ": "mc",
@@ -4134,7 +8506,7 @@ export const QUESTIONS = [
   "opts": [
    "Weist Feuchtigkeit ab; Gebinde kann offen stehen bleiben; Öle verschiedener Hersteller und Typen dürfen gemischt werden",
    "Nimmt Feuchtigkeit aus der Umgebungsluft auf; Gebinde sofort wieder verschließen; nur Öl nach Herstellervorgabe, nicht mit anderen Ölen mischen",
-   "Nimmt Feuchtigkeit aus der Umgebungsluft auf; Öl vor dem Einfüllen offen stehen lassen, damit es entgast; nur Öl nach Herstellervorgabe",
+   "Nimmt Feuchtigkeit aus der Umgebungsluft auf; Öl vor dem Einfüllen einige Zeit offen stehen lassen, damit es entgast; nur Öl nach Herstellervorgabe",
    "Löst sich vollständig im Kältemittel; Gebinde sofort wieder verschließen; bei Bedarf PAO-Öl nachfüllen, wenn PAG vorgeschrieben ist"
   ],
   "correct": 1,
@@ -4142,7 +8514,7 @@ export const QUESTIONS = [
   "src": "TB Betriebsstoffe (Kompressoröle), FK Werkstatthinweise"
  },
  {
-  "id": "335b17f7aa85",
+  "id": "8af03cc7f476",
   "cat": "Klima",
   "level": 2,
   "typ": "mc",
@@ -4150,7 +8522,7 @@ export const QUESTIONS = [
   "q": "Warum wird eine Klimaanlage nach Gewicht und nicht nach Druckanzeige befüllt? Welche Begründung ist richtig?",
   "opts": [
    "Die Manometer des Servicegeräts sind nur für R134a geeicht; bei R1234yf ist eine Druckmessung nicht zulässig",
-   "Die Füllmenge ist in Gramm vorgegeben; der Druck steigt genau proportional zur Füllmenge und dient nur zur Kontrolle; leichte Überfüllung verbessert die Kühlung",
+   "Die Füllmenge ist in Gramm vorgegeben; der Druck steigt genau proportional zur Füllmenge und dient nur zur Kontrolle; eine leichte Überfüllung verbessert sogar die Kühlleistung",
    "Die Füllmenge ist in Gramm vorgegeben (Typschild); der Druck hängt stark von der Temperatur ab; Unter- oder Überfüllung mindert die Kühlleistung oder schädigt die Anlage",
    "Die Füllmenge ist in Gramm vorgegeben; nach Gewicht geht das Befüllen schneller; die genaue Menge spielt für die Kühlleistung kaum eine Rolle"
   ],
@@ -4187,7 +8559,665 @@ export const QUESTIONS = [
   "src": "Recherche 3.3, FW"
  },
  {
-  "id": "bdf94e6b1472",
+  "id": "0a1b6b3404b3",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie die Merkmale dem Druckschalter oder dem Drucksensor zu.",
+  "paare": [
+   [
+    "Liefert ein stetiges Spannungssignal, das mit dem Druck steigt",
+    "Drucksensor"
+   ],
+   [
+    "Öffnet oder schließt einen Kontakt bei festen Schaltdrücken",
+    "Druckschalter"
+   ],
+   [
+    "Braucht eine 5-V-Versorgung vom Steuergerät",
+    "Drucksensor"
+   ],
+   [
+    "Kann nur „Grenzwert erreicht“ oder „nicht erreicht“ melden, keine Zwischenwerte",
+    "Druckschalter"
+   ]
+  ],
+  "explain": "Ein Druckschalter kennt nur zwei Zustände und schaltet bei festen Grenzdrücken. Ein Drucksensor misst stufenlos – damit kann das Steuergerät Verdichter und Lüfter fein regeln und Fehler wie „Signal unplausibel“ erkennen. Moderne Anlagen nutzen deshalb meist Sensoren.",
+  "src": "FW, Recherche ausbau-klima"
+ },
+ {
+  "id": "fe6314679904",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "bild": "klima-schaltplan.svg",
+  "q": "Bei angeforderter Kühlung wird an A1 Pin 11 (Schaltplan) mit dem Oszilloskop gemessen. Ordnen Sie dem Messbild die wahrscheinliche Ursache zu.",
+  "paare": [
+   [
+    "Rechteck zwischen ca. 0 V und Bordspannung",
+    "Ansteuerung von Y1 in Ordnung"
+   ],
+   [
+    "Dauernd Bordspannung, keine Pulse",
+    "A1 schaltet nicht nach Masse (keine Anforderung, Endstufe defekt) oder Kurzschluss nach Plus"
+   ],
+   [
+    "Dauernd ca. 0 V, keine Pulse",
+    "Kein Plus über Y1 (F2 defekt, Spule oder Leitung unterbrochen) oder Endstufe dauernd leitend"
+   ]
+  ],
+  "ablenker": [
+   "Verdichter mechanisch blockiert"
+  ],
+  "explain": "Y1 bekommt Plus über F2, A1 schaltet nach Masse. Spannung an Pin 11 kann nur über F2 und die Spule ankommen. Liegt dauernd Bordspannung an, sind F2 und Spule durchgängig, aber A1 schaltet nicht. Liegt dauernd 0 V an, fehlt das Plus über die Spule – oder A1 schaltet ständig durch. Ein mechanischer Verdichterschaden ist im Signal nicht zu sehen.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "0a9fac732f84",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "bild": "klima-messpunkte.svg",
+  "q": "Ordnen Sie den Messpunkten im Bild den Zustand des Kältemittels bzw. das Messmedium bei laufender Anlage zu.",
+  "paare": [
+   [
+    "A",
+    "heißer Dampf, Hochdruck"
+   ],
+   [
+    "B",
+    "Flüssigkeit, Hochdruck"
+   ],
+   [
+    "D",
+    "Nassdampf (Flüssigkeit und Dampf), Niederdruck"
+   ],
+   [
+    "E",
+    "überhitzter Dampf, Niederdruck"
+   ],
+   [
+    "F",
+    "abgekühlte Luft für den Innenraum"
+   ]
+  ],
+  "ablenker": [
+   "Flüssigkeit, Niederdruck"
+  ],
+  "explain": "Der Verdichter drückt heißen Dampf (A) in den Kondensator; dort wird das Kältemittel flüssig (B). Hinter dem Expansionsventil fällt der Druck, ein Teil verdampft sofort (Nassdampf, D). Am Verdampferausgang ist alles verdampft und etwas überhitzt (E). F misst keine Leitung, sondern die Luft am Ausströmer.",
+  "src": "FW"
+ },
+ {
+  "id": "74b29825c241",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie die Merkmale dem passenden Kältemittel zu.",
+  "paare": [
+   [
+    "Natürliches Kältemittel mit GWP 1",
+    "R744 (CO₂)"
+   ],
+   [
+    "Gibt die Wärme in einem Gaskühler statt in einem Kondensator ab",
+    "R744 (CO₂)"
+   ],
+   [
+    "HFO-Kältemittel, schwer entflammbar (A2L)",
+    "R1234yf"
+   ],
+   [
+    "In neuen Pkw der EU wegen hohem GWP nicht mehr zulässig",
+    "R134a"
+   ]
+  ],
+  "explain": "R744 ist Kohlendioxid: GWP 1, nicht brennbar, aber mit sehr viel höheren Drücken und oft überkritischem Betrieb – deshalb Gaskühler statt Kondensator. R1234yf ist ein HFO mit GWP unter 150 und schwach brennbar. R134a hat ein hohes GWP und ist für neue Pkw-Typen in der EU nicht mehr erlaubt.",
+  "src": "Netz: ARCTick, UBA; Recherche 3.6"
+ },
+ {
+  "id": "db630cbf2e24",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie den Fehlern das typische Anzeichen bei laufender Anlage zu.",
+  "paare": [
+   [
+    "Verdichter fördert nicht (Regelmechanik defekt)",
+    "ND und HD bleiben fast gleich, auch bei höherer Drehzahl"
+   ],
+   [
+    "Trockner bzw. Filtersieb verstopft",
+    "ND sehr niedrig; Trockner am Ausgang deutlich kälter als am Eingang"
+   ],
+   [
+    "Feuchtigkeit im Kreislauf",
+    "Kühlung setzt zeitweise aus, ND fällt dabei stark ab (Eis am Expansionsventil)"
+   ],
+   [
+    "Expansionsventil klemmt offen",
+    "ND zu hoch, Saugleitung bis zum Verdichter sehr kalt bzw. bereift"
+   ]
+  ],
+  "ablenker": [
+   "HD stark erhöht, Kondensator sehr heiß"
+  ],
+  "explain": "Fördert der Verdichter nicht, entsteht kein Druckunterschied. Ein verstopfter Trockner wirkt wie eine zweite Drosselstelle: Dahinter wird es kalt, dem Verdampfer fehlt Kältemittel. Feuchtigkeit gefriert zeitweise am Expansionsventil. Ein offenes Ventil lässt zu viel Kältemittel durch – der Verdampfer läuft über. Der Ablenker passt zu verschmutztem Kondensator oder ausgefallenem Lüfter.",
+  "src": "FW"
+ },
+ {
+  "id": "a49de7b1e2a8",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ältere Anlagen schalten den Kühlerlüfter über ein Relais. Ordnen Sie den Relaisklemmen (DIN 72552) ihre Funktion zu.",
+  "paare": [
+   [
+    "30",
+    "Eingang Arbeitsstromkreis (Dauerplus)"
+   ],
+   [
+    "87",
+    "Ausgang zum Verbraucher (Schließer)"
+   ],
+   [
+    "86",
+    "Spulenanfang (Eingang Steuerstrom)"
+   ],
+   [
+    "85",
+    "Spulenende (meist zur Masse bzw. Endstufe)"
+   ],
+   [
+    "87a",
+    "Ruhekontakt (Öffner)"
+   ]
+  ],
+  "ablenker": [
+   "Zündungsplus vom Zündschloss"
+  ],
+  "explain": "Über 85/86 fließt der kleine Steuerstrom durch die Spule. Zieht das Relais an, verbindet es 30 mit 87, und der Lüfter läuft; 87a ist nur im Ruhezustand mit 30 verbunden. Zündungsplus heißt Klemme 15 und ist keine Relaisklemme.",
+  "src": "TB Klemmenbezeichnungen DIN 72552"
+ },
+ {
+  "id": "b2b77a600387",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "zuordnung",
+  "pkt": 3,
+  "bild": "klima-schaltplan.svg",
+  "q": "B2 ist ein NTC-Sensor, A1 versorgt ihn über einen Pull-up-Widerstand. Ordnen Sie den Anzeigen im Messwertblock die wahrscheinliche Ursache zu.",
+  "paare": [
+   [
+    "Konstant ca. −40 °C (unterer Endwert)",
+    "Unterbrechung im Sensorkreis (Signal- oder Masseleitung)"
+   ],
+   [
+    "Konstant sehr hoher Wert (oberer Endwert)",
+    "Kurzschluss der Signalleitung nach Masse"
+   ],
+   [
+    "Knapp über 0 °C bei laufender Kühlung",
+    "Plausibler Wert, Sensorkreis in Ordnung"
+   ]
+  ],
+  "ablenker": [
+   "Kältemittel überfüllt"
+  ],
+  "explain": "Ein NTC hat bei Kälte einen hohen, bei Wärme einen kleinen Widerstand. Ist der Kreis unterbrochen, sieht A1 einen unendlichen Widerstand und rechnet auf die tiefste Temperatur. Ein Masseschluss bedeutet 0 Ω, also höchste Temperatur. Im Betrieb hält die Regelung den Verdampfer knapp über 0 °C.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "de9f0b6d7889",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie den Arbeiten die richtige Voraussetzung bzw. Regel zu.",
+  "paare": [
+   [
+    "Kältemittel absaugen und befüllen",
+    "Sachkundebescheinigung für Fahrzeugklimaanlagen"
+   ],
+   [
+    "Elektrischen HV-Klimaverdichter aus- und einbauen",
+    "zusätzlich HV-Qualifikation, System spannungsfrei geschaltet"
+   ],
+   [
+    "Innenraumfilter wechseln",
+    "keine besondere Bescheinigung nötig"
+   ],
+   [
+    "Kältemittel in die Umgebung ablassen",
+    "verboten – immer absaugen und recyceln"
+   ]
+  ],
+  "explain": "Wer Kältemittel ab- oder einfüllt, braucht die Sachkunde (seit der ChemKlimaschutzV 2026 auch für HFO-Kältemittel wie R1234yf). Am HV-Verdichter kommt die Hochvolt-Qualifikation dazu. Ablassen ist immer verboten; der Filterwechsel ist eine normale Wartungsarbeit.",
+  "src": "Recherche 3.6, Netz: IHK Karlsruhe"
+ },
+ {
+  "id": "6cfd08dbdcff",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Die Klimaanlage meldet einen elektrischen Fehler. Bringen Sie die Schritte einer systematischen Fehlersuche in die richtige Reihenfolge.",
+  "schritte": [
+   "Beanstandung nachvollziehen",
+   "Fehlerspeicher auslesen und Messwertblöcke ansehen",
+   "Stellglieddiagnose bzw. geführte Fehlersuche durchführen",
+   "Im Schaltplan Messpunkte festlegen und messen",
+   "Fehlerursache beheben",
+   "Fehlerspeicher löschen und Funktion prüfen"
+  ],
+  "explain": "Erst prüfen, ob der Fehler da ist, dann die Informationen des Steuergeräts nutzen. Die Stellglieddiagnose zeigt, ob ein Aktor reagiert. Gemessen wird gezielt nach Schaltplan. Gelöscht wird erst nach der Reparatur, die Funktionsprobe beweist den Erfolg.",
+  "src": "FW"
+ },
+ {
+  "id": "fefac1826d80",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "reihenfolge",
+  "pkt": 5,
+  "q": "Der Verdichter hat einen inneren Schaden, im abgeschiedenen Öl sind Metallspäne. Bringen Sie die Instandsetzung in die richtige Reihenfolge.",
+  "schritte": [
+   "Kältemittel absaugen und abgeschiedene Ölmenge ablesen",
+   "Verdichter, Trockner und Expansionsventil ausbauen",
+   "Leitungen und Wärmetauscher nach Herstellervorgabe spülen oder ersetzen",
+   "Neue Bauteile mit neuen Dichtringen einbauen, Ölfüllung nach Herstellerangabe",
+   "Evakuieren und Vakuum halten",
+   "Nach Gewicht befüllen und Verdichter nach Vorschrift einlaufen lassen"
+  ],
+  "explain": "Späne verteilen sich im ganzen Kreislauf und würden den neuen Verdichter zerstören. Deshalb werden Trockner und Expansionsventil mit ersetzt und der Rest gespült oder – wenn der Hersteller Spülen nicht zulässt – ersetzt. Erst nach Dichtheitsprüfung im Vakuum wird befüllt.",
+  "src": "Netz: DENSO Bulletin, FW"
+ },
+ {
+  "id": "0c22f7e4fc0a",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Bringen Sie die Schritte eines Leistungstests der Klimaanlage in die richtige Reihenfolge.",
+  "schritte": [
+   "Prüfbedingungen herstellen: Türen und Fenster zu, Thermometer in die Mitteldüse",
+   "Motor starten, Klima auf maximale Kühlung und Umluft stellen",
+   "Prüfdrehzahl halten, bis sich die Werte stabilisiert haben",
+   "Ausströmtemperatur ablesen und Umgebungstemperatur notieren",
+   "Werte mit der Prüftabelle des Herstellers vergleichen"
+  ],
+  "explain": "Vergleichbar sind die Werte nur unter den Bedingungen der Prüftabelle. Die Anlage braucht einige Minuten, bis Drücke und Temperaturen stabil sind. Die Ausströmtemperatur allein sagt wenig – sie wird immer zusammen mit der Umgebungstemperatur bewertet.",
+  "src": "FW"
+ },
+ {
+  "id": "997dbbe1c922",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Ein Fahrzeug unbekannter Herkunft kommt zum Klimaservice. Bringen Sie die ersten Schritte in die richtige Reihenfolge.",
+  "schritte": [
+   "Kältemittelart am Typschild und an den Serviceanschlüssen prüfen",
+   "Kältemittel mit dem Identifiziergerät auf Art und Reinheit prüfen",
+   "Passendes Servicegerät anschließen",
+   "Kältemittel absaugen und Menge ablesen",
+   "Abgeschiedene Ölmenge ablesen und notieren"
+  ],
+  "explain": "Erst wenn klar ist, welches Kältemittel und wie rein es ist, darf das Servicegerät angeschlossen werden – sonst verunreinigt fremdes Kältemittel den Vorrat im Gerät. Abgesaugte Menge und Ölmenge braucht man für Diagnose und Befüllung.",
+  "src": "FW"
+ },
+ {
+  "id": "5a2a5bc740de",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "klima-schaltplan.svg",
+  "q": "Im Schaltplan ist die Sicherung F2 durchgebrannt. Welche Folge hat das? (Bei diesem Verdichter gilt: Regelventil unbestromt = kleinster Hub.)",
+  "opts": [
+   "Das ganze Steuergerät A1 fällt aus, weil es über F2 versorgt wird; auch die Sensoren B1 und B2 sind dann ohne Spannung",
+   "Y1 bekommt keine Spannung; der Verdichter läuft mit kleinstem Hub, die Anlage kühlt nicht; Lüfter und Sensoren arbeiten weiter",
+   "Der Lüfter M1 bleibt stehen, weil A2 über F2 von Klemme 15 versorgt wird; der Verdichter regelt dagegen normal weiter",
+   "Y1 wird dauernd bestromt, weil die Sicherung den Strom nicht mehr begrenzt; der Verdichter fördert ständig mit vollem Hub"
+  ],
+  "correct": 1,
+  "explain": "Laut Schaltplan versorgt F2 nur das Regelventil Y1 mit Plus von Klemme 15. A1 hängt an F3, A2 an F1 (Klemme 30). Ohne Plus kann A1 die Spule nicht bestromen – der Verdichter bleibt auf kleinstem Hub, eine Magnetkupplung gibt es nicht. Eine durchgebrannte Sicherung unterbricht den Strom immer, sie lässt ihn nie ungebremst fließen.",
+  "src": "Eigener Schaltplan"
+ },
+ {
+  "id": "b822012a80e1",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "klima-schaltplan.svg",
+  "q": "Der Messwertblock zeigt für B2 dauerhaft −40 °C, obwohl die Klimaanlage länger aus war und es 25 °C warm ist. Wie reagiert A1, und wo liegt der Fehler wahrscheinlich?",
+  "opts": [
+   "A1 erhöht die Verdichterleistung, um die Kälte auszugleichen; wahrscheinlich ist das Kältemittel überfüllt",
+   "A1 schaltet den Lüfter M1 auf volle Drehzahl; wahrscheinlich hat die Signalleitung von B2 einen Kurzschluss nach Masse",
+   "A1 reagiert gar nicht, weil B2 nur zur Anzeige im Bedienteil dient; wahrscheinlich ist der Sensor B1 falsch angeschlossen",
+   "A1 nimmt Vereisungsgefahr an und regelt den Verdichter ab; wahrscheinlich ist der Sensorkreis von B2 unterbrochen"
+  ],
+  "correct": 3,
+  "explain": "B2 schützt den Verdampfer vor Vereisung: Meldet er sehr tiefe Temperatur, regelt A1 den Verdichter zurück oder ab – die Anlage kühlt nicht. −40 °C ist der Endwert eines NTC bei unendlichem Widerstand, also Unterbrechung von Sensor oder Leitung (A1 Pin 7/8). Ein Kurzschluss nach Masse würde dagegen einen sehr hohen Wert ergeben.",
+  "src": "Eigener Schaltplan, FW"
+ },
+ {
+  "id": "ebd434a969f2",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "klima-oszi-regelventil.svg",
+  "q": "Bei angeforderter Kühlung zeigt das Oszilloskop an A1 Pin 11 nicht das abgebildete Signal, sondern dauernd die volle Bordspannung ohne Pulse. Was lässt sich daraus schließen?",
+  "opts": [
+   "F2 und die Spule von Y1 sind durchgängig; A1 schaltet die Masseseite nicht – Anforderung bzw. Endstufe prüfen",
+   "Die Sicherung F2 ist durchgebrannt; deshalb liegt an Pin 11 die volle Spannung an, und Y1 bleibt stromlos",
+   "Die Spule von Y1 ist unterbrochen; die Spannung staut sich an Pin 11, deshalb zeigt das Oszilloskop Bordspannung",
+   "Y1 wird dauernd bestromt, und der Verdichter fördert mit vollem Hub; das ist bei hoher Kühlanforderung normal"
+  ],
+  "correct": 0,
+  "explain": "Spannung an Pin 11 kann nur über F2 und die Spule von Y1 dorthin kommen – beide sind also in Ordnung. Fehlen die Pulse nach Masse, schaltet A1 nicht: Es gibt keine Anforderung (z. B. wegen eines anderen Fehlers wie „Drucksignal unplausibel“) oder die Endstufe ist defekt. Wäre F2 oder die Spule unterbrochen, läge an Pin 11 keine Spannung an. Dauernd bestromt hieße dauernd 0 V.",
+  "src": "Eigenes Oszillogramm, Eigener Schaltplan"
+ },
+ {
+  "id": "27c9f74d47a0",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "bild": "klima-messpunkte.svg",
+  "q": "Die Anlage kühlt schlecht, der Niederdruck ist sehr niedrig. Bei laufender Klima messen Sie an B 50 °C und an C 10 °C; der Trockner ist an der Ausgangsseite beschlagen. Wo liegt der Fehler wahrscheinlich?",
+  "opts": [
+   "Der Kondensator ist verschmutzt; die Temperatur zwischen B und C fällt deshalb besonders stark ab",
+   "Das Expansionsventil klemmt offen; deshalb ist das Kältemittel schon vor dem Ventil abgekühlt",
+   "Trockner bzw. Filtersieb ist verstopft und wirkt wie eine Drosselstelle; Trockner ersetzen",
+   "Die Anlage ist überfüllt; zu viel flüssiges Kältemittel kühlt den Trockner von innen ab"
+  ],
+  "correct": 2,
+  "explain": "Zwischen B und C liegt nur der Trockner; in einer freien Flüssigkeitsleitung ändert sich die Temperatur kaum. Ein großer Temperaturabfall mit Beschlag zeigt, dass der Druck schon im Trockner fällt und Kältemittel dort verdampft – eine Verstopfung wirkt wie eine Drosselstelle. Dem Verdampfer fehlt dann Kältemittel, der Niederdruck sinkt.",
+  "src": "FW"
+ },
+ {
+  "id": "ce7a47b34c14",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "klima-messpunkte.svg",
+  "q": "Laut Druck-Temperatur-Tabelle entspricht der Niederdruck einer Verdampfungstemperatur von 2 °C. An Messpunkt E messen Sie 8 °C. Wie groß ist die Überhitzung?",
+  "opts": [
+   "10 K",
+   "4 K",
+   "−6 K",
+   "6 K"
+  ],
+  "correct": 3,
+  "explain": "Überhitzung = gemessene Temperatur am Verdampferausgang − Verdampfungstemperatur = 8 °C − 2 °C = 6 K. Wer addiert, kommt auf 10 K, wer dividiert auf 4. Eine Überhitzung stellt sicher, dass nur Dampf zum Verdichter gelangt; der Sollbereich steht in den Herstellerunterlagen.",
+  "src": "FW"
+ },
+ {
+  "id": "6e1ced62e7f6",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "klima-messpunkte.svg",
+  "q": "An welchem Messpunkt ist die Temperatur bei laufender Anlage am höchsten?",
+  "opts": [
+   "B – nach dem Kondensator",
+   "A – direkt nach dem Verdichter",
+   "D – nach dem Expansionsventil",
+   "E – am Verdampferausgang"
+  ],
+  "correct": 1,
+  "explain": "Beim Verdichten steigen Druck und Temperatur stark an; das heiße Gas gibt seine Wärme erst im Kondensator ab. Deshalb ist die Druckleitung direkt hinter dem Verdichter (A) die heißeste Stelle. Hinter dem Expansionsventil (D) ist es am kältesten.",
+  "src": "FW"
+ },
+ {
+  "id": "2b9903026df3",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Ein extern geregelter Verdichter ohne Magnetkupplung hat in der Riemenscheibe eine Überlastsicherung. Wozu dient sie?",
+  "opts": [
+   "Sie schaltet den Verdichter bei ausgeschalteter Klimaanlage ab, weil er sonst ständig mit vollem Hub fördern würde",
+   "Sie begrenzt den Hochdruck, indem sie bei zu hohem Druck Kältemittel über ein Ventil in der Riemenscheibe ablässt",
+   "Sie dämpft nur Drehschwingungen des Riemens; ein blockierter Verdichter bringt deshalb den Motor zum Stillstand",
+   "Blockiert der Verdichter, trennt sie ihn vom Antrieb, damit der Riementrieb mit den anderen Aggregaten weiterläuft"
+  ],
+  "correct": 3,
+  "explain": "Ohne Magnetkupplung dreht der Verdichter immer mit; bei „Klima aus“ stellt das Regelventil nur den kleinsten Hub ein. Frisst der Verdichter fest, würde der Riemen reißen oder durchrutschen – dann fallen auch andere Aggregate am selben Riemen (z. B. Generator) aus. Die Überlastsicherung (Sollbruchstelle bzw. Rutschkupplung) trennt den Verdichter rechtzeitig ab.",
+  "src": "Netz: Hella Techtips, FW"
+ },
+ {
+  "id": "a248dc8b4198",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "q": "Klima ein, Motor läuft: Nieder- und Hochdruck bleiben fast gleich und ändern sich auch bei höherer Drehzahl kaum. Messwertblock und Oszilloskop zeigen eine plausible Ansteuerung des Regelventils, die Spule hat den Sollwiderstand. Welche Ursache ist am wahrscheinlichsten?",
+  "opts": [
+   "Die Anlage ist überfüllt; zu viel Kältemittel gleicht Hoch- und Niederdruck auch bei höherer Drehzahl an",
+   "Der Verdichter fördert trotz Ansteuerung nicht (Regelmechanik oder Triebwerk defekt)",
+   "Der Kondensatorlüfter ist ausgefallen; dadurch steigt der Niederdruck auf den Wert des Hochdrucks",
+   "Das Expansionsventil klemmt geschlossen; deshalb bleiben beide Drücke gleich hoch"
+  ],
+  "correct": 1,
+  "explain": "Gleiche Drücke bei laufendem Motor bedeuten: Es wird kein Druckunterschied aufgebaut, der Verdichter fördert nicht. Da die elektrische Ansteuerung nachweislich stimmt, liegt der Fehler im Verdichter selbst (Regelmechanik, Taumelscheibe, Ventile). Überfüllung erhöht beide Drücke, ein geschlossenes Expansionsventil senkt den Niederdruck stark, ein ausgefallener Lüfter erhöht vor allem den Hochdruck.",
+  "src": "Netz: Robinair EVDC100, FW"
+ },
+ {
+  "id": "78b2f55d0676",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "In einer Anlage wurde Feuchtigkeit im Kreislauf festgestellt. Welche Abhilfe ist richtig?",
+  "opts": [
+   "Nur Innenraumfilter und Kondenswasserablauf prüfen, weil die Feuchtigkeit von außen in den Innenraum kommt",
+   "Kältemittel absaugen; Trockner weiterverwenden, weil er die Feuchtigkeit ja bindet; kurz evakuieren und befüllen",
+   "Kältemittel absaugen; Trockner erneuern; ausreichend lange evakuieren, damit das Wasser verdampft; nach Gewicht befüllen",
+   "Etwas mehr Kältemittelöl einfüllen, weil das Öl die Feuchtigkeit aufnimmt und die Anlage so wieder trocken wird"
+  ],
+  "correct": 2,
+  "explain": "Wasser im Kreislauf bildet Säure und kann am Expansionsventil gefrieren. Der Trockner ist dann gesättigt und muss erneuert werden. Im Vakuum siedet das Wasser schon bei Raumtemperatur und wird abgesaugt – das braucht Zeit, also lange genug evakuieren (Dauer nach Hersteller). Mehr Öl einzufüllen schadet nur.",
+  "src": "FW"
+ },
+ {
+  "id": "df0ec1538cbd",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Nach einer Reparatur wurde nur sehr kurz evakuiert. Jetzt ist der Hochdruck im Betrieb deutlich zu hoch, obwohl Füllmenge, Lüfter und Kondensator in Ordnung sind. Was ist die wahrscheinliche Ursache?",
+  "opts": [
+   "Zu viel Kältemittelöl im Kreislauf; das Öl verdampft im Kondensator und erhöht dadurch den Hochdruck",
+   "Das kurze Evakuieren hat den Trockner zerstört; seine Körner verstopfen das Expansionsventil vollständig",
+   "Luft (nicht kondensierbares Gas) im Kreislauf; sie sammelt sich im Kondensator und erhöht den Hochdruck",
+   "Der Unterdruck beim Evakuieren hat den Drucksensor verstellt; er zeigt jetzt dauernd einen zu hohen Wert"
+  ],
+  "correct": 2,
+  "explain": "Wird zu kurz evakuiert, bleibt Luft im Kreislauf. Luft lässt sich im Kondensator nicht verflüssigen, nimmt dort Platz weg und erhöht den Hochdruck – die Kühlleistung sinkt. Mit der Luft kommt außerdem Feuchtigkeit hinein. Abhilfe: absaugen, ausreichend evakuieren, nach Gewicht neu befüllen.",
+  "src": "FW"
+ },
+ {
+  "id": "a4365e1199ad",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Nach dem Tausch des Kondensators soll Öl ergänzt werden. Wie viel Öl wird eingefüllt?",
+  "opts": [
+   "Immer die komplette Ölfüllmenge der Anlage, weil beim Absaugen das ganze Öl mit herauskommt",
+   "Die beim Absaugen abgeschiedene Menge plus die Herstellerangabe für den neuen Kondensator",
+   "Gar kein Öl, weil ein neuer Kondensator ab Werk mit der vollen Ölmenge der Anlage befüllt ist",
+   "So viel, bis das Hochdruckmanometer im Stillstand den Sollwert für den Ruhedruck anzeigt"
+  ],
+  "correct": 1,
+  "explain": "Beim Absaugen wird nur ein Teil des Öls abgeschieden – diese Menge wird ersetzt. Im ausgebauten Bauteil bleibt zusätzlich Öl zurück; wie viel dafür nachgefüllt wird, gibt der Hersteller je Bauteil an. Zu viel Öl verschlechtert den Wärmeübergang, zu wenig schadet dem Verdichter. Der Druck sagt nichts über die Ölmenge.",
+  "src": "FW"
+ },
+ {
+  "id": "3584ac8fc26c",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Nach dem Evakuieren wird die Vakuumpumpe abgeschaltet. In der Haltezeit steigt der Druck langsam an. Wie gehen Sie vor?",
+  "opts": [
+   "Trotzdem befüllen, weil ein leichter Anstieg beim Haltetest normal ist und das Kältemittel kleine Lecks abdichtet",
+   "Mit UV-Kontrastmittel in der Haltezeit nach dem Leck suchen, weil das Vakuum das Mittel an die Leckstelle zieht",
+   "Nicht befüllen; Dichtheit prüfen (z. B. Formiergas) und, wenn dicht, weiter evakuieren, weil Restfeuchte verdampft",
+   "Kältemittel einfüllen und danach die doppelte Ölmenge ergänzen, weil durch das Vakuum Öl verloren gegangen ist"
+  ],
+  "correct": 2,
+  "explain": "Steigt der Druck, kommt etwas in den Kreislauf: Luft durch ein Leck oder Dampf aus Restfeuchtigkeit. Steigt er bis zum Umgebungsdruck, ist es eher ein Leck; bleibt er auf niedrigem Niveau stehen, eher Feuchtigkeit. Befüllt wird erst, wenn das Vakuum hält. UV-Kontrastmittel braucht umlaufendes Öl unter Druck und hilft hier nicht.",
+  "src": "FW"
+ },
+ {
+  "id": "a61981069f46",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Warum prüfen viele Werkstätten das Kältemittel vor dem Absaugen mit einem Identifiziergerät?",
+  "opts": [
+   "Weil das Servicegerät sonst die Füllmenge laut Typschild nicht berechnen kann",
+   "Weil R1234yf ohne vorherige Identifizierung gesetzlich nicht abgesaugt werden darf und das Gerät sonst sperrt",
+   "Damit kein fremdes oder verunreinigtes Kältemittel in das Servicegerät und dessen Vorrat gelangt",
+   "Damit man feststellt, wie viel Öl im Kreislauf ist, bevor es zusammen mit dem Kältemittel abgesaugt wird"
+  ],
+  "correct": 2,
+  "explain": "Wurde eine Anlage mit falschem oder gemischtem Kältemittel befüllt, würde das Absaugen den ganzen Vorrat im Servicegerät verunreinigen. Das Identifiziergerät zeigt Art und Reinheit; verunreinigtes Kältemittel wird mit einem eigenen Gerät abgesaugt und entsorgt.",
+  "src": "FW"
+ },
+ {
+  "id": "b0cba90aa4bb",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Wie führen Sie die Sonde eines elektronischen Lecksuchers richtig?",
+  "opts": [
+   "Schnell und im Abstand von etwa einem Meter über den ganzen Motorraum hinweg",
+   "Langsam und dicht an Leitungen und Verbindungen, vor allem an deren Unterseite",
+   "Nur an der Oberseite der Bauteile, weil das Kältemittel nach oben steigt",
+   "Bei laufendem Motorlüfter, damit das austretende Kältemittel zur Sonde geweht wird"
+  ],
+  "correct": 1,
+  "explain": "Kältemittel ist schwerer als Luft und sinkt nach unten. Die Sonde wird deshalb langsam und dicht unter Leitungen und Verbindungen geführt. Luftzug verdünnt austretendes Kältemittel – Motor und Lüfter bleiben aus.",
+  "src": "FW"
+ },
+ {
+  "id": "c059d8d3d5df",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Ein Kunde wundert sich über eine Wasserpfütze unter seinem Auto nach einer Fahrt mit Klimaanlage. Was sagen Sie ihm?",
+  "opts": [
+   "Das ist Kältemittel, das sich beim Austreten verflüssigt; die Anlage muss sofort auf Dichtheit geprüft werden",
+   "Das ist Kühlmittel aus dem Motor; der Klimakondensator hat ein Leck zum Kühler und muss ersetzt werden",
+   "Das ist Kondenswasser aus dem Auspuff; mit der Klimaanlage hat es nichts zu tun, es entsteht nur im Winter",
+   "Das ist normal: Am kalten Verdampfer kondensiert Feuchtigkeit aus der Luft und läuft unter dem Fahrzeug ab"
+  ],
+  "correct": 3,
+  "explain": "Der Verdampfer kühlt die Luft unter ihren Taupunkt; die Feuchtigkeit schlägt sich als Wasser nieder und läuft über den Kondenswasserablauf ins Freie. Klares, geruchloses Wasser ist also ein gutes Zeichen. Austretendes Kältemittel verdampft sofort. Bedenklich wäre Wasser im Fußraum – dann ist der Ablauf verstopft.",
+  "src": "FW"
+ },
+ {
+  "id": "1d14f91a0fce",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Warum hilft es, im Winter bei beschlagenen Scheiben die Klimaanlage einzuschalten?",
+  "opts": [
+   "Die Klimaanlage heizt im Winter stärker als die normale Heizung, weil der Verdichter die Luft zusätzlich erwärmt",
+   "Der Verdampfer trocknet die Luft; danach wird sie erwärmt und nimmt die Feuchtigkeit von den Scheiben auf",
+   "Der Kondensator bläst warme Luft direkt auf die Frontscheibe, wodurch das Wasser schnell verdunstet",
+   "Die Klimaanlage saugt die feuchte Luft über die Serviceanschlüsse aus dem Innenraum ab"
+  ],
+  "correct": 1,
+  "explain": "Am kalten Verdampfer kondensiert die Feuchtigkeit der Luft. Die getrocknete Luft wird danach im Heizungswärmetauscher erwärmt und kann die Feuchtigkeit von den Scheiben aufnehmen. Bei sehr tiefen Außentemperaturen schaltet der Verdichter allerdings zum Schutz ab.",
+  "src": "FW"
+ },
+ {
+  "id": "22b275d0765a",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Welche Aussage über Pkw-Klimaanlagen mit R744 (CO₂) ist richtig?",
+  "opts": [
+   "R744 arbeitet mit niedrigeren Drücken als R1234yf und darf deshalb mit demselben Servicegerät befüllt werden",
+   "R744 ist ein HFO-Kältemittel wie R1234yf; der Kreislauf ist identisch, nur die Serviceanschlüsse sind anders",
+   "R744 arbeitet mit sehr viel höheren Drücken; statt eines Kondensators gibt ein Gaskühler die Wärme ab; GWP 1",
+   "R744 ist giftig und brennbar; deshalb darf es nur in Fahrzeugen ohne Verbrennungsmotor eingesetzt werden"
+  ],
+  "correct": 2,
+  "explain": "CO₂ hat GWP 1, ist nicht brennbar und ungiftig, verdrängt aber wie alle Kältemittel den Sauerstoff (schwerer als Luft). Es arbeitet mit vielfach höheren Drücken, oft überkritisch – die Wärme gibt deshalb ein Gaskühler ab, ohne dass das Gas dabei flüssig wird. Leitungen, Bauteile und Servicegeräte sind eigens dafür ausgelegt.",
+  "src": "Netz: ARCTick, UBA"
+ },
+ {
+  "id": "9025ed13bd0e",
+  "cat": "Klima",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Was gibt der GWP-Wert eines Kältemittels an?",
+  "opts": [
+   "Wie viel Gramm Kältemittel die Anlage je Kilowatt Kühlleistung mindestens benötigt",
+   "Wie leicht das Kältemittel entflammbar ist (Sicherheitsklasse)",
+   "Wie stark es im Vergleich zur gleichen Masse CO₂ zum Treibhauseffekt beiträgt",
+   "Bei welchem Druck das Kältemittel bei 20 °C verdampft"
+  ],
+  "correct": 2,
+  "explain": "GWP (Global Warming Potential) vergleicht die Treibhauswirkung eines Stoffes mit der von CO₂ (GWP = 1), meist über 100 Jahre. R134a liegt weit über 1000, R1234yf unter 150 – deshalb dürfen neue Pkw in der EU nur noch Kältemittel mit GWP unter 150 haben. Die Brennbarkeit gibt die Sicherheitsklasse an (z. B. A2L).",
+  "src": "Recherche 3.6, FW"
+ },
+ {
+  "id": "091c1b01ae6b",
+  "cat": "Klima",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Bei einer Leistungsprüfung ergibt sich eine Unterkühlung von fast 0 K und eine sehr große Überhitzung. Welche Ursache passt?",
+  "opts": [
+   "Überfüllung: Zu viel Kältemittel staut sich im Kondensator, dadurch steigt die Überhitzung am Verdampfer",
+   "Unterfüllung: Es fehlt Kältemittel, der Kondensator ist nicht voll Flüssigkeit, der Verdampfer wird zu wenig versorgt",
+   "Der Kondensatorlüfter läuft dauernd mit voller Drehzahl; dadurch wird das Kältemittel zu stark unterkühlt",
+   "Das Expansionsventil klemmt offen; zu viel Kältemittel gelangt in den Verdampfer und wird dort überhitzt"
+  ],
+  "correct": 1,
+  "explain": "Fehlt Kältemittel, gibt es nach dem Kondensator kaum reine Flüssigkeit, die weiter abkühlen könnte → Unterkühlung nahe 0 K. Im Verdampfer ist das wenige Kältemittel früh verdampft, der Dampf erwärmt sich danach stark → große Überhitzung. Überfüllung ergibt eher große Unterkühlung, ein offenes Expansionsventil kleine Überhitzung.",
+  "src": "FW"
+ },
+ {
+  "id": "be96e511bff0",
+  "cat": "Klima",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Nach dem Abstellen des Motors läuft der Kühlerlüfter noch einige Minuten nach. Wie ist das zu beurteilen?",
+  "opts": [
+   "Das ist immer ein Fehler: Ein Lüfter darf nur bei laufendem Motor laufen, also ist die Endstufe defekt",
+   "Das zeigt eine Überfüllung der Klimaanlage an; der Lüfter muss den zu hohen Ruhedruck abbauen",
+   "Das kann normal sein: Das Steuergerät lässt den Lüfter nachlaufen, um Motorraum und Kühler abzukühlen",
+   "Das ist normal, weil der Lüfter nach dem Abstellen als Generator die Batterie wieder nachlädt"
+  ],
+  "correct": 2,
+  "explain": "Viele Fahrzeuge lassen den Lüfter abhängig von Kühlmittel- bzw. Motorraumtemperatur nachlaufen (Dauer nach Herstellerangabe). Ein Fehler liegt vor, wenn er nicht mehr abschaltet und die Batterie entleert – dann Ansteuerung, Endstufe bzw. Relais prüfen.",
+  "src": "Netz: kfz-dietrich (Kühlerlüfter-Nachlauf), FW"
+ },
+ {
+  "id": "65cdf58dbd7b",
   "cat": "WiSo",
   "situation": "wiso-geselle",
   "nr": 1,
@@ -4199,7 +9229,7 @@ export const QUESTIONS = [
    "Der Staat legt Löhne und Arbeitsbedingungen per Gesetz fest; Gewerkschaften und Arbeitgeberverbände werden dazu nur angehört",
    "Betriebsrat und Arbeitgeber handeln die Löhne im einzelnen Betrieb selbstständig aus; Grundlage ist das Betriebsverfassungsgesetz",
    "Gewerkschaften und Arbeitgeberverbände handeln Löhne und Arbeitsbedingungen selbstständig aus; Grundlage ist Art. 9 Abs. 3 GG; der Staat mischt sich nicht ein",
-   "Gewerkschaften und Arbeitgeberverbände verhandeln die Löhne; der Abschluss gilt aber erst, wenn das Arbeitsministerium ihn genehmigt"
+   "Gewerkschaften und Arbeitgeberverbände verhandeln die Löhne selbstständig; der Abschluss gilt aber erst, wenn das Bundesarbeitsministerium ihn genehmigt hat"
   ],
   "correct": 2,
   "explain": "Tarifautonomie heißt: Die Tarifpartner regeln Lohn, Arbeitszeit und Urlaub eigenverantwortlich. Grundlage ist die Koalitionsfreiheit nach Art. 9 Abs. 3 Grundgesetz; in die Verhandlungen mischt sich der Staat nicht ein. Er gibt nur den gesetzlichen Rahmen vor (z. B. Arbeitszeitgesetz, Bundesurlaubsgesetz, Mindestlohngesetz).",
@@ -4296,7 +9326,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "0ab91069e566",
+  "id": "920a8b806b7d",
   "cat": "WiSo",
   "situation": "wiso-geselle",
   "nr": 5,
@@ -4306,9 +9336,9 @@ export const QUESTIONS = [
   "q": "Was bedeutet die Friedenspflicht während der Laufzeit eines Tarifvertrags?",
   "opts": [
    "Zu Themen, die im Tarifvertrag geregelt sind, darf nicht gestreikt oder ausgesperrt werden",
-   "Der Betriebsrat darf keine Betriebsversammlung einberufen",
-   "Arbeitnehmer dürfen während der Laufzeit nicht kündigen",
-   "Die Gewerkschaft darf erst nach einer Schlichtung verhandeln"
+   "Der Betriebsrat darf während der Laufzeit keine Betriebsversammlung einberufen",
+   "Arbeitnehmer dürfen ihr Arbeitsverhältnis während der Laufzeit nicht kündigen",
+   "Die Gewerkschaft darf erst nach einer gescheiterten Schlichtung wieder verhandeln, auch zu neuen Themen"
   ],
   "correct": 0,
   "explain": "Die Friedenspflicht schützt den Abschluss: Solange er gilt, sind Arbeitskämpfe über die geregelten Inhalte unzulässig. Warnstreiks sind erst nach Ende der Laufzeit erlaubt.",
@@ -4632,7 +9662,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "c97c4d16ccbd",
+  "id": "19356f8a2f9d",
   "cat": "WiSo",
   "situation": "wiso-geselle",
   "nr": 19,
@@ -4642,7 +9672,7 @@ export const QUESTIONS = [
   "q": "Welches Beispiel beschreibt einen Zielkonflikt zwischen zwei Zielen des magischen Vierecks richtig?",
   "opts": [
    "Mehr Beschäftigung bringt mehr Einkommen und Konsum, dadurch wächst die Wirtschaft stärker; beide Ziele fördern sich gegenseitig",
-   "Höhere Leitzinsen senken die Inflation und kurbeln zugleich Investitionen und Beschäftigung an; so werden beide Ziele gleichzeitig erreicht",
+   "Höhere Leitzinsen senken die Inflation und kurbeln zugleich Investitionen und Beschäftigung an, weil Sparen attraktiver wird; so werden beide Ziele gleichzeitig erreicht",
    "Hohe Nachfrage und volle Auslastung sichern Wachstum und Beschäftigung, lassen aber Preise und Löhne steigen; höhere Zinsen gegen die Inflation bremsen dann Wachstum und Beschäftigung",
    "Sinkende Arbeitslosigkeit drückt die Löhne und damit die Preise; so sorgt ein hoher Beschäftigungsstand automatisch für stabile Preise"
   ],
@@ -4651,7 +9681,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "506936b4eb11",
+  "id": "ce22ef5dcf91",
   "cat": "WiSo",
   "situation": "wiso-geselle",
   "nr": 20,
@@ -4661,16 +9691,16 @@ export const QUESTIONS = [
   "q": "Wie verhält sich der Staat in einer Rezession nach der antizyklischen (nachfrageorientierten) Fiskalpolitik?",
   "opts": [
    "Er erhöht seine Ausgaben und senkt Steuern, notfalls mit neuen Schulden",
-   "Er kürzt seine Ausgaben und erhöht die Steuern",
-   "Er senkt den Leitzins",
-   "Er hält sich vollständig aus der Wirtschaft heraus"
+   "Er kürzt seine Ausgaben und erhöht die Steuern, damit der Haushalt ausgeglichen bleibt",
+   "Er senkt den Leitzins, damit Kredite für Betriebe und Verbraucher billiger werden",
+   "Er hält sich ganz heraus, weil sich der Markt von selbst wieder erholt"
   ],
   "correct": 0,
   "explain": "Antizyklisch = gegen den Konjunkturverlauf: In der Krise die fehlende Nachfrage ersetzen (Deficit Spending), im Boom Ausgaben kürzen und Rücklagen bilden. Den Leitzins bestimmt nicht der Staat, sondern die unabhängige EZB.",
   "src": "FW"
  },
  {
-  "id": "2c5ffe14f7a0",
+  "id": "fd7713b3e36f",
   "cat": "WiSo",
   "level": 2,
   "typ": "mc",
@@ -4678,16 +9708,16 @@ export const QUESTIONS = [
   "q": "Angenommen, der Manteltarifvertrag sieht 30 Urlaubstage vor, in Ihrem Arbeitsvertrag stehen 32. Was gilt?",
   "opts": [
    "32 Tage, weil vom Tarifvertrag zugunsten des Arbeitnehmers abgewichen werden darf",
-   "30 Tage, weil der Tarifvertrag immer Vorrang hat",
-   "24 Tage, weil das Bundesurlaubsgesetz gilt",
-   "31 Tage als Mittelwert beider Regelungen"
+   "30 Tage, weil der Tarifvertrag immer Vorrang vor dem einzelnen Arbeitsvertrag hat",
+   "24 Tage, weil das Bundesurlaubsgesetz als höheres Recht den Tarifvertrag verdrängt",
+   "31 Tage, weil bei widersprüchlichen Regelungen der Mittelwert beider Verträge gilt"
   ],
   "correct": 0,
   "explain": "Günstigkeitsprinzip (§ 4 Abs. 3 Tarifvertragsgesetz): Der Tarifvertrag ist ein Mindeststandard. Schlechter als der Tarif darf der Arbeitsvertrag nicht sein, besser schon.",
   "src": "FW"
  },
  {
-  "id": "09dfbb957bdc",
+  "id": "05619b14e57d",
   "cat": "WiSo",
   "level": 3,
   "typ": "mc",
@@ -4695,9 +9725,9 @@ export const QUESTIONS = [
   "q": "Was bedeutet es, wenn ein Tarifvertrag für allgemeinverbindlich erklärt wird?",
   "opts": [
    "Er gilt für alle Arbeitgeber und Arbeitnehmer der Branche im Geltungsbereich, auch ohne Verbandsmitgliedschaft",
-   "Er gilt nur für Gewerkschaftsmitglieder",
-   "Er kann während der Laufzeit nicht mehr gekündigt werden",
-   "Er gilt automatisch für alle Branchen in Deutschland"
+   "Er gilt dann nur noch für Gewerkschaftsmitglieder, weil nur sie ihn über ihre Beiträge mitfinanzieren",
+   "Er kann während der Laufzeit von keiner Seite mehr gekündigt oder geändert werden, auch nicht in gegenseitigem Einvernehmen",
+   "Er gilt automatisch für alle Branchen in Deutschland, also z. B. auch für Bäckereien und Banken"
   ],
   "correct": 0,
   "explain": "Die Allgemeinverbindlicherklärung spricht das Arbeitsministerium auf Antrag der Tarifpartner aus, wenn sie im öffentlichen Interesse liegt (§ 5 TVG). Damit sind auch nicht tarifgebundene Betriebe erfasst.",
@@ -4847,7 +9877,7 @@ export const QUESTIONS = [
   "src": "Netz: krankenkassen.de, Rechengrößen 2026"
  },
  {
-  "id": "89eb9243e327",
+  "id": "420584b13395",
   "cat": "WiSo",
   "level": 1,
   "typ": "mc",
@@ -4855,9 +9885,9 @@ export const QUESTIONS = [
   "q": "Wer trägt 2026 den Kinderlosenzuschlag von 0,6 % in der Pflegeversicherung?",
   "opts": [
    "Der kinderlose Arbeitnehmer ab 23 Jahren allein",
-   "Arbeitnehmer und Arbeitgeber je zur Hälfte",
-   "Der Arbeitgeber allein",
-   "Die Pflegekasse aus Steuermitteln"
+   "Arbeitnehmer und Arbeitgeber je zur Hälfte, also je 0,3 %",
+   "Der Arbeitgeber allein, zusätzlich zu seinem Anteil",
+   "Die Pflegekasse aus Steuermitteln des Bundes"
   ],
   "correct": 0,
   "explain": "Der Grundbeitrag 3,6 % wird geteilt (je 1,8 %). Kinderlose ab 23 zahlen 0,6 % zusätzlich allein → 2,4 % Arbeitnehmeranteil. Eltern mit mehreren Kindern unter 25 zahlen weniger.",
@@ -4913,7 +9943,7 @@ export const QUESTIONS = [
   "src": "FW (Lehrplan Politik und Gesellschaft 10.3.1)"
  },
  {
-  "id": "add6820d6fb3",
+  "id": "ca61427e236d",
   "cat": "WiSo",
   "level": 2,
   "typ": "mc",
@@ -4921,9 +9951,9 @@ export const QUESTIONS = [
   "q": "Seit 01.01.2026 gibt es die sogenannte Aktivrente. Was regelt sie?",
   "opts": [
    "Wer nach Erreichen der Regelaltersgrenze sozialversicherungspflichtig weiterarbeitet, kann bis zu 2.000 € im Monat steuerfrei verdienen",
-   "Jeder kann ab 63 Jahren ohne Abschläge in Rente gehen",
-   "Der Staat zahlt jedem Kind monatlich in ein Vorsorgedepot ein",
-   "Rentner müssen bis 70 Jahre mindestens in Teilzeit arbeiten"
+   "Jeder kann ab 63 Jahren ohne Abschläge in Rente gehen, wenn er mindestens 35 Beitragsjahre hat",
+   "Wer nach Erreichen der Regelaltersgrenze weiterarbeitet, bekommt zusätzlich zum Lohn automatisch 2.000 € Rente im Monat ausbezahlt",
+   "Rentner müssen bis zum 70. Lebensjahr mindestens in Teilzeit weiterarbeiten, sonst wird die Rente gekürzt"
   ],
   "correct": 0,
   "explain": "Aktivrente (Stand 2026): Steuerfreibetrag von bis zu 2.000 € monatlich für Arbeitslohn nach Erreichen der Regelaltersgrenze. Nicht für Minijobs, Selbstständige oder Frührentner vor der Regelaltersgrenze.",
@@ -5030,7 +10060,7 @@ export const QUESTIONS = [
   "src": "Netz: Bundestag, Urteil BVerfG 30.07.2024 zur Wahlrechtsreform 2023"
  },
  {
-  "id": "c64797136b06",
+  "id": "460138a5c38f",
   "cat": "WiSo",
   "level": 3,
   "typ": "mc",
@@ -5038,9 +10068,9 @@ export const QUESTIONS = [
   "q": "Eine Partei erhält bei der Bundestagswahl 4,2 % der Zweitstimmen und gewinnt 3 Wahlkreise direkt. Was gilt nach dem Stand 2026?",
   "opts": [
    "Sie zieht entsprechend ihrem Zweitstimmenanteil in den Bundestag ein (Grundmandatsklausel)",
-   "Sie bekommt keinen einzigen Sitz, weil sie unter 5 % liegt",
-   "Nur die drei Wahlkreissieger ziehen ein",
-   "Sie bekommt automatisch 5 % der Sitze"
+   "Sie bekommt keinen einzigen Sitz, weil sie unter der 5-%-Hürde liegt und es keine Ausnahmen mehr gibt",
+   "Nur die drei Wahlkreissieger ziehen ein, weitere Sitze bekommt die Partei nicht",
+   "Sie bekommt automatisch 5 % der Sitze, weil sie die Hürde über Direktmandate erreicht"
   ],
   "correct": 0,
   "explain": "Das Bundesverfassungsgericht hat am 30.07.2024 den geplanten Wegfall der Grundmandatsklausel für verfassungswidrig erklärt. Bis zu einer Neuregelung gilt: Mit mindestens 3 Direktmandaten zählt die Partei trotz weniger als 5 % bei der Sitzverteilung mit.",
@@ -5064,7 +10094,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "8e171eb782b1",
+  "id": "7c5dc38129ff",
   "cat": "WiSo",
   "level": 2,
   "typ": "mc",
@@ -5072,9 +10102,9 @@ export const QUESTIONS = [
   "q": "Bei der Bürgermeisterwahl am 08.03.2026 erhält Bewerberin A 44 %, Bewerber B 38 % und Bewerber C 18 % der gültigen Stimmen. Wie geht es weiter?",
   "opts": [
    "Zwei Wochen später findet eine Stichwahl zwischen A und B statt",
-   "A ist gewählt, weil sie die meisten Stimmen hat",
-   "Die Wahl wird mit allen drei Bewerbern wiederholt",
-   "Der Gemeinderat wählt den Bürgermeister aus A und B"
+   "A ist gewählt, weil bei der Bürgermeisterwahl die einfache Mehrheit reicht",
+   "Die Wahl wird nach vier Wochen mit allen drei Bewerbern wiederholt",
+   "Der neue Gemeinderat wählt den Bürgermeister aus A und B"
   ],
   "correct": 0,
   "explain": "Gewählt ist, wer mehr als die Hälfte der gültigen Stimmen erhält. Sonst folgt eine Stichwahl der beiden Bewerber mit den meisten Stimmen – 2026 am 22.03., also zwei Wochen nach der Hauptwahl.",
@@ -5251,7 +10281,7 @@ export const QUESTIONS = [
   "src": "FW"
  },
  {
-  "id": "dcc53a53e6f5",
+  "id": "1dc6378f34de",
   "cat": "WiSo",
   "level": 2,
   "typ": "mc",
@@ -5259,8 +10289,8 @@ export const QUESTIONS = [
   "q": "Wie hat sich das reale Bruttoinlandsprodukt in Deutschland im Jahr 2025 entwickelt (Destatis, Januar 2026)?",
   "opts": [
    "Es ist um 0,2 % gewachsen, nach zwei Jahren mit Rückgang",
-   "Es ist um 2,0 % geschrumpft",
-   "Es ist um 3,5 % gewachsen",
+   "Es ist um 2,0 % geschrumpft, vor allem wegen der schwachen Industrie",
+   "Es ist um 3,5 % gewachsen, so stark wie seit 2010 nicht mehr",
    "Es ist das dritte Jahr in Folge geschrumpft"
   ],
   "correct": 0,
@@ -5268,7 +10298,7 @@ export const QUESTIONS = [
   "src": "Netz: Destatis, Pressemitteilung 017/2026 (15.01.2026)"
  },
  {
-  "id": "45489c2b8edf",
+  "id": "fe164cf98073",
   "cat": "WiSo",
   "level": 1,
   "typ": "mc",
@@ -5276,8 +10306,8 @@ export const QUESTIONS = [
   "q": "Welches Ziel verfolgt die Europäische Zentralbank (EZB) mit ihrer Geldpolitik (Stand 2026)?",
   "opts": [
    "Eine Inflationsrate von mittelfristig 2 % im Euroraum",
-   "Eine Arbeitslosenquote von 0 %",
-   "Eine Inflationsrate von genau 0 %",
+   "Eine Arbeitslosenquote von unter 3 % im Euroraum",
+   "Eine Inflationsrate von genau 0 %, also völlig stabile Preise",
    "Ein jährliches Wirtschaftswachstum von 5 %"
   ],
   "correct": 0,
@@ -5401,6 +10431,872 @@ export const QUESTIONS = [
   "correct": 1,
   "explain": "Näherung: Reallohnveränderung ≈ Nominallohnveränderung − Inflationsrate = 3,3 % − 2,0 % = 1,3 %. Genau: 1,033 ÷ 1,020 − 1 ≈ 1,27 %.",
   "src": "FW"
+ },
+ {
+  "id": "764c31765a57",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 1,
+  "level": 1,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Im Frühjahr 2026 wurde in Ihrem Autohaus der Betriebsrat gewählt. In welchem Rhythmus und Zeitraum finden die regelmäßigen Betriebsratswahlen statt?",
+  "opts": [
+   "Alle 2 Jahre in der Zeit vom 1. Oktober bis 30. November, zuletzt im Herbst 2026",
+   "Alle 5 Jahre gemeinsam mit der Landtagswahl, zuletzt im Herbst 2023",
+   "Alle 4 Jahre in der Zeit vom 1. März bis 31. Mai, zuletzt im Frühjahr 2026",
+   "Alle 6 Jahre gemeinsam mit der Kommunalwahl, zuletzt im März 2026"
+  ],
+  "correct": 2,
+  "explain": "Nach § 13 Betriebsverfassungsgesetz (BetrVG) finden die regelmäßigen Betriebsratswahlen alle vier Jahre zwischen 1. März und 31. Mai statt (2022, 2026, nächste 2030); die Amtszeit beträgt vier Jahre. Alle zwei Jahre im Herbst wird die Jugend- und Auszubildendenvertretung gewählt. Mit Landtags- oder Kommunalwahlen haben Betriebsratswahlen nichts zu tun.",
+  "src": "FW (BetrVG §§ 13, 21)"
+ },
+ {
+  "id": "bb7283f15067",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 2,
+  "level": 2,
+  "typ": "mc",
+  "pkt": 4,
+  "q": "Wer durfte im Autohaus den Betriebsrat wählen, und wer konnte selbst in den Betriebsrat gewählt werden?",
+  "opts": [
+   "Wählen: alle Arbeitnehmer ab 18 Jahren; gewählt werden: alle Arbeitnehmer ab 18 Jahren, die Mitglied einer Gewerkschaft sind",
+   "Wählen: alle Arbeitnehmer ab 16 Jahren, auch Azubis; gewählt werden: Wahlberechtigte ab 18, die mindestens 6 Monate im Betrieb sind",
+   "Wählen: alle Arbeitnehmer ab 16 Jahren, auch Azubis; gewählt werden: alle Wahlberechtigten ab 16 Jahren ohne Wartezeit",
+   "Wählen: nur Gesellen und Angestellte, keine Auszubildenden; gewählt werden: Wahlberechtigte ab 18, die mindestens 6 Monate im Betrieb sind"
+  ],
+  "correct": 1,
+  "explain": "Wahlberechtigt sind alle Arbeitnehmer ab 16 Jahren, auch Auszubildende (§ 7 BetrVG, seit 2021). Wählbar sind Wahlberechtigte ab 18 Jahren, die dem Betrieb seit mindestens sechs Monaten angehören (§ 8). Eine Gewerkschaftsmitgliedschaft ist nicht nötig. Einen Betriebsrat gibt es ab 5 ständigen Arbeitnehmern; bei 51–100 Wahlberechtigten hat er 5 Mitglieder.",
+  "src": "FW (BetrVG §§ 1, 7, 8, 9)"
+ },
+ {
+  "id": "316b635248f4",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 3,
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Auf der Betriebsversammlung geht es um verschiedene Regelungen. Ordnen Sie zu, wo sie üblicherweise festgelegt sind.",
+  "paare": [
+   [
+    "Höhe der Stundenlöhne in den tarifgebundenen Kfz-Betrieben Bayerns",
+    "Tarifvertrag (Gewerkschaft und Arbeitgeberverband)"
+   ],
+   [
+    "Beginn und Ende der täglichen Arbeitszeit und Pausen im Autohaus",
+    "Betriebsvereinbarung (Betriebsrat und Arbeitgeber)"
+   ],
+   [
+    "Ihre persönliche Zulage über Tarif und Ihr Firmenwagen",
+    "Arbeitsvertrag (Sie und der Arbeitgeber)"
+   ],
+   [
+    "Mindesturlaub von 24 Werktagen pro Jahr",
+    "Gesetz (Bundesurlaubsgesetz)"
+   ]
+  ],
+  "ablenker": [
+   "Satzung der Handwerkskammer"
+  ],
+  "explain": "Löhne vereinbaren die Tarifpartner. Der Betriebsrat darf Löhne, die üblicherweise im Tarif geregelt sind, nicht per Betriebsvereinbarung festlegen (Tarifvorbehalt, § 77 Abs. 3 BetrVG) – außer der Tarifvertrag erlaubt es mit einer Öffnungsklausel. Bei der Lage der Arbeitszeit hat der Betriebsrat dagegen ein Mitbestimmungsrecht (§ 87 BetrVG). Das Bundesurlaubsgesetz garantiert 24 Werktage (Mo–Sa), also 20 Arbeitstage bei der 5-Tage-Woche.",
+  "src": "FW (BetrVG §§ 77, 87; BUrlG)"
+ },
+ {
+  "id": "857c74471c1d",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 4,
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Im Herbst 2026 wird im Autohaus auch die Jugend- und Auszubildendenvertretung (JAV) gewählt. Wer darf sie wählen?",
+  "opts": [
+   "Nur Auszubildende, die bereits volljährig sind, weil Minderjährige nicht wählen dürfen",
+   "Alle Arbeitnehmer unter 18 Jahren und alle Auszubildenden unter 25 Jahren im Betrieb",
+   "Alle Beschäftigten des Betriebs, weil die JAV ein Ausschuss des Betriebsrats ist",
+   "Nur Mitglieder der Gewerkschaftsjugend, weil die IG Metall die JAV-Mitglieder stellt"
+  ],
+  "correct": 1,
+  "explain": "Wahlberechtigt sind alle Arbeitnehmer unter 18 Jahren und alle Auszubildenden unter 25 Jahren (§§ 60, 61 BetrVG). Die JAV wird für zwei Jahre gewählt, regelmäßig vom 1. Oktober bis 30. November (2024, 2026). Sie ist kein Teil des Betriebsrats, arbeitet aber eng mit ihm zusammen und setzt sich z. B. für die Qualität der Ausbildung ein.",
+  "src": "FW (BetrVG §§ 60–64)"
+ },
+ {
+  "id": "2d4a23a2dec5",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 5,
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "bild": "wiso-konjunkturzyklus.svg",
+  "q": "Die Geschäftsführung zeigt ein Schaubild zum Konjunkturverlauf. Ordnen Sie den Nummern ① bis ④ die Konjunkturphase zu.",
+  "paare": [
+   [
+    "Phase ①",
+    "Aufschwung (Expansion)"
+   ],
+   [
+    "Phase ②",
+    "Hochkonjunktur (Boom)"
+   ],
+   [
+    "Phase ③",
+    "Abschwung (Rezession)"
+   ],
+   [
+    "Phase ④",
+    "Tiefstand (Depression)"
+   ]
+  ],
+  "ablenker": [
+   "Stagnation am Trend"
+  ],
+  "explain": "Nach dem unteren Wendepunkt A steigt die Wirtschaftsleistung wieder (Aufschwung ①). Um den oberen Wendepunkt B liegt die Hochkonjunktur ②, danach sinkt die Leistung (Abschwung ③) bis zum Tiefstand ④. Die gestrichelte Linie ist der langfristige Wachstumstrend, um den die tatsächliche Entwicklung schwankt.",
+  "src": "Eigenes Diagramm"
+ },
+ {
+  "id": "e9b52c6df059",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 6,
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "bild": "wiso-konjunkturzyklus.svg",
+  "q": "Der Verkaufsleiter berichtet: „Die Auftragseingänge für Neuwagen gehen seit Monaten zurück, die Hersteller produzieren aber noch auf hohem Niveau, und Kurzarbeit gibt es bisher nicht.“ Wo im Schaubild befindet sich die Wirtschaft am ehesten?",
+  "opts": [
+   "Kurz nach Punkt A am Beginn von Phase ①: Die Aufträge fallen, weil die Kunden auf noch niedrigere Preise warten",
+   "Mitten in Phase ④: Sinkende Aufträge zeigen, dass der Tiefstand erreicht ist und die Kurzarbeit gerade endet",
+   "Genau bei Punkt A: Sinkende Aufträge bei noch hoher Produktion sind das Kennzeichen des unteren Wendepunkts",
+   "Kurz nach Punkt B am Beginn von Phase ③: Der Frühindikator fällt schon, Präsenz- und Spätindikatoren noch nicht"
+  ],
+  "correct": 3,
+  "explain": "Auftragseingänge sind ein Frühindikator, die Produktion ist ein Präsenzindikator, Arbeitsmarkt und Kurzarbeit sind Spätindikatoren. Wenn nur der Frühindikator nachgibt, ist der obere Wendepunkt B gerade überschritten – der Abschwung ③ beginnt. Am Punkt A wären Produktion und Beschäftigung niedrig, nicht hoch.",
+  "src": "Eigenes Diagramm / FW"
+ },
+ {
+  "id": "9b75224d435d",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 7,
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Obwohl der Neuwagenverkauf schwach ist, ist die Werkstatt gut ausgelastet. Welche Erklärung ist am wahrscheinlichsten?",
+  "opts": [
+   "Kunden verschieben den Neukauf und lassen stattdessen ihr älteres Auto warten und reparieren",
+   "Im Abschwung steigen die Werkstattpreise stark, deshalb erledigen Kunden Reparaturen vor der nächsten Erhöhung",
+   "Weil weniger Neuwagen verkauft werden, schreibt der Staat seit 2026 häufigere Hauptuntersuchungen vor",
+   "Neuwagen haben im Abschwung mehr Mängel, weil die Hersteller sparen, und kommen deshalb öfter in die Werkstatt"
+  ],
+  "correct": 0,
+  "explain": "Autos sind langlebige Gebrauchsgüter: Ihren Kauf kann man verschieben, wenn die Zukunft unsicher ist. Die Kunden fahren ihr Auto länger, der Fahrzeugbestand wird älter, und Wartung und Verschleißreparaturen nehmen zu. Deshalb ist das Werkstattgeschäft weniger konjunkturabhängig als der Verkauf und stabilisiert das Autohaus im Abschwung.",
+  "src": "FW"
+ },
+ {
+  "id": "c14acaa2bf69",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 8,
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Laut Statistischem Bundesamt lag die Inflationsrate im September 2026 bei 3,3 %, vor allem weil Energie und Kraftstoffe deutlich teurer wurden. Um welche Art von Inflation handelt es sich in erster Linie?",
+  "opts": [
+   "Nachfrageinflation: Die Verbraucher kaufen so viel, dass die Betriebe mit der Produktion nicht nachkommen und die Preise erhöhen",
+   "Kosteninflation: Teurere Energie verteuert Produktion und Transport, die Betriebe geben die Kosten über die Preise weiter",
+   "Importierte Deflation: Billige Waren aus dem Ausland drücken das Preisniveau, deshalb steigt die Inflationsrate",
+   "Geldmengeninflation: Der Staat lässt mehr Bargeld drucken, um die gestiegenen Energiepreise selbst zu bezahlen"
+  ],
+  "correct": 1,
+  "explain": "Im September 2026 waren Energieprodukte 14,9 % und Kraftstoffe 37,1 % teurer als ein Jahr zuvor, die Kerninflation (ohne Energie und Nahrungsmittel) lag nur bei 2,4 %. Das spricht für eine Kosteninflation (Angebotsschock): Höhere Kosten werden über die Preise weitergegeben. Bei einer Nachfrageinflation würden die Preise auf breiter Front wegen zu hoher Nachfrage steigen. Geld „druckt“ nicht der Staat – über die Geldpolitik entscheidet die EZB.",
+  "src": "Netz: Destatis, Pressemitteilung 364/2026 (13.10.2026)"
+ },
+ {
+  "id": "d88db240ead3",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 9,
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Ihr Tariflohn liegt seit August 2026 um 3,3 % höher als ein Jahr zuvor. Die Inflationsrate betrug im September 2026 ebenfalls 3,3 % (gegenüber dem Vorjahresmonat). Wie hat sich Ihr Reallohn im Vergleich zum Vorjahr ungefähr entwickelt?",
+  "opts": [
+   "Er ist um etwa 6,6 % gestiegen, weil Lohnerhöhung und Inflationsrate zusammengezählt werden",
+   "Er ist etwa gleich geblieben: Die Lohnerhöhung gleicht den Preisanstieg aus, die Kaufkraft steigt nicht",
+   "Er ist um etwa 3,3 % gesunken, weil die Inflation die Lohnerhöhung und zusätzlich einen Teil des Lohns auffrisst",
+   "Er ist um 3,3 % gestiegen, weil der Reallohn nur vom Tarifvertrag abhängt und nicht von den Preisen"
+  ],
+  "correct": 1,
+  "explain": "Reallohnveränderung ≈ Nominallohnveränderung − Inflationsrate = 3,3 % − 3,3 % ≈ 0 %. Sie bekommen zwar mehr Euro, können sich davon aber nicht mehr kaufen als ein Jahr zuvor. Der Reallohn misst die Kaufkraft des Lohns.",
+  "src": "FW / Netz: Destatis PM 364/2026, IG Metall Kfz-Tarif 2025"
+ },
+ {
+  "id": "bca58a9939e4",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 10,
+  "level": 2,
+  "typ": "mc",
+  "pkt": 4,
+  "q": "Wegen der steigenden Inflation wird über die Europäische Zentralbank (EZB) diskutiert. Wie wirkt eine Leitzinserhöhung typischerweise auf das Autohaus?",
+  "opts": [
+   "Autokredite werden billiger, weil die Banken mehr Geld von der EZB bekommen; der Neuwagenverkauf zieht deshalb sofort deutlich an",
+   "Die EZB legt mit dem Leitzins direkt die Listenpreise für Neuwagen fest; das Autohaus muss seine Preise deshalb senken",
+   "Autokredite und Leasing werden teurer, weniger Kunden finanzieren einen Kauf; die Nachfrage sinkt, der Preisanstieg wird gebremst",
+   "Die Leitzinserhöhung senkt sofort die Kraftstoffpreise, weil die EZB die Energiepreise für den ganzen Euroraum festlegt"
+  ],
+  "correct": 2,
+  "explain": "Steigt der Leitzins, leihen sich die Banken teurer Geld bei der Zentralbank und verlangen höhere Kreditzinsen. Kreditfinanzierte Käufe und Investitionen gehen zurück, die Nachfrage sinkt, der Preisauftrieb lässt nach. Nachteil (Zielkonflikt): Das bremst auch Wachstum und Beschäftigung – der Autohandel spürt das stark. Weltmarktpreise für Energie legt die EZB nicht fest; gegen eine Kosteninflation wirkt Zinspolitik deshalb nur langsam.",
+  "src": "FW"
+ },
+ {
+  "id": "06b9aa84025d",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 11,
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Die Geschäftsführung erwägt Kurzarbeit im Verkauf, falls der Absatz weiter einbricht. Welche Aussage zum Kurzarbeitergeld ist richtig?",
+  "opts": [
+   "Die Krankenkasse zahlt den vollen Bruttolohn für die ausgefallenen Stunden, damit kein Beschäftigter Einbußen hat",
+   "Der Arbeitgeber zahlt den ausgefallenen Lohn allein weiter und bekommt ihn später vom Finanzamt als Steuergutschrift vollständig erstattet",
+   "Die Beschäftigten werden vorübergehend entlassen und bekommen Arbeitslosengeld, bis die Aufträge wieder steigen",
+   "Die Agentur für Arbeit ersetzt einen Teil des ausgefallenen Nettolohns (60 %, mit Kind 67 %); die Arbeitsplätze bleiben erhalten"
+  ],
+  "correct": 3,
+  "explain": "Kurzarbeitergeld ist eine Leistung der Arbeitslosenversicherung (Bundesagentur für Arbeit) bei vorübergehendem, erheblichem Arbeitsausfall: 60 % bzw. mit Kind 67 % der Nettoentgeltdifferenz. Ziel ist, Fachkräfte zu halten statt zu entlassen. Der Arbeitgeber zeigt die Kurzarbeit bei der Agentur für Arbeit an; gibt es einen Betriebsrat, muss er zustimmen (Mitbestimmung nach § 87 BetrVG).",
+  "src": "FW"
+ },
+ {
+  "id": "70283750525f",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 12,
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Ein Kollege fordert, der Staat solle wie 2009 eine Prämie für den Kauf von Neuwagen zahlen. Welche Einordnung ist richtig?",
+  "opts": [
+   "Angebotsorientierte Politik: Die Prämie senkt die Produktionskosten der Hersteller; Nachteil: Die Tariflöhne der Branche sinken",
+   "Nachfrageorientierte, antizyklische Politik: Sie belebt die Nachfrage; Nachteile: Mitnahme- und Vorzieheffekte, Kosten für den Staat",
+   "Geldpolitik der EZB: Die Prämie erhöht die Geldmenge im Euroraum; Nachteil: Sie gilt nur für Fahrzeuge aus dem Euroraum",
+   "Prozyklische Politik: Die Prämie verstärkt den Abschwung bewusst, damit schwache Betriebe schneller und endgültig vom Markt verschwinden"
+  ],
+  "correct": 1,
+  "explain": "Die Umweltprämie („Abwrackprämie“) 2009 war ein staatlicher Nachfrageimpuls in der Rezession (Keynes, antizyklisch). Mitnahmeeffekt: Kunden, die ohnehin gekauft hätten, kassieren die Prämie. Vorzieheffekt: Käufe werden nur vorgezogen und fehlen danach. Bezahlt wird sie aus Steuern oder neuen Schulden.",
+  "src": "FW"
+ },
+ {
+  "id": "8c189b255abd",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 13,
+  "level": 2,
+  "typ": "mc",
+  "pkt": 4,
+  "q": "In der Pause geht es um die nächste Landtagswahl in Bayern (regulär 2028). Welche Aussage zum bayerischen Landtagswahlrecht ist richtig?",
+  "opts": [
+   "Wie bei der Bundestagswahl entscheidet allein die Zweitstimme über die Sitzverteilung; die Erststimme wählt nur den Abgeordneten im eigenen Stimmkreis",
+   "Erst- und Zweitstimme werden zu Gesamtstimmen addiert, die über die Sitzverteilung entscheiden; mit der Zweitstimme wählt man eine Person der Liste",
+   "Es gibt nur eine Stimme für eine Partei; die Abgeordneten bestimmt danach der Landtagspräsident aus den Parteilisten",
+   "Erst- und Zweitstimme werden zu Gesamtstimmen addiert; eine Sperrklausel gibt es aber wie bei der Kommunalwahl in Bayern nicht, jede Stimme zählt"
+  ],
+  "correct": 1,
+  "explain": "Mit der Erststimme wählt man einen Bewerber im Stimmkreis (91 Stimmkreise), mit der Zweitstimme einen Bewerber auf der Liste des Wahlkreises (7 Wahlkreise = Regierungsbezirke) – so kann man die Reihenfolge der Liste verändern. Beide Stimmen zählen zusammen als Gesamtstimmen für die Sitzverteilung. Es gilt eine 5-%-Hürde auf die Gesamtstimmen. Wahlperiode: 5 Jahre.",
+  "src": "Netz: bpb, Fakten zur Landtagswahl in Bayern 2023"
+ },
+ {
+  "id": "285538d13800",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 14,
+  "level": 3,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Laut Bayerischer Verfassung hat der Landtag 180 Abgeordnete. Nach der Wahl 2023 sind es aber 203. Woran liegt das?",
+  "opts": [
+   "Die 23 zusätzlichen Sitze gehen an Vertreter der sieben Bezirkstage, die automatisch auch Mitglied im Landtag sind",
+   "Im bayerischen Landtagswahlrecht gibt es – anders als im Bund – weiterhin Überhang- und Ausgleichsmandate",
+   "Seit der Wahlrechtsreform 2023 hat der Landtag wie der Bundestag eine feste, größere Sitzzahl",
+   "Parteien unter 5 % erhalten in Bayern zusätzliche Sitze, damit auch kleine Parteien vertreten sind"
+  ],
+  "correct": 1,
+  "explain": "Gewinnt eine Partei mehr Stimmkreise direkt, als ihr nach Gesamtstimmen Sitze zustehen, behält sie diese Überhangmandate; die anderen Parteien erhalten dafür Ausgleichsmandate. 2023 ergab das 203 statt 180 Abgeordnete. Im Bundestag gibt es seit der Reform 2023 keine Überhang- und Ausgleichsmandate mehr (fest 630 Sitze).",
+  "src": "Netz: Bayerischer Landtag, Volkshandbuch 19. Wahlperiode"
+ },
+ {
+  "id": "7f4fbedf38b1",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 15,
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Kollegen wollen ein Volksbegehren in Bayern unterstützen. Bringen Sie die Stufen der Volksgesetzgebung in die richtige Reihenfolge.",
+  "schritte": [
+   "Antrag auf Zulassung mit mindestens 25.000 Unterschriften von Stimmberechtigten",
+   "Prüfung und Zulassung durch das Innenministerium (im Streitfall entscheidet der Verfassungsgerichtshof)",
+   "Volksbegehren: Mindestens 10 % der Stimmberechtigten tragen sich innerhalb von 14 Tagen im Rathaus ein",
+   "Der Landtag berät den Gesetzentwurf und kann ihn annehmen oder einen eigenen Entwurf dagegenstellen",
+   "Volksentscheid: Alle Stimmberechtigten stimmen ab, wenn der Landtag den Entwurf nicht unverändert annimmt"
+  ],
+  "explain": "Die Bayerische Verfassung (Art. 74) erlaubt Gesetzgebung durch das Volk. Nach dem erfolgreichen Volksbegehren muss sich der Landtag mit dem Entwurf befassen. Lehnt er ihn ab, entscheiden die Bürger im Volksentscheid. In der Gemeinde heißt das Gegenstück Bürgerbegehren und Bürgerentscheid.",
+  "src": "Netz: Bayerische Verfassung Art. 74 / Landeswahlgesetz"
+ },
+ {
+  "id": "7e896d536063",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 16,
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "In Ihrer Stadt soll über eine Umgehungsstraße am Gewerbegebiet entschieden werden. Bürger sammeln Unterschriften für einen Bürgerentscheid. Welche Aussage ist richtig?",
+  "opts": [
+   "Das Bürgerbegehren beantragt die Abstimmung; beim Bürgerentscheid stimmen die Bürger ab, das Ergebnis wirkt wie ein Stadtratsbeschluss",
+   "Beim Bürgerentscheid stimmen die Bürger ab; das Ergebnis ist aber nur eine unverbindliche Empfehlung, die der Stadtrat jederzeit übergehen kann",
+   "Das Bürgerbegehren muss zuerst vom Bayerischen Landtag genehmigt werden; danach stimmen alle Bürger Bayerns darüber ab",
+   "Beim Bürgerentscheid stimmt nur der Stadtrat ab; die Bürger dürfen vorher in einer Bürgerversammlung ihre Meinung sagen"
+  ],
+  "correct": 0,
+  "explain": "Bayerische Gemeindeordnung (Art. 18a): Mit dem Bürgerbegehren (Unterschriften) beantragen Bürger einen Bürgerentscheid. Beim Bürgerentscheid entscheidet die Mehrheit, wenn sie einen Mindestanteil der Stimmberechtigten erreicht (abhängig von der Gemeindegröße). Das Ergebnis hat die Wirkung eines Gemeinderatsbeschlusses und kann ein Jahr lang nur durch einen neuen Bürgerentscheid geändert werden.",
+  "src": "FW (Gemeindeordnung Bayern Art. 18a)"
+ },
+ {
+  "id": "ad2288649753",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 17,
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "q": "Ordnen Sie die Merkmale der passenden Wahl zu (Stand 2026).",
+  "paare": [
+   [
+    "Man darf einem Bewerber bis zu 3 Stimmen geben",
+    "Kommunalwahl in Bayern"
+   ],
+   [
+    "Erst- und Zweitstimme zählen zusammen für die Sitzverteilung",
+    "Landtagswahl in Bayern"
+   ],
+   [
+    "Fest 630 Sitze, keine Überhang- und Ausgleichsmandate",
+    "Bundestagswahl"
+   ],
+   [
+    "Amtszeit 6 Jahre, keine Sperrklausel",
+    "Kommunalwahl in Bayern"
+   ],
+   [
+    "Wahlperiode 5 Jahre, 5-%-Hürde auf die Gesamtstimmen",
+    "Landtagswahl in Bayern"
+   ]
+  ],
+  "ablenker": [
+   "Europawahl"
+  ],
+  "explain": "Kommunalwahl Bayern: Kumulieren (bis 3 Stimmen) und Panaschieren, 6 Jahre, keine Sperrklausel, auch EU-Bürger wählen mit. Landtagswahl Bayern: Gesamtstimmen aus Erst- und Zweitstimme, 5-%-Hürde, 5 Jahre. Bundestagswahl: nur die Zweitstimme verteilt die Sitze, fest 630 Sitze seit der Reform 2023, Wahlperiode 4 Jahre.",
+  "src": "FW / Netz: bpb, Bundestag"
+ },
+ {
+  "id": "ca4ce7103853",
+  "cat": "WiSo",
+  "situation": "wiso-betrieb",
+  "nr": 18,
+  "level": 3,
+  "typ": "mc",
+  "pkt": 4,
+  "q": "Im Abschwung klagen viele Gemeinden über Löcher im Haushalt. Welche Steuer ist für Gemeinden die wichtigste eigene Einnahme und schwankt stark mit der Konjunktur?",
+  "opts": [
+   "Die Grundsteuer, weil sie bei jedem Abschwung neu auf die Hausbesitzer umgelegt wird",
+   "Die Kfz-Steuer, weil sie an die Zahl der in der Stadt verkauften Neuwagen gekoppelt ist",
+   "Die Gewerbesteuer, weil sie vom Ertrag der Betriebe in der Gemeinde abhängt",
+   "Die Umsatzsteuer, weil die Gemeinde ihren Satz selbst festlegt und sie vollständig behält"
+  ],
+  "correct": 2,
+  "explain": "Die Gewerbesteuer hängt vom Gewerbeertrag der Betriebe ab; den Hebesatz legt die Gemeinde selbst fest. Im Abschwung sinken die Gewinne und damit die Einnahmen stark. Die Grundsteuer ist dagegen stabil, die Kfz-Steuer steht dem Bund zu, von der Umsatzsteuer bekommen die Gemeinden nur einen kleinen Anteil zu einem bundesweit festen Satz. Folge: Gemeinden sparen im Abschwung oft bei freiwilligen Aufgaben – das wirkt prozyklisch.",
+  "src": "FW"
+ },
+ {
+  "id": "d43f4ce7061f",
+  "cat": "WiSo",
+  "level": 1,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Ordnen Sie den Funktionen des Tarifvertrags die passende Beschreibung zu.",
+  "paare": [
+   [
+    "Schutzfunktion",
+    "Der einzelne Arbeitnehmer wird vor einseitig diktierten, schlechten Arbeitsbedingungen geschützt"
+   ],
+   [
+    "Ordnungsfunktion",
+    "Einheitliche Regeln für viele Betriebe erleichtern Kalkulation und Verwaltung"
+   ],
+   [
+    "Friedensfunktion",
+    "Während der Laufzeit sind Streiks und Aussperrungen über geregelte Inhalte ausgeschlossen"
+   ],
+   [
+    "Verteilungsfunktion",
+    "Die Beschäftigten werden am wirtschaftlichen Erfolg und am Produktivitätsfortschritt beteiligt"
+   ]
+  ],
+  "ablenker": [
+   "Der Staat legt über den Tarifvertrag die Steuersätze fest"
+  ],
+  "explain": "Allein wäre der einzelne Arbeitnehmer dem Arbeitgeber meist unterlegen – der Tarifvertrag schützt ihn. Für die Betriebe schafft er gleiche Wettbewerbsbedingungen und Planungssicherheit, für beide Seiten Ruhe während der Laufzeit. Über Lohnerhöhungen werden die Beschäftigten am Erfolg beteiligt.",
+  "src": "FW"
+ },
+ {
+  "id": "b040df14d4f4",
+  "cat": "WiSo",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Ein Manteltarifvertrag ist abgelaufen, ein neuer ist noch nicht abgeschlossen. Was gilt bis dahin für die bestehenden Arbeitsverhältnisse?",
+  "opts": [
+   "Es gilt nur noch das Gesetz, also z. B. 24 Werktage Urlaub, bis ein neuer Tarifvertrag in Kraft tritt",
+   "Die bisherigen Regelungen gelten weiter (Nachwirkung), bis sie durch eine neue Abmachung ersetzt werden",
+   "Der Arbeitgeber darf die Arbeitsbedingungen bis zum neuen Abschluss einseitig per Aushang festlegen",
+   "Alle Arbeitsverhältnisse ruhen ohne Lohn, bis sich die Tarifpartner auf einen neuen Vertrag geeinigt haben"
+  ],
+  "correct": 1,
+  "explain": "Nach § 4 Abs. 5 Tarifvertragsgesetz wirken die Regelungen eines abgelaufenen Tarifvertrags nach, bis sie durch eine andere Abmachung (neuer Tarifvertrag, Betriebsvereinbarung oder Arbeitsvertrag) ersetzt werden. Es entsteht also keine Lücke. Die Friedenspflicht endet aber mit dem Ablauf.",
+  "src": "FW (TVG § 4 Abs. 5)"
+ },
+ {
+  "id": "c80e4a1d3d7e",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Der Entgelttarifvertrag im bayerischen Kfz-Handwerk läuft laut Abschluss 2025 bis Ende Mai 2027. Was ändert sich danach?",
+  "opts": [
+   "Die Löhne fallen automatisch auf den gesetzlichen Mindestlohn zurück, bis ein neuer Vertrag gilt",
+   "Der Vertrag verlängert sich automatisch um zwei Jahre, neue Verhandlungen sind erst 2029 möglich",
+   "Die Handwerkskammer legt die Löhne fest, bis sich die Tarifpartner wieder geeinigt haben",
+   "Die Friedenspflicht für die Entgelte endet; die IG Metall darf dann zu Warnstreiks aufrufen, um Druck zu machen"
+  ],
+  "correct": 3,
+  "explain": "Mit dem Ende der Laufzeit endet die Friedenspflicht – Warnstreiks während der neuen Verhandlungen sind dann zulässig. Die bisherigen Entgelte gelten weiter (Nachwirkung), sie fallen nicht auf den Mindestlohn zurück. Die Handwerkskammer verhandelt keine Löhne.",
+  "src": "Netz: IG Metall / DGB-Tarifmeldung Kfz-Handwerk 2025"
+ },
+ {
+  "id": "f61913bcf04a",
+  "cat": "WiSo",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Eine Auszubildende im bayerischen Kfz-Handwerk bekam vor Juli 2025 eine Ausbildungsvergütung von 1.000 € (Beispielwert). Laut Tarifabschluss 2025 stieg sie ab Juli 2025 um 80 € und ab August 2026 um weitere 3,3 %. Wie hoch ist sie ab August 2026?",
+  "opts": [
+   "1.113,00 €",
+   "1.115,64 €",
+   "1.033,00 €",
+   "1.080,00 €"
+  ],
+  "correct": 1,
+  "explain": "Stufe 1: 1.000 € + 80 € = 1.080 €. Stufe 2: 1.080 € × 1,033 = 1.115,64 €. Wer zuerst 3,3 % auf 1.000 € rechnet und dann 80 € addiert, kommt auf 1.113 € – die Prozentstufe gilt aber für den bereits erhöhten Betrag.",
+  "src": "Netz: IG Metall / DGB-Tarifmeldung Kfz-Handwerk 2025"
+ },
+ {
+  "id": "50d11234cc81",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Der gesetzliche Mindestlohn beträgt 2026 13,90 € pro Stunde und steigt zum 01.01.2027 auf 14,60 €. Wie kommt seine Höhe zustande?",
+  "opts": [
+   "Die Mindestlohnkommission (Arbeitgeber- und Gewerkschaftsseite) schlägt sie vor, die Bundesregierung setzt sie per Verordnung fest",
+   "Die IG Metall legt sie in ihrem Tarifvertrag fest, danach gilt sie automatisch für alle Branchen in Deutschland",
+   "Der Bundestag beschließt jedes Jahr ein neues Mindestlohngesetz mit dem Betrag, den die Bundesagentur für Arbeit vorschlägt",
+   "Jedes Bundesland legt einen eigenen Mindestlohn fest; Bayern orientiert sich dabei am Tariflohn im Handwerk"
+  ],
+  "correct": 0,
+  "explain": "Nach dem Mindestlohngesetz beschließt die Mindestlohnkommission (stimmberechtigt: Vertreter der Arbeitgeber und der Gewerkschaften, dazu beratende Wissenschaftler) die Anpassung, die Bundesregierung macht sie per Rechtsverordnung verbindlich. Der Mindestlohn ist eine Untergrenze; Tariflöhne liegen meist darüber. Mit ihm steigt auch die Minijob-Grenze.",
+  "src": "Netz: Mindestlohnkommission, Beschluss 06/2025"
+ },
+ {
+  "id": "0143c7c56ba7",
+  "cat": "WiSo",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Ein Arbeitgeber sagt im Vorstellungsgespräch, er stelle nur Bewerber ein, die nicht in einer Gewerkschaft sind. Wie ist das zu beurteilen?",
+  "opts": [
+   "Zulässig: In Handwerksbetrieben mit weniger als 100 Beschäftigten gilt die Koalitionsfreiheit nicht",
+   "Zulässig: Der Arbeitgeber darf sich seine Mitarbeiter frei aussuchen, auch nach der Gewerkschaftszugehörigkeit",
+   "Unzulässig: Art. 9 Abs. 3 GG schützt das Recht, einer Gewerkschaft beizutreten; Abreden dagegen sind nichtig",
+   "Unzulässig nur dann, wenn der Betrieb Mitglied im Arbeitgeberverband ist; sonst ist es ausdrücklich erlaubt"
+  ],
+  "correct": 2,
+  "explain": "Art. 9 Abs. 3 Grundgesetz: Abreden, die die Koalitionsfreiheit einschränken oder behindern, sind nichtig, darauf gerichtete Maßnahmen rechtswidrig – das gilt ausdrücklich auch zwischen Arbeitgeber und Arbeitnehmer. Umgekehrt darf auch niemand zum Beitritt gezwungen werden (negative Koalitionsfreiheit).",
+  "src": "FW (GG Art. 9 Abs. 3)"
+ },
+ {
+  "id": "3c54346cccb0",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Bringen Sie die Rechtsgrundlagen eines Arbeitsverhältnisses in die richtige Rangfolge – von der höchsten zur niedrigsten.",
+  "schritte": [
+   "Grundgesetz (z. B. Koalitionsfreiheit)",
+   "Gesetze (z. B. Bundesurlaubsgesetz, Arbeitszeitgesetz)",
+   "Tarifvertrag",
+   "Betriebsvereinbarung",
+   "Arbeitsvertrag"
+  ],
+  "explain": "Eine niedrigere Stufe darf die höhere nicht zum Nachteil des Arbeitnehmers unterschreiten. Abweichungen zugunsten des Arbeitnehmers sind erlaubt (Günstigkeitsprinzip). Die Betriebsvereinbarung steht unter dem Tarifvertrag (Tarifvorbehalt).",
+  "src": "FW"
+ },
+ {
+  "id": "d234c3b34d5d",
+  "cat": "WiSo",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Ein Tarifvertrag enthält eine Öffnungsklausel. Was bedeutet das?",
+  "opts": [
+   "Der Tarifvertrag kann jederzeit von jeder Seite ohne Frist gekündigt werden, wenn sich die Wirtschaftslage ändert",
+   "Der Tarifvertrag gilt auch für Betriebe anderer Branchen, die ihm freiwillig beitreten möchten",
+   "Gewerkschaftsmitglieder dürfen auch während der Laufzeit streiken, wenn ihr Betrieb besonders hohe Gewinne macht",
+   "Betriebe dürfen in den genannten Fällen per Betriebsvereinbarung vom Tarif abweichen, z. B. um Arbeitsplätze zu sichern"
+  ],
+  "correct": 3,
+  "explain": "§ 4 Abs. 3 TVG erlaubt Abweichungen vom Tarif nur, wenn der Tarifvertrag sie gestattet (Öffnungsklausel) oder wenn sie für den Arbeitnehmer günstiger sind. Öffnungsklauseln erlauben z. B. in einer Krise, eine Tariferhöhung zu verschieben oder die Arbeitszeit befristet zu senken. Die Friedenspflicht bleibt davon unberührt.",
+  "src": "FW (TVG § 4 Abs. 3)"
+ },
+ {
+  "id": "23072ae1c61f",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "wiso-lohnabrechnung.svg",
+  "q": "Die Abbildung zeigt eine vereinfachte Entgeltabrechnung für Oktober 2026. Wie hoch ist der Auszahlungsbetrag in Zeile H?",
+  "opts": [
+   "2.504,00 €",
+   "2.832,80 €",
+   "2.136,80 €",
+   "2.156,00 €"
+  ],
+  "correct": 2,
+  "explain": "Steuern: B + C = 340,00 € + 27,20 € = 367,20 €. Sozialversicherung (Arbeitnehmeranteil): D + E + F + G = 297,60 € + 280,00 € + 76,80 € + 41,60 € = 696,00 € (21,75 % von 3.200 €). Abzüge gesamt 1.063,20 € → Netto 3.200 € − 1.063,20 € = 2.136,80 €. 2.504 € bzw. 2.832,80 € entstehen, wenn man die Steuern bzw. die Sozialversicherung vergisst.",
+  "src": "Eigenes Diagramm (Beitragssätze 2026)"
+ },
+ {
+  "id": "711f2bff8f4b",
+  "cat": "WiSo",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "bild": "wiso-lohnabrechnung.svg",
+  "q": "Wie viel zahlt der Arbeitgeber zur Abrechnung in der Abbildung zusätzlich zum Bruttoentgelt als Arbeitgeberanteil für die Zweige in den Zeilen D bis G?",
+  "opts": [
+   "696,00 €",
+   "1.372,80 €",
+   "1.063,20 €",
+   "676,80 €"
+  ],
+  "correct": 3,
+  "explain": "Renten-, Kranken- (einschließlich Zusatzbeitrag), Pflege- und Arbeitslosenversicherung werden je zur Hälfte getragen – aber den Kinderlosenzuschlag von 0,6 % (19,20 €) zahlt der Arbeitnehmer allein. Arbeitgeberanteil: 297,60 € + 280,00 € + 57,60 € + 41,60 € = 676,80 €. Steuern zahlt der Arbeitgeber nicht, er führt sie nur ab. Dazu kommen für ihn noch die Unfallversicherung (Berufsgenossenschaft) und Umlagen.",
+  "src": "Eigenes Diagramm (Beitragssätze 2026)"
+ },
+ {
+  "id": "c3d62fee0bcb",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "bild": "wiso-lohnabrechnung.svg",
+  "q": "Ordnen Sie den Zeilen der Entgeltabrechnung in der Abbildung zu, wem das Geld letztlich zusteht.",
+  "paare": [
+   [
+    "Zeile B (Lohnsteuer)",
+    "Bund, Ländern und Gemeinden – eingezogen über das Finanzamt"
+   ],
+   [
+    "Zeile C (Kirchensteuer)",
+    "Der Religionsgemeinschaft – eingezogen über das Finanzamt"
+   ],
+   [
+    "Zeile D (Rentenversicherung)",
+    "Deutsche Rentenversicherung"
+   ],
+   [
+    "Zeile G (Arbeitslosenversicherung)",
+    "Bundesagentur für Arbeit"
+   ]
+  ],
+  "ablenker": [
+   "Berufsgenossenschaft",
+   "Handwerkskammer"
+  ],
+  "explain": "Lohn- und Kirchensteuer führt der Arbeitgeber an das Finanzamt ab. Die Sozialversicherungsbeiträge D bis G zahlt er als Gesamtsozialversicherungsbeitrag an die Krankenkasse des Arbeitnehmers (Einzugsstelle), die sie an Rentenversicherung, Bundesagentur und Pflegekasse weiterleitet. Die Berufsgenossenschaft bekommt nur den Unfallversicherungsbeitrag, den der Arbeitgeber allein zahlt – er taucht in der Abrechnung des Arbeitnehmers nicht auf.",
+  "src": "Eigenes Diagramm / FW"
+ },
+ {
+  "id": "e644efac6307",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "wiso-lohnabrechnung.svg",
+  "q": "Der Arbeitnehmer aus der Abbildung bekommt ein Kind. Welcher Sozialversicherungsbeitrag ändert sich dadurch, und wie?",
+  "opts": [
+   "Zeile F sinkt auf 67,20 €, weil nur der Arbeitgeberanteil am Zuschlag wegfällt",
+   "Zeile F sinkt auf 57,60 €, weil der Kinderlosenzuschlag von 0,6 % wegfällt",
+   "Zeile E sinkt auf 233,60 €, weil Eltern keinen Zusatzbeitrag zur Krankenkasse zahlen",
+   "Zeile D sinkt auf 281,60 €, weil Eltern einen geringeren Rentenbeitrag zahlen"
+  ],
+  "correct": 1,
+  "explain": "Der Zuschlag von 0,6 % in der Pflegeversicherung gilt nur für Kinderlose ab 23 Jahren und wird vom Arbeitnehmer allein getragen. Mit Kind zahlt er nur noch 1,8 %: 3.200 € × 1,8 % = 57,60 €. Ab dem zweiten Kind unter 25 sinkt der Beitrag weiter. Renten- und Krankenversicherungsbeiträge hängen nicht von Kindern ab.",
+  "src": "Eigenes Diagramm (Beitragssätze 2026)"
+ },
+ {
+  "id": "d747795c283a",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Sie sind wegen eines Bandscheibenvorfalls (kein Arbeitsunfall, keine Berufskrankheit) zehn Wochen arbeitsunfähig. Wer zahlt was?",
+  "opts": [
+   "Der Arbeitgeber zahlt 6 Wochen den vollen Lohn, danach zahlt die Krankenkasse Krankengeld (70 % vom Brutto, höchstens 90 % vom Netto)",
+   "Die Krankenkasse zahlt vom ersten Tag an Krankengeld in Höhe von 70 % des Bruttolohns, der Arbeitgeber zahlt gar nichts",
+   "Der Arbeitgeber zahlt 6 Wochen den vollen Lohn, danach zahlt die Berufsgenossenschaft Verletztengeld bis zur Genesung",
+   "Der Arbeitgeber zahlt alle 10 Wochen den vollen Lohn weiter, weil die Erkrankung durch die Arbeit in der Werkstatt entstanden sein könnte"
+  ],
+  "correct": 0,
+  "explain": "Entgeltfortzahlungsgesetz: Der Arbeitgeber zahlt bei Krankheit bis zu 6 Wochen den vollen Lohn. Danach zahlt die Krankenkasse Krankengeld: 70 % des Bruttoentgelts, höchstens 90 % des Nettoentgelts, für dieselbe Krankheit bis zu 78 Wochen innerhalb von 3 Jahren. Verletztengeld der Berufsgenossenschaft gibt es nur nach Arbeitsunfall oder Berufskrankheit.",
+  "src": "FW (EFZG § 3, SGB V §§ 47, 48)"
+ },
+ {
+  "id": "6e267a795ea4",
+  "cat": "WiSo",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Zum 01.07.2026 stiegen die gesetzlichen Renten um 4,24 %. Ihr Großvater bekam vorher 1.250 € Rente (brutto). Wie hoch ist sie danach?",
+  "opts": [
+   "1.255,30 €",
+   "1.292,40 €",
+   "1.303,00 €",
+   "1.197,00 €"
+  ],
+  "correct": 2,
+  "explain": "1.250 € × 4,24 % = 53 € → 1.250 € + 53 € = 1.303 €. Die Rentenanpassung folgt der Lohnentwicklung; die Haltelinie sorgt dafür, dass das Rentenniveau bis 2031 nicht unter 48 % sinkt. Der aktuelle Rentenwert stieg dabei von 40,79 € auf 42,52 € je Entgeltpunkt.",
+  "src": "Netz: Deutsche Rentenversicherung, Rentenanpassung 2026"
+ },
+ {
+  "id": "f0cd0a0d78f3",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 4,
+  "q": "Neben der Sozialversicherung gibt es private Versicherungen (Individualversicherungen). Ordnen Sie dem Schaden die Versicherung zu, die ihn übernimmt.",
+  "paare": [
+   [
+    "Sie beschädigen mit Ihrem Auto beim Ausparken ein fremdes Fahrzeug",
+    "Kfz-Haftpflichtversicherung (Pflichtversicherung)"
+   ],
+   [
+    "Sie stoßen in der Wohnung eines Freundes versehentlich dessen Fernseher um",
+    "Private Haftpflichtversicherung"
+   ],
+   [
+    "Sie können wegen eines Rückenleidens dauerhaft nicht mehr als Mechatroniker arbeiten",
+    "Berufsunfähigkeitsversicherung"
+   ],
+   [
+    "In Ihre Wohnung wird eingebrochen und Ihr Laptop gestohlen",
+    "Hausratversicherung"
+   ]
+  ],
+  "ablenker": [
+   "Gesetzliche Unfallversicherung",
+   "Teilkaskoversicherung"
+  ],
+  "explain": "Individualversicherungen sind freiwillig – außer der Kfz-Haftpflicht, die für jedes zugelassene Fahrzeug Pflicht ist. Der Beitrag richtet sich nach dem Risiko, nicht nach dem Einkommen. Die gesetzliche Unfallversicherung zahlt nur bei Arbeits- und Wegeunfällen; die Teilkasko ersetzt Schäden am eigenen Auto (z. B. Diebstahl des Fahrzeugs).",
+  "src": "FW (Lehrplan Politik und Gesellschaft 10.3.2)"
+ },
+ {
+  "id": "d829a9dc5cf6",
+  "cat": "WiSo",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Wie kommt die Bundeskanzlerin bzw. der Bundeskanzler ins Amt?",
+  "opts": [
+   "Das Volk wählt sie bzw. ihn bei der Bundestagswahl direkt mit einer eigenen dritten Stimme",
+   "Der Bundespräsident ernennt die Vorsitzende bzw. den Vorsitzenden der stärksten Partei ohne Wahl",
+   "Der Bundestag wählt sie bzw. ihn auf Vorschlag des Bundespräsidenten mit der Mehrheit seiner Mitglieder",
+   "Die Bundesversammlung wählt sie bzw. ihn gemeinsam mit dem Bundespräsidenten für 5 Jahre"
+  ],
+  "correct": 2,
+  "explain": "Art. 63 GG: Der Bundestag wählt den Kanzler ohne Aussprache auf Vorschlag des Bundespräsidenten; nötig ist die Mehrheit der Mitglieder (Kanzlermehrheit). Die Bürger bestimmen den Kanzler also nur indirekt über die Bundestagswahl. Die Bundesversammlung wählt nur den Bundespräsidenten.",
+  "src": "FW (GG Art. 63)"
+ },
+ {
+  "id": "8b46a3111245",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "zuordnung",
+  "pkt": 5,
+  "q": "Ordnen Sie zu, wer das jeweilige Amt wählt.",
+  "paare": [
+   [
+    "Bundespräsident",
+    "Bundesversammlung"
+   ],
+   [
+    "Bundeskanzler",
+    "Bundestag"
+   ],
+   [
+    "Bayerischer Ministerpräsident",
+    "Bayerischer Landtag"
+   ],
+   [
+    "Erster Bürgermeister einer Gemeinde",
+    "Die wahlberechtigten Bürger der Gemeinde direkt"
+   ],
+   [
+    "Landrat",
+    "Die wahlberechtigten Bürger des Landkreises direkt"
+   ]
+  ],
+  "ablenker": [
+   "Bundesrat"
+  ],
+  "explain": "Auf Bundes- und Landesebene werden Regierungschefs vom Parlament gewählt (parlamentarisches Regierungssystem). In Bayern werden Bürgermeister und Landräte dagegen direkt von den Bürgern gewählt, für 6 Jahre. Die Bundesversammlung besteht aus den Bundestagsabgeordneten und ebenso vielen Vertretern der Länder.",
+  "src": "FW"
+ },
+ {
+  "id": "2b1333250db3",
+  "cat": "WiSo",
+  "level": 1,
+  "typ": "reihenfolge",
+  "pkt": 4,
+  "q": "Sie sind am Wahltag auf Montage und wählen per Brief. Bringen Sie die Schritte der Briefwahl in die richtige Reihenfolge.",
+  "schritte": [
+   "Wahlbenachrichtigung erhalten: Sie stehen im Wählerverzeichnis",
+   "Wahlschein mit Briefwahlunterlagen bei der Gemeinde beantragen",
+   "Unterlagen (Wahlschein, Stimmzettel, Umschläge) per Post oder im Rathaus erhalten",
+   "Stimmzettel allein ausfüllen, in den Stimmzettelumschlag stecken und die Versicherung an Eides statt unterschreiben",
+   "Wahlbrief so rechtzeitig abschicken, dass er spätestens am Wahltag um 18 Uhr bei der angegebenen Stelle ist",
+   "Am Wahltag prüft der Briefwahlvorstand die Wahlbriefe und zählt die Stimmen aus"
+  ],
+  "explain": "Die Briefwahl muss beantragt werden, ein Grund ist nicht nötig. Mit der Versicherung an Eides statt auf dem Wahlschein bestätigen Sie, dass Sie den Stimmzettel persönlich (geheim) ausgefüllt haben. Kommt der Wahlbrief nach 18 Uhr an, zählt die Stimme nicht.",
+  "src": "FW"
+ },
+ {
+  "id": "11fa11b7c9fc",
+  "cat": "WiSo",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 3,
+  "q": "Bei der Gemeinderatswahl in Bayern sind 20 Sitze zu vergeben, jede Liste hat 20 Bewerber. Sie kreuzen Liste A an und geben zusätzlich zwei Bewerbern der Liste B je 3 Stimmen. Was geschieht mit Ihren übrigen Stimmen?",
+  "opts": [
+   "Der Stimmzettel ist ungültig, weil man ein Listenkreuz nicht mit Einzelstimmen kombinieren darf",
+   "Die übrigen 14 Stimmen verfallen, weil das Listenkreuz neben Einzelstimmen nicht mehr zählt",
+   "Die übrigen 14 Stimmen erhalten die Bewerber der Liste A der Reihe nach von oben, je eine Stimme",
+   "Alle 20 Stimmen gehen an Liste A, die Einzelstimmen für Liste B werden nicht gewertet"
+  ],
+  "correct": 2,
+  "explain": "Listenkreuz und Einzelstimmen dürfen kombiniert werden. Die Einzelstimmen (2 × 3 = 6) zählen zuerst; die restlichen 20 − 6 = 14 Stimmen gehen an die Bewerber der angekreuzten Liste A in der Reihenfolge des Stimmzettels, je eine Stimme. Ungültig wird der Stimmzettel z. B., wenn man mehr Stimmen vergibt, als Sitze zu vergeben sind.",
+  "src": "Netz: Gemeinde-Infoblätter Kommunalwahl Bayern 2026"
+ },
+ {
+  "id": "e1224a98bbcb",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Welche Aufgaben hat der Erste Bürgermeister in einer bayerischen Gemeinde?",
+  "opts": [
+   "Er beschließt allein den Haushalt und die Bebauungspläne der Gemeinde, der Gemeinderat darf dazu nur beraten",
+   "Er leitet die Sitzungen des Gemeinderats, vollzieht dessen Beschlüsse und vertritt die Gemeinde nach außen",
+   "Er wird vom Landrat ernannt und überwacht als Beamter des Freistaats die Arbeit des Gemeinderats",
+   "Er ist nur Ehrenvorsitzender ohne Stimmrecht und darf an den Sitzungen des Gemeinderats nur zuhören"
+  ],
+  "correct": 1,
+  "explain": "Nach der Bayerischen Gemeindeordnung sind Gemeinderat und Erster Bürgermeister die Hauptorgane. Der Gemeinderat beschließt (z. B. Haushalt, Bebauungspläne). Der direkt gewählte Bürgermeister leitet die Sitzungen mit eigenem Stimmrecht, führt die Beschlüsse aus, erledigt die laufenden Geschäfte, leitet die Verwaltung und vertritt die Gemeinde nach außen.",
+  "src": "FW (Gemeindeordnung Bayern)"
+ },
+ {
+  "id": "81fdd2543bca",
+  "cat": "WiSo",
+  "level": 3,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Welche Aussage beschreibt das Subsidiaritätsprinzip im Staatsaufbau (Gemeinde – Land – Bund – EU) richtig?",
+  "opts": [
+   "Aufgaben soll möglichst der Bund erledigen, weil einheitliche Regeln für alle Bürger gerechter sind als örtliche Lösungen",
+   "Wer einer Gemeinde eine Aufgabe überträgt, muss ihr auch das nötige Geld dafür zur Verfügung stellen",
+   "Gemeinden dürfen nur Aufgaben übernehmen, die ihnen der Freistaat vorher ausdrücklich per Gesetz zugewiesen hat",
+   "Aufgaben soll möglichst die kleinste, bürgernahe Ebene erledigen; die höhere Ebene hilft erst, wenn die untere überfordert ist"
+  ],
+  "correct": 3,
+  "explain": "Subsidiarität heißt: Was die kleinere Einheit (Familie, Gemeinde, Land) selbst leisten kann, soll sie selbst regeln; die größere Einheit greift nur unterstützend ein. Das stärkt die kommunale Selbstverwaltung. „Wer bestellt, bezahlt“ ist dagegen das Konnexitätsprinzip.",
+  "src": "FW (Lehrplan Politik und Gesellschaft 11.2.1)"
+ },
+ {
+  "id": "8bb14d25cd35",
+  "cat": "WiSo",
+  "level": 1,
+  "typ": "mc",
+  "pkt": 2,
+  "bild": "wiso-konjunkturzyklus.svg",
+  "q": "Was zeigen in der Abbildung die gestrichelte Linie und die Punkte A und B?",
+  "opts": [
+   "Gestrichelt: Inflationsrate; A: Beginn der Hochkonjunktur; B: Beginn des Aufschwungs",
+   "Gestrichelt: Arbeitslosenquote; A: oberer Wendepunkt; B: unterer Wendepunkt",
+   "Gestrichelt: langfristiger Wachstumstrend; A: oberer Wendepunkt; B: unterer Wendepunkt",
+   "Gestrichelt: langfristiger Wachstumstrend; A: unterer Wendepunkt; B: oberer Wendepunkt"
+  ],
+  "correct": 3,
+  "explain": "Die Trendlinie zeigt das durchschnittliche, langfristige Wachstum. Die tatsächliche Entwicklung schwankt darum. A ist der Tiefpunkt (unterer Wendepunkt), ab dem es wieder aufwärts geht; B ist der Höhepunkt (oberer Wendepunkt), ab dem der Abschwung beginnt.",
+  "src": "Eigenes Diagramm"
+ },
+ {
+  "id": "a53c940ae3f0",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Wie ermittelt das Statistische Bundesamt die Inflationsrate?",
+  "opts": [
+   "Es vergleicht die Preise eines festen Warenkorbs typischer Waren und Dienstleistungen mit dem Vorjahreszeitraum",
+   "Es teilt die umlaufende Bargeldmenge durch die Zahl der Einwohner und vergleicht das Ergebnis mit dem Vorjahr",
+   "Es erfasst nur die Preise für Kraftstoff, Strom und Heizöl, weil diese für alle Haushalte am wichtigsten sind",
+   "Es übernimmt den Leitzins der EZB, weil die Inflationsrate per Definition immer genau dem Leitzins entspricht"
+  ],
+  "correct": 0,
+  "explain": "Grundlage ist der Verbraucherpreisindex (VPI): Mehrere hundert Waren und Dienstleistungen werden nach ihrem Anteil an den Ausgaben der Haushalte gewichtet (Wägungsschema). Die Inflationsrate ist die Veränderung des VPI gegenüber dem Vorjahresmonat bzw. Vorjahr. Die „gefühlte“ Inflation kann abweichen – Pendler spüren z. B. Kraftstoffpreise stärker.",
+  "src": "FW / Netz: Destatis"
+ },
+ {
+  "id": "833e8b2aad4b",
+  "cat": "WiSo",
+  "level": 2,
+  "typ": "mc",
+  "pkt": 2,
+  "q": "Die Bundesregierung hat im Oktober 2026 ihre Herbstprojektion vorgelegt. Welche Erwartung für das reale BIP 2026 nennt sie?",
+  "opts": [
+   "Einen Rückgang um etwa 1,3 %, das dritte Minusjahr in Folge",
+   "Ein Wachstum von etwa 1,3 %, nach nur 0,2 % im Jahr 2025",
+   "Ein Wachstum von etwa 4 %, so stark wie seit 1990 nicht mehr",
+   "Eine Stagnation bei 0,0 %, weil die Inflation alles aufzehrt"
+  ],
+  "correct": 1,
+  "explain": "Laut Herbstprojektion vom 08.10.2026 soll das reale BIP 2026 um etwa 1,3 % wachsen – deutlich mehr als im Frühjahr erwartet und nach +0,2 % im Jahr 2025. Eine Projektion ist eine Prognose, kein endgültiges Ergebnis; die Ist-Zahl für 2026 veröffentlicht das Statistische Bundesamt im Januar 2027.",
+  "src": "Netz: Bundesregierung, Herbstprojektion 2026 (08.10.2026)"
  }
 ];
 export const SITUATIONEN = {
@@ -5409,9 +11305,19 @@ export const SITUATIONEN = {
   "text": "Opel Astra K, Baujahr 2018, Front-, Seiten- und Kopfairbags, Gurtstraffer vorn.\nKunde beanstandet: „Seit ihr den Fahrersitz für die Teppichreinigung ausgebaut habt, leuchtet die Airbag-Leuchte.“\nFehlerspeicher: Zündkreis Seitenairbag Fahrer – Widerstand zu hoch.",
   "cat": "Airbag"
  },
+ "airbag-wickelfeder": {
+  "titel": "Kundenauftrag: Airbag-Leuchte an und Hupe ohne Funktion nach Lenkradtausch",
+  "text": "Skoda Octavia III Combi, Baujahr 2016, Multifunktionslenkrad, Fahrerairbag zweistufig, Beifahrer-, Seiten- und Kopfairbags, Gurtstraffer vorn.\nKunde beanstandet: „Seit eine andere Werkstatt mein Lenkrad gegen ein Original-Lederlenkrad getauscht hat, leuchtet die Airbag-Leuchte, die Hupe geht nicht und die Radiotasten am Lenkrad sind ohne Funktion.“\nFehlerspeicher: Zündkreis Fahrerairbag Stufe 1 – Widerstand zu hoch; Zündkreis Fahrerairbag Stufe 2 – Widerstand zu hoch.\nSchaltplan-Auszug: siehe Bild (Pinbelegung als Beispiel).",
+  "cat": "Airbag"
+ },
  "epb-golf": {
   "titel": "Kundenauftrag: Bremsen hinten und Bremsflüssigkeit",
   "text": "VW Golf 8 1.5 TSI, Baujahr 2021, elektrische Parkbremse mit Stellmotoren am Bremssattel, ESP.\nKunde beanstandet: „Hinten schleift es beim Bremsen, und die Inspektion steht an.“\nBei der Prüfung: Bremsbeläge hinten 2 mm, Bremsflüssigkeit 3,8 % Wasser.",
+  "cat": "Bremse"
+ },
+ "esp-focus": {
+  "titel": "Kundenauftrag: ABS- und ESP-Leuchte nach Radlagerwechsel",
+  "text": "Ford Focus 1.5 EcoBlue, Baujahr 2019, ABS/ESP mit aktiven Raddrehzahlsensoren (Magnetring im Radlager).\nKunde beanstandet: „Seit eine andere Werkstatt vor zwei Wochen das Radlager vorn rechts erneuert hat, gehen nach ein paar Kilometern die ABS- und die ESP-Leuchte an.“",
   "cat": "Bremse"
  },
  "cr-octavia": {
@@ -5419,14 +11325,29 @@ export const SITUATIONEN = {
   "text": "Skoda Octavia 2.0 TDI, Baujahr 2020, Common-Rail mit Magnetventil-Injektoren, Zweisteller-Regelung, SCR-Katalysator.\nKunde beanstandet: „Der Motor ruckelt im Leerlauf, nimmt schlecht Gas an und die Motorkontrollleuchte ist an.“",
   "cat": "Diesel"
  },
+ "scr-peugeot": {
+  "titel": "Kundenauftrag: AdBlue-Störung mit drohender Startsperre",
+  "text": "Peugeot 308 1.5 BlueHDi, Baujahr 2021, Common-Rail-Diesel mit Oxi-Kat, Partikelfilter und SCR-System (AdBlue); 64.000 km, überwiegend Kurzstrecke. Anlage und Schaltplan vereinfacht, Pins und Sicherungen sind Beispiele.\nKunde beanstandet: „Im Display steht sinngemäß ‚AdBlue-Störung – Start in 600 km nicht möglich‘. Ich habe letzte Woche AdBlue nachgefüllt, die Meldung ist trotzdem geblieben.“",
+  "cat": "Diesel"
+ },
  "klima-bmw": {
   "titel": "Kundenauftrag: Klimaanlage kühlt kaum",
   "text": "BMW 320d, Baujahr 2019, Kältemittel R1234yf, extern geregelter Verdichter.\nKunde beanstandet: „Die Klimaanlage bläst nur noch lauwarm, und manchmal riecht es muffig.“\nAußentemperatur 25 °C.",
   "cat": "Klima"
  },
+ "klima-skoda": {
+  "titel": "Kundenauftrag: Klimaanlage bläst nur warm (Elektrik)",
+  "text": "Škoda Octavia Combi 1.5 TSI, Baujahr 2020, Kältemittel R1234yf, extern geregelter Verdichter ohne Magnetkupplung, Klimaautomatik.\nKunde beanstandet: „Seit ein paar Tagen kommt nur noch warme Luft aus den Düsen, obwohl AC eingeschaltet ist.“\nAußentemperatur 20 °C. Schaltplan-Auszug, Messwerte und Oszillogramm stehen in den Aufgaben (Pinbelegung = Beispiel).",
+  "cat": "Klima"
+ },
  "wiso-geselle": {
   "titel": "Situation: Start als Geselle",
   "text": "Du hast deine Gesellenprüfung bestanden und wirst von deinem Ausbildungsbetrieb, einem Autohaus in Bayreuth (Mitglied der Kfz-Innung, tarifgebunden), als Kfz-Mechatroniker übernommen. Im März 2026 waren Kommunalwahlen in Bayern.",
+  "cat": "WiSo"
+ },
+ "wiso-betrieb": {
+  "titel": "Situation: Betriebsversammlung im Autohaus",
+  "text": "Sie arbeiten als Kfz-Mechatroniker in einem Autohaus mit Werkstatt in Kulmbach (60 Beschäftigte, tarifgebunden). Im Frühjahr 2026 wurde der Betriebsrat neu gewählt. Auf der Betriebsversammlung im Oktober 2026 berichtet die Geschäftsführung: Der Neuwagenverkauf ist schwach, die Werkstatt ist gut ausgelastet, Energie und Kraftstoff sind deutlich teurer geworden.\nIn der Pause diskutieren die Kollegen über Inflation, die nächste Landtagswahl und ein Volksbegehren.",
   "cat": "WiSo"
  }
 };

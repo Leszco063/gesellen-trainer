@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" font-family="Arial, sans-serif" font-size="15">
+  <title>CAN-Bus: Steuergeräte A1 bis A4 mit zwei Abschlusswiderständen 120 Ω, Diagnosebuchse X1, darunter Pegelbild CAN-High und CAN-Low</title>
+  <rect x="0" y="0" width="640" height="480" fill="#ffffff"/>
+
+  <!-- Busleitungen -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="100" y1="120" x2="540" y2="120"/>
+    <line x1="100" y1="170" x2="540" y2="170"/>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="140" y="113">CAN-High</text>
+    <text x="140" y="163">CAN-Low</text>
+  </g>
+
+  <!-- A1 mit Abschlusswiderstand -->
+  <rect x="15" y="85" width="115" height="120" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="22" y="104" fill="#1a1a1a">A1 Motor</text>
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="100" y1="120" x2="100" y2="128"/>
+    <rect x="92" y="128" width="16" height="34" fill="#ffffff"/>
+    <line x1="100" y1="162" x2="100" y2="170"/>
+  </g>
+  <text x="22" y="151" fill="#1a1a1a">120 Ω</text>
+
+  <!-- A4 mit Abschlusswiderstand -->
+  <rect x="510" y="85" width="115" height="120" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="517" y="104" fill="#1a1a1a">A4 Getriebe</text>
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="540" y1="120" x2="540" y2="128"/>
+    <rect x="532" y="128" width="16" height="34" fill="#ffffff"/>
+    <line x1="540" y1="162" x2="540" y2="170"/>
+  </g>
+  <text x="558" y="151" fill="#1a1a1a">120 Ω</text>
+
+  <!-- A2 und A3 über Stichleitungen -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <rect x="195" y="15" width="110" height="50" fill="#ffffff"/>
+    <rect x="345" y="15" width="110" height="50" fill="#ffffff"/>
+    <line x1="225" y1="65" x2="225" y2="120"/>
+    <line x1="275" y1="65" x2="275" y2="170"/>
+    <line x1="375" y1="65" x2="375" y2="120"/>
+    <line x1="425" y1="65" x2="425" y2="170"/>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="250" y="46" text-anchor="middle">A2 ESP</text>
+    <text x="400" y="46" text-anchor="middle">A3 Kombi</text>
+    <circle cx="100" cy="120" r="4"/><circle cx="100" cy="170" r="4"/>
+    <circle cx="540" cy="120" r="4"/><circle cx="540" cy="170" r="4"/>
+    <circle cx="225" cy="120" r="4"/><circle cx="275" cy="170" r="4"/>
+    <circle cx="375" cy="120" r="4"/><circle cx="425" cy="170" r="4"/>
+  </g>
+
+  <!-- Diagnosebuchse X1 -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="315" y1="120" x2="315" y2="205"/>
+    <line x1="345" y1="170" x2="345" y2="205"/>
+    <rect x="290" y="205" width="140" height="40" fill="#ffffff"/>
+  </g>
+  <g fill="#1a1a1a">
+    <circle cx="315" cy="120" r="4"/><circle cx="345" cy="170" r="4"/>
+    <text x="315" y="236" text-anchor="middle" font-size="15">6</text>
+    <text x="347" y="236" text-anchor="middle" font-size="15">14</text>
+    <text x="368" y="236">X1</text>
+  </g>
+  <g fill="#c0392b"><circle cx="315" cy="205" r="4"/><circle cx="345" cy="205" r="4"/></g>
+  <text x="440" y="232" fill="#c0392b">Messpunkte</text>
+
+  <!-- ===== Pegelbild ===== -->
+  <text x="20" y="276" fill="#1a1a1a">Pegel gegen Masse: 1 Kästchen = 0,5 V (senkrecht) / 2 µs (waagerecht)</text>
+  <!-- Raster: x 80..600 (13 × 40 px), y 290..450 (8 × 20 px) -->
+  <g stroke="#c8c8c8" stroke-width="1">
+    <path d="M120 290 V450 M160 290 V450 M200 290 V450 M240 290 V450 M280 290 V450 M320 290 V450 M360 290 V450 M400 290 V450 M440 290 V450 M480 290 V450 M520 290 V450 M560 290 V450 M600 290 V450"/>
+    <path d="M80 290 H600 M80 310 H600 M80 330 H600 M80 350 H600 M80 370 H600 M80 390 H600 M80 410 H600 M80 430 H600"/>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <line x1="80" y1="290" x2="80" y2="450"/>
+    <line x1="80" y1="450" x2="610" y2="450"/>
+  </g>
+  <g fill="#1a1a1a" text-anchor="end">
+    <text x="72" y="455">0 V</text>
+    <text x="72" y="415">1 V</text>
+    <text x="72" y="375">2 V</text>
+    <text x="72" y="335">3 V</text>
+    <text x="72" y="295">4 V</text>
+  </g>
+  <text x="612" y="470" fill="#1a1a1a" text-anchor="end">Zeit t</text>
+
+  <!-- CAN-High (durchgezogen): 2,5 V = y350, 3,5 V = y310 -->
+  <path d="M80 350 H160 V310 H240 V350 H280 V310 H320 V350 H400 V310 H440 V350 H600" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- CAN-Low (gestrichelt): 2,5 V = y350, 1,5 V = y390 -->
+  <path d="M80 352 H160 V390 H240 V352 H280 V390 H320 V352 H400 V390 H440 V352 H600" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-dasharray="7 4"/>
+
+  <!-- Legende -->
+  <g fill="#1a1a1a">
+    <line x1="470" y1="300" x2="500" y2="300" stroke="#1a1a1a" stroke-width="3"/>
+    <text x="506" y="305">CAN-High</text>
+    <line x1="470" y1="322" x2="500" y2="322" stroke="#1a1a1a" stroke-width="2.5" stroke-dasharray="7 4"/>
+    <text x="506" y="327">CAN-Low</text>
+  </g>
+</svg>

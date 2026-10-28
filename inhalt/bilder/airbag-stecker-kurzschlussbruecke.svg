@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" font-family="Arial, sans-serif" font-size="15">
+  <title>Airbag-Steckverbindung mit Kurzschlussbrücke (Schema): A Stecker gesteckt, B Stecker abgezogen; Nummern 1 bis 6</title>
+  <!-- Selbst gezeichnet, stark vereinfacht.
+       1 Zündpille im Gasgenerator, 2 Kontaktstift, 3 Kurzschlussbrücke (Federbrücke), 4 Stecker der Leitungsseite mit Steg,
+       5 Verriegelung (Rastnase), 6 Leitung zum Airbag-Steuergerät -->
+  <rect x="0" y="0" width="640" height="440" fill="#ffffff"/>
+  <line x1="320" y1="12" x2="320" y2="430" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <g fill="#1a1a1a" font-weight="bold">
+    <text x="20" y="30">A  Stecker gesteckt</text>
+    <text x="340" y="30">B  Stecker abgezogen</text>
+  </g>
+
+  <!-- ===================== A: gesteckt ===================== -->
+  <!-- Gasgenerator mit Zündpille -->
+  <rect x="50" y="320" width="200" height="75" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="58" y="385" fill="#1a1a1a">Gasgenerator</text>
+  <path d="M90 320 V345 H125 M175 345 H210 V320" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="125" y="337" width="50" height="16" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Buchsengehäuse -->
+  <path d="M60 165 V320 M240 165 V320" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Stecker (Leitungsseite) gesteckt -->
+  <rect x="72" y="110" width="156" height="125" fill="#f2f2f2" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="228,160 246,168 228,176" fill="#1a1a1a"/>
+  <polygon points="138,235 162,235 150,283" fill="#bdbdbd" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#ffffff" stroke="#1a1a1a" stroke-width="2">
+    <rect x="82" y="182" width="16" height="44"/>
+    <rect x="202" y="182" width="16" height="44"/>
+  </g>
+  <!-- Leitungen -->
+  <path d="M90 60 V182 M210 60 V182" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Kontaktstifte -->
+  <path d="M90 195 V320 M210 195 V320" fill="none" stroke="#1a1a1a" stroke-width="4"/>
+  <!-- Kurzschlussbrücke abgehoben (vom Steg nach unten gedrückt) -->
+  <path d="M106 266 L150 285 L194 266" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+  <line x1="150" y1="285" x2="150" y2="320" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- ===================== B: abgezogen ===================== -->
+  <rect x="370" y="320" width="200" height="75" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="378" y="385" fill="#1a1a1a">Gasgenerator</text>
+  <path d="M410 320 V345 H445 M495 345 H530 V320" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="445" y="337" width="50" height="16" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M380 165 V320 M560 165 V320" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Stecker abgezogen -->
+  <rect x="392" y="60" width="156" height="90" fill="#f2f2f2" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="548,75 566,83 548,91" fill="#1a1a1a"/>
+  <polygon points="458,150 482,150 470,198" fill="#bdbdbd" stroke="#1a1a1a" stroke-width="2"/>
+  <g fill="#ffffff" stroke="#1a1a1a" stroke-width="2">
+    <rect x="402" y="106" width="16" height="44"/>
+    <rect x="522" y="106" width="16" height="44"/>
+  </g>
+  <path d="M410 45 V106 M530 45 V106" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M410 195 V320 M530 195 V320" fill="none" stroke="#1a1a1a" stroke-width="4"/>
+  <!-- Kurzschlussbrücke liegt an beiden Kontaktstiften an -->
+  <line x1="410" y1="255" x2="530" y2="255" stroke="#1a1a1a" stroke-width="3"/>
+  <line x1="470" y1="255" x2="470" y2="320" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="410" cy="255" r="5" fill="#c0392b"/>
+  <circle cx="530" cy="255" r="5" fill="#c0392b"/>
+
+  <!-- Hinweislinien -->
+  <g stroke="#1a1a1a" stroke-width="1.5">
+    <line x1="271" y1="130" x2="228" y2="130"/>
+    <line x1="271" y1="190" x2="244" y2="170"/>
+    <line x1="139" y1="75" x2="92" y2="75"/>
+    <line x1="595" y1="406" x2="497" y2="355"/>
+    <line x1="594" y1="215" x2="532" y2="215"/>
+    <line x1="446" y1="280" x2="454" y2="258"/>
+  </g>
+
+  <!-- Nummern -->
+  <g font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    <circle cx="605" cy="412" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="605" y="417">1</text>
+    <circle cx="605" cy="215" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="605" y="220">2</text>
+    <circle cx="440" cy="290" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="440" y="295">3</text>
+    <circle cx="282" cy="130" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="282" y="135">4</text>
+    <circle cx="282" cy="195" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="282" y="200">5</text>
+    <circle cx="150" cy="75" r="11" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/><text x="150" y="80">6</text>
+  </g>
+</svg>
