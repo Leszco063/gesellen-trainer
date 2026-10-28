@@ -9,7 +9,7 @@ function ohm(cat, level) {
   const I = runde(U / R);
   return rechenFrage(cat, level, `An einem Verbraucher liegen ${fmt(U)} V an, sein Widerstand beträgt ${fmt(R)} Ω. Wie groß ist der Strom?`,
     I, "A", `I = U ÷ R = ${fmt(U)} V ÷ ${fmt(R)} Ω = ${fmt(I)} A`, { art: "ohm", U, R },
-    [U * R, R / U, U / (2 * R)]);
+    [U * R, R / U, U / (2 * R)], { formel: "I = U / R\nI in A, U in V, R in Ω" });
 }
 
 function reihe(cat, level) {
@@ -22,7 +22,7 @@ function reihe(cat, level) {
     `In einem Stromkreis liegen in Reihe: ${teil} (${fmt(zp)} Ω), zwei Steckverbindungen mit je ${fmt(st)} Ω Übergangswiderstand und die Leitung (${fmt(lt)} Ω). Wie groß ist der Gesamtwiderstand?`,
     R, "Ω", `Reihenschaltung: R = ${fmt(zp)} + 2 × ${fmt(st)} + ${fmt(lt)} = ${fmt(R)} Ω.${cat === "Airbag" ? " Einen Airbag-Zündkreis misst man nur mit Diagnosetester bzw. Prüfadapter – nie direkt an der Zündpille." : ""}`,
     { art: "reihe", teile: [zp, st, st, lt] },
-    [zp + st + lt, zp + lt, 2 * st + lt]);
+    [zp + st + lt, zp + lt, 2 * st + lt], { formel: "Reihenschaltung: R_{ges} = R_1 + R_2 + R_3 + …\nJeder Übergangswiderstand zählt einzeln mit." });
 }
 
 function parallel(cat, level) {
@@ -31,7 +31,7 @@ function parallel(cat, level) {
   const R = runde((R1 * R2) / (R1 + R2));
   return rechenFrage(cat, level, `Zwei Widerstände mit ${fmt(R1)} Ω und ${fmt(R2)} Ω sind parallel geschaltet. Wie groß ist der Ersatzwiderstand?`,
     R, "Ω", `R = (R1 × R2) ÷ (R1 + R2) = (${fmt(R1)} × ${fmt(R2)}) ÷ (${fmt(R1)} + ${fmt(R2)}) = ${fmt(R)} Ω`, { art: "parallel", R1, R2 },
-    [R1 + R2, (R1 + R2) / 2, R1 * R2]);
+    [R1 + R2, (R1 + R2) / 2, R1 * R2], { formel: "Parallelschaltung: 1 / R_{ges} = 1 / R_1 + 1 / R_2 + …\nbei zwei Widerständen: R_{ges} = R_1 · R_2 / (R_1 + R_2)" });
 }
 
 function kennlinie(cat, level) {
@@ -41,7 +41,7 @@ function kennlinie(cat, level) {
   return rechenFrage(cat, level,
     `Ein Raildrucksensor liefert linear 0,5 V bei 0 bar und 4,5 V bei ${fmt(pmax, 0)} bar. Im Messwertblock steht eine Signalspannung von ${fmt(U)} V. Welcher Raildruck liegt an?`,
     p, "bar", `p = (U − 0,5 V) ÷ 4 V × ${fmt(pmax, 0)} bar = (${fmt(U)} − 0,5) ÷ 4 × ${fmt(pmax, 0)} = ${fmt(p, 0)} bar`, { art: "kennlinie", U, pmax },
-    [(U / 4) * pmax, ((U - 0.5) / 5) * pmax, (U / 5) * pmax], { stellen: 0 });
+    [(U / 4) * pmax, ((U - 0.5) / 5) * pmax, (U / 5) * pmax], { stellen: 0, formel: "lineare Kennlinie: p = (U − U_0) / (U_{max} − U_0) · p_{max}\nU_0 = Spannung bei 0 bar, U_{max} = Spannung bei p_{max}" });
 }
 
 function kennlinieU(cat, level) {
@@ -51,7 +51,7 @@ function kennlinieU(cat, level) {
   return rechenFrage(cat, level,
     `Ein Raildrucksensor liefert linear 0,5 V bei 0 MPa und 4,5 V bei ${pmax} MPa. Welche Signalspannung erwarten Sie bei ${p} MPa (= ${fmt(p * 10, 0)} bar)?`,
     U, "V", `U = 0,5 V + ${p} ÷ ${pmax} × 4 V = ${fmt(U)} V (1 MPa = 10 bar)`, { art: "kennlinie-u", p, pmax },
-    [(p / pmax) * 4, 0.5 + (p / pmax) * 5, (p / pmax) * 5]);
+    [(p / pmax) * 4, 0.5 + (p / pmax) * 5, (p / pmax) * 5], { formel: "lineare Kennlinie: U = U_0 + p / p_{max} · (U_{max} − U_0)\nU_0 = Spannung bei 0 MPa; 1 MPa = 10 bar" });
 }
 
 export function elektrik(cat, level) {

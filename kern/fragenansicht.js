@@ -1,6 +1,6 @@
 // Darstellung einer Aufgabe (Situation, Hinweis, Fragetext, Bild, Antwortbereich) – für Übung und Prüfung.
 import { SITUATIONEN } from "../inhalt/fragen.js";
-import { esc } from "./util.js";
+import { esc, formelHtml } from "./util.js";
 
 export function situationHtml(id, kompakt = false) {
   const s = SITUATIONEN[id];
@@ -16,5 +16,6 @@ export function frageHtml(q, { kompakteSituation = false } = {}) {
     <p class="qtext">${esc(q.q)}</p>
     ${q.bild ? `<figure class="bild" title="Tippen zum Vergrößern"><img src="inhalt/bilder/${esc(q.bild)}" alt="Abbildung zur Aufgabe"><figcaption></figcaption></figure>` : ""}
     ${q.stemHtml ? `<div class="stem">${q.stemHtml}</div>` : ""}
+    ${q.formel ? `<details class="formel"><summary>📐 Formel anzeigen</summary><p>${formelHtml(q.formel)}</p></details>` : ""}
     <div id="antwort"></div>`;
 }

@@ -29,14 +29,67 @@ export const CARDS = [
         <tr><td>1 MPa</td><td>= 10 bar = 1 N/mm²</td></tr>
         <tr><td>1 bar</td><td>= 10 N/cm² = 0,1 N/mm² = 100 kPa</td></tr>
         <tr><td>Absolutdruck</td><td>= Überdruck + ca. 1 bar Umgebungsdruck</td></tr>
-        <tr><td>Tastverhältnis</td><td>= Einschaltzeit ÷ Periodendauer × 100 %</td></tr>
+        <tr><td>Tastverhältnis</td><td>= t<sub>i</sub> / T · 100 % (Einschaltzeit / Periodendauer)</td></tr>
       </table>
       <h4>Beispiele</h4>
       <ul>
         <li>180 MPa Raildruck = 1800 bar.</li>
         <li>4 ms an, Periode 10 ms → Tastverhältnis 40 %.</li>
-        <li>Ohmsches Gesetz: U = R × I, Leistung P = U × I.</li>
+        <li>Ohmsches Gesetz: U = R · I, Leistung P = U · I.</li>
       </ul>`,
+  },
+  {
+    id: "formeln", cat: "Grundlagen", title: "Formelsammlung",
+    keys: ["Formel", "berechnen", "Wie groß", "Ersatzwiderstand", "Frequenz", "Leistung", "Spannungsfall", "Bitrate"],
+    html: `
+      <p class="small">Schreibweise wie im Tabellenbuch: · = mal, / = geteilt. In der Prüfung darfst du die Formeln im Tabellenbuch nachschlagen. Werte immer mit Einheit einsetzen.</p>
+      <h4>Elektrik</h4>
+      <table class="ktable">
+        <tr><td>Ohmsches Gesetz</td><td>U = R · I &nbsp; I = U / R &nbsp; R = U / I</td></tr>
+        <tr><td>Leistung</td><td>P = U · I</td></tr>
+        <tr><td>Reihenschaltung</td><td>R<sub>ges</sub> = R<sub>1</sub> + R<sub>2</sub> + … (Strom überall gleich)</td></tr>
+        <tr><td>Parallelschaltung</td><td>1 / R<sub>ges</sub> = 1 / R<sub>1</sub> + 1 / R<sub>2</sub> + …<br>zwei Widerstände: R<sub>ges</sub> = R<sub>1</sub> · R<sub>2</sub> / (R<sub>1</sub> + R<sub>2</sub>)</td></tr>
+      </table>
+      <h4>Signale und Oszilloskop</h4>
+      <table class="ktable">
+        <tr><td>Frequenz</td><td>f = 1 / T (T = Periodendauer in s)</td></tr>
+        <tr><td>Tastverhältnis</td><td>t<sub>i</sub> / T · 100 %</td></tr>
+        <tr><td>Drehzahlsensor</td><td>f = z · n / 60 (z = Zähne bzw. Polpaare, n in 1/min)</td></tr>
+        <tr><td>Bitrate</td><td>1 / t<sub>Bit</sub></td></tr>
+        <tr><td>Ablesen</td><td>Wert = Kästchen · Wert je Kästchen</td></tr>
+        <tr><td>Sensorkennlinie (linear)</td><td>p = (U − U<sub>0</sub>) / (U<sub>max</sub> − U<sub>0</sub>) · p<sub>max</sub></td></tr>
+      </table>
+      <h4>Druck, Hydraulik, Hebel</h4>
+      <table class="ktable">
+        <tr><td>Druck</td><td>p = F / A &nbsp; F = p · A &nbsp; Kreisfläche A = π · d² / 4</td></tr>
+        <tr><td>hydraulische Übersetzung</td><td>F<sub>2</sub> = F<sub>1</sub> · A<sub>2</sub> / A<sub>1</sub> = F<sub>1</sub> · d<sub>2</sub>² / d<sub>1</sub>²</td></tr>
+        <tr><td>Hebelgesetz</td><td>F<sub>1</sub> · l<sub>1</sub> = F<sub>2</sub> · l<sub>2</sub></td></tr>
+        <tr><td>Absolutdruck</td><td>p<sub>abs</sub> = p<sub>e</sub> + p<sub>amb</sub> (Überdruck + Luftdruck)</td></tr>
+        <tr><td>Einheiten</td><td>1 bar = 10 N/cm² = 0,1 N/mm²; 1 MPa = 10 bar</td></tr>
+      </table>
+      <h4>Bremse und Fahren</h4>
+      <table class="ktable">
+        <tr><td>Geschwindigkeit</td><td>v in m/s = v in km/h / 3,6</td></tr>
+        <tr><td>Reaktionsweg</td><td>s<sub>R</sub> = v · t<sub>R</sub></td></tr>
+        <tr><td>Bremsweg</td><td>s<sub>B</sub> = v² / (2 · a)</td></tr>
+        <tr><td>Anhalteweg</td><td>s = s<sub>R</sub> + s<sub>B</sub></td></tr>
+        <tr><td>Abbremsung</td><td>z = ΣF<sub>B</sub> / (m · g) · 100 %</td></tr>
+        <tr><td>Ungleichmäßigkeit</td><td>(F<sub>B,max</sub> − F<sub>B,min</sub>) / F<sub>B,max</sub> · 100 %</td></tr>
+        <tr><td>Bremsmoment</td><td>F<sub>R</sub> = μ · F<sub>Sp</sub> je Belag; M<sub>Br</sub> = F<sub>R</sub> · r</td></tr>
+      </table>
+      <h4>Klima</h4>
+      <table class="ktable">
+        <tr><td>Überhitzung</td><td>Δt = t<sub>Saug</sub> − t<sub>Verd</sub> (in K)</td></tr>
+        <tr><td>Unterkühlung</td><td>Δt = t<sub>Kond</sub> − t<sub>Fl</sub> (in K)</td></tr>
+      </table>
+      <h4>Prozent und Lohn (WiSo)</h4>
+      <table class="ktable">
+        <tr><td>Prozentwert</td><td>Grundwert · Prozentsatz / 100</td></tr>
+        <tr><td>Erhöhung</td><td>neuer Wert = Grundwert · (1 + p / 100)</td></tr>
+        <tr><td>Sozialversicherung</td><td>AN-Anteil = Brutto · Beitragssatz / 2 / 100</td></tr>
+        <tr><td>Reallohn</td><td>≈ Lohnerhöhung in % − Inflationsrate</td></tr>
+        <tr><td>Wirkungsgrad SCR</td><td>η = (NOx<sub>vor</sub> − NOx<sub>nach</sub>) / NOx<sub>vor</sub> · 100 %</td></tr>
+      </table>`,
   },
   {
     id: "schaltplan", cat: "Grundlagen", title: "Schaltpläne lesen",
@@ -218,10 +271,10 @@ export const CARDS = [
     keys: ["Abbremsung", "Bremsenprüfstand", "Übersetzung", "Kraft", "Druck", "Ungleichmäßigkeit"],
     html: `
       <table class="ktable">
-        <tr><td>Druck</td><td>p = F ÷ A (1 bar = 10 N/cm²)</td></tr>
-        <tr><td>hydraulische Übersetzung</td><td>F₂ = F₁ × (d₂ ÷ d₁)²</td></tr>
-        <tr><td>Abbremsung</td><td>z = Summe Bremskräfte ÷ (m × g) × 100 %</td></tr>
-        <tr><td>Ungleichmäßigkeit</td><td>(größere − kleinere Kraft) ÷ größere × 100 %</td></tr>
+        <tr><td>Druck</td><td>p = F / A (1 bar = 10 N/cm²)</td></tr>
+        <tr><td>hydraulische Übersetzung</td><td>F<sub>2</sub> = F<sub>1</sub> · d<sub>2</sub>² / d<sub>1</sub>²</td></tr>
+        <tr><td>Abbremsung</td><td>z = ΣF<sub>B</sub> / (m · g) · 100 %</td></tr>
+        <tr><td>Ungleichmäßigkeit</td><td>(F<sub>B,max</sub> − F<sub>B,min</sub>) / F<sub>B,max</sub> · 100 %</td></tr>
       </table>
       <ul>
         <li>Bremsenprüfstand: Bremskraft je Rad, Differenz je Achse, Unrundheit, Feststellbremse.</li>

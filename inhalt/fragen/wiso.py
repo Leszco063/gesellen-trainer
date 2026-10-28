@@ -101,6 +101,7 @@ QUESTIONS = [
           "steigen die Entgelte ab August 2026 um 3,3 %. Wie hoch ist Ihr neuer Monatslohn?",
      "opts": ["3.009,90 €", "3.099,00 €", "3.168,00 €", "2.901,00 €"],
      "correct": 1,
+     "formel": "Prozentwert = Grundwert · Prozentsatz / 100\nneuer Wert = Grundwert · (1 + p / 100)",
      "explain": "Erhöhung: 3.000 € × 3,3 % = 99 € → neuer Lohn 3.000 € + 99 € = 3.099 €. "
                 "(Abschluss 2025: +2,3 % ab Juli 2025, +3,3 % ab August 2026, Laufzeit bis Ende Mai 2027.)",
      "src": "Netz: IG Metall Bayern, Tarifnachrichten Kfz 06/2025"},
@@ -131,6 +132,7 @@ QUESTIONS = [
           "Wie hoch ist Ihr Arbeitnehmeranteil?",
      "opts": ["576,60 €", "28,83 €", "2.811,70 €", "288,30 €"],
      "correct": 3,
+     "formel": "AN-Anteil = Bruttolohn · AN-Satz / 100\nAN-Satz = Beitragssatz / 2",
      "explain": "Arbeitnehmer und Arbeitgeber zahlen je die Hälfte: 18,6 % ÷ 2 = 9,3 %. 3.100 € × 9,3 % = 288,30 €.",
      "src": "Netz: lohn-info.de / krankenkassen.de, Rechengrößen 2026"},
     # 10 Generationenvertrag
@@ -343,6 +345,7 @@ QUESTIONS = [
           "Arbeitnehmeranteil zur Sozialversicherung?",
      "opts": ["655,65 €", "629,30 €", "674,25 €", "1.329,90 €"],
      "correct": 2,
+     "formel": "AN-Anteil = Bruttolohn · Summe der AN-Sätze / 100\nAN-Satz = Beitragssatz / 2 (auch der KV-Zusatzbeitrag); den PV-Kinderlosenzuschlag zahlt der Arbeitnehmer allein",
      "explain": "AN-Anteile: RV 9,3 % + KV (14,6 % + 2,9 %) ÷ 2 = 8,75 % + PV 1,8 % + 0,6 % = 2,4 % + AV 1,3 % = 21,75 %. "
                 "3.100 € × 21,75 % = 674,25 € (RV 288,30 € + KV 271,25 € + PV 74,40 € + AV 40,30 €).",
      "src": "Netz: lohn-info.de / krankenkassen.de, Rechengrößen 2026"},
@@ -636,6 +639,7 @@ QUESTIONS = [
           "Prozent steigt Ihr Reallohn ungefähr?",
      "opts": ["5,3 %", "1,3 %", "1,65 %", "−1,3 %"],
      "correct": 1,
+     "formel": "Reallohnänderung ≈ Nominallohnänderung − Inflationsrate",
      "explain": "Näherung: Reallohnveränderung ≈ Nominallohnveränderung − Inflationsrate = 3,3 % − 2,0 % = 1,3 %. "
                 "Genau: 1,033 ÷ 1,020 − 1 ≈ 1,27 %.",
      "src": "FW"},
@@ -916,6 +920,7 @@ QUESTIONS = [
           "Laut Tarifabschluss 2025 stieg sie ab Juli 2025 um 80 € und ab August 2026 um weitere 3,3 %. Wie hoch ist sie ab August 2026?",
      "opts": ["1.113,00 €", "1.115,64 €", "1.033,00 €", "1.080,00 €"],
      "correct": 1,
+     "formel": "Prozentwert = Grundwert · Prozentsatz / 100\nneuer Wert = Grundwert · (1 + p / 100)\nbei mehreren Stufen ist der Grundwert jeweils der Betrag nach der vorherigen Stufe",
      "explain": "Stufe 1: 1.000 € + 80 € = 1.080 €. Stufe 2: 1.080 € × 1,033 = 1.115,64 €. Wer zuerst 3,3 % auf 1.000 € rechnet und dann "
                 "80 € addiert, kommt auf 1.113 € – die Prozentstufe gilt aber für den bereits erhöhten Betrag.",
      "src": "Netz: IG Metall / DGB-Tarifmeldung Kfz-Handwerk 2025"},
@@ -970,6 +975,7 @@ QUESTIONS = [
      "q": "Die Abbildung zeigt eine vereinfachte Entgeltabrechnung für Oktober 2026. Wie hoch ist der Auszahlungsbetrag in Zeile H?",
      "opts": ["2.504,00 €", "2.832,80 €", "2.136,80 €", "2.156,00 €"],
      "correct": 2,
+     "formel": "Netto = Brutto − Steuern − Sozialversicherung (AN-Anteile)",
      "explain": "Steuern: B + C = 340,00 € + 27,20 € = 367,20 €. Sozialversicherung (Arbeitnehmeranteil): D + E + F + G = 297,60 € + 280,00 € "
                 "+ 76,80 € + 41,60 € = 696,00 € (21,75 % von 3.200 €). Abzüge gesamt 1.063,20 € → Netto 3.200 € − 1.063,20 € = 2.136,80 €. "
                 "2.504 € bzw. 2.832,80 € entstehen, wenn man die Steuern bzw. die Sozialversicherung vergisst.",
@@ -1022,6 +1028,7 @@ QUESTIONS = [
      "q": "Zum 01.07.2026 stiegen die gesetzlichen Renten um 4,24 %. Ihr Großvater bekam vorher 1.250 € Rente (brutto). Wie hoch ist sie danach?",
      "opts": ["1.255,30 €", "1.292,40 €", "1.303,00 €", "1.197,00 €"],
      "correct": 2,
+     "formel": "Prozentwert = Grundwert · Prozentsatz / 100\nneuer Wert = Grundwert · (1 + p / 100)",
      "explain": "1.250 € × 4,24 % = 53 € → 1.250 € + 53 € = 1.303 €. Die Rentenanpassung folgt der Lohnentwicklung; die Haltelinie "
                 "sorgt dafür, dass das Rentenniveau bis 2031 nicht unter 48 % sinkt. Der aktuelle Rentenwert stieg "
                 "dabei von 40,79 € auf 42,52 € je Entgeltpunkt.",

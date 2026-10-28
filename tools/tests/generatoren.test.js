@@ -30,6 +30,7 @@ export default async function () {
         ok(typeof q.q === "string" && q.q.length > 20 && typeof q.explain === "string" && q.explain.length > 5, `${wo}: Text fehlt`);
         ok(Array.isArray(q.opts) && q.opts.length === 4 && new Set(q.opts).size === 4, `${wo}: 4 verschiedene Antworten ${JSON.stringify(q.opts)}`);
         ok(Number.isInteger(q.correct) && q.correct >= 0 && q.correct < 4, `${wo}: correct ungültig`);
+        ok(typeof q.formel === "string" && q.formel.includes("="), `${wo}: Formel als Hilfe fehlt (${q.daten && q.daten.art})`);
         ok(!/NaN|undefined|Infinity|\[object /.test(JSON.stringify(q)), `${wo}: kaputter Wert ${q.q}`);
         ok(!ids.has(q.id), `${wo}: ID doppelt ${q.id}`);
         ids.add(q.id);

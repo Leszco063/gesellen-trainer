@@ -29,5 +29,5 @@ export function sozialabgaben(cat, level) {
   return rechenFrage(cat, level,
     `${wer} verdient ${euro(brutto)} brutto im Monat. Berechnen Sie ${was} (Beitragssätze 2026).`,
     betrag, "€", `${weg} → ${euro(brutto)} × ${fmt(satz)} % = ${euro(betrag)}`, { art: "sv", brutto, satz },
-    [(brutto * satz * 2) / 100, (brutto * satz) / 1000, (brutto * satz) / 200], { format: euro });
+    [(brutto * satz * 2) / 100, (brutto * satz) / 1000, (brutto * satz) / 200], { format: euro, formel: "AN-Anteil = Bruttolohn · AN-Satz / 100\nAN-Satz = Beitragssatz / 2 (auch der KV-Zusatzbeitrag); den PV-Kinderlosenzuschlag ab 23 zahlt der Arbeitnehmer allein" });
 }

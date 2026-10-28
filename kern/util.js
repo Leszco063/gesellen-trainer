@@ -4,6 +4,11 @@ export function esc(text) {
   return String(text).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
+// Formel-Hilfe: Indizes wie im Tabellenbuch tiefstellen – s_R → s<sub>R</sub>, F_{B,max} → F<sub>B,max</sub>
+export function formelHtml(text) {
+  return esc(text).replace(/_\{([^}]*)\}|_([A-Za-z0-9]+)/g, (_, lang, kurz) => `<sub>${lang ?? kurz}</sub>`);
+}
+
 export function rand(list) {
   return list[Math.floor(Math.random() * list.length)];
 }

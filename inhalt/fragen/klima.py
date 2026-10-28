@@ -358,6 +358,7 @@ QUESTIONS = [
      "q": "Nach der Reparatur prüfen Sie die Ansteuerung des Regelventils (Oszillogramm). Welche Frequenz hat das Signal, und wie groß ist der bestromte Anteil (Tastverhältnis)?",
      "opts": ["400 Hz; 40 % bestromt", "200 Hz; 60 % bestromt", "400 Hz; 60 % bestromt", "2,5 kHz; 60 % bestromt"],
      "correct": 2,
+     "formel": "f = 1 / T\nTastverhältnis = t_i / T · 100 %   (t_i = bestromte Zeit)",
      "explain": "Eine Periode (von einer fallenden bis zur nächsten fallenden Flanke) ist 5 Kästchen × 0,5 ms = 2,5 ms lang → "
                 "f = 1 ÷ 2,5 ms = 400 Hz. Bestromt ist Y1, wenn A1 nach Masse schaltet, also im unteren Abschnitt: 3 Kästchen = "
                 "1,5 ms → 1,5 ms ÷ 2,5 ms = 60 %. Wer den oberen Abschnitt nimmt, kommt fälschlich auf 40 %.",
@@ -414,6 +415,7 @@ QUESTIONS = [
      "q": "Laut Druck-Temperatur-Tabelle entspricht der gemessene Hochdruck einer Kondensationstemperatur von 52 °C. An Messpunkt C messen Sie 45 °C. Wie groß ist die Unterkühlung?",
      "opts": ["97 K", "−7 K", "7 K", "45 K"],
      "correct": 2,
+     "formel": "Unterkühlung Δt = t_{Kond} − t_{Fl}\nt_{Fl} = gemessene Temperatur der Flüssigkeitsleitung; Δt in K",
      "explain": "Unterkühlung = Kondensationstemperatur − gemessene Flüssigkeitstemperatur = 52 °C − 45 °C = 7 K. "
                 "Temperaturdifferenzen gibt man in Kelvin an. Die Unterkühlung zeigt, dass am Expansionsventil reine Flüssigkeit "
                 "ankommt; ob der Wert passt, steht in der Herstellerangabe.",
@@ -524,6 +526,7 @@ QUESTIONS = [
     {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 2,
      "q": "Das Hochdruckmanometer zeigt einen Überdruck von 14 bar. Der Luftdruck beträgt 1 bar. Wie groß ist der Absolutdruck?",
      "opts": ["13 bar", "14 bar", "1,5 bar", "15 bar"], "correct": 3,
+     "formel": "p_{abs} = p_e + p_{amb}\np_e = Überdruck (Manometer, Unterdruck negativ), p_{amb} = Luftdruck; 1 bar = 1000 mbar",
      "explain": "Manometer zeigen den Überdruck gegenüber der Umgebung. Absolutdruck = Überdruck + Luftdruck = 14 bar + 1 bar = 15 bar.",
      "src": "FW"},
     {"cat": "Klima", "level": 1, "typ": "mc", "pkt": 2,
@@ -640,6 +643,7 @@ QUESTIONS = [
     {"cat": "Klima", "level": 3, "typ": "mc", "pkt": 3,
      "q": "Beim Evakuieren zeigt das Servicegerät einen Überdruck von −0,95 bar an (Luftdruck 1,0 bar). Wie groß ist der Absolutdruck im Kreislauf in mbar?",
      "opts": ["50 mbar", "950 mbar", "1.950 mbar", "5 mbar"], "correct": 0,
+     "formel": "p_{abs} = p_e + p_{amb}\np_e = Überdruck (Manometer, Unterdruck negativ), p_{amb} = Luftdruck; 1 bar = 1000 mbar",
      "explain": "Absolutdruck = Luftdruck + Überdruck = 1,0 bar + (−0,95 bar) = 0,05 bar. 1 bar = 1000 mbar → 0,05 bar = 50 mbar.",
      "src": "FW"},
     {"cat": "Klima", "level": 2, "typ": "zuordnung", "pkt": 4,
@@ -865,6 +869,7 @@ QUESTIONS = [
      "q": "Laut Druck-Temperatur-Tabelle entspricht der Niederdruck einer Verdampfungstemperatur von 2 °C. An Messpunkt E messen Sie 8 °C. Wie groß ist die Überhitzung?",
      "opts": ["10 K", "4 K", "−6 K", "6 K"],
      "correct": 3,
+     "formel": "Überhitzung Δt = t_{Saug} − t_{Verd}\nt_{Saug} = gemessene Temperatur am Verdampferausgang; Δt in K",
      "explain": "Überhitzung = gemessene Temperatur am Verdampferausgang − Verdampfungstemperatur = 8 °C − 2 °C = 6 K. Wer addiert, "
                 "kommt auf 10 K, wer dividiert auf 4. Eine Überhitzung stellt sicher, dass nur Dampf zum Verdichter gelangt; der "
                 "Sollbereich steht in den Herstellerunterlagen.",

@@ -181,6 +181,7 @@ export const QUESTIONS = [
    "2,5 Ω"
   ],
   "correct": 2,
+  "formel": "Reihenschaltung: R_{ges} = R_1 + R_2 + R_3 + …\nJeder Übergangswiderstand zählt einzeln mit.",
   "explain": "Alle Widerstände liegen in Reihe: R = 2,2 Ω + 2 × 0,1 Ω + 0,3 Ω = 2,7 Ω. Ein lockerer Stecker erhöht den Übergangswiderstand – deshalb meldet das Steuergerät dann „Widerstand zu hoch“.",
   "src": "FW"
  },
@@ -649,6 +650,7 @@ export const QUESTIONS = [
    "2,22 Ω"
   ],
   "correct": 3,
+  "formel": "Parallelschaltung: 1 / R_{ges} = 1 / R_1 + 1 / R_2 + …\nbei zwei Widerständen: R_{ges} = R_1 · R_2 / (R_1 + R_2)",
   "explain": "Parallelschaltung: R = (R1 × R2) ÷ (R1 + R2) = (3,3 Ω × 6,8 Ω) ÷ 10,1 Ω ≈ 2,22 Ω. Der Gesamtwiderstand ist immer kleiner als der kleinste Einzelwiderstand.",
   "src": "FW"
  },
@@ -666,6 +668,7 @@ export const QUESTIONS = [
    "0,6 A"
   ],
   "correct": 2,
+  "formel": "I = U / R\nI in A, U in V, R in Ω",
   "explain": "I = U ÷ R = 12 V ÷ 2 Ω = 6 A. Zum Zünden reicht schon ein deutlich kleinerer Strom. Deshalb darf an einer Zündpille nie eine Spannung oder ein Messgerät angelegt werden – auch der Prüfstrom eines Multimeters ist gefährlich.",
   "src": "FW"
  },
@@ -2287,6 +2290,7 @@ export const QUESTIONS = [
    "153.540 N"
   ],
   "correct": 1,
+  "formel": "p = F_1 / A_1 = F_2 / A_2   (Druck überall gleich)\nF_2 = F_1 · A_2 / A_1 = F_1 · d_2² / d_1²",
   "explain": "Der Druck ist überall gleich, die Kräfte verhalten sich wie die Flächen: F₂ = F₁ × (d₂ ÷ d₁)² = 2500 N × (57 ÷ 23)² = 2500 N × 6,14 ≈ 15 354 N. Typische Fehler: nur mit dem Durchmesserverhältnis statt mit dem Quadrat rechnen (2500 N × 2,48 ≈ 6196 N), das Verhältnis umdrehen (≈ 407 N) oder das Komma verrutschen lassen.",
   "src": "FW"
  },
@@ -2567,6 +2571,7 @@ export const QUESTIONS = [
    "0,5 Hz"
   ],
   "correct": 1,
+  "formel": "f = 1 / T\nf in Hz (1/s), T = Periodendauer in s (1 ms = 0,001 s)",
   "explain": "Eine Periode (einmal 14 mA und einmal 7 mA) ist 2 Kästchen lang, also T = 2 ms. f = 1 ÷ T = 1 ÷ 0,002 s = 500 Hz. Typische Fehler: nur die halbe Periode ablesen (1 ms → 1.000 Hz) oder Millisekunden nicht umrechnen (1 ÷ 2 = 0,5).",
   "src": "Eigener Schaltplan"
  },
@@ -2586,6 +2591,7 @@ export const QUESTIONS = [
    "1.250 1/min"
   ],
   "correct": 2,
+  "formel": "f = z · n / 60   →   n = f · 60 / z\nf in Hz, n in 1/min, z = Zähnezahl bzw. Polpaarzahl",
   "explain": "f = z × n ÷ 60 → n = f × 60 ÷ z = 500 1/s × 60 s/min ÷ 48 = 625 1/min. Typische Fehler: den Faktor 60 vergessen (≈ 10,4), z und 60 vertauschen (500 × 48 ÷ 60 = 400) oder mit 24 statt 48 rechnen (1.250).",
   "src": "FW"
  },
@@ -2973,6 +2979,7 @@ export const QUESTIONS = [
    "40 bar"
   ],
   "correct": 3,
+  "formel": "p = F / A\n1 bar = 10 N/cm²",
   "explain": "p = F ÷ A = 1600 N ÷ 4 cm² = 400 N/cm². Da 1 bar = 10 N/cm² ist, sind das 40 bar. Typischer Fehler: N/cm² direkt als bar ablesen (400 bar).",
   "src": "FW"
  },
@@ -2990,6 +2997,7 @@ export const QUESTIONS = [
    "450 N"
   ],
   "correct": 0,
+  "formel": "Hebelgesetz: F_1 · l_1 = F_2 · l_2   →   F_2 = F_1 · l_1 / l_2\nl = Hebelarm (Abstand vom Drehpunkt)",
   "explain": "Hebelgesetz: Pedalübersetzung i = 280 mm ÷ 70 mm = 4. F = 150 N × 4 = 600 N.",
   "src": "FW"
  },
@@ -3008,6 +3016,7 @@ export const QUESTIONS = [
    "58,9 %"
   ],
   "correct": 2,
+  "formel": "z = ΣF_B / (m · g) · 100 %\nΣF_B = Summe der Bremskräfte in N, m in kg, g = 9,81 m/s²",
   "explain": "z = ΣF ÷ (m × g) × 100 % = 9000 N ÷ (1500 kg × 9,81 m/s²) × 100 % = 9000 ÷ 14 715 × 100 % ≈ 61,2 %. Ob das reicht, beurteilen Sie mit der Mindestabbremsung aus dem Tabellenbuch.",
   "src": "FW, TB (Grenzwert)"
  },
@@ -3026,6 +3035,7 @@ export const QUESTIONS = [
    "1,8 %"
   ],
   "correct": 1,
+  "formel": "Ungleichmäßigkeit = (F_{B,max} − F_{B,min}) / F_{B,max} · 100 %\nbezogen auf die größere Bremskraft einer Achse",
   "explain": "Ungleichmäßigkeit = (2800 N − 2300 N) ÷ 2800 N × 100 % ≈ 17,9 %. Typischer Fehler: auf den kleineren Wert beziehen (500 N ÷ 2300 N ≈ 21,7 %). Den zulässigen Höchstwert entnehmen Sie dem Tabellenbuch.",
   "src": "FW, TB (Grenzwert)"
  },
@@ -3553,6 +3563,7 @@ export const QUESTIONS = [
    "2 V und 250 Hz"
   ],
   "correct": 3,
+  "formel": "Û = Kästchen von der Null-Linie bis zur Spitze · V je Kästchen\nf = 1 / T   (T = eine volle Schwingung in s)",
   "explain": "Die Sinuskurve reicht 2 Kästchen über und unter die Null-Linie: Scheitelwert 2 × 1 V = 2 V (Spitze-Spitze wären 4 V). Eine volle Schwingung dauert 4 Kästchen = 4 ms, also f = 1 ÷ 0,004 s = 250 Hz. Wer nur bis zum nächsten Nulldurchgang zählt, liest die halbe Periode ab und kommt auf 500 Hz.",
   "src": "Eigener Schaltplan"
  },
@@ -3607,6 +3618,7 @@ export const QUESTIONS = [
    "100 %"
   ],
   "correct": 1,
+  "formel": "Tastverhältnis = t_i / T · 100 %\nt_i = Impulsdauer (Einschaltzeit), T = Periodendauer (Flanke bis zur nächsten gleichen Flanke)",
   "explain": "Der obere Pegel (14 mA) dauert 1 Kästchen = 1 ms, eine ganze Periode 2 ms. Tastverhältnis = 1 ms ÷ 2 ms × 100 % = 50 %. Beim Raddrehzahlsensor steckt die Information in der Frequenz, das Tastverhältnis ist ungefähr gleich.",
   "src": "Eigener Schaltplan"
  },
@@ -3826,6 +3838,7 @@ export const QUESTIONS = [
    "652,8 m"
   ],
   "correct": 1,
+  "formel": "v in m/s = v in km/h / 3,6\nReaktionsweg s_R = v · t_R\nBremsweg s_B = v² / (2 · a)\nAnhalteweg s = s_R + s_B",
   "explain": "v = 100 km/h ÷ 3,6 = 27,8 m/s. Reaktionsweg = v × t = 27,8 m. Bremsweg = v² ÷ (2 × a) = 771,6 ÷ 16 ≈ 48,2 m. Anhalteweg = 27,8 m + 48,2 m = 76,0 m. Typische Fehler: nur den Bremsweg angeben (48,2 m), die 2 im Nenner vergessen (124,2 m) oder km/h nicht umrechnen (652,8 m).",
   "src": "FW"
  },
@@ -3843,6 +3856,7 @@ export const QUESTIONS = [
    "104,2 m/s²"
   ],
   "correct": 2,
+  "formel": "s_B = v² / (2 · a)   →   a = v² / (2 · s_B)\nv in m/s = v in km/h / 3,6",
   "explain": "v = 50 km/h ÷ 3,6 = 13,9 m/s. a = v² ÷ (2 × s) = 192,9 ÷ 24 ≈ 8,0 m/s². Typische Fehler: die 2 vergessen (16,1 m/s²), km/h nicht umrechnen (104,2 m/s²) oder v ÷ s rechnen (1,2).",
   "src": "FW"
  },
@@ -3860,6 +3874,7 @@ export const QUESTIONS = [
    "14 Hz"
   ],
   "correct": 1,
+  "formel": "f = z · n / 60   →   n = f · 60 / z\nf in Hz, n in 1/min, z = Zähnezahl bzw. Polpaarzahl",
   "explain": "f = z × n ÷ 60 = 43 × 600 1/min ÷ 60 s/min = 430 Hz. Typische Fehler: Minuten nicht in Sekunden umrechnen (25.800), die Zähnezahl vergessen (10 Hz) oder Drehzahl durch Zähnezahl teilen (≈ 14).",
   "src": "FW"
  },
@@ -3877,6 +3892,7 @@ export const QUESTIONS = [
    "768 Nm"
   ],
   "correct": 3,
+  "formel": "F_R = μ · F_{Sp}   (je Belag; Scheibenbremse: 2 Beläge)\nM_{Br} = F_R · r   (r = wirksamer Reibradius in m)",
   "explain": "Beide Beläge reiben: F_R = 2 × μ × F_Sp = 2 × 0,4 × 8000 N = 6400 N. M = F_R × r = 6400 N × 0,12 m = 768 Nm. Typische Fehler: nur einen Belag rechnen (384 Nm), μ vergessen (1.920 Nm) oder mm nicht in m umrechnen (768.000).",
   "src": "FW"
  },
@@ -4275,6 +4291,7 @@ export const QUESTIONS = [
    "13.500 MPa"
   ],
   "correct": 1,
+  "formel": "1 MPa = 10 bar = 1 N/mm²\n1 bar = 10 N/cm² = 0,1 N/mm²",
   "explain": "1 MPa = 10 bar → 1350 bar ÷ 10 = 135 MPa.",
   "src": "FW"
  },
@@ -4351,6 +4368,7 @@ export const QUESTIONS = [
    "3,73"
   ],
   "correct": 3,
+  "formel": "Verhältnis = V_{max} / V_{min}\nV = Rücklaufmenge",
   "explain": "Größte ÷ kleinste Menge = 41 ml ÷ 11 ml ≈ 3,73.",
   "src": "TB 277"
  },
@@ -4755,6 +4773,7 @@ export const QUESTIONS = [
    "250 %"
   ],
   "correct": 2,
+  "formel": "Tastverhältnis = t_i / T · 100 %\nt_i = Impulsdauer (Einschaltzeit), T = Periodendauer (Flanke bis zur nächsten gleichen Flanke)",
   "explain": "Tastverhältnis = Einschaltzeit ÷ Periodendauer × 100 % = 4 ms ÷ 10 ms × 100 % = 40 %.",
   "src": "FW"
  },
@@ -4955,6 +4974,7 @@ export const QUESTIONS = [
    "1.800 bar"
   ],
   "correct": 0,
+  "formel": "lineare Kennlinie: p = (U − U_0) / (U_{max} − U_0) · p_{max}\nU_0 = Spannung bei 0 bar, U_{max} = Spannung bei p_{max}",
   "explain": "Steigung: 4,0 V auf 2000 bar → 500 bar je Volt. (3,1 V − 0,5 V) × 500 bar/V = 2,6 × 500 bar = 1300 bar (= 130 MPa, im Bild ablesbar).",
   "src": "FK 340–342"
  },
@@ -5251,6 +5271,7 @@ export const QUESTIONS = [
    "40 %"
   ],
   "correct": 1,
+  "formel": "η = (NOx_{vor} − NOx_{nach}) / NOx_{vor} · 100 %\nvor = vor dem SCR-Kat, nach = nach dem SCR-Kat",
   "explain": "Wirkungsgrad = (NOx vor Kat − NOx nach Kat) ÷ NOx vor Kat × 100 % = (400 − 360) ppm ÷ 400 ppm × 100 % = 10 %. Typischer Fehler: 360 ÷ 400 = 90 % ist der Anteil, der übrig bleibt, nicht der abgebaute Anteil. 40 ÷ 360 ≈ 11 % bezieht sich auf den falschen Grundwert.",
   "src": "FW"
  },
@@ -5458,6 +5479,7 @@ export const QUESTIONS = [
    "Wirkungsgrad nicht bestimmbar, weil beide Sensoren gleichzeitig angezeigt werden müssten"
   ],
   "correct": 1,
+  "formel": "η = (NOx_{vor} − NOx_{nach}) / NOx_{vor} · 100 %\nvor = vor dem SCR-Kat, nach = nach dem SCR-Kat",
   "explain": "(380 − 30) ppm ÷ 380 ppm × 100 % ≈ 92 %. Die Stickoxide werden wieder stark gemindert – die Reparatur hat gewirkt. Ein hoher Wirkungsgrad ist das Ziel; überschüssiges Ammoniak würde zusätzlich der Sperrkat abfangen. 8 % wäre der Rest, nicht die Minderung.",
   "src": "FW"
  },
@@ -5727,6 +5749,7 @@ export const QUESTIONS = [
    "ca. 20 A Anzug; ca. 10 A Halten"
   ],
   "correct": 0,
+  "formel": "I = Kästchen ab der Null-Linie · A je Kästchen",
   "explain": "Die Spitze liegt 4 Kästchen über der Null-Linie: 4 × 5 A = 20 A. Der Haltestrom pendelt zwischen 10 A und 15 A (2 bis 3 Kästchen), im Mittel also ca. 12,5 A. Wer nur Kästchen zählt, ohne mit 5 A zu multiplizieren, kommt auf 4 bzw. 2,5. 10 A ist nur der untere Wert der Pendelung.",
   "src": "Eigenes Oszillogramm, FK 339–349"
  },
@@ -5745,6 +5768,7 @@ export const QUESTIONS = [
    "0,45 ms"
   ],
   "correct": 1,
+  "formel": "t = t_{Ende} − t_{Beginn} = Kästchen · Zeit je Kästchen",
   "explain": "Der Strom beginnt bei 0,1 ms und fällt bei 0,7 ms auf null: 0,7 ms − 0,1 ms = 0,6 ms (6 Kästchen × 0,1 ms). 0,7 ms ist der Endzeitpunkt, nicht die Dauer; 6 ms entsteht, wenn man das Kästchen mit 1 ms statt 0,1 ms rechnet.",
   "src": "Eigenes Oszillogramm"
  },
@@ -6089,6 +6113,7 @@ export const QUESTIONS = [
    "600 N"
   ],
   "correct": 2,
+  "formel": "F = p · A\n10 bar = 1 MPa = 1 N/mm²",
   "explain": "1800 bar = 180 MPa = 180 N/mm². F = p × A = 180 N/mm² × 3 mm² = 540 N. 5.400 N entsteht, wenn man 1800 bar als 1800 N/mm² rechnet; 600 N ist 1800 ÷ 3 (geteilt statt multipliziert).",
   "src": "FW"
  },
@@ -6195,6 +6220,7 @@ export const QUESTIONS = [
    "6 A"
   ],
   "correct": 0,
+  "formel": "I = U / R\nI in A, U in V, R in Ω",
   "explain": "Ohmsches Gesetz: I = U ÷ R = 12 V ÷ 6 Ω = 2 A.",
   "src": "FW"
  },
@@ -6229,6 +6255,7 @@ export const QUESTIONS = [
    "1,6 bar"
   ],
   "correct": 0,
+  "formel": "1 MPa = 10 bar = 1 N/mm²\n1 bar = 10 N/cm² = 0,1 N/mm²",
   "explain": "1 MPa = 10 bar → 160 MPa × 10 = 1600 bar.",
   "src": "FW"
  },
@@ -6293,6 +6320,7 @@ export const QUESTIONS = [
    "0,11 W"
   ],
   "correct": 2,
+  "formel": "P = U · I\nP in W, U in V, I in A",
   "explain": "P = U × I = 14 V × 1,5 A = 21 W.",
   "src": "FW"
  },
@@ -6310,6 +6338,7 @@ export const QUESTIONS = [
    "0,4 Ω"
   ],
   "correct": 3,
+  "formel": "Parallelschaltung: 1 / R_{ges} = 1 / R_1 + 1 / R_2 + …\nbei zwei Widerständen: R_{ges} = R_1 · R_2 / (R_1 + R_2)",
   "explain": "Zwei gleiche Widerstände parallel: R = R1 ÷ 2 = 0,8 Ω ÷ 2 = 0,4 Ω (allgemein R = R1 × R2 ÷ (R1 + R2)).",
   "src": "FW"
  },
@@ -6430,6 +6459,7 @@ export const QUESTIONS = [
    "0,375 %"
   ],
   "correct": 1,
+  "formel": "Tastverhältnis = t_i / T · 100 %\nt_i = Impulsdauer (Einschaltzeit), T = Periodendauer (Flanke bis zur nächsten gleichen Flanke)",
   "explain": "Tastverhältnis = Einschaltzeit ÷ Periodendauer × 100 % = 3 ms ÷ 8 ms × 100 % = 37,5 %.",
   "src": "FW"
  },
@@ -6565,6 +6595,7 @@ export const QUESTIONS = [
    "12 MPa"
   ],
   "correct": 3,
+  "formel": "1 MPa = 10 bar = 1 N/mm²\n1 bar = 10 N/cm² = 0,1 N/mm²",
   "explain": "10 bar = 1 MPa → 120 bar ÷ 10 = 12 MPa.",
   "src": "FW"
  },
@@ -6779,6 +6810,7 @@ export const QUESTIONS = [
    "2,5 %"
   ],
   "correct": 1,
+  "formel": "Tastverhältnis = t_i / T · 100 %\nt_i = Impulsdauer (Einschaltzeit), T = Periodendauer (Flanke bis zur nächsten gleichen Flanke)",
   "explain": "Masseseitig angesteuert: Das untere Niveau ist die Einschaltzeit = 2 Kästchen = 2 ms. Periodendauer von fallender zu fallender Flanke = 5 Kästchen = 5 ms. Tastverhältnis = 2 ms ÷ 5 ms × 100 % = 40 %. 60 % wäre der Anteil des oberen Niveaus, 67 % das Verhältnis Ein- zu Auszeit.",
   "src": "Eigenes Oszillogramm"
  },
@@ -6797,6 +6829,7 @@ export const QUESTIONS = [
    "333 Hz"
   ],
   "correct": 2,
+  "formel": "f = 1 / T\nf in Hz (1/s), T = Periodendauer in s (1 ms = 0,001 s)",
   "explain": "Periodendauer T = 5 Kästchen × 1 ms = 5 ms = 0,005 s. f = 1 ÷ T = 1 ÷ 0,005 s = 200 Hz. 500 Hz ergibt sich, wenn man nur die Einschaltzeit (2 ms) nimmt, 333 Hz bei der Auszeit (3 ms), 5 Hz bei vergessener Umrechnung ms → s.",
   "src": "Eigenes Oszillogramm"
  },
@@ -6960,6 +6993,7 @@ export const QUESTIONS = [
    "500 kbit/s"
   ],
   "correct": 3,
+  "formel": "Bitrate = 1 / t_{Bit}\nt_{Bit} in s; 1 µs = 0,000 001 s",
   "explain": "Ein Bit dauert 1 Kästchen = 2 µs = 0,000002 s. Bitrate = 1 ÷ 0,000002 s = 500.000 bit/s = 500 kbit/s – ein üblicher Wert für den Antriebs-CAN. 250 kbit/s ergibt sich, wenn man zwei Kästchen als ein Bit liest, 2 Mbit/s bei 0,5 µs je Bit.",
   "src": "Eigenes Pegelbild, FW"
  },
@@ -7250,6 +7284,7 @@ export const QUESTIONS = [
    "10 V"
   ],
   "correct": 1,
+  "formel": "U = I · R\nU = Spannungsfall in V",
   "explain": "U = R × I = 0,05 Ω × 20 A = 1,0 V. Dieses Volt fehlt dem Verbraucher. 400 V ergibt I ÷ R, 0,0025 V ergibt R ÷ I – beides falsche Umstellungen des ohmschen Gesetzes.",
   "src": "FW"
  },
@@ -7940,6 +7975,7 @@ export const QUESTIONS = [
    "2,5 kHz; 60 % bestromt"
   ],
   "correct": 2,
+  "formel": "f = 1 / T\nTastverhältnis = t_i / T · 100 %   (t_i = bestromte Zeit)",
   "explain": "Eine Periode (von einer fallenden bis zur nächsten fallenden Flanke) ist 5 Kästchen × 0,5 ms = 2,5 ms lang → f = 1 ÷ 2,5 ms = 400 Hz. Bestromt ist Y1, wenn A1 nach Masse schaltet, also im unteren Abschnitt: 3 Kästchen = 1,5 ms → 1,5 ms ÷ 2,5 ms = 60 %. Wer den oberen Abschnitt nimmt, kommt fälschlich auf 40 %.",
   "src": "Eigenes Oszillogramm, FW"
  },
@@ -8040,6 +8076,7 @@ export const QUESTIONS = [
    "45 K"
   ],
   "correct": 2,
+  "formel": "Unterkühlung Δt = t_{Kond} − t_{Fl}\nt_{Fl} = gemessene Temperatur der Flüssigkeitsleitung; Δt in K",
   "explain": "Unterkühlung = Kondensationstemperatur − gemessene Flüssigkeitstemperatur = 52 °C − 45 °C = 7 K. Temperaturdifferenzen gibt man in Kelvin an. Die Unterkühlung zeigt, dass am Expansionsventil reine Flüssigkeit ankommt; ob der Wert passt, steht in der Herstellerangabe.",
   "src": "FW"
  },
@@ -8234,6 +8271,7 @@ export const QUESTIONS = [
    "15 bar"
   ],
   "correct": 3,
+  "formel": "p_{abs} = p_e + p_{amb}\np_e = Überdruck (Manometer, Unterdruck negativ), p_{amb} = Luftdruck; 1 bar = 1000 mbar",
   "explain": "Manometer zeigen den Überdruck gegenüber der Umgebung. Absolutdruck = Überdruck + Luftdruck = 14 bar + 1 bar = 15 bar.",
   "src": "FW"
  },
@@ -8458,6 +8496,7 @@ export const QUESTIONS = [
    "5 mbar"
   ],
   "correct": 0,
+  "formel": "p_{abs} = p_e + p_{amb}\np_e = Überdruck (Manometer, Unterdruck negativ), p_{amb} = Luftdruck; 1 bar = 1000 mbar",
   "explain": "Absolutdruck = Luftdruck + Überdruck = 1,0 bar + (−0,95 bar) = 0,05 bar. 1 bar = 1000 mbar → 0,05 bar = 50 mbar.",
   "src": "FW"
  },
@@ -8950,6 +8989,7 @@ export const QUESTIONS = [
    "6 K"
   ],
   "correct": 3,
+  "formel": "Überhitzung Δt = t_{Saug} − t_{Verd}\nt_{Saug} = gemessene Temperatur am Verdampferausgang; Δt in K",
   "explain": "Überhitzung = gemessene Temperatur am Verdampferausgang − Verdampfungstemperatur = 8 °C − 2 °C = 6 K. Wer addiert, kommt auf 10 K, wer dividiert auf 4. Eine Überhitzung stellt sicher, dass nur Dampf zum Verdichter gelangt; der Sollbereich steht in den Herstellerunterlagen.",
   "src": "FW"
  },
@@ -9353,6 +9393,7 @@ export const QUESTIONS = [
    "2.901,00 €"
   ],
   "correct": 1,
+  "formel": "Prozentwert = Grundwert · Prozentsatz / 100\nneuer Wert = Grundwert · (1 + p / 100)",
   "explain": "Erhöhung: 3.000 € × 3,3 % = 99 € → neuer Lohn 3.000 € + 99 € = 3.099 €. (Abschluss 2025: +2,3 % ab Juli 2025, +3,3 % ab August 2026, Laufzeit bis Ende Mai 2027.)",
   "src": "Netz: IG Metall Bayern, Tarifnachrichten Kfz 06/2025"
  },
@@ -9429,6 +9470,7 @@ export const QUESTIONS = [
    "288,30 €"
   ],
   "correct": 3,
+  "formel": "AN-Anteil = Bruttolohn · AN-Satz / 100\nAN-Satz = Beitragssatz / 2",
   "explain": "Arbeitnehmer und Arbeitgeber zahlen je die Hälfte: 18,6 % ÷ 2 = 9,3 %. 3.100 € × 9,3 % = 288,30 €.",
   "src": "Netz: lohn-info.de / krankenkassen.de, Rechengrößen 2026"
  },
@@ -9849,6 +9891,7 @@ export const QUESTIONS = [
    "1.329,90 €"
   ],
   "correct": 2,
+  "formel": "AN-Anteil = Bruttolohn · Summe der AN-Sätze / 100\nAN-Satz = Beitragssatz / 2 (auch der KV-Zusatzbeitrag); den PV-Kinderlosenzuschlag zahlt der Arbeitnehmer allein",
   "explain": "AN-Anteile: RV 9,3 % + KV (14,6 % + 2,9 %) ÷ 2 = 8,75 % + PV 1,8 % + 0,6 % = 2,4 % + AV 1,3 % = 21,75 %. 3.100 € × 21,75 % = 674,25 € (RV 288,30 € + KV 271,25 € + PV 74,40 € + AV 40,30 €).",
   "src": "Netz: lohn-info.de / krankenkassen.de, Rechengrößen 2026"
  },
@@ -10422,6 +10465,7 @@ export const QUESTIONS = [
    "−1,3 %"
   ],
   "correct": 1,
+  "formel": "Reallohnänderung ≈ Nominallohnänderung − Inflationsrate",
   "explain": "Näherung: Reallohnveränderung ≈ Nominallohnveränderung − Inflationsrate = 3,3 % − 2,0 % = 1,3 %. Genau: 1,033 ÷ 1,020 − 1 ≈ 1,27 %.",
   "src": "FW"
  },
@@ -10894,6 +10938,7 @@ export const QUESTIONS = [
    "1.080,00 €"
   ],
   "correct": 1,
+  "formel": "Prozentwert = Grundwert · Prozentsatz / 100\nneuer Wert = Grundwert · (1 + p / 100)\nbei mehreren Stufen ist der Grundwert jeweils der Betrag nach der vorherigen Stufe",
   "explain": "Stufe 1: 1.000 € + 80 € = 1.080 €. Stufe 2: 1.080 € × 1,033 = 1.115,64 €. Wer zuerst 3,3 % auf 1.000 € rechnet und dann 80 € addiert, kommt auf 1.113 € – die Prozentstufe gilt aber für den bereits erhöhten Betrag.",
   "src": "Netz: IG Metall / DGB-Tarifmeldung Kfz-Handwerk 2025"
  },
@@ -10980,6 +11025,7 @@ export const QUESTIONS = [
    "2.156,00 €"
   ],
   "correct": 2,
+  "formel": "Netto = Brutto − Steuern − Sozialversicherung (AN-Anteile)",
   "explain": "Steuern: B + C = 340,00 € + 27,20 € = 367,20 €. Sozialversicherung (Arbeitnehmeranteil): D + E + F + G = 297,60 € + 280,00 € + 76,80 € + 41,60 € = 696,00 € (21,75 % von 3.200 €). Abzüge gesamt 1.063,20 € → Netto 3.200 € − 1.063,20 € = 2.136,80 €. 2.504 € bzw. 2.832,80 € entstehen, wenn man die Steuern bzw. die Sozialversicherung vergisst.",
   "src": "Eigenes Diagramm (Beitragssätze 2026)"
  },
@@ -11083,6 +11129,7 @@ export const QUESTIONS = [
    "1.197,00 €"
   ],
   "correct": 2,
+  "formel": "Prozentwert = Grundwert · Prozentsatz / 100\nneuer Wert = Grundwert · (1 + p / 100)",
   "explain": "1.250 € × 4,24 % = 53 € → 1.250 € + 53 € = 1.303 €. Die Rentenanpassung folgt der Lohnentwicklung; die Haltelinie sorgt dafür, dass das Rentenniveau bis 2031 nicht unter 48 % sinkt. Der aktuelle Rentenwert stieg dabei von 40,79 € auf 42,52 € je Entgeltpunkt.",
   "src": "Netz: Deutsche Rentenversicherung, Rentenanpassung 2026"
  },

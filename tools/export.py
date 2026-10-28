@@ -130,6 +130,8 @@ def validate(questions, situationen, bilder_dir=BILDER_DIR):
             errors.append(f"{where}: level muss 1, 2 oder 3 sein")
         if "pkt" in q and (not _ganzzahl(q["pkt"]) or not 1 <= q["pkt"] <= 10):
             errors.append(f"{where}: pkt muss eine ganze Zahl von 1 bis 10 sein")
+        if "formel" in q and not _text(q["formel"]):
+            errors.append(f"{where}: formel muss ein Text sein (mehrere Zeilen mit \\n trennen)")
         typ = typ_von(q)
         if typ not in TYPEN:
             errors.append(f"{where}: unbekannter typ '{typ}'")

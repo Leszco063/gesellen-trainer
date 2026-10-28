@@ -127,6 +127,7 @@ QUESTIONS = [
           "0,1 Ω Übergangswiderstand, die Leitung hat insgesamt 0,3 Ω. Wie groß ist der Gesamtwiderstand des Zündkreises?",
      "opts": ["2,6 Ω", "0,04 Ω", "2,7 Ω", "2,5 Ω"],
      "correct": 2,
+     "formel": "Reihenschaltung: R_{ges} = R_1 + R_2 + R_3 + …\nJeder Übergangswiderstand zählt einzeln mit.",
      "explain": "Alle Widerstände liegen in Reihe: R = 2,2 Ω + 2 × 0,1 Ω + 0,3 Ω = 2,7 Ω. Ein lockerer Stecker erhöht den "
                 "Übergangswiderstand – deshalb meldet das Steuergerät dann „Widerstand zu hoch“.",
      "src": "FW"},
@@ -431,6 +432,7 @@ QUESTIONS = [
           "Wie groß ist der Gesamtwiderstand?",
      "opts": ["10,1 Ω", "0,45 Ω", "22,44 Ω", "2,22 Ω"],
      "correct": 3,
+     "formel": "Parallelschaltung: 1 / R_{ges} = 1 / R_1 + 1 / R_2 + …\nbei zwei Widerständen: R_{ges} = R_1 · R_2 / (R_1 + R_2)",
      "explain": "Parallelschaltung: R = (R1 × R2) ÷ (R1 + R2) = (3,3 Ω × 6,8 Ω) ÷ 10,1 Ω ≈ 2,22 Ω. Der Gesamtwiderstand "
                 "ist immer kleiner als der kleinste Einzelwiderstand.",
      "src": "FW"},
@@ -439,6 +441,7 @@ QUESTIONS = [
           "von 12 V anliegt?",
      "opts": ["24 A", "0,17 A", "6,0 A", "0,6 A"],
      "correct": 2,
+     "formel": "I = U / R\nI in A, U in V, R in Ω",
      "explain": "I = U ÷ R = 12 V ÷ 2 Ω = 6 A. Zum Zünden reicht schon ein deutlich kleinerer Strom. Deshalb darf an einer "
                 "Zündpille nie eine Spannung oder ein Messgerät angelegt werden – auch der Prüfstrom eines Multimeters ist gefährlich.",
      "src": "FW"},

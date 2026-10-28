@@ -64,5 +64,9 @@ export default async function () {
   // Jedes Bild gehört zu mindestens einer Frage (sonst liegt es nur im Offline-Speicher herum)
   const benutzt = new Set(QUESTIONS.map(q => q.bild).filter(Boolean));
   for (const datei of readdirSync(join(ROOT, "inhalt", "bilder")).filter(d => !d.startsWith("."))) ok(benutzt.has(datei), `Bild ${datei} wird von keiner Frage benutzt`);
-  console.log(`✓ Inhalt: ${QUESTIONS.length} Fragen, ${Object.keys(SITUATIONEN).length} Aufgabensätze, ${CARDS.length} Spickzettel`);
+  // Formel-Hilfe: Tabellenbuch-Schreibweise (· und /), nie das Ergebnis der Aufgabe
+  const mitFormel = QUESTIONS.filter(q => q.formel);
+  ok(mitFormel.length >= 45, `nur ${mitFormel.length} Rechenaufgaben mit Formel-Hilfe`);
+  for (const q of mitFormel) ok(!/[×÷]/.test(q.formel), `Formel in Tabellenbuch-Schreibweise (· und /): ${q.formel}`);
+  console.log(`✓ Inhalt: ${QUESTIONS.length} Fragen, ${Object.keys(SITUATIONEN).length} Aufgabensätze, ${CARDS.length} Spickzettel, ${mitFormel.length} Formel-Hilfen`);
 }

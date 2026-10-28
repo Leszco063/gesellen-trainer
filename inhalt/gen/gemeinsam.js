@@ -7,7 +7,8 @@ export const runde = (x, stellen = 2) => Math.round(x * 10 ** stellen) / 10 ** s
 
 // Rechenaufgabe als Multiple Choice: richtige Lösung + Ergebnisse typischer Rechenfehler.
 // fehler: Werte, die bei typischen Fehlern herauskommen; reichen sie nicht, wird mit Vielfachen aufgefüllt.
-export function rechenFrage(cat, level, q, loesung, einheit, explain, daten, fehler, { stellen = 2, format } = {}) {
+// formel: allgemeine Formel als Hilfe vor dem Antworten (ohne die Zahlen der Aufgabe).
+export function rechenFrage(cat, level, q, loesung, einheit, explain, daten, fehler, { stellen = 2, format, formel } = {}) {
   zaehler += 1;
   const text = format || (x => `${fmt(x, stellen)} ${einheit}`.trim());
   const zuNah = x => Math.abs(x - loesung) <= Math.abs(loesung) * 0.01 + 0.01;
@@ -22,6 +23,6 @@ export function rechenFrage(cat, level, q, loesung, einheit, explain, daten, feh
   const gemischt = shuffle(opts);
   return {
     id: `gen-${cat}-${Date.now().toString(36)}-${zaehler}`,
-    gen: true, cat, level, typ: "mc", q, opts: gemischt, correct: gemischt.indexOf(richtig), explain, daten, src: "Generator",
+    gen: true, cat, level, typ: "mc", q, opts: gemischt, correct: gemischt.indexOf(richtig), explain, formel, daten, src: "Generator",
   };
 }

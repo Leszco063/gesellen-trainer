@@ -101,6 +101,12 @@ class ExportTest(unittest.TestCase):
             self.assertTrue(any("kaputt.svg" in e for e in self.fehler([frage(bild="kaputt.svg")], bilder_dir=d)))
             self.assertTrue(any("viewBox" in e for e in self.fehler([frage(bild="ohne.svg")], bilder_dir=d)))
 
+    def test_formel(self):
+        self.assertEqual(self.fehler([frage(formel="I = U ÷ R")]), [])
+        self.assertTrue(any("formel" in e for e in self.fehler([frage(formel="")])))
+        self.assertTrue(any("formel" in e for e in self.fehler([frage(formel=["I = U ÷ R"])])))
+        self.assertEqual(export.question_id(frage(formel="I = U ÷ R")), export.question_id(frage()))
+
     def test_doppelte_frage(self):
         self.assertTrue(any("Doppelte" in e for e in self.fehler([frage(), frage()])))
 

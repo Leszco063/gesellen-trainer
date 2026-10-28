@@ -22,6 +22,7 @@ Untergrenzen (Test `tools/tests/inhalt.test.js`): Diesel/Bremse 95, Klima/Airbag
 - Keine Doppelungen: vorher die vorhandenen Fragen der Datei lesen. Ähnliches Thema ist ok, wenn eine andere Seite gefragt wird.
 - Feste Zahlenwerte nur, wenn sie sicher sind (Rechercheakte Abschnitt 3.6). Sonst „laut Herstellerangabe“ / „laut Tabellenbuch“. Tabellenbuch-Aufgaben bekommen `"tb": True`.
 - `src`: Quelle kurz, z. B. `"FK 339"`, `"TB 277"`, `"FW"` (Fachwissen), `"Netz: <Seite>"`, `"Eigener Schaltplan"`.
+- Rechenaufgaben bekommen `"formel"`: die allgemeine Formel in Tabellenbuch-Schreibweise (`·`, `/`, Index mit `_`, z. B. `"s_B = v² / (2 · a)\nv in m/s = v in km/h / 3,6"`), nie das Ergebnis. Siehe `docs/recherche/formeln.md`.
 - `explain` erklärt, **warum** die richtige Antwort stimmt und was an der typischen falschen Antwort falsch ist (2–4 Sätze). Das ist der Lernstoff.
 
 ## Antwortlängen (wichtig!)
